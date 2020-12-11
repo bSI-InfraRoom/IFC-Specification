@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLagTime" UniqueId="ebde4676-fd2c-4f52-8985-79f623317d88" BaseDefinition="IfcSchedulingTime" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Zeitlicher Abstand" />
+		<DocLocalization Locale="en" Name="Lag Time" />
+		<DocLocalization Locale="fr" Name="Décalage entre processus" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="LagValue" UniqueId="2887dc71-f136-4c8b-9da9-5b34af397d8d" DefinedType="IfcTimeOrRatioSelect">
+			<Documentation>Value of the time lag selected as being either a ratio or a
+    time measure.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="DurationType" UniqueId="9a00390a-a0d3-4bba-9267-7512fae616c3" DefinedType="IfcTaskDurationEnum">
+			<Documentation>The allowed types of task duration that specify the lag time
+    measurement (work time or elapsed time).</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

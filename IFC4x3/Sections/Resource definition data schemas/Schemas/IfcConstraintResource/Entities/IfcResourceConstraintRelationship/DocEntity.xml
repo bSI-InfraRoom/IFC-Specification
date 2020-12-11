@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcResourceConstraintRelationship" UniqueId="a14f1e2c-6b41-4740-8797-3a51d8f35cc5" BaseDefinition="IfcResourceLevelRelationship" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="allgemeine Relation - Zuweisung von Einschränkungen" />
+		<DocLocalization Locale="en" Name="Resource Constraint Relationship" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelatingConstraint" UniqueId="e196ff69-9601-4f75-a1bf-5c093b548895" DefinedType="IfcConstraint" XsdFormat="attribute">
+			<Documentation>The constraint that is to be related.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelatedResourceObjects" UniqueId="8f528729-9ae0-43e9-9cdc-6f2923e574f4" DefinedType="IfcResourceObjectSelect" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The properties to which a constraint is to be related.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcTendonAnchor" Name="IfcTendonAnchor" UniqueId="55cbca4f-814f-47b4-890b-000cd85993b7" BaseDefinition="IfcReinforcingElement" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Spanngliedanker" />
+		<DocLocalization Locale="en" Name="Tendon Anchor" />
+		<DocLocalization Locale="fr" Name="Ancrage" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="a8c7ef8a-9db8-4a89-9908-adcec769bb8f" DefinedType="IfcTendonAnchorTypeEnum" AttributeFlags="1">
+			<Documentation>Kind of tendon anchor.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="30fc70ef-4a26-424e-b55d-41d38f8315da">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcTendonAnchorType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcTendonAnchorTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcTendonAnchorTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="43afd9fa-51aa-4a86-9ebf-80a39e1ea77a">
+			<Documentation>If this occurrence is defined by a type object, the latter has to be an _IfcTendonAnchorType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSTRUCTURALELEMENTSDOMAIN.IFCTENDONANCHORTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

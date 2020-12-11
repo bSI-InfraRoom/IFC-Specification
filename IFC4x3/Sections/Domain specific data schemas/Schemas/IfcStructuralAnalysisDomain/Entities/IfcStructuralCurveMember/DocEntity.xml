@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralCurveMember" Name="IfcStructuralCurveMember" UniqueId="b0527d1a-798c-4134-b9f1-056c3d7650af" BaseDefinition="IfcStructuralMember" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Stab / Seil / Balken mit konstantem Profil / Querschnitt">
+			<Documentation>lineares statisches Bauteil mit Beanspruchung auf Zug, Druck, Biegung oder Torsion</Documentation>
+		</DocLocalization>
+		<DocLocalization Locale="en" Name="Structural Curve Member" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="1d518939-df1a-4088-9985-e307f7a4fd2b" DefinedType="IfcStructuralCurveMemberVarying" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="bad7498e-7414-4402-843f-00cb547486b2" DefinedType="IfcStructuralCurveMemberTypeEnum">
+			<Documentation>Type of member with respect to its load carrying behavior in this analysis idealization.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Axis" UniqueId="98e340d3-9f0e-4b44-9421-dc95050a5be5" DefinedType="IfcDirection" XsdFormat="attribute">
+			<Documentation>Direction which is used in the definition of the local z axis.  _Axis_ is specified relative to the so-called global coordinate system, i.e. the _SELF\IfcProduct.ObjectPlacement_.
+
+&gt; NOTE&amp;nbsp; It is desirable and usually possible that many instances of _IfcStructuralCurveConnection_ and _IfcStructuralCurveMember_ share a common instance of _IfcDirection_ as their _Axis_ attribute.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasObjectType" UniqueId="a971a852-892d-4df5-9954-9b938e24d672">
+			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcStructuralCurveMemberTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

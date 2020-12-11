@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcEngine" Name="IfcEngine" UniqueId="0a9c68ca-5836-4bfb-918b-1ac3287c9e8d" BaseDefinition="IfcEnergyConversionDevice" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Motor" />
+		<DocLocalization Locale="en" Name="Engine" />
+		<DocLocalization Locale="fr" Name="Moteur" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="058eca30-4bce-432c-8765-8aecc95e6e30" DefinedType="IfcEngineTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="fc13d59f-8feb-4cac-93a4-81293513c4d6">
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcEngineTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcEngineTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="fcf39d80-72e2-4904-901d-e76963b42074">
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+(&apos;IFCHVACDOMAIN.IFCENGINETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

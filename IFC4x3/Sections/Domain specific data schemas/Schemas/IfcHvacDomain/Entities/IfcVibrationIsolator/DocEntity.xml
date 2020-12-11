@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcVibrationIsolator" Name="IfcVibrationIsolator" UniqueId="422d8476-9b6c-4321-9f99-2f6340f87108" Status="Deprecated" BaseDefinition="IfcElementComponent" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Schwingungsisolator" />
+		<DocLocalization Locale="en" Name="Vibration Isolator" />
+		<DocLocalization Locale="fr" Name="Isolation anti-vibratoire" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="c48ed4dc-cc29-4b6b-ad43-262290a082ae" DefinedType="IfcVibrationIsolatorTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="c7c9e55a-c359-4ef0-bf72-44aca5cec3a4">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcVibrationIsolatorType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcVibrationIsolatorTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="c1e59c0b-6b0e-4c35-a72c-1a731dd60223">
+			<Documentation>Either there is no vibration isolator type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcVibrationIsolatorType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCVIBRATIONISOLATORTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

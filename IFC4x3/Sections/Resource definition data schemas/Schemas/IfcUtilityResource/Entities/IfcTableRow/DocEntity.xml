@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTableRow" UniqueId="dcf395ca-c227-4340-a8db-8f53ebd905d5" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Tabellenzeile" />
+		<DocLocalization Locale="en" Name="Table Row" />
+		<DocLocalization Locale="fr" Name="Ligne de table" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RowCells" UniqueId="7ed2c99d-404d-4ff3-8b17-ba94de77e474" DefinedType="IfcValue" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The data value of the table cell..</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="IsHeading" UniqueId="ee01b240-9331-4036-9859-66837096adae" DefinedType="IfcBoolean" AttributeFlags="1">
+			<Documentation>Flag which identifies if the row is a heading row or a row which contains row values. 
+&gt; NOTE - If the row is a heading, the flag takes the value = TRUE.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

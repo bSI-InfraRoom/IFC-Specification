@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSlab" Name="IfcSlab" UniqueId="8f561139-3792-4723-b343-700785092d40" BaseDefinition="IfcBuiltElement" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Decke / Dachfläche / Bodenplatte" />
+		<DocLocalization Locale="en" Name="Slab" />
+		<DocLocalization Locale="fr" Name="Dalle" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="0524d9fa-38b9-4116-beb3-29bf18a8f541" DefinedType="IfcSlabStandardCase" />
+		<DocSubtype UniqueId="27225375-f497-4c90-a318-b910905ba064" DefinedType="IfcSlabElementedCase" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="5f3dcc3b-0c4a-4603-b6c1-2aa940b83049" DefinedType="IfcSlabTypeEnum" AttributeFlags="1">
+			<Documentation>Predefined generic type for a slab that is specified in an enumeration. There may be a property set given specifically for the predefined types.
+&gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcSlabType_ is assigned, providing its own _IfcSlabType.PredefinedType_.
+
+{ .change-ifc2x}
+&gt; IFC2x CHANGE The attribute has been changed into an OPTIONAL attribute.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="e6f637df-626b-40b4-81bc-2ebe13ecbb3d">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcSlabType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcSlabTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcSlabTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="0e1854fd-984a-47e8-91e9-2642df22a8b3">
+			<Documentation>Either there is no slab type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcSlabType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCSLABTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

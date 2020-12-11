@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProtectiveDeviceType" Name="IfcProtectiveDeviceType" UniqueId="42a11802-b62b-451b-b13b-bbbd59194027" BaseDefinition="IfcFlowControllerType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Sicherung - Typ" />
+		<DocLocalization Locale="en" Name="Protective Device Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;équipement de protection" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="63f1f340-e5f4-4898-a768-09b5fac4220b" DefinedType="IfcProtectiveDeviceTypeEnum">
+			<Documentation>Identifies the predefined types of protective device from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="ba8a74a6-6f12-480e-bb6d-4e26f3098483">
+			<Expression>(PredefinedType &lt;&gt; IfcProtectiveDeviceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcProtectiveDeviceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

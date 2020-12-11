@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBuildingElementProxyType" Name="IfcBuildingElementProxyType" UniqueId="f6c56c32-4f7f-4f3d-935a-a19ad5b50f7c" Status="Deprecated" BaseDefinition="IfcBuiltElementType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Bauteil / Bauelement - beliebig - Typ" />
+		<DocLocalization Locale="en" Name="Building Element Proxy Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;élément de construction non défini" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="7a223a57-61ce-470d-a396-3af434eccef5" DefinedType="IfcBuildingElementProxyTypeEnum">
+			<Documentation>Predefined types to define the particular type of an building element proxy. There may be property set definitions available for each predefined or user defined type.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="d31c0257-5762-49f6-b78c-55b1c9af490c">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcBuildingElementProxyTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcBuildingElementProxyTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

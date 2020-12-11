@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFastener" Name="IfcFastener" UniqueId="f7f5c079-1ef8-4a9e-a64c-86800f526d37" BaseDefinition="IfcElementComponent" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Befestigungsmittel" />
+		<DocLocalization Locale="en" Name="Fastener" />
+		<DocLocalization Locale="fr" Name="Elément d&apos;assemblage" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="662a3ac7-815a-445d-a564-413f149a45af" DefinedType="IfcFastenerTypeEnum" AttributeFlags="1">
+			<Documentation>Subtype of fastener</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="e629f242-b4c7-4420-9236-46b8e79eead1">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcFastenerType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcFastenerTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcFastenerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="dc1c589c-d027-491f-be19-1d44571cb0c1">
+			<Documentation>If this occurrence is defined by a type object, the latter has to be an _IfcFastenerType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSHAREDCOMPONENTELEMENTS.IFCFASTENERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

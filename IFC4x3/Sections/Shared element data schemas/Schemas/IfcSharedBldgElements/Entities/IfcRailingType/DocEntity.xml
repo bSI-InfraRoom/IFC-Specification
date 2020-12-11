@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRailingType" Name="IfcRailingType" UniqueId="9f5e37e7-709e-46f6-aa16-7ce984b35c92" BaseDefinition="IfcBuiltElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Geländer - Typ" />
+		<DocLocalization Locale="en" Name="Railing Type" />
+		<DocLocalization Locale="fr" Name="Type de garde corps" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="07835b3b-3d85-4552-97ee-27905ee63e86" DefinedType="IfcRailingTypeEnum">
+			<Documentation>Identifies the predefined types of a railing element from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="fef2e864-d218-4bf1-a0b3-7b0df3c9a66a">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcRailingTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcRailingTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

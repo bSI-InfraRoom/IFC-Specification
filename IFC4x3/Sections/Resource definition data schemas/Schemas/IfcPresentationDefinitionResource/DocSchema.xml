@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPresentationDefinitionResource" UniqueId="88a2c324-85a7-4524-8505-8b260ee5535f">
+	<SchemaRefs>
+		<DocSchemaRef Name="IFCEXTERNALREFERENCERESOURCE" UniqueId="dcca8e20-c549-41b9-86a0-2d29752a86e6" />
+		<DocSchemaRef Name="IFCGEOMETRYRESOURCE" UniqueId="a85b1bbf-3f7c-45f5-9686-9f34d0fd486b">
+			<Definitions>
+				<DocDefinitionRef Name="IfcGeometricRepresentationItem" UniqueId="66318a22-611b-48d1-967c-212a380844d9" />
+				<DocDefinitionRef Name="IfcAxis2Placement" UniqueId="db4ec2af-90e2-43c9-8cd4-e158c79a049c" />
+				<DocDefinitionRef Name="IfcAxis2Placement2D" UniqueId="35998218-5c21-4591-a085-e1256502ab6b" />
+				<DocDefinitionRef Name="IfcCurve" UniqueId="71619a41-c9c5-49e2-90cd-7e93fc1ef5a3" />
+				<DocDefinitionRef Name="IfcConic" UniqueId="8e44b31d-b949-4880-be3a-d248b39576fe" />
+				<DocDefinitionRef Name="IfcCompositeCurve" UniqueId="19613c94-531d-4d31-b13a-07b8043a052a" />
+				<DocDefinitionRef Name="IfcTrimmedCurve" UniqueId="4b2fa2cd-c7ef-4678-881d-e113db247a43" />
+				<DocDefinitionRef Name="IfcLine" UniqueId="c503ca52-e05c-4d9a-902f-a3ead7ce4a6a" />
+				<DocDefinitionRef Name="IfcPolyline" UniqueId="dca42709-215e-4b08-8515-c9a914d0a187" />
+				<DocDefinitionRef Name="IfcBSplineCurve" UniqueId="e10205c7-c497-4c36-a032-1fd4d1caab5c" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCMEASURERESOURCE" UniqueId="788a104e-3fde-46a5-b49f-9e6aa960d88e">
+			<Definitions>
+				<DocDefinitionRef id="IfcLabel_0PE2d5tdn4ff_VrMgDm7rb" Name="IfcLabel" UniqueId="193829c5-de7c-44a6-9f9f-d56a8dc07d65" />
+				<DocDefinitionRef Name="IfcLengthMeasure" UniqueId="67401660-0e30-488b-b5f6-08accf76d559" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCPRESENTATIONAPPEARANCERESOURCE" UniqueId="59bb48c1-ad23-4989-ae75-00235c39b2a9">
+			<Definitions>
+				<DocDefinitionRef Name="IfcNullStyle" UniqueId="1a47a07b-7b91-4b75-addd-736fa5a4fccf" />
+				<DocDefinitionRef Name="IfcPresentableText" UniqueId="74194c38-c614-4e86-8100-6ca20120625b" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCREPRESENTATIONRESOURCE" UniqueId="149ae789-6b15-4c1e-a823-5a3e3bce3aeb" />
+		<DocSchemaRef Name="IFCTOPOLOGYRESOURCE" UniqueId="1458efb7-6e94-4d49-ab5b-79f11c79a87a" />
+	</SchemaRefs>
+</DocSchema>
+

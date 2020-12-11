@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcExtendedProperties" UniqueId="6eefdfa8-0f42-440b-a927-ddd04185cfd4" BaseDefinition="IfcPropertyAbstraction" EntityFlags="197">
+	<Localization>
+		<DocLocalization Locale="de" Name="erweiterbare Eigenschaften" />
+		<DocLocalization Locale="en" Name="Extended Properties" />
+		<DocLocalization Locale="fr" Name="Propriétés étendues" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Name" UniqueId="35758c6c-417b-4785-ac0b-fd61a613f9db" DefinedType="IfcIdentifier" AttributeFlags="1">
+			<Documentation>The name given to the set of properties.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Description" UniqueId="ca07af86-dd02-4eae-98a1-854664b54a87" DefinedType="IfcText" AttributeFlags="1">
+			<Documentation>Description for the set of properties.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Properties" UniqueId="1ed043fe-54d5-4e63-bd45-c1cb8c066dd3" DefinedType="IfcProperty" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The set of properties provided for this extended property collection.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcToroidalSurface" UniqueId="48f9b867-ec04-4a55-9138-f52b74f1b60e" BaseDefinition="IfcElementarySurface" EntityFlags="32">
+	<Localization>
+		<DocLocalization Locale="en" Name="Toroidal Surface" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="MajorRadius" UniqueId="6d516f41-e0c1-4436-9ba8-bdc235df5f75" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>The major radius of the torus.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="MinorRadius" UniqueId="996fe0f6-341c-4dda-9436-f345cfac480f" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>The minor radius of the torus.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="MajorLargerMinor" UniqueId="10986000-0edb-4855-995d-00f5812c1e18">
+			<Documentation>The attribute value of the MinorRadius shall be smaller then the value of the MajorRadius</Documentation>
+			<Expression>MinorRadius &lt; MajorRadius</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

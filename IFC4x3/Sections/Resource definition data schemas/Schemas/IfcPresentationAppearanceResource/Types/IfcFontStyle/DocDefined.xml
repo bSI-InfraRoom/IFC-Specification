@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFontStyle" UniqueId="a56e68ba-e36b-42e9-91dc-57f1afed3b60" DefinedType="STRING">
+	<Localization>
+		<DocLocalization Locale="de" Name="Schriftstil" />
+		<DocLocalization Locale="en" Name="Font Style" />
+		<DocLocalization Locale="fr" Name="Style de police" />
+	</Localization>
+	<Definition xsi:type="DocPrimitive" xsi:nil="true" href="STRING_3ynilg4C96p9BjwFj6UaHw" />
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="7fa59585-e56b-4a3f-9565-3022d1578fe4">
+			<Documentation>Allowable values for font style.</Documentation>
+			<Expression>SELF IN [&apos;normal&apos;,&apos;italic&apos;,&apos;oblique&apos;]</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocDefined>
+

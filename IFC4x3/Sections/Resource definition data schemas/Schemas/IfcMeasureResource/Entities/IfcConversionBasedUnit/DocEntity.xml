@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcConversionBasedUnit" Name="IfcConversionBasedUnit" UniqueId="7d4b1cf1-345c-456d-9199-c2fc2e7e94f0" BaseDefinition="IfcNamedUnit" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Auf Umrechnung basierte Einheit" />
+		<DocLocalization Locale="en" Name="Conversion Based Unit" />
+		<DocLocalization Locale="fr" Name="Unité basée sur une mesure avec unité" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="14d59055-c237-4e59-b780-4bff3b455f0e" DefinedType="IfcConversionBasedUnitWithOffset" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Name" UniqueId="8f0badf9-2c68-49b2-9365-0e66adb20d4d" DefinedType="IfcLabel">
+			<Documentation>The word, or group of words, by which the conversion based unit is referred to.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ConversionFactor" UniqueId="91e5e04e-74ab-456a-9cb8-77cbbdf2cdf7" DefinedType="IfcMeasureWithUnit" XsdFormat="attribute">
+			<Documentation>The physical quantity from which the converted unit is derived.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="HasExternalReference" UniqueId="d6118974-bfed-426c-b479-6ecff30b88a2" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
+			<Documentation>Reference to external information, e.g. library, classification, or document information, which is associated with the conversion-based unit.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE New inverse attribute.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

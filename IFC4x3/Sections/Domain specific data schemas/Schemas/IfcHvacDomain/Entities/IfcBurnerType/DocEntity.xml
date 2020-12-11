@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBurnerType" UniqueId="4a137418-8fa9-4459-8470-7b7ef512ad4d" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Brenner - Typ" />
+		<DocLocalization Locale="en" Name="Burner Type" />
+		<DocLocalization Locale="fr" Name="Type de brûleur" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="fd7f286c-7e6e-487c-b148-304c94e2263e" DefinedType="IfcBurnerTypeEnum" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="52288096-7055-4c20-b882-dad6abb7f0c8">
+			<Expression>(PredefinedType &lt;&gt; IfcBurnerTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcBurnerTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

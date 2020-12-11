@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProtectiveDevice" Name="IfcProtectiveDevice" UniqueId="a1202643-3e89-4bf3-9677-82067cb12ecb" BaseDefinition="IfcFlowController" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Sicherung" />
+		<DocLocalization Locale="en" Name="Protective Device" />
+		<DocLocalization Locale="fr" Name="Équipement de protection" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="87de95f6-9b74-4313-b83f-99116ef9ec61" DefinedType="IfcProtectiveDeviceTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="564506ef-4d69-44e2-9a76-9205635fdd8a">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcProtectiveDeviceType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcProtectiveDeviceTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcProtectiveDeviceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="fec7b45b-e683-43a9-a2ca-c5d2503ca695">
+			<Documentation>Either there is no protective device type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcProtectiveDeviceType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCELECTRICALDOMAIN.IFCPROTECTIVEDEVICETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

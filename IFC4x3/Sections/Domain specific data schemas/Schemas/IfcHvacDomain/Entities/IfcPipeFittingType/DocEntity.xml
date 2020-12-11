@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPipeFittingType" Name="IfcPipeFittingType" UniqueId="7c307679-338b-48cf-92f2-d34c9d5f235c" BaseDefinition="IfcFlowFittingType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Rohrverbinder - Typ" />
+		<DocLocalization Locale="en" Name="Pipe Fitting Type" />
+		<DocLocalization Locale="fr" Name="Type de raccord de tuyauterie" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="2c44496c-2f0c-4ee8-9fd6-632c0dceca41" DefinedType="IfcPipeFittingTypeEnum">
+			<Documentation>The type of pipe fitting.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="55cea160-8f98-431e-9d2e-38ccad5fe261">
+			<Expression>(PredefinedType &lt;&gt; IfcPipeFittingTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcPipeFittingTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

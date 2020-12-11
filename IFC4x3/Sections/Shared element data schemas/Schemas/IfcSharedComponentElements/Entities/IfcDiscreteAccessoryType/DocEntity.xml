@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDiscreteAccessoryType" Name="IfcDiscreteAccessoryType" UniqueId="fdfd0f31-eb16-42ce-a2d2-b2fccafaab2b" BaseDefinition="IfcElementComponentType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Zusatzgerät / Einbauteil - Typ" />
+		<DocLocalization Locale="en" Name="Discrete Accessory Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;accessoire composé" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="33ce9836-a43e-4601-8cf5-efa4054adb49" DefinedType="IfcDiscreteAccessoryTypeEnum">
+			<Documentation>Subtype of discrete accessory</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="ecb90d13-db6f-4a67-bef4-d9b79802908d">
+			<Documentation>The inherited attribute _ElementType_ shall be provided if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcDiscreteAccessoryTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcDiscreteAccessoryTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRectangleHollowProfileDef" Name="IfcRectangleHollowProfileDef" UniqueId="19db74b8-9bbd-4310-a2b8-d47984481a40" BaseDefinition="IfcRectangleProfileDef" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Rechteckprofil hohl - parametrische Definition" />
+		<DocLocalization Locale="en" Name="Rectangle Hollow Profile Def" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="WallThickness" UniqueId="e469897c-3e73-451f-9c72-a373783992ba" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Thickness of the material.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="InnerFilletRadius" UniqueId="5aa6d217-3f48-4fbb-9145-55601b62701b" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
+			<Documentation>Inner corner radius.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OuterFilletRadius" UniqueId="493f68ea-2c2e-44f2-bef4-d2c48668cc91" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
+			<Documentation>Outer corner radius.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ValidWallThickness" UniqueId="9249fff2-6fd9-453c-ab37-9f2c52593245">
+			<Documentation>The wall thickness shall be smaller than half of the X and Y dimension of the rectangle.</Documentation>
+			<Expression>(WallThickness &lt; (SELF\IfcRectangleProfileDef.XDim/2.)) AND 
+(WallThickness &lt; (SELF\IfcRectangleProfileDef.YDim/2.))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="ValidInnerRadius" UniqueId="5d2f4036-9558-47c1-8440-5822d69e408f">
+			<Documentation>The inner fillet radius (if given) shall be small enough to fit into the void.</Documentation>
+			<Expression>NOT(EXISTS(InnerFilletRadius)) OR 
+((InnerFilletRadius &lt;= (SELF\IfcRectangleProfileDef.XDim/2. - WallThickness)) AND 
+ (InnerFilletRadius &lt;= (SELF\IfcRectangleProfileDef.YDim/2. - WallThickness)))
+</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="ValidOuterRadius" UniqueId="6ac1c1f7-65c1-491d-9bf6-a11bf87cb16a">
+			<Documentation>The outer fillet radius (if given) shall be small enough to fit into the bounding box.</Documentation>
+			<Expression>NOT(EXISTS(OuterFilletRadius)) OR 
+((OuterFilletRadius &lt;= (SELF\IfcRectangleProfileDef.XDim/2.)) AND 
+ (OuterFilletRadius &lt;= (SELF\IfcRectangleProfileDef.YDim/2.)))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

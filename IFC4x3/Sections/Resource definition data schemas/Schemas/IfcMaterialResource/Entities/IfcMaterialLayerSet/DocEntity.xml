@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMaterialLayerSet" Name="IfcMaterialLayerSet" UniqueId="c1a5e8bc-cb6b-4466-8130-d2946ca1f8a0" BaseDefinition="IfcMaterialDefinition" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Gruppe von Materialschichten" />
+		<DocLocalization Locale="en" Name="Material Layer Set" />
+		<DocLocalization Locale="fr" Name="Ensemble de couches de matériau homogène" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="MaterialLayers" UniqueId="5a628a68-ffd7-4f73-aa3e-e72f2be216a1" DefinedType="IfcMaterialLayer" AggregationType="1" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Identification of the _IfcMaterialLayer_&amp;rsquo;s from which the _IfcMaterialLayerSet_ is composed.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LayerSetName" UniqueId="64d28d03-21af-45f1-8409-87bc5674dfbe" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>The name by which the _IfcMaterialLayerSet_ is known.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Description" UniqueId="52a88214-0845-42fb-b617-1dbe7dc4dcdc" DefinedType="IfcText" AttributeFlags="1">
+			<Documentation>Definition of the _IfcMaterialLayerSet_ in descriptive terms.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The attribute has been added at the end of attribute list.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TotalThickness" UniqueId="81ed0494-3a34-4ff6-9004-3779ff4854d9" DefinedType="IfcLengthMeasure">
+			<Documentation>Total thickness of the material layer set is derived from the function _IfcMlsTotalThickness._</Documentation>
+			<Derived>IfcMlsTotalThickness(SELF)</Derived>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

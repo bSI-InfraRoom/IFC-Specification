@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCoveringType" Name="IfcCoveringType" UniqueId="2851a201-39c1-4a3e-a164-c288dc59b7b9" BaseDefinition="IfcBuiltElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Bekleidung / Belag - Typ" />
+		<DocLocalization Locale="en" Name="Covering Type" />
+		<DocLocalization Locale="fr" Name="Revêtement type" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="b0342ac0-3b78-4cc1-84b6-89044b113089" DefinedType="IfcCoveringTypeEnum">
+			<Documentation>Predefined types to define the particular type of the covering. There may be property set definitions available for each predefined type.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="3df9745a-cff4-4a42-a7b4-7f07c1f1c534">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcCoveringTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCoveringTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

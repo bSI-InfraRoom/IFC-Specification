@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBlobTexture" UniqueId="6f3625b4-6b27-4ac2-8c49-34b2079baf0c" BaseDefinition="IfcSurfaceTexture" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Textur - als Binärformat eingefügt" />
+		<DocLocalization Locale="en" Name="Blob Texture" />
+		<DocLocalization Locale="fr" Name="Blob de texture" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RasterFormat" UniqueId="cc5e35b1-16ee-455a-aece-ce1cd7148396" DefinedType="IfcIdentifier">
+			<Documentation>The format of the _RasterCode_ often using a compression.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RasterCode" UniqueId="d73b45d5-03ef-42a4-80f8-40956c1ed197" DefinedType="IfcBinary" XsdFormat="attribute">
+			<Documentation>Blob, given as a single binary, to capture the texture within one popular file (compression) format. The file format is provided by the _RasterFormat_ attribute.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="SupportedRasterFormat" UniqueId="f05811b1-7bad-4d9b-81bb-8f834e2e9c49">
+			<Documentation>Currently the formats of bmp, jpg, gif and pgn, shall be supported.</Documentation>
+			<Expression>SELF.RasterFormat IN [&apos;BMP&apos;, &apos;JPG&apos;, &apos;GIF&apos;, &apos;PNG&apos;]</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="RasterCodeByteStream" UniqueId="0456070e-e901-45e3-b165-40e0846e9fcf">
+			<Documentation>The size of the raster code shall be a multiple of 8 bits.</Documentation>
+			<Expression>BLENGTH(RasterCode) MOD 8 = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

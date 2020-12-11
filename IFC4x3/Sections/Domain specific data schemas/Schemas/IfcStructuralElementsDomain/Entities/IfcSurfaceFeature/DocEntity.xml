@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSurfaceFeature" Name="IfcSurfaceFeature" UniqueId="e9ba48f9-734e-4e7f-9a90-572fd19c5475" BaseDefinition="IfcFeatureElement" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Oberflächenbearbeitung" />
+		<DocLocalization Locale="en" Name="Surface Feature" />
+		<DocLocalization Locale="fr" Name="Traitement de surface" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="324c2136-9ea8-40b8-b332-c28ff31d3c3a" DefinedType="IfcSurfaceFeatureTypeEnum" AttributeFlags="1">
+			<Documentation>Indicates the kind of surface feature.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasObjectType" UniqueId="9fc901e4-66a5-4035-a4d8-ad9a61dd8d19">
+			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>NOT EXISTS(PredefinedType) OR (PredefinedType &lt;&gt; IfcSurfaceFeatureTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCaissonFoundationType" UniqueId="7c1d05fe-221c-4952-b734-33d5da5aa561" BaseDefinition="IfcDeepFoundationType" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="de3bfe45-6a58-4d51-ac79-b512ae3d6205" DefinedType="IfcCaissonFoundationTypeEnum">
+			<Documentation>Identifies the predefined types of a caisson foundation element from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="e3e17718-11c4-4ff7-8087-ee32a1562062">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcCaissonFoundationTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCaissonFoundationTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

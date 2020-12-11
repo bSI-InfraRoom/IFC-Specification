@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcUnitAssignment" Name="IfcUnitAssignment" UniqueId="cdb8d8f7-b0f6-4fc4-a97e-cc6ff85a83f6" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Einheit - Zuweisung" />
+		<DocLocalization Locale="en" Name="Unit Assignment" />
+		<DocLocalization Locale="fr" Name="Assignation d&apos;unité" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Units" UniqueId="41282efe-7993-4329-a53b-a25bface8606" DefinedType="IfcUnit" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Units to be included within a unit assignment.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR01" UniqueId="d760eca2-d8df-4230-a99e-4bdd0b1b841e">
+			<Documentation>Checks that the set of globally assigned units has each unit type (either of type _IfcNamedUnit_,_IfcDerivedUnit_, or _IfcMonetaryUnit_) defined only once.</Documentation>
+			<Expression>IfcCorrectUnitAssignment(Units)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

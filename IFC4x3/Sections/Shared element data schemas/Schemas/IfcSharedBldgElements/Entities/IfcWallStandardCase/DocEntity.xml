@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWallStandardCase" Name="IfcWallStandardCase" UniqueId="10baa357-63e9-4702-b89f-c213d62d63b2" Status="Deprecated" BaseDefinition="IfcWall" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Wand - Standard" />
+		<DocLocalization Locale="en" Name="Wall Standard Case" />
+		<DocLocalization Locale="fr" Name="Mur standard" />
+	</Localization>
+	<WhereRules>
+		<DocWhereRule Name="HasMaterialLayerSetUsage" UniqueId="9404ca1d-71cf-4b6d-8d62-a422fc58a475">
+			<Documentation>A valid instance of _IfcWallStandardCase_ relies on the provision of an _IfcMaterialLayerSetUsage_.</Documentation>
+			<Expression>SIZEOF (QUERY(temp &lt;* USEDIN(SELF, &apos;IFCKERNEL.IFCRELASSOCIATES.RELATEDOBJECTS&apos;) |
+              (&apos;IFCPRODUCTEXTENSION.IFCRELASSOCIATESMATERIAL&apos; IN TYPEOF(temp)) AND
+              (&apos;IFCMATERIALRESOURCE.IFCMATERIALLAYERSETUSAGE&apos; IN TYPEOF(temp.RelatingMaterial))
+              )) = 1</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

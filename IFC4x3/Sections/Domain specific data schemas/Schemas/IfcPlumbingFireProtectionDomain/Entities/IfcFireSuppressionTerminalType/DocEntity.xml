@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFireSuppressionTerminalType" Name="IfcFireSuppressionTerminalType" UniqueId="61aa9c11-fe11-4bd6-b0d1-5cec357310f0" BaseDefinition="IfcFlowTerminalType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Feuerlöscheinrichtung - Typ" />
+		<DocLocalization Locale="en" Name="Fire Suppression Terminal Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;appareil terminal d&apos;extinction d&apos;incendie" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="4dcf5d7d-ae7c-4c89-b98c-071cebaed9a0" DefinedType="IfcFireSuppressionTerminalTypeEnum">
+			<Documentation>Identifies the predefined types of fire suppression terminal from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="b0371e43-7014-4e40-88cb-5b81f5f4d02e">
+			<Expression>(PredefinedType &lt;&gt; IfcFireSuppressionTerminalTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcFireSuppressionTerminalTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

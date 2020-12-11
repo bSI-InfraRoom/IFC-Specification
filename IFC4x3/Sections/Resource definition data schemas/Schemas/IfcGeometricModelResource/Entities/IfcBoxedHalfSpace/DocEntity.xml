@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBoxedHalfSpace" UniqueId="6d52ef81-4176-4ab5-a2d3-39b86c31c378" BaseDefinition="IfcHalfSpaceSolid" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Eingerahmter Halbraum" />
+		<DocLocalization Locale="en" Name="Boxed Half Space" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Enclosure" UniqueId="1dfdfca3-ec6b-45af-8bdf-d2bdffe279bc" DefinedType="IfcBoundingBox" XsdFormat="attribute">
+			<Documentation>The box which bounds the resulting solid of the Boolean operation involving the half space solid for computational purposes only.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="UnboundedSurface" UniqueId="16450210-5fb3-44e7-9c40-21abdac56fac">
+			<Documentation>The BaseSurface defining the half space shall not be a bounded surface.</Documentation>
+			<Expression>NOT (&apos;IFCGEOMETRYRESOURCE.IFCCURVEBOUNDEDPLANE&apos; IN TYPEOF(SELF\IfcHalfSpaceSolid.BaseSurface))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

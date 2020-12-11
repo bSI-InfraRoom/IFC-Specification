@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcAlarm" Name="IfcAlarm" UniqueId="90995dc8-ff72-4331-bff5-af4591a13d27" BaseDefinition="IfcDistributionControlElement" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Alarm / Gefahrenmelder" />
+		<DocLocalization Locale="en" Name="Alarm" />
+		<DocLocalization Locale="fr" Name="Alarme" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="48e60449-60db-442b-9dda-c0a083a70b41" DefinedType="IfcAlarmTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="e334f43f-4c33-492b-9d9c-9d79d14ea95c">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcAlarmType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcAlarmTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcAlarmTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="58bab91e-5a68-4820-bda1-8a7442aa6670">
+			<Documentation>Either there is no alarm type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcAlarmType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+(&apos;IFCBUILDINGCONTROLSDOMAIN.IFCALARMTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcConstructionEquipmentResource" Name="IfcConstructionEquipmentResource" UniqueId="9fada597-3474-49fa-8994-f2b3e432d696" BaseDefinition="IfcConstructionResource" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Baugerät - Ressource" />
+		<DocLocalization Locale="en" Name="Construction Equipment Resource" />
+		<DocLocalization Locale="fr" Name="Équipement utilisé pour la construction" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="da8f2824-79d3-4e77-bf5c-996ae7f6ff8c" DefinedType="IfcConstructionEquipmentResourceTypeEnum" AttributeFlags="1">
+			<Documentation>Defines types of construction equipment resources.
+{ .change-ifc2x4}
+&gt; IFC4 New attribute.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="fea257ba-e62d-4355-9949-250853be7083">
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcConstructionEquipmentResourceTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcConstructionEquipmentResourceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

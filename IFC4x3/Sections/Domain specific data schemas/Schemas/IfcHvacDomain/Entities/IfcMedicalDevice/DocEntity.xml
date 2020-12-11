@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMedicalDevice" Name="IfcMedicalDevice" UniqueId="0a9974ef-6873-4eed-93ae-8bdbde6996b6" BaseDefinition="IfcFlowTerminal" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Medizinisches Gerät" />
+		<DocLocalization Locale="en" Name="Medical Device" />
+		<DocLocalization Locale="fr" Name="Equipement médical" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="bf6dacbf-d58a-4995-9f89-c8568c7b0fb3" DefinedType="IfcMedicalDeviceTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="8d2eb04e-391d-4c3e-a19e-d8022232b90a">
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcMedicalDeviceTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcMedicalDeviceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="64938054-e971-407b-a2c9-2c8f3d10db16">
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCMEDICALDEVICETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

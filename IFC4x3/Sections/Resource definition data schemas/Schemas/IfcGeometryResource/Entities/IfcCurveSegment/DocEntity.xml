@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurveSegment" UniqueId="d6ce201e-f8ff-4a1d-8b51-d56442ff95a1" BaseDefinition="IfcSegment" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="Placement" UniqueId="a77adc0f-663d-48a5-93ba-2357a48d6b11" DefinedType="IfcPlacement">
+			<Documentation>Placement in the context of the curve using this segment. As insertion point _SegmentStart_ is the reference point of _Placement_. _RefDirection_ of _Placement_ also specifies the sense of the trimmed segment of _ParentCurve_. RefDirection is bound to the paramettrization sense of the segment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="SegmentStart" UniqueId="6f50e160-9332-4b89-800a-485920e3e286" DefinedType="IfcCurveMeasureSelect">
+			<Documentation>First trimming point of the curve segment on the _ParentCurve_. This point is used as the insertion point into the segmented, gradient or composite curve using this segment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="SegmentLength" UniqueId="45481c8b-2d03-4cfa-9103-51c4cf0eb252" DefinedType="IfcCurveMeasureSelect">
+			<Documentation>Length of segment measured as length or parameter value from _SegmentStart_. The sign of this value defines the sense agreement.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ParentCurve" UniqueId="03e396f9-7ef2-4006-b7cd-e5898529305f" DefinedType="IfcCurve">
+			<Documentation>Curve to be used as base for the segment definition.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

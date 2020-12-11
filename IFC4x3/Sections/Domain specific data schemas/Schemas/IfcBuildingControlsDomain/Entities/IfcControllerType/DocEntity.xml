@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcControllerType" Name="IfcControllerType" UniqueId="082e1f55-cfe3-44d7-a8e2-234118f81fca" Status="H" BaseDefinition="IfcDistributionControlElementType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Regler - Typ" />
+		<DocLocalization Locale="en" Name="Controller Type" />
+		<DocLocalization Locale="fr" Name="Organe de contrôle type" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="d80f0fc4-c3a0-4726-9626-b00ad62f3bab" DefinedType="IfcControllerTypeEnum">
+			<Documentation>Identifies the predefined types of controller from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="1ff1fe5f-f7cc-4e5f-8e5e-245c31bde850">
+			<Expression>(PredefinedType &lt;&gt; IfcControllerTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcControllerTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

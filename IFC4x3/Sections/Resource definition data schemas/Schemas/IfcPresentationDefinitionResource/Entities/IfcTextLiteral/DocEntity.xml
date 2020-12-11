@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTextLiteral" UniqueId="fff1fb35-13c2-4e24-92f4-c2bfd5a9ba17" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Text - Buchstabensymbole" />
+		<DocLocalization Locale="en" Name="Text Literal" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="0f94e73e-d5ba-42e4-a381-d0f80b328145" DefinedType="IfcTextLiteralWithExtent" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Literal" UniqueId="55eb2d39-e680-4ba3-9d6a-8daf9dde4691" DefinedType="IfcPresentableText">
+			<Documentation>The text literal to be presented.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Placement" UniqueId="eaf62d6a-c033-4077-8aa5-7a11008ec5c5" DefinedType="IfcAxis2Placement">
+			<Documentation>An _IfcAxis2Placement_ that determines the placement and orientation of the presented string.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Path" UniqueId="5d004ead-6e33-418a-b7b0-5e97200cc4b0" DefinedType="IfcTextPath">
+			<Documentation>The writing direction of the text literal.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

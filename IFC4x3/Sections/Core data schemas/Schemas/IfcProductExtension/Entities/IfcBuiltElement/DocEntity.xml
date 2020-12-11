@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBuiltElement" Name="IfcBuiltElement" UniqueId="a00e8863-dd67-4f4b-8e83-2c3ee0290740" BaseDefinition="IfcElement" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Bauteil / Bauelement" />
+		<DocLocalization Locale="en" Name="Building Element" />
+		<DocLocalization Locale="fr" Name="Elément de construction" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="3085575e-c2d0-405f-92fd-294a1658e1be" DefinedType="IfcCourse" />
+		<DocSubtype UniqueId="5c03f648-7dcd-4ef1-9494-c9aa4f98d99a" DefinedType="IfcPavement" />
+		<DocSubtype UniqueId="1581a535-f696-45d1-9099-881c2edafc7b" DefinedType="IfcEarthworksElement" />
+		<DocSubtype UniqueId="6fb2bf85-dbd4-4b59-a8f2-dc09a90ea3a0" DefinedType="IfcRail" />
+		<DocSubtype UniqueId="e6182854-c31a-4586-895e-1651a3f91826" DefinedType="IfcTrackElement" />
+		<DocSubtype UniqueId="73f59010-5090-4858-814f-27187c632b1b" DefinedType="IfcMooringDevice" />
+		<DocSubtype UniqueId="5ad11b63-9122-4ac1-abfd-b5bbb9536383" DefinedType="IfcNavigationElement" />
+		<DocSubtype UniqueId="2ad87034-519a-48f3-8d49-78f4faa9a982" DefinedType="IfcKerb" />
+	</Subtypes>
+	<WhereRules>
+		<DocWhereRule Name="MaxOneMaterialAssociation" UniqueId="fa36df67-4abc-4e2c-8e40-f09974b02f2d">
+			<Documentation>There should be only a maximum of one material association assigned to an building element.
+&gt; NOTE&amp;nbsp; The material association can assign a single material, a set of materials, a set of material layers, or a set of material profiles by a single association relationship.
+
+{ .change-ifc2x4}
+&gt; FC2x4 CHANGE The where rule has been promoted from the subtype _IfcWall_.</Documentation>
+			<Expression>SIZEOF (QUERY(temp &lt;* SELF\IfcObjectDefinition.HasAssociations |
+  &apos;IFCPRODUCTEXTENSION.IFCRELASSOCIATESMATERIAL&apos; IN TYPEOF(temp)
+  )) &lt;= 1</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

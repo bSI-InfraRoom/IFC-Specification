@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelSpaceBoundary" UniqueId="b5068876-210f-4343-a93a-674f2a9e63ff" BaseDefinition="IfcRelConnects" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Raumgrenzen - Relation" />
+		<DocLocalization Locale="en" Name="Rel Space Boundary" />
+		<DocLocalization Locale="fr" Name="Limite d&apos;espace" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="e6c1f4b3-dd54-436b-908d-2f24a5deeced" DefinedType="IfcRelSpaceBoundary1stLevel" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="RelatingSpace" UniqueId="f8599c4e-f4c7-493b-acaf-453c795e6070" DefinedType="IfcSpaceBoundarySelect">
+			<Documentation>Reference to one spaces that is delimited by this boundary.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelatedBuildingElement" UniqueId="6523e107-ea64-416e-a049-ceda315c7e48" DefinedType="IfcElement" XsdFormat="attribute">
+			<Documentation>Reference to ~~Building~~ Element, that defines the Space Boundaries.
+{ .change-ifc2x}
+&gt; IFC2x CHANGE&amp;nbsp; The data type has been changed from _IfcBuildingElement_ to _IfcElement_ with upward compatibility for file based exchange.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to be mandatory.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ConnectionGeometry" UniqueId="1e9b8391-2d9c-4039-8d4a-922a0ee5c8c2" DefinedType="IfcConnectionGeometry" AttributeFlags="1" XsdFormat="attribute">
+			<Documentation>Physical representation of the space boundary. Provided as a **curve or** surface given within the LCS of the space.
+{ .change-ifc2x}
+&gt; IFC2x CHANGE&amp;nbsp; The data type has been changed from _IfcConnectionSurfaceGeometry_ to _IfcConnectionGeometry_ with upward compatibility for file based exchange.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PhysicalOrVirtualBoundary" UniqueId="229c3b86-471b-488d-bcb1-333acb26d486" DefinedType="IfcPhysicalOrVirtualEnum">
+			<Documentation>Defines, whether the Space Boundary is physical (Physical) or virtual (Virtual).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="InternalOrExternalBoundary" UniqueId="8a88debb-6d88-4f0b-80bc-706ba9f88f51" DefinedType="IfcInternalOrExternalEnum">
+			<Documentation>Defines, whether the Space Boundary is internal (Internal), or external, i.e. adjacent to open space (that can be an partially enclosed space, such as terrace (External).</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPhysOrVirt" UniqueId="237f63e2-1e93-4d01-a43d-176d5217de82">
+			<Documentation>If the space boundary is physical, it shall be provided by an element (i.e. excluding a virtual element). If the space boundary is virtual, it shall either have a virtual element or an opening providing the space boundary. If the space boundary _PhysicalOrVirtualBoundary_ attribute is not defined, no restrictions are imposed.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Where rule corrected to accept an _IfcOpeningElement_ for a virtual space boundary.</Documentation>
+			<Expression>((PhysicalOrVirtualBoundary = IfcPhysicalOrVirtualEnum.Physical) 
+  AND (NOT(&apos;IFCPRODUCTEXTENSION.IFCVIRTUALELEMENT&apos; IN TYPEOF(RelatedBuildingElement)))) 
+OR 
+((PhysicalOrVirtualBoundary = IfcPhysicalOrVirtualEnum.Virtual) 
+  AND ((&apos;IFCPRODUCTEXTENSION.IFCVIRTUALELEMENT&apos; IN TYPEOF(RelatedBuildingElement)) 
+  OR   (&apos;IFCPRODUCTEXTENSION.IFCOPENINGELEMENT&apos; IN TYPEOF(RelatedBuildingElement)))) 
+OR 
+(PhysicalOrVirtualBoundary = IfcPhysicalOrVirtualEnum.NotDefined)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

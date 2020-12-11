@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSystemFurnitureElementType" UniqueId="c8109093-505d-450a-871d-6a67de192b17" BaseDefinition="IfcFurnishingElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Möbelsystem-Element - Typ" />
+		<DocLocalization Locale="en" Name="System Furniture Element Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;élément de l&apos;ameublement" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="c246be92-c357-473a-957f-6aefef35989b" DefinedType="IfcSystemFurnitureElementTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="0efe4892-b53a-46e0-a993-37bbdd608e01">
+			<Expression>(PredefinedType &lt;&gt; IfcSystemFurnitureElementTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcSystemFurnitureElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

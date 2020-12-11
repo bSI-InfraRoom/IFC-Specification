@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTendonConduitType" UniqueId="03361a7d-52c0-4b12-bfb4-d1b1cfd5045a" BaseDefinition="IfcReinforcingElementType" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="8272e989-239d-46ff-8a3d-f4fc071a2672" DefinedType="IfcTendonConduitTypeEnum">
+			<Documentation>Subtype of tendon conduit.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="a984c226-dcfa-427c-94c1-31df3b37e5d0">
+			<Documentation>The inherited attribute _ElementType_ shall be provided if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcTendonConduitTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcTendonConduitTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

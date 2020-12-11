@@ -1,0 +1,206 @@
+(RepType : IfcLabel; Items : SET OF IfcRepresentationItem) : LOGICAL;
+    
+    LOCAL
+      Count : INTEGER := 0;
+    END_LOCAL;
+
+    CASE RepType OF 
+    'Point' :
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRYRESOURCE.IFCPOINT' IN TYPEOF(temp))));
+      END;
+
+    'PointCloud' :
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRYRESOURCE.IFCCARTESIANPOINTLIST3D' IN TYPEOF(temp))));
+      END;
+
+    'Curve' :
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRYRESOURCE.IFCCURVE' IN TYPEOF(temp))));
+      END;
+
+    'Curve2D' :
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRYRESOURCE.IFCCURVE' IN TYPEOF(temp)) 
+                 AND (temp\IfcCurve.Dim = 2)));
+      END;
+
+    'Curve3D' :
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRYRESOURCE.IFCCURVE' IN TYPEOF(temp)) 
+                 AND (temp\IfcCurve.Dim = 3)));
+      END;
+
+    'Surface' :
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRYRESOURCE.IFCSURFACE' IN TYPEOF(temp))));
+      END;
+
+    'Surface2D' :
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRYRESOURCE.IFCSURFACE' IN TYPEOF(temp)) 
+                 AND (temp\IfcSurface.Dim = 2)));
+      END;
+
+    'Surface3D' :
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRYRESOURCE.IFCSURFACE' IN TYPEOF(temp)) 
+                 AND (temp\IfcSurface.Dim = 3)));
+      END;
+
+    'FillArea' :
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRYRESOURCE.IFCANNOTATIONFILLAREA' IN TYPEOF(temp))));
+      END;
+
+    'Text' :
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRYRESOURCE.IFCTEXTLITERAL' IN TYPEOF(temp))));
+      END;
+
+    'AdvancedSurface' :
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | 'IFCGEOMETRYRESOURCE.IFCBSPLINESURFACE' IN TYPEOF(temp)));
+      END;
+
+    'Annotation2D' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | (
+                  SIZEOF(TYPEOF(temp) * [
+                   'IFCGEOMETRYRESOURCE.IFCPOINT',
+                   'IFCGEOMETRYRESOURCE.IFCCURVE',
+                   'IFCGEOMETRICMODELRESOURCE.IFCGEOMETRICCURVESET',
+                   'IFCPRESENTATIONDEFINITIONRESOURCE.IFCANNOTATIONFILLAREA',
+                   'IFCPRESENTATIONDEFINITIONRESOURCE.IFCTEXTLITERAL']) = 1)
+                 ));
+      END;
+
+    'GeometricSet' : 
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRICMODELRESOURCE.IFCGEOMETRICSET' IN TYPEOF(temp))
+                 OR ('IFCGEOMETRYRESOURCE.IFCPOINT' IN TYPEOF(temp))
+                 OR ('IFCGEOMETRYRESOURCE.IFCCURVE' IN TYPEOF(temp))
+                 OR ('IFCGEOMETRYRESOURCE.IFCSURFACE' IN TYPEOF(temp))));
+      END;
+
+    'GeometricCurveSet' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRICMODELRESOURCE.IFCGEOMETRICCURVESET' IN TYPEOF(temp))
+                 OR ('IFCGEOMETRICMODELRESOURCE.IFCGEOMETRICSET' IN TYPEOF(temp))
+                 OR ('IFCGEOMETRYRESOURCE.IFCPOINT' IN TYPEOF(temp))
+                 OR ('IFCGEOMETRYRESOURCE.IFCCURVE' IN TYPEOF(temp))));
+         REPEAT i:=1 TO HIINDEX(Items);  
+           IF ('IFCGEOMETRYRESOURCE.IFCGEOMETRICSET' IN TYPEOF(Items[i]))
+           THEN
+             IF (SIZEOF(QUERY(temp <* Items[i]\IfcGeometricSet.Elements | 'IFCGEOMETRYRESOURCE.IFCSURFACE' IN TYPEOF(temp))) > 0)
+             THEN
+               Count := Count - 1;
+             END_IF;
+           END_IF;
+         END_REPEAT;
+      END;
+
+    'Tessellation' :
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | 'IFCGEOMETRICMODELRESOURCE.IFCTESSELLATEDITEM' IN TYPEOF(temp)));
+      END;
+
+    'SurfaceOrSolidModel' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | SIZEOF([
+                   'IFCGEOMETRICMODELRESOURCE.IFCTESSELLATEDITEM',
+                   'IFCGEOMETRICMODELRESOURCE.IFCSHELLBASEDSURFACEMODEL',
+                   'IFCGEOMETRICMODELRESOURCE.IFCFACEBASEDSURFACEMODEL',
+                   'IFCGEOMETRICMODELRESOURCE.IFCSOLIDMODEL'] * TYPEOF(temp)) >= 1
+                 ));      
+      END;
+
+    'SurfaceModel' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | SIZEOF([
+                   'IFCGEOMETRICMODELRESOURCE.IFCTESSELLATEDITEM',
+                   'IFCGEOMETRICMODELRESOURCE.IFCSHELLBASEDSURFACEMODEL',
+                   'IFCGEOMETRICMODELRESOURCE.IFCFACEBASEDSURFACEMODEL'] * TYPEOF(temp)) >= 1
+                 ));      
+      END;
+
+    'SolidModel' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRICMODELRESOURCE.IFCSOLIDMODEL' IN TYPEOF(temp))));            
+      END;
+
+    'SweptSolid' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | (SIZEOF([
+                   'IFCGEOMETRICMODELRESOURCE.IFCEXTRUDEDAREASOLID',
+                   'IFCGEOMETRICMODELRESOURCE.IFCREVOLVEDAREASOLID'] * TYPEOF(temp)) >= 1
+                   ) AND (SIZEOF([
+                   'IFCGEOMETRICMODELRESOURCE.IFCEXTRUDEDAREASOLIDTAPERED',
+                   'IFCGEOMETRICMODELRESOURCE.IFCREVOLVEDAREASOLIDTAPERED'] * TYPEOF(temp)) = 0
+                   )
+                 ));                             
+      END;
+
+    'AdvancedSweptSolid' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | SIZEOF([
+                   'IFCGEOMETRICMODELRESOURCE.IFCSWEPTAREASOLID',
+                   'IFCGEOMETRICMODELRESOURCE.IFCSWEPTDISKSOLID'] *  TYPEOF(temp)) >= 1
+                 ));      
+      END;
+
+    'CSG' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | SIZEOF([
+                   'IFCGEOMETRICMODELRESOURCE.IFCBOOLEANRESULT',
+                   'IFCGEOMETRICMODELRESOURCE.IFCCSGPRIMITIVE3D',
+                   'IFCGEOMETRICMODELRESOURCE.IFCCSGSOLID'] *  TYPEOF(temp)) >= 1
+                 ));            
+      END;
+
+    'Clipping' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | SIZEOF([
+                   'IFCGEOMETRICMODELRESOURCE.IFCCSGSOLID',
+                   'IFCGEOMETRICMODELRESOURCE.IFCBOOLEANCLIPPINGRESULT'] * TYPEOF(temp)) >= 1
+                 )); 
+      END;
+
+    'Brep' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRICMODELRESOURCE.IFCFACETEDBREP' IN TYPEOF(temp))));      
+      END;
+
+    'AdvancedBrep' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRICMODELRESOURCE.IFCMANIFOLDSOLIDBREP' IN TYPEOF(temp))));      
+      END;
+
+    'BoundingBox' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRICMODELRESOURCE.IFCBOUNDINGBOX' IN TYPEOF(temp))));
+        IF (SIZEOF(Items) > 1)
+        THEN
+          Count := 0;
+        END_IF;   
+      END;
+
+    'SectionedSpine' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRICMODELRESOURCE.IFCSECTIONEDSPINE' IN TYPEOF(temp))));      
+      END;
+
+    'LightSource' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCPRESENTATIONORGANIZATIONRESOURCE.IFCLIGHTSOURCE' IN TYPEOF(temp))));      
+      END;
+
+    'MappedRepresentation' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRYRESOURCE.IFCMAPPEDITEM' IN TYPEOF(temp))));  
+      END;
+
+     OTHERWISE : RETURN(?);
+    END_CASE;
+    RETURN (Count = SIZEOF(Items));

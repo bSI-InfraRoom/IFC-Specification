@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssignsToProduct" UniqueId="72eec376-bbab-40d5-9342-93108c172713" BaseDefinition="IfcRelAssigns" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Weist Produkt zu - Relation" />
+		<DocLocalization Locale="en" Name="Rel Assigns To Product" />
+		<DocLocalization Locale="fr" Name="Assignation à produit" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelatingProduct" UniqueId="2daaadb6-2a0e-43bc-8f2b-5cdcdce021dd" DefinedType="IfcProductSelect">
+			<Documentation>Reference to the product or product type to which the objects are assigned to.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Datatype expanded to include _IfcProduct_ and _IfcTypeProduct_.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NoSelfReference" UniqueId="47b05abc-be1e-4eda-9c7f-73fa0e1c37c0">
+			<Documentation>The instance to which the relation points, as provided by _RelatingProduct_ shall not be contained in the set of _RelatedObjects_.</Documentation>
+			<Expression>SIZEOF(QUERY(Temp &lt;* SELF\IfcRelAssigns.RelatedObjects | RelatingProduct :=: Temp)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

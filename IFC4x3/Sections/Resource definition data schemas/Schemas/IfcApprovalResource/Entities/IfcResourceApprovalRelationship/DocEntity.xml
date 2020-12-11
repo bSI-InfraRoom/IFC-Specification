@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcResourceApprovalRelationship" UniqueId="6de8ca8d-3bd7-4b78-8326-eece0c07a365" BaseDefinition="IfcResourceLevelRelationship" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="allgemeine Relation - Zuweisung von Genehmigungen" />
+		<DocLocalization Locale="en" Name="Resource Approval Relationship" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelatedResourceObjects" UniqueId="c6883e2d-5f86-4009-859d-e33bbdc46730" DefinedType="IfcResourceObjectSelect" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Resource objects that are approved.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelatingApproval" UniqueId="7a73f010-f2e7-4683-b597-b07460897bf5" DefinedType="IfcApproval" XsdFormat="attribute">
+			<Documentation>The approval for the resource objects selected.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

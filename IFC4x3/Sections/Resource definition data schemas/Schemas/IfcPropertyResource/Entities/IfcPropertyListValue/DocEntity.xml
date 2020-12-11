@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPropertyListValue" Name="IfcPropertyListValue" UniqueId="166fb09e-156c-46c0-ae3d-c231cb40cd96" BaseDefinition="IfcSimpleProperty" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Merkmal mit Listenwert" />
+		<DocLocalization Locale="en" Name="Property List Value" />
+		<DocLocalization Locale="fr" Name="Propriété à liste de valeurs" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="ListValues" UniqueId="32f56438-324e-4cc0-a015-fd42bc1d2464" DefinedType="IfcValue" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
+			<Documentation>List of property values.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The attribute has been made optional with upward compatibility for file based exchange.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Unit" UniqueId="6c1e2deb-0757-4bab-bcbd-d6199312452a" DefinedType="IfcUnit" AttributeFlags="1">
+			<Documentation>Unit for the list values, if not given, the default value for the measure type (given by the TYPE of nominal value) is used as defined by the global unit assignment at IfcProject.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR31" UniqueId="55ab2346-9d8e-4fad-8614-eb4abf85166d">
+			<Documentation>All values within the list of values shall be of the same measure type.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* SELF.ListValues | 
+  NOT(TYPEOF(SELF.ListValues[1]) = TYPEOF(temp))
+  )) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

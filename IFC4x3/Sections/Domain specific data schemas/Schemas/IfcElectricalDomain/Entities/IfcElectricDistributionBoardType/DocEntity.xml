@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElectricDistributionBoardType" UniqueId="e153e8ad-aea7-4f9a-b6aa-2f143a1c3e18" Status="Deprecated" BaseDefinition="IfcFlowControllerType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Elektrischer Verteilungsregler - Typ" />
+		<DocLocalization Locale="en" Name="Electric Distribution Board Type" />
+		<DocLocalization Locale="fr" Name="Type de tableau de distribution électrique" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="4c8ff855-b2e2-47b6-bc14-b23a381aa1fb" DefinedType="IfcElectricDistributionBoardTypeEnum">
+			<Documentation>Identifies the predefined types of electric distribution type from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="b40c3a27-6f88-4b22-8dc5-f87eab4c7b62">
+			<Expression>(PredefinedType &lt;&gt; IfcElectricDistributionBoardTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcElectricDistributionBoardTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

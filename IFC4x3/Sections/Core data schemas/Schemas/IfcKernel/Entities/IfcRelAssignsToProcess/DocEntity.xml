@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssignsToProcess" UniqueId="2b84a703-2870-4982-b755-d5e128989509" BaseDefinition="IfcRelAssigns" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Weist Prozess zu - Relation" />
+		<DocLocalization Locale="en" Name="Rel Assigns To Process" />
+		<DocLocalization Locale="fr" Name="Assignation à processus" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelatingProcess" UniqueId="54a9a406-c37a-4960-bd8e-5ffa24089552" DefinedType="IfcProcessSelect">
+			<Documentation>Reference to the process to which the objects are assigned to.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Datatype expanded to include _IfcProcess_ and _IfcTypeProcess_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="QuantityInProcess" UniqueId="d46dadaf-98f8-4365-b82a-c34da0aaab02" DefinedType="IfcMeasureWithUnit" AttributeFlags="1" XsdFormat="attribute">
+			<Documentation>Quantity of the object specific for the operation by this process.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NoSelfReference" UniqueId="b0e594a8-2e80-4307-a412-0d7b307649c5">
+			<Documentation>The instance to with the relation points as provided by _RelatingProcess_ shall not be contained in the set of _RelatedObjects_.</Documentation>
+			<Expression>SIZEOF(QUERY(Temp &lt;* SELF\IfcRelAssigns.RelatedObjects | RelatingProcess :=: Temp)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

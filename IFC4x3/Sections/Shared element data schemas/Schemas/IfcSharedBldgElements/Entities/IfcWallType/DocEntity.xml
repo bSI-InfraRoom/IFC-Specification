@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWallType" Name="IfcWallType" UniqueId="598d0f96-6b0f-45f5-90f4-96758e77d64f" BaseDefinition="IfcBuiltElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Wand - Typ" />
+		<DocLocalization Locale="en" Name="Wall Type" />
+		<DocLocalization Locale="fr" Name="Type de mur" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="a6dd8a76-1f8b-47b3-b75c-ec1a762f6758" DefinedType="IfcWallTypeEnum">
+			<Documentation>Identifies the predefined types of a wall element from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="c4a7a35f-0028-455c-a491-f8d23a4208c4">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcWallTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcWallTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

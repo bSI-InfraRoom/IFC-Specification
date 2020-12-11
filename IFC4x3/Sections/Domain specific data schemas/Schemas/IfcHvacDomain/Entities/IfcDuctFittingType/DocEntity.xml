@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDuctFittingType" Name="IfcDuctFittingType" UniqueId="cb200223-5993-48b1-9720-c4e9380a4074" BaseDefinition="IfcFlowFittingType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Kanalverbinder - Typ" />
+		<DocLocalization Locale="en" Name="Duct Fitting Type" />
+		<DocLocalization Locale="fr" Name="Type de raccord de gaine" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="e24d6c2c-4c21-4500-89ea-01e996e56021" DefinedType="IfcDuctFittingTypeEnum">
+			<Documentation>The type of duct fitting.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="ed01d24e-e6d2-4a7d-8263-bf25c4307f52">
+			<Expression>(PredefinedType &lt;&gt; IfcDuctFittingTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcDuctFittingTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

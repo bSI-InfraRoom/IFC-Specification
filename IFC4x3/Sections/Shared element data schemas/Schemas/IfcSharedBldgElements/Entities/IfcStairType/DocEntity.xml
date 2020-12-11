@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStairType" Name="IfcStairType" UniqueId="d3b32e07-c9d3-4488-99fe-8ce356d2adc5" BaseDefinition="IfcBuiltElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Treppe - Typ" />
+		<DocLocalization Locale="en" Name="Stair Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;escalier" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="b0b7e80d-1752-42ff-9551-397dbbab6cf2" DefinedType="IfcStairTypeEnum">
+			<Documentation>Identifies the predefined types of a stair element from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="5a6d73e7-001c-43d2-95b5-a6301448d2c0">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcStairTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcStairTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

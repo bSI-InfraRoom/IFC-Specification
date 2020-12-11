@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSharedFacilitiesElements" UniqueId="d08265bb-86ed-4cfa-9226-52cff0914a00">
+	<SchemaRefs>
+		<DocSchemaRef Name="IFCACTORRESOURCE" UniqueId="4da45c01-5282-4851-a08a-3fc657a5e8c6">
+			<Definitions>
+				<DocDefinitionRef Name="IfcActorSelect" UniqueId="86b8f067-7199-49af-b7a3-fbb47e6528d3" />
+				<DocDefinitionRef Name="IfcPerson" UniqueId="0413595e-975e-425a-a271-ff9fc9196504" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCCOSTRESOURCE" UniqueId="36e0c468-17b0-4d3e-bfc2-5911e5b565e5">
+			<Definitions>
+				<DocDefinitionRef Name="IfcCostValue" UniqueId="37cfcff7-5b01-47a2-8020-cc72ef009c48" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCDATETIMERESOURCE" UniqueId="7904207d-b481-4cd7-85d3-dd84e5c94393">
+			<Definitions>
+				<DocDefinitionRef Name="IfcDate" UniqueId="4b69c8af-9e5d-4878-9a36-1b2d5ed98c04" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCKERNEL" UniqueId="aa26471f-a710-4983-87fa-89baf83b0dec">
+			<Definitions>
+				<DocDefinitionRef Name="IfcGroup" UniqueId="a08cf663-6fc6-4f97-90ca-7acdadee063f" />
+				<DocDefinitionRef Name="IfcActor" UniqueId="72e1bb7f-bede-47c8-8da3-d0f50f8e57a9" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCMEASURERESOURCE" UniqueId="ca1767a5-cf1c-4893-8402-35f700ae2065">
+			<Definitions>
+				<DocDefinitionRef Name="IfcIdentifier" UniqueId="d2d397c5-8df6-4ead-b8df-1ea741ac72cd" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCPRODUCTEXTENSION" UniqueId="17f36ddb-c3a8-4763-b171-d987659cc97a">
+			<Definitions>
+				<DocDefinitionRef Name="IfcAssemblyPlaceEnum" UniqueId="f7558510-ad44-4b9d-88ef-33bc4ff9e5a0" />
+				<DocDefinitionRef Name="IfcFurnishingElementType" UniqueId="9e5e4c0c-c49e-4913-846a-4213cee4e44b" />
+				<DocDefinitionRef Name="IfcFurnishingElement" UniqueId="77858f5e-fe48-4c6e-bfc6-4c46faad005a" />
+			</Definitions>
+		</DocSchemaRef>
+	</SchemaRefs>
+</DocSchema>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeographicElementType" UniqueId="5f98c5aa-abaf-476a-b395-6e07f22724fc" BaseDefinition="IfcElementType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Geographisches Objekt - Typ" />
+		<DocLocalization Locale="en" Name="Geographic Element Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;élément géographique" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="7de7050a-ee4b-401d-bdb3-71681626e5e7" DefinedType="IfcGeographicElementTypeEnum">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="592562f4-4955-438d-94fe-3a692108f46e">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcGeographicElementTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcGeographicElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

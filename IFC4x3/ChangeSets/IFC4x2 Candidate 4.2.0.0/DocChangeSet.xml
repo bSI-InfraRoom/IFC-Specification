@@ -1,0 +1,1157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocChangeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IFC4x2 Candidate 4.2.0.0" UniqueId="84b4c977-f9dc-41f2-9f08-74cd17329cd8" VersionBaseline="4.1.0.0">
+	<ChangesEntities>
+		<DocChangeAction Name="Core data schemas" UniqueId="c563afbc-02d8-47be-ad05-8a0264441ee0">
+			<Changes>
+				<DocChangeAction Name="IfcKernel" UniqueId="0847ac8d-c6de-4226-9294-d5ea49b818e3">
+					<Changes>
+						<DocChangeAction Name="IfcProxy" UniqueId="0dc488fb-c946-4e5d-aab3-1b0b1fe8fdf5">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="aef198a5-973f-4431-a17f-c5a9b2770dbf" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcProductExtension" UniqueId="483889b0-c92b-4c9b-9cba-cb1bbe7d8c59">
+					<Changes>
+						<DocChangeAction Name="IfcBridgePartTypeEnum" UniqueId="dda87533-0036-477b-979a-9742de6fa852" Action="added" />
+						<DocChangeAction Name="IfcBridgeTypeEnum" UniqueId="e6ec6e34-9112-4db3-a5a2-cc04830872b5" Action="added" />
+						<DocChangeAction Name="IfcElementAssemblyTypeEnum" UniqueId="12e8e4bd-4504-4f7a-b5fd-050dd24fffdc">
+							<Changes>
+								<DocChangeAction Name="ABUTMENT" UniqueId="026021ab-8a8a-4b4e-917f-b7809cbd91f6" Action="added" />
+								<DocChangeAction Name="PIER" UniqueId="01dd8a32-dd86-4d0e-87ba-ebddc5b9edf6" Action="added" />
+								<DocChangeAction Name="PYLON" UniqueId="543a0255-dbd6-4769-87a8-61d2e4266de1" Action="added" />
+								<DocChangeAction Name="CROSS_BRACING" UniqueId="4d942091-a4b2-4d30-b0a0-ba5fe83de949" Action="added" />
+								<DocChangeAction Name="DECK" UniqueId="95af132b-8dad-4d87-97e5-c212cc73e2ce" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcGeographicElementTypeEnum" UniqueId="83029871-35cb-408a-8f5b-06820c825b6b">
+							<Changes>
+								<DocChangeAction Name="SOIL_BORING_POINT" UniqueId="ef21a20d-4626-4e80-b1ba-6401ad22ae52" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcProjectionElementTypeEnum" UniqueId="1c932161-a399-474c-85ce-2f08fc4c130b">
+							<Changes>
+								<DocChangeAction Name="BLISTER" UniqueId="4ba1983f-243a-4cd9-8d24-4833449995ce" Action="added" />
+								<DocChangeAction Name="DEVIATOR" UniqueId="5d7b1c57-8432-43b3-81a1-1b1b51549d9d" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAlignment" UniqueId="a5f1508f-762c-4031-b586-91e0d57a534b">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="8f3bc606-44f0-4c46-800c-f3ac3e705681" Action="added" />
+								<DocChangeAction Name="Positions" UniqueId="c4a81d92-1426-41fa-a0ef-d06ab6d85c69" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAnnotation" UniqueId="1e9fde72-c3b6-4f31-82c7-aca61f8402ab">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="8a794f02-9c20-40a9-9859-c22e876928cd" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcBridge" UniqueId="26b769aa-254b-42b5-8f54-b5a799a5f958" Action="added" />
+						<DocChangeAction Name="IfcBridgePart" UniqueId="6ec6d04e-a817-440e-8c48-6c8407aad25c" Action="added" />
+						<DocChangeAction Name="IfcBuilding" UniqueId="5094eb63-8aec-45c9-819e-50a17bdbbf9e">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="f3e8dc10-553a-4b65-8242-da26f47b5448" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcBuildingStorey" UniqueId="b95ef6c8-9acb-4810-a7fe-49517f84c5b8">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="4bf4c3ca-817f-4864-b63f-9c9da87acf11" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCivilElement" UniqueId="5ad4a1ba-4c28-4ac1-962d-819591970316">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="4621e0f7-dc4e-4cd3-a611-a27f6ba1b696" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDistributionElement" UniqueId="4b03690e-dd23-4448-98aa-94bdb63f14ac">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="67d06f83-8842-4771-98a9-2dfc97c15460" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcElementAssembly" UniqueId="f88bc178-59dc-4400-9a79-cf9dbf7774f2">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="54c21c70-62c9-454a-9936-1ab9ae94b0ef" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcExternalSpatialElement" UniqueId="2d7bbba6-2c80-4f5f-9ed0-bcbb5e2a9582">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="5d5d2063-e8b8-49d3-8ab6-91ffa11555a9" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFacility" UniqueId="b2d570c7-62b6-4c22-a616-ccacd4745d2a" Action="added" />
+						<DocChangeAction Name="IfcFacilityPart" UniqueId="a5c5ace3-3033-447d-9786-2bc345a90e05" Action="added" />
+						<DocChangeAction Name="IfcFurnishingElement" UniqueId="a874638f-a3c9-49af-ab78-8ea3b1721dbe">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="e14dfd5c-1bb4-479d-9973-1e79ae42dac3" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcGeographicElement" UniqueId="13b330af-ae20-410f-8ab4-e6dec59469aa">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="4051d422-319c-4e33-ba4f-5744dcae3912" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcGrid" UniqueId="8ecc22e6-ba54-46d8-95de-8797f0b4d371">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="cafe7000-b23f-439b-aced-5f6b5296724a" Action="added" />
+								<DocChangeAction Name="Positions" UniqueId="a536655e-e32e-4e42-8e62-f4aba2f79d9a" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcLinearPositioningElement" UniqueId="42788463-cde0-45d5-87fb-5b1ba2557c9d" Action="modified">
+							<Aspects>
+								<DocChangeAspect Aspect="instantiation" OldValue="ABSTRACT" />
+							</Aspects>
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="6d95fd1c-c34f-4e50-b0f8-71a6b9a297f8" Action="added" />
+								<DocChangeAction Name="Positions" UniqueId="5b01c2df-6a3a-4c20-9b1a-94cd953dca75" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcOpeningElement" UniqueId="87cdba50-53bb-4b2f-9621-4314caf751d1">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="88b6c382-4a87-4300-b738-6fc9bc2039d8" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcOpeningStandardCase" UniqueId="f6cb7887-fc45-45a2-b275-564e66452bfd">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="f4adbc0b-9eac-4569-b150-c8600f6bc6d1" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcProjectionElement" UniqueId="9dac15aa-63c1-4964-8d41-c5d4ac835243">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="1d57cb0d-b421-4560-bcf8-5b001e603c2e" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcReferent" UniqueId="c9588dfb-1459-4966-9938-373d1bfae084">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="3d1e7e17-24e9-4eaa-93e7-de36cde2fe8b" Action="added" />
+								<DocChangeAction Name="Positions" UniqueId="6d827591-78ae-4216-9a15-f28b89a73a45" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcRelPositions" UniqueId="ce0ff885-6565-4504-b123-80e5f5ca2f7d" Action="added" />
+						<DocChangeAction Name="IfcSite" UniqueId="1a92a165-14ca-4f91-94bd-721c4838c2b7">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="50b600dd-a7ff-4500-98f7-6c2d4d42d483" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSpace" UniqueId="2187c83f-8c91-4995-929a-627edb809fe2">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="218dcdff-6227-40c1-98ce-6626d76afa1d" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSpatialZone" UniqueId="9193b11c-9f0c-4084-b266-9c65bd9db51a">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="3967382c-fdc4-4b08-b876-7d30bc676c32" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTransportElement" UniqueId="282bc4ec-02fc-429f-89ae-d204259c6caf">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="0409c321-4797-4f05-81c6-d6568d4719ca" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcVirtualElement" UniqueId="4d9376e7-c49b-4705-9842-7caaf98d9909">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="2f268609-97f5-48ee-87f2-86f07c6d07a3" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+			</Changes>
+		</DocChangeAction>
+		<DocChangeAction Name="Shared element data schemas" UniqueId="53fba90b-257a-4278-aa76-dc29bd7e6602">
+			<Changes>
+				<DocChangeAction Name="IfcSharedBldgElements" UniqueId="579565a0-140f-4451-abc5-ba027a736297">
+					<Changes>
+						<DocChangeAction Name="IfcBeamTypeEnum" UniqueId="ad88a797-dc0e-422a-a10d-510c84133cf4">
+							<Changes>
+								<DocChangeAction Name="GIRDER_SEGMENT" UniqueId="280ef2ba-c633-4999-8077-6b075b4b3c85" Action="added" />
+								<DocChangeAction Name="DIAPHRAGM" UniqueId="935968ed-0215-4372-bf6f-d6ddee6ae580" Action="added" />
+								<DocChangeAction Name="PIERCAP" UniqueId="5d8fca05-54ab-4224-b093-fc2b90d1bd70" Action="added" />
+								<DocChangeAction Name="HATSTONE" UniqueId="85795a90-05d5-4cce-823d-00a2c208d78f" Action="added" />
+								<DocChangeAction Name="CORNICE" UniqueId="9fc00965-13b5-4253-940c-0841c1a1957a" Action="added" />
+								<DocChangeAction Name="EDGEBEAM" UniqueId="5047b2ed-252e-4c35-ad62-d6b2bfd172a4" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcBearingTypeDisplacementEnum" UniqueId="1e3343be-8d79-4f85-a275-26773c85264e" Action="added" />
+						<DocChangeAction Name="IfcBearingTypeEnum" UniqueId="3e8b2682-95a7-4bbc-aa2b-c3dc2918286b" Action="added" />
+						<DocChangeAction Name="IfcBuildingSystemTypeEnum" UniqueId="40b4114f-c8a2-48c8-a1b4-947a95528de0">
+							<Changes>
+								<DocChangeAction Name="REINFORCING" UniqueId="9237c6f3-fc0f-4ac1-9b85-7a8171dccbc1" Action="added" />
+								<DocChangeAction Name="PRESTRESSING" UniqueId="cc38e3aa-e8b9-481d-9eea-3db054fa4117" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCaissonFoundationTypeEnum" UniqueId="66c3b85d-ba8c-4fed-b476-90088734de5b" Action="added" />
+						<DocChangeAction Name="IfcColumnTypeEnum" UniqueId="6b83c8d7-1499-461d-84cc-da10e0d73669">
+							<Changes>
+								<DocChangeAction Name="PIERSTEM" UniqueId="fcf53cec-2f27-41e6-8a68-06a50b52042e" Action="added" />
+								<DocChangeAction Name="PIERSTEM_SEGMENT" UniqueId="be83afc5-cf26-4073-be01-bcd07dc453a9" Action="added" />
+								<DocChangeAction Name="STANDCOLUMN" UniqueId="65e52aca-e0bf-485b-8104-854c96d6a6dd" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCoveringTypeEnum" UniqueId="5512ce02-f5fa-456a-a7f7-3da89ad9de7c">
+							<Changes>
+								<DocChangeAction Name="COPING" UniqueId="3662bd55-d1c9-4dbe-996b-061400a49399" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcMemberTypeEnum" UniqueId="285f7714-06b3-4879-853a-8cd43df81ed2">
+							<Changes>
+								<DocChangeAction Name="STIFFENING_RIB" UniqueId="f7457b5b-5336-4388-bc57-e2531580b4cf" Action="added" />
+								<DocChangeAction Name="ARCH_SEGMENT" UniqueId="11dfe153-e12b-41f2-a86d-24aaa7476053" Action="added" />
+								<DocChangeAction Name="SUSPENSION_CABLE" UniqueId="f99eb82f-74c1-41ae-a181-82a800cc85ca" Action="added" />
+								<DocChangeAction Name="SUSPENDER" UniqueId="98fb7717-d55a-4f7a-bc7f-63c5c647d1bd" Action="added" />
+								<DocChangeAction Name="STAY_CABLE" UniqueId="cf1b7a2e-bf0a-44ce-bf40-4ceaddfb93ed" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcPlateTypeEnum" UniqueId="30dcab75-d9e1-460e-a5ad-129e1bcad493">
+							<Changes>
+								<DocChangeAction Name="FLANGE_PLATE" UniqueId="a0511328-67b8-4fe7-b760-7205b11eeb30" Action="added" />
+								<DocChangeAction Name="WEB_PLATE" UniqueId="f6bf3430-3bf4-456b-bdc5-40c4bdc231dc" Action="added" />
+								<DocChangeAction Name="STIFFENER_PLATE" UniqueId="50aa14ab-76d8-4f53-b44f-faa326f686cd" Action="added" />
+								<DocChangeAction Name="GUSSET_PLATE" UniqueId="dacc4310-aa40-4b66-940e-8379f0303264" Action="added" />
+								<DocChangeAction Name="COVER_PLATE" UniqueId="0a4bdfcc-6996-4d60-b2bc-2cbdac7867df" Action="added" />
+								<DocChangeAction Name="SPLICE_PLATE" UniqueId="a0dbd991-8ab9-4128-ab78-b33893da095f" Action="added" />
+								<DocChangeAction Name="BASE_PLATE" UniqueId="cb7ef71c-b350-4a6b-8ed6-057228c0f686" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSlabTypeEnum" UniqueId="4fde1e0a-b63c-4392-a3af-6c2d36a37d1c">
+							<Changes>
+								<DocChangeAction Name="APPROACH_SLAB" UniqueId="512be567-bc8c-46b3-bee8-7363a6cf4783" Action="added" />
+								<DocChangeAction Name="PAVING" UniqueId="bb67e784-3c91-41e8-a237-5f12e64c83e3" Action="added" />
+								<DocChangeAction Name="WEARING" UniqueId="4e3233cc-e439-436d-88e0-a5627750bbfe" Action="added" />
+								<DocChangeAction Name="SIDEWALK" UniqueId="60a82b90-c935-4bfd-a9ab-91856f5549a9" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcWallTypeEnum" UniqueId="3eabcb6b-8a0a-40fd-af2f-1b04450ac771">
+							<Changes>
+								<DocChangeAction Name="RETAININGWALL" UniqueId="ee7b1aa6-554f-4238-9c1d-fd95c3421d0d" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcBeam" UniqueId="8d6218b3-8a5d-4132-b994-a25fc67cc9f1">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="e1ffa71d-1c57-494e-ab89-89044532f3e9" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcBeamStandardCase" UniqueId="bc549182-1f03-4973-b69f-e0585b7e6aeb">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="18d890be-c25f-40ec-b235-94829778bf95" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcBearing" UniqueId="cae01660-0426-4cb3-af3d-b5c11812bd44" Action="added" />
+						<DocChangeAction Name="IfcBearingType" UniqueId="51915a23-fb82-49d3-9635-fd52d38cb37a" Action="added" />
+						<DocChangeAction Name="IfcBuildingElementProxy" UniqueId="1810b332-41bc-4c26-a098-9851373c77ef">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="e8139890-8461-4613-869c-87a9da649151" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCaissonFoundation" UniqueId="a5b3d91a-fa11-400c-a874-60d9e2b4ac46" Action="added" />
+						<DocChangeAction Name="IfcCaissonFoundationType" UniqueId="1fa4c55d-9516-4e44-abc3-aa7915b6bac4" Action="added" />
+						<DocChangeAction Name="IfcChimney" UniqueId="5057124e-e823-460e-886b-75a251c5f0d5">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="0cec1b84-1cff-42b3-8398-62a1d2750f5f" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcColumn" UniqueId="70fe9787-376e-46b8-80e0-7b34fda767e4">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="7b0670f3-43c0-4584-a762-a0c6403a81b5" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcColumnStandardCase" UniqueId="edfbc48e-a783-46cd-87c2-bdb71f4c9b3e">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="a224065b-8f66-4db4-bf3b-67b7a46bd277" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCovering" UniqueId="459f4732-8430-41b2-bffe-09f159b8d543">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="9f6d15ab-c5bf-4a7b-ab54-99ca6afaabba" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCurtainWall" UniqueId="85dc7765-2c39-442b-b2b7-c79f09145445">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="486e7995-8bb6-4cf7-92dc-bc4ce9fbde3e" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDeepFoundation" UniqueId="95e28c22-87fe-4399-9610-35822ef502d5" Action="added" />
+						<DocChangeAction Name="IfcDeepFoundationType" UniqueId="2e95893e-575f-4cfb-ac33-1d4b292b9f2d" Action="added" />
+						<DocChangeAction Name="IfcDoor" UniqueId="882d6811-cb7e-49ce-b104-c73927fe11fd">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="a97e7db1-22d8-480b-b84d-a9da21d6ffd0" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDoorStandardCase" UniqueId="f2e9bea0-c94f-454c-ac50-a1bd2e0795c2">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="960d171a-bb5b-4a83-8771-8c71086f40c2" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcMember" UniqueId="23dbb14f-c202-45cd-8e70-f5b962684f9f">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="ed38894b-e2dc-41f2-be22-131173174e08" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcMemberStandardCase" UniqueId="d3084036-9ff2-4a1e-a288-4a45a78ae7ab">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="f9a4d43f-d938-465b-bcae-57b29411201a" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcPlate" UniqueId="5ac52f7e-a67f-409b-b49d-6ebe31280bfd">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="8bd7137b-0b68-4b0f-81de-b3f6cc7924a1" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcPlateStandardCase" UniqueId="327c03aa-27f1-4e48-904e-de06f0d9b54e">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="77fb93cd-5b45-4004-b181-1b4b0e57ab0b" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcRailing" UniqueId="dd1e42ef-2c5c-4d31-a244-c352037ac91a">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="e0a5d918-97cb-4081-91eb-df8ce1b53a47" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcRamp" UniqueId="a563ffd2-1d8c-4eb0-945f-7efe7aec3da0">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="0b2f8d8b-f9ec-46c0-994e-770be35df1bb" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcRampFlight" UniqueId="a6b6ec16-e501-408c-96a5-d064decf052b">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="67a71093-0d04-414f-a9f2-df67601c41bf" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcRoof" UniqueId="f8e0bdbd-761f-4dca-a257-d54bfd659347">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="f9b15d0e-58e2-46b0-a9f1-379711356e29" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcShadingDevice" UniqueId="400ca001-317d-45a6-a280-ab769929f6a7">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="fc7a7f1c-4aa8-4c29-b537-096df6bda4bf" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSlab" UniqueId="014026bc-3cc0-45bb-80c5-06bb70a12e3e">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="604ba2d8-9e74-464d-9fce-aef3082e9575" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSlabElementedCase" UniqueId="ec42eb8f-396c-45c4-8d1d-14ea08d2aadf">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="7bb74e20-1625-476a-bdfd-8110e62bd1c0" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSlabStandardCase" UniqueId="5bee697d-cdb7-431e-b833-57d90dcf2a68">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="ed6c7ee5-7fe7-4bf7-930d-3ffa267dcbc0" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStair" UniqueId="a264dd8f-a6f7-47df-a4fa-d244842e3c24">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="09e44a6f-5887-401b-ad96-6dc2086a554a" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStairFlight" UniqueId="e2d6b6dc-c812-4a47-84bc-301688cb8bff">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="c53954de-8879-480e-be4c-781f601f11af" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcWall" UniqueId="fdb34d0a-d9b7-4818-809b-7863ff564f93">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="d449bf74-baef-4a1e-8299-6608216a86c2" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcWallElementedCase" UniqueId="50a714d4-970d-4424-9639-64b09487439e">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="b0b6152a-f556-4abf-9cc2-b5c68075dca8" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcWallStandardCase" UniqueId="9c41f5ab-754f-4995-aeac-f8bc0a310ad8">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="c0f5a252-5b4c-44c7-8dc5-ed7d3d516756" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcWindow" UniqueId="3069ef0f-c01c-4fc7-b258-63f7775c80d6">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="41fb10dd-0072-4f84-a33b-ab36acd7efea" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcWindowStandardCase" UniqueId="db63b662-06fe-4d07-afcf-b19727a278d0">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="e3bd3f99-5080-4100-854d-e58b39840ad1" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcSharedBldgServiceElements" UniqueId="e649c98b-72ba-406b-9585-ae671a640bcb">
+					<Changes>
+						<DocChangeAction Name="IfcDistributionChamberElement" UniqueId="2152d55b-d654-4d7f-96db-f503f10ddb1d">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="7b6d60a4-7e39-4e65-9fb6-46c6dca8c840" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDistributionControlElement" UniqueId="5989c14a-3cef-46eb-8e03-43a77a253e77">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="ab97f79b-4956-4aa7-a15f-08406e19acff" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDistributionFlowElement" UniqueId="3a066617-fc18-4f3a-b64c-f9c23ca3e22b">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="3d2a30f8-3742-4703-a6e7-5df7bfba67bb" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDistributionPort" UniqueId="3631ad60-75a6-4b1c-aa06-fb690a48abbd">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="f6bb7725-1442-45ce-8d90-878ad9fb4288" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcEnergyConversionDevice" UniqueId="92b46146-ac0d-4731-8550-bbfdb385493a">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="e625661f-e6e9-4a22-8587-01f7f3a7991f" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFlowController" UniqueId="e9570a40-0ef5-4a2b-b17b-2d6d96067552">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="332b80f9-2c62-4063-9747-5090bf20f7d8" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFlowFitting" UniqueId="b27af5de-8fd1-4aa8-9773-61f344ed3fe3">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="6567c6ee-2530-4402-9d0b-052c3f765028" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFlowMovingDevice" UniqueId="f0e2a2d1-b7a0-4d15-850a-43e60cc051f0">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="7b0eb437-999f-4043-b6e5-84b6bf40281d" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFlowSegment" UniqueId="5414a5c6-d4ea-4d14-92ed-e747141f219f">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="464952d4-6ab4-4f03-88a4-a47d1cc33c21" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFlowStorageDevice" UniqueId="3431219b-ef99-46ef-b242-118059db0d06">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="21d6d423-933c-4ee5-85e1-af56c6192b1a" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFlowTerminal" UniqueId="de6c3272-aa8a-4eb4-b043-0a968533e017">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="d2f7ba9b-b8cf-49fc-ab88-6b2e10dcc9af" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFlowTreatmentDevice" UniqueId="131a56bf-55a8-4605-80fe-3feb49cb8132">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="e01db272-39e5-4809-89c8-a099eaa3034b" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcSharedComponentElements" UniqueId="70420bbd-700d-458d-975a-408829ead659">
+					<Changes>
+						<DocChangeAction Name="IfcBuildingElementPartTypeEnum" UniqueId="cac81d3f-eadf-4dda-852b-5b52ab70a055">
+							<Changes>
+								<DocChangeAction Name="APRON" UniqueId="4095fc52-38d2-4433-9b18-80b5c6c4816d" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDiscreteAccessoryTypeEnum" UniqueId="1093174a-21fd-4d09-b06b-c968bf7be10c">
+							<Changes>
+								<DocChangeAction Name="EXPANSION_JOINT_DEVICE" UniqueId="00086d11-f747-4664-9c59-d3d64fa61ad0" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcMechanicalFastenerTypeEnum" UniqueId="bcb30a1b-b760-40b3-bfcf-d71b89b63e15">
+							<Changes>
+								<DocChangeAction Name="COUPLER" UniqueId="14e359d7-e202-4938-8c11-fc5191ed8514" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcVibrationDamperTypeEnum" UniqueId="c9431e55-ab10-4e7c-b829-2a880c8257b1" Action="added" />
+						<DocChangeAction Name="IfcBuildingElementPart" UniqueId="9a3ea077-7014-4af9-8631-e2eb93491a49">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="e13432e7-5d5b-4c55-b169-a6e8fc56f86a" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDiscreteAccessory" UniqueId="f163f2cf-9c5d-4356-b23d-a52f8b57a5d7">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="bf5da734-4457-4b49-a056-e6825eca3189" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFastener" UniqueId="2d5708df-cbef-4612-a0c4-b50867e5d750">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="2bb74486-af10-456c-b6a6-2252a5f28c2f" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcMechanicalFastener" UniqueId="15c7f620-f6e1-4b76-b11b-87662f8d8a73">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="450d55ae-e9ae-45c0-b0e4-d4ea50bb252f" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcVibrationDamper" UniqueId="c4424381-7848-47ac-b35f-c94b97d92a3a" Action="added" />
+						<DocChangeAction Name="IfcVibrationDamperType" UniqueId="30005d8f-19a3-4a21-beca-0e26be688b6d" Action="added" />
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcSharedFacilitiesElements" UniqueId="1982720b-1a00-4a74-8c3e-ccb8a3c34fbd">
+					<Changes>
+						<DocChangeAction Name="IfcFurniture" UniqueId="839ca5ba-206b-4e25-b039-a0d2cc97be7c">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="a1a47d59-c745-41ca-bb15-256cbaedc42e" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSystemFurnitureElement" UniqueId="74bea47e-a69a-4fba-a12d-1d3dc9c11d80">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="e6653322-36ec-4766-a965-a661189989cd" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+			</Changes>
+		</DocChangeAction>
+		<DocChangeAction Name="Domain specific data schemas" UniqueId="c66a1652-23ca-4ef7-abdd-e0286d3d0164">
+			<Changes>
+				<DocChangeAction Name="IfcBuildingControlsDomain" UniqueId="07746914-c2ae-4a92-b045-58ea55db5190">
+					<Changes>
+						<DocChangeAction Name="IfcActuator" UniqueId="26dc54a5-28ff-4a81-82d2-162c7e34186e">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="17fe31d2-6d68-4bb1-b1d7-bd604a1c0b94" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAlarm" UniqueId="9380c538-ba58-4d88-8dc4-5904dfe3fdfa">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="4cae7580-fec9-4bce-90db-00efed872d50" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcController" UniqueId="b116eeab-aa59-4f7a-8f58-b5404a3a5f49">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="a3003297-3164-4d6f-9511-0cc1b858ea27" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFlowInstrument" UniqueId="11dd1377-d5ef-4543-918f-42a382013946">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="f90fe4c2-fe2b-4bd8-8726-68d61d0adf03" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSensor" UniqueId="9a8a3f42-9ce7-4060-b4a3-cd198ef6887e">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="c470b188-24d4-4fc8-88a3-69353395d0bf" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcUnitaryControlElement" UniqueId="aab8de8c-fad1-491a-9288-2d5fb8e5f6f7">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="73a1b147-9a3f-45c8-94ef-f79d62fefe42" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcElectricalDomain" UniqueId="faf43a06-de49-4f25-b7ca-ccc5023382d0">
+					<Changes>
+						<DocChangeAction Name="IfcAudioVisualAppliance" UniqueId="dc43b51d-e58d-422d-817a-1539947fa3ae">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="42be71c1-ce6d-4b22-9ee3-692efa713bcf" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCableCarrierFitting" UniqueId="151ff19b-0180-40dd-851b-1409358bad33">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="7010c3b4-ef68-4a34-b4c4-2c04e2321d18" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCableCarrierSegment" UniqueId="62c9095c-f866-4a30-b110-684070e48b43">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="30a88aa5-4795-4fc7-9f43-89bedd85b4e4" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCableFitting" UniqueId="0c60f096-d8c1-4f19-9697-5f685ba76653">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="08437c88-52af-4c7c-a3db-44071daa10fc" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCableSegment" UniqueId="f13d6641-8d5e-4f3a-96b0-e909309d5df8">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="e5df917e-0b87-46a0-b5bd-053d228d4d4f" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCommunicationsAppliance" UniqueId="2e67a39c-c631-4f6d-8f45-b292be9e4c84">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="5154af76-cbb5-40ae-93d7-d5c62f312611" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcElectricAppliance" UniqueId="589d0843-8677-4d2f-a84b-ff636cc655c1">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="609a098d-da50-4949-bb8b-3aca98f30006" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcElectricDistributionBoard" UniqueId="44a0f742-87b0-4f1f-a618-9af810d4f372">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="4e99ad6a-9ccc-4b34-b607-1a70ea2edb63" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcElectricFlowStorageDevice" UniqueId="bceea595-f4a1-4dcb-aa7c-8f47e253cc88">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="27b0e6ba-6af2-42f0-a8a2-5dfe9e26e147" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcElectricGenerator" UniqueId="0fdbb7b9-0634-441e-a0b8-b1429520c5f5">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="614c34a4-0935-47a4-b4c4-9421aff80c37" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcElectricMotor" UniqueId="469b8b37-b0fb-4bf4-b834-fa645357ebc8">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="5c7fd3df-c8dd-4b35-8060-38103db3afff" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcElectricTimeControl" UniqueId="8fd6cee1-829f-4f45-b0f7-3144f436a1c8">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="90f1b028-7baa-4f50-8c5c-5709d9d46a24" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcJunctionBox" UniqueId="4a8a9738-045f-4f67-a9b7-d6f4c33122e6">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="d98f7ef0-b142-49ae-b1a2-a8cce5d156f1" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcLamp" UniqueId="ccb691c3-d875-476e-a311-6fd845864e97">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="07e6aae4-f474-4526-a229-9b0c7040363d" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcLightFixture" UniqueId="c27835af-e6c7-4d51-853b-84722dd31dce">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="590a2a52-ac23-45dd-976a-c5a5ef97d446" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcMotorConnection" UniqueId="3060f3cf-ad66-43ec-bf0e-3966194aeca9">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="60979936-2e5f-4ee7-b9e5-7eadf43f93ae" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcOutlet" UniqueId="777adab7-0b4a-4200-93ae-bd8bcb86dc6d">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="46e9eb90-5930-418d-b5ac-8e826e9198b3" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcProtectiveDevice" UniqueId="c800547a-d233-467b-aad2-fd5279f851aa">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="f0235751-329f-4b57-94f5-e65e1e45e1e2" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcProtectiveDeviceTrippingUnit" UniqueId="13f1de36-3803-4150-867a-3a6cdf5668ad">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="33e3550b-1449-4825-986b-e072506e9dca" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSolarDevice" UniqueId="b4de0d0c-7666-4de5-9bc1-c8c399ed61af">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="0f73792b-f050-4544-8cdc-cd540eeff0c8" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSwitchingDevice" UniqueId="6e20f04f-daf2-4bd5-a046-2ee5c0be9a05">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="bd13fbcc-c2a4-4684-987e-1fd8648f2de1" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTransformer" UniqueId="867c9c56-f237-4a94-96a5-5ccf5f24eb16">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="43356cfc-26bd-40ec-b455-9fc61518e90c" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcHvacDomain" UniqueId="be7938bd-8377-4146-bc68-d06925d48fdf">
+					<Changes>
+						<DocChangeAction Name="IfcVibrationIsolatorTypeEnum" UniqueId="cf9a8e9f-846e-42cd-a4c5-af027eea34de">
+							<Changes>
+								<DocChangeAction Name="BASE" UniqueId="a17f4074-d380-4421-bb66-36602f94c18b" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAirTerminal" UniqueId="1449f5cd-69c5-4f11-b87e-604b927397d5">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="0bda390e-ae54-4f30-8147-d51c1ff25173" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAirTerminalBox" UniqueId="9199d54e-0fe0-4331-ac16-6db8bd547e72">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="0b6feb9e-cfd6-4a48-8f42-6582c5503ba1" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAirToAirHeatRecovery" UniqueId="ebffb4dd-7685-4514-9174-5d9a661223fb">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="e3c16378-b592-43b5-a96d-0fa9f6af693a" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcBoiler" UniqueId="80cba6e3-bf34-4d50-afbd-85e326c6e001">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="0a807dae-3d96-4961-b50f-d82679ff8952" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcBurner" UniqueId="3ddca5b0-b5f7-45e2-8fe7-9f91f07a4b46">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="fad8f369-6629-4c41-bfbd-83b22d0a88e4" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcChiller" UniqueId="a9fc1bbe-cfdb-4e71-9247-fd42f1fe4909">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="e785ac19-ca15-49c0-8e98-b12b2c46e6ab" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCoil" UniqueId="2b43efe7-8fa2-4255-a7e4-b4738dff67a9">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="964df0fb-c582-41fa-a559-19f512bfb006" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCompressor" UniqueId="fc7d5b3f-42b6-4902-8178-2a7f3a78df2f">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="f62f826f-bede-48fc-9599-ec21205a9183" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCondenser" UniqueId="60eb8241-fd46-44b9-ac34-f85662cd14c6">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="d54d0e7b-deec-4c40-89d6-9183d4a9dd45" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCooledBeam" UniqueId="3d444fd3-d172-4a19-956b-72ad973d8d4a">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="2f8a9e95-ef96-44b8-85b0-012fd88650ec" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCoolingTower" UniqueId="45cbd726-9535-474c-91a3-6543689952a3">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="8c79987f-3475-454c-8c82-8af15875ff70" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDamper" UniqueId="12c3a509-9023-4201-b68f-91345aa73283">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="583a9d2d-e3f1-4710-b560-8f1e8e471e32" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDuctFitting" UniqueId="e28160c5-d676-4346-9970-9f0c2ce3170a">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="35028ebc-7dcf-4cfb-a159-d648f83ce30c" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDuctSegment" UniqueId="750b7855-04b8-4d06-ba5c-d64b99fa6f8d">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="ebe9bbb1-dccf-4d27-b80c-4c2540d23324" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDuctSilencer" UniqueId="8ac296a0-978b-4d48-a69f-ba81e90125fd">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="f7ae62ac-1ed9-4893-b706-74127eb962c8" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcEngine" UniqueId="d6fadfb8-dd08-45c5-85ec-3d25467d7c5d">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="b1f067f6-3355-4aa8-bdca-18860141c390" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcEvaporativeCooler" UniqueId="c1728c89-b8fb-4b15-b6b6-d34bc91d5234">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="262bdcb4-da9c-4c53-944a-1d97fa724259" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcEvaporator" UniqueId="f48281b0-836f-48fd-be32-810ea84b878b">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="e7fa2ca9-5dbb-4400-bd07-102cd9cdcbc5" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFan" UniqueId="f9357356-c536-4a67-85fe-20ab01a483c9">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="f42a0bcf-a1bd-44f8-adb0-03b1fb9fba3e" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFilter" UniqueId="7d27c0d7-cbce-4628-bb9c-9523194f8bfe">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="61580f14-09ac-47d4-9ba3-e0c115ada0a1" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFlowMeter" UniqueId="d74a5f54-ac6f-4107-9b2f-bfbe17377565">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="8b8694cf-4a75-492e-9ac8-7fc01230bfdd" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcHeatExchanger" UniqueId="047a855b-4e4b-4b45-a261-f1e8a7fc1efa">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="ff48cbd6-1142-4f12-b665-177d0df2e6a6" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcHumidifier" UniqueId="eed7a7ed-edf3-4abe-8bdc-209477805ef5">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="47c52b80-8558-4eaf-ab38-bcae18e51fa8" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcMedicalDevice" UniqueId="d3ad3586-c072-4e41-a7b9-784aebe88bf3">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="fac495f0-6bab-4bdd-9f54-6cc6f5631fb5" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcPipeFitting" UniqueId="02b84037-4e0b-4ca0-bacc-6f78b63aded4">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="d7abb052-24c9-43ba-8a95-6594943aeda3" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcPipeSegment" UniqueId="9ca06f74-4cc0-4565-9d45-d5c8e1fc25f6">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="2e02c91a-80a4-45fd-a111-6ffdb88c8f64" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcPump" UniqueId="5e00ea47-909c-4d1b-b848-081b53660128">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="92480053-6deb-418f-b3a7-3ef20bac7c9c" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSpaceHeater" UniqueId="d0710f43-1658-4e37-9c97-11edc35c3173">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="be2d36d1-6757-40ad-8f5a-9e0eae322aa1" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTank" UniqueId="e437432a-581b-4e14-94c2-3b815501c993">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="20b9edb5-03f2-4209-a3f2-48add54263f9" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTubeBundle" UniqueId="f236ac26-e70a-41f6-8683-f47018572c8d">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="5b152fd7-6755-40e5-9bc3-7a065ef20013" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcUnitaryEquipment" UniqueId="812775f0-2482-46b7-b365-0a1a43a42ac1">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="a05667e7-b0dc-4c2b-b056-ffe00f860315" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcValve" UniqueId="65c32ecd-7719-435b-b592-e67baf5099bc">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="7e866956-24a6-4e52-a625-e21814e050b1" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcVibrationIsolator" UniqueId="6f682397-cb95-401a-b50b-a280ec95766c">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="52b474bf-0625-43f1-90ad-5d9d143f2bf4" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcPlumbingFireProtectionDomain" UniqueId="7defef43-8bba-45c5-a39c-0ccb20ce7eaa">
+					<Changes>
+						<DocChangeAction Name="IfcFireSuppressionTerminal" UniqueId="6cc228fc-35ab-4f70-b824-b12989a1230c">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="7cda4715-f781-474d-9d8b-4d2d0a2679ed" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcInterceptor" UniqueId="63d8aba5-4e98-4f1f-9d8b-b27321f56a1c">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="07bd3ab9-babe-42f1-98d5-a5afd555618d" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSanitaryTerminal" UniqueId="0c8b5c05-615a-4df0-b178-86f040af7bb5">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="eccbe0bb-b2f0-4a07-9b5e-d1c64b40f2c0" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStackTerminal" UniqueId="f3f08cd9-a47a-4308-965b-fb82587b561e">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="3c2076f6-e1e6-41f0-819d-ba040c4c8cee" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcWasteTerminal" UniqueId="88c9b592-7664-427f-af65-2e2d152cf82c">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="9673d985-68db-4466-bed2-98de438eb33b" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcStructuralAnalysisDomain" UniqueId="b75b8733-84c8-45f9-85a9-4e5b53766fc2">
+					<Changes>
+						<DocChangeAction Name="IfcStructuralCurveAction" UniqueId="3a1886fd-65c1-4979-98db-5e1058ef6777">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="24db03d6-42f4-4062-aa0b-5ec06173abdf" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralCurveConnection" UniqueId="6740fd53-e9f5-4b43-ba59-78d469fe9005">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="76ae9fcc-cdf6-433a-8808-766eaf643171" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralCurveMember" UniqueId="6ddf5f6a-dfe5-439e-ad85-e5c15297d9cd">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="bf8c4906-ffc6-49cd-9f41-75014a65f39c" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralCurveMemberVarying" UniqueId="50862b09-d695-4097-b40d-70de2aa6c936">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="7ace703d-2cc3-4585-a541-04704a39f62f" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralCurveReaction" UniqueId="4f8623b8-31e0-4d6a-a7a8-d4cf47169f64">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="f5b62198-f531-4e44-96d1-a96538afd762" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralLinearAction" UniqueId="7933a160-eb68-48f3-b98e-db58866a0c4b">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="95d4fe5d-7626-4cd4-b6eb-1de1e29b96e4" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralPlanarAction" UniqueId="8e97f55a-a0c3-4919-b0c8-73d738b79b71">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="0d5d8597-3f15-48cf-8628-dfced3ffa893" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralPointAction" UniqueId="b0b75cb7-9cf3-4d2e-bbbe-3954229597fe">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="8ccf5f22-92c8-442f-af1c-e94c4ddebc90" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralPointConnection" UniqueId="9b9882c4-e838-4b67-99b8-ec0885ca3bf6">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="ef3f099f-0166-4f24-88bd-5947d410a1b7" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralPointReaction" UniqueId="6e1d8156-4fc0-4f51-9e27-ebe3c861cb72">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="5ff8a71e-85b7-447b-921c-96b1f0a5a18e" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralSurfaceAction" UniqueId="6b461144-8fe9-4735-8d61-8400ad3ad393">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="54e2a697-a78c-417b-9584-1458667ac6b5" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralSurfaceConnection" UniqueId="e9004f8e-7292-45ef-b786-015e6d7fbc5f">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="2c9986d7-8e72-4d36-95c1-bf414a45b854" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralSurfaceMember" UniqueId="755ada91-4ee4-4827-a538-cf5a52d8fc05">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="d74113a3-ca21-43df-a5db-2c6d0e246eea" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralSurfaceMemberVarying" UniqueId="50083200-e0bd-43ac-ae2b-e8cfea8a569b">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="52a8dcfb-ea10-4116-8156-8c93ec19a374" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralSurfaceReaction" UniqueId="68508a76-e55a-4281-b3b0-a7ff3d605c1a">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="15e145b5-cf3b-4843-ba9f-bbffee428476" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcStructuralElementsDomain" UniqueId="909da821-02bc-4c41-8371-dba8e621246b">
+					<Changes>
+						<DocChangeAction Name="IfcReinforcingBarTypeEnum" UniqueId="18ee48f5-218a-4260-bc6b-841af61f0e86">
+							<Changes>
+								<DocChangeAction Name="SPACEBAR" UniqueId="7cca8f9a-c0af-4e2d-8088-ba47da2c44fa" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSurfaceFeatureTypeEnum" UniqueId="baeb9765-0790-4e21-83b7-a001a4bd8386">
+							<Changes>
+								<DocChangeAction Name="DEFECT" UniqueId="f3ea982f-5794-4e52-83ef-fd9e1f36a2ce" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTendonConduitTypeEnum" UniqueId="81085c3f-92fb-4bd6-bb4d-04e77c997820" Action="added" />
+						<DocChangeAction Name="IfcFooting" UniqueId="c8f459b3-c17d-48ac-9969-f0eb83069856">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="8955e25b-c48e-4f35-a4a8-a3b749086eab" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcPile" UniqueId="e38a176b-ca35-4455-855f-a421c609dbad">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="48dd5336-008c-4aee-bbfe-ce431387846f" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcReinforcingBar" UniqueId="e3f0ad4d-f308-4537-bb7d-ce601870c73d">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="18dbb2f9-a9ee-4cc2-bf3a-78f742e7073e" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcReinforcingMesh" UniqueId="3c4646c7-13be-43c7-b92c-f4e0662b2216">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="c1770829-7432-4e56-ad19-439808b419bb" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSurfaceFeature" UniqueId="e491b395-e595-49f9-b4ae-a5394291374e">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="ee1c4e2a-5a72-4b7f-9368-e6c8a0d6e1cb" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTendon" UniqueId="27d5fcd9-f077-4110-96f8-f6c46e41b5b7">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="b2ac4a8d-2bef-44a0-a67f-908c3bed19a6" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTendonAnchor" UniqueId="87b37443-468a-4cf8-a4d5-03700fd20103">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="ae655096-16e9-4f6a-a13f-8c0803fc895f" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTendonConduit" UniqueId="4e1730cf-3736-4708-8a6e-73285d669a4d" Action="added" />
+						<DocChangeAction Name="IfcTendonConduitType" UniqueId="bc173d90-e926-486b-87b0-b191f9246297" Action="added" />
+						<DocChangeAction Name="IfcVoidingFeature" UniqueId="239cae83-2500-47fc-84de-2ccba6714652">
+							<Changes>
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="d876d35c-28ab-41aa-ae39-831bc3bdbbd9" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+			</Changes>
+		</DocChangeAction>
+		<DocChangeAction Name="Resource definition data schemas" UniqueId="637f89b6-f361-4b63-961e-9071b1636337">
+			<Changes>
+				<DocChangeAction Name="IfcGeometricConstraintResource" UniqueId="03e9aeae-4c6a-4360-af7c-fd75e3073cbe">
+					<Changes>
+						<DocChangeAction Name="IfcAlignmentCurve" UniqueId="4d3a20fd-4626-4113-9cc8-eb4200effe8f">
+							<Changes>
+								<DocChangeAction Name="PositioningElement" UniqueId="a3277767-bc2f-42fc-8de3-efa49b0e61ad" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcGridPlacement" UniqueId="5cdea30c-3ae0-4d20-877d-bdacb656970e">
+							<Changes>
+								<DocChangeAction Name="PlacementRelTo" UniqueId="48c383bd-853f-4d97-9b3e-ceef502ff43c" Action="modified" ImpactSPF="true" ImpactXML="true">
+									<Aspects>
+										<DocChangeAspect Aspect="name" OldValue="PlacementLocation" NewValue="PlacementRelTo" />
+										<DocChangeAspect Aspect="type" OldValue="IfcVirtualGridIntersection" NewValue="IfcObjectPlacement" />
+										<DocChangeAspect Aspect="instantiation" NewValue="OPTIONAL" />
+										<DocChangeAspect Aspect="xsdformat" OldValue="Attribute" NewValue="Default" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="PlacementLocation" UniqueId="16ddcbe9-f25f-4db0-aa40-59c7b79ded52" Action="modified" ImpactSPF="true" ImpactXML="true">
+									<Aspects>
+										<DocChangeAspect Aspect="name" OldValue="PlacementRefDirection" NewValue="PlacementLocation" />
+										<DocChangeAspect Aspect="type" OldValue="IfcGridPlacementDirectionSelect" NewValue="IfcVirtualGridIntersection" />
+										<DocChangeAspect Aspect="instantiation" OldValue="OPTIONAL" />
+										<DocChangeAspect Aspect="xsdformat" OldValue="Default" NewValue="Attribute" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="PlacementRefDirection" UniqueId="5e6d8cdf-d6b4-4b85-97a7-40c818ee1626" Action="added" />
+								<DocChangeAction Name="ReferencedByPlacements" UniqueId="a26659f2-5a24-498b-9314-68cfe1b46af7" Action="deleted" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcLinearPlacement" UniqueId="e7640cc0-1562-4fd2-a468-1f8fb832aa30">
+							<Changes>
+								<DocChangeAction Name="PlacementRelTo" UniqueId="9b2c7ee1-aa46-4f5a-9c13-d52a86830c19" Action="modified" ImpactSPF="true" ImpactXML="true">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="IfcCurve" NewValue="IfcObjectPlacement" />
+										<DocChangeAspect Aspect="instantiation" NewValue="OPTIONAL" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="PlacementMeasuredAlong" UniqueId="4e08ff76-b46e-45b4-833b-b1053bc3e250" Action="modified" ImpactSPF="true" ImpactXML="true">
+									<Aspects>
+										<DocChangeAspect Aspect="name" OldValue="Distance" NewValue="PlacementMeasuredAlong" />
+										<DocChangeAspect Aspect="type" OldValue="IfcDistanceExpression" NewValue="IfcCurve" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="Distance" UniqueId="d37287d8-e6c0-4242-8064-105079b33042" Action="modified" ImpactSPF="true" ImpactXML="true">
+									<Aspects>
+										<DocChangeAspect Aspect="name" OldValue="Orientation" NewValue="Distance" />
+										<DocChangeAspect Aspect="type" OldValue="IfcOrientationExpression" NewValue="IfcDistanceExpression" />
+										<DocChangeAspect Aspect="instantiation" OldValue="OPTIONAL" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="Orientation" UniqueId="5a6e96a8-cf73-4720-9c75-8f2d773471e0" Action="modified" ImpactSPF="true" ImpactXML="true">
+									<Aspects>
+										<DocChangeAspect Aspect="name" OldValue="CartesianPosition" NewValue="Orientation" />
+										<DocChangeAspect Aspect="type" OldValue="IfcAxis2Placement3D" NewValue="IfcOrientationExpression" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="CartesianPosition" UniqueId="ea435734-625a-457c-9f8c-5de1e99841ff" Action="added" />
+								<DocChangeAction Name="ReferencedByPlacements" UniqueId="c9fbdd18-7f43-4621-b06b-70c8101f7798" Action="deleted" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcLocalPlacement" UniqueId="faf5b020-d7da-4c8a-aa6f-1ae9a9a461d8">
+							<Changes>
+								<DocChangeAction Name="PlacementRelTo" UniqueId="47f2a812-93a7-4b5b-bab2-e839432f761e" Action="modified" ImpactXML="true">
+									<Aspects>
+										<DocChangeAspect Aspect="xsdformat" OldValue="Attribute" NewValue="Default" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="ReferencedByPlacements" UniqueId="66b57c83-c998-493c-b33f-05717b3c0c57" Action="deleted" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcGeometryResource" UniqueId="8dd615e9-c8b0-4551-9b98-d09e0919b789">
+					<Changes>
+						<DocChangeAction Name="IfcBoundaryCurve" UniqueId="0e0840d6-89fb-4471-ac44-48dacb1f7fc9">
+							<Changes>
+								<DocChangeAction Name="PositioningElement" UniqueId="6deb4905-6c91-4e91-8339-d937085a1363" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcBSplineCurveWithKnots" UniqueId="8dc114c3-2640-4a36-a52c-4bf098d99ca5">
+							<Changes>
+								<DocChangeAction Name="PositioningElement" UniqueId="1741f8f1-d378-45e9-b753-1a4a82959432" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCircularArcSegment2D" UniqueId="a5db66e9-918d-4628-a6ac-128e97181758">
+							<Changes>
+								<DocChangeAction Name="PositioningElement" UniqueId="6103e5f4-ffb8-49b1-8602-23aec14c745b" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCompositeCurve" UniqueId="6c54e61f-4335-4e6a-b495-1da8220bcd2e">
+							<Changes>
+								<DocChangeAction Name="PositioningElement" UniqueId="2a701d3f-06b8-41a7-b7e5-67d980dc3670" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCompositeCurveOnSurface" UniqueId="18586b7d-1c72-4d6c-b473-a84a8d4427e0">
+							<Changes>
+								<DocChangeAction Name="PositioningElement" UniqueId="1d357aba-89e9-4825-a97f-cc6b7a87f23b" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcIndexedPolyCurve" UniqueId="8ed29cb2-c97a-4c20-b2f7-5bbb9afe3bfa">
+							<Changes>
+								<DocChangeAction Name="PositioningElement" UniqueId="05b620e4-c15b-49f0-a69a-b7f975d35b7f" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcLineSegment2D" UniqueId="734ecaa2-378f-4f42-80cd-f0ab98638a36">
+							<Changes>
+								<DocChangeAction Name="PositioningElement" UniqueId="369bb501-38e5-44c3-93f4-1ed99190c770" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcOuterBoundaryCurve" UniqueId="7a919b8a-cfbb-4255-9e62-1fd21af32a13">
+							<Changes>
+								<DocChangeAction Name="PositioningElement" UniqueId="dd60c88a-4375-47b3-8894-28e450716024" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcPolyline" UniqueId="c380b122-13d2-4e56-976e-50ffffc3c180">
+							<Changes>
+								<DocChangeAction Name="PositioningElement" UniqueId="73f9e85f-87eb-4020-9d72-9b91c75ad0b4" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcRationalBSplineCurveWithKnots" UniqueId="c24e0c7d-8f0c-4c99-bf42-ee2b3e3cae9d">
+							<Changes>
+								<DocChangeAction Name="PositioningElement" UniqueId="bf6f5cc9-4842-4a08-8f28-e2f1019a5ab8" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTransitionCurveSegment2D" UniqueId="62f9fc70-87a4-4899-b8db-cfb0aba9f47b">
+							<Changes>
+								<DocChangeAction Name="PositioningElement" UniqueId="c25fc256-2ddf-42c1-96c9-51764857f5a5" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTrimmedCurve" UniqueId="27f630fe-836b-41a4-bd5f-28878b3b2e22">
+							<Changes>
+								<DocChangeAction Name="PositioningElement" UniqueId="baca9ebb-0b56-411c-abe8-206890619f30" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+			</Changes>
+		</DocChangeAction>
+	</ChangesEntities>
+	<ChangesProperties>
+		<DocChangeAction Name="PEnum_StructureIndicator" UniqueId="0788abdd-6798-4c8f-ac24-c0f2a04c6308" Action="added" />
+		<DocChangeAction Name="Core data schemas" UniqueId="ed1c7512-deea-4eb2-86b7-833592f69bf0">
+			<Changes>
+				<DocChangeAction Name="IfcProductExtension" UniqueId="3dc16938-205f-4e2d-8ec6-6bdf06a28cca">
+					<Changes>
+						<DocChangeAction Name="Pset_BridgeCommon" UniqueId="6d0937a0-237d-4292-a70d-8d707bbd69ef" Action="added" />
+					</Changes>
+				</DocChangeAction>
+			</Changes>
+		</DocChangeAction>
+		<DocChangeAction Name="Shared element data schemas" UniqueId="3aec204d-247f-4052-a0aa-bf9e95f473a0">
+			<Changes>
+				<DocChangeAction Name="IfcSharedBldgElements" UniqueId="bd8504e1-e2b8-4bc2-9081-cd34696a42d5">
+					<Changes>
+						<DocChangeAction Name="Pset_BearingCommon" UniqueId="281d38e9-a618-4e6e-aa72-54c4d41f8232" Action="added" />
+					</Changes>
+				</DocChangeAction>
+			</Changes>
+		</DocChangeAction>
+	</ChangesProperties>
+</DocChangeSet>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCableCarrierSegmentType" Name="IfcCableCarrierSegmentType" UniqueId="70c2a9af-9e6c-46ee-a672-009025453926" BaseDefinition="IfcFlowSegmentType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Kabelträgersegment - Typ" />
+		<DocLocalization Locale="en" Name="Cable Carrier Segment Type" />
+		<DocLocalization Locale="fr" Name="Type de segment de chemin de cable" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="b84cf981-c4c0-4593-b6e6-c84749ecb418" DefinedType="IfcCableCarrierSegmentTypeEnum">
+			<Documentation>Identifies the predefined types of cable carrier segment from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="1ed0a0f8-9bdd-4804-b967-2f4f4e4e1d44">
+			<Expression>(PredefinedType &lt;&gt; IfcCableCarrierSegmentTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCableCarrierSegmentTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

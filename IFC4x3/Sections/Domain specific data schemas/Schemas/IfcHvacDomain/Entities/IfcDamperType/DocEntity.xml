@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDamperType" Name="IfcDamperType" UniqueId="b8de85d0-242c-4557-ad69-4310a1b46caa" BaseDefinition="IfcFlowControllerType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Regelklappe - Typ" />
+		<DocLocalization Locale="en" Name="Damper Type" />
+		<DocLocalization Locale="fr" Name="Type de détecteur d&apos;incendie" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="708a30b6-ae25-4d2c-97c7-37de2da7c7c3" DefinedType="IfcDamperTypeEnum">
+			<Documentation>Type of damper.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="4008863d-d264-4172-8f41-fcea4403e35a">
+			<Expression>(PredefinedType &lt;&gt; IfcDamperTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcDamperTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcElementQuantity" UniqueId="f1e9cf21-4f13-485c-a608-e1f0beac34f7" BaseDefinition="IfcQuantitySet" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="frei definierbare Elementmengenliste" />
+		<DocLocalization Locale="en" Name="Element Quantity" />
+		<DocLocalization Locale="fr" Name="Quantité d&apos;élément" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="MethodOfMeasurement" UniqueId="e8632959-d375-4923-bc11-6da33c9c455b" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>Name of the method of measurement used to calculate the element quantity. The method of measurement attribute has to be made recognizable by further agreements.
+
+{ .change-ifc2x2}
+&gt; IFC2x2 Addendum 1 change: The attribute has been changed to be optional</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Quantities" UniqueId="fff9aa2e-b2ad-44a5-a09f-13be4f49a1a1" DefinedType="IfcPhysicalQuantity" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The individual quantities for the element, can be a set of length, area, volume, weight or count based quantities.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="UniqueQuantityNames" UniqueId="7dfaf068-e5f4-4bd3-8969-5e68a8bbda80">
+			<Documentation>Every individual _IfcPhysicalQuantity_ within the set _Quantities_ shall have a unique _Name_ attribute value.
+&gt; HISTORY&amp;nbsp; New rule in IFC4</Documentation>
+			<Expression>IfcUniqueQuantityNames(Quantities)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

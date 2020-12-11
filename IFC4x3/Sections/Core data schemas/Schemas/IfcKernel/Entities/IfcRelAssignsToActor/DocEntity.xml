@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssignsToActor" UniqueId="697bb1a2-488c-4282-8300-a66e028db272" BaseDefinition="IfcRelAssigns" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Weist Akteur zu - Relation" />
+		<DocLocalization Locale="en" Name="Rel Assigns To Actor" />
+		<DocLocalization Locale="fr" Name="Assignation à acteur" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelatingActor" UniqueId="0a6c1031-7ef4-4086-943e-b9db2389f495" DefinedType="IfcActor" XsdFormat="attribute">
+			<Documentation>Reference to the information about the actor. It comprises the information about the person or organization and its addresses.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ActingRole" UniqueId="d77e7175-259c-472c-a440-d1e078f46ec9" DefinedType="IfcActorRole" AttributeFlags="1" XsdFormat="attribute">
+			<Documentation>Role of the actor played within the context of the assignment to the object(s).</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NoSelfReference" UniqueId="bf910db1-d1b7-45e9-aa24-da27b0a02662">
+			<Documentation>The instance to with the relation points shall not be contained in the set of _RelatedObjects_.</Documentation>
+			<Expression>SIZEOF(QUERY(Temp &lt;* SELF\IfcRelAssigns.RelatedObjects | RelatingActor :=: Temp)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

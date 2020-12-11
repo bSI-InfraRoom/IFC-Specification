@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCooledBeamType" Name="IfcCooledBeamType" UniqueId="9952316a-c0ba-43c8-aed3-b0f39b461900" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Kühlbalken - Typ" />
+		<DocLocalization Locale="en" Name="Cooled Beam Type" />
+		<DocLocalization Locale="fr" Name="Poutre froide type" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="a9aab02c-8410-4769-831e-142a438666ca" DefinedType="IfcCooledBeamTypeEnum">
+			<Documentation>Defines the type of cooled beam.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="7c820748-178e-46f1-b3e6-41f9295951f4">
+			<Expression>(PredefinedType &lt;&gt; IfcCooledBeamTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCooledBeamTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

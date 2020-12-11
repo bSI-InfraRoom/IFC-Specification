@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSubContractResourceType" UniqueId="352fd6e0-58e5-4a63-905c-991b1079ef81" BaseDefinition="IfcConstructionResourceType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Unterauftragnehmer - Ressource -Typ" />
+		<DocLocalization Locale="en" Name="Sub Contract Resource Type" />
+		<DocLocalization Locale="fr" Name="Type de ressource de sous-traitance" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="5a5ee4dc-db65-4bab-b553-4a7593fedbe1" DefinedType="IfcSubContractResourceTypeEnum">
+			<Documentation>Defines types of subcontract resources.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="9801f4ba-2bb6-47c0-8a6e-5e195bb45bd2">
+			<Expression>(PredefinedType &lt;&gt; IfcSubContractResourceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcSubContractResourceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcTypeResource.ResourceType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

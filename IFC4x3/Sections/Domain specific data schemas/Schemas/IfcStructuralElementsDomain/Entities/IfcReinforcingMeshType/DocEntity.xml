@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcReinforcingMeshType" UniqueId="c55468d2-4e66-449a-9e37-6795ea684389" BaseDefinition="IfcReinforcingElementType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Bewehrungsmatte - Typ" />
+		<DocLocalization Locale="en" Name="Reinforcing Mesh Type" />
+		<DocLocalization Locale="fr" Name="Type de treillis" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="1d8cc34d-0aa9-4d31-a830-2eb84e3f8fff" DefinedType="IfcReinforcingMeshTypeEnum">
+			<Documentation>Subtype of reinforcing mesh.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="MeshLength" UniqueId="133716eb-0efc-4894-8d25-7843e0a0f8dc" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>The overall length of the mesh measured in its longitudinal direction.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="MeshWidth" UniqueId="c19b7ecf-89bc-4ce5-88df-1fc9e119b605" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>The overall width of the mesh measured in its transversal direction.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LongitudinalBarNominalDiameter" UniqueId="f333ae8d-a4a1-429f-914c-edb1c105285b" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>The nominal diameter denoting the cross-section size of the longitudinal bars.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TransverseBarNominalDiameter" UniqueId="826e5734-3a0d-4205-9848-53f04a6c1c81" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>The nominal diameter denoting the cross-section size of the transverse bars.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LongitudinalBarCrossSectionArea" UniqueId="f5d91a39-9728-42f4-8ec2-5154cb02bb08" DefinedType="IfcAreaMeasure" AttributeFlags="1">
+			<Documentation>The effective cross-section area of the longitudinal bars of the mesh.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TransverseBarCrossSectionArea" UniqueId="39ee07ed-b714-4671-83ba-eda0b707228a" DefinedType="IfcAreaMeasure" AttributeFlags="1">
+			<Documentation>The effective cross-section area of the transverse bars of the mesh.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LongitudinalBarSpacing" UniqueId="42e0b783-0ae3-4e97-8452-01815b38f23e" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>The spacing between the longitudinal bars.  Note: an even distribution of bars is presumed; other cases are handled by classification or property sets.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TransverseBarSpacing" UniqueId="ccd835af-8460-41f9-86ce-c93355671a77" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>The spacing between the transverse bars.  Note: an even distribution of bars is presumed; other cases are handled by classification or property sets.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="BendingShapeCode" UniqueId="3b0b1b32-71f7-4e23-b4a5-8003eef3d2cc" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>If this mesh type is bent rather than planar, this attribute provides a shape code per a standard like ACI 315, ISO 3766, or a similar standard.  It is presumed that a single standard for defining the mesh bending is used throughout the project and that this standard is referenced from the _IfcProject_ object through the _IfcDocumentReference_ mechanism.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="BendingParameters" UniqueId="996282cb-f70e-4996-baa7-7b247054cd4e" DefinedType="IfcBendingParameterSelect" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
+			<Documentation>If this mesh type is bent rather than planar, this attribute provides bending shape parameters. Their meaning is defined by the bending shape code and the respective standard.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="f9dcb1d3-de67-4b25-a283-5f12b67905fa">
+			<Documentation>The inherited attribute _ElementType_ shall be provided if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcReinforcingMeshTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcReinforcingMeshTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="BendingShapeCodeProvided" UniqueId="2bf4ae50-31b5-4060-ad5e-e877dab53484">
+			<Documentation>Bending parameters must be accompanied by a shape code.</Documentation>
+			<Expression>NOT EXISTS(BendingParameters) OR EXISTS(BendingShapeCode)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

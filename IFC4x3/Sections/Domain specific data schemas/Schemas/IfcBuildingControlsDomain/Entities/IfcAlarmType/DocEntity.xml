@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcAlarmType" Name="IfcAlarmType" UniqueId="1bd3b05c-1d48-478a-9dcd-55c40bef9dd9" BaseDefinition="IfcDistributionControlElementType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Alarm / Gefahrenmelder - Typ" />
+		<DocLocalization Locale="en" Name="Alarm Type" />
+		<DocLocalization Locale="fr" Name="Alarme type" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="84158364-2b94-468b-9895-afdf52b4be31" DefinedType="IfcAlarmTypeEnum">
+			<Documentation>Identifies the predefined types of alarm from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="359219f6-571e-414d-9493-b82328b30674">
+			<Expression>(PredefinedType &lt;&gt; IfcAlarmTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcAlarmTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

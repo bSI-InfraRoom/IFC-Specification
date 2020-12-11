@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMemberType" Name="IfcMemberType" UniqueId="b9b1953e-01c6-4bed-bfc5-ccaa97663a30" BaseDefinition="IfcBuiltElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Stab / Stabträger - Typ" />
+		<DocLocalization Locale="en" Name="Member Type" />
+		<DocLocalization Locale="fr" Name="Type de membre" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="0856367e-c546-4caf-b6ef-583ceef73b2b" DefinedType="IfcMemberTypeEnum">
+			<Documentation>Identifies the predefined types of a linear structural member element from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="19f4667b-a70f-48dc-831e-b1fe540b0526">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcMemberTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcMemberTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPropertyResource" UniqueId="3f2a0c4d-4e72-4b0f-a7ed-8384dab704ea">
+	<SchemaRefs>
+		<DocSchemaRef Name="IFCACTORRESOURCE" UniqueId="4f3c5466-f76a-4544-ab11-57dbe7e8914d">
+			<Definitions>
+				<DocDefinitionRef Name="IfcPerson" UniqueId="ec3667d2-6cd6-4b2a-b90c-283b480ad2b8" />
+				<DocDefinitionRef Name="IfcOrganization" UniqueId="45ff5f97-2982-45f9-a674-533a18ad9d48" />
+				<DocDefinitionRef Name="IfcPostalAddress" UniqueId="3f967550-b05d-48cc-b092-e6c2a5b7f578" />
+				<DocDefinitionRef Name="IfcPersonAndOrganization" UniqueId="1c5d3d85-b2e6-445d-913d-1a6dbde356c4" />
+				<DocDefinitionRef Name="IfcAddress" UniqueId="021c9c4d-1dce-493f-8d5e-676fff20acae" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCAPPROVALRESOURCE" UniqueId="9437f877-1fc5-435c-bc23-98333919b302">
+			<Definitions>
+				<DocDefinitionRef Name="IfcResourceApprovalRelationship" UniqueId="f2ed0ef4-2cfc-4634-ae61-24e71d9e962c" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCCONSTRAINTRESOURCE" UniqueId="0398572a-7a4e-4b4b-8ac4-b887d32a9b8e">
+			<Definitions>
+				<DocDefinitionRef Name="IfcResourceConstraintRelationship" UniqueId="1e2dacd5-342a-482a-a979-790d49e86fe7" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCCOSTRESOURCE" UniqueId="3e124fe5-1597-4499-97ce-91121eb4d97a">
+			<Definitions>
+				<DocDefinitionRef Name="IfcAppliedValue" UniqueId="d59fc018-25af-4d93-92dd-dea4b39f83f7" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCDATETIMERESOURCE" UniqueId="f1eee18b-8c4a-4570-b8bc-8f0dd5345f66">
+			<Definitions>
+				<DocDefinitionRef Name="IfcTimeSeries" UniqueId="566d56e0-dd10-4599-90a4-85fc28054f24" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCEXTERNALREFERENCERESOURCE" UniqueId="dbada1ec-d3b4-42fe-8e33-c98b71788074">
+			<Definitions>
+				<DocDefinitionRef Name="IfcDocumentReference" UniqueId="ba795c20-0df3-4c47-adf5-0e4c14184c9e" />
+				<DocDefinitionRef Name="IfcLibraryReference" UniqueId="8f7aab23-264c-4d68-b167-ef8e4cab4faa" />
+				<DocDefinitionRef Name="IfcClassificationReference" UniqueId="bcb6dad9-9680-4503-87ab-7f167f3ba1af" />
+				<DocDefinitionRef Name="IfcExternalReference" UniqueId="9b481d70-4e1b-4233-a645-dda03a7503aa" />
+				<DocDefinitionRef Name="IfcExternalReferenceRelationship" UniqueId="0924fbc4-7950-4d3f-8761-94337967f1b1" />
+				<DocDefinitionRef Name="IfcResourceLevelRelationship" UniqueId="0edba270-2a66-4305-a921-4c54dd0ed714" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCKERNEL" UniqueId="0d4bfb71-0d52-4533-bba8-3f9ee5a77df6">
+			<Definitions>
+				<DocDefinitionRef Name="IfcPropertySet" UniqueId="01a81f01-7d5e-4ede-b9c3-25cd1560a354" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCMATERIALRESOURCE" UniqueId="db229550-472f-4115-90a4-b6b53e74f337">
+			<Definitions>
+				<DocDefinitionRef Name="IfcMaterialDefinition" UniqueId="435e9b1c-5ecd-4969-87e7-b93d1b268c68" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCMEASURERESOURCE" UniqueId="6be9e114-81b5-45e9-b2c0-45fa7ad2a0bf">
+			<Definitions>
+				<DocDefinitionRef Name="IfcValue" UniqueId="36d3f69c-911b-47e7-af3b-f4d529920a98" />
+				<DocDefinitionRef Name="IfcUnit" UniqueId="6d977ae5-ad14-45a6-9842-581af0fb7947" />
+				<DocDefinitionRef Name="IfcDerivedUnit" UniqueId="b04723e1-e6b6-437d-a9eb-c7f4f543e163" />
+				<DocDefinitionRef Name="IfcNamedUnit" UniqueId="d310a16e-f26d-4ec8-b23d-e084312f8aa8" />
+				<DocDefinitionRef Name="IfcContextDependentUnit" UniqueId="eccd248b-dc4d-4a85-92d7-c9e3f67cc5dc" />
+				<DocDefinitionRef Name="IfcConversionBasedUnit" UniqueId="6aec2698-11e2-4221-952e-8f75e542a180" />
+				<DocDefinitionRef Name="IfcSiUnit" UniqueId="974be2bd-3d22-4698-8e60-9c6716f496b7" />
+				<DocDefinitionRef Name="IfcMeasureValue" UniqueId="c2c4ac5e-4929-4bf9-acf1-d491b8abb9f4" />
+				<DocDefinitionRef Name="IfcLabel" UniqueId="1916e153-5e3b-4c42-b223-6585f4666507" />
+				<DocDefinitionRef Name="IfcIdentifier" UniqueId="fc71657e-248e-449c-8d6d-c0c48758c663" />
+				<DocDefinitionRef Name="IfcReal" UniqueId="32104a5e-1746-489a-a6d2-44b426501acb" />
+				<DocDefinitionRef Name="IfcLengthMeasure" UniqueId="7093d22d-d887-4661-9f2c-19aa44b8b6bf" />
+				<DocDefinitionRef Name="IfcAreaMeasure" UniqueId="ff88118e-c425-49c3-bb54-0f1a71bad2f9" />
+				<DocDefinitionRef Name="IfcVolumeMeasure" UniqueId="87286677-710c-4905-aa4e-4f0669e367c7" />
+				<DocDefinitionRef Name="IfcRatioMeasure" UniqueId="bd96730f-0ce4-450f-9952-5f0fe2fbd92c" />
+				<DocDefinitionRef Name="IfcText" UniqueId="d2bad43d-51cb-48ee-8f00-783d082ce5d5" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCUTILITYRESOURCE" UniqueId="9e3b8085-11a8-4667-b70d-959593588398">
+			<Definitions>
+				<DocDefinitionRef Name="IfcTable" UniqueId="ef43ac46-94a5-429a-8042-f1a1b9201e68" />
+			</Definitions>
+		</DocSchemaRef>
+	</SchemaRefs>
+</DocSchema>
+

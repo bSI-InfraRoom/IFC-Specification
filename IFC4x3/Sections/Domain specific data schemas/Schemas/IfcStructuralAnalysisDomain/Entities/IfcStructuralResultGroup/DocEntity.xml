@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralResultGroup" Name="IfcStructuralResultGroup" UniqueId="744fe291-2e62-4a6f-b0a4-1ead956bee5c" Status="H" BaseDefinition="IfcGroup" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Berechnungsergebnisse des Lastfalls / Lastkombination" />
+		<DocLocalization Locale="en" Name="Structural Result Group" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="TheoryType" UniqueId="50f3f700-985f-42c4-a053-708cf2af2e25" DefinedType="IfcAnalysisTheoryTypeEnum">
+			<Documentation>Specifies the analysis theory used to obtain the respective results.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ResultForLoadGroup" UniqueId="0912b5b6-1758-417c-8a7c-5bf6ef79f48f" DefinedType="IfcStructuralLoadGroup" AttributeFlags="1" XsdFormat="attribute">
+			<Documentation>Reference to an instance of IfcStructuralLoadGroup for which this instance represents the result.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="IsLinear" UniqueId="c52b2d50-09a4-46e4-8f2d-0b3034de6be1" DefinedType="IfcBoolean">
+			<Documentation>This value allows to easily recognize whether a linear analysis has been applied (allowing the superposition of analysis results).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ResultGroupFor" UniqueId="611d0a6e-2ce8-4adc-8e0f-7b92afe5309e" DefinedType="IfcStructuralAnalysisModel" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="HasResults">
+			<Documentation>Reference to an instance of IfcStructuralAnalysisModel for which this instance captures a result.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasObjectType" UniqueId="3561c6db-b5eb-43f0-92c1-4a657c07e904">
+			<Documentation>The attribute ObjectType shall be given if the analysis theory type is set to USERDEFINED.</Documentation>
+			<Expression>(TheoryType &lt;&gt; IfcAnalysisTheoryTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

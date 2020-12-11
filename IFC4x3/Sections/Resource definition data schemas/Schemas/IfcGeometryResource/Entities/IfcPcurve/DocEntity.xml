@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPcurve" UniqueId="dd30ecc9-e76f-48d9-b2d9-5340b2f0c0b8" BaseDefinition="IfcCurve" EntityFlags="109">
+	<Localization>
+		<DocLocalization Locale="de" Name="Kurve im Parameterraum einer Fläche" />
+		<DocLocalization Locale="en" Name="Pcurve" />
+		<DocLocalization Locale="fr" Name="Courbe basée sur une surface" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="BasisSurface" UniqueId="f38fdab6-e98c-4adb-9126-c3042c4c319e" DefinedType="IfcSurface" XsdFormat="attribute" />
+		<DocAttribute Name="ReferenceCurve" UniqueId="dc6024e0-af04-459d-857b-4eccd3401110" DefinedType="IfcCurve" XsdFormat="attribute" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="DimIs2D" UniqueId="64920069-9ab8-470a-b694-113a3f926a33">
+			<Documentation>The dimensionality of the parameter space curve shall be 2.</Documentation>
+			<Expression>ReferenceCurve.Dim = 2</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDayInWeekNumber" UniqueId="155e77e5-f61e-487c-9e36-b6255b586646" DefinedType="INTEGER">
+	<Localization>
+		<DocLocalization Locale="en" Name="Day In Week Number" />
+		<DocLocalization Locale="fr" Name="Numéro du jour de la semaine" />
+	</Localization>
+	<Definition xsi:type="DocPrimitive" xsi:nil="true" href="INTEGER_0Bo9r4fCj07e5rVk1a6n_D" />
+	<WhereRules>
+		<DocWhereRule Name="ValidRange" UniqueId="35baa8f3-d43c-4715-b06e-4bc95424f5c9">
+			<Documentation>The valid range for positioning a day in a week is min inclusive = 1 and max inclusive = 7.</Documentation>
+			<Expression>{1 &lt;= SELF &lt;= 7}</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocDefined>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDuctSegmentType" Name="IfcDuctSegmentType" UniqueId="01ccdf98-70c1-44aa-a133-0a4bbf9ff7d5" BaseDefinition="IfcFlowSegmentType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Kanal - Typ" />
+		<DocLocalization Locale="en" Name="Duct Segment Type" />
+		<DocLocalization Locale="fr" Name="Type de tronçon de gaine" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="83db28de-1f7c-4123-bbb4-88e0f6421773" DefinedType="IfcDuctSegmentTypeEnum">
+			<Documentation>The type of duct segment.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="ea42d33c-9555-4c03-b299-b2cb3594020a">
+			<Expression>(PredefinedType &lt;&gt; IfcDuctSegmentTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcDuctSegmentTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

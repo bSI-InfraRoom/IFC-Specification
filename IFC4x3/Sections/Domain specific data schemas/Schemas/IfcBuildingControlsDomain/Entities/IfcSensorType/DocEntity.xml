@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSensorType" Name="IfcSensorType" UniqueId="a5b36357-2503-452f-8599-ce8a92a3ec72" Status="H" BaseDefinition="IfcDistributionControlElementType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Sensor - Typ" />
+		<DocLocalization Locale="en" Name="Sensor Type" />
+		<DocLocalization Locale="fr" Name="Type de capteur" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="f82dc96d-8253-4856-9809-f7ea53c18a33" DefinedType="IfcSensorTypeEnum">
+			<Documentation>Identifies the predefined types of sensor from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="53b8af41-f2eb-4088-8710-80719e7d867b">
+			<Expression>(PredefinedType &lt;&gt; IfcSensorTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcSensorTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

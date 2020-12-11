@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBearingType" UniqueId="788924f1-f249-42c4-9da2-6cfbb2519907" BaseDefinition="IfcBuiltElementType" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="171d3a0d-4025-4c32-95f8-d0ab4958ad07" DefinedType="IfcBearingTypeEnum">
+			<Documentation>Identifies the predefined types of a bearing element from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="aac56e07-7991-4014-9e91-aba6e09ff65f">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcBearingTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcBearingTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

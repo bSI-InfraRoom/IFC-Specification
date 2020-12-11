@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcLine" Name="IfcLine" UniqueId="28220f1d-2ef9-48f4-9aa6-198f7af996d8" BaseDefinition="IfcCurve" EntityFlags="45">
+	<Localization>
+		<DocLocalization Locale="de" Name="Linie" />
+		<DocLocalization Locale="en" Name="Line" />
+		<DocLocalization Locale="fr" Name="Ligne" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Pnt" UniqueId="efe6be19-11b9-4b75-9821-ae20d1d465ad" DefinedType="IfcCartesianPoint" XsdFormat="attribute">
+			<Documentation>The location of the _IfcLine_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Dir" UniqueId="da76faa5-1c45-41b8-80ce-79d00d362cd1" DefinedType="IfcVector" XsdFormat="attribute">
+			<Documentation>The direction of the _IfcLine_, the magnitude and units of _Dir_ affect the parameterization of the line.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="SameDim" UniqueId="5ad85b1b-5a3e-4d08-a9b2-8327fe7084c3">
+			<Documentation>The dimensionality of the _Pnt_, provided by _IfcCartesianPoint_, shall be the same as the dimensionality of the _Dir_, provided by _IfcVector_.</Documentation>
+			<Expression>Dir.Dim = Pnt.Dim</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

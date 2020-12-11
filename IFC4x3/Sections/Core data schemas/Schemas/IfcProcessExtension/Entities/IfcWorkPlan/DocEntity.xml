@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWorkPlan" Name="IfcWorkPlan" UniqueId="1802d7e1-8d28-4916-80dd-a5f0a21f588b" BaseDefinition="IfcWorkControl" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Arbeitsplan" />
+		<DocLocalization Locale="en" Name="Work Plan" />
+		<DocLocalization Locale="fr" Name="Planning de travail" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="d78ca6cb-0dfb-4ca5-acbb-8dd5ea6f5a0e" DefinedType="IfcWorkPlanTypeEnum" AttributeFlags="1">
+			<Documentation>Identifies the predefined types of a work plan from which 
+    the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="aafa28f8-1397-4f57-8d60-c85819da78a0">
+			<Documentation>The attribute ObjectType must be asserted when the value of the IfcWorkPlanTypeEnum is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR (PredefinedType &lt;&gt; IfcWorkPlanTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcWorkPlanTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

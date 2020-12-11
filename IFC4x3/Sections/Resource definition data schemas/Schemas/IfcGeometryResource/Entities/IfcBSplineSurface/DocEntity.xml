@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBSplineSurface" UniqueId="6cc49723-24d6-446e-b2cc-fef52a6229c4" BaseDefinition="IfcBoundedSurface" EntityFlags="205">
+	<Localization>
+		<DocLocalization Locale="de" Name="Bézier-Spline-Fläche" />
+		<DocLocalization Locale="en" Name="BSpline Surface" />
+		<DocLocalization Locale="fr" Name="Surface Bspline" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="76a5109a-bbae-4595-8a27-678a2f19edd1" DefinedType="IfcBSplineSurfaceWithKnots" />
+		<DocSubtype UniqueId="d0495b0e-4f1d-4d28-b06b-d511a7f78664" DefinedType="IfcBSplineSurfaceWithKnots" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="UDegree" UniqueId="fa4795fe-5b45-439d-8feb-3e45270923c0" DefinedType="IfcInteger">
+			<Documentation>Algebraic degree of basis functions in _u_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="VDegree" UniqueId="519ed324-1b3a-4f12-b23a-87603ec0d73b" DefinedType="IfcInteger">
+			<Documentation>Algebraic degree of basis functions in _v_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ControlPointsList" UniqueId="bc33338e-2b58-4a61-b633-ccf5c80fe59b" DefinedType="IfcCartesianPoint" AggregationType="1" AggregationLower="2" AggregationUpper="0" XsdFormat="element">
+			<Documentation>This is a list of lists of control points.</Documentation>
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="530e3949-a335-4842-8675-8c8a142fe95d" AggregationType="1" AggregationLower="2" AggregationUpper="0" />
+		</DocAttribute>
+		<DocAttribute Name="SurfaceForm" UniqueId="1a4a38ca-a512-42d4-94f7-13932a6fc328" DefinedType="IfcBSplineSurfaceForm">
+			<Documentation>Indicator of special surface types.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UClosed" UniqueId="f2d1928f-a5de-487f-a35f-907192690a47" DefinedType="IfcLogical">
+			<Documentation>Indication of whether the surface is closed in the _u_ direction; this is for information only.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="VClosed" UniqueId="b71632d8-d689-4f75-a1da-1192c00c2f21" DefinedType="IfcLogical">
+			<Documentation>Indication of whether the surface is closed in the _v_ direction; this is for information only.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="SelfIntersect" UniqueId="c4e7537e-84c5-49f8-9096-5fb6efa3c248" DefinedType="IfcLogical">
+			<Documentation>Flag to indicate whether, or not, surface is self-intersecting; this is for information only.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UUpper" UniqueId="5bcfe613-ccc4-459a-aa4a-82cd757cc49c" DefinedType="IfcInteger">
+			<Documentation>Upper index on control points in _u_ direction.</Documentation>
+			<Derived>SIZEOF(ControlPointsList) - 1</Derived>
+		</DocAttribute>
+		<DocAttribute Name="VUpper" UniqueId="cc88a114-1e8d-4dc0-83a8-ad42a486c168" DefinedType="IfcInteger">
+			<Documentation>Upper index on control points in _v_ direction.</Documentation>
+			<Derived>SIZEOF(ControlPointsList[1]) - 1</Derived>
+		</DocAttribute>
+		<DocAttribute Name="ControlPoints" UniqueId="82e4f976-41e3-454e-a2af-6ca023778218" DefinedType="IfcCartesianPoint" AggregationType="2" AggregationLower="0" AggregationUpper="UUpper">
+			<Documentation>Array (two-dimensional) of control points defining surface geometry. This array is constructed from the control points list.</Documentation>
+			<Derived>IfcMakeArrayOfArray(ControlPointsList,
+0,UUpper,0,VUpper)</Derived>
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="3a3200ef-152f-4769-99fe-58e65479c1c4" AggregationType="2" AggregationLower="0" AggregationUpper="VUpper" />
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

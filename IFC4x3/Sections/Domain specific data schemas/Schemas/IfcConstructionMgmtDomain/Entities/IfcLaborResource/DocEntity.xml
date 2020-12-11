@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcLaborResource" Name="IfcLaborResource" UniqueId="21941ff7-cd01-46b8-8e08-fb02ca673e3a" BaseDefinition="IfcConstructionResource" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Arbeit - Ressource" />
+		<DocLocalization Locale="en" Name="Labor Resource" />
+		<DocLocalization Locale="fr" Name="Ressource en main d&apos;œuvre" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="f927db3b-0e45-4370-a0b3-b201cf84b80b" DefinedType="IfcLaborResourceTypeEnum" AttributeFlags="1">
+			<Documentation>Defines types of labour resources.
+{ .change-ifc2x4}
+&gt; IFC4 New attribute.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="6787231b-770d-4790-ac8b-9b3c1ed2c641">
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcLaborResourceTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcLaborResourceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

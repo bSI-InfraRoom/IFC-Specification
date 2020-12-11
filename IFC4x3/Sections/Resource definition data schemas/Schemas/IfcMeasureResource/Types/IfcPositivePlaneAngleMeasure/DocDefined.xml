@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPositivePlaneAngleMeasure" UniqueId="40cd7167-2011-405e-82f9-f6af73ed3182" DefinedType="IfcPlaneAngleMeasure">
+	<Localization>
+		<DocLocalization Locale="en" Name="Positive Plane Angle Measure" />
+		<DocLocalization Locale="fr" Name="Mesure d&apos;angle plan positif" />
+	</Localization>
+	<Definition xsi:type="DocDefined" xsi:nil="true" href="IfcPlaneAngleMeasure" />
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="44a7570b-658f-4d71-a0d9-437971b08ab9">
+			<Documentation>A positive measure shall be greater than zero.</Documentation>
+			<Expression>SELF &gt; 0.</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocDefined>
+

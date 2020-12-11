@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAlignmentVerticalSegment" UniqueId="d613fd75-12a2-490c-901a-ecaa23332f7f" BaseDefinition="IfcAlignmentParameterSegment" EntityFlags="32">
+	<Localization>
+		<DocLocalization Locale="en" Name="Alignment 2D Vertical Segment" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="80c6330f-0ce2-47d8-9c06-d1f48824ea02" DefinedType="IfcAlignment2DVerSegLine" />
+		<DocSubtype UniqueId="976affd7-a804-4380-b89e-8e049fa694fa" DefinedType="IfcAlignment2DVerSegCircularArc" />
+		<DocSubtype UniqueId="9aab9644-5cca-473d-bfdf-10675d655148" DefinedType="IfcAlignment2DVerSegParabolicArc" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="StartDistAlong" UniqueId="a5165aa6-73ca-44ed-83b6-cc71447a6f7a" DefinedType="IfcLengthMeasure">
+			<Documentation>Distance along the horizontal alignment, measured along the _IfcAlignment2DHorizontal_ given in the length unit of the global _IfcUnitAssignment_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="HorizontalLength" UniqueId="a2fe23af-c8fa-4aab-9e63-c03f98770570" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Length measured as distance along the horizontal alignment of the segment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="StartHeight" UniqueId="794b3cc4-cf59-4f6d-b090-699a8fb08638" DefinedType="IfcLengthMeasure">
+			<Documentation>Elevation in Z of the start point relative to the IfcAlignment coordinate system.
+&gt; NOTE&amp;nbsp; It is strongly advised to not offset the IfcAlignment coordinate system from the project engineering coordinate system.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="StartGradient" UniqueId="ff3c52b3-a4ea-4556-9f34-9d1743bef4b3" DefinedType="IfcLengthMeasure">
+			<Documentation>Start gradient of the segment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EndGradient" UniqueId="f91fe698-cbc3-48f4-80f1-5b8a5b0c6f49" DefinedType="IfcLengthMeasure">
+			<Documentation>End gradient of the segment. In the case of a PredefinedType=&apos;.CONSTANTGRADIENT.&apos; the value is the same as _StartGradient_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RadiusOfCurvature" UniqueId="4c28f1e4-ef03-421a-a559-862cc0c31b7f" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>Radius of parabola or arc.
+&gt; NOTE1 &amp;nbsp; For _PredefinedType_ is ARC. The radius of the basis circle for the arc.
+&gt; NOTE2 &amp;nbsp; For _PredefinedType_ is PARABOLICARC. Parabola constant (determining the “steepness” of the parabola). The parabola constant is provided by the “minimum parabola radius”, the true radius of a parabola at its vertical axis (the zero-gradient point of the parabola). The minimum radius is twice the focal length of the parabola (the distance between the focal point and the vertex).
+&gt; NOTE3 &amp;nbsp; For _PredefinedType_ that is not either ARC or PARABOLICARC the value should be empty.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="f75297c9-18aa-4ec2-ad2e-094b405e848c" DefinedType="IfcAlignmentVerticalSegmentTypeEnum">
+			<Documentation>Predefined type of the vertical alignmnent segment.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

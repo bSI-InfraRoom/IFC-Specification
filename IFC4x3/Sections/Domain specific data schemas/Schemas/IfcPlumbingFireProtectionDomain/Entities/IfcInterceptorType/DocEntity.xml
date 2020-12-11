@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcInterceptorType" UniqueId="3e1ba150-53c8-4f6f-9108-9d1b7a4f8573" BaseDefinition="IfcFlowTreatmentDeviceType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Abscheider - Typ" />
+		<DocLocalization Locale="en" Name="Interceptor Type" />
+		<DocLocalization Locale="fr" Name="Type de filtre" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="59a62703-ed7f-4e93-8084-125d02bc8b41" DefinedType="IfcInterceptorTypeEnum" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="8e80fe48-7cb8-493d-bf13-da1f358a4024">
+			<Expression>(PredefinedType &lt;&gt; IfcInterceptorTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcInterceptorTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

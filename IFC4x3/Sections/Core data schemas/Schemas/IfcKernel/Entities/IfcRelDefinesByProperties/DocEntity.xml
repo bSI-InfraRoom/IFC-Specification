@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelDefinesByProperties" Name="IfcRelDefinesByProperties" UniqueId="349d602e-d775-4785-ac74-0632e4fdd015" BaseDefinition="IfcRelDefines" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Definiert durch Merkmale - Relation">
+			<Documentation>Relation zwischen einem Objekt und dessen beschreibenden Merkmalen</Documentation>
+		</DocLocalization>
+		<DocLocalization Locale="en" Name="Rel Defines By Properties" />
+		<DocLocalization Locale="fr" Name="Définition par propriétés" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelatedObjects" UniqueId="bdb132c9-664c-4197-bf3d-a2f2c81af4cb" DefinedType="IfcObjectDefinition" AggregationType="3" AggregationLower="1" AggregationUpper="?" XsdFormat="hidden">
+			<Documentation>Reference to the objects (or single object) to which the property definition applies.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Data type promoted from subtype _IfcObject_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelatingPropertyDefinition" UniqueId="b4e540ff-8ce0-4a5c-a495-3452883ceea7" DefinedType="IfcPropertySetDefinitionSelect">
+			<Documentation>Reference to the property set definition for that object or set of objects.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NoRelatedTypeObject" UniqueId="aa978135-56fc-4dfb-bdec-61ef80aa5a80">
+			<Documentation>There shall be no related object being of typy _IfcTypeObject_.
+&gt; NOTE&amp;nbsp; The relationship between a _IfcTypeObject_ and a _IfcPropertySet_ is handled through the direct relationship _HasPropertySets_ at _IfcTypeObject_.</Documentation>
+			<Expression>SIZEOF(QUERY(Types &lt;* SELF\IfcRelDefinesByProperties.RelatedObjects |  &apos;IFCKERNEL.IFCTYPEOBJECT&apos; IN TYPEOF(Types))) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

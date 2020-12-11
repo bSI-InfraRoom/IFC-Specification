@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBuildingElementPart" Name="IfcBuildingElementPart" UniqueId="a8383055-66b2-4dac-abe1-98562ba38cad" BaseDefinition="IfcElementComponent" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Teil eines Bauelements" />
+		<DocLocalization Locale="en" Name="Building Element Part" />
+		<DocLocalization Locale="fr" Name="Partie d&apos;élément de construction" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="0da05a86-fc94-4001-9141-3943065bd488" DefinedType="IfcBuildingElementPartTypeEnum" AttributeFlags="1">
+			<Documentation>Subtype of building element part</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="c80adf4e-8515-40dc-98ff-24e2148568f3">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcBuildingElementPartType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcBuildingElementPartTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcBuildingElementPartTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="26a0b350-0e56-4a94-ac36-434250ac9ef4">
+			<Documentation>If this occurrence is defined by a type object, the latter has to be an _IfcBuildingElementPartType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSHAREDCOMPONENTELEMENTS.IFCBUILDINGELEMENTPARTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

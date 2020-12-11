@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStyledRepresentation" Name="IfcStyledRepresentation" UniqueId="a1be0696-4986-4097-aad4-dc9d385d95b5" BaseDefinition="IfcStyleModel" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Repräsentation mit Stilinformationen" />
+		<DocLocalization Locale="en" Name="Styled Representation" />
+	</Localization>
+	<WhereRules>
+		<DocWhereRule Name="OnlyStyledItems" UniqueId="6ae9a363-6bbb-45b3-aaee-5416701b7f6f">
+			<Documentation>Only _IfcStyledItem_&apos;s (or subtypes) are allowed as members in the list of _Items_, inherited from _IfcRepresentation_.
+{ .change-ifc2x3}
+&gt; IFC2x3 CHANGE&amp;nbsp; New where rule to ensure the usage for material definition representations, and other non-shape representations</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcRepresentation.Items | 
+  (NOT(&apos;IFCPRESENTATIONAPPEARANCERESOURCE.IFCSTYLEDITEM&apos; IN TYPEOF(temp)))
+)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

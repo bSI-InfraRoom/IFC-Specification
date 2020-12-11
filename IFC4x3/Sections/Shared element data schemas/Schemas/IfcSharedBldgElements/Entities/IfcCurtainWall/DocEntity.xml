@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCurtainWall" Name="IfcCurtainWall" UniqueId="3395e66f-bd77-4cce-a82f-4ccb81430e2c" BaseDefinition="IfcBuiltElement" EntityFlags="109">
+	<Localization>
+		<DocLocalization Locale="de" Name="Vorhangfassade" />
+		<DocLocalization Locale="en" Name="Curtain Wall" />
+		<DocLocalization Locale="fr" Name="Mur rideau" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="3868f9f2-95c6-4770-bb71-6ef7a9f4fced" DefinedType="IfcCurtainWallTypeEnum" AttributeFlags="1">
+			<Documentation>Predefined generic type for a curtain wall that is specified in an enumeration. There may be a property set given specificly for the predefined types.
+&gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcCurtainWallType_ is assigned, providing its own _IfcCurtainWallType.PredefinedType_.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="04319f08-cad4-444e-a08e-6effb684b6b9">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcCurtainWallType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcCurtainWallTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcCurtainWallTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="fe2cf19b-b583-4088-94c6-eb7f7cab2ff6">
+			<Documentation>Either there is no curtain wall type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcCurtainWallType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCCURTAINWALLTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

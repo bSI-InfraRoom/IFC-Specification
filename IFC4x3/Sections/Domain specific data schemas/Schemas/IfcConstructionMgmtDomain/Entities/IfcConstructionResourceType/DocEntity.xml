@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConstructionResourceType" UniqueId="c642ffe1-4447-43e7-935a-fa0b8f9420ed" BaseDefinition="IfcTypeResource" EntityFlags="197">
+	<Localization>
+		<DocLocalization Locale="de" Name="Konstruktion - Ressource -Typ" />
+		<DocLocalization Locale="en" Name="Construction Resource Type" />
+		<DocLocalization Locale="fr" Name="Type de ressource de construction" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="7fa1b2d7-ef27-4225-bf96-e8884326ea47" DefinedType="IfcCrewResourceType" />
+		<DocSubtype UniqueId="3301b2cd-3fae-433b-af04-23876866ef58" DefinedType="IfcLaborResourceType" />
+		<DocSubtype UniqueId="bed45122-1222-468d-863c-4c20dd9af3a1" DefinedType="IfcSubContractResourceType" />
+		<DocSubtype UniqueId="cdcce88c-55c4-48b1-a24d-f53ff21be168" DefinedType="IfcConstructionMaterialResourceType" />
+		<DocSubtype UniqueId="35df3b2e-275a-4261-a967-230b17c7800d" DefinedType="IfcConstructionEquipmentResourceType" />
+		<DocSubtype UniqueId="65b0bb15-6709-497d-b5fc-8d8647aa1b8a" DefinedType="IfcConstructionProductResourceType" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="BaseCosts" UniqueId="fab31804-3e6a-456a-bae2-2138c73e4b1f" DefinedType="IfcAppliedValue" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Indicates the unit costs and environmental impacts for which accrued amounts should be calculated.  Such unit costs may be split into _Name_ designations (e.g. &apos;Standard&apos;, &apos;Overtime&apos;), and may contain a hierarchy of cost values that apply at different dates (using _IfcCostValue.ApplicableDate_ and _IfcCostValue.FixedUntilDate_).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="BaseQuantity" UniqueId="e52f14a1-d244-46eb-8c1f-d7685c63d749" DefinedType="IfcPhysicalQuantity" AttributeFlags="1" XsdFormat="attribute">
+			<Documentation>Identifies the quantity for which the _BaseQuantityProduced_ applies.  The _Name_ of the _IfcPhysicalQuantity_ identifies the quantity definition being measured, e.g. &quot;GrossVolume&quot;.  For production-based resources (e.g. carpentry labor), this value refers to quantities on _IfcProduct_(s) to which the assigned _IfcTask_ is assigned.  For duration-based resources (e.g. safety inspector, fuel for equipment), this value refers to quantities that may be assigned to occurrences of the assigned _IfcTaskType_.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

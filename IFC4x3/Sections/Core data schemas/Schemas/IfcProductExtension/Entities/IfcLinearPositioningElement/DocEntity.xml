@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLinearPositioningElement" UniqueId="3b2d3faf-1d40-4dc0-807c-776a64e582ad" BaseDefinition="IfcPositioningElement" EntityFlags="32">
+	<Localization>
+		<DocLocalization Locale="en" Name="Linear Positioning Element" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="68841b3f-c74b-44ed-b852-0b6d4ba891b4" DefinedType="IfcAlignment" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Axis" UniqueId="eff466c5-204f-4fdc-b966-6d265c105c5f" DefinedType="IfcCurve">
+			<Documentation>The curve to be used for positioning.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPositiveLengthMeasure" UniqueId="3a9ab3fb-6071-423b-afb3-b5d134501151" DefinedType="IfcLengthMeasure">
+	<Localization>
+		<DocLocalization Locale="en" Name="Positive Length Measure" />
+		<DocLocalization Locale="fr" Name="Mesure de longueur positive" />
+	</Localization>
+	<Definition xsi:type="DocDefined" xsi:nil="true" href="IfcLengthMeasure" />
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="439f3268-8a49-4f4c-9b16-ef5413383ca7">
+			<Documentation>A positive measure shall be greater than zero.</Documentation>
+			<Expression>SELF &gt; 0.</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocDefined>
+

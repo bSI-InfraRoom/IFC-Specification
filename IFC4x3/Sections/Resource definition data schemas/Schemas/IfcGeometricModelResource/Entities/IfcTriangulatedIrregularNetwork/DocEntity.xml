@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTriangulatedIrregularNetwork" UniqueId="e312d865-7031-4404-9644-cb13ee236f46" BaseDefinition="IfcTriangulatedFaceSet" EntityFlags="32">
+	<Localization>
+		<DocLocalization Locale="en" Name="Triangulated Irregular Network" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Flags" UniqueId="d65a5805-7937-43a0-9540-98e0e449031f" DefinedType="IfcInteger" AggregationType="1" AggregationLower="1" AggregationUpper="?">
+			<Documentation>Indicates attributes of each triangle in a compact form as follows: -2 = invisible void; -1 = invisible hole; 0 = no breaklines; 1 = breakline at edge 1; 2 = breakline at edge 2; 3 = breakline at edges 1 and 2; 4 = breakline at edge 3; 5 = breakline at edges 1 and 3; 6 = breakline at edges 2 and 3; 7 = breakline at edges 1, 2, and 3.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NotClosed" UniqueId="93a536b8-6205-4222-addd-197749932e19">
+			<Documentation>The triangulated face set shall not be closed.</Documentation>
+			<Expression>SELF\IfcTriangulatedFaceSet.Closed = FALSE</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

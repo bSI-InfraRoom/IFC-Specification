@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralLoadGroup" Name="IfcStructuralLoadGroup" UniqueId="eda81530-0687-4842-bde0-d6567c6ba98b" BaseDefinition="IfcGroup" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Lastgruppe / Lastkombination" />
+		<DocLocalization Locale="en" Name="Structural Load Group" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="f0baf40b-89ad-4737-880b-bacce70cae15" DefinedType="IfcStructuralLoadCase" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="5663480e-3310-47cf-9895-b66f3b6bc6fc" DefinedType="IfcLoadGroupTypeEnum">
+			<Documentation>Selects a predefined type for the load group.  It can be differentiated between load groups, load cases, load combinations, or userdefined grouping levels.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ActionType" UniqueId="aef5596c-d11b-4db0-a46f-35343620887f" DefinedType="IfcActionTypeEnum">
+			<Documentation>Type of actions in the group. Normally needed if &apos;PredefinedType&apos; specifies a LOAD_CASE.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ActionSource" UniqueId="448bc4ea-6678-4bdf-aa0a-b668235e13ff" DefinedType="IfcActionSourceTypeEnum">
+			<Documentation>Source of actions in the group. Normally needed if &apos;PredefinedType&apos; specifies a LOAD_CASE.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Coefficient" UniqueId="aa87d543-3486-4d44-8480-cb94601a2fc7" DefinedType="IfcRatioMeasure" AttributeFlags="1">
+			<Documentation>Load factor. If omitted, a factor is not yet known or not specified. A load factor of 1.0 shall be explicitly exported as Coefficient = 1.0.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Purpose" UniqueId="fd3c9364-c459-4be9-bd2f-25e1b39b4957" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>Description of the purpose of this instance. Among else, possible values of the Purpose of load combinations are &apos;SLS&apos;, &apos;ULS&apos;, &apos;ALS&apos; to indicate serviceability, ultimate, or accidental limit state.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="SourceOfResultGroup" UniqueId="cc5325c9-4d29-44d1-b97c-63725962202d" DefinedType="IfcStructuralResultGroup" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="ResultForLoadGroup">
+			<Documentation>Results which were computed using this load group.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LoadGroupFor" UniqueId="4da738a4-3225-4f05-895a-6c91c1c53f79" DefinedType="IfcStructuralAnalysisModel" AttributeFlags="8" AggregationType="3" Inverse="LoadedBy">
+			<Documentation>Analysis models in which this load group is used.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasObjectType" UniqueId="1698343e-d9af-499e-a73a-1798c02a536c">
+			<Documentation>The attribute ObjectType shall be given if the predefined type, action type, or action source is set to USERDEFINED.</Documentation>
+			<Expression>(
+  (PredefinedType &lt;&gt; IfcLoadGroupTypeEnum.USERDEFINED) AND
+  (ActionType &lt;&gt; IfcActionTypeEnum.USERDEFINED) AND
+  (ActionSource &lt;&gt; IfcActionSourceTypeEnum.USERDEFINED)
+) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

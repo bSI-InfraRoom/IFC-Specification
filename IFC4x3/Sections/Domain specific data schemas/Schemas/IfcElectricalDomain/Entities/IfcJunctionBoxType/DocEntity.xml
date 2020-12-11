@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcJunctionBoxType" Name="IfcJunctionBoxType" UniqueId="5b0765d7-22a3-4ba4-a259-32523ca4082c" BaseDefinition="IfcFlowFittingType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Verbindungsdose - Typ" />
+		<DocLocalization Locale="en" Name="Junction Box Type" />
+		<DocLocalization Locale="fr" Name="Type de boite de jonction" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="3bba9337-756a-46d1-a706-78d461b878ae" DefinedType="IfcJunctionBoxTypeEnum">
+			<Documentation>Identifies the predefined types of junction boxes from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="fda9bf67-24b9-4276-b28e-0e438ed99241">
+			<Expression>(PredefinedType &lt;&gt; IfcJunctionBoxTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcJunctionBoxTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

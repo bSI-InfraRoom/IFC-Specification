@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPolyline" Name="IfcPolyline" UniqueId="27c04622-ab3d-4d08-9084-d06304e17b81" BaseDefinition="IfcBoundedCurve" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Polylinie" />
+		<DocLocalization Locale="en" Name="Polyline" />
+		<DocLocalization Locale="fr" Name="Polyligne" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Points" UniqueId="0ab3bcf4-dfb0-4e1f-9ab9-dbdc31e393fa" DefinedType="IfcCartesianPoint" AggregationType="1" AggregationLower="2" AggregationUpper="0">
+			<Documentation>The points defining the polyline.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="SameDim" UniqueId="87fbc68e-06da-48a5-b792-6859d5813a94">
+			<Documentation>The space dimensionality of all Points shall be the same.</Documentation>
+			<Expression>SIZEOF(QUERY(Temp &lt;* Points | Temp.Dim &lt;&gt; Points[1].Dim)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

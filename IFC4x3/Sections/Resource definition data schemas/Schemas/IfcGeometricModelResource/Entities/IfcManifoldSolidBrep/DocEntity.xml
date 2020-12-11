@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcManifoldSolidBrep" Name="IfcManifoldSolidBrep" UniqueId="a50d65b5-c2d5-47ea-a0a6-786fe005e10b" BaseDefinition="IfcSolidModel" EntityFlags="77">
+	<Localization>
+		<DocLocalization Locale="de" Name="Boundary Representation" />
+		<DocLocalization Locale="en" Name="Manifold Solid Brep" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="24817858-ea6b-4679-8714-dc2aaff8f1e0" DefinedType="IfcFacetedBrep" />
+		<DocSubtype UniqueId="6afc2a4b-10ab-4a6a-8813-2d7e3c25dc35" DefinedType="IfcAdvancedBrep" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Outer" UniqueId="037a2664-7d98-4059-af1b-cf56b8255a6f" DefinedType="IfcClosedShell" XsdFormat="attribute">
+			<Documentation>A closed shell defining the exterior boundary of the solid. The shell normal shall point away from the interior of the solid.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

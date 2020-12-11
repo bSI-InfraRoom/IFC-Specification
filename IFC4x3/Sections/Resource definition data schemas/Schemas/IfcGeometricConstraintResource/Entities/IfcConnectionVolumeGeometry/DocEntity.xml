@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConnectionVolumeGeometry" UniqueId="0b7a3b78-5844-48d7-8cfa-af35fa085e67" BaseDefinition="IfcConnectionGeometry" EntityFlags="109">
+	<Localization>
+		<DocLocalization Locale="de" Name="Räumliche Verbindung - Geometrie" />
+		<DocLocalization Locale="en" Name="Connection Volume Geometry" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="VolumeOnRelatingElement" UniqueId="15482933-e8d6-4fdc-8aa5-0c86ed3683c2" DefinedType="IfcSolidOrShell">
+			<Documentation>Volume at which related object overlaps with the relating element, given in the LCS of the relating element.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="VolumeOnRelatedElement" UniqueId="1c4e6b3f-9598-409d-8501-73b5069bbf15" DefinedType="IfcSolidOrShell" AttributeFlags="1">
+			<Documentation>Volume at which related object overlaps with the relating element, given in the LCS of the related element.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

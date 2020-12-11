@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProject" Name="IfcProject" UniqueId="eff34c4d-41a1-48b3-badc-950cf6816a7b" BaseDefinition="IfcContext" EntityFlags="165">
+	<Localization>
+		<DocLocalization Locale="de" Name="Projekt" />
+		<DocLocalization Locale="en" Name="Project" />
+		<DocLocalization Locale="fr" Name="Projet" />
+	</Localization>
+	<WhereRules>
+		<DocWhereRule Name="HasName" UniqueId="cf80b3ff-dd52-438a-bcde-95318cf1df7b">
+			<Documentation>The _Name_ attribute has to be provided for _IfcProject_. It is the short name for the project.</Documentation>
+			<Expression>EXISTS(SELF\IfcRoot.Name)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectContext" UniqueId="4a1ebb22-f191-4bc1-8084-e9590ecd8ae1">
+			<Documentation>If a _RepresentationContexts_ relation is provided then there shall be no instance of _IfcGeometricRepresentationSubContext_ directly included in the set of _RepresentationContexts_.</Documentation>
+			<Expression>NOT(EXISTS(SELF\IfcContext.RepresentationContexts)) OR
+(SIZEOF(QUERY(Temp &lt;* SELF\IfcContext.RepresentationContexts |
+ &apos;IFCREPRESENTATIONRESOURCE.IFCGEOMETRICREPRESENTATIONSUBCONTEXT&apos; IN TYPEOF(Temp)
+  )) = 0)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="NoDecomposition" UniqueId="858783f2-8bb3-4d9a-b751-10ac2dc8516c">
+			<Documentation>The _IfcProject_ represents the root of the any decomposition tree. It shall therefore not be used to decompose any other object definition.</Documentation>
+			<Expression>SIZEOF(SELF\IfcObjectDefinition.Decomposes) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

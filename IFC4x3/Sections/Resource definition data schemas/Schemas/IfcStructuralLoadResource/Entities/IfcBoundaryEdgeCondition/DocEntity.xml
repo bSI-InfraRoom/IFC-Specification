@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBoundaryEdgeCondition" UniqueId="85e8748b-e47c-4c11-8221-841a47ee4045" BaseDefinition="IfcBoundaryCondition" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Randbedingung an einer Kante" />
+		<DocLocalization Locale="en" Name="Boundary Edge Condition" />
+		<DocLocalization Locale="fr" Name="Condition d&apos;arête limite" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="TranslationalStiffnessByLengthX" UniqueId="c537cef2-d867-4d4a-b645-6fb7f9be5d3c" DefinedType="IfcModulusOfTranslationalSubgradeReactionSelect" AttributeFlags="1">
+			<Documentation>Translational stiffness value in x-direction of the coordinate system defined by the instance which uses this resource object.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TranslationalStiffnessByLengthY" UniqueId="8bb1166f-0cae-45c5-8ed1-aa0f0fe7d151" DefinedType="IfcModulusOfTranslationalSubgradeReactionSelect" AttributeFlags="1">
+			<Documentation>Translational stiffness value in y-direction of the coordinate system defined by the instance which uses this resource object.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TranslationalStiffnessByLengthZ" UniqueId="d890266c-3ca9-4602-814e-5a492138df03" DefinedType="IfcModulusOfTranslationalSubgradeReactionSelect" AttributeFlags="1">
+			<Documentation>Translational stiffness value in z-direction of the coordinate system defined by the instance which uses this resource object.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RotationalStiffnessByLengthX" UniqueId="652aaf78-6037-48c5-8be4-07a7c7a00c33" DefinedType="IfcModulusOfRotationalSubgradeReactionSelect" AttributeFlags="1">
+			<Documentation>Rotational stiffness value about the x-axis of the coordinate system defined by the instance which uses this resource object.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RotationalStiffnessByLengthY" UniqueId="2dd4f7da-1b7c-4e6b-8c65-0c3d9449a8eb" DefinedType="IfcModulusOfRotationalSubgradeReactionSelect" AttributeFlags="1">
+			<Documentation>Rotational stiffness value about the y-axis of the coordinate system defined by the instance which uses this resource object.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RotationalStiffnessByLengthZ" UniqueId="3a97b6fa-656f-43d4-a0bb-9bb39568c488" DefinedType="IfcModulusOfRotationalSubgradeReactionSelect" AttributeFlags="1">
+			<Documentation>Rotational stiffness value about the z-axis of the coordinate system defined by the instance which uses this resource object.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

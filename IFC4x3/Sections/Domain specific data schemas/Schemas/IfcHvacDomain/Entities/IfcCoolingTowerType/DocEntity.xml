@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCoolingTowerType" Name="IfcCoolingTowerType" UniqueId="74a69c5e-478f-401b-86d1-69b8d18930e3" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Kühlturm - Typ" />
+		<DocLocalization Locale="en" Name="Cooling Tower Type" />
+		<DocLocalization Locale="fr" Name="Type de tour de refroidissement" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="2357962a-5d20-4f79-8146-a8ff8b9b3810" DefinedType="IfcCoolingTowerTypeEnum">
+			<Documentation>Defines the typical types of cooling towers (e.g., OpenTower, ClosedTower, CrossFlow, etc.).</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="fcbf1749-5ba7-4b52-a0bc-8922d1597680">
+			<Expression>(PredefinedType &lt;&gt; IfcCoolingTowerTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCoolingTowerTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

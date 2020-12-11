@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFurniture" Name="IfcFurniture" UniqueId="73f7c69a-738b-407d-8e68-505ddadbfb41" Status="H" BaseDefinition="IfcFurnishingElement" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Mobiliar" />
+		<DocLocalization Locale="en" Name="Furniture" />
+		<DocLocalization Locale="fr" Name="Mobilier" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="ffe18e42-a9d5-4e8f-984d-86632f76b530" DefinedType="IfcFurnitureTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="65e1e5c7-ede5-42e5-81f9-fe599a7064de">
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcFurnitureTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcFurnitureTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="f2af47be-c8f2-457a-857d-2bc18a5898fb">
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+   (&apos;IFCSHAREDFACILITIESELEMENTS.IFCFURNITURETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

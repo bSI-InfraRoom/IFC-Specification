@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMapConversion" UniqueId="506c5de0-1239-4940-bf42-bab69e86f4fd" BaseDefinition="IfcCoordinateOperation" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Konvertierung in kartographische Koordinaten" />
+		<DocLocalization Locale="en" Name="Map Conversion" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Eastings" UniqueId="90379900-4b34-4a0d-ac18-6252a9826f8d" DefinedType="IfcLengthMeasure">
+			<Documentation>Specifies the location along the easting of the coordinate system of the target map coordinate reference system.
+&gt; NOTE&amp;nbsp; for right-handed Cartesian coordinate systems this would establish the location along the x axis.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Northings" UniqueId="5ecf06ef-a890-4175-bd87-5a66389c4a94" DefinedType="IfcLengthMeasure">
+			<Documentation>Specifies the location along the northing of the coordinate system of the target map coordinate reference system.
+&gt; NOTE&amp;nbsp; for right-handed Cartesian coordinate systems this would establish the location along the y axis</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OrthogonalHeight" UniqueId="387d0354-e2c4-43ee-8794-44988ceda720" DefinedType="IfcLengthMeasure">
+			<Documentation>Orthogonal height relativ to the vertical datum specified.
+&gt; NOTE&amp;nbsp; for right-handed Cartesian coordinate systems this would establish the location along the z axis</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="XAxisAbscissa" UniqueId="fd51ced1-8bfd-4463-8c2d-da83ec682068" DefinedType="IfcReal" AttributeFlags="1">
+			<Documentation>Specifies the value along the easing axis of the end point of a vector indicating the position of the local x axis of the engineering coordinate reference system.
+&gt; NOTE&amp;nbsp;1 for right-handed Cartesian coordinate systems this would establish the location along the x axis
+
+&gt; NOTE&amp;nbsp;2 together with the _XAxisOrdinate_ it provides the direction of the local x axis within the horizontal plane of the map coordinate system</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="XAxisOrdinate" UniqueId="7cbfb2eb-9b52-4866-9d87-da9d89a90495" DefinedType="IfcReal" AttributeFlags="1">
+			<Documentation>Specifies the value along the northing axis of the end point of a vector indicating the position of the local x axis of the engineering coordinate reference system.
+&gt; NOTE&amp;nbsp;1 for right-handed Cartesian coordinate systems this would establish the location along the y axis
+
+{ .note}
+&gt; 
+
+_XAxisAbscissa_ it provides the direction of the local x axis within the horizontal plane of the map coordinate system.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Scale" UniqueId="db27722d-93be-4e68-a96a-712ebbef1884" DefinedType="IfcReal" AttributeFlags="1">
+			<Documentation>Scale to be used, when the units of the CRS are not identical to the units of the engineering coordinate system. If omited, the value of 1.0 is assumed.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDuctSilencer" Name="IfcDuctSilencer" UniqueId="a31bfbd0-af30-4a94-a395-16bd8b02ae79" BaseDefinition="IfcFlowTreatmentDevice" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Kanalschalldämpfer" />
+		<DocLocalization Locale="en" Name="Duct Silencer" />
+		<DocLocalization Locale="fr" Name="Silencieux circulaire" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="aaa8fe96-302d-489d-8e43-b0705cec0bc4" DefinedType="IfcDuctSilencerTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="7ebbb3ad-aefd-436d-83b6-4b5a6ea2f9f7">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcDuctSilencerType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcDuctSilencerTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcDuctSilencerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="ef1bab5e-5ea7-4f7d-9be6-f178e05ec3d6">
+			<Documentation>Either there is no duct silencer type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcDuctSilencerType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCDUCTSILENCERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

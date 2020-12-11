@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPresentationAppearanceResource" UniqueId="b0c9a168-d2d4-40d6-91cd-09290637e7a3">
+	<SchemaRefs>
+		<DocSchemaRef Name="IFCEXTERNALREFERENCERESOURCE" UniqueId="47d0e889-64b5-479a-8b82-14601c0fd16f">
+			<Definitions>
+				<DocDefinitionRef Name="IfcExternalReference" UniqueId="0a014583-27c6-4d3e-8138-4ca8ebf307c4" />
+				<DocDefinitionRef Name="IfcClassificationReference" UniqueId="4d8e5c7c-176b-46f1-a7c6-3c3fc1ade889" />
+				<DocDefinitionRef Name="IfcURIReference" UniqueId="3a29ca26-6b16-47e0-8d32-e87bf0be5d80" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCGEOMETRICMODELRESOURCE" UniqueId="3e913d08-b286-404b-a75e-23e7a73e6d4a">
+			<Definitions>
+				<DocDefinitionRef Name="IfcTessellatedFaceSet" UniqueId="8cdf5d60-1fee-4ae8-829d-9a17e63028b0" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCGEOMETRYRESOURCE" UniqueId="508e36f4-21a4-4154-a5e8-5ea9adce69a6">
+			<Definitions>
+				<DocDefinitionRef Name="IfcGeometricRepresentationItem" UniqueId="784989bd-e38f-435b-b21d-5f91ea8765f9" />
+				<DocDefinitionRef Name="IfcCartesianPoint" UniqueId="cec4da2c-01aa-4761-a75e-eca6b42bff42" />
+				<DocDefinitionRef Name="IfcVector" UniqueId="0bd6f435-14a6-4d29-a037-635038486f4d" />
+				<DocDefinitionRef Name="IfcCartesianTransformationOperator2D" UniqueId="e25d7a57-4d29-4ffe-a1c5-13f532de9799" />
+				<DocDefinitionRef Name="IfcRepresentationItem" UniqueId="d89c46d3-eb19-450b-b24e-967efaf0a187" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCMEASURERESOURCE" UniqueId="7ebb06a6-57a9-4b92-b40e-5e3b7445b73f">
+			<Definitions>
+				<DocDefinitionRef Name="IfcLabel" UniqueId="d20dca30-45c2-4c0d-941c-6d0133327caf" />
+				<DocDefinitionRef Name="IfcPositiveLengthMeasure" UniqueId="34cf5a19-1694-4920-811f-e1591fe46c63" />
+				<DocDefinitionRef Name="IfcLengthMeasure" UniqueId="54761a51-14e6-4d5b-862f-ba78b6440c1e" />
+				<DocDefinitionRef Name="IfcRatioMeasure" UniqueId="e967f45e-3639-4890-a328-ad9181174bff" />
+				<DocDefinitionRef Name="IfcPlaneAngleMeasure" UniqueId="73855103-68d0-40c9-9406-44077596ae55" />
+				<DocDefinitionRef Name="IfcPositiveRatioMeasure" UniqueId="aecfcc6f-b5e7-43c1-af58-9b369906e68d" />
+				<DocDefinitionRef Name="IfcNormalisedRatioMeasure" UniqueId="05cec8e4-a0bf-43d6-a04d-1aebc9264970" />
+				<DocDefinitionRef Name="IfcParameterValue" UniqueId="b011ffab-4eed-4480-9809-324a66b5ae71" />
+				<DocDefinitionRef Name="IfcIdentifier" UniqueId="b559076f-8f81-4543-8123-5a4d9c840434" />
+				<DocDefinitionRef Name="IfcInteger" UniqueId="78fb9cc0-690a-4f02-aee1-a197210668d5" />
+				<DocDefinitionRef Name="IfcReal" UniqueId="610691b0-a352-4011-97ce-4b9131c6e1f9" />
+				<DocDefinitionRef Name="IfcDescriptiveMeasure" UniqueId="5ae8cd5d-3881-41d0-89bf-b61fffb17d0b" />
+				<DocDefinitionRef Name="IfcSIUnit" UniqueId="87141391-76c5-4886-ae53-724950bfcc63" />
+				<DocDefinitionRef Name="IfcBoolean" UniqueId="6cf1383e-2c6b-4f18-a1f1-021c5e25dd85" />
+				<DocDefinitionRef Name="IfcBinary" UniqueId="0f687f12-04bf-4187-8e92-bca5377d6e93" />
+				<DocDefinitionRef Name="IfcPositiveInteger" UniqueId="acba8fe5-3b16-4fec-9f94-83937da7b492" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCPRESENTATIONDEFINITIONRESOURCE" UniqueId="0e565116-2d61-4971-84a1-8c1a0f1aac48">
+			<Definitions>
+				<DocDefinitionRef Name="IfcPresentationItem" UniqueId="0b471e37-1ca0-4c86-86e1-01a1b0f431a7" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCTOPOLOGYRESOURCE" UniqueId="4a3a6ff9-5071-4869-8967-9fb878c02df8">
+			<Definitions>
+				<DocDefinitionRef Name="IfcFace" UniqueId="6a51b21a-1281-487d-b820-71de5bfd83b4" />
+			</Definitions>
+		</DocSchemaRef>
+	</SchemaRefs>
+</DocSchema>
+

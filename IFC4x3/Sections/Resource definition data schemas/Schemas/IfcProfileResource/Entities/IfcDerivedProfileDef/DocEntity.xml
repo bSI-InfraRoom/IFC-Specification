@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDerivedProfileDef" Name="IfcDerivedProfileDef" UniqueId="bce6c9f4-6d2e-4d7b-8d7e-5174db9b4051" BaseDefinition="IfcProfileDef" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="abgeleitetes Profil" />
+		<DocLocalization Locale="en" Name="Derived Profile Def" />
+		<DocLocalization Locale="fr" Name="Définition d&apos;un profil dérivé" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="8baec99e-1606-4114-b85e-74ed5cf3ec48" DefinedType="IfcMirroredProfileDef" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="ParentProfile" UniqueId="a965069b-b250-483b-bca0-761cd8940d02" DefinedType="IfcProfileDef" XsdFormat="attribute">
+			<Documentation>The parent profile provides the origin of the transformation.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Operator" UniqueId="00ccc2f6-4a36-4cf8-990a-50ae7863bf91" DefinedType="IfcCartesianTransformationOperator2D" XsdFormat="attribute">
+			<Documentation>Transformation operator applied to the parent profile.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Label" UniqueId="22457022-a959-4537-a5dd-0f712caa528f" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>The name by which the transformation may be referred to. The actual meaning of the name has to be defined in the context of applications.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="InvariantProfileType" UniqueId="64320db6-a805-4669-8d0a-f8d346bc31d6">
+			<Documentation>The profile type of the derived profile shall be the same as the type of the parent profile, i.e. both shall be either AREA or CURVE.</Documentation>
+			<Expression>SELF\IfcProfileDef.ProfileType = ParentProfile.ProfileType</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

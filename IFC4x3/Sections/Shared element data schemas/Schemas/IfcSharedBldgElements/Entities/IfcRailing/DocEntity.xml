@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRailing" Name="IfcRailing" UniqueId="39b687ba-1327-4a70-927b-47733d3e370b" BaseDefinition="IfcBuiltElement" EntityFlags="109">
+	<Localization>
+		<DocLocalization Locale="de" Name="Geländer" />
+		<DocLocalization Locale="en" Name="Railing" />
+		<DocLocalization Locale="fr" Name="Garde corps" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="a41e385b-cc54-4bd0-a2e7-bdc2cd206b45" DefinedType="IfcRailingTypeEnum" AttributeFlags="1">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="c7a195a2-0da2-442e-9736-a487f7abbcc6">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcRailingType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcRailingTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcRailingTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="e0985b0b-09ca-472d-88c5-04c2c97d2abe">
+			<Documentation>Either there is no railing type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcRailingType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCRAILINGTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralLinearAction" UniqueId="8db6f32f-4084-4717-8dfb-ad3400beaf4c" BaseDefinition="IfcStructuralCurveAction" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="gleichmäßige Linienlast" />
+		<DocLocalization Locale="en" Name="Structural Linear Action" />
+	</Localization>
+	<WhereRules>
+		<DocWhereRule Name="SuitableLoadType" UniqueId="a69ea701-c378-456d-8595-4bbfec56bd21">
+			<Documentation>A linear action shall place either a linear force or a temperature load.</Documentation>
+			<Expression>SIZEOF([&apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADLINEARFORCE&apos;, &apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADTEMPERATURE&apos;] * TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="ConstPredefinedType" UniqueId="92d46c7f-76c9-40e7-b309-6a8e9c9587b1">
+			<Documentation>This curve action subtype is restricted to constant load distribution over its domain.</Documentation>
+			<Expression>SELF\IfcStructuralCurveAction.PredefinedType = IfcStructuralCurveActivityTypeEnum.CONST</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

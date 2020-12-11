@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSpaceHeater" Name="IfcSpaceHeater" UniqueId="20c6cd7a-bb4c-42ed-8dca-1a4cfdf92797" BaseDefinition="IfcFlowTerminal" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Heizkörper" />
+		<DocLocalization Locale="en" Name="Space Heater" />
+		<DocLocalization Locale="fr" Name="Radiateur" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="095307e6-1620-43fd-8170-a341f054d6b9" DefinedType="IfcSpaceHeaterTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="e5f5b04b-9b00-48fe-95b8-8b9251e1e5d5">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcSpaceHeaterType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcSpaceHeaterTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcSpaceHeaterTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="f429c619-954f-488e-8b55-0b17b104e336">
+			<Documentation>Either there is no space heater type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcSpaceHeaterType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCSPACEHEATERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

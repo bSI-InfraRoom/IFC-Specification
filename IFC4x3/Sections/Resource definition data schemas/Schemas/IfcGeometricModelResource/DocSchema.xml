@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeometricModelResource" UniqueId="4368ad04-218b-4521-ba3f-88cc06e7c141">
+	<SchemaRefs>
+		<DocSchemaRef Name="IFCGEOMETRYRESOURCE" UniqueId="64276fd5-3340-4a42-a80f-2cdbeab858c0">
+			<Definitions>
+				<DocDefinitionRef Name="IfcDimensionCount" UniqueId="575d6324-51b3-434b-a321-9f29d0bf1cfe" />
+				<DocDefinitionRef Name="IfcGeometricRepresentationItem" UniqueId="dcf098d5-2fd5-4a42-90f7-e6d2cdfb47a1" />
+				<DocDefinitionRef Name="IfcSurface" UniqueId="3110c9d1-35c1-4356-bd63-6dcbd3e380ae" />
+				<DocDefinitionRef Name="IfcCartesianPoint" UniqueId="d4e26942-bd47-4762-af2f-37656b829e4e" />
+				<DocDefinitionRef Name="IfcDirection" UniqueId="90f4b1de-5e15-41f0-aabc-bf39f466a97e" />
+				<DocDefinitionRef Name="IfcAxis1Placement" UniqueId="97c7989a-4751-42a9-90d5-ab2d7bcd33ec" />
+				<DocDefinitionRef Name="IfcLine" UniqueId="bb056944-4d36-44b3-b8e2-29477be2ab32" />
+				<DocDefinitionRef Name="IfcCircle" UniqueId="9b06035c-d203-4b55-a8ed-ee401d3bfa89" />
+				<DocDefinitionRef Name="IfcVectorSum" UniqueId="5a7226fc-2ade-4acd-8339-844488e9ce77" />
+				<DocDefinitionRef Name="IfcAxis2Placement3D" UniqueId="8ac1f2f4-5a80-490b-8a1f-c85a1893282f" />
+				<DocDefinitionRef Name="IfcCompositeCurve" UniqueId="0852be52-a52e-4b78-93f0-b22f6cc50f7f" />
+				<DocDefinitionRef Name="IfcPolyline" UniqueId="7def0bdb-c9ca-4101-a8e0-71d81f416623" />
+				<DocDefinitionRef Name="IfcTrimmedCurve" UniqueId="193d4254-e566-4741-b5b9-37e0f955a5fb" />
+				<DocDefinitionRef Name="IfcPlane" UniqueId="d6f2a1ba-f26d-4f91-b333-6666771db85c" />
+				<DocDefinitionRef Name="IfcCurve" UniqueId="c412af29-3faf-4cc0-a8a2-00658e990fca" />
+				<DocDefinitionRef Name="IfcPoint" UniqueId="1e6753eb-3f03-439f-ac43-75927209d3ea" />
+				<DocDefinitionRef Name="IfcVector" UniqueId="c3279e48-d0da-4d4f-bce1-12186fbbe06b" />
+				<DocDefinitionRef Name="IfcDotProduct" UniqueId="35ee5be5-9446-4ee9-abf9-93996032836a" />
+				<DocDefinitionRef Name="IfcBSplineCurve" UniqueId="0141e991-85b2-4e99-9b9d-c7c4826aaf69" />
+				<DocDefinitionRef Name="IfcBoundedCurve" UniqueId="6acf4dcf-b3f5-4045-b4f9-df39e0679320" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCGEOMETRYRESOURCE" UniqueId="eaa7b14c-395a-4f4b-ba5d-e9e6a5dac69d">
+			<Definitions>
+				<DocDefinitionRef Name="IfcPointByDistanceExpression" UniqueId="2d14ddc4-7a1b-4095-be75-9ca4d14de7eb" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IfcMeasureResource" UniqueId="3662d8f5-aab5-4a53-80ed-9962f8fafaad">
+			<Definitions>
+				<DocDefinitionRef Name="IfcLabel" UniqueId="07fd9c74-8190-4dc9-bee0-d244ed13b0f8" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCMEASURERESOURCE" UniqueId="d5088a84-f6c4-477b-a535-29e79fd0839f">
+			<Definitions>
+				<DocDefinitionRef Name="IfcPositiveLengthMeasure" UniqueId="36417e98-e996-4c53-b469-bf8a12d3da86" />
+				<DocDefinitionRef Name="IfcPlaneAngleMeasure" UniqueId="bdcf7f14-63da-4066-aa16-d68a69f41bc5" />
+				<DocDefinitionRef Name="IfcParameterValue" UniqueId="a3512312-a856-49a0-81ae-f9133eebaf2c" />
+				<DocDefinitionRef Name="IfcLengthMeasure" UniqueId="3c831c12-d959-431b-acb3-ead5264dd715" />
+				<DocDefinitionRef Name="IfcBoolean" UniqueId="5846255f-c88f-4014-be92-a94d7a3d3c39" />
+				<DocDefinitionRef Name="IfcInteger" UniqueId="10de1fa3-b124-4d41-84fa-113459d99491" />
+				<DocDefinitionRef Name="IfcPositiveInteger" UniqueId="6b5c4b68-240e-438f-a05a-e1305da435ec" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCPRESENTATIONAPPEARANCERESOURCE" UniqueId="0cf4896a-0818-46fc-8d19-c8f8e263faee">
+			<Definitions>
+				<DocDefinitionRef Name="IfcNullStyle" UniqueId="4f5c2543-a3e4-4f87-b90c-8970beb73310" />
+				<DocDefinitionRef Name="IfcIndexedTextureMap" UniqueId="b891291f-9b5c-4737-b5a9-b1e7dc20b215" />
+				<DocDefinitionRef Name="IfcIndexedColourMap" UniqueId="ea09b67c-34ef-495c-a561-9b7be1e0c235" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCPROFILERESOURCE" UniqueId="af73451a-c25d-4748-873c-3aa8456dd07b">
+			<Definitions>
+				<DocDefinitionRef Name="IfcCircleProfileDef" UniqueId="5ae32384-3f31-4315-86dc-d74301b6d0c5" />
+				<DocDefinitionRef Name="IfcRectangleProfileDef" UniqueId="2c69db4a-ff7b-4d6a-95b0-172a4bfda9dc" />
+				<DocDefinitionRef Name="IfcTrapeziumProfileDef" UniqueId="930bc99f-5aa9-45e9-8142-2016a574248d" />
+				<DocDefinitionRef Name="IfcEllipseProfileDef" UniqueId="919288f4-e138-4ae3-9202-33411f0a2d12" />
+				<DocDefinitionRef Name="IfcRoundedRectangleProfileDef" UniqueId="e4ddb05f-3999-46e2-bd45-62cfe7f3a1b1" />
+				<DocDefinitionRef Name="IfcProfileDef" UniqueId="cd6a993d-f225-4525-8ef9-07a54e2bd1c0" />
+				<DocDefinitionRef Name="IfcProfileTypeEnum" UniqueId="5077617c-cc06-4436-bd04-b72e0aa227af" />
+				<DocDefinitionRef Name="IfcParameterizedProfileDef" UniqueId="eb8fb3c7-c564-456b-a7c8-31019e4984ae" />
+				<DocDefinitionRef Name="IfcDerivedProfileDef" UniqueId="20e11ce1-c5e9-45a3-8d43-c5b06c964ad0" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCTOPOLOGYRESOURCE" UniqueId="368c493d-fe22-4120-b8ea-cbaa250672e9">
+			<Definitions>
+				<DocDefinitionRef Name="IfcClosedShell" UniqueId="01cfa7d2-ee49-4347-b969-603a0c5b7011" />
+				<DocDefinitionRef Name="IfcConnectedFaceSet" UniqueId="b76b29f5-79a3-4892-a6f2-e45934956dbb" />
+				<DocDefinitionRef Name="IfcShell" UniqueId="93cfd267-4544-4026-9c92-a3aed7581f69" />
+			</Definitions>
+		</DocSchemaRef>
+	</SchemaRefs>
+</DocSchema>
+

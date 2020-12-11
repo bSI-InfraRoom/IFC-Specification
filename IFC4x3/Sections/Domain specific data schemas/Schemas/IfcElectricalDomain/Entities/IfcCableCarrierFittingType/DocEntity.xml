@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCableCarrierFittingType" Name="IfcCableCarrierFittingType" UniqueId="fd9b5bec-e42a-4c5e-bc8a-bd72ae76b43a" BaseDefinition="IfcFlowFittingType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Kabelträger Passstück - Typ" />
+		<DocLocalization Locale="en" Name="Cable Carrier Fitting Type" />
+		<DocLocalization Locale="fr" Name="Type de raccord de chemin de cable" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="8608a724-6294-4993-ac2b-b30f39f1853a" DefinedType="IfcCableCarrierFittingTypeEnum">
+			<Documentation>Identifies the predefined types of cable carrier fitting from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="bdf94334-538c-435b-93da-18de862a72fc">
+			<Expression>(PredefinedType &lt;&gt; IfcCableCarrierFittingTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCableCarrierFittingTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

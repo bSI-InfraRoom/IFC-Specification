@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAlignmentSegment" UniqueId="99256c95-26f9-40c1-8626-d82861f2eecc" BaseDefinition="IfcLinearElement" EntityFlags="32">
+	<Documentation></Documentation>
+	<Localization>
+		<DocLocalization Locale="en" Name="Alignment 2D Segment" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="09b02425-31f8-4a04-bdb3-17d12431aaba" DefinedType="IfcAlignment2DHorizontalSegment" />
+		<DocSubtype UniqueId="a6ceb5e8-fd6c-4594-9172-62a2838eedcb" DefinedType="IfcAlignment2DVerticalSegment" />
+		<DocSubtype UniqueId="8a775915-9de1-4b1a-9f99-b975bf7f5302" DefinedType="IfcAlignment2DCantSegment" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="GeometricParameters" UniqueId="0826c7d2-d778-4a67-88f2-00dde40873a4" DefinedType="IfcAlignmentParameterSegment" />
+	</Attributes>
+</DocEntity>
+

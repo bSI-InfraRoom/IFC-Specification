@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSolarDevice" Name="IfcSolarDevice" UniqueId="509208ea-e863-454b-9bd2-3fdf0c7dbac6" BaseDefinition="IfcEnergyConversionDevice" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Solargerät" />
+		<DocLocalization Locale="en" Name="Solar Device" />
+		<DocLocalization Locale="fr" Name="Capteur solaire" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="08401fee-143c-4a4a-8600-3460e518aefe" DefinedType="IfcSolarDeviceTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="a5846fd1-1c09-4c09-b760-a43434109d4b">
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcSolarDeviceTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcSolarDeviceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="f7813e88-5ef7-4a31-9020-3ddc32e18d22">
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCELECTRICALDOMAIN.IFCSOLARDEVICETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

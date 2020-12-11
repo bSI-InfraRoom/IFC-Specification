@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElementAssemblyType" Name="IfcElementAssemblyType" UniqueId="cf32f5f3-9164-4283-8a8d-cfbf1a4bcc3e" BaseDefinition="IfcElementType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="zusammengesetztes Element - Typ" />
+		<DocLocalization Locale="en" Name="Element Assembly Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;assemblage d&apos;éléments" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="45aa3a72-bdd4-4e5b-b2d9-27b82bc19e4d" DefinedType="IfcElementAssemblyTypeEnum">
+			<Documentation>Predefined types to define the particular type of the transport element. There may be property set definitions available for each predefined type.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="98d7b4d2-b6eb-4523-bc6d-e6f16c65bf43">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcElementAssemblyTypeEnum.USERDEFINED) OR 
+((PredefinedType = IfcElementAssemblyTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

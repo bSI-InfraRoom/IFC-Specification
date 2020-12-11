@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCurveStyleFontPattern" UniqueId="da500633-fe56-47a8-9405-98c6a95e757b" BaseDefinition="IfcPresentationItem" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Linienstilsatz - Muster" />
+		<DocLocalization Locale="en" Name="Curve Style Font Pattern" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="VisibleSegmentLength" UniqueId="bf5fb00d-16e8-4146-a8f3-e125fa492723" DefinedType="IfcLengthMeasure">
+			<Documentation>The length of the visible segment in the pattern definition.
+&gt; NOTE&amp;nbsp; For a visible segment representing a point, the value 0. should be assigned.
+
+{ .change-ifc2x3}
+&gt; IFC2x3 CHANGE&amp;nbsp; The datatype has been changed to IfcLengthMeasure with upward compatibility for file-based exchange.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="InvisibleSegmentLength" UniqueId="317e8bab-7743-45d9-bda6-e034d1b74450" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>The length of the invisible segment in the pattern definition.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="VisibleLengthGreaterEqualZero" UniqueId="ef5983db-5b43-49d5-8c8d-56918bbdedb2">
+			<Documentation>The value of a visible pattern length shall be equal or greater then zero.</Documentation>
+			<Expression>VisibleSegmentLength &gt;= 0.</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

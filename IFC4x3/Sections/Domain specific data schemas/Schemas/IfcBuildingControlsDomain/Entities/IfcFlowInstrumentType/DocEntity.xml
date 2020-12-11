@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFlowInstrumentType" Name="IfcFlowInstrumentType" UniqueId="92253df9-2c74-4a77-9837-72f4f240f459" BaseDefinition="IfcDistributionControlElementType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Messinstrument (allgemein) - Typ" />
+		<DocLocalization Locale="en" Name="Flow Instrument Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;instrument d&apos;installation fluides" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="cf7b1015-4346-4cfb-96ea-ad21f3becfe7" DefinedType="IfcFlowInstrumentTypeEnum">
+			<Documentation>Identifies the predefined types of flow instrument from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="a1e86b6c-2faf-45ab-a720-ba5ccf5c7175">
+			<Expression>(PredefinedType &lt;&gt; IfcFlowInstrumentTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcFlowInstrumentTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

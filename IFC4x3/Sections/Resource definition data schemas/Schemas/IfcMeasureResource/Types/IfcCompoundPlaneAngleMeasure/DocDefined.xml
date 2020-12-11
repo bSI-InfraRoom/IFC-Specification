@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCompoundPlaneAngleMeasure" UniqueId="6b5c667d-bed9-4b77-ba0b-039cef56680c" DefinedType="INTEGER">
+	<Localization>
+		<DocLocalization Locale="en" Name="Compound Plane Angle Measure" />
+		<DocLocalization Locale="fr" Name="Mesure composée d&apos;angle plan" />
+	</Localization>
+	<Definition xsi:type="DocPrimitive" xsi:nil="true" href="INTEGER_0Bo9r4fCj07e5rVk1a6n_D" />
+	<WhereRules>
+		<DocWhereRule Name="MinutesInRange" UniqueId="43153839-dbf3-4eed-98f2-f2b31e14e7b0">
+			<Documentation>The second measure (minutes) shall be between -60 exclusive and 60 exclusive.</Documentation>
+			<Expression>ABS(SELF[2]) &lt; 60</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="SecondsInRange" UniqueId="4f843100-55b3-4bb2-bba3-0f1c1844567d">
+			<Documentation>The third measure (seconds) shall be between -60 exclusive and 60 exclusive.</Documentation>
+			<Expression>ABS(SELF[3]) &lt; 60</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="MicrosecondsInRange" UniqueId="f00f71b1-2f1b-49c1-a94a-2e7a8125ff78">
+			<Documentation>The forth measure (millionth-seconds), if asserted, shall be between -1e6 exclusive and 1e6 exclusive.</Documentation>
+			<Expression>(SIZEOF(SELF) = 3) OR (ABS(SELF[4]) &lt; 1000000)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="ConsistentSign" UniqueId="05fd62e0-9b85-40bb-934f-23d503af0429">
+			<Documentation>All non-zero measure components shall have the same sign (positive or negative).</Documentation>
+			<Expression>((SELF[1] &gt;= 0) AND (SELF[2] &gt;= 0) AND (SELF[3] &gt;= 0) AND ((SIZEOF(SELF) = 3) OR (SELF[4] &gt;= 0)))
+OR
+((SELF[1] &lt;= 0) AND (SELF[2] &lt;= 0) AND (SELF[3] &lt;= 0) AND ((SIZEOF(SELF) = 3) OR (SELF[4] &lt;= 0)))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+	<Aggregation xsi:type="DocAttribute" UniqueId="b8797118-03a1-4cf9-871c-c02cb7310645" AggregationType="1" AggregationLower="3" AggregationUpper="4" />
+</DocDefined>
+

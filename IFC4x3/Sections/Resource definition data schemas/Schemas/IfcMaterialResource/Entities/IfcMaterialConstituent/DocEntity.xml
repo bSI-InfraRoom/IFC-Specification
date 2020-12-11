@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialConstituent" UniqueId="beba5e9b-c73b-48e0-8a6d-b5d65ddbaaf1" BaseDefinition="IfcMaterialDefinition" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Materialbestandteil" />
+		<DocLocalization Locale="en" Name="Material Constituent" />
+		<DocLocalization Locale="fr" Name="Matériau constitutif" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Name" UniqueId="cd111960-1bdc-4bb1-82cf-eb8857fc7dae" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>The name by which the material constituent is known.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Description" UniqueId="ebe9ac22-8c7f-4eb2-a71e-4fd081367dcf" DefinedType="IfcText" AttributeFlags="1">
+			<Documentation>Definition of the material constituent in descriptive terms.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Material" UniqueId="8f4bb525-9e74-4e8e-bc69-8cd29d76032e" DefinedType="IfcMaterial" XsdFormat="attribute">
+			<Documentation>Reference to the material from which the constituent is constructed.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Fraction" UniqueId="c7db76e7-d83a-421c-a53d-714aef504ca3" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1">
+			<Documentation>Optional provision of a fraction of the total amount (volume or weight) that applies to the _IfcMaterialConstituentSet_ that is contributed by this _IfcMaterialConstituent_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Category" UniqueId="e83b8380-8104-4922-8366-c2cda154c85c" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>Category of the material constituent, e.g. the role it has in the constituent set it belongs to.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ToMaterialConstituentSet" UniqueId="209ecc93-41cf-491d-b4e8-7e22cada303e" DefinedType="IfcMaterialConstituentSet" AttributeFlags="8" Inverse="MaterialConstituents">
+			<Documentation>Material constituent set in which this material constituent is included.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

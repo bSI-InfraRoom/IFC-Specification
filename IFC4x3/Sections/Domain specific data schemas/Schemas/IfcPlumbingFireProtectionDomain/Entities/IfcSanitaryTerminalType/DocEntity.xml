@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSanitaryTerminalType" Name="IfcSanitaryTerminalType" UniqueId="3e6d6990-982c-4e43-a72e-52557bdc1ac3" BaseDefinition="IfcFlowTerminalType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Sanitäreinrichtung - Typ" />
+		<DocLocalization Locale="en" Name="Sanitary Terminal Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;équipement sanitaire" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="1e4ce0fe-9a0e-4b63-85a0-96729bee115b" DefinedType="IfcSanitaryTerminalTypeEnum">
+			<Documentation>Identifies the predefined types of sanitary terminal from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="9aa43d32-d922-451c-85bd-56cc2fd0fbae">
+			<Expression>(PredefinedType &lt;&gt; IfcSanitaryTerminalTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcSanitaryTerminalTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

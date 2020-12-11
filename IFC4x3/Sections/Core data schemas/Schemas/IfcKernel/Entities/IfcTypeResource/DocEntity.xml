@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTypeResource" UniqueId="0fb1cf26-3a59-44f5-9a5e-adc7ac27e46a" BaseDefinition="IfcTypeObject" EntityFlags="205">
+	<Localization>
+		<DocLocalization Locale="de" Name="Ressource (allgemein) - Typ" />
+		<DocLocalization Locale="en" Name="Type Resource" />
+		<DocLocalization Locale="fr" Name="Définition d&apos;un type de ressource" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Identification" UniqueId="5e812f44-4e04-4aaf-bd53-4a6055e2c355" DefinedType="IfcIdentifier" AttributeFlags="1">
+			<Documentation>An identifying designation given to a resource type.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LongDescription" UniqueId="e0c1e0d9-98d4-427d-95ff-0d0763cff6b4" DefinedType="IfcText" AttributeFlags="1">
+			<Documentation>An long description, or text, describing the resource in detail.
+&gt; NOTE&amp;nbsp; The inherited _SELF\IfcRoot.Description_ attribute is used as the short description.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ResourceType" UniqueId="dcfa4479-34ce-4047-bd7e-85fc017e6834" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>The type denotes a particular type that indicates the resource further. The use has to be established at the level of instantiable subtypes. In particular it holds the user defined type, if the enumeration of the attribute &apos;PredefinedType&apos; is set to USERDEFINED.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ResourceOf" UniqueId="c8fa0b60-bb75-4c92-9360-ebbe138f9d20" DefinedType="IfcRelAssignsToResource" AggregationType="3" Inverse="RelatingResource">
+			<Documentation>Set of relationships to other objects, e.g. products, processes, controls, resources or actors to which this resource type is a resource.
+&gt; HISTORY New inverse relationship in IFC4.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

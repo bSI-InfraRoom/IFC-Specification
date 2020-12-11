@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcResource" UniqueId="7d23ec63-a69d-48c1-9db7-f4089326e1f2" BaseDefinition="IfcObject" EntityFlags="205">
+	<Localization>
+		<DocLocalization Locale="de" Name="Ressource (allgemein)" />
+		<DocLocalization Locale="en" Name="Resource" />
+		<DocLocalization Locale="fr" Name="Ressource" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Identification" UniqueId="0cd017c3-4383-4abf-b0ed-773af9cc8232" DefinedType="IfcIdentifier" AttributeFlags="1">
+			<Documentation>An identifying designation given to a resource.
+    It is the identifier at the occurrence level. 
+    
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Attribute promoted from subtype _IfcConstructionResource_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LongDescription" UniqueId="60a852dc-c4e0-4828-89b6-44ca845ab563" DefinedType="IfcText" AttributeFlags="1">
+			<Documentation>A detailed description of the resource (e.g. the skillset for a labor resource).  
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The attribute _LongDescription_ is added replacing the _ResourceGroup_ attribute at subtype _IfcConstructionResource_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ResourceOf" UniqueId="e87b021e-ec74-43eb-9a4e-b35cff326133" DefinedType="IfcRelAssignsToResource" AggregationType="3" Inverse="RelatingResource">
+			<Documentation>Set of relationships to other objects, e.g. products, processes, controls, resources or actors, for which this resource object is a resource.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCommunicationsAppliance" Name="IfcCommunicationsAppliance" UniqueId="9abafcf8-704e-46c5-95c9-c9134e1a3e62" BaseDefinition="IfcFlowTerminal" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Kommunikationsgerät" />
+		<DocLocalization Locale="en" Name="Communications Appliance" />
+		<DocLocalization Locale="fr" Name="Appareil de communications" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="e63beda8-8084-4dc0-aa99-260456cfea13" DefinedType="IfcCommunicationsApplianceTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="30e29045-cbc7-47da-be0b-8dc554aa7f7a">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcCommunicationsApplianceType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcCommunicationsApplianceTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcCommunicationsApplianceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="a07316da-58ca-462b-b851-47dbee817a48">
+			<Documentation>Either there is no communications appliance type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcCommunicationsApplianceType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCELECTRICALDOMAIN.IFCCOMMUNICATIONSAPPLIANCETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

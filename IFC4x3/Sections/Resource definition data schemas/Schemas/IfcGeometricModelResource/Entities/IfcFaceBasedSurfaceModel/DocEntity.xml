@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFaceBasedSurfaceModel" Name="IfcFaceBasedSurfaceModel" UniqueId="284e8880-6f10-4fea-873a-8e1ec3cf8cc0" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="109">
+	<Localization>
+		<DocLocalization Locale="de" Name="Flächenmodell (basierend auf Einzelflächen)" />
+		<DocLocalization Locale="en" Name="Face Based Surface Model" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="FbsmFaces" UniqueId="308594ab-aaa8-43db-a1ee-8f3d428b7337" DefinedType="IfcConnectedFaceSet" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The set of connected face sets comprising the face based surface model.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Dim" UniqueId="8bc1b817-2407-4725-814e-ff6c0ffa2e61" DefinedType="IfcDimensionCount">
+			<Documentation>The space dimensionality of this class, it is always 3.</Documentation>
+			<Derived>3</Derived>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

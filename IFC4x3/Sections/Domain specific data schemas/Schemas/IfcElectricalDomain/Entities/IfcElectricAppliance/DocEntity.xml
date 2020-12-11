@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElectricAppliance" Name="IfcElectricAppliance" UniqueId="bc624491-56a2-49ed-bb31-ca4b61c8deb5" BaseDefinition="IfcFlowTerminal" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Elektrisches Gerät" />
+		<DocLocalization Locale="en" Name="Electric Appliance" />
+		<DocLocalization Locale="fr" Name="Appareil électrique" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="12b13a9b-6483-49b8-8001-d733277e783e" DefinedType="IfcElectricApplianceTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="cfcc94d8-64e1-4044-b1d8-2238205425a6">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcElectricApplianceType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcElectricApplianceTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcElectricApplianceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="1f450339-31d1-486b-a240-83d22aca0c65">
+			<Documentation>Either there is no electric appliance type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcElectricApplianceType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCELECTRICALDOMAIN.IFCELECTRICAPPLIANCETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

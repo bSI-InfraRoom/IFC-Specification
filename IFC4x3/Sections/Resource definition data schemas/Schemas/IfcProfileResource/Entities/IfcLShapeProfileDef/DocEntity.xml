@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcLShapeProfileDef" Name="IfcLShapeProfileDef" UniqueId="ac8317b8-fdef-4d3d-afd6-b168298be8c3" BaseDefinition="IfcParameterizedProfileDef" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="L-Profil - parametrische Definition" />
+		<DocLocalization Locale="en" Name="LShape Profile Def" />
+		<DocLocalization Locale="fr" Name="Définition de section d&apos;un profil en L" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Depth" UniqueId="d5f893a9-ac59-4b4f-877f-7f4ef879bbf0" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Leg length, see illustration above (= h). Same as the overall depth.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Width" UniqueId="d2e9f2de-1ffc-4a89-a7dc-52f8b85b3609" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>Leg length, see illustration above (= b). Same as the overall width. This attribute is formally optional for historic reasons only. Whenever the width is known, it shall be provided by value.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Thickness" UniqueId="82f849f8-efde-409e-b7bb-1a7d7f324a78" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Constant wall thickness of profile, see illustration above (= ts).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FilletRadius" UniqueId="4153f801-e907-4df3-a212-ad28a2c2d3c6" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
+			<Documentation>Fillet radius according the above illustration (= r1).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EdgeRadius" UniqueId="ff960210-e1c0-4437-a69a-ae63d0150b47" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
+			<Documentation>Edge radius according the above illustration (= r2).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LegSlope" UniqueId="f8fb3118-9133-499a-94d2-0a52853a0287" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="1">
+			<Documentation>Slope of the inner face of each leg of the profile.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ValidThickness" UniqueId="818cdcfc-7aa9-45f1-8d5b-6e002c4d8ae1">
+			<Documentation>The thickness shall be smaller than the depth and width.</Documentation>
+			<Expression>(Thickness &lt; Depth) AND (NOT(EXISTS(Width)) OR (Thickness &lt; Width))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

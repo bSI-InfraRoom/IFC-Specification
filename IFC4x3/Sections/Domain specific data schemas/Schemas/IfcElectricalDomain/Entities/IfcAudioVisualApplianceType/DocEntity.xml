@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAudioVisualApplianceType" UniqueId="2e0e9b45-760d-49af-bb15-c4011d0a4e76" BaseDefinition="IfcFlowTerminalType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Audiovisuelles Gerät - Typ" />
+		<DocLocalization Locale="en" Name="Audio Visual Appliance Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;appareil audiovisuel" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="5174e2c3-82a6-43e1-a485-103834820e30" DefinedType="IfcAudioVisualApplianceTypeEnum">
+			<Documentation>Identifies the predefined types of audio-visual appliance from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="1b65d393-05ba-45b7-b25a-9597a5922d0d">
+			<Expression>(PredefinedType &lt;&gt; IfcAudioVisualApplianceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcAudioVisualApplianceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

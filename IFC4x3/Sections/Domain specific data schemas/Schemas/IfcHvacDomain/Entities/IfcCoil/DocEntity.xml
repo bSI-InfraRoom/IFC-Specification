@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCoil" Name="IfcCoil" UniqueId="e4ba657e-5119-477a-adcc-96b3366a3658" BaseDefinition="IfcEnergyConversionDevice" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Heiz-Kühlelemente" />
+		<DocLocalization Locale="en" Name="Coil" />
+		<DocLocalization Locale="fr" Name="Bobine" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="4dc322cc-b46e-4816-bd8c-e6ef53a51ed6" DefinedType="IfcCoilTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="b1feac7f-1553-45a3-be60-731f2df7b303">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcCoilType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcCoilTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcCoilTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="1ca88f31-c09c-48da-b89b-b8ffde7f327f">
+			<Documentation>Either there is no coil type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcCoilType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCCOILTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

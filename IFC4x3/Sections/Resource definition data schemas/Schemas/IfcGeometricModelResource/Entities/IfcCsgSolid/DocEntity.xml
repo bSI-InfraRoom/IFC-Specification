@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCsgSolid" UniqueId="33066633-cf11-455b-af76-a502e5affa9c" BaseDefinition="IfcSolidModel" EntityFlags="45">
+	<Localization>
+		<DocLocalization Locale="de" Name="CSG - Festkörper" />
+		<DocLocalization Locale="en" Name="Constructive Solid Geometry Solid" />
+		<DocLocalization Locale="fr" Name="Solid Csg" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="TreeRootExpression" UniqueId="ab20cd30-ed6a-408f-9814-3196ef85c1be" DefinedType="IfcCsgSelect">
+			<Documentation>Boolean expression of primitives and regularized operators describing the solid. The root of the tree of Boolean expressions is given explicitly as an _IfcBooleanResult_ entitiy or as a primitive (subtypes of _IfcCsgPrimitive3D_).</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAlignmentCantSegment" UniqueId="b6b5f6a7-3b51-4f2e-958e-0f8845a8414d" BaseDefinition="IfcAlignmentParameterSegment" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="StartDistAlong" UniqueId="6a411ff4-fa52-4c6a-a3de-5896627dc575" DefinedType="IfcLengthMeasure">
+			<Documentation>Distance along the horizontal alignment, measured along the IfcAlignment2DHorizontal given in the length unit of the global IfcUnitAssignment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="HorizontalLength" UniqueId="ebd5ee92-1836-4c92-bfb5-4ef80d9eeceb" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Length measured as distance along the horizontal alignment of the segment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="StartCantLeft" UniqueId="035b7084-b76d-4b18-a9e8-2ddd020f1fc4" DefinedType="IfcLengthMeasure">
+			<Documentation>Length measured for the left cant at the beginning of the segment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EndCantLeft" UniqueId="b3d0a7a4-1e12-4b11-b303-06e478b8fb29" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>Length measured for the left cant at the end of the segment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="StartCantRight" UniqueId="95c19543-9bf3-487d-8e8e-7926c89236dc" DefinedType="IfcLengthMeasure">
+			<Documentation>Length measured for the right cant at the beginning of the segment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EndCantRight" UniqueId="1414d0ce-f053-4a7e-87f5-6705c9d7ba50" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>Length measured for the right cant at the end of the segment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="SmoothingLength" UniqueId="9bf4d408-4f58-4be8-b4e4-262aef779ac4" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1" />
+		<DocAttribute Name="PredefinedType" UniqueId="51e5fade-7d51-4c6a-8b19-1b08e561a4f9" DefinedType="IfcAlignmentCantSegmentTypeEnum" />
+	</Attributes>
+</DocEntity>
+

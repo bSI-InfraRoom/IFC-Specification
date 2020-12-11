@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFillAreaStyle" UniqueId="8495cfb3-40da-4a4e-8481-67e0000fb8d2" BaseDefinition="IfcPresentationStyle" EntityFlags="109">
+	<Localization>
+		<DocLocalization Locale="de" Name="Füllflächenstil" />
+		<DocLocalization Locale="en" Name="Fill Area Style" />
+		<DocLocalization Locale="fr" Name="Style de remplissage de surface" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="FillStyles" UniqueId="9ba1f4aa-4f50-46ae-89ec-64982a7b1746" DefinedType="IfcFillStyleSelect" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The set of fill area styles to use in presenting visible curve segments, annotation fill areas or surfaces.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ModelOrDraughting" UniqueId="b8e3fc01-58d7-4b36-9005-6d26c38ffaea" DefinedType="IfcBoolean" AttributeFlags="1">
+			<Documentation>Indication whether the length measures provided for the presentation style are model based, or draughting based.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="MaxOneColour" UniqueId="571a6f0d-c07a-4bfd-befe-4b9b6f62ffd4">
+			<Documentation>There shall be a maximum of one colour assignment to the fill area style.</Documentation>
+			<Expression>SIZEOF(QUERY(Style &lt;* SELF.FillStyles |
+  &apos;IFCPRESENTATIONAPPEARANCERESOURCE.IFCCOLOUR&apos; IN
+   TYPEOF(Style)
+  )) &lt;= 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="MaxOneExtHatchStyle" UniqueId="f2f7b7fa-ce36-4cad-99b6-2889933d74c1">
+			<Documentation>There shall be a maximum of one externally defined hatch style assignment to the fill area style.</Documentation>
+			<Expression>SIZEOF(QUERY(Style &lt;* SELF.FillStyles |
+  &apos;IFCPRESENTATIONAPPEARANCERESOURCE.IFCEXTERNALLYDEFINEDHATCHSTYLE&apos; IN
+   TYPEOF(Style)
+  )) &lt;= 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="ConsistentHatchStyleDef" UniqueId="62a72800-27e9-4df8-9f76-1fca12fe7278">
+			<Documentation>Either the fill area style contains a definition from an externally defined hatch style, or from (one or many) fill area style hatchings or from (one or many) fill area style tiles, but not a combination of those three types.</Documentation>
+			<Expression>IfcCorrectFillAreaStyle(SELF.FillStyles)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

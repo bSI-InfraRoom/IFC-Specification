@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAppliedValue" UniqueId="878e7c12-556c-42e6-a62a-feef9a77b4f9" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Angewendeter Wert" />
+		<DocLocalization Locale="en" Name="Applied Value" />
+		<DocLocalization Locale="fr" Name="Valeur appliquée" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="d060230f-003d-4654-9728-cb3861230258" DefinedType="IfcCostValue" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Name" UniqueId="f1f7e181-7ab7-42ee-8419-312a8e441f5e" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>A name or additional clarification given to a cost value.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Description" UniqueId="aca5297a-4f05-4828-a377-84262bd54980" DefinedType="IfcText" AttributeFlags="1">
+			<Documentation>The description that may apply additional information about a cost value.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="AppliedValue" UniqueId="f569f893-d02e-4d0c-b8aa-eada1af92d01" DefinedType="IfcAppliedValueSelect" AttributeFlags="1">
+			<Documentation>The extent or quantity or amount of an applied value.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UnitBasis" UniqueId="e93a6586-03c9-491a-b750-61a192bc3068" DefinedType="IfcMeasureWithUnit" AttributeFlags="1" XsdFormat="attribute">
+			<Documentation>The number and unit of measure on which the unit cost is based.
+
+Note: As well as the normally expected units of measure such as length, area, volume etc., costs may be based on units of measure which need to be defined e.g. sack, drum, pallet, item etc. Unit costs may be based on quantities greater (or lesser) than a unitary value of the basis measure. For instance, timber may have a unit cost rate per X meters where X &gt; 1; similarly for cable, piping and many other items. The basis number may be either an integer or a real value.
+
+Note: This attribute should be asserted for all circumstances where the cost to be applied is per unit quantity. It may be asserted even for circumstances where an item price is used, in which case the unit cost basis should be by item (or equivalent definition).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ApplicableDate" UniqueId="607a3336-5a2c-4366-a5a4-4ecde56ea7f9" DefinedType="IfcDate" AttributeFlags="1">
+			<Documentation>The date on or from which an applied value is applicable.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Type changed from IfcDateTimeSelect.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FixedUntilDate" UniqueId="44cc2615-38d3-4a6e-a478-efc5cbd2cefa" DefinedType="IfcDate" AttributeFlags="1">
+			<Documentation>The date until which applied value is applicable.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Type changed from IfcDateTimeSelect.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Category" UniqueId="1d4e4998-3ebe-4e3c-b6b0-11ac5c1adf89" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>Specification of the type of cost used.
+
+&gt; NOTE&amp;nbsp; There are many possible types of cost value that may be identified. Whilst there is a broad understanding of the meaning of names that may be assigned to different types of costs, there is no general standard for naming cost types nor are there any broadly defined classifications. To allow for any type of cost value, the _IfcLabel_ datatype is assigned.
+
+
+ 
+In the absence of any well defined standard, it is recommended that local agreements should be made to define allowable and understandable cost value types within a project or region.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Condition" UniqueId="9ce0493d-c35a-4110-9bfc-895871328d4e" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>The condition under which a cost value applies.  
+
+For example, within the context of a bid submission, this may refer to an option that may or may not be elected.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ArithmeticOperator" UniqueId="013ba33b-dca3-439e-b21f-103713eb82f8" DefinedType="IfcArithmeticOperatorEnum" AttributeFlags="1">
+			<Documentation>The arithmetic operator applied to component values.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Components" UniqueId="8a17c585-267a-48a6-9598-35c3c8393e76" DefinedType="IfcAppliedValue" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Optional component values from which _AppliedValue_ is calculated.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="HasExternalReference" UniqueId="fa44a5a5-d30c-49f6-bfee-252224ac5db6" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
+			<Documentation>Reference to an external reference, e.g. library, classification, or document information, that is associated to the IfcAppliedValue. 
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE New inverse attribute.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

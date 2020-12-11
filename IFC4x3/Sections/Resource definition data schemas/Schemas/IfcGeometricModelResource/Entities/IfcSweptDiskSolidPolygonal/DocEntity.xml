@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSweptDiskSolidPolygonal" UniqueId="d4c2b099-4604-4491-b948-5445dd2ff41c" BaseDefinition="IfcSweptDiskSolid" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Festkörper - Entlang einer Polylinie extrudierte Kreisscheibe" />
+		<DocLocalization Locale="en" Name="Swept Disk Solid Polygonal" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="FilletRadius" UniqueId="1fa1bae9-ec32-470f-a6ca-750f269a3470" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>The fillet that is equally applied to all transitions between the segments of the _IfcPolyline_, providing the geometric representation for _the Directrix_. If omited, no fillet is applied to the segments.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectRadii" UniqueId="eac914c2-786f-474d-a30d-77f3295592ca">
+			<Documentation>If a _FilletRadius is given_, it has to be greater or equal to the _Radius_ of the disk.</Documentation>
+			<Expression>NOT(EXISTS(FilletRadius)) OR (FilletRadius &gt;= SELF\IfcSweptDiskSolid.Radius)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="DirectrixIsPolyline" UniqueId="cd1f2d6c-4613-4fd1-83db-4a90c7f5404b">
+			<Documentation>The _Directrix_ shall be of type _IfcIndexedPolyCurve_ with no _Segments_, or of type _IfcPolyline_.</Documentation>
+			<Expression>(&apos;IFCGEOMETRYRESOURCE.IFCPOLYLINE&apos; IN TYPEOF(SELF\IfcSweptDiskSolid.Directrix)) OR
+((&apos;IFCGEOMETRYRESOURCE.IFCINDEXEDPOLYCURVE&apos; IN TYPEOF(SELF\IfcSweptDiskSolid.Directrix)) AND NOT(EXISTS(SELF\IfcSweptDiskSolid.Directrix.Segments)))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

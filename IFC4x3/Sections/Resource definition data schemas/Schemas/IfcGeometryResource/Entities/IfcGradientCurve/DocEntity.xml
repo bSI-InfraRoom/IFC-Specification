@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGradientCurve" UniqueId="af1119a1-c2a2-4d29-b4cb-af8aa4f5b9b7" BaseDefinition="IfcBoundedCurve" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="BaseCurve" UniqueId="5c2865ec-a4d3-45bf-8ec4-f741ab25ee52" DefinedType="IfcBoundedCurve">
+			<Documentation>Base curve also the 2D projection of gradient curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Segments" UniqueId="29b53db4-a782-4f6c-9a67-f920dd6abb55" DefinedType="IfcCurveSegment" AggregationType="1" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Segments representing the height gradient along the BaseCurve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EndPoint" UniqueId="35bec189-4986-450e-9533-35e814acaa79" DefinedType="IfcCartesianPoint" AttributeFlags="1">
+			<Documentation>End point of gradient curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Height" UniqueId="1ca157d7-ec68-48f5-a916-71e72b2e57df" DefinedType="IfcLengthMeasure">
+			<Derived>IfcGradient(SELF)</Derived>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

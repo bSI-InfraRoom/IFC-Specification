@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcReparametrisedCompositeCurveSegment" UniqueId="73dcb7dc-33d9-44b6-9ff1-1c8ded7c722d" BaseDefinition="IfcCompositeCurveSegment" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Reparametrisiertes Segment einer zusammengesetzten Kurve" />
+		<DocLocalization Locale="en" Name="Reparametrised Composite Curve Segment" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="ParamLength" UniqueId="c5577010-d8c0-41e0-b393-c30f401114a2" DefinedType="IfcParameterValue" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="PositiveLengthParameter" UniqueId="342f39c6-c776-4dd8-94d3-103c3d04aece">
+			<Documentation>The _ParamLength_ shall be greater than zero.</Documentation>
+			<Expression>ParamLength &gt; 0.0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

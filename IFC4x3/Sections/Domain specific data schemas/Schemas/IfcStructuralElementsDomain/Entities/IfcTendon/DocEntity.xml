@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcTendon" Name="IfcTendon" UniqueId="33cccfc5-2da4-42df-8cac-9c14b6d955a6" BaseDefinition="IfcReinforcingElement" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Spannglied" />
+		<DocLocalization Locale="en" Name="Tendon" />
+		<DocLocalization Locale="fr" Name="Cable" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="8bf9e3ad-01c9-436e-a415-02119d9e681e" DefinedType="IfcTendonTypeEnum" AttributeFlags="1">
+			<Documentation>Predefined generic types for a tendon.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Attribute made optional.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="NominalDiameter" UniqueId="769d5dcc-353b-448a-a5f9-3ff7b462d814" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>The nominal diameter defining the cross-section size of the tendon.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Attribute made optional and deprecated. Use respective attribute at _IfcTendonType_ instead.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CrossSectionArea" UniqueId="f2710ff8-a1a9-46f2-bbc1-5b12b313be27" DefinedType="IfcAreaMeasure" AttributeFlags="1">
+			<Documentation>The effective cross-section area of the tendon.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Attribute made optional and deprecated. Use respective attribute at _IfcTendonType_ instead.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TensionForce" UniqueId="361cb1c1-156f-4fd7-b742-88f20ba76a5d" DefinedType="IfcForceMeasure" AttributeFlags="1">
+			<Documentation>The maximum allowed tension force that can be applied on the tendon.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PreStress" UniqueId="c7b0f979-558e-49ac-bf39-9fd037774d51" DefinedType="IfcPressureMeasure" AttributeFlags="1">
+			<Documentation>The prestress to be applied on the tendon.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FrictionCoefficient" UniqueId="8b3dbb92-6ef8-4fa8-bce3-8fe156c01557" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1">
+			<Documentation>The friction coefficient between tendon and tendon sheet while the tendon is unbonded.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="AnchorageSlip" UniqueId="723e9da1-873b-41c5-8865-674d57ab2356" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>The deformation of an anchor or slippage of tendons when the prestressing device is released.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="MinCurvatureRadius" UniqueId="b99f7bfe-1105-4b52-b367-038790040da0" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>The smallest curvature radius calculated on the whole effective length of the tendon where the tension properties are still valid.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="9468abaa-ba0c-48c9-b7bf-f9c3dda8f04c">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcTendonType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcTendonTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcTendonTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="d5894cf4-f7fd-44ba-b2c9-d6ad19b2de1b">
+			<Documentation>If this occurrence is defined by a type object, the latter has to be an _IfcTendonType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSTRUCTURALELEMENTSDOMAIN.IFCTENDONTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))
+</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

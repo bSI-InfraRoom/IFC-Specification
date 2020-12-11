@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPositioningElement" Name="IfcPositioningElement" UniqueId="dfb6beda-5c7c-4df8-bbc6-b101ce4006f3" BaseDefinition="IfcProduct" EntityFlags="205">
+	<Localization>
+		<DocLocalization Locale="en" Name="Positioning Element" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="9fe00383-2205-42bc-b961-bf3fc2e0dfbd" DefinedType="IfcGrid" />
+		<DocSubtype UniqueId="c1d00f12-5779-4b3e-a9aa-a6a96c76f84c" DefinedType="IfcLinearPositioningElement" />
+		<DocSubtype UniqueId="8de7bcbf-4e60-4a56-a93c-519381ad4162" DefinedType="IfcReferent" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="ContainedInStructure" UniqueId="eab7c659-344b-47a3-82ed-2c7243b71a28" DefinedType="IfcRelContainedInSpatialStructure" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="RelatedElements">
+			<Documentation>Relationship to a spatial structure element, to which the positioning element is primarily associated.
+{ .change-ifc2x}
+&gt; IFC2x CHANGE&amp;nbsp; The inverse relationship has been added to _IfcGrid_ with upward compatibility
+
+{ .change-ifc4}
+&gt; IFC4 CHANGE&amp;nbsp; The inverse relationship has been promoted from _IfcGrid_ to this new supertype with upward compatibility</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Positions" UniqueId="88d691c8-a605-4189-830e-08f42bfd33f9" DefinedType="IfcRelPositions" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="RelatingPositioningElement" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasPlacement" UniqueId="d0aa9601-b4ea-4006-ab30-c5b59bf73e03">
+			<Documentation>The placement for the grid has to be given.</Documentation>
+			<Expression>EXISTS(SELF\IfcProduct.ObjectPlacement)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

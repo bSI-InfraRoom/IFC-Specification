@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSwitchingDeviceType" Name="IfcSwitchingDeviceType" UniqueId="041abe9f-f73b-471c-859c-c577d975198c" BaseDefinition="IfcFlowControllerType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Schalter - Typ" />
+		<DocLocalization Locale="en" Name="Switching Device Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;interrupteur" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="582dead0-78cd-4f9d-8d9b-509da170be57" DefinedType="IfcSwitchingDeviceTypeEnum">
+			<Documentation>Identifies the predefined types of switch from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="e242a816-c85b-4f7b-9a8c-978d4c83a32b">
+			<Expression>(PredefinedType &lt;&gt; IfcSwitchingDeviceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcSwitchingDeviceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

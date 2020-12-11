@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcQuantityTime" UniqueId="f137f056-3756-4b10-8243-deee1ffa7d9d" BaseDefinition="IfcPhysicalSimpleQuantity" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Mengenangabe - Zeit" />
+		<DocLocalization Locale="en" Name="Quantity Time" />
+		<DocLocalization Locale="fr" Name="Quantité de durée" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="TimeValue" UniqueId="24cb0119-3880-4176-ba50-7333569bbfd3" DefinedType="IfcTimeMeasure">
+			<Documentation>Time measure value of this quantity.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Formula" UniqueId="e063afe0-3eff-4106-abe3-927c705df3c1" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>A formula by which the quantity has been calculated. It can be assigned in addition to the actual value of the quantity. Formulas could be mathematic calculations (like width x height), database links, or a combination. The formula is for informational purposes only.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Attribute added to the end of the attribute list.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR21" UniqueId="2e96000e-ec4a-4dfe-b5ee-10c30286654d">
+			<Documentation>If a unit is given, the unit type shall be time unit.</Documentation>
+			<Expression>NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
+   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.TIMEUNIT)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WR22" UniqueId="da3fe18d-60a7-4c31-aa2d-92cfae2369a1">
+			<Documentation>A valid weight quantity shall be greater than or equal to zero.</Documentation>
+			<Expression>TimeValue &gt;= 0.</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

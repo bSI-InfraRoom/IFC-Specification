@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElectricGeneratorType" Name="IfcElectricGeneratorType" UniqueId="54734959-8b52-4b23-a9b5-eef44edf8450" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Elektrogenerator - Typ" />
+		<DocLocalization Locale="en" Name="Electric Generator Type" />
+		<DocLocalization Locale="fr" Name="Type de générateur électrique" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="90ecd934-9e91-4662-8702-396d56f10ca2" DefinedType="IfcElectricGeneratorTypeEnum">
+			<Documentation>Identifies the predefined types of electric generators from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="c4424d50-c7fb-4f08-8758-d0729247a25b">
+			<Expression>(PredefinedType &lt;&gt; IfcElectricGeneratorTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcElectricGeneratorTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

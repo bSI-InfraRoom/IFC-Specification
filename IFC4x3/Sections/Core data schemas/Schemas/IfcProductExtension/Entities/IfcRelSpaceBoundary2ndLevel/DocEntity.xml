@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelSpaceBoundary2ndLevel" UniqueId="002bda71-0a52-40b9-8ef9-82bc20f96bf3" BaseDefinition="IfcRelSpaceBoundary1stLevel" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Raumgrenzen 2. Ebene - Relation" />
+		<DocLocalization Locale="en" Name="Rel Space Boundary2nd Level" />
+		<DocLocalization Locale="fr" Name="Limites d&apos;espace de deuxième niveau" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="CorrespondingBoundary" UniqueId="6c032ee3-47a6-40de-b826-06a8da0c46b3" DefinedType="IfcRelSpaceBoundary2ndLevel" AttributeFlags="1" XsdFormat="attribute">
+			<Documentation>Reference to the other space boundary of the pair of two space boundaries on either side of a space separating thermal boundary element.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Corresponds" UniqueId="fa4aeb16-4d01-4f05-9f53-8d4ee0d707c5" DefinedType="IfcRelSpaceBoundary2ndLevel" AttributeFlags="8" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="CorrespondingBoundary">
+			<Documentation>Reference to the other space boundary of the pair of two space boundaries on either side of a space separating thermal boundary element.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

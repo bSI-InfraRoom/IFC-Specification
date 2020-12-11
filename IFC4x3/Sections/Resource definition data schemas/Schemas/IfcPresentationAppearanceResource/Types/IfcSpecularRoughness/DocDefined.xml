@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSpecularRoughness" UniqueId="d719fcc3-76f8-4af4-8967-dfa4ab9c8ce9" DefinedType="REAL">
+	<Localization>
+		<DocLocalization Locale="en" Name="Specular Roughness" />
+		<DocLocalization Locale="fr" Name="Rugosité pour le spéculaire" />
+	</Localization>
+	<Definition xsi:type="DocPrimitive" xsi:nil="true" href="REAL_058prOFB515gkYwBBwzbNv" />
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="1459623d-bd05-4199-865b-f2684ffa98fb">
+			<Documentation>Specular roughness shall be given as a non-negative value less than or equal to 1.0</Documentation>
+			<Expression>{0.0 &lt;= SELF &lt;= 1.0}</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocDefined>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcEvaporativeCoolerType" Name="IfcEvaporativeCoolerType" UniqueId="1b538bfd-de8a-4443-a6f0-4c1aade608e4" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Verdunstungskühler - Typ" />
+		<DocLocalization Locale="en" Name="Evaporative Cooler Type" />
+		<DocLocalization Locale="fr" Name="Type de refroidisseur évaporatif" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="0c69e1a9-5536-4c40-97e6-9df634ea2fb9" DefinedType="IfcEvaporativeCoolerTypeEnum">
+			<Documentation>Defines the type of evaporative cooler.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="4d239300-ef28-4b3c-9b5b-a247e5f6c6bb">
+			<Expression>(PredefinedType &lt;&gt; IfcEvaporativeCoolerTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcEvaporativeCoolerTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

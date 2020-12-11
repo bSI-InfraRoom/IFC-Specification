@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDiscreteAccessory" Name="IfcDiscreteAccessory" UniqueId="5ba7cc3f-c0c3-42e3-bfe3-f54531a32ef7" BaseDefinition="IfcElementComponent" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Zusatzgerät / Einbauteil" />
+		<DocLocalization Locale="en" Name="Discrete Accessory" />
+		<DocLocalization Locale="fr" Name="Accessoire composé" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="563130f8-4a34-4ff4-bb1f-2c739a1dfa47" DefinedType="IfcDiscreteAccessoryTypeEnum" AttributeFlags="1">
+			<Documentation>Subtype of discrete accessory.  If USERDEFINED, the type is further qualified by means of the inherited attribute _ObjectType_.  Refer to _IfcDiscreteAccessoryType_ for a non-exclusive list of userdefined type designations which are applicable to _IfcDiscreteAccessory_ as well.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="9962d914-21f3-4afc-8bce-30a2f870fd46">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcDiscreteAccessoryType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcDiscreteAccessoryTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcDiscreteAccessoryTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="7cba26dc-9ad8-41de-a541-98b3b3916da4">
+			<Documentation>If this occurrence is defined by a type object, the latter has to be an _IfcDiscreteAccessoryType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSHAREDCOMPONENTELEMENTS.IFCDISCRETEACCESSORYTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

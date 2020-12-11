@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcOffsetCurve" UniqueId="4d72148d-01ae-4e34-a77d-a0ad700a2675" BaseDefinition="IfcCurve">
+	<Localization>
+		<DocLocalization Locale="en" Name="Offset Curve" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="23b0503a-51b6-4fe4-9092-ba6373668622" DefinedType="IfcOffsetCurve3D" />
+		<DocSubtype UniqueId="3f83a3e0-d0cc-464e-b0d0-57fdcd359cba" DefinedType="IfcOffsetCurve2D" />
+		<DocSubtype UniqueId="e8278b3a-614a-4e4d-bfc5-a84eeebd7abd" DefinedType="IfcOffsetCurveByDistances" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="BasisCurve" UniqueId="b6cdbbbe-d120-4ba8-a586-d17f3db479cc" DefinedType="IfcCurve" XsdFormat="attribute">
+			<Documentation>The curve that is being offset.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStyledItem" Name="IfcStyledItem" UniqueId="03067245-b9da-400b-8de8-c6189fa9b928" BaseDefinition="IfcRepresentationItem" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Element mit Stilinformationen" />
+		<DocLocalization Locale="en" Name="Styled Item" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Item" UniqueId="1f40d575-2832-4c30-80dc-77a3fcabd3c9" DefinedType="IfcRepresentationItem" AttributeFlags="1" XsdFormat="hidden">
+			<Documentation>A geometric representation item to which the style is assigned.
+  
+{ .change-ifc2x2}
+&gt; IFC2x2 Add2 CHANGE The attribute _Item_ has been made optional. Upward compatibility for file based exchange is guaranteed.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Styles" UniqueId="d38b5c99-b51e-4f5a-a2a5-140d9071d049" DefinedType="IfcStyleAssignmentSelect" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Representation styles which are assigned, either to an geometric representation item, or to a material definition.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The data type has been changed to _IfcStyleAssignmentSelect_ with upward compatibility for file based exchange.
+
+&gt; NOTE&amp;nbsp; Only the select item _IfcPresentationStyle_ shall be used from IFC4 onwards, the _IfcPresentationStyleAssignment_ has been deprecated.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Name" UniqueId="d82e6d30-0872-439b-9e6c-e97111ad8266" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>The word, or group of words, by which the styled item is referred to.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ApplicableItem" UniqueId="c740ddbb-e043-4407-bad9-69017e750c45">
+			<Documentation>A styled item cannot be styled by another styled item.</Documentation>
+			<Expression>NOT(&apos;IFCPRESENTATIONAPPEARANCERESOURCE.IFCSTYLEDITEM&apos; IN TYPEOF(Item))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

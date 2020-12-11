@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFontVariant" UniqueId="5af73e06-d478-4f63-985c-c7659b253ded" DefinedType="STRING">
+	<Localization>
+		<DocLocalization Locale="en" Name="Font Variant" />
+		<DocLocalization Locale="fr" Name="Police normale ou en petites majuscules" />
+	</Localization>
+	<Definition xsi:type="DocPrimitive" xsi:nil="true" href="STRING_3ynilg4C96p9BjwFj6UaHw" />
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="6272385e-6d20-4d5a-81b5-8f98ce40a734">
+			<Expression>SELF IN [&apos;normal&apos;,&apos;small-caps&apos;]</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocDefined>
+

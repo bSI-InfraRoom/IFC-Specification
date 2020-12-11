@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSpatialZoneType" UniqueId="f9754c40-1414-4a96-a587-2ff0a1c7e969" BaseDefinition="IfcSpatialElementType" EntityFlags="109">
+	<Localization>
+		<DocLocalization Locale="de" Name="Räumliche Zone - Typ" />
+		<DocLocalization Locale="en" Name="Spatial Zone Type" />
+		<DocLocalization Locale="fr" Name="Type de zone spatiale" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="cffcc7b0-79a5-415e-b0c0-9b23b88d859d" DefinedType="IfcSpatialZoneTypeEnum">
+			<Documentation>Predefined types to define the particular type of the spatial zone. There may be property set definitions available for each predefined type.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LongName" UniqueId="aeddd5e6-ec3d-4e96-adba-d747e9609667" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>Long name for a spatial zone type, used for informal purposes. It should be used, if available, in conjunction with the inherited _Name_ attribute.
+&gt; NOTE&amp;nbsp; In many scenarios the _Name_ attribute refers to the short name or number of a spatial zone, and the _LongName_ refers to the full descriptive name.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="515e0958-d84c-4b8e-a2c1-c23d58d4bf37">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcSpatialZoneTypeEnum.USERDEFINED) OR 
+((PredefinedType = IfcSpatialZoneTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcSpatialElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

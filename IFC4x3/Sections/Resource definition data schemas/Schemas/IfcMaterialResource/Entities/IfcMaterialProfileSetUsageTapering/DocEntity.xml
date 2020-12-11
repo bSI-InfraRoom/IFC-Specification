@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMaterialProfileSetUsageTapering" UniqueId="bbddf2c3-cd7d-4357-94ae-dc7c126b2265" BaseDefinition="IfcMaterialProfileSetUsage" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Gruppe von Profilen mit Material - Verwendung (bei Verjüngung)" />
+		<DocLocalization Locale="en" Name="Material Profile Set Usage Tapering" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="ForProfileEndSet" UniqueId="479176ca-3f02-4f72-abfb-0aea05c25f1f" DefinedType="IfcMaterialProfileSet" XsdFormat="attribute">
+			<Documentation>The second _IfcMaterialProfileSet_ set to which the usage is applied.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CardinalEndPoint" UniqueId="c2cdcace-fd71-47d0-9de8-7f392c75629a" DefinedType="IfcCardinalPointReference" AttributeFlags="1">
+			<Documentation>Index reference to a significant point in the second section profile. Describes how this section is aligned relative to the axis of the member it is associated with. This parametric specification of profile alignment can be provided redundantly to the explicit alignment defined by ForProfileSet.MaterialProfiles[\*].Profile.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

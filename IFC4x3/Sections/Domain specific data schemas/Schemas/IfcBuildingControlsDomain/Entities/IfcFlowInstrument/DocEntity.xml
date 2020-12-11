@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFlowInstrument" Name="IfcFlowInstrument" UniqueId="67624ad3-5d2e-4f19-abe4-c8abfa34fd54" BaseDefinition="IfcDistributionControlElement" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Messinstrument (allgemein)" />
+		<DocLocalization Locale="en" Name="Flow Instrument" />
+		<DocLocalization Locale="fr" Name="Instrument d&apos;installation fluides" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="5b774128-e349-4ff3-8ae3-28adab4523b1" DefinedType="IfcFlowInstrumentTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="d1f989d5-1966-4fa0-9a97-5b3e69c876db">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcFlowInstrumentType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcFlowInstrumentTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcFlowInstrumentTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="c3ef3818-0410-4b7a-9b54-65cca7b14203">
+			<Documentation>Either there is no flow instrument type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcFlowInstrumentType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+(&apos;IFCBUILDINGCONTROLSDOMAIN.IFCFLOWINSTRUMENTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

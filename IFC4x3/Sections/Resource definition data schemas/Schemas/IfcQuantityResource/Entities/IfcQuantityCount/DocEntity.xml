@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcQuantityCount" UniqueId="ee55f63f-35e6-4be8-a374-c3e1d4aa9d1c" BaseDefinition="IfcPhysicalSimpleQuantity" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Mengenangabe - Zählung" />
+		<DocLocalization Locale="en" Name="Quantity Count" />
+		<DocLocalization Locale="fr" Name="Quantité de comptage" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="CountValue" UniqueId="c99711b7-fd92-47cc-8140-90c5c2bef60e" DefinedType="IfcCountMeasure">
+			<Documentation>Count measure value of this quantity.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Formula" UniqueId="9ce02ae9-f66b-4467-b9f1-0b08497326e8" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>A formula by which the quantity has been calculated. It can be assigned in addition to the actual value of the quantity. Formulas could be mathematic calculations (like width x height), database links, or a combination. The formula is for informational purposes only.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Attribute added to the end of the attribute list.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR21" UniqueId="aa959d08-bbb9-4290-a1c6-2190087bcfb6">
+			<Documentation>The value of the count shall be greater than or equal to zero.</Documentation>
+			<Expression>CountValue &gt;= 0.</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

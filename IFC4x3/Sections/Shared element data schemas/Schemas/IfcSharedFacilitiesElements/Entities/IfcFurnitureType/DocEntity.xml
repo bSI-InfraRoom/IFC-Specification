@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFurnitureType" UniqueId="a8b69ebd-a055-4b49-b99d-0de94f4c7d81" Status="H" BaseDefinition="IfcFurnishingElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Mobiliar - Typ" />
+		<DocLocalization Locale="en" Name="Furniture Type" />
+		<DocLocalization Locale="fr" Name="Type de mobilier" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="AssemblyPlace" UniqueId="791d2270-d762-4005-b5b8-19697f8a6878" DefinedType="IfcAssemblyPlaceEnum">
+			<Documentation>A designation of where the assembly is intended to take place. A selection of alternatives s provided in an enumerated list.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="b303f177-1e33-4bd3-a16d-fb06e46b54c0" DefinedType="IfcFurnitureTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="ba0239fa-b58b-4aa3-95c7-1f8988eb5f89">
+			<Expression>(PredefinedType &lt;&gt; IfcFurnitureTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcFurnitureTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

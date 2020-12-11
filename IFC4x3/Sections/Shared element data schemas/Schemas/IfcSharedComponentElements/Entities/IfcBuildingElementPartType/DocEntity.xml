@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBuildingElementPartType" UniqueId="f248ebd3-afb8-4ffe-9a34-195555c0b22b" BaseDefinition="IfcElementComponentType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Teil eines Bauelements - Typ" />
+		<DocLocalization Locale="en" Name="Building Element Part Type" />
+		<DocLocalization Locale="fr" Name="Type de partie d&apos;élément de construction" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="7f3f97cc-02d4-4243-a8b4-48f9f4d87ec0" DefinedType="IfcBuildingElementPartTypeEnum">
+			<Documentation>Subtype of building element part</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="26b58f6f-d5dd-47f0-8e39-6ba2acb10f2e">
+			<Documentation>The inherited attribute _ElementType_ shall be provided if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcBuildingElementPartTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcBuildingElementPartTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

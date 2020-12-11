@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConstructionMaterialResourceType" UniqueId="affcff56-3734-44c1-8c8d-7681c02ae21b" BaseDefinition="IfcConstructionResourceType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Baumaterial - Ressource -Typ" />
+		<DocLocalization Locale="en" Name="Construction Material Resource Type" />
+		<DocLocalization Locale="fr" Name="Matériaux de construction type" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="bebb90d1-4de9-4d43-9119-c0f44b7dccc9" DefinedType="IfcConstructionMaterialResourceTypeEnum">
+			<Documentation>Defines types of construction material resources.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="8e6a584a-9f0f-4afb-92b7-1d00c368fdba">
+			<Expression>(PredefinedType &lt;&gt; IfcConstructionMaterialResourceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcConstructionMaterialResourceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcTypeResource.ResourceType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

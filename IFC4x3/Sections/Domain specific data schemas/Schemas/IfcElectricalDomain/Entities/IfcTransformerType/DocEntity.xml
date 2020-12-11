@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcTransformerType" Name="IfcTransformerType" UniqueId="de3e3892-9754-4be7-babc-a9101067d69a" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Transformator - Typ" />
+		<DocLocalization Locale="en" Name="Transformer Type" />
+		<DocLocalization Locale="fr" Name="Type de transformateur" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="3f471949-e875-455e-8c57-20ce654c1408" DefinedType="IfcTransformerTypeEnum">
+			<Documentation>Identifies the predefined types of transformer from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="7345b58e-34bb-40e6-a701-3140e418843b">
+			<Expression>(PredefinedType &lt;&gt; IfcTransformerTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcTransformerTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

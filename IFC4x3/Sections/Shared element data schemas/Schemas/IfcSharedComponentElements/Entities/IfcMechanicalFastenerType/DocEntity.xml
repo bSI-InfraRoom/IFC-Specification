@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMechanicalFastenerType" Name="IfcMechanicalFastenerType" UniqueId="acdb4036-7f93-4d13-9988-d382967d60e0" BaseDefinition="IfcElementComponentType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Mechanisches Befestigungsmittel - Typ" />
+		<DocLocalization Locale="en" Name="Mechanical Fastener Type" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="b22546a4-d293-4734-996d-83e4dfe4fa45" DefinedType="IfcMechanicalFastenerTypeEnum">
+			<Documentation>Subtype of mechanical fastener</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="NominalDiameter" UniqueId="2c61fce1-089c-434e-9f28-2ec15723443b" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>The nominal diameter describing the cross-section size of the fastener type.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="NominalLength" UniqueId="287c53f4-0878-4cca-97a0-b8b5fcba97f2" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>The nominal length describing the longitudinal dimensions of the fastener type.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="f0faf496-0a3a-4c9c-8abb-951732988065">
+			<Documentation>The inherited attribute _ElementType_ shall be provided if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcMechanicalFastenerTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcMechanicalFastenerTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelAssociatesClassification" Name="IfcRelAssociatesClassification" UniqueId="4bd9bd82-20ff-4504-bb85-feccfdfe7377" BaseDefinition="IfcRelAssociates" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Ordnet Klassifikation zu - Relation" />
+		<DocLocalization Locale="en" Name="Rel Associates Classification" />
+		<DocLocalization Locale="fr" Name="Association à classification" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelatingClassification" UniqueId="ce934d5a-d2ac-453a-a81a-d7b328c37048" DefinedType="IfcClassificationSelect">
+			<Documentation>Classification applied to the objects.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcLightFixtureType" Name="IfcLightFixtureType" UniqueId="a34fc9d6-d1c8-402c-817e-feb3a9c9e7a1" BaseDefinition="IfcFlowTerminalType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Leuchte - Typ" />
+		<DocLocalization Locale="en" Name="Light Fixture Type" />
+		<DocLocalization Locale="fr" Name="Type de fixation de lampe" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="f92d5dcc-4b10-49bd-8a04-920f36d9d350" DefinedType="IfcLightFixtureTypeEnum">
+			<Documentation>Identifies the predefined types of light fixture from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="1575499a-30d0-41d1-9fb0-d36f0032071c">
+			<Expression>(PredefinedType &lt;&gt; IfcLightFixtureTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcLightFixtureTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

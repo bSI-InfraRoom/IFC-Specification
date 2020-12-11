@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcUShapeProfileDef" Name="IfcUShapeProfileDef" UniqueId="38886d5a-10e6-4fc4-99f8-559f073e7fbf" BaseDefinition="IfcParameterizedProfileDef" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="U-Profil - parametrische Definition" />
+		<DocLocalization Locale="en" Name="UShape Profile Def" />
+		<DocLocalization Locale="fr" Name="Définition de section d&apos;un profil en U" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Depth" UniqueId="1e0ba4ff-53cd-4583-9e64-78f718fc1f17" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Web lengths, see illustration above (= h).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FlangeWidth" UniqueId="952d016a-ead8-4d08-9f8a-8a5e3a9381ad" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Flange lengths, see illustration above (= b).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="WebThickness" UniqueId="edd0c5a2-f668-4d28-90d9-527adbc2892b" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Constant wall thickness of web (= ts).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FlangeThickness" UniqueId="7dc76e01-ba86-4fc0-aefa-12cbd9de4354" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Constant wall thickness of flange (= tg).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FilletRadius" UniqueId="5aaea55d-d089-4885-b7ff-6c89cc0fdb81" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
+			<Documentation>Fillet radius according the above illustration (= r1).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EdgeRadius" UniqueId="64a763ed-7fde-46d2-90ef-4e8189de7711" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
+			<Documentation>Edge radius according the above illustration (= r2).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FlangeSlope" UniqueId="4b17d3b3-4476-485a-9aeb-b436e9bd7444" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="1">
+			<Documentation>Slope of flange of the profile.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ValidFlangeThickness" UniqueId="7e5714da-daee-45f1-a84d-0983c2bf21ee">
+			<Documentation>The flange thickness shall be smaller than half of the depth.</Documentation>
+			<Expression>FlangeThickness &lt; (Depth / 2.)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="ValidWebThickness" UniqueId="8501bef1-e0c1-4d0d-96ae-2172cf22bbea">
+			<Documentation>The web thickness shall be smaller than the flange width.</Documentation>
+			<Expression>WebThickness &lt; FlangeWidth</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

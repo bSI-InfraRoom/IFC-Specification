@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelDefinesByObject" UniqueId="51ba0123-164c-4caf-8ba8-61e9906b07c0" BaseDefinition="IfcRelDefines" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Definiert durch Objekte - Relation" />
+		<DocLocalization Locale="en" Name="Rel Defines By Object" />
+		<DocLocalization Locale="fr" Name="Définition par objet" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelatedObjects" UniqueId="b81537b0-1b16-446d-9317-86a93844053b" DefinedType="IfcObject" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Objects being part of an object occurrence decomposition, acting as the &quot;reflecting parts&quot; in the relationship.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelatingObject" UniqueId="e0f7bc77-e70c-4ecd-a3f4-9b587acb6df1" DefinedType="IfcObject" XsdFormat="hidden">
+			<Documentation>Object being part of an object type decomposition, acting as the &quot;declaring part&quot; in the relationship.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

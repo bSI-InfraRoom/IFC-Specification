@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTypeProcess" UniqueId="638492f3-23b3-4ca5-a78e-9370f5343f65" BaseDefinition="IfcTypeObject" EntityFlags="205">
+	<Localization>
+		<DocLocalization Locale="de" Name="Prozess (allgemein) - Typ" />
+		<DocLocalization Locale="en" Name="Type Process" />
+		<DocLocalization Locale="fr" Name="Définition d&apos;un type de processus" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Identification" UniqueId="6af3b748-7491-4f6e-80d3-90aab2d7b303" DefinedType="IfcIdentifier" AttributeFlags="1">
+			<Documentation>An identifying designation given to a process type.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LongDescription" UniqueId="1c815fb1-05b1-4e37-b1cf-9dfd19d1c533" DefinedType="IfcText" AttributeFlags="1">
+			<Documentation>An long description, or text, describing the activity in detail.
+&gt; NOTE&amp;nbsp; The inherited _SELF\IfcRoot.Description_ attribute is used as the short description.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ProcessType" UniqueId="a65347e8-d16e-4a6f-b7d5-ddb89c9c7592" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>The type denotes a particular type that indicates the process further. The use has to be established at the level of instantiable subtypes. In particular it holds the user defined type, if the enumeration of the attribute &apos;PredefinedType&apos; is set to USERDEFINED.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OperatesOn" UniqueId="1d7bcb8a-6c9f-4994-a414-1ddc9c2c6863" DefinedType="IfcRelAssignsToProcess" AggregationType="3" Inverse="RelatingProcess">
+			<Documentation>Set of relationships to other objects, e.g. products, processes, controls, resources or actors that are operated on by the process type.
+&gt; HISTORY New inverse relationship in IFC4.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

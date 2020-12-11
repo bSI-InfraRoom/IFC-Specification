@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBuildingSystem" Name="IfcBuildingSystem" UniqueId="ac862bc5-cee0-4511-a81b-28bd751b24c8" Status="Deprecated" BaseDefinition="IfcSystem" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Bauliches System" />
+		<DocLocalization Locale="en" Name="Building System" />
+		<DocLocalization Locale="fr" Name="Système" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="ef738e6b-c15f-48e8-922a-a877cda143ee" DefinedType="IfcBuildingSystemTypeEnum" AttributeFlags="1">
+			<Documentation>Predefined types of distribution systems.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LongName" UniqueId="4868f395-600e-401a-92aa-b5de855fa577" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>Long name for a building system, used for informal purposes. It should be used, if available, in conjunction with the inherited _Name_ attribute.
+&gt; NOTE&amp;nbsp; In many scenarios the _Name_ attribute refers to the short name or number of a building system, and the _LongName_ refers to a descriptive name.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

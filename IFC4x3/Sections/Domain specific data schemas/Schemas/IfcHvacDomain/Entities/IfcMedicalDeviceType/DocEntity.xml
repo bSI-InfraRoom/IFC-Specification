@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMedicalDeviceType" UniqueId="1958077b-0d7a-4afd-b16f-5202fbbf4859" BaseDefinition="IfcFlowTerminalType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Medizinisches Gerät - Typ" />
+		<DocLocalization Locale="en" Name="Medical Device Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;équipement médical" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="829dfa5a-f023-4849-8821-07e578e89711" DefinedType="IfcMedicalDeviceTypeEnum" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="f7e30c57-4936-4819-ad9e-43d015c41c1d">
+			<Expression>(PredefinedType &lt;&gt; IfcMedicalDeviceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcMedicalDeviceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

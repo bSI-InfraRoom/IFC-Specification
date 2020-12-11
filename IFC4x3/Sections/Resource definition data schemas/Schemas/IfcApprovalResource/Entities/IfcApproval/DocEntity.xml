@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcApproval" UniqueId="76476d02-0061-4539-81cf-c606a2acbe13" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Genehmigung" />
+		<DocLocalization Locale="en" Name="Approval" />
+		<DocLocalization Locale="fr" Name="Approbation" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Identifier" UniqueId="a1fa1c90-f7b0-4cc3-ac7c-310cb59dc8ea" DefinedType="IfcIdentifier" AttributeFlags="1">
+			<Documentation>A computer interpretable identifier by which the approval is known.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Name" UniqueId="97065098-5b7a-4f0a-9047-84618567b028" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>A human readable name given to an approval.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Description" UniqueId="acec49a4-4798-47ce-b95a-36d2041a421d" DefinedType="IfcText" AttributeFlags="1">
+			<Documentation>A general textual description of a design, work task, plan, etc. that is being approved for.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TimeOfApproval" UniqueId="998d7843-2f2d-4e56-a224-6d334af4ac2e" DefinedType="IfcDateTime" AttributeFlags="1">
+			<Documentation>Date and time when the result of the approval process is produced.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Attribute data type changed to _IfcDateTime_ using ISO 8601 representation, renamed from ApprovalDateTime and made OPTIONAL.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Status" UniqueId="2ee053bf-3553-49ee-9fd8-f253b1eafb26" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>The result or current status of the approval, e.g. Requested, Processed, Approved, Not Approved.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Level" UniqueId="201d349a-9ee9-4d16-a6de-17dc2f6d4e9d" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>Level of the approval e.g. Draft v.s. Completed design.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Qualifier" UniqueId="bbe34628-1287-4cd0-96f2-310cf5177c72" DefinedType="IfcText" AttributeFlags="1">
+			<Documentation>Textual description of special constraints or conditions for the approval.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RequestingApproval" UniqueId="4b0f76d0-86d3-4da8-aa4a-be82b503cabb" DefinedType="IfcActorSelect" AttributeFlags="1">
+			<Documentation>The actor that is acting in the role specified at _IfcOrganization_ or individually at _IfcPerson_ and requesting an approval.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute for approval request replacing IfcApprovalActorRelationship (being deleted).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="GivingApproval" UniqueId="56400bef-4db8-4c65-ad92-c61fc8ee4850" DefinedType="IfcActorSelect" AttributeFlags="1">
+			<Documentation>The actor that is acting in the role specified at _IfcOrganization_ or individually at _IfcPerson_ and giving an approval.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute for approval provision replacing IfcApprovalActorRelationship (being deleted).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="HasExternalReferences" UniqueId="8cd1b95c-03b1-4fbd-bb5e-86213dc0d6d2" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
+			<Documentation>Reference to external references, e.g. library, classification, or document information, that are associated to the Approval.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ApprovedObjects" UniqueId="1803bd98-5411-4c09-9660-d1c5beb99533" DefinedType="IfcRelAssociatesApproval" AttributeFlags="32" AggregationType="3" Inverse="RelatingApproval">
+			<Documentation>Reference to the _IfcRelAssociatesApproval_ instances associating this approval to objects (subtypes of _IfcRoot_</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ApprovedResources" UniqueId="7c6e96b1-7bc8-42fb-b828-eac53994c387" DefinedType="IfcResourceApprovalRelationship" AttributeFlags="8" AggregationType="3" Inverse="RelatingApproval">
+			<Documentation>The set of relationships by which resource objects that are are approved by this approval are known.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="IsRelatedWith" UniqueId="cf2deea0-6ee1-4f94-a3f9-d149fa54d64e" DefinedType="IfcApprovalRelationship" AttributeFlags="8" AggregationType="3" Inverse="RelatedApprovals">
+			<Documentation>The set of relationships by which this approval is related to others.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Relates" UniqueId="65d560d3-2883-4606-a81c-802b6c633550" DefinedType="IfcApprovalRelationship" AttributeFlags="8" AggregationType="3" Inverse="RelatingApproval">
+			<Documentation>The set of relationships by which other approvals are related to this one.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasIdentifierOrName" UniqueId="aff7e54e-b326-48e2-80ea-4869c9df5605">
+			<Documentation>Either Identifier or Name (or both) by which the approval is known shall be given.</Documentation>
+			<Expression>EXISTS (Identifier) OR EXISTS (Name)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

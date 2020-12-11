@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralPlanarAction" UniqueId="5b95095d-4d9c-4dd1-a2ae-b405d104fffe" BaseDefinition="IfcStructuralSurfaceAction" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="gleichmäßige Flächenlast" />
+		<DocLocalization Locale="en" Name="Structural Planar Action" />
+	</Localization>
+	<WhereRules>
+		<DocWhereRule Name="SuitableLoadType" UniqueId="d4c48e38-4ddb-4775-b7d3-ea7c27db20fb">
+			<Documentation>A planar action shall place either a planar force or a temperature load.</Documentation>
+			<Expression>SIZEOF([&apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADPLANARFORCE&apos;, &apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADTEMPERATURE&apos;] * TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="ConstPredefinedType" UniqueId="636a8b44-3f5b-45ab-bec0-9c7ffd7613b1">
+			<Documentation>This surface action subtype is restricted to constant load distribution over its domain.</Documentation>
+			<Expression>SELF\IfcStructuralSurfaceAction.PredefinedType = IfcStructuralSurfaceActivityTypeEnum.CONST</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

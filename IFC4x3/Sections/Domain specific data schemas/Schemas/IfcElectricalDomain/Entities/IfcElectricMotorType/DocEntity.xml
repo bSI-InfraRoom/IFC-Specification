@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElectricMotorType" Name="IfcElectricMotorType" UniqueId="1d1df6cf-3322-4902-b83b-0fa2865f7849" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Elektromotor - Typ" />
+		<DocLocalization Locale="en" Name="Electric Motor Type" />
+		<DocLocalization Locale="fr" Name="Type de moteur électrique" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="c8edf15c-9b31-4641-9aae-198327020ff2" DefinedType="IfcElectricMotorTypeEnum">
+			<Documentation>Identifies the predefined types of electric motor from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="48d0ba74-9d6a-4517-8b54-f736d71ffcee">
+			<Expression>(PredefinedType &lt;&gt; IfcElectricMotorTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcElectricMotorTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

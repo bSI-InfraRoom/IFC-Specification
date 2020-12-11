@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcLocalPlacement" Name="IfcLocalPlacement" UniqueId="ca6001c7-db80-4168-bd0d-32259a34d423" BaseDefinition="IfcObjectPlacement" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Lokale Positionierung" />
+		<DocLocalization Locale="en" Name="Local Placement" />
+		<DocLocalization Locale="fr" Name="Positionnement local" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelativePlacement" UniqueId="519d256d-2c79-4cf3-b785-70dbe9291d0d" DefinedType="IfcAxis2Placement">
+			<Documentation>Geometric placement that defines the transformation from the related coordinate system into the relating. The placement can be either 2D or 3D, depending on the dimension count of the coordinate system.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR21" UniqueId="dc4277ef-9888-41e9-bbbf-d07a65516b5a">
+			<Documentation>Ensures that a 3D local placement can only be relative (if exists) to a 3D parent local placement (and not to a 2D parent local placement).</Documentation>
+			<Expression>IfcCorrectLocalPlacement(RelativePlacement, PlacementRelTo)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

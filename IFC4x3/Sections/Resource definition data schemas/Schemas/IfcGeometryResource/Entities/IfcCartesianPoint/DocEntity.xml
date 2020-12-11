@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCartesianPoint" Name="IfcCartesianPoint" UniqueId="2ddee6ae-615d-41ff-baa2-ba51d50e78c2" BaseDefinition="IfcPoint" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Kartesischer Punkt" />
+		<DocLocalization Locale="en" Name="Cartesian Point" />
+		<DocLocalization Locale="fr" Name="Point cartésien" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Coordinates" UniqueId="4a8b21fa-0aa6-4d2a-b0ce-55d5777e3b0f" DefinedType="IfcLengthMeasure" AggregationType="1" AggregationLower="1" AggregationUpper="3">
+			<Documentation>The first, second, and third coordinate of the point location. If placed in a two or three dimensional rectangular Cartesian coordinate system, Coordinates[1] is the X coordinate, Coordinates[2] is the Y coordinate, and Coordinates[3] is the Z coordinate.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Dim" UniqueId="c2afcb8b-ad08-4d95-85a2-a02e4d8a7167" DefinedType="IfcDimensionCount">
+			<Documentation>The space dimensionality of this class, determined by the number of coordinates in the List of Coordinates.</Documentation>
+			<Derived>HIINDEX(Coordinates)</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CP2Dor3D" UniqueId="f356a020-47e4-4f2c-9fc7-c2f7c060caab">
+			<Documentation>Only two or three dimensional points are in scope.</Documentation>
+			<Expression>HIINDEX(Coordinates) &gt;= 2</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcComplexPropertyTemplate" UniqueId="e9e318da-ceb2-4700-9c42-17311e5549b1" BaseDefinition="IfcPropertyTemplate" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Komplexes Merkmal - Vorlage" />
+		<DocLocalization Locale="en" Name="Complex Property Template" />
+		<DocLocalization Locale="fr" Name="Modèle de propriété complexe" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="UsageName" UniqueId="5aaf3e71-89c0-4dc0-be2d-2bcd73ca28e4" DefinedType="IfcLabel" AttributeFlags="1" />
+		<DocAttribute Name="TemplateType" UniqueId="a22e2074-7fd6-45ce-a86e-7368cce1b211" DefinedType="IfcComplexPropertyTemplateTypeEnum" AttributeFlags="1" />
+		<DocAttribute Name="HasPropertyTemplates" UniqueId="060702e5-aeda-4f68-904b-8f9c880cd575" DefinedType="IfcPropertyTemplate" AttributeFlags="1" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Reference to a set of property templates. It should only be provided, if the _PropertyType_ is set to &lt;small&gt;COMPLEX&lt;/small&gt;.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="UniquePropertyNames" UniqueId="c424ccbd-1ed5-42a8-bd6e-729121013027">
+			<Documentation>Every individual _IfcPropertyTemplate_ within the complex property template shall have a unique _Name_ attribute value.</Documentation>
+			<Expression>IfcUniquePropertyTemplateNames(HasPropertyTemplates)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="NoSelfReference" UniqueId="9f84bf96-252a-48fe-b35f-29f3b4ad86c7">
+			<Expression>SIZEOF(QUERY(temp &lt;* HasPropertyTemplates | SELF :=: temp)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcArchitectureDomain" UniqueId="dba67906-b80d-42f1-8d7f-686316dae5bf">
+	<SchemaRefs>
+		<DocSchemaRef Name="IFCACTORRESOURCE" UniqueId="caac75b6-731b-4f6f-812d-fb96bedc113b" />
+		<DocSchemaRef Name="IFCDATETIMERESOURCE" UniqueId="781698eb-0135-4ab4-b49d-4e31b7ae6c50" />
+		<DocSchemaRef Name="IFCEXTERNALREFERENCERESOURCE" UniqueId="6e1b33c6-4c1c-4395-8141-7c43ed5cbfb5" />
+		<DocSchemaRef Name="IFCGEOMETRICMODELRESOURCE" UniqueId="bc8c3eb9-7e29-4181-93ea-6fb0e4cbf2ad">
+			<Definitions>
+				<DocDefinitionRef Name="IfcGeometricSet" UniqueId="d1b2d00d-f21c-408e-b1ba-574f61aed659" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCGEOMETRYRESOURCE" UniqueId="76f84f72-5351-44d4-bcc9-a6c33ed78591">
+			<Definitions>
+				<DocDefinitionRef Name="IfcAxis2Placement2D" UniqueId="8ee6e543-025a-480b-98bf-044ee89015aa" />
+				<DocDefinitionRef Name="IfcAxis2Placement3D" UniqueId="22e70964-abc6-4c88-8b36-44c4f7204a0f" />
+				<DocDefinitionRef Name="IfcSurface" UniqueId="d3007c4f-d080-4857-8454-c3bc56806015" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCKERNEL" UniqueId="85f56403-66d7-41ef-9c54-57ca8d9c3c48">
+			<Definitions>
+				<DocDefinitionRef Name="IfcTypeProduct" UniqueId="4759d460-b1aa-49ea-a0aa-97bbe97d7767" />
+				<DocDefinitionRef Name="IfcPreDefinedPropertySet" UniqueId="09fa834d-3a92-44a2-93c3-67ef8bf18256" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCMATERIALRESOURCE" UniqueId="d9f55cbd-a101-4ff5-8e7d-f62956732677" />
+		<DocSchemaRef Name="IFCMEASURERESOURCE" UniqueId="a527a354-e46c-494e-88ed-0eb57da5921a">
+			<Definitions>
+				<DocDefinitionRef Name="IfcPositiveLengthMeasure" UniqueId="b1a9e065-56f5-41e1-83db-6f97073f1269" />
+				<DocDefinitionRef Name="IfcSIUnit" UniqueId="6cc789c4-e07b-438b-88b4-8b3666a521ca" />
+				<DocDefinitionRef Name="IfcNormalisedRatioMeasure" UniqueId="7a302cb4-9ace-4918-93af-61d13c123264" />
+				<DocDefinitionRef Name="IfcLengthMeasure" UniqueId="97081fbe-0ec9-42f0-8930-8c0807969c53" />
+				<DocDefinitionRef Name="IfcNonNegativeLengthMeasure" UniqueId="7152b921-3e6a-4943-96be-75ada1dff735" />
+				<DocDefinitionRef Name="IfcBoolean" UniqueId="863f9971-e71c-4e0a-9f40-b9885783a4c1" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCPRESENTATIONAPPEARANCERESOURCE" UniqueId="98a0ea70-ded5-4448-98fb-12d162908a5f">
+			<Definitions>
+				<DocDefinitionRef Name="IfcNullStyle" UniqueId="66779c14-7362-4f41-9f9c-facb7c7923ca" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCPRODUCTEXTENSION" UniqueId="a9da4a4c-492b-411f-9ad3-75da9a31b280" />
+		<DocSchemaRef Name="IFCPROPERTYRESOURCE" UniqueId="60d0d666-afe8-41cb-9519-0db154c958a7" />
+		<DocSchemaRef Name="IFCREPRESENTATIONRESOURCE" UniqueId="b683515a-51d6-4cf2-8970-5d22baf85257">
+			<Definitions>
+				<DocDefinitionRef Name="IfcShapeAspect" UniqueId="337554c5-9bf3-47b5-a3b3-87d32cea6d4f" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCSHAREDBLDGELEMENTS" UniqueId="959496a7-280e-4f63-8118-b05be44f223c" />
+	</SchemaRefs>
+</DocSchema>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElementType" Name="IfcElementType" UniqueId="08323994-8b0a-4268-8051-2fe6ad76a2b9" BaseDefinition="IfcTypeProduct" EntityFlags="197">
+	<Localization>
+		<DocLocalization Locale="de" Name="Element - Typ" />
+		<DocLocalization Locale="en" Name="Element Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;élément" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="256c92f1-adc5-451c-978b-1deecfcd3c66" DefinedType="IfcBuildingElementType" />
+		<DocSubtype UniqueId="5091b83e-bb5f-4b62-93ee-050679d78b22" DefinedType="IfcDistributionElementType" />
+		<DocSubtype UniqueId="59200ca8-969b-46cc-9a99-d8a37ac91dcc" DefinedType="IfcFurnishingElementType" />
+		<DocSubtype UniqueId="588dcdf6-861a-4130-ad18-27978f172a81" DefinedType="IfcTransportElementType" />
+		<DocSubtype UniqueId="d88929b3-243d-4df5-98fc-4e67d8660cae" DefinedType="IfcGeographicElementType" />
+		<DocSubtype UniqueId="93bc8539-f798-4312-86a0-fcb3c2ba09b5" DefinedType="IfcElementAssemblyType" />
+		<DocSubtype UniqueId="869a4a97-6661-4fa3-83d9-bdab40629ea4" DefinedType="IfcCivilElementType" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="ElementType" UniqueId="c885a317-562b-4996-824d-45153b4fd48d" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>The type denotes a particular type that indicates the object further. The use has to be established at the level of instantiable subtypes. In particular it holds the user defined type, if the enumeration of the attribute &apos;PredefinedType&apos; is set to USERDEFINED.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

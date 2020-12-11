@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElementAssembly" Name="IfcElementAssembly" UniqueId="80060d73-7260-4e2d-8f9b-46819d547abe" BaseDefinition="IfcElement" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="zusammengesetztes Element" />
+		<DocLocalization Locale="en" Name="Element Assembly" />
+		<DocLocalization Locale="fr" Name="Assemblage d&apos;éléments" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="AssemblyPlace" UniqueId="1d9c3c37-5ade-4dce-84eb-639544d907bb" DefinedType="IfcAssemblyPlaceEnum" AttributeFlags="1">
+			<Documentation>A designation of where the assembly is intended to take place defined by an Enum.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="52e54ce3-c706-4309-8db3-88ec5a4386ac" DefinedType="IfcElementAssemblyTypeEnum" AttributeFlags="1">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="ae3add8c-49b2-4dc3-aa68-f7d33d18c850">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcElementAssemblyType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcElementAssemblyTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcElementAssemblyTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="41cbbb20-4c8d-453a-9c13-3f9bcd605bb0">
+			<Documentation>Either there is no element assembly type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcElementAssemblyType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCPRODUCTEXTENSION.IFCELEMENTASSEMBLYTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

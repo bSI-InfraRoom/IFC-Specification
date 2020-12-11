@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcObjective" UniqueId="2a23c0f9-203b-4e38-9564-91c5cb3f651d" BaseDefinition="IfcConstraint" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Ziel (der Einschränkung)" />
+		<DocLocalization Locale="en" Name="Objective" />
+		<DocLocalization Locale="fr" Name="Objectif">
+			<Documentation>Capture l&apos;information quantitative associée à une contrainte de type objectif.</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="BenchmarkValues" UniqueId="35571b4c-6b8b-42d5-b196-db21e320b274" DefinedType="IfcConstraint" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
+			<Documentation>A list of nested constraints.
+
+{ .change-ifc2x4}
+&gt; IFC2X4 CHANGE&amp;nbsp; Modified to be a LIST of nested constraints, which replaces the former _IfcConstraintAggregationRelationship_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LogicalAggregator" UniqueId="73fa8b72-3bf0-4286-8adf-427fb2e3b88c" DefinedType="IfcLogicalOperatorEnum" AttributeFlags="1">
+			<Documentation>Enumeration that identifies the logical type of aggregation for the benchmark metrics.
+
+{ .change-ifc2x4}
+&gt; IFC2X4 CHANGE&amp;nbsp; This attribute replaces replaces the former _ResultValues_ attribute and indicates the aggregation behavior formerly defined at _IfcConstraintAggregationRelationship_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ObjectiveQualifier" UniqueId="7740fe16-eaa1-449e-8ee1-27b4ff3b5a60" DefinedType="IfcObjectiveEnum">
+			<Documentation>Enumeration that qualifies the type of objective constraint.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UserDefinedQualifier" UniqueId="7e2e3917-2628-4d81-9f54-990e46d54c40" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>A user defined value that qualifies the type of objective constraint when ObjectiveQualifier attribute of type _IfcObjectiveEnum_ has value USERDEFINED.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR21" UniqueId="94a837f4-b17a-4abe-b3dc-faa8f4d45539">
+			<Documentation>The attribute UserDefinedQualifier must be asserted when the value of the ObjectiveQualifier is set to USERDEFINED.</Documentation>
+			<Expression>(ObjectiveQualifier &lt;&gt; IfcObjectiveEnum.USERDEFINED) OR
+((ObjectiveQualifier = IfcObjectiveEnum.USERDEFINED) AND EXISTS(SELF\IfcObjective.UserDefinedQualifier))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

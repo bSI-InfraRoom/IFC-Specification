@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPositiveRatioMeasure" UniqueId="0e028f37-2eed-4719-aeca-ab2f49f35a63" DefinedType="IfcRatioMeasure">
+	<Localization>
+		<DocLocalization Locale="en" Name="Positive Ratio Measure" />
+		<DocLocalization Locale="fr" Name="Mesure de ratio positif" />
+	</Localization>
+	<Definition xsi:type="DocDefined" xsi:nil="true" href="IfcRatioMeasure" />
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="357f2e0f-1157-4e18-882b-2d058f192af5">
+			<Documentation>A positive measure shall be greater than zero.</Documentation>
+			<Expression>SELF &gt; 0.</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocDefined>
+

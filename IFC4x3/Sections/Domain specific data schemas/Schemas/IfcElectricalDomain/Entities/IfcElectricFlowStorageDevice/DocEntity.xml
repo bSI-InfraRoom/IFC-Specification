@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElectricFlowStorageDevice" Name="IfcElectricFlowStorageDevice" UniqueId="f2443c0e-5c57-46d2-83fe-668bd3d3367a" BaseDefinition="IfcFlowStorageDevice" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Elektrisches Speichergerät" />
+		<DocLocalization Locale="en" Name="Electric Flow Storage Device" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="ee7ce2c1-5eae-4e1b-a1d8-6d432d9b8136" DefinedType="IfcElectricFlowStorageDeviceTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="3432f6bd-0420-44c8-b37f-255a3b4e0625">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcElectricFlowStorageDeviceType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcElectricFlowStorageDeviceTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcElectricFlowStorageDeviceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="c3d17aad-c5f8-4d93-90f0-1f5f73c74329">
+			<Documentation>Either there is no electric flow storage device type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcElectricFlowStorageDeviceType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCELECTRICALDOMAIN.IFCELECTRICFLOWSTORAGEDEVICETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

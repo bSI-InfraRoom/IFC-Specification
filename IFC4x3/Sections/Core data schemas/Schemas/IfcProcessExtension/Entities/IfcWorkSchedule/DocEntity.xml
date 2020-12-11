@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWorkSchedule" Name="IfcWorkSchedule" UniqueId="863af35b-d9f7-458e-816e-351ab24b707b" BaseDefinition="IfcWorkControl" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Arbeitsprogramm" />
+		<DocLocalization Locale="en" Name="Work Schedule" />
+		<DocLocalization Locale="fr" Name="Tache unitaire de travail" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="9e068dd0-fcd2-4639-937b-c0dc5dc78127" DefinedType="IfcWorkScheduleTypeEnum" AttributeFlags="1">
+			<Documentation>Identifies the predefined types of a work schedule from which 
+    the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="505276ee-3c91-4b08-a214-850ed69ca4a8">
+			<Documentation>The attribute ObjectType must be asserted when the value of the IfcWorkScheduleTypeEnum is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR (PredefinedType &lt;&gt; IfcWorkScheduleTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcWorkScheduleTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

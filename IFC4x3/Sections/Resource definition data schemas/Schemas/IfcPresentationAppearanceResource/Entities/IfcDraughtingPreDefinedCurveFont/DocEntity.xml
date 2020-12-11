@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDraughtingPreDefinedCurveFont" UniqueId="2c8e3dda-8168-4443-97ee-c5d8cd46e7bf" BaseDefinition="IfcPreDefinedCurveFont" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Vordefinierter Zeichnungsliniensatz" />
+		<DocLocalization Locale="en" Name="Draughting Pre Defined Curve Font" />
+	</Localization>
+	<WhereRules>
+		<DocWhereRule Name="PreDefinedCurveFontNames" UniqueId="7fd4b6e0-e2e0-451f-991b-106105188dcc">
+			<Documentation>The name of the _IfcDraughtingPreDefinedCurveFont_ shall be &apos;continuous&apos;, &apos;chain&apos;, &apos;chain double dash&apos;, &apos;dashed&apos;, &apos;dotted&apos; or &apos;by layer&apos;.</Documentation>
+			<Expression>SELF\IfcPredefinedItem.Name IN
+       [&apos;continuous&apos;,
+        &apos;chain&apos;,
+        &apos;chain double dash&apos;,
+        &apos;dashed&apos;,
+        &apos;dotted&apos;,
+        &apos;by layer&apos;]</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

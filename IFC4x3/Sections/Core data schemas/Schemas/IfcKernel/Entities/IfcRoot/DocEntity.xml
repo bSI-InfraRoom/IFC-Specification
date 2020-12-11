@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRoot" Name="IfcRoot" UniqueId="f8efd3b8-d3ea-429a-95d6-d19264324999" EntityFlags="133">
+	<Localization>
+		<DocLocalization Locale="de" Name="generelle Basisklasse" />
+		<DocLocalization Locale="en" Name="Root" />
+		<DocLocalization Locale="fr" Name="Racine" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="ba2ca809-60d3-4360-9000-4cb4d92123fb" DefinedType="IfcPropertyDefinition" />
+		<DocSubtype UniqueId="37dd3b2d-b0d0-4eab-9a91-bbb881a707ce" DefinedType="IfcRelationship" />
+		<DocSubtype UniqueId="4e1a3bc1-c4ea-4a0a-9917-0c050e7972b0" DefinedType="IfcObjectDefinition" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="GlobalId" UniqueId="2ef91ad0-a87b-4049-910a-d9c2aea67739" DefinedType="IfcGloballyUniqueId" AttributeFlags="6">
+			<Documentation>Assignment of a globally unique identifier within the entire software world.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OwnerHistory" UniqueId="3f6c9112-a79d-49a2-a983-4fd08a4cedc3" DefinedType="IfcOwnerHistory" AttributeFlags="1" XsdFormat="attribute">
+			<Documentation>Assignment of the information about the current ownership of that object, including owning actor, application, local identification and information captured about the recent changes of the object, 
+
+&gt; NOTE&amp;nbsp; only the last modification in stored - either as addition, deletion or modification.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The attribute has been changed to be OPTIONAL.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Name" UniqueId="03435dd4-ced4-460f-9203-e318d330c219" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>Optional name for use by the participating software systems or users. For some subtypes of IfcRoot the insertion of the Name attribute may be required. This would be enforced by a where rule.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Description" UniqueId="ae1c2069-cba7-4c56-b652-2ce207a2345f" DefinedType="IfcText" AttributeFlags="1">
+			<Documentation>Optional description, provided for exchanging informative comments.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<UniqueRules>
+		<DocUniqueRule Name="UR1" UniqueId="4b26ec3d-b621-495a-8629-477c255fd9cd">
+			<Items>
+				<DocUniqueRuleItem Name="GlobalId" UniqueId="c6f4d6a9-bc87-4087-b98d-474c52e54fd8" />
+			</Items>
+		</DocUniqueRule>
+	</UniqueRules>
+</DocEntity>
+

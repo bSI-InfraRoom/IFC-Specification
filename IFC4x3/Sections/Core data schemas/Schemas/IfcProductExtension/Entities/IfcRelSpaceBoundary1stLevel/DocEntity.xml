@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelSpaceBoundary1stLevel" UniqueId="bae52a64-1034-464e-8c4d-a00aa45bafa0" BaseDefinition="IfcRelSpaceBoundary" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Raumgrenzen 1. Ebene - Relation" />
+		<DocLocalization Locale="en" Name="Rel Space Boundary1st Level" />
+		<DocLocalization Locale="fr" Name="Limites d&apos;espace de premier niveau" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="fcf3f77d-c44e-4c6a-88d7-98eb4dff7d35" DefinedType="IfcRelSpaceBoundary2ndLevel" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="ParentBoundary" UniqueId="b82c885d-c05b-4881-9c67-820a0aa13e35" DefinedType="IfcRelSpaceBoundary1stLevel" AttributeFlags="1" XsdFormat="attribute">
+			<Documentation>Reference to the host, or parent, space boundary within which this inner boundary is defined.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="InnerBoundaries" UniqueId="17fdcd0c-9332-432d-9933-30d0938105e8" DefinedType="IfcRelSpaceBoundary1stLevel" AttributeFlags="8" AggregationType="3" Inverse="ParentBoundary">
+			<Documentation>Reference to the inner boundaries of the space boundary. Inner boundaries are defined by the space boundaries of openings, doors and windows.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

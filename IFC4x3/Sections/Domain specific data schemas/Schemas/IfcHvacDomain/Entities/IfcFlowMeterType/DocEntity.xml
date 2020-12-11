@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFlowMeterType" Name="IfcFlowMeterType" UniqueId="daef9a4b-19fd-4e45-9d4d-4a12b58209b5" BaseDefinition="IfcFlowControllerType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Zähler (allgemein) - Typ" />
+		<DocLocalization Locale="en" Name="Flow Meter Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;appareil de mesure de débit" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="a2740dc9-c1bc-4df2-8270-bdab521192a4" DefinedType="IfcFlowMeterTypeEnum">
+			<Documentation>Defines the type of flow meter.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="69d27634-dc5e-478d-a02e-97dc724c379b">
+			<Expression>(PredefinedType &lt;&gt; IfcFlowMeterTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcFlowMeterTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

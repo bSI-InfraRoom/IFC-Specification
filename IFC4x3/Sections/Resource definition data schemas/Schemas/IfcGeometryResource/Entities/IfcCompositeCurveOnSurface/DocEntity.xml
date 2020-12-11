@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCompositeCurveOnSurface" UniqueId="1548cb11-3dfc-4d82-ac51-6413bb5ccb3d" BaseDefinition="IfcCompositeCurve" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Zusammengesetzte Kurve auf einer Fläche" />
+		<DocLocalization Locale="en" Name="Composite Curve On Surface" />
+		<DocLocalization Locale="fr" Name="Courbe composite sur surface" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="2cf35123-0595-492c-94d2-54ae86fa1e4d" DefinedType="IfcBoundaryCurve" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="BasisSurface" UniqueId="e412f5af-f8e3-407a-908b-2c649353dff3" DefinedType="IfcSurface" AggregationType="3" AggregationLower="0" AggregationUpper="1">
+			<Documentation>The surface on which the composite curve is defined.</Documentation>
+			<Derived>IfcGetBasisSurface(SELF)</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="SameSurface" UniqueId="fdd2f7ae-a99b-48e0-8950-c39d31022867">
+			<Documentation>The _BasisSurface_ shall contain at least one surface (and exactly one surface). This ensures that all segments reference curves on the same surface.</Documentation>
+			<Expression>SIZEOF(BasisSurface) &gt; 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

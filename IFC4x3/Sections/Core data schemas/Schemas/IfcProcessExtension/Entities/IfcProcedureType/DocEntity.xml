@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcProcedureType" UniqueId="a91157ae-e871-49c4-bbff-a0b9224d6a3a" Status="H" BaseDefinition="IfcTypeProcess" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Vorgehen - Typ" />
+		<DocLocalization Locale="en" Name="Procedure Type" />
+		<DocLocalization Locale="fr" Name="Type de procédure" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="d373b84f-93fb-46fc-be52-d46907ae3f8b" DefinedType="IfcProcedureTypeEnum">
+			<Documentation>Identifies the predefined types of a procedure from which 
+    the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="c59e18bf-5c49-4d22-bd37-954d60aa3e4f">
+			<Documentation>The attribute ProcessType must be asserted when the value of PredefinedType is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcProcedureTypeEnum.USERDEFINED) OR ((PredefinedType = IfcProcedureTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcTypeProcess.ProcessType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

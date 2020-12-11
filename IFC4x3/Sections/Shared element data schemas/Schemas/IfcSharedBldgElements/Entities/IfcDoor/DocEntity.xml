@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDoor" Name="IfcDoor" UniqueId="70b10571-8732-44f7-a5b2-3fdb229d547b" BaseDefinition="IfcBuiltElement" EntityFlags="173">
+	<Localization>
+		<DocLocalization Locale="de" Name="Tür" />
+		<DocLocalization Locale="en" Name="Door" />
+		<DocLocalization Locale="fr" Name="Porte" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="5078ba5e-37ce-44ee-a144-570e7a3e93f7" DefinedType="IfcDoorStandardCase" />
+		<DocSubtype UniqueId="0f7841c9-6eb7-45cb-a24a-6f308d276c44" DefinedType="IfcDoorStandardCase" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="OverallHeight" UniqueId="82f1996a-2267-42e4-9a5b-d4f2a6e4f8e8" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>Overall measure of the height, it reflects the Z Dimension of a bounding box, enclosing the body of the door opening. If omitted, the _OverallHeight_ should be taken from the geometric representation of the _IfcOpening_ in which the door is inserted.
+ NOTE The body of the door might be taller then the door opening (e.g. in cases where the door lining includes a casing). In these cases the _OverallHeight_ shall still be given as the door opening height, and not as the total height of the door lining.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OverallWidth" UniqueId="646a9c81-0757-404c-9c64-84e003fede0a" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>Overall measure of the width, it reflects the X Dimension of a bounding box, enclosing the body of theE door opening. If omitted, the _OverallWidth_ should be taken from the geometric representation of the _IfcOpening_ in which the door is inserted.
+ NOTE The body of the door might be wider then the door opening (e.g. in cases where the door lining includes a casing). In these cases the _OverallWidth_ shall still be given as the door opening width, and not as the total width of the door lining.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="a4378e60-7e89-4d23-840a-b63a2e39ea45" DefinedType="IfcDoorTypeEnum" AttributeFlags="1">
+			<Documentation></Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OperationType" UniqueId="6bdfd4d0-3ffa-4da5-98bd-95b065f45793" DefinedType="IfcDoorTypeOperationEnum" AttributeFlags="1">
+			<Documentation>Type defining the general layout and operation of the door type in terms of the partitioning of panels and panel operations.
+ NOTE The _OperationType_ shall only be used, if no type object _IfcDoorType_ is assigned, providing its own _IfcDoorType.OperationType_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UserDefinedOperationType" UniqueId="5c07c222-8576-4936-ab56-4f4b1a9eb05a" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>Designator for the user defined operation type, shall only be provided, if the value of _OperationType_ is set to USERDEFINED.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectStyleAssigned" UniqueId="b7748894-a3c9-4c8a-bd60-e6b1c6d81251">
+			<Documentation>Either there is no door type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcDoorType_.
+&gt; NOTEnbsp; The deprecated type _IfcDoorStyle_ is still included for backward compatibility reasons.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) 
+OR (&apos;IFCSHAREDBLDGELEMENTS.IFCDOORTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

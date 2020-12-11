@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelDeclares" UniqueId="f38b268f-5cb1-42c3-81e3-89081e6b0528" BaseDefinition="IfcRelationship" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Deklariert einen Kontext - Relation" />
+		<DocLocalization Locale="en" Name="Rel Declares" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelatingContext" UniqueId="7212f0e4-c36c-4f03-81cb-8220441d3691" DefinedType="IfcContext" XsdFormat="hidden">
+			<Documentation>Reference to the _IfcProject_ to which additional information is assigned.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelatedDefinitions" UniqueId="9d9ced1f-f4f3-407a-9b0d-78385692a1a9" DefinedType="IfcDefinitionSelect" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Set of object or property definitions that are assigned to a context and to which the unit and representation context definitions of that context apply.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NoSelfReference" UniqueId="7ec016f5-87da-4740-9fb3-ed3ca9ea3199">
+			<Documentation>The instance to with the relation points shall not be contained in the set of _RelatedObjects_.</Documentation>
+			<Expression>SIZEOF(QUERY(Temp &lt;* RelatedDefinitions | RelatingContext :=: Temp)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

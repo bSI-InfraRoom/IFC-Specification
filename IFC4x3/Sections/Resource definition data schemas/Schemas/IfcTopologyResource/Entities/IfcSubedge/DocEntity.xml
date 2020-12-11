@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSubedge" UniqueId="301f5c35-1bd3-43f4-8839-f47887d4d763" BaseDefinition="IfcEdge" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Teilkante - Topologie" />
+		<DocLocalization Locale="en" Name="Subedge" />
+		<DocLocalization Locale="fr" Name="Sous arête" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="ParentEdge" UniqueId="4c3df6a8-223d-4e59-9a81-4540065605bc" DefinedType="IfcEdge" XsdFormat="attribute">
+			<Documentation>The Edge, or Subedge, which contains the Subedge.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

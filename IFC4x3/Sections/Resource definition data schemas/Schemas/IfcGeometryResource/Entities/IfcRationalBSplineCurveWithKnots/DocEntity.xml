@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRationalBSplineCurveWithKnots" UniqueId="3f24b989-aa9e-461e-b6d2-1dd3dabb466b" BaseDefinition="IfcBSplineCurveWithKnots" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Rationale Bézier-Spline - Kurve mit Kontrollpunkten" />
+		<DocLocalization Locale="en" Name="Rational BSpline Curve With Knots" />
+		<DocLocalization Locale="fr" Name="Courbes Bsplines rationnelles avec nœuds" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="WeightsData" UniqueId="04f8a0e1-3151-4303-acd6-e6f73ec881c3" DefinedType="IfcReal" AggregationType="1" AggregationLower="2" AggregationUpper="0">
+			<Documentation>The supplied values of the weights.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Weights" UniqueId="069949af-bc3a-4318-a19a-5fe2d5956af9" DefinedType="IfcReal" AggregationType="2" AggregationLower="0" AggregationUpper="UpperIndexOnControlPoints">
+			<Documentation>The array of weights associated with the control points. This is derived from the weights data.</Documentation>
+			<Derived>IfcListToArray(WeightsData,0,SELF\IfcBSplineCurve.UpperIndexOnControlPoints)</Derived>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="SameNumOfWeightsAndPoints" UniqueId="1513cc16-e722-43d4-8dac-66a0efda61e9">
+			<Documentation>There shall be the same number of weights as control points.</Documentation>
+			<Expression>SIZEOF(WeightsData) = SIZEOF(SELF\IfcBSplineCurve.ControlPointsList)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WeightsGreaterZero" UniqueId="2cf09814-13a6-4ace-bb92-e70065959b46">
+			<Documentation>All the weights shall have values greater than 0.0.</Documentation>
+			<Expression>IfcCurveWeightsPositive(SELF)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

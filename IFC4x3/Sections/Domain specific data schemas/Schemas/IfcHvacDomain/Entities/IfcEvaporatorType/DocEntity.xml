@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcEvaporatorType" Name="IfcEvaporatorType" UniqueId="687f6e85-b375-4dd5-b17f-6d4e8a5dd006" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Verdampfer - Typ" />
+		<DocLocalization Locale="en" Name="Evaporator Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;évaporateur" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="8c26d3bb-291a-4cdd-aea2-4410cd3ff3b8" DefinedType="IfcEvaporatorTypeEnum">
+			<Documentation>Defines the type of evaporator.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="c8702148-925c-466f-975a-273437bebb72">
+			<Expression>(PredefinedType &lt;&gt; IfcEvaporatorTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcEvaporatorTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

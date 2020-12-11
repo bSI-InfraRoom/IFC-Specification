@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIndexedTextureMap" UniqueId="ac1ef8ed-e75b-403b-a651-72cd4dec16ce" BaseDefinition="IfcTextureCoordinate" EntityFlags="197">
+	<Localization>
+		<DocLocalization Locale="de" Name="Liste von Indizes für Texturen" />
+		<DocLocalization Locale="en" Name="Indexed Texture Map" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="30c84939-93b7-4560-938b-31f1ad9bb843" DefinedType="IfcIndexedTriangleTextureMap" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="MappedTo" UniqueId="5678ee84-15aa-4bdd-823c-4a04f4455400" DefinedType="IfcTessellatedFaceSet" XsdFormat="hidden">
+			<Documentation>Reference to the _IfcTessellatedFaceSet_ to which it applies the texture map.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="TexCoords" UniqueId="e3ac75e4-db50-4833-aad4-1310cc86ea8c" DefinedType="IfcTextureVertexList" XsdFormat="attribute">
+			<Documentation>Indexable list of texture vertices.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

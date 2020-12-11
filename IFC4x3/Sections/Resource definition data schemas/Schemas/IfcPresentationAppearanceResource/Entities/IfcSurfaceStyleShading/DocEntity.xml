@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSurfaceStyleShading" Name="IfcSurfaceStyleShading" UniqueId="4d15ed6e-2d9b-4101-a12a-055e03cab045" BaseDefinition="IfcPresentationItem" EntityFlags="109">
+	<Localization>
+		<DocLocalization Locale="de" Name="Oberflächenstil - Tönung" />
+		<DocLocalization Locale="en" Name="Surface Style Shading" />
+		<DocLocalization Locale="fr" Name="Style d&apos;ombrage de surface" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="87fdddd6-30e5-46ee-a991-07c5ce5f9db2" DefinedType="IfcSurfaceStyleRendering" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="SurfaceColour" UniqueId="a2fe2d3a-9a84-4326-9016-dae00e0d0af9" DefinedType="IfcColourRgb" XsdFormat="attribute">
+			<Documentation>The colour used to render the surface. The surface colour for visualisation is defined by specifying the intensity of red, green and blue.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Transparency" UniqueId="3ced60f5-17d8-4093-a16a-d36cdad0806d" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1">
+			<Documentation>The transparency field specifies how &quot;clear&quot; an object is, with 1.0 being completely transparent, and 0.0 completely opaque. If not given, the value 0.0 (opaque) is assumed.
+&gt; NOTE&amp;nbsp; The definition of 1 being transparent and 0 being opaque is the opposite of the definition in alpha channels, where 0.0 is completely transparent and 1.0 is completely opaque. This definition is due to upward compatibility to previous versions of this standard in different to the definition in _IfcIndexedColourMap_.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

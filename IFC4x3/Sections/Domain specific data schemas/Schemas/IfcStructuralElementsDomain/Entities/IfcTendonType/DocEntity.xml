@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTendonType" UniqueId="66a6e642-3b24-4796-a6a3-8045c9ee3b54" BaseDefinition="IfcReinforcingElementType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Spannglied - Typ" />
+		<DocLocalization Locale="en" Name="Tendon Type" />
+		<DocLocalization Locale="fr" Name="Type de cable" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="c3673c95-2686-4e5e-9e7a-0046b947ff94" DefinedType="IfcTendonTypeEnum">
+			<Documentation>Subtype of tendon.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="NominalDiameter" UniqueId="e68ea63d-b611-4993-ac7c-486784151c1e" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>The nominal diameter defining the cross-section size of the prestressed part of the tendon.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CrossSectionArea" UniqueId="7cbdd29f-faaa-4ef5-92ff-d2b870e89f86" DefinedType="IfcAreaMeasure" AttributeFlags="1">
+			<Documentation>The effective cross-section area of the prestressed part of the tendon.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="SheathDiameter" UniqueId="558f7ecf-0e60-4557-abf4-3eb909d17bc2" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>Diameter of the sheeth (duct) around the tendon, if there is one with this type of tendon.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="d0cda14e-0e03-4455-99bd-186f858c5f02">
+			<Documentation>The inherited attribute _ElementType_ shall be provided if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcTendonTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcTendonTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

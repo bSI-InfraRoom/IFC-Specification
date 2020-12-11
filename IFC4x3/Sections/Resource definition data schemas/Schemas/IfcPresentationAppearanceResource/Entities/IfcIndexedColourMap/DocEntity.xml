@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIndexedColourMap" UniqueId="72a45e5a-521d-4b77-ba81-0938e73dffff" Status="Official" BaseDefinition="IfcPresentationItem" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Liste von Indizes für Farbwerte" />
+		<DocLocalization Locale="en" Name="Indexed Colour Map" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="MappedTo" UniqueId="46f7bd1c-d9b3-427b-b0c8-c3d9bcc29edd" DefinedType="IfcTessellatedFaceSet" XsdFormat="hidden">
+			<Documentation>Reference to the _IfcTessellatedFaceSet_ to which it applies the colours and alpha channel.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Opacity" UniqueId="95d4d17c-ac0b-4a8d-9c90-545c63064df1" Status="Official" DefinedType="IfcNormalisedRatioMeasure" AttributeFlags="1" XsdFormat="content">
+			<Documentation>The the opacity value, that applies equaly to all faces of the tessellated face set. 1.0 means opaque, and 0.0 completely transparent. If not provided, 1.0 is assumed (all colours are opque).
+
+&gt; NOTE&amp;nbsp; The definition of the alpha channel component for opacity follows the new definitions in image processing, where 0.0 means full transparency and 1.0 (or 2^bit depths^ -1) means fully opaque. This is contrary to the definition of transparency in _IfcSurfaceStyleShading_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Colours" UniqueId="9098328d-ff84-4d4a-a892-224c18ad3d85" DefinedType="IfcColourRgbList" XsdFormat="attribute">
+			<Documentation>Indexable list of lists of quadruples, representing RGB colours.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ColourIndex" UniqueId="f4863512-f7e4-43f8-8add-5f016ad7c46d" DefinedType="IfcPositiveInteger" AggregationType="1" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Index into the _IfcColourRgbList_ for each face of the _IfcTriangulatedFaceSet_. The colour is applied uniformly to the indexed face.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

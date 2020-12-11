@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcBeamType" Name="IfcBeamType" UniqueId="030a0c92-14e1-4656-8d65-6fb50f43e9b3" BaseDefinition="IfcBuiltElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Balken / Unterzug - Typ" />
+		<DocLocalization Locale="en" Name="Beam Type" />
+		<DocLocalization Locale="fr" Name="Type de poutre" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="78ef60cd-a49e-4e16-8a9c-b68abc70193e" DefinedType="IfcBeamTypeEnum">
+			<Documentation>Identifies the predefined types of a beam element from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="d662680e-5d74-4a66-8716-36048fe79d73">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcBeamTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcBeamTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

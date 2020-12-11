@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralAnalysisDomain" UniqueId="3aa20d13-da0d-4386-8945-f7d02203aa15">
+	<SchemaRefs>
+		<DocSchemaRef Name="IFCGEOMETRICCONSTRAINTRESOURCE" UniqueId="be33476e-593d-43f6-832d-4f824cada5ba">
+			<Definitions>
+				<DocDefinitionRef Name="IfcConnectionGeometry" UniqueId="90f401a5-ec25-4134-ada0-95412390ed18" />
+				<DocDefinitionRef Name="IfcObjectPlacement" UniqueId="9c408f26-e723-4f79-af0b-4e2b76980520" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCGEOMETRYRESOURCE" UniqueId="92ceaf89-664b-4c3e-b96c-a37fd1dd9539">
+			<Definitions>
+				<DocDefinitionRef Name="IfcAxis2Placement3D" UniqueId="7af738f4-1e86-4cb2-abec-f8689421b7e6" />
+				<DocDefinitionRef Name="IfcDirection" UniqueId="2439de34-1a6a-4ba8-abe6-a0aab3d17fd1" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCKERNEL" UniqueId="6f444786-a58e-4740-9b3f-826881a2ff7b">
+			<Definitions>
+				<DocDefinitionRef Name="IfcProduct" UniqueId="d222f6a0-12b0-402a-a99a-bc8b0d52c078" />
+				<DocDefinitionRef Name="IfcRelConnects" UniqueId="cb9f9eda-01a7-4992-8529-766d19f426b9" />
+				<DocDefinitionRef Name="IfcGroup" UniqueId="e84c07f6-b33b-4c5b-bbce-09aa595c625e" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCMEASURERESOURCE" UniqueId="133f9a47-2bde-4ae0-92e8-6b16e6a501a6">
+			<Definitions>
+				<DocDefinitionRef Name="IfcLabel" UniqueId="11e1d935-7a96-4259-8175-2972fc8085c8" />
+				<DocDefinitionRef Name="IfcPositiveLengthMeasure" UniqueId="adee65dc-7696-4124-8e29-0e8723ba615a" />
+				<DocDefinitionRef Name="IfcLengthMeasure" UniqueId="e8d045dd-2dae-4177-a58c-0cd16b7ea2c8" />
+				<DocDefinitionRef Name="IfcRatioMeasure" UniqueId="78c77013-1ff9-4e50-a6cf-837f733df6f8" />
+				<DocDefinitionRef Name="IfcBoolean" UniqueId="092f778a-a29a-4950-8c74-36a8284bda75" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCPRODUCTEXTENSION" UniqueId="794d3a9c-5b0c-4010-a73b-a7012bf4cdbd">
+			<Definitions>
+				<DocDefinitionRef Name="IfcSystem" UniqueId="040d8b68-1a9c-41e6-8ab3-3f2f008d6f8d" />
+				<DocDefinitionRef Name="IfcElement" UniqueId="e3f3546e-b09e-41a0-b9f0-15cb431475e5" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCREPRESENTATIONRESOURCE" UniqueId="457fabfd-f4fb-4e48-99e0-ce435d82e4d2">
+			<Definitions>
+				<DocDefinitionRef Name="IfcGlobalOrLocalEnum" UniqueId="3389085d-252c-4a9f-869a-8ac5b69a5d85" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCSTRUCTURALLOADRESOURCE" UniqueId="80816802-49a4-4308-9532-4b0eea3a0756">
+			<Definitions>
+				<DocDefinitionRef Name="IfcBoundaryCondition" UniqueId="60a4aac4-95a3-4d1e-a18d-6383a31aca0b" />
+				<DocDefinitionRef Name="IfcStructuralLoad" UniqueId="0617f161-ab84-45be-97fe-20a95a4703e9" />
+				<DocDefinitionRef Name="IfcStructuralConnectionCondition" UniqueId="694daec4-fcdd-4209-8055-466b2006e18d" />
+			</Definitions>
+		</DocSchemaRef>
+	</SchemaRefs>
+</DocSchema>
+

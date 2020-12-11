@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFastenerType" Name="IfcFastenerType" UniqueId="572e4980-73f9-469a-bc9e-520a82f27b85" BaseDefinition="IfcElementComponentType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Befestigungsmittel - Typ" />
+		<DocLocalization Locale="en" Name="Fastener Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;élément d&apos;assemblage" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="338cf347-65d8-4519-b97e-d487b305360c" DefinedType="IfcFastenerTypeEnum">
+			<Documentation>Subtype of fastener</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="7f559e02-4bd1-4a47-8a0d-a0c321706d09">
+			<Documentation>The inherited attribute _ElementType_ shall be provided if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcFastenerTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcFastenerTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

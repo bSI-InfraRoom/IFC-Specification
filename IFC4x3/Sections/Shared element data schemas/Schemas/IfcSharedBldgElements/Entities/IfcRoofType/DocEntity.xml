@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRoofType" Name="IfcRoofType" UniqueId="63d5034b-fa9c-4b85-bf43-9f24d48e41e5" Status="H" BaseDefinition="IfcBuiltElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Dach - Typ" />
+		<DocLocalization Locale="en" Name="Roof Type" />
+		<DocLocalization Locale="fr" Name="Type de toiture" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="1e67307a-a7f0-418c-9478-1e90ab9d50c9" DefinedType="IfcRoofTypeEnum">
+			<Documentation>Identifies the predefined types of a roof element from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="899a8392-af07-440b-908a-a8b51062cb27">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcRoofTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcRoofTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

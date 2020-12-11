@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCondenserType" Name="IfcCondenserType" UniqueId="9d2cddee-45de-4b2c-9d48-812cc8cac37f" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Kondensator - Typ" />
+		<DocLocalization Locale="en" Name="Condenser Type" />
+		<DocLocalization Locale="fr" Name="Type de condenseur" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="6beaeb3e-2f12-4f5e-b32b-edc3cf6bac0b" DefinedType="IfcCondenserTypeEnum">
+			<Documentation>Defines the type of condenser.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="1d3981af-6f54-4f9a-b098-ec084eecda73">
+			<Expression>(PredefinedType &lt;&gt; IfcCondenserTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCondenserTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

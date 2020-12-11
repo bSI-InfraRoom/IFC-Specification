@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralPointAction" Name="IfcStructuralPointAction" UniqueId="bb3faf6b-1958-4e7d-87fd-72938d5456cc" BaseDefinition="IfcStructuralAction" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Einzel- oder Punktlast" />
+		<DocLocalization Locale="en" Name="Structural Point Action" />
+	</Localization>
+	<WhereRules>
+		<DocWhereRule Name="SuitableLoadType" UniqueId="93b29388-ed26-465f-93f9-e96cf226d5a4">
+			<Documentation>A structural point action shall place either a single force or a single displacement.</Documentation>
+			<Expression>SIZEOF([&apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADSINGLEFORCE&apos;, &apos;IFCSTRUCTURALLOADRESOURCE.IFCSTRUCTURALLOADSINGLEDISPLACEMENT&apos;] * TYPEOF(SELF\IfcStructuralActivity.AppliedLoad)) = 1</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRepresentationResource" UniqueId="f88a0796-67bd-425f-8914-2e21642eb5a1">
+	<SchemaRefs>
+		<DocSchemaRef Name="IFCEXTERNALREFERENCERESOURCE" UniqueId="4fca3fa5-dc68-495a-b5ec-c9779afca301">
+			<Definitions>
+				<DocDefinitionRef Name="IfcClassificationReference" UniqueId="20a92f83-7269-40a5-8d83-3380112da7e0" />
+				<DocDefinitionRef Name="IfcExternalReferenceRelationship" UniqueId="0b59910e-3323-475e-8614-0d7721f953ea" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCEXTERNALREFERENCERESOURCE" UniqueId="96cd629b-0c72-471b-a801-92289fd3b07c">
+			<Definitions>
+				<DocDefinitionRef Name="IfcResourceObjectSelect" UniqueId="175c78dc-6ddb-47ac-bff8-609f79baa7f4" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCGEOMETRICMODELRESOURCE" UniqueId="4a928a2a-55a9-4fdf-a87e-d6aaec37168a">
+			<Definitions>
+				<DocDefinitionRef Name="IfcGeometricSet" UniqueId="48e351a7-bca6-4bc8-913b-c075d07823b2" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCGEOMETRYRESOURCE" UniqueId="68fe812e-4562-40e1-b8df-a6785e8905a7">
+			<Definitions>
+				<DocDefinitionRef Name="IfcDimensionCount" UniqueId="4c9b50ef-e5aa-492c-9f66-25832f56f0a9" />
+				<DocDefinitionRef Name="IfcRepresentationItem" UniqueId="ab384510-00bf-4b29-aac1-b8c15285a7ff" />
+				<DocDefinitionRef Name="IfcAxis2Placement" UniqueId="5ad98fdd-dc10-430a-a6f4-1ccdc2f89c2d" />
+				<DocDefinitionRef Name="IfcDirection" UniqueId="78cf8856-3f42-4b23-afe8-940a92798feb" />
+				<DocDefinitionRef Name="IfcAxis2Placement2D" UniqueId="6cbe7463-cf97-4f61-8daa-b1659155cc0b" />
+				<DocDefinitionRef Name="IfcAxis2Placement3D" UniqueId="3095c7e0-b9ca-4756-bc3d-eb100d787880" />
+				<DocDefinitionRef Name="IfcSameAxis2Placement" UniqueId="9738173d-00e2-425b-9a08-ea03344d4a26" />
+				<DocDefinitionRef Name="IfcSameCartesianPoint" UniqueId="08c001a8-a351-48ea-a3cd-c3a3af10af63" />
+				<DocDefinitionRef Name="IfcSameDirection" UniqueId="36ed7603-1b83-425a-af23-682b8fc80163" />
+				<DocDefinitionRef Name="IfcSameValue" UniqueId="4cc520ce-6c7a-495e-a3bb-14e0a61f66c2" />
+				<DocDefinitionRef Name="IfcRepresentationMap" UniqueId="ee1d7867-16c6-4591-87cb-dcba98fd7d4b" />
+				<DocDefinitionRef Name="IfcCurve" UniqueId="83151fe5-f260-4346-8bf1-c4a05a4f4e94" />
+				<DocDefinitionRef Name="IfcSurface" UniqueId="15cd666f-9f73-4738-bf7f-0686552b709c" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCKERNEL" UniqueId="38759cca-8983-428b-a3d3-b1ec715aa770">
+			<Definitions>
+				<DocDefinitionRef Name="IfcProduct" UniqueId="afea2328-94c7-4318-a6e8-b5364bea7cfd" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCMATERIALRESOURCE" UniqueId="41acdaa8-d9ed-42d2-93e8-57a153762cb2">
+			<Definitions>
+				<DocDefinitionRef Name="IfcMaterial" UniqueId="2a1e225f-d422-4e33-8182-0cfc8076f456" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCMEASURERESOURCE" UniqueId="b840b6cf-4629-4f0e-805c-0558d67e7d26">
+			<Definitions>
+				<DocDefinitionRef Name="IfcLabel" UniqueId="0b408ee2-e917-4046-83c9-be916c08df5b" />
+				<DocDefinitionRef Name="IfcText" UniqueId="8f7d2be9-42e6-459b-9d92-f4b873bf9178" />
+				<DocDefinitionRef Name="IfcSiUnit" UniqueId="680dabf9-ba3f-41be-8bdf-c0864d6720fa" />
+				<DocDefinitionRef Name="IfcDerivedUnit" UniqueId="16b6200e-a79b-41ff-9ddf-eb80b6cc7585" />
+				<DocDefinitionRef Name="IfcPositiveRatioMeasure" UniqueId="03079847-8c4c-4489-bb76-b4d8f78c0b9a" />
+				<DocDefinitionRef Name="IfcIdentifier" UniqueId="67408600-3529-4d2f-be29-8a8e469de351" />
+				<DocDefinitionRef Name="IfcLengthMeasure" UniqueId="1987cf4f-52d1-4a14-8080-2820d70cb6b9" />
+				<DocDefinitionRef Name="IfcReal" UniqueId="53666384-7ea3-46d2-ba10-986fd16883d8" />
+				<DocDefinitionRef Name="IfcNamedUnit" UniqueId="04a55c7c-d817-4574-83c4-325bf83bbd76" />
+				<DocDefinitionRef Name="IfcLogical" UniqueId="155b841f-664f-4175-818f-326f654bf3fe" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCPRESENTATIONAPPEARANCERESOURCE" UniqueId="f1b84a39-1f24-4a28-bf57-3a9fd114d599">
+			<Definitions>
+				<DocDefinitionRef Name="IfcNullStyle" UniqueId="6c4914b8-127f-4c9f-8b9a-43ecb53d7b6a" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCPRESENTATIONORGANIZATIONRESOURCE" UniqueId="b6deaf27-abc3-408d-b777-a00798243aac">
+			<Definitions>
+				<DocDefinitionRef Name="IfcPresentationLayerAssignment" UniqueId="8675c408-d51b-4137-afb7-f1495bb55b84" />
+			</Definitions>
+		</DocSchemaRef>
+	</SchemaRefs>
+</DocSchema>
+

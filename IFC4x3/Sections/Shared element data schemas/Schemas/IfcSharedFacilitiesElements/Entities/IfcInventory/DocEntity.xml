@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcInventory" Name="IfcInventory" UniqueId="73471cd5-1296-4091-bcc3-f7f5e32ff3de" Status="H" BaseDefinition="IfcGroup" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Inventar" />
+		<DocLocalization Locale="en" Name="Inventory" />
+		<DocLocalization Locale="fr" Name="Inventaire" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="8dedffaa-456f-48c2-a583-e63978378160" DefinedType="IfcInventoryTypeEnum" AttributeFlags="1">
+			<Documentation>A list of the types of inventories from which that required may be selected.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Attribute made optional.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Jurisdiction" UniqueId="6f479fad-d27e-4644-876a-6711e2ff021c" DefinedType="IfcActorSelect" AttributeFlags="1">
+			<Documentation>The organizational unit to which the inventory is applicable.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ResponsiblePersons" UniqueId="d23c5d1f-1727-46f3-968f-018a51799fa6" DefinedType="IfcPerson" AttributeFlags="1" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Persons who are responsible for the inventory.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LastUpdateDate" UniqueId="fe41de34-a4d1-4bcb-ab62-89f0068aaf9c" DefinedType="IfcDate" AttributeFlags="1">
+			<Documentation>The date on which the last update of the inventory was carried out.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Type changed from IfcDateTimeSelect.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CurrentValue" UniqueId="264bcae7-f4a5-4147-9961-fc38405ff8b6" DefinedType="IfcCostValue" AttributeFlags="1" XsdFormat="attribute">
+			<Documentation>An estimate of the current cost value of the inventory.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OriginalValue" UniqueId="412fe95f-936f-4dde-a82c-f8e9f305b952" DefinedType="IfcCostValue" AttributeFlags="1" XsdFormat="attribute">
+			<Documentation>An estimate of the original cost value of the inventory.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDistributionElement" Name="IfcDistributionElement" UniqueId="8672f3a9-df18-46b2-9783-ede9bc362146" BaseDefinition="IfcElement" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="haustechnische Komponente (allgemein)" />
+		<DocLocalization Locale="en" Name="Distribution Element" />
+		<DocLocalization Locale="fr" Name="Elément de distribution" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="1e83c64e-65d8-49ee-944e-ee432105e5a9" DefinedType="IfcDistributionFlowElement" />
+		<DocSubtype UniqueId="9ebf5aaa-3443-476d-a40a-73564670571f" DefinedType="IfcDistributionControlElement" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="HasPorts" UniqueId="da8a54e0-2b6b-4b7e-91fb-2087561bccf5" DefinedType="IfcRelConnectsPortToElement" AggregationType="3" Inverse="RelatedElement">
+			<Documentation>Reference to the element to port connection relationship. The relationship then refers to the port which is contained in this element.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The inverse attribute is deprecated. Relationship to ports, contained within the _IfcDistributionElement_ is now realized by the inverse relationship _NestedBy_ referencing _IfcRelNests_.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

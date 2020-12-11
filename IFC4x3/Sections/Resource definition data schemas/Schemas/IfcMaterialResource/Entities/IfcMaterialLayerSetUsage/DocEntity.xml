@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMaterialLayerSetUsage" Name="IfcMaterialLayerSetUsage" UniqueId="2e823b55-2b4a-4eb3-ab29-2daa31a0e9d2" BaseDefinition="IfcMaterialUsageDefinition" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Gruppe von Materialschichten - Verwendung" />
+		<DocLocalization Locale="en" Name="Material Layer Set Usage" />
+		<DocLocalization Locale="fr" Name="Mise en place d&apos;un ensemble de couches de matériau homogène" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="ForLayerSet" UniqueId="6270a84c-a47e-49e8-ad70-df7255d002ec" DefinedType="IfcMaterialLayerSet" XsdFormat="attribute">
+			<Documentation>The _IfcMaterialLayerSet_ set to which the usage is applied.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LayerSetDirection" UniqueId="61658062-7a41-4e62-a4ac-e22ff1cacbdb" DefinedType="IfcLayerSetDirectionEnum">
+			<Documentation>Orientation of the material layer set relative to element reference geometry. The meaning of the value of this attribute shall be specified in the geometry use section for each element. For extruded shape representation, direction can be given along the extrusion path (e.g. for slabs) or perpendicular to it (e.g. for walls).
+
+&gt; NOTE&amp;nbsp; The _LayerSetDirection_ for _IfcWallStandardCase_ shall be AXIS2 (i.e. the y-axis) and for _IfcSlabStandardCase_ and _IfcPlateStandardCase_ it shall be AXIS3 (i.e. the z-axis).
+
+&gt; NOTE&amp;nbsp; Whether the material layers of the set being used shall &apos;grow&apos; into the positive or negative direction of the given axis, shall be defined by _DirectionSense_ attribute.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="DirectionSense" UniqueId="ce6589dc-d71f-450a-a1c0-378bb4d6f066" DefinedType="IfcDirectionSenseEnum">
+			<Documentation>Denotes whether the material layer set is oriented in positive or negative sense along the specified axis (defined by LayerSetDirection). &quot;Positive&quot; means that the consecutive layers (the _IfcMaterialLayer_ instances in the list of _IfcMaterialLayerSet.MaterialLayers_) are placed face-by-face in the direction of the positive axis as established by LayerSetDirection: for AXIS2 it would be in +y, for AXIS3 it would be +z. &quot;Negative&quot; means that the layers are placed face-by-face in the direction of the negative LayerSetDirection. In both cases,  starting at the material layer set base line.
+&gt; NOTE&amp;nbsp; the material layer set base line (MlsBase) is located by OffsetFromReferenceLine, and may be on the positive or negative side of the element reference line (or plane); positive or negative for MlsBase placement does not depend on the DirectionSense attribute, but on the relevant element axis.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OffsetFromReferenceLine" UniqueId="03479fcc-0ce0-4ce2-87e2-23dca844ee1c" DefinedType="IfcLengthMeasure">
+			<Documentation>Offset of the material layer set base line (MlsBase) from reference geometry (line or plane) of element. The offset can be positive or negative, unless restricted for a particular building element type in its use definition or by implementer agreement. A positive value means, that the MlsBase is placed on the positive side of the reference line or plane, on the axis established by LayerSetDirection (in case of AXIS2 into the direction of +y, or in case of AXIS2 into the direction of +z). A negative value means that the MlsBase is placed on the negative side, as established by LayerSetDirection (in case of AXIS2 into the direction of -y). 
+&gt; NOTE&amp;nbsp; the positive or negative sign in the offset only affects the MlsBase placement, it does not have any effect on the application of DirectionSense for orientation of the material layers; also DirectionSense does not change the MlsBase placement.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ReferenceExtent" UniqueId="05463889-9d39-40f7-a51d-64d1eae28a58" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>Extent of the extrusion of the elements body shape representation to which the _IfcMaterialLayerSetUsage_ applies. It is used as the reference value for the upper _OffsetValues[2]_ provided by the _IfcMaterialLayerSetWithOffsets_ subtype for included material layers.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute added to the end of attribute list.
+
+&gt; NOTE&amp;nbsp; The attribute _ReferenceExtent_ shall be asserted, if an _IfcMaterialLayerSetWithOffsets_ is included in the _ForLayerSet.MaterialLayers_ list of material layers.
+
+&gt; NOTE&amp;nbsp; The _ReferenceExtent_ for _IfcWallStandardCase_ is the reference height starting at z=0 being the XY plane of the object coordinate system.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

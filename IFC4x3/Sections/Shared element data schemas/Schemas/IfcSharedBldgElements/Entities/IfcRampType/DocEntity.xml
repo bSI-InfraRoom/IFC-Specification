@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRampType" Name="IfcRampType" UniqueId="f177bcf7-bde4-4b21-b501-2c688045a9fb" BaseDefinition="IfcBuiltElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Rampe - Typ" />
+		<DocLocalization Locale="en" Name="Ramp Type" />
+		<DocLocalization Locale="fr" Name="Type de rampe" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="8d438bbb-1379-4603-8e27-5b8882fd46fc" DefinedType="IfcRampTypeEnum">
+			<Documentation>Identifies the predefined types of a ramp element from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="092b3aea-ea29-454a-8cb4-565694ca6b8b">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcRampTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcRampTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcNormalisedRatioMeasure" UniqueId="3bb00789-25bf-4fc4-a8fa-d4282e28b0bc" DefinedType="IfcRatioMeasure">
+	<Localization>
+		<DocLocalization Locale="en" Name="Normalised Ratio Measure" />
+		<DocLocalization Locale="fr" Name="Mesure de ratio normé" />
+	</Localization>
+	<Definition xsi:type="DocDefined" xsi:nil="true" href="IfcRatioMeasure" />
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="b03beb5c-511a-4e9b-bbd9-7370f611c6dc">
+			<Documentation>Normalized ratio shall be a non-negative value less than or equal to 1.0</Documentation>
+			<Expression>{0.0 &lt;= SELF &lt;= 1.0}</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocDefined>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRationalBSplineSurfaceWithKnots" UniqueId="fa4d0f85-ebcc-4a94-aa4d-e9876009463c" BaseDefinition="IfcBSplineSurfaceWithKnots" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Rationale Bézier-Spline - Oberfläche mit Kontrollpunkten" />
+		<DocLocalization Locale="en" Name="Rational BSpline Surface With Knots" />
+		<DocLocalization Locale="fr" Name="Surfaces Bsplines rationnelles avec nœuds" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="WeightsData" UniqueId="1140f72c-ae94-41b6-956b-58e9cb40cb9d" DefinedType="IfcReal" AggregationType="1" AggregationLower="2" AggregationUpper="0" XsdFormat="element">
+			<Documentation>The weights associated with the control points in the rational case.</Documentation>
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="191bd546-892a-47ba-84e5-3ea53b476ead" AggregationType="1" AggregationLower="2" AggregationUpper="0" />
+		</DocAttribute>
+		<DocAttribute Name="Weights" UniqueId="d54fa1aa-6dd2-42bc-8f1a-94c4d2400891" DefinedType="IfcReal" AggregationType="2" AggregationLower="0" AggregationUpper="UUpper">
+			<Documentation>Array (two-dimensional) of weight values constructed from the _WeightsData_.</Documentation>
+			<Derived>IfcMakeArrayOfArray(WeightsData,0,UUpper,0,VUpper)</Derived>
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="6277afca-e76c-4ff5-9999-bf33fa042e26" AggregationType="2" AggregationLower="0" AggregationUpper="VUpper" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrespondingWeightsDataLists" UniqueId="2f381557-dc89-4bff-be86-5c2efb479cd7">
+			<Documentation>The array dimensions for the weights shall be consistent with the control points data.</Documentation>
+			<Expression>(SIZEOF(WeightsData) = SIZEOF(SELF\IfcBSplineSurface.ControlPointsList))
+AND 
+(SIZEOF(WeightsData[1]) = SIZEOF(SELF\IfcBSplineSurface.ControlPointsList[1]))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="WeightValuesGreaterZero" UniqueId="e6310784-035a-414f-83d9-65f5c199ce84">
+			<Documentation>The weight value associated with each control point shall be greater than zero.</Documentation>
+			<Expression>IfcSurfaceWeightsPositive(SELF)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

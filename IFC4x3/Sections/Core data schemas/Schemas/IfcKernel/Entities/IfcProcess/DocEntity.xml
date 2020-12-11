@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcProcess" Name="IfcProcess" UniqueId="f56a4e45-de47-49a7-83d1-3628609eb4f3" BaseDefinition="IfcObject" EntityFlags="205">
+	<Localization>
+		<DocLocalization Locale="de" Name="Prozess (allgemein)" />
+		<DocLocalization Locale="en" Name="Process" />
+		<DocLocalization Locale="fr" Name="Processus" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Identification" UniqueId="66e9489d-b4ed-4ba1-a9bb-eebd2225c8f1" DefinedType="IfcIdentifier" AttributeFlags="1">
+			<Documentation>An identifying designation given to a process or activity.
+    It is the identifier at the occurrence level. 
+    
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE Attribute promoted from subtypes.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LongDescription" UniqueId="a6480a2f-193a-4d98-af8a-dcc00c42d675" DefinedType="IfcText" AttributeFlags="1">
+			<Documentation>An extended description or narrative that may be provided.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; New attribute.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="IsPredecessorTo" UniqueId="e95a3b00-ba20-4428-9ea0-0dac117a2339" DefinedType="IfcRelSequence" AttributeFlags="32" AggregationType="3" Inverse="RelatingProcess">
+			<Documentation>Dependency between two activities, it refers to the subsequent activity for which this activity is the predecessor. The link between two activities can include a link type and a lag time.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="IsSuccessorFrom" UniqueId="06cc4698-e7f3-4905-a123-e09c3e2bb81d" DefinedType="IfcRelSequence" AttributeFlags="32" AggregationType="3" Inverse="RelatedProcess">
+			<Documentation>Dependency between two activities, it refers to the previous activity for which this activity is the successor. The link between two activities can include a link type and a lag time.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OperatesOn" UniqueId="c6ab7167-e878-400c-9125-45a74e99ef1d" DefinedType="IfcRelAssignsToProcess" AggregationType="3" Inverse="RelatingProcess">
+			<Documentation>Set of relationships to other objects, e.g. products, processes, controls, resources or actors, that are operated on by the process.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

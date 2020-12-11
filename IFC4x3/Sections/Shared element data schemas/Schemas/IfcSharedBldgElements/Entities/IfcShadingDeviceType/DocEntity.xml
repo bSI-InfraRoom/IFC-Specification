@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcShadingDeviceType" Name="IfcShadingDeviceType" UniqueId="a674ecb6-09b2-4165-9f92-d2ab912be8ed" BaseDefinition="IfcBuiltElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Sonnenschutz festeingebaut - Typ" />
+		<DocLocalization Locale="en" Name="Shading Device Type" />
+		<DocLocalization Locale="fr" Name="Type de protection solaire" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="2720f317-fb5d-4013-b767-c475b264dbd2" DefinedType="IfcShadingDeviceTypeEnum">
+			<Documentation>Identifies the predefined types of a shading device element from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="70a4cc50-8a9d-47b2-b3da-f3ffb5024308">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcShadingDeviceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcShadingDeviceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPointByDistanceExpression" UniqueId="caafbf47-1549-4ca7-8916-a46b572cebd2" BaseDefinition="IfcPoint" EntityFlags="32">
+	<Localization>
+		<DocLocalization Locale="en" Name="Distance Expression" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="DistanceAlong" UniqueId="18b6b9c0-b07c-45ae-a56c-6f1d42c21487" DefinedType="IfcCurveMeasureSelect">
+			<Documentation>The distance along the basis curve measured as either a _IfcLengthMeasure_ or _IfcParameterValue_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OffsetLateral" UniqueId="2dc0a52e-5a57-4e0b-952f-2fb5fa513a01" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>Default offset horizontally is measured perpendicular to the basis curve, where positive values indicate to the left of the basis curve as facing in the positive parametrization direction of the basis curve, and negative values indicate to the right. If DistanceAlong coincides with a point of tangential discontinuity (within precision limits), then the tangent of the previous segment governs.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OffsetVertical" UniqueId="b5c9847d-6887-433d-b615-03a7a05d3d99" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>Default offset vertical to the basis curve where positive values indicate perpendicular to the tangent at DistanceAlong in the plane of the tangent perpendicular to the global XY plane.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OffsetLongitudinal" UniqueId="fef4d5ca-f3ce-42e3-98d2-7a4a81caa4a4" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>Offset parallel to the basis curve after applying DistanceAlong, OffsetLateral, and OffsetVertical to reach locations for the case of a tangentially discontinuous basis curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="BasisCurve" UniqueId="34db6f8c-9ffe-48a5-8dc4-c64009e04d63" DefinedType="IfcCurve" />
+		<DocAttribute Name="Dim" UniqueId="d323dd4b-31c3-49e2-a83b-0374e7f9420d" DefinedType="IfcDimensionCount">
+			<Derived>BasisCurve.Dim</Derived>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

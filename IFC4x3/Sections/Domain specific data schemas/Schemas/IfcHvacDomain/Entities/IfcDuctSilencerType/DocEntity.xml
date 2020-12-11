@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcDuctSilencerType" Name="IfcDuctSilencerType" UniqueId="b6e2b5f0-ba5e-4c1d-8134-0a940db3ccec" BaseDefinition="IfcFlowTreatmentDeviceType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Kanalschalldämpfer - Typ" />
+		<DocLocalization Locale="en" Name="Duct Silencer Type" />
+		<DocLocalization Locale="fr" Name="Type de silencieux circulaire" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="14607837-c791-4913-a67c-4c23862018c8" DefinedType="IfcDuctSilencerTypeEnum">
+			<Documentation>The type of duct silencer.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="07ad46e2-a8fb-4d64-a253-a79ae160ef76">
+			<Expression>(PredefinedType &lt;&gt; IfcDuctSilencerTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcDuctSilencerTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

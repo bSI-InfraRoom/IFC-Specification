@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelConnectsStructuralActivity" UniqueId="d755201f-41e5-41f3-b37c-30c473853a22" BaseDefinition="IfcRelConnects" EntityFlags="109">
+	<Localization>
+		<DocLocalization Locale="de" Name="Verbindet Einwirkungen / Reaktionen des Tragwerks - Relation" />
+		<DocLocalization Locale="en" Name="Rel Connects Structural Activity" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelatingElement" UniqueId="def88b3b-057c-43be-859a-a0378d8c4e28" DefinedType="IfcStructuralActivityAssignmentSelect">
+			<Documentation>Reference to a structural item or element to which the specified activity is applied.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelatedStructuralActivity" UniqueId="8ad8521d-349a-4499-a2b6-796fbf1378f4" DefinedType="IfcStructuralActivity" XsdFormat="attribute">
+			<Documentation>Reference to a structural activity which is acting upon the specified structural item or element.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

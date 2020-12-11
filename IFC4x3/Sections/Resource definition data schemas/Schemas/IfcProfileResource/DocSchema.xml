@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcProfileResource" UniqueId="693c000a-76d2-4d19-a073-e2cef9c36bc0">
+	<SchemaRefs>
+		<DocSchemaRef Name="IFCEXTERNALREFERENCERESOURCE" UniqueId="14c95f76-9855-4454-a300-1822b0472539">
+			<Definitions>
+				<DocDefinitionRef Name="IfcExternalReferenceRelationship" UniqueId="439735c1-5bee-48f9-9690-8371b4801f67" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCGEOMETRYRESOURCE" UniqueId="015bf0c7-195a-4f8e-8034-86aa82d3d15d">
+			<Definitions>
+				<DocDefinitionRef Name="IfcAxis2Placement2D" UniqueId="e8a10471-0814-44a9-81b9-b5e1776aa784" />
+				<DocDefinitionRef Name="IfcCurve" UniqueId="afce320b-eeb0-4834-aa82-32c134ee3600" />
+				<DocDefinitionRef Name="IfcCartesianTransformationOperator2D" UniqueId="aa1cbe4a-ad58-4679-9f47-35c1a05bb10e" />
+				<DocDefinitionRef Name="IfcBoundedCurve" UniqueId="4653eb78-b0fd-4777-82b8-8b320bc0ef3a" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCMEASURERESOURCE" UniqueId="57980678-e801-4334-9faf-8ec6124e5dd7">
+			<Definitions>
+				<DocDefinitionRef Name="IfcLengthMeasure" UniqueId="379276e5-172e-407e-b321-ca30822836ba" />
+				<DocDefinitionRef Name="IfcLabel" UniqueId="7ac8645a-9013-4a4e-a72a-611e370b7a82" />
+				<DocDefinitionRef Name="IfcPositiveLengthMeasure" UniqueId="12cee96d-74b7-4b74-a58e-157623567160" />
+				<DocDefinitionRef Name="IfcPlaneAngleMeasure" UniqueId="5730b7b7-bb7f-4af4-8329-07738434c0ea" />
+				<DocDefinitionRef Name="IfcNonNegativeLengthMeasure" UniqueId="31c5fe3a-193f-4a94-8e8b-86cee301a808" />
+				<DocDefinitionRef Name="IfcAreaMeasure" UniqueId="1121e27b-167e-410c-b8f8-4f23403326aa" />
+				<DocDefinitionRef Name="IfcCountMeasure" UniqueId="e54150c4-a90e-4b9d-8c9c-0a94325aa1f8" />
+			</Definitions>
+		</DocSchemaRef>
+		<DocSchemaRef Name="IFCPROPERTYRESOURCE" UniqueId="c0ee309a-f606-4df7-9d97-03350dbc65e1">
+			<Definitions>
+				<DocDefinitionRef Name="IfcPreDefinedProperties" UniqueId="e0e2e909-fd20-4381-a9a8-6e5188e490c9" />
+				<DocDefinitionRef Name="IfcExtendedProperties" UniqueId="cc5b2c84-020d-41de-bcb8-71cac67d2d77" />
+			</Definitions>
+		</DocSchemaRef>
+	</SchemaRefs>
+</DocSchema>
+

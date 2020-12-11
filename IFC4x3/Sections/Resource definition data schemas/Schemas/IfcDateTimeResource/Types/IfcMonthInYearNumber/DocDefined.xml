@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMonthInYearNumber" UniqueId="1445582b-1b87-4b61-9171-bff80196b02a" DefinedType="INTEGER">
+	<Localization>
+		<DocLocalization Locale="en" Name="Month In Year Number" />
+		<DocLocalization Locale="fr" Name="Nombre de mois dans l&apos;année" />
+	</Localization>
+	<Definition xsi:type="DocPrimitive" xsi:nil="true" href="INTEGER_0Bo9r4fCj07e5rVk1a6n_D" />
+	<WhereRules>
+		<DocWhereRule Name="ValidRange" UniqueId="cb877a44-5993-4cdc-836a-1991d63adda3">
+			<Documentation>The valid range for positioning a month in a year is min inclusive = 1 and max inclusive = 12.</Documentation>
+			<Expression>{1 &lt;= SELF &lt;= 12}</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocDefined>
+

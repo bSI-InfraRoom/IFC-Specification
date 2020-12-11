@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWall" Name="IfcWall" UniqueId="6cb09e6f-b387-44bc-afcc-563e5b5b5ead" BaseDefinition="IfcBuiltElement" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Wand" />
+		<DocLocalization Locale="en" Name="Wall" />
+		<DocLocalization Locale="fr" Name="Mur" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="6d91798f-350e-4e74-9e7a-5dc82f29824a" DefinedType="IfcWallStandardCase" />
+		<DocSubtype UniqueId="00725764-7738-4af4-9fdc-fdaa901d5351" DefinedType="IfcWallElementedCase" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="a2fe4f73-a12c-42fa-9516-3c0a0d94e105" DefinedType="IfcWallTypeEnum" AttributeFlags="1">
+			<Documentation>Predefined generic type for a wall that is specified in an enumeration. There may be a property set given specifically for the predefined types.
+&gt; NOTE&amp;nbsp; The _PredefinedType_ shall only be used, if no _IfcWallType_ is assigned, providing its own _IfcWallType.PredefinedType_.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="d42d7ceb-977f-4514-8a1b-4ccd92bf6055">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcWallType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcWallTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcWallTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="93e31954-27e2-484f-aaef-d5f67fe4db89">
+			<Documentation>Either there is no wall type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcWallType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCWALLTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFootingType" UniqueId="82272f47-5c4e-4c73-a82a-c5167bd15f6c" Status="H" BaseDefinition="IfcBuiltElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Fundament / Flachgründung - Typ" />
+		<DocLocalization Locale="en" Name="Footing Type" />
+		<DocLocalization Locale="fr" Name="Fondation type" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="c19fa949-829d-4996-b812-7b15f623d57c" DefinedType="IfcFootingTypeEnum">
+			<Documentation>Subtype of footing.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="e3e5b4d9-376f-4f09-88ce-6a9ec0e75653">
+			<Documentation>The inherited attribute _ElementType_ shall be provided if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcFootingTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcFootingTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

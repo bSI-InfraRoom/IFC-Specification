@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElectricFlowStorageDeviceType" Name="IfcElectricFlowStorageDeviceType" UniqueId="9022a034-602f-4405-bb14-2e18d8a865db" BaseDefinition="IfcFlowStorageDeviceType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Elektrisches Speichergerät - Typ" />
+		<DocLocalization Locale="en" Name="Electric Flow Storage Device Type" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="186735ec-129e-418f-976b-fa860a7b2a9f" DefinedType="IfcElectricFlowStorageDeviceTypeEnum">
+			<Documentation>Identifies the predefined types of electric flow storage devices from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="06a4b961-ff35-4483-824d-5b4e1f2ec4dc">
+			<Expression>(PredefinedType &lt;&gt; IfcElectricFlowStorageDeviceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcElectricFlowStorageDeviceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

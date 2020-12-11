@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPerson" Name="IfcPerson" UniqueId="444c7a43-9f92-48d5-9ff4-acdf38ead916" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Person" />
+		<DocLocalization Locale="en" Name="Person" />
+		<DocLocalization Locale="fr" Name="Personne" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Identification" UniqueId="e6da2311-ed55-4407-85d6-144bff64cea2" DefinedType="IfcIdentifier" AttributeFlags="1">
+			<Documentation>Identification of the person.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FamilyName" UniqueId="e0501fe3-5ddf-4817-ae8e-0736a8375d9d" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>The name by which the family identity of the person may be recognized.
+&gt; NOTE&amp;nbsp; Depending on geographical location and culture, family name may appear either as the first or last component of a name.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="GivenName" UniqueId="ca330b42-ee3a-43ff-a9c3-54feeafe62fa" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>The name by which a person is known within a family and by which he or she may be familiarly recognized.
+&gt; NOTE&amp;nbsp; Depending on geographical location and culture, given name may appear either as the first or last component of a name.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="MiddleNames" UniqueId="66e561d1-9813-4539-8dbf-68de088a59a2" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0" XsdTagless="true">
+			<Documentation>Additional names given to a person that enable their identification apart from others who may have the same or similar family and given names.
+&gt; NOTE&amp;nbsp; Middle names are not normally used in familiar communication but may be asserted to provide additional identification of a particular person if necessary. They may be particularly useful in situations where the person concerned has a family name that occurs commonly in the geographical region.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PrefixTitles" UniqueId="3d6cc85d-6254-4595-b49d-c17bf042ce73" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0" XsdTagless="true">
+			<Documentation>The word, or group of words, which specify the person&apos;s social and/or professional standing and appear before his/her names.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="SuffixTitles" UniqueId="b3ec9779-b455-4f6b-bd96-a51a22ae5797" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0" XsdTagless="true">
+			<Documentation>The word, or group of words, which specify the person&apos;s social and/or professional standing and appear after his/her names.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Roles" UniqueId="30be2207-32b0-438f-8fc7-fad9a4578bdd" DefinedType="IfcActorRole" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Roles played by the person.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Addresses" UniqueId="8e3a5e4b-90cd-43e2-b297-f3d7912bb3c1" DefinedType="IfcAddress" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Postal and telecommunication addresses of a person.
+&gt; NOTE&amp;nbsp; A person may have several addresses.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EngagedIn" UniqueId="72fa7a66-38ba-470c-84d5-3f99391bf4a6" DefinedType="IfcPersonAndOrganization" AttributeFlags="8" AggregationType="3" Inverse="ThePerson">
+			<Documentation>The inverse relationship to IfcPersonAndOrganization relationships in which IfcPerson is engaged.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="IdentifiablePerson" UniqueId="8e6a6f68-72bc-4af6-9b2e-cbcd67d77cab">
+			<Documentation>Requires that the identification or/ and the family name or/ and the given name is provided as minimum information.</Documentation>
+			<Expression>EXISTS(Identification) OR EXISTS(FamilyName) OR EXISTS(GivenName)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="ValidSetOfNames" UniqueId="4711ff81-087b-46b3-9a54-a506c0a56cfe">
+			<Documentation>If middle names are provided, the family name or/ and the given name shall be provided too.</Documentation>
+			<Expression>NOT EXISTS(MiddleNames) OR EXISTS(FamilyName) OR EXISTS(GivenName)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

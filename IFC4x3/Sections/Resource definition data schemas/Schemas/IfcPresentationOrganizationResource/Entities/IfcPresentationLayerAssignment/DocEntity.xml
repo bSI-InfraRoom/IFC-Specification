@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPresentationLayerAssignment" Name="IfcPresentationLayerAssignment" UniqueId="1021fba4-3bfe-4e0a-b0b5-662a3498c052" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Zuordnung zu Präsentations-Layer" />
+		<DocLocalization Locale="en" Name="Presentation Layer Assignment" />
+		<DocLocalization Locale="fr" Name="Assignation de calque" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="521d82d8-ad9d-44da-aa0f-4d9e022493ea" DefinedType="IfcPresentationLayerWithStyle" />
+		<DocSubtype UniqueId="4b8ae641-0aa6-4ea7-87fd-a9db46a6e08c" DefinedType="IfcPresentationLayerWithStyle" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Name" UniqueId="87af29d2-be1e-4b15-b9ad-c509d2b4f7fa" DefinedType="IfcLabel">
+			<Documentation>Name of the layer.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Description" UniqueId="8a982d79-1717-4d47-928c-6f0d31346142" DefinedType="IfcText" AttributeFlags="1">
+			<Documentation>Additional description of the layer.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="AssignedItems" UniqueId="e05d7922-970e-4100-b3e7-bd5a77d73c09" DefinedType="IfcLayeredItem" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The set of layered items, which are assigned to this layer.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Identifier" UniqueId="c3bbf33f-c067-4501-bfe8-2c9da90c9b22" DefinedType="IfcIdentifier" AttributeFlags="1">
+			<Documentation>An (internal) identifier assigned to the layer.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ApplicableItems" UniqueId="10cf5a0c-f690-4dd1-aa55-ff6327d6f97e">
+			<Documentation>The items within the set of _AssignedItems_ that can be assigned to a presentation layer shall be geometric shape representation or representation items.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; The where rule has been added.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* AssignedItems | (
+  SIZEOF(TYPEOF(temp) * [
+    &apos;IFCREPRESENTATIONRESOURCE.IFCSHAPEREPRESENTATION&apos;,
+    &apos;IFCGEOMETRYRESOURCE.IFCGEOMETRICREPRESENTATIONITEM&apos;,
+    &apos;IFCGEOMETRYRESOURCE.IFCMAPPEDITEM&apos;]) = 1)
+)) = SIZEOF(AssignedItems)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPHMeasure" UniqueId="2e02b6a3-380d-48eb-995c-74f5bf0868b9" DefinedType="REAL">
+	<Localization>
+		<DocLocalization Locale="en" Name="PHMeasure" />
+		<DocLocalization Locale="fr" Name="Mesure de PH" />
+	</Localization>
+	<Definition xsi:type="DocPrimitive" xsi:nil="true" href="REAL_058prOFB515gkYwBBwzbNv" />
+	<WhereRules>
+		<DocWhereRule Name="WR21" UniqueId="764fb6f3-40b7-44ae-aaeb-d2dc889db823">
+			<Documentation>The pH value shall be in the range from 0 to 14.</Documentation>
+			<Expression>{0.0 &lt;= SELF &lt;= 14.0}</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocDefined>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDimensionCount" UniqueId="0cf1ac2b-005f-4736-9aa1-29c4ea65294a" DefinedType="INTEGER">
+	<Localization>
+		<DocLocalization Locale="en" Name="Dimension Count" />
+		<DocLocalization Locale="fr" Name="Dimensionalité" />
+	</Localization>
+	<Definition xsi:type="DocPrimitive" xsi:nil="true" href="INTEGER_0Bo9r4fCj07e5rVk1a6n_D" />
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="4f9c4da1-f361-4f6f-a7ab-174dc22b5d42">
+			<Documentation>The dimension count should be an integer between 1 and 3 NOTE: This is a further constraint by IFC, the upper limit does not exist in STEP.</Documentation>
+			<Expression>{ 0 &lt; SELF &lt;= 3 }</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocDefined>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAlignmentHorizontal" UniqueId="e57f51f6-a65e-414c-b15d-0bb4b722efd9" BaseDefinition="IfcLinearElement" EntityFlags="32">
+	<Localization>
+		<DocLocalization Locale="en" Name="Alignment Curve 2D Horizontal" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="StartDistAlong" UniqueId="7073082c-b2f5-42ba-ba62-83e97a2b6d55" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>The value of the distance along at the start of the horizontal alignment. If omited (standard) it is set to zero.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Segments" UniqueId="6eb4a977-3099-4a1e-b49f-9501eb271336" DefinedType="IfcAlignmentHorizontalSegment" AggregationType="1" AggregationLower="1" AggregationUpper="0" />
+	</Attributes>
+</DocEntity>
+

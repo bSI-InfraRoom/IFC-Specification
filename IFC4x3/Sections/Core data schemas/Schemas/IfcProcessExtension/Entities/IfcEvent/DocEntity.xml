@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcEvent" Name="IfcEvent" UniqueId="2d5e432b-e7f0-4c0d-8a56-abea523cfc61" Status="H" BaseDefinition="IfcProcess" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Ereignis" />
+		<DocLocalization Locale="en" Name="Event" />
+		<DocLocalization Locale="fr" Name="Evènement" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="d38ae629-7960-4a14-beb5-e6d1a11097d4" DefinedType="IfcEventTypeEnum" AttributeFlags="1">
+			<Documentation>Identifies the predefined types of an event from which 
+    the type required may be set.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EventTriggerType" UniqueId="a6bffe9c-b7a3-46d8-a8a9-f5a4e77906dc" DefinedType="IfcEventTriggerTypeEnum" AttributeFlags="1">
+			<Documentation>Identifies the predefined types of event trigger from which 
+    the type required may be set.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UserDefinedEventTriggerType" UniqueId="d670c1b3-96ee-4dbc-af96-eb6097871532" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>A user defined event trigger type, the value of which is 
+    asserted when the value of an event trigger type is declared 
+    as USERDEFINED.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EventOccurenceTime" UniqueId="ba8ea655-c837-44ec-b7ce-e7e45f796e64" DefinedType="IfcEventTime" AttributeFlags="1" XsdFormat="attribute">
+			<Documentation>The date and/or time at which an event occurs.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="39552c3c-402a-43d2-a032-6341c508cb4a">
+			<Documentation>Either the _PredefinedType_ attribute is unset, or the inherited attribute _ObjectType_ must be asserted when the value of _PredefinedType_ is set to _USERDEFINED_.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR (PredefinedType &lt;&gt; IfcEventTypeEnum.USERDEFINED) OR ((PredefinedType = IfcEventTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="a1a452df-ee24-4281-a215-399c7055171a">
+			<Documentation>Either the _EventTriggerType_ attribute is unset, or the attribute _UserDefinedEventTriggerType_ must be asserted when the value of _EventTriggerType_ is set to _USERDEFINED_.</Documentation>
+			<Expression>NOT(EXISTS(EventTriggerType)) OR (EventTriggerType &lt;&gt; IfcEventTriggerTypeEnum.USERDEFINED) OR ((EventTriggerType = IfcEventTriggerTypeEnum.USERDEFINED) AND EXISTS(UserDefinedEventTriggerType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

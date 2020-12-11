@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSlabType" Name="IfcSlabType" UniqueId="c5119b23-0614-4223-839d-d6e3f491a378" BaseDefinition="IfcBuiltElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Decke / Dachfläche / Bodenplatte - Typ" />
+		<DocLocalization Locale="en" Name="Slab Type" />
+		<DocLocalization Locale="fr" Name="Type de dalle" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="ce96f799-1e75-4c3d-a10e-ea5f31bda91e" DefinedType="IfcSlabTypeEnum">
+			<Documentation>Identifies the predefined types of a slab element from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="6f6b860a-a9ff-496c-bce3-c550375007bd">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcSlabTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcSlabTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcMaterialDefinitionRepresentation" Name="IfcMaterialDefinitionRepresentation" UniqueId="482a3c86-3ce0-47c4-936b-b783f9502b01" BaseDefinition="IfcProductRepresentation" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Materialdefinition - Repräsentation" />
+		<DocLocalization Locale="en" Name="Material Definition Representation" />
+		<DocLocalization Locale="fr" Name="Représentation de définition de matériau" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RepresentedMaterial" UniqueId="895fdfda-1b9b-4597-baa7-e6f4ebda24e9" DefinedType="IfcMaterial" XsdFormat="hidden">
+			<Documentation>Reference to the material to which the representation applies.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="OnlyStyledRepresentations" UniqueId="57f50c3b-8351-425f-b20d-9175390a546d">
+			<Documentation>Only representations of type _IfcStyledRepresentation_ should be used to represent material through the _IfcMaterialRepresentation_.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* Representations | 
+  (NOT(&apos;IFCREPRESENTATIONRESOURCE.IFCSTYLEDREPRESENTATION&apos; IN TYPEOF(temp)))
+)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

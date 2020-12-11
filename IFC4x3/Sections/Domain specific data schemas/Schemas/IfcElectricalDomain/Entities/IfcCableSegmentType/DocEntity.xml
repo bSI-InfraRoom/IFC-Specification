@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCableSegmentType" Name="IfcCableSegmentType" UniqueId="6ed8eee1-4ef5-4084-99db-457ee2e6431a" BaseDefinition="IfcFlowSegmentType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Kabelsegment - Typ" />
+		<DocLocalization Locale="en" Name="Cable Segment Type" />
+		<DocLocalization Locale="fr" Name="Type de segment de câble" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="5eb0680e-2b1f-4c6a-83ec-db45bf36cf4e" DefinedType="IfcCableSegmentTypeEnum">
+			<Documentation>Identifies the predefined types of cable segment from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="ab66e30d-2fae-4452-a322-051bbb16992c">
+			<Expression>(PredefinedType &lt;&gt; IfcCableSegmentTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCableSegmentTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

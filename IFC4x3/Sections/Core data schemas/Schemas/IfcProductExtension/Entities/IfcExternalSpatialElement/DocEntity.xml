@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcExternalSpatialElement" UniqueId="0b5b1546-4045-4588-b4c0-6baa80c9ff8b" BaseDefinition="IfcExternalSpatialStructureElement" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Externes Raumelement" />
+		<DocLocalization Locale="en" Name="External Spatial Element" />
+		<DocLocalization Locale="fr" Name="Elément spatial extérieur" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="43d3450a-757d-494d-8906-a3ca0d969a3d" DefinedType="IfcExternalSpatialElementTypeEnum" AttributeFlags="1">
+			<Documentation>Predefined generic types for an external spatial element that are specified in an enumeration. There might be property sets defined specifically for each predefined type.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="BoundedBy" UniqueId="d69bec85-7aa3-4a03-86d5-091130682ec1" DefinedType="IfcRelSpaceBoundary" AggregationType="3" Inverse="RelatingSpace">
+			<Documentation>Reference to a set of _IfcRelSpaceBoundary_&apos;s that defines the physical or virtual delimitation of that external spacial element against physical or virtual boundaries.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

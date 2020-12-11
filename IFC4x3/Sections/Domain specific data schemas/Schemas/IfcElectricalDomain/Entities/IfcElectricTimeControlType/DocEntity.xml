@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcElectricTimeControlType" Name="IfcElectricTimeControlType" UniqueId="2bb86abe-9d7d-49e5-8a0e-89e7617eddf6" BaseDefinition="IfcFlowControllerType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Elektrische Zeitsteuerung - Typ" />
+		<DocLocalization Locale="en" Name="Electric Time Control Type" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="6390956e-1cd2-4033-9c94-ea41642eeaa8" DefinedType="IfcElectricTimeControlTypeEnum">
+			<Documentation>Identifies the predefined types of electrical time control from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="66f4ba37-bdde-47ea-b7d0-152759440fa0">
+			<Expression>(PredefinedType &lt;&gt; IfcElectricTimeControlTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcElectricTimeControlTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

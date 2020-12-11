@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcEngineType" UniqueId="cccb9d1c-cabb-444d-9abb-36579a0122eb" BaseDefinition="IfcEnergyConversionDeviceType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Motor - Typ" />
+		<DocLocalization Locale="en" Name="Engine Type" />
+		<DocLocalization Locale="fr" Name="Type de moteur" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="5f26588d-6d5b-46e3-a061-92be853f40b4" DefinedType="IfcEngineTypeEnum" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="ae5c1f06-ed7b-4425-970d-694548acc403">
+			<Expression>(PredefinedType &lt;&gt; IfcEngineTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcEngineTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

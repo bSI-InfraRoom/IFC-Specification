@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAssignsToControl" UniqueId="142af641-3046-4e25-8652-dbf0d05c61da" BaseDefinition="IfcRelAssigns" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Weist Steuerung / Regelung / Einschränkung zu - Relation" />
+		<DocLocalization Locale="en" Name="Rel Assigns To Control" />
+		<DocLocalization Locale="fr" Name="Assignation à contrôle" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelatingControl" UniqueId="e7033623-d7b9-406d-8aae-46c7501560e6" DefinedType="IfcControl" XsdFormat="attribute">
+			<Documentation>Reference to the _IfcControl_ that applies a control upon objects.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NoSelfReference" UniqueId="cb1ac615-4cda-4896-b01b-34d9a2122565">
+			<Documentation>The instance to with the relation points shall not be contained in the set of _RelatedObjects_.</Documentation>
+			<Expression>SIZEOF(QUERY(Temp &lt;* SELF\IfcRelAssigns.RelatedObjects | RelatingControl :=: Temp)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

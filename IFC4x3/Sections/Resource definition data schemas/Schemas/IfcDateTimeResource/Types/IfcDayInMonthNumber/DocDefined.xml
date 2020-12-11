@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocDefined xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDayInMonthNumber" UniqueId="0c42411a-5567-46b3-bef9-616aab9e1028" DefinedType="INTEGER">
+	<Localization>
+		<DocLocalization Locale="en" Name="Day In Month Number" />
+		<DocLocalization Locale="fr" Name="Numéro du jour du mois" />
+	</Localization>
+	<Definition xsi:type="DocPrimitive" xsi:nil="true" href="INTEGER_0Bo9r4fCj07e5rVk1a6n_D" />
+	<WhereRules>
+		<DocWhereRule Name="ValidRange" UniqueId="c73bd9cb-7a4d-48c9-8dc6-3bc3910088b3">
+			<Documentation>The valid range for positioning a day in a month is min inclusive = 1 and max inclusive = 31.</Documentation>
+			<Expression>{1 &lt;= SELF &lt;= 31}</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocDefined>
+

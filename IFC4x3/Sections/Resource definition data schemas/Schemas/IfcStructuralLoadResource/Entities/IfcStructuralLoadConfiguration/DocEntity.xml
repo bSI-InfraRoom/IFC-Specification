@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcStructuralLoadConfiguration" UniqueId="9918b5b5-eb80-483e-b901-d25ba01b4ae7" BaseDefinition="IfcStructuralLoad" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Lastanordnung" />
+		<DocLocalization Locale="en" Name="Structural Load Configuration" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Values" UniqueId="65672309-32e2-4f35-8595-23022508fe7d" DefinedType="IfcStructuralLoadOrResult" AggregationType="1" AggregationLower="1" AggregationUpper="0">
+			<Documentation>List of load or result values.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Locations" UniqueId="d2c0264e-3df6-47e9-b75c-23ba83e2a29c" DefinedType="IfcLengthMeasure" AttributeFlags="1" AggregationType="1" AggregationFlag="2" AggregationLower="1" AggregationUpper="0" XsdFormat="element">
+			<Documentation>Locations of the load samples or result samples, given within the local coordinate system defined by the instance which uses this resource object.  Each item in the list of locations pertains to the values list item at the same list index.  This attribute is optional for configurations in which the locations are implicitly known from higher-level definitions.</Documentation>
+			<AggregationAttribute xsi:type="DocAttribute" UniqueId="bde97d70-3e0f-4cfe-86ce-ff8544add62b" AggregationType="1" AggregationLower="1" AggregationUpper="2" />
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ValidListSize" UniqueId="c504b262-6aa1-4271-87b1-b79b59e0e23c">
+			<Documentation>If locations are provided, there shall be as many location items as there are value items.</Documentation>
+			<Expression>NOT EXISTS(Locations) OR (SIZEOF(Locations) = SIZEOF(Values))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

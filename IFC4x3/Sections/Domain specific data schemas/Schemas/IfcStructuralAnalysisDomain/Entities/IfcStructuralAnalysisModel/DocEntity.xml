@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralAnalysisModel" Name="IfcStructuralAnalysisModel" UniqueId="2e087fc5-d46f-48f2-82c1-7c7b5162f4c3" BaseDefinition="IfcSystem" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Statisches Modell">
+			<Documentation>Idealisierung zur Berechnung der Auflagerreaktionen und des Kräfteverlaufs</Documentation>
+		</DocLocalization>
+		<DocLocalization Locale="en" Name="Structural Analysis Model" />
+		<DocLocalization Locale="fr" Name="Modèle d&apos;analyse structurelle" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="aaf6e058-ebfd-4b13-9c28-9e2226a7cd29" DefinedType="IfcAnalysisModelTypeEnum">
+			<Documentation></Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OrientationOf2DPlane" UniqueId="3d198530-7da9-431b-a6f6-2a133dfe8481" DefinedType="IfcAxis2Placement3D" AttributeFlags="1" XsdFormat="attribute">
+			<Documentation></Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LoadedBy" UniqueId="db84f7ed-e47b-43d7-a93c-f42d6aa1eda4" DefinedType="IfcStructuralLoadGroup" AttributeFlags="1" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation></Documentation>
+		</DocAttribute>
+		<DocAttribute Name="HasResults" UniqueId="a3f409db-16db-429e-8788-f03d45464f8a" DefinedType="IfcStructuralResultGroup" AttributeFlags="1" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation></Documentation>
+		</DocAttribute>
+		<DocAttribute Name="SharedPlacement" UniqueId="49d1b310-6cdc-4f50-8efa-70ff55bba65e" DefinedType="IfcObjectPlacement" AttributeFlags="1" XsdFormat="attribute">
+			<Documentation></Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasObjectType" UniqueId="a24457b5-3bb3-4650-8328-b144afbdebad">
+			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcAnalysisModelTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

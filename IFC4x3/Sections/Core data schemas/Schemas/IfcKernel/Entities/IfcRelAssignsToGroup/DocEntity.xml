@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelAssignsToGroup" Name="IfcRelAssignsToGroup" UniqueId="20dee03b-bfd0-4795-923f-4619fc628b6c" BaseDefinition="IfcRelAssigns" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Weist Gruppe zu - Relation" />
+		<DocLocalization Locale="en" Name="Rel Assigns To Group" />
+		<DocLocalization Locale="fr" Name="Assignation à groupe" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="bd60a25e-98bc-4380-94be-31f0ad13ac55" DefinedType="IfcRelAssignsToGroupByFactor" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="RelatingGroup" UniqueId="1f95caf1-2cb2-4b4d-aaf4-d03e95cb784b" DefinedType="IfcGroup" XsdFormat="attribute">
+			<Documentation>Reference to group that contains all assigned group members.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NoSelfReference" UniqueId="3661866c-7d15-4183-92d4-c5300a8a9cf5">
+			<Documentation>The instance to with the relation points shall not be contained in the set of _RelatedObjects_.</Documentation>
+			<Expression>SIZEOF(QUERY(Temp &lt;* SELF\IfcRelAssigns.RelatedObjects | RelatingGroup :=: Temp)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

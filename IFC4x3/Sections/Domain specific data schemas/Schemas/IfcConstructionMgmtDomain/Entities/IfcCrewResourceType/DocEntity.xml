@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCrewResourceType" UniqueId="7036c849-da9d-45cc-b0e7-a07e7e66f2c5" BaseDefinition="IfcConstructionResourceType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Mannschaft - Ressource -Typ" />
+		<DocLocalization Locale="en" Name="Crew Resource Type" />
+		<DocLocalization Locale="fr" Name="Équipe type" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="f9939f7c-0af4-4687-a908-5b65c54becdd" DefinedType="IfcCrewResourceTypeEnum">
+			<Documentation>Defines types of crew resources.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="73d260fe-c896-478c-8da4-658719b31f57">
+			<Expression>(PredefinedType &lt;&gt; IfcCrewResourceTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcCrewResourceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcTypeResource.ResourceType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

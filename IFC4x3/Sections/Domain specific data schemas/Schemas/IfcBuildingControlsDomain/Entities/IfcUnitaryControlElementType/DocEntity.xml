@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcUnitaryControlElementType" UniqueId="60a3dc52-6b9a-4ad6-9d45-9ba50c6958e3" BaseDefinition="IfcDistributionControlElementType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Einheitsregler - Typ" />
+		<DocLocalization Locale="en" Name="Unitary Control Element Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;élément de contrôle unitaire" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="2f4bb150-03fc-4936-95e8-bab9df94e95c" DefinedType="IfcUnitaryControlElementTypeEnum">
+			<Documentation>Identifies the predefined types of unitary control element from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="e94f79a6-3108-42c5-8b10-30244f8f2f32">
+			<Expression>(PredefinedType &lt;&gt; IfcUnitaryControlElementTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcUnitaryControlElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

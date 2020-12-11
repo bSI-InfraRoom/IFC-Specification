@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMonetaryUnit" UniqueId="0671cb13-dc5d-4349-956e-d3344b3f2781" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Monetäre Einheit" />
+		<DocLocalization Locale="en" Name="Monetary Unit" />
+		<DocLocalization Locale="fr" Name="Unité monétaire" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Currency" UniqueId="9060944e-647c-499d-9a70-cc9491f4a0cb" DefinedType="IfcLabel">
+			<Documentation>Code or name of the currency.  Permissible values are the three-letter alphabetic currency codes as per [ISO 4217](http://www.iso.org/iso/support/faqs/faqs_widely_used_standards/widely_used_standards_other/currency_codes/currency_codes_list-1.htm){ target=&quot;_top&quot;}, for example CNY, EUR, GBP, JPY, USD.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

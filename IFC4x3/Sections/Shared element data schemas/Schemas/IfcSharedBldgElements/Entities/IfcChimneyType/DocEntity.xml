@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcChimneyType" Name="IfcChimneyType" UniqueId="f041588e-11cf-4855-a436-a562724c8408" BaseDefinition="IfcBuiltElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Schornstein - Typ" />
+		<DocLocalization Locale="en" Name="Chimney Type" />
+		<DocLocalization Locale="fr" Name="Type de cheminée" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="47cbdf81-ca52-4762-8fab-f869e72a8172" DefinedType="IfcChimneyTypeEnum">
+			<Documentation>Identifies the predefined types of a chimney element from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="b84b0448-8894-4e72-9042-7063e04153e1">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcChimneyTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcChimneyTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcController" Name="IfcController" UniqueId="7afb752b-f1c9-4813-83a7-ed6599f5cfa0" Status="H" BaseDefinition="IfcDistributionControlElement" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Regler" />
+		<DocLocalization Locale="en" Name="Controller" />
+		<DocLocalization Locale="fr" Name="Organe de contrôle" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="08d1cfc4-3698-4d47-bf23-c6df04a69ff9" DefinedType="IfcControllerTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="08589cb0-43ff-4e6a-9d7e-cb449a00f20c">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcControllerType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcControllerTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcControllerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="16aa5c0e-2ebe-4bc2-bb8c-b45a3c4f1b5b">
+			<Documentation>Either there is no controller type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcControllerType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+(&apos;IFCBUILDINGCONTROLSDOMAIN.IFCCONTROLLERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

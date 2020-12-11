@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTextureCoordinate" UniqueId="bcd71dc5-c1c1-46c9-8dcf-2d9155a3edff" BaseDefinition="IfcPresentationItem" EntityFlags="205">
+	<Localization>
+		<DocLocalization Locale="de" Name="Texturkoordinaten" />
+		<DocLocalization Locale="en" Name="Texture Coordinate" />
+		<DocLocalization Locale="fr" Name="Coordonnées de texture" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="39c223c6-78b1-4784-8316-e74c7e9221ab" DefinedType="IfcTextureCoordinateGenerator" />
+		<DocSubtype UniqueId="48ca0d09-e927-410d-a5a7-11eaaaff0e5a" DefinedType="IfcTextureMap" />
+		<DocSubtype UniqueId="9013edd9-b16f-4c06-8868-f304f833b945" DefinedType="IfcIndexedTextureMap" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Maps" UniqueId="044e83c7-c1b4-499a-a541-3ff790ce34fb" DefinedType="IfcSurfaceTexture" AggregationType="1" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Reference to the one (or many in case of multi textures with identity transformation to geometric surfaces) subtype(s) of _IfcSurfaceTexture_ that are mapped to a geometric surface by the texture coordinate transformation.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

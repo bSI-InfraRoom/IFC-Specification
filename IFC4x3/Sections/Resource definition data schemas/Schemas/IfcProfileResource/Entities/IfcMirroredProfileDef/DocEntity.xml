@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMirroredProfileDef" UniqueId="44ff2ba0-d8b9-466c-9dba-d297766c680f" BaseDefinition="IfcDerivedProfileDef" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="gespiegeltes Profil" />
+		<DocLocalization Locale="en" Name="Mirrored Profile Def" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="Operator" UniqueId="992b571c-5d03-41bb-a724-a448eface501" DefinedType="IfcCartesianTransformationOperator2D">
+			<Derived>
+IfcRepresentationItem() || IfcGeometricRepresentationItem() ||
+IfcCartesianTransformationOperator(
+    -- Axis1
+    IfcRepresentationItem() || IfcGeometricRepresentationItem() ||
+    IfcDirection([-1., 0.]),
+    -- Axis2
+    IfcRepresentationItem() || IfcGeometricRepresentationItem() ||
+    IfcDirection([ 0., 1.]),
+    -- LocalOrigin
+    IfcRepresentationItem() || IfcGeometricRepresentationItem() ||
+    IfcPoint() || IfcCartesianPoint([0., 0.]),
+    -- Scale
+    1.) ||
+IfcCartesianTransformationOperator2D()</Derived>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

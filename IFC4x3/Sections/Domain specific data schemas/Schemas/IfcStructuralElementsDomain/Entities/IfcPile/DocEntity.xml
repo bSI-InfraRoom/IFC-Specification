@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPile" Name="IfcPile" UniqueId="986bf516-0c1c-465d-992a-2150e7aabe95" BaseDefinition="IfcDeepFoundation" EntityFlags="37">
+	<Localization>
+		<DocLocalization Locale="de" Name="Fundament / Tiefgründung" />
+		<DocLocalization Locale="en" Name="Pile" />
+		<DocLocalization Locale="fr" Name="Pieu" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="d2a4fc10-ab8a-4025-a09e-59889c12124b" DefinedType="IfcPileTypeEnum" AttributeFlags="1">
+			<Documentation>The predefined generic type of the pile according to function.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Attribute made optional. Type information can be provided by _IfcRelDefinesByType_ and _IfcPileType_.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ConstructionType" UniqueId="68d7f08c-9d56-4f95-ae87-2f3278162109" DefinedType="IfcPileConstructionEnum" AttributeFlags="1">
+			<Documentation>Deprecated.
+
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE&amp;nbsp; Material profile association capability by means of _IfcRelAssociatesMaterial_ has been added. The attribute _ConstructionType_ should not be used whenever its information can be provided by a material profile set, either associated with the _IfcPile_ object or, if present, with a corresponding instance of _IfcPileType_.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="fba20422-9a96-489c-9b65-d348aa8a1327">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcPileType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT EXISTS(PredefinedType) OR
+(PredefinedType &lt;&gt; IfcPileTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcPileTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="c136b28d-4404-4c8a-8b4b-18579759df51">
+			<Documentation>If this occurrence is defined by a type object, the latter has to be an _IfcPileType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSTRUCTURALELEMENTSDOMAIN.IFCPILETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

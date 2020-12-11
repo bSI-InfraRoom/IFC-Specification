@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelAssociatesMaterial" Name="IfcRelAssociatesMaterial" UniqueId="68083c6e-1181-46f4-84da-7cd237846083" BaseDefinition="IfcRelAssociates" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Ordnet Material zu - Relation" />
+		<DocLocalization Locale="en" Name="Rel Associates Material" />
+		<DocLocalization Locale="fr" Name="Association de matériau" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelatingMaterial" UniqueId="463ce87e-d144-4166-8fe4-c3c46fd0dd1d" DefinedType="IfcMaterialSelect">
+			<Documentation>Material definition assigned to the elements or element types.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NoVoidElement" UniqueId="013badfa-b69c-467d-913e-ca2766d939ac">
+			<Documentation>The material information must not be associated to a substraction feature (such as an opening) or to a virtual element.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcRelAssociates.RelatedObjects | 
+  (&apos;IFCPRODUCTEXTENSION.IFCFEATUREELEMENTSUBTRACTION&apos; IN TYPEOF(temp)) OR 
+  (&apos;IFCPRODUCTEXTENSION.IFCVIRTUALELEMENT&apos; IN TYPEOF(temp)) 
+)) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="AllowedElements" UniqueId="397c05ff-baa1-4fcd-b1ea-de28aba00e32">
+			<Documentation>The material information, using _IfcMaterialSelect_ should be associated to an element occurrence (including structural members) or an element type (including the door and window styles). Also port can have assigned materials, here indicating the fluid flowing from the port.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* SELF\IfcRelAssociates.RelatedObjects | (
+  SIZEOF(TYPEOF(temp) * [   
+    &apos;IFCPRODUCTEXTENSION.IFCELEMENT&apos;, 
+    &apos;IFCPRODUCTEXTENSION.IFCELEMENTTYPE&apos;,
+    &apos;IFCSHAREDBLDGELEMENTS.IFCWINDOWSTYLE&apos;,
+    &apos;IFCSHAREDBLDGELEMENTS.IFCDOORSTYLE&apos;,
+    &apos;IFCSTRUCTURALANALYSISDOMAIN.IFCSTRUCTURALMEMBER&apos;,
+    &apos;IFCPRODUCTEXTENSION.IFCPORT&apos;]) = 0) 
+)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

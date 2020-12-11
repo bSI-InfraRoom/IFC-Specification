@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTendonAnchorType" UniqueId="6591c79a-0b26-4315-8d59-cd0e5ef03555" BaseDefinition="IfcReinforcingElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Spanngliedanker - Typ" />
+		<DocLocalization Locale="en" Name="Tendon Anchor Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;ancrage" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="bc3db412-e609-4c5f-8be2-4f8b21f27a08" DefinedType="IfcTendonAnchorTypeEnum">
+			<Documentation>Subtype of tendon anchor.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="c33e9fc9-0f06-42de-adf6-2940e234ded2">
+			<Documentation>The inherited attribute _ElementType_ shall be provided if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcTendonAnchorTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcTendonAnchorTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

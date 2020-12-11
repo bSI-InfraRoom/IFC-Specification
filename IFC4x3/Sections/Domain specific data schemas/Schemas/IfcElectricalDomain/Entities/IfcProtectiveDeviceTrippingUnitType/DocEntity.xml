@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcProtectiveDeviceTrippingUnitType" UniqueId="be726344-2f10-4ab4-a207-182e7e7b5334" BaseDefinition="IfcDistributionControlElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Sicherungsschalter - Typ" />
+		<DocLocalization Locale="en" Name="Protective Device Tripping Unit Type" />
+		<DocLocalization Locale="fr" Name="Type d&apos;unité de déclenchement d’équipement de protection" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="5c70a7c4-6daf-4b81-93e6-b7e4e61be9d7" DefinedType="IfcProtectiveDeviceTrippingUnitTypeEnum">
+			<Documentation>Identifies the predefined types of protective device tripping unit types from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="da17f9a3-56fc-45eb-80aa-9a4943c70f66">
+			<Expression>(PredefinedType &lt;&gt; IfcProtectiveDeviceTrippingUnitTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcProtectiveDeviceTrippingUnitTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

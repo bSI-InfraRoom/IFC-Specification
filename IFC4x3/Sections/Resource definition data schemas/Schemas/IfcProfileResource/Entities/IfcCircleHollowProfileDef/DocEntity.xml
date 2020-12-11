@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCircleHollowProfileDef" Name="IfcCircleHollowProfileDef" UniqueId="ec4ff7c3-e1f8-4480-956f-983ac59dd757" BaseDefinition="IfcCircleProfileDef" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Kreisprofil - hohl - parametrische Definition" />
+		<DocLocalization Locale="en" Name="Circle Hollow Profile Def" />
+		<DocLocalization Locale="fr" Name="Définition de profil circulaire épais" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="WallThickness" UniqueId="718ae842-2e58-4ad8-a068-918cd5a794e8" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Thickness of the material, it is the difference between the outer and inner radius.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR1" UniqueId="c9178c06-d90b-436e-9d56-54a62adc6309">
+			<Documentation>The wall thickness shall be smaller then the radius.</Documentation>
+			<Expression>WallThickness &lt; SELF\IfcCircleProfileDef.Radius</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

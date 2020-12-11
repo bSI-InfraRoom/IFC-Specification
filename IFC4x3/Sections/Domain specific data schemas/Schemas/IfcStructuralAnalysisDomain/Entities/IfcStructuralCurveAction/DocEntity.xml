@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcStructuralCurveAction" Name="IfcStructuralCurveAction" UniqueId="948541ee-3298-408e-a404-6fd5b84b81e9" BaseDefinition="IfcStructuralAction" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="veränderliche Linienlast" />
+		<DocLocalization Locale="en" Name="Structural Curve Action" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="f8230c76-1527-4d80-9d37-835fe4140454" DefinedType="IfcStructuralLinearAction" />
+		<DocSubtype UniqueId="e7e31947-3b3d-4b19-84c8-48a26213f8d7" DefinedType="IfcStructuralLinearAction" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="ProjectedOrTrue" UniqueId="de505213-6b85-43ed-83d1-cdf5251aec7b" DefinedType="IfcProjectedOrTrueLengthEnum" AttributeFlags="1">
+			<Documentation>Defines whether load values are given per true length of the curve on which they act, or per length of the projection of the curve in load direction.  The latter is only applicable to loads which act in global coordinate directions.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="a0301c23-b88b-4a3c-bb49-e303eb4a0b69" DefinedType="IfcStructuralCurveActivityTypeEnum">
+			<Documentation>Type of action according to its distribution of load values.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ProjectedIsGlobal" UniqueId="ae114e1f-2b23-4133-beb9-032591d47d8d">
+			<Documentation>A load can only be related to projected length if it was specified in global coordinate directions (i.e. in analysis model coordinate directions).  If a load was specified in local coordinate directions, it can only relate to true length.</Documentation>
+			<Expression>(NOT EXISTS(ProjectedOrTrue)) OR
+((ProjectedOrTrue &lt;&gt; PROJECTED_LENGTH) OR
+ (SELF\IfcStructuralActivity.GlobalOrLocal = GLOBAL_COORDS))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="HasObjectType" UniqueId="e13cc606-1007-458a-8bf2-4dc24a9c3a80">
+			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcStructuralCurveActivityTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="SuitablePredefinedType" UniqueId="65b67ec8-d3f6-4fae-a432-9595a779aa4d">
+			<Documentation>The EQUIDISTANT distribution type is out of scope of structural curve actions.</Documentation>
+			<Expression>PredefinedType &lt;&gt; IfcStructuralCurveActivityTypeEnum.EQUIDISTANT</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

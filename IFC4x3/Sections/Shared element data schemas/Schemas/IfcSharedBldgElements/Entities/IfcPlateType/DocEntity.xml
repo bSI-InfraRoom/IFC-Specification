@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPlateType" Name="IfcPlateType" UniqueId="67bc5143-2c23-49ee-9fc3-422c27dd5452" BaseDefinition="IfcBuiltElementType" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Platte / Paneel - Typ" />
+		<DocLocalization Locale="en" Name="Plate Type" />
+		<DocLocalization Locale="fr" Name="Type de plaque" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="5f1eadb5-3430-43b0-b689-959f67eefef7" DefinedType="IfcPlateTypeEnum">
+			<Documentation>Identifies the predefined types of a planar member element from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="5d0d0751-3a1c-4f9e-93da-f5842ec1b945">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcPlateTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcPlateTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConstraint" UniqueId="d03dd5c6-bc93-4f7a-903f-d59e7c256d59" EntityFlags="205">
+	<Localization>
+		<DocLocalization Locale="de" Name="Beschränkung" />
+		<DocLocalization Locale="en" Name="Constraint" />
+		<DocLocalization Locale="fr" Name="Contrainte" />
+	</Localization>
+	<Subtypes>
+		<DocSubtype UniqueId="b100e56c-4aaa-4883-a15a-a840f4036192" DefinedType="IfcObjective" />
+		<DocSubtype UniqueId="913f866a-ba39-407c-bcdf-b4ae8078c5d5" DefinedType="IfcMetric" />
+	</Subtypes>
+	<Attributes>
+		<DocAttribute Name="Name" UniqueId="a96ada47-fcff-40e9-9a9c-b70ac0c99a51" DefinedType="IfcLabel">
+			<Documentation>A human-readable name to be used for the constraint.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Description" UniqueId="0a3a6e99-aefa-43e9-8879-dd20addf527d" DefinedType="IfcText" AttributeFlags="1">
+			<Documentation>A human-readable description that may apply additional information about a constraint.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ConstraintGrade" UniqueId="bf869c29-5929-4e43-b21b-787d7cce70a3" DefinedType="IfcConstraintEnum">
+			<Documentation>Enumeration that qualifies the type of constraint.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ConstraintSource" UniqueId="b66f856a-0c4f-4ea8-945d-427e9a936555" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>Any source material, such as a code or standard, from which the constraint originated.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CreatingActor" UniqueId="4730840e-ab1d-4c08-98f1-5d6971c50e1a" DefinedType="IfcActorSelect" AttributeFlags="1">
+			<Documentation>Person and/or organization that has created the constraint.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CreationTime" UniqueId="f2e74ad7-9998-444d-b4f1-9cbaa8740a15" DefinedType="IfcDateTime" AttributeFlags="1">
+			<Documentation>Time when information specifying the constraint instance was created.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="UserDefinedGrade" UniqueId="9c83de82-3273-4c32-91c6-ae490c5c104d" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>Allows for specification of user defined grade of the constraint  beyond the enumeration values (hard, soft, advisory) provided by ConstraintGrade attribute of type _IfcConstraintEnum_. 
+When a value is provided for attribute UserDefinedGrade in parallel the attribute ConstraintGrade shall have enumeration value USERDEFINED.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="HasExternalReferences" UniqueId="0acdd9d1-5a08-4e9a-ac1d-5bfdccf3d6d2" DefinedType="IfcExternalReferenceRelationship" AttributeFlags="32" AggregationType="3" Inverse="RelatedResourceObjects">
+			<Documentation>Reference to an external references, e.g. library, classification, or document information, that are associated to the constraint.
+{ .change-ifc2x4}
+&gt; IFC4 CHANGE New inverse attribute.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PropertiesForConstraint" UniqueId="ae15850d-b69e-467e-9807-7fcf73ab1bcb" DefinedType="IfcResourceConstraintRelationship" AggregationType="3" Inverse="RelatingConstraint">
+			<Documentation>Reference to the properties to which the constraint is applied.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="WR11" UniqueId="b47b2aca-4ffa-4cf6-ab6f-4138625b7d43">
+			<Documentation>The attribute UserDefinedGrade must be asserted when the value of the IfcConstraintGradeEnum is set to USERDEFINED.</Documentation>
+			<Expression>(ConstraintGrade &lt;&gt; IfcConstraintEnum.USERDEFINED) OR
+((ConstraintGrade = IfcConstraintEnum.USERDEFINED) AND EXISTS(SELF\IfcConstraint.UserDefinedGrade))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

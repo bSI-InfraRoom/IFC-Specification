@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPhysicalComplexQuantity" UniqueId="b98590b4-3769-4d15-88cf-7716e2c2bada" BaseDefinition="IfcPhysicalQuantity" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Komplexe physikalische Größe" />
+		<DocLocalization Locale="en" Name="Physical Complex Quantity" />
+		<DocLocalization Locale="fr" Name="Quantité physique complexe" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="HasQuantities" UniqueId="614df993-7616-44d2-be2a-d4cf9aafa52a" DefinedType="IfcPhysicalQuantity" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Set of physical quantities that are grouped by this complex physical quantity according to a given discrimination.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Discrimination" UniqueId="255d3f36-39db-4848-a022-f6a547983e93" DefinedType="IfcLabel">
+			<Documentation>Identification of the discrimination by which this physical complex property is distinguished. Examples of discriminations are &apos;layer&apos;, &apos;steel bar diameter&apos;, etc.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Quality" UniqueId="88ec8e96-7f5a-4b88-b912-235f95a7d465" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>Additional indication of a quality of the quantities that are grouped under this physical complex quantity.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Usage" UniqueId="72695135-81f8-47a6-91d6-04e5db515b5b" DefinedType="IfcLabel" AttributeFlags="1">
+			<Documentation>Additional indication of a usage type of the quantities that are grouped under this physical complex quantity.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NoSelfReference" UniqueId="4eae8cd7-238b-4156-9c30-02b89cd28a1e">
+			<Documentation>The _IfcPhysicalComplexQuantity_ should not reference itself within the list of _HasQuantities_.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* HasQuantities | SELF :=: temp)) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="UniqueQuantityNames" UniqueId="cf5fd72c-45f7-4556-a2ea-8c20b2e5fd1d">
+			<Documentation>Every individual _IfcPhysicalQuantity_ within the set _HasQuantities_ shall have a unique _Name_ attribute value.
+&gt; HISTORY&amp;nbsp; New rule in IFC4</Documentation>
+			<Expression>IfcUniqueQuantityNames(HasQuantities)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

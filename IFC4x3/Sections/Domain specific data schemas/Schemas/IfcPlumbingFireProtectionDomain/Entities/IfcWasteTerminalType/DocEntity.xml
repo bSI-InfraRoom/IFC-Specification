@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWasteTerminalType" Name="IfcWasteTerminalType" UniqueId="a41c4b68-c443-4fc5-a984-4eae4fc24095" BaseDefinition="IfcFlowTerminalType" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="Ablauf / Abscheider - Typ" />
+		<DocLocalization Locale="en" Name="Waste Terminal Type" />
+		<DocLocalization Locale="fr" Name="Type de stockage de déchets" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="05691f1a-3bf0-4b94-ae78-7597ca8e8eaa" DefinedType="IfcWasteTerminalTypeEnum">
+			<Documentation>Identifies the predefined types of waste terminal from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="61e70a7d-1246-424b-b2b0-1ce5feb337b6">
+			<Expression>(PredefinedType &lt;&gt; IfcWasteTerminalTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcWasteTerminalTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

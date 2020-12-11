@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcPropertySet" Name="IfcPropertySet" UniqueId="a6744c81-6540-4918-b206-1d28320b2ee7" BaseDefinition="IfcPropertySetDefinition" EntityFlags="229">
+	<Localization>
+		<DocLocalization Locale="de" Name="frei definierbare Merkmalsliste" />
+		<DocLocalization Locale="en" Name="Property Set" />
+		<DocLocalization Locale="fr" Name="Ensemble de propriétés" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="HasProperties" UniqueId="b3ed731c-b093-44bc-80d6-6fbd6cb54326" DefinedType="IfcProperty" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Contained set of properties. For property sets defined as part of the IFC Object model, the property objects within a property set are defined as part of the standard. If a property is not contained within the set of predefined properties, its value has not been set at this time.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ExistsName" UniqueId="fee9acee-e90a-402e-9cd2-daefce02859b">
+			<Documentation>The _Name_ attribute has to be provided. The attribute is used to specify the signifier of the property set. The properties that are allowed to be attached to a particular property set may be given within the property set definition part of the IFC specification. Those property set definitions are references in the semantic definition section of the individal subtypes of _IfcObjectDefinition_.</Documentation>
+			<Expression>EXISTS(SELF\IfcRoot.Name)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="UniquePropertyNames" UniqueId="c05ac4c2-e472-4160-a5d2-3d53a973a423">
+			<Documentation>Every individual subtype of _IfcProperty_ within the property set shall have a unique _Name_ attribute value.</Documentation>
+			<Expression>IfcUniquePropertyName(HasProperties)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

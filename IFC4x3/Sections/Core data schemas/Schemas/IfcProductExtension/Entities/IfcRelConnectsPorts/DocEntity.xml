@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcRelConnectsPorts" Name="IfcRelConnectsPorts" UniqueId="6763c7ee-edf0-48d2-a207-bc8e7ec8f122" BaseDefinition="IfcRelConnects" EntityFlags="109">
+	<Localization>
+		<DocLocalization Locale="de" Name="Verbindet Anschlüsse - Relation" />
+		<DocLocalization Locale="en" Name="Rel Connects Ports" />
+		<DocLocalization Locale="fr" Name="Connection de ports" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelatingPort" UniqueId="efe1eb66-54da-4f86-91e0-b7d9358e3d45" DefinedType="IfcPort" XsdFormat="attribute">
+			<Documentation>Reference to the first port that is connected by the objectified relationship.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelatedPort" UniqueId="54345254-9eba-473c-8fa3-db57ed133bb0" DefinedType="IfcPort" XsdFormat="attribute">
+			<Documentation>Reference to the second port that is connected by the objectified relationship.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RealizingElement" UniqueId="1fdb9b03-71b4-4ec2-a92f-d2854c96a18d" DefinedType="IfcElement" AttributeFlags="1" XsdFormat="attribute">
+			<Documentation>Defines the element that realizes a port connection relationship.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NoSelfReference" UniqueId="c345f8b4-9c13-476c-9eaf-fdd6bf1a69a4">
+			<Documentation>The instance of the _RelatingPort_ shall not be the same instance as the _RelatedPort_.</Documentation>
+			<Expression>RelatingPort :&lt;&gt;: RelatedPort</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

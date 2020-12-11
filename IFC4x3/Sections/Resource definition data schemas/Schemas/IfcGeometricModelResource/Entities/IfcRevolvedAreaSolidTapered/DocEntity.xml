@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRevolvedAreaSolidTapered" UniqueId="d15358b0-162a-4760-993f-02cce84f936b" BaseDefinition="IfcRevolvedAreaSolid" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Sich verjüngender Festkörper  - durch Rotation" />
+		<DocLocalization Locale="en" Name="Revolved Area Solid Tapered" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="EndSweptArea" UniqueId="965ddc62-69c3-429c-b725-41e028fb1a3d" DefinedType="IfcProfileDef" XsdFormat="attribute" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectProfileAssignment" UniqueId="8efd5674-b445-41af-885a-dd1821ea0666">
+			<Documentation>The _SweptArea_ as start profile and the _EndSweptArea_ as end profile shall be compatible.</Documentation>
+			<Expression>IfcTaperedSweptAreaProfiles(SELF\IfcSweptAreaSolid.SweptArea, SELF.EndSweptArea)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

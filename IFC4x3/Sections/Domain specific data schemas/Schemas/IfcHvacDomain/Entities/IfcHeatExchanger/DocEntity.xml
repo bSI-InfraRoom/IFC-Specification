@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcHeatExchanger" Name="IfcHeatExchanger" UniqueId="b3850b48-6a0f-456c-b37b-c32cb4a34566" BaseDefinition="IfcEnergyConversionDevice" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Wärmetauscher" />
+		<DocLocalization Locale="en" Name="Heat Exchanger" />
+		<DocLocalization Locale="fr" Name="Echangeur de chaleur" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="cc7afc7c-ed90-4885-993a-2084056149d7" DefinedType="IfcHeatExchangerTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="9aadeb01-3710-425c-9b68-1adc389198dd">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcHeatExchangerType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcHeatExchangerTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcHeatExchangerTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="4ce59e0b-cb38-4834-913d-ed1c6c56145b">
+			<Documentation>Either there is no heat exchanger type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcHeatExchangerType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+  (&apos;IFCHVACDOMAIN.IFCHEATEXCHANGERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

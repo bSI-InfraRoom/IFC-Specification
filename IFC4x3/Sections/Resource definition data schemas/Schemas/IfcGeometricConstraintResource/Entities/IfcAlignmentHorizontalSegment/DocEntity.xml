@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcAlignmentHorizontalSegment" UniqueId="d2950a95-9126-46e8-8c7b-58904077ae5c" BaseDefinition="IfcAlignmentParameterSegment" EntityFlags="32">
+	<Localization>
+		<DocLocalization Locale="en" Name="Alignment Curve 2D Horizontal Segment" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="StartPoint" UniqueId="379dcf55-1fb4-4841-951c-c36845174d7b" DefinedType="IfcCartesianPoint">
+			<Documentation>The start point of the segment defined by a Cartesian point.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="StartDirection" UniqueId="b5b82f73-673c-474b-8302-80dbd263a34f" DefinedType="IfcPlaneAngleMeasure">
+			<Documentation>The direction of the tangent at the start point. Direction value 0. indicates a curve with a start tangent along the positive x-axis. Values increases counter-clockwise, and decreases clockwise. Depending on the plane angle unit, either degree or radians, the sensible range is -360° ≤ n ≤ 360° (or -2π ≤ n ≤ 2π). Values larger then a full circle (&gt;|360°| or &gt;|2 π| shall not be used.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="StartRadiusOfCurvature" UniqueId="a8a7c32e-d91b-41e0-ba7f-79c753e4ac01" DefinedType="IfcLengthMeasure">
+			<Documentation>For a NONLINEAR horizontal segment type the radius of the curve at the start point (_Placement_ of the segment). For CIRCULAR type it is constant i.e. _StartRadiusOfCurvature_ and _EndRadiusOfCurvature_ are always the same. For LINE type, both _StartRadiusOfCurvature_ and _EndRadiusOfCurvature_ is 0. If the radius is 0 it shall be interpreted as INFINITE.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="EndRadiusOfCurvature" UniqueId="8147aa05-9061-43f0-a0f5-e90a19e3e111" DefinedType="IfcLengthMeasure">
+			<Documentation>For a NONLINEAR horizontal segment type the radius of the curve at the end point. If the radius is 0 it shall be interpreted as INFINITE.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="SegmentLength" UniqueId="c9466d68-d95a-43f1-b397-fc6cb7e483a8" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>The length along the curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="GravityCenterLineHeight" UniqueId="316f4ff6-2669-4774-9d6b-a2acdbf6f814" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+			<Documentation>Optional attribute require for the exchange of Vienna bend transition segment.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="PredefinedType" UniqueId="f71e841f-7db7-405a-9baf-7b49a4dab6c9" DefinedType="IfcAlignmentHorizontalSegmentTypeEnum">
+			<Documentation>Predefined type of the horizontal alignmnent segment.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

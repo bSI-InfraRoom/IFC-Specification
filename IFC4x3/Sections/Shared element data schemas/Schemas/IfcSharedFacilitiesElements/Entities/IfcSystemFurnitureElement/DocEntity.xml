@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSystemFurnitureElement" Name="IfcSystemFurnitureElement" UniqueId="c337853a-d06e-4127-b850-0e1835ef32e3" BaseDefinition="IfcFurnishingElement" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Möbelsystem-Element" />
+		<DocLocalization Locale="en" Name="System Furniture Element" />
+		<DocLocalization Locale="fr" Name="Elément de l&apos;ameublement" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="1b552577-dee4-43c6-b8fb-6b786e6729fc" DefinedType="IfcSystemFurnitureElementTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="cd838bfc-98ea-4a4e-95c2-797ed63fa185">
+			<Expression>NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType &lt;&gt; IfcSystemFurnitureElementTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcSystemFurnitureElementTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="52bc7848-701b-4593-8fdc-8f97d0014bc1">
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
+   (&apos;IFCSHAREDFACILITIESELEMENTS.IFCSYSTEMFURNITUREELEMENTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

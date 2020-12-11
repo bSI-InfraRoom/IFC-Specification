@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcIShapeProfileDef" Name="IfcIShapeProfileDef" UniqueId="254749ac-db77-4f69-a8a0-b4cc5d5e66fa" BaseDefinition="IfcParameterizedProfileDef" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="I-Profil - parametrische Definition" />
+		<DocLocalization Locale="en" Name="IShape Profile Def" />
+		<DocLocalization Locale="fr" Name="Définition de section d&apos;un profil en I" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="OverallWidth" UniqueId="d3377243-e50b-4612-9cb4-4b5a82a792cd" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Total extent of the width, defined parallel to the x axis of the position coordinate system.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="OverallDepth" UniqueId="be006822-4c89-400b-82a0-017a9d9e5a7a" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Total extent of the depth, defined parallel to the y axis of the position coordinate system.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="WebThickness" UniqueId="efeab8f4-6c72-4e05-8423-5c9226da4164" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Thickness of the web of the I-shape. The web is centred on the x-axis and the y-axis of the position coordinate system.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FlangeThickness" UniqueId="6139d968-6b28-4734-af17-2a8b3447dcd7" DefinedType="IfcPositiveLengthMeasure">
+			<Documentation>Flange thickness of the I-shape. Both, the upper and the lower flanges have the same thickness and they are centred on the y-axis of the position coordinate system.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FilletRadius" UniqueId="5f4d9acf-d5cd-4bdc-a4b6-8b5b7288da52" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
+			<Documentation>The fillet between the web and the flange.  0 if sharp-edged, omitted if unknown.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FlangeEdgeRadius" UniqueId="e6d064b0-e764-412c-a164-30bea7e98f76" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
+			<Documentation>Radius of the lower edges of the top flange and the upper edges of the bottom flange.  0 if sharp-edged, omitted if unknown.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="FlangeSlope" UniqueId="78bd552f-462b-4bb7-9795-8ba9b2ece37a" DefinedType="IfcPlaneAngleMeasure" AttributeFlags="1">
+			<Documentation>Slope of the lower faces of the top flange and of the upper faces of the bottom flange.  Non-zero in case of tapered flanges, 0 in case of parallel flanges, omitted if unknown.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ValidFlangeThickness" UniqueId="78f9746c-a851-41fd-bc9d-1453e9e6980b">
+			<Documentation>The sum of flange thicknesses shall be less than the overall depth.</Documentation>
+			<Expression>(2. * FlangeThickness) &lt; OverallDepth</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="ValidWebThickness" UniqueId="0238794f-5cd0-4a24-9708-a00ca9e498e5">
+			<Documentation>The web thickness shall be less then the flange width.</Documentation>
+			<Expression>WebThickness &lt; OverallWidth</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="ValidFilletRadius" UniqueId="69178d55-f279-458c-93f1-aef915e5d81d">
+			<Documentation>The FilletRadius, if given, shall be within the range of allowed values.</Documentation>
+			<Expression>NOT(EXISTS(FilletRadius)) OR
+((FilletRadius &lt;= (OverallWidth - WebThickness)/2.) AND 
+ (FilletRadius &lt;= (OverallDepth - (2. * FlangeThickness))/2.))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

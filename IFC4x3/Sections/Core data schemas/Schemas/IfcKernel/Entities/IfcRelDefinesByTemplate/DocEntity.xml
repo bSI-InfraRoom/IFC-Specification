@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelDefinesByTemplate" UniqueId="8ee8ef7b-68ac-46bb-8c28-b6f508eeb0ab" BaseDefinition="IfcRelDefines" EntityFlags="237">
+	<Localization>
+		<DocLocalization Locale="de" Name="Definiert durch Vorlage - Relation">
+			<Documentation>Relation zwischen einem Merkmal und dessen Definition / Schablone</Documentation>
+		</DocLocalization>
+		<DocLocalization Locale="en" Name="Rel Defines By Template" />
+		<DocLocalization Locale="fr" Name="Définition par modèle" />
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelatedPropertySets" UniqueId="9ab9894d-523d-414b-a825-be21439de42f" DefinedType="IfcPropertySetDefinition" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>One or many property sets or quantity sets that obtain their definitions from the single property set template.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelatingTemplate" UniqueId="56b4d519-a460-4476-b354-d80dcfeaed64" DefinedType="IfcPropertySetTemplate" XsdFormat="attribute">
+			<Documentation>Property set template that provides the common definition of related property sets.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+
