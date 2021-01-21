@@ -1,0 +1,1 @@
+Maximum item capacity
