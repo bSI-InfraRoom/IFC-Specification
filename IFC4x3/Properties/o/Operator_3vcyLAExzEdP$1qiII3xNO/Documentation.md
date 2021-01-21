@@ -1,0 +1,1 @@
+Operator of the asset.

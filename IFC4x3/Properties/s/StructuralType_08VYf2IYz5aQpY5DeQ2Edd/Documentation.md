@@ -1,0 +1,1 @@
+Quay structural type
