@@ -34,6 +34,8 @@ representation (with or without assigned geometry)</td>
   </tbody>
 </table>
 
+
+
 The representation type is given as a string value at the inherited attribute '_RepresentationType_'.
 
 > HISTORY&nbsp; New entity in IFC2x2.

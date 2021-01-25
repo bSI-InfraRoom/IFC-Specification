@@ -22,10 +22,10 @@ These options are exposed for association with _IfcElement_ or _IfcElementType_ 
 
 The following material properties and information sets can be assigned to an _IfcMaterialDefinition_, or only to a single _IfcMaterial_.
 
-* Material properties;
-* Material classification and material library reference;
-* Material presentation in shape models (e.g. by color, hatching, rendering);
-* Relation to the ingredients of a material composite.
+\* Material properties;
+\* Material classification and material library reference;
+\* Material presentation in shape models (e.g. by color, hatching, rendering);
+\* Relation to the ingredients of a material composite.
 
 > HISTORY&nbsp; New schema in IFC1.0
 

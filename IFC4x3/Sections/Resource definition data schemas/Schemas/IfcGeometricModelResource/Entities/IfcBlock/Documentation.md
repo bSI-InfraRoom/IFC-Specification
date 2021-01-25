@@ -1,7 +1,7 @@
 The _IfcBlock_ is a Construction Solid Geometry (CSG) 3D primitive. It is defined by a position and a positve distance along the three orthogonal axes. The inherited _Position_ attribute has the _IfcAxisPlacement3D_ type and provides:
 
-* _SELF\IfcCsgPrimitive3D.Position_: The location and orientation of the axis system for the primitive.
-* _SELF\IfcCsgPrimitive3D.Position.Location_: The block has one vertex at location and the edges are aligned with the placement axes in the positive sense.
+\* _SELF\IfcCsgPrimitive3D.Position_: The location and orientation of the axis system for the primitive.
+\* _SELF\IfcCsgPrimitive3D.Position.Location_: The block has one vertex at location and the edges are aligned with the placement axes in the positive sense.
 
 The _XLength_, _YLength_, and _ZLength_ attributes define the size of the IfcBlock along the three axes.
 
@@ -22,11 +22,13 @@ direction of the X, Y, and Z axis.</p>
 </tr>
 </table>
 
+
+
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
 > A block is a solid rectangular parallelepiped, defined with a location and placement coordinate system. The block is specified by the positive lengths x, y, and z along the axes of the placement coordinate system, and has one vertex at the origin of the placement coordinate system.
 
-> NOTE&nbsp; Entity adapted from **block** defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from \*\*block\*\* defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC2x3.
 
@@ -39,6 +41,7 @@ Figure 2 illustrates default texture mapping with a clamped texture (RepeatS=Fal
 
 &nbsp;
 
+{ .gridtable}
 { .gridtable}
 <table summary="block texture" class="gridtable">
 <tr>

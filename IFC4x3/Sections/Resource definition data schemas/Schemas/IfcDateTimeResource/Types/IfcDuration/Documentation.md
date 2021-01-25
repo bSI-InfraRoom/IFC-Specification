@@ -4,6 +4,6 @@ This lexical representation for _IfcDataTime_ is PnYnMnDTnHnMnS, where nY repres
 
 > EXAMPLE&nbsp; P2Y10M15DT10H30M20S (duration of two years, 10 months, 15 days, 10 hours, 30 minutes and 20 seconds).
 
-> NOTE&nbsp; See extended format representation of **duration** as defined in ISO&nbsp;8601. The restrictions defined in XML Schema Part 2 apply.
+> NOTE&nbsp; See extended format representation of \*\*duration\*\* as defined in ISO&nbsp;8601. The restrictions defined in XML Schema Part 2 apply.
 
 > HISTORY&nbsp; New type in IFC4

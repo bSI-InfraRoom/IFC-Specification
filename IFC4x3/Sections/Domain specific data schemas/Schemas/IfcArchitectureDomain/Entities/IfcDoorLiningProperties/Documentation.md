@@ -74,6 +74,8 @@ The _IfcDoorLiningProperties_ does not hold its own geometric representation. Ho
  </tr>
 </table>
 
+
+
 > NOTE&nbsp; _LiningDepth_ describes the length of the lining along the reveal of the door opening. It can be given by an absolute value if the door lining has a specific depth depending on the door style. However often it is equal to the wall thickness. If the same door style is used (like the same type of single swing door), but inserted into different walls with different thicknesses, it would be necessary to create a special door style for each wall thickness. Therefore several CAD systems allow to set the value to "automatically aligned" to wall thickness. This should be exchanged by leaving the optional attribute LiningDepth unassigned. The same agreement applies to _ThresholdDepth_.
 
 > HISTORY&nbsp; New entity in IFC2.0. Has been renamed from _IfcDoorLining_ in IFC2x.

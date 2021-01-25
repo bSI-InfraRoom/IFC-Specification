@@ -1,6 +1,6 @@
 The _IfcFacetedBrepWithVoids_ is a specialization of a faceted B-rep which contains one or more voids in its interior. The voids are represented as closed shells which are defined so that the shell normal point into the void.
 
-> NOTE&nbsp; Entity adapted from **brep_with_voids** AND **faceted_brep** defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from \*\*brep_with_voids\*\* AND \*\*faceted_brep\*\* defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC1.0
 

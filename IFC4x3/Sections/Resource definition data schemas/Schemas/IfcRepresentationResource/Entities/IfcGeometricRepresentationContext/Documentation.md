@@ -22,6 +22,8 @@ The _IfcGeometricRepresentationContext_ defines the context that applies to seve
  </tr>   
 </table>
 
+
+
 The use of one instance of _IfcGeometricRepresentationContext_ to represent the model (3D) view is mandatory, the use of a second instance of _IfcGeometricRepresentationContext_ to represent the plan (2D) view is optional (but needs to be given, if there are scale dependent plan views), the additional scale or view dependent contexts need to be handled by using the subtype _IfcGeometricRepresentationSubContext_ pointing to the model view (or the plan view) as the _ParentContext_. See Figure 2 for an example using geometric representation contexts for 3D and 2D with assigned sub contexts.
 
 > NOTE&nbsp; The inherited attribute _ContextType_ shall have one of the following recognized values: 'Model', 'Plan', 'NotDefined'.
@@ -45,11 +47,13 @@ The use of one instance of _IfcGeometricRepresentationContext_ to represent the 
  </tr>    
 </table>
 
+
+
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
 > A geometric representation context is a representation context in which the geometric representation items are geometrically founded.
 
-> NOTE&nbsp; Entity adapted from **geometric_representation_context** defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from \*\*geometric_representation_context\*\* defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC2.0.
 

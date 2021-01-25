@@ -4,6 +4,6 @@
 
 > NOTE&nbsp; The prefix defines multiples and submultiples of the SI units.
 
-> NOTE&nbsp; Type adapted from **si_prefix** defined in ISO 10303-41.
+> NOTE&nbsp; Type adapted from \*\*si_prefix\*\* defined in ISO 10303-41.
 
 > HISTORY&nbsp; New entity in IFC1.5.1.

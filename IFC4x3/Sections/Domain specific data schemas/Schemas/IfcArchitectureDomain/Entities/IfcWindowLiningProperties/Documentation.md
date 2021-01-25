@@ -95,6 +95,8 @@ The _IfcWindowLiningProperties_ does not hold a geometric representation. Howeve
  </tr>
 </table>
 
+
+
 > HISTORY&nbsp; New entity in IFC2.0. Has been renamed from _IfcWindowLining_ in IFC2x.
 
 { .change-ifc2x4}

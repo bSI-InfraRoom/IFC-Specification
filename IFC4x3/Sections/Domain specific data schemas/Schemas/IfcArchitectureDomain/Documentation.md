@@ -4,9 +4,9 @@ The _IfcArchitectureDomain_ schema defines basic object concepts used in the arc
 
 Specific architectural elements that are not already covered by other schemas are defined here:
 
-* door lining and panel parameters allowing for a limited parametic description of door shape and operation,
-* window lining and panel parameters allowing for a limited parametic description of window shape and operation,
-* specific permeable covering properties for window and door openings
+\* door lining and panel parameters allowing for a limited parametic description of door shape and operation,
+\* window lining and panel parameters allowing for a limited parametic description of window shape and operation,
+\* specific permeable covering properties for window and door openings
 
 These parameter definitions are used to enhance the specification of door and window elements, they are applied to _IfcDoorType_ and _IfcWindowType_ using the _HasPropertySets_ relation.
 

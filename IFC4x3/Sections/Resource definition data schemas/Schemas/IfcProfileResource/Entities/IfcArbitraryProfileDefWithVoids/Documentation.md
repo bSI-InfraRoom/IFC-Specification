@@ -12,7 +12,7 @@ Informal Propositions:
 
 Figure 1 illustrates the arbitrary closed profile definition with voids. The _OuterCurve_, defined at the supertype _IfcArbitraryClosedProfileDef_ and the inner curves are defined in the same underlying coordinate system. The common underlying coordinate system is defined by the swept area solid that uses the profile definition. It is the xy plane of:
 
-* _IfcSweptAreaSolid.Position_
+\* _IfcSweptAreaSolid.Position_
 
 or in case of sectioned spines the xy plane of each list member of _IfcSectionedSpine.CrossSectionPositions_. The _OuterCurve_ attribute defines a two dimensional closed bounded curve, the _InnerCurves_ define a set of two dimensional closed bounded curves.
 

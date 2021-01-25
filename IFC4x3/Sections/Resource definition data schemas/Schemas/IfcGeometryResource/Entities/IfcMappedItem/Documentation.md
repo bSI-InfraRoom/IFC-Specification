@@ -8,7 +8,7 @@ The _IfcMappedItem_ is the inserted instance of a source definition (to be compa
 > NOTE&nbsp; Definition according to ISO/CD 10303-43:1992  
 > A mapped item is a type of representation item that specifies the mapping of a representation as an element of the items of a second representation.
 
-> NOTE&nbsp; Entity adapted from **mapped_item** defined in ISO 10303-43.
+> NOTE&nbsp; Entity adapted from \*\*mapped_item\*\* defined in ISO 10303-43.
 
 > HISTORY&nbsp; New entity in IFC2x.
 

@@ -2,8 +2,8 @@ Describes slippage in support conditions or connection conditions. Slippage mean
 
 Applicability:
 
-* Point supports and connections,
-* curve supports and connections,
-* surface supports and connections.
+\* Point supports and connections,
+\* curve supports and connections,
+\* surface supports and connections.
 
 > HISTORY&nbsp; New entity in IFC2x2.

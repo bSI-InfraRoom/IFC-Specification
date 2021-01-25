@@ -6,7 +6,7 @@ The _IfcSizeSelect_ provides for the selection between different measure types u
 > NOTE&nbsp; Definition according to ISO/CD 10303-46:1992  
 > The size select is a selection of a specific positive length measure.
 
-> NOTE&nbsp; Type adapted from **size_select** defined in ISO10303-46.
+> NOTE&nbsp; Type adapted from \*\*size_select\*\* defined in ISO10303-46.
 
 > HISTORY&nbsp; New select type in IFC2x2.
 

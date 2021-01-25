@@ -5,7 +5,7 @@ The IFC4 release combines a number of feature increases with major rework and im
 &nbsp;
 
 { .std}
-**Core Definitions**
+\*\*Core Definitions\*\*
 
 { .std}
 A new project library concept has been added that defines the register of all types (families or styles) of objects and their property templates that is associated to a project. The new concept of property set templates and property templates allow for the definition of property templates for the individual properties to be contained in the same project data set.
@@ -20,7 +20,7 @@ The IFC object definition (occurrence and type objects) inheritance tree is now 
 &nbsp;
 
 { .std}
-**Building Elements**
+\*\*Building Elements\*\*
 
 { .std}
 Major subtypes of building element, slab, plate, beam, column, member, door and window, have been separated into a general definition and a specific specialization to represent the standard cases for a parametric exchange of its shape, material and underlying element type. For those elements there is now a separate standard case subtype available. For walls and slabs there is now in addition a subtype to handle the aggregated walls and slabs separately from the standard walls and slabs. It allows to add more control over the applicable aggregations. Element type definitions have been added for roof, stair and ramp. The chimney has been added as a new building element subtype.
@@ -47,7 +47,7 @@ Standard property sets for capturing environmental impact indicators and values 
 &nbsp;
 
 { .std}
-**Spatial Elements**
+\*\*Spatial Elements\*\*
 
 { .std}
 With the new entity for spatial zones, the zone can now have own location, shape and functional type as required e.g. in thermal or lighting zones. Both zones, with an without own shapes, can now be assigned to different levels of the project structure.
@@ -65,7 +65,7 @@ A new entity for geographic elements placed in the context of a site has been ad
 &nbsp;
 
 { .std}
-**Building Service Systems**
+\*\*Building Service Systems\*\*
 
 { .std}
 A specialization of System has been added to capture the concepts of a distribution system in a new element. The distribution systems have a predefined type for various heating, cooling, ventilation, plumbing, security and electrical systems. A new entity has been introduced for circuits.
@@ -80,7 +80,7 @@ For all building services schemas, occurrence entities have been added in parall
 &nbsp;
 
 { .std}
-**Energy calculations**
+\*\*Energy calculations\*\*
 
 { .std}
 The definition of space boundaries is updated to support energy calculations and advanced simulations. Thermal boundaries are added as a special subtype with direct reference to the opposite boundary and inner boundaries. External boundaries are now separated when facing outer air, earth, water, or neighboring buildings.
@@ -89,7 +89,7 @@ The definition of space boundaries is updated to support energy calculations and
 &nbsp;
 
 { .std}
-**HVAC Elements**
+\*\*HVAC Elements\*\*
 
 { .std}
 The definitions of HVAC elements in regard to their system behavior (segment, fitting, flow terminal, energy conversion, etc.) are semantically improved. Examples include: a space heater has been changed to be a flow terminal (and to include also electric heaters), a gas burner can been generalized into a fuel independent burner class, etc.
@@ -107,7 +107,7 @@ Pipes and ducts now have specific entities to allow for parametric definitions.&
 &nbsp;
 
 { .std}
-**Electrical**
+\*\*Electrical\*\*
 
 { .std}
 Improvements have been made to support for protective devices including separation of tripping and breaker units. More protective device types are supported with enhanced detail in property sets. In particular, curve interpolation has been added to property specification.
@@ -122,8 +122,8 @@ Audio visual and communication appliance types are now supported separately from
 &nbsp;
 
 { .std}
-**Structural
-modeling and detailing elements**
+\*\*Structural
+modeling and detailing elements\*\*
 
 { .std}
 Due to the changes to Building Elements, cross section definition of columns, beams and similar elements has been enhanced.&nbsp; Section geometry and material information is now associated with building elements in the same fashion as with walls and slabs.&nbsp; Profile information is provided already at a higher level than the geometric representation.&nbsp; References to standards or libraries can now be added to profile definitions, and a number of details in profile definitions have been enhanced, e.g. by simpler mirroring of asymmetric profiles.
@@ -135,8 +135,8 @@ Structural elements for foundations can now be accompanied by type objects.&nbsp
 &nbsp;
 
 { .std}
-**Structural
-analysis elements**
+\*\*Structural
+analysis elements\*\*
 
 { .std}
 The structural analysis domain model has been cleaned up and partially simplified.&nbsp; The use of topology representations and coordinate systems has been clarified.&nbsp; Profile and material association has been brought in line with Building Elements.&nbsp; More flexible models of curved surface members are now available due to Geometry changes.
@@ -148,7 +148,7 @@ Distributed loads are now modeled in a more straight-forward way.&nbsp; This cha
 &nbsp;
 
 { .std}
-**Property Sets**
+\*\*Property Sets\*\*
 
 { .std}
 The first multi-lingual property set definitions are added for spatial and building elements (so far in French, German, Japanese, and Chinese). The multi-lingual capability is based on an XML configuration file for property set definitions and can be used to easily localize property sets in different markets.
@@ -157,7 +157,7 @@ The first multi-lingual property set definitions are added for spatial and build
 &nbsp;
 
 { .std}
-**Geometry**
+\*\*Geometry\*\*
 
 { .std}
 Additional entities are added to the geometry resources. (1) The definition of manifold boundary representation has been enhanced to include advanced B-reps, based on NURBS. Therefore b-spline surfaces and b-spline curves are added. (2) The curve bounded surface based on bounding p-curves (curves defined in the parametric space of a surface) is added to allow any surface to be bound; it was restricted to only planar surfaces before. (3) Tapered solid of extrusion and tapered solid of revolution are now included to define simple taper, restricted to one section and to topological similarity of the start and end profile. (4) A fixed reference swept area solid is added to define an advance sweep along a directrix with a fixed orientation of the profile. The swept disk solid has been simplified by implicit start and end points on the directrix. (5) Elementary surfaces have been enhanced by incorporation or cylindrical surfaces. (6) Tessellated geometry is added to support triangle-based meshes with optional normals, texture coordinates, and color mappings using a compact format; rather than converting to B-rep, this enables a more compact and lossless representation of shapes imported from common geometry file formats.
@@ -166,7 +166,7 @@ Additional entities are added to the geometry resources. (1) The definition of m
 &nbsp;
 
 { .std}
-**Presentation**
+\*\*Presentation\*\*
 
 { .std}
 The ability to assign graphic presentation information to geometric representation items and material definitions has been made more efficient by removing inefficient intermediate links. The use of texture maps has been corrected and improved and now based on X3D definitions.
@@ -175,7 +175,7 @@ The ability to assign graphic presentation information to geometric representati
 &nbsp;
 
 { .std}
-**Coordinate Systems**
+\*\*Coordinate Systems\*\*
 
 { .std}
 The engineering, right-handed Cartesian coordinate system, that is still solely used to be the coordinate system of the IFC data set, can now include projection information to place it in any geographic coordinate system, including a map coordinate system. The constraint to not share local placement objects among multiple elements is relaxed.
@@ -184,7 +184,7 @@ The engineering, right-handed Cartesian coordinate system, that is still solely 
 &nbsp;
 
 { .std}
-**Processes**
+\*\*Processes\*\*
 
 { .std}
 The concept of a process type and relevant subtypes has been introduced. Sequencing is applicable both to process type and to process occurrences. Definition of task times has been simplified, which now are directly attached to tasks and not to a relationship that assigns the task to a schedule. The documentation has been improved giving examples how to use work plans, work schedules and task hierarchies. It also explains the use of a summary task and the possibility to define a work task order for viewing purposes. It is furthermore possible to define work calendars with various recurrence patterns and assign them to work schedules, work tasks and resources. The new process definitions significantly reduce the model footprint when capturing 4D datasets.
@@ -193,7 +193,7 @@ The concept of a process type and relevant subtypes has been introduced. Sequenc
 &nbsp;
 
 { .std}
-**Costs**
+\*\*Costs\*\*
 
 { .std}
 Definition of cost values has been simplified, which now are directly attached to cost items and not to a relationship.  The documentation has been improved giving examples how to use cost schedules, cost item hierarchies, and cost values.  It also explains how to link cost items to quantities from building elements, tasks, and resources. The new cost definitions significantly reduce the model footprint when capturing 5D datasets.
@@ -202,8 +202,8 @@ Definition of cost values has been simplified, which now are directly attached t
 &nbsp;
 
 { .std}
-**Construction
-Resources**
+\*\*Construction
+Resources\*\*
 
 { .std}
 The definitions for construction resources have been fully reworked, a notion of resource types (or templates) is added. The assignment of construction resources to schedules and costs is improved.
@@ -212,7 +212,7 @@ The definitions for construction resources have been fully reworked, a notion of
 &nbsp;
 
 { .std}
-**Constraints**
+\*\*Constraints\*\*
 
 { .std}
 Constraints have been simplified and streamlined to support direct lists of metrics, where values may be defined using project default units. For aggregated constraints, more logical operators are now available. Constraints are now classified using the same external reference mechanism as other resource objects. Constraints now support references to attribute values, table mappings, and formulas.
@@ -221,7 +221,7 @@ Constraints have been simplified and streamlined to support direct lists of metr
 &nbsp;
 
 { .std}
-**Approvals**
+\*\*Approvals\*\*
 
 { .std}
 Approvals can be assigned, in addition to properties, to other resource objects: documents, actors and materials. Also, documents (and other external references) can be associated with approvals.
@@ -230,8 +230,8 @@ Approvals can be assigned, in addition to properties, to other resource objects:
 &nbsp;
 
 { .std}
-**Date and
-Time**
+\*\*Date and
+Time\*\*
 
 { .std}
 The date and time definitions in IFC are now based on ISO 8601 string format (also identical with the equivalent XSD data types). It reduces the model footprint, particularly for ifcXML implementations.
@@ -240,7 +240,7 @@ The date and time definitions in IFC are now based on ISO 8601 string format (al
 &nbsp;
 
 { .std}
-**Materials**
+\*\*Materials\*\*
 
 { .std}
 Definition and usage of material profile sets for linear elements are now supported, in addition to already existing material layer sets for elements such as walls and slabs. Both material layers and profiles can be given offsets with regard to their parent sets (for end/edge detail), and profile sets can be aligned according to specified cardinal points in their usage.
@@ -252,7 +252,7 @@ In general, materials now have the description and category supported and they c
 &nbsp;
 
 { .std}
-**Classification**
+\*\*Classification\*\*
 
 { .std}
 Classifications and library references now have the publication location supported as a web based (URI) reference whilst the classification edition is made optional. The label used for classification references can also now be split into facets with user defined separators. Library references additionally have a language attribute enabling the language used to be identified. Classifications and library references can now also be assigned to properties.
@@ -264,8 +264,8 @@ To support the use of dictionary content within the buildingSMART IFD library, a
 &nbsp;
 
 { .std}
-**General
-Usage of Specification**
+\*\*General
+Usage of Specification\*\*
 
 { .std}
 Great effort has been spent to better document the dependencies and usage between the various objects, relationships and properties/quantities, etc. A series of instantiation diagrams have been added to the entity descriptions.

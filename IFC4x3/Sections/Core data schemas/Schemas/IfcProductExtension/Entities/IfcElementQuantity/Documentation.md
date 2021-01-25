@@ -12,20 +12,20 @@ The name attribute, given at the individual _Quantities_ provides a recognizable
 
 The _IfcElementQuantity_ can have the following subtypes of _IfcPhysicalQuantity_ within its SET of _Quantities_, which count for the basis measure types used:
 
-* count measure
-* weight measure
-* length measure
-* area measure
-* volume measure
-* time measure
+\* count measure
+\* weight measure
+\* length measure
+\* area measure
+\* volume measure
+\* time measure
 
 Base quantities are quantity definitions that are independent of a particular method of measurement and therefore internationally applicable. Base quantities are defined as gross and net values and provided by measurement of the correct geometric shape representation of the element. This specification includes a set of base quantity definition. See each subtype of _IfcElement_ for applicable base quantities.
 
 The following general agreements apply for each base quantity set
 
-* _IfcElementQuantity.Name_ = &lt;name of the qto definition template&gt;
-* _IfcElementQuantity.MethodOfMeasurement_ = 'BaseQuantities'
-* _IfcElementQuantity.Quantities_ = SET of subtypes of _IfcPhysicalSimpleQuantity_ with values for the _Name_ attribute as published as part of this specifciation.
+\* _IfcElementQuantity.Name_ = &lt;name of the qto definition template&gt;
+\* _IfcElementQuantity.MethodOfMeasurement_ = 'BaseQuantities'
+\* _IfcElementQuantity.Quantities_ = SET of subtypes of _IfcPhysicalSimpleQuantity_ with values for the _Name_ attribute as published as part of this specifciation.
 
 > HISTORY&nbsp; New entity in IFC2x.
 

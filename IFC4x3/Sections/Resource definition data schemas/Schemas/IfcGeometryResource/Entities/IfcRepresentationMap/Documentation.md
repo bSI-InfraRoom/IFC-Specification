@@ -8,6 +8,6 @@ The _RepresentationMap_ is used through an _IfcMappeditem_ in one or several _If
 
 > NOTE&nbsp; The definition of a mapping which is used to specify a new representation item comprises a representation map and a mapped item entity. Without both entities, the mapping is not fully defined. Two entities are specified to allow the same source representation to be mapped into multiple new representations.
 
-> NOTE&nbsp; Entity adapted from **representation_map** defined in ISO 10303-43.
+> NOTE&nbsp; Entity adapted from \*\*representation_map\*\* defined in ISO 10303-43.
 
 > HISTORY&nbsp; New entity in IFC2x.

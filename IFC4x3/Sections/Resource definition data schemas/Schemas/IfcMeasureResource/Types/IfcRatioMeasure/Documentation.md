@@ -4,6 +4,6 @@ An _IfcRatioMeasure_ is the value of the relation between two physical quantitie
 
 Type: REAL
 
-> NOTE&nbsp; Type adapted from **ratio_measure** defined in ISO 10303-41.
+> NOTE&nbsp; Type adapted from \*\*ratio_measure\*\* defined in ISO 10303-41.
 
 > HISTORY&nbsp; New type in IFC1.5.1.

@@ -2,8 +2,8 @@ The property with a single value _IfcPropertySingleValue_ defines a property obj
 
 The unit is handled by the _Unit_ attribute, see Table 1 for an example of various single value properties:
 
-* If the _Unit_ attribute is not given, then the unit is already implied by the type of _IfcMeasureValue_ or _IfcDerivedMeasureValue_. The associated unit can be found at the _IfcUnitAssignment_ globally defined at the project level (_IfcProject.UnitsInContext_).
-* If the _Unit_ attribute is given, then the unit assigned by the _Unit_ attribute overrides the globally assigned unit.
+\* If the _Unit_ attribute is not given, then the unit is already implied by the type of _IfcMeasureValue_ or _IfcDerivedMeasureValue_. The associated unit can be found at the _IfcUnitAssignment_ globally defined at the project level (_IfcProject.UnitsInContext_).
+\* If the _Unit_ attribute is given, then the unit assigned by the _Unit_ attribute overrides the globally assigned unit.
 
 &nbsp;
 
@@ -42,6 +42,8 @@ The unit is handled by the _Unit_ attribute, see Table 1 for an example of vario
   <td><p class="table">Table 1 &mdash; Single value properties with values, measure types and units</p></td>
  </tr>
 </table>
+
+
 
 > HISTORY&nbsp; New entity in IFC1.0.
 

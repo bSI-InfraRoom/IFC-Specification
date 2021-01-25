@@ -6,6 +6,6 @@ The _IfcDirection_ provides a direction in two or three dimensional space depend
 
 > NOTE&nbsp; The components of this entity are not normalized. If a unit vector is required it should be normalized before use.
 
-> NOTE&nbsp; Entity adapted from **direction** defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from \*\*direction\*\* defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC1.0

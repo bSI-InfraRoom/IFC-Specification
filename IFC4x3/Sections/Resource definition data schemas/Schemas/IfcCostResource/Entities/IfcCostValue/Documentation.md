@@ -4,37 +4,37 @@ Each instance of _IfcCostValue_ may also have a category. There are many possibl
 
 The following defines some cost categories that might be applied to the _Category_ attribute:
 
-* Annual rate of return
-* Bonus
-* Bulk purchase rebate
-* Contract
-* Consultancy
-* Delivery
-* Estimated cost
-* Hire
-* Installation
-* Interest rate
-* Labor
-* Lease
-* List price
-* Maintenance
-* Material
-* Overhead
-* Postage and packing
-* Profit
-* Purchase
-* Rental
-* Repair
-* Replacement
-* Sale
-* Small quantity surcharge
-* Spares
-* Storage
-* Sub-Contract
-* Trade discount
-* Transportation
-* Waste allowance
-* Whole life
+\* Annual rate of return
+\* Bonus
+\* Bulk purchase rebate
+\* Contract
+\* Consultancy
+\* Delivery
+\* Estimated cost
+\* Hire
+\* Installation
+\* Interest rate
+\* Labor
+\* Lease
+\* List price
+\* Maintenance
+\* Material
+\* Overhead
+\* Postage and packing
+\* Profit
+\* Purchase
+\* Rental
+\* Repair
+\* Replacement
+\* Sale
+\* Small quantity surcharge
+\* Spares
+\* Storage
+\* Sub-Contract
+\* Trade discount
+\* Transportation
+\* Waste allowance
+\* Whole life
 
 > NOTE&nbsp; In the absence of any well-defined standard, it is recommended that local agreements should be made to define allowable and understandable cost value types within a project or region.
 

@@ -2,9 +2,9 @@ The resource schema _IfcUtilityResource_ deals with the general concepts of Owne
 
 This schema contains the following concepts:
 
-* Ownership
-* History
-* Table
+\* Ownership
+\* History
+\* Table
 
 Each object, relationship and type definition will provide information about their current ownership. Ownership information is the currently "owning" application and the owning (responsible) actor. This ownership information can be used for access and change permissions. Ownership can be transferred from one person to another through the life cycle of a project.
 

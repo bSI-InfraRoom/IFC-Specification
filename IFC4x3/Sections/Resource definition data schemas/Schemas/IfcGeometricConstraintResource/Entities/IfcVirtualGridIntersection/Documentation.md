@@ -6,9 +6,9 @@ The two intersecting axes (_IntersectingAxes_) define the intersection point, wh
 
 Offset values may be given (_OffsetDistances_). If given, the position within the list of _OffsetDistances_ corresponds with the position within the list of _IntersectingAxes_. Therefore:
 
-* _OffsetDistances[1]_ sets the offset to _IntersectingAxes[1]_,
-* _OffsetDistances[2]_ sets the offset to _IntersectingAxes[2]_, and
-* _OffsetDistances[3]_ sets the offset to the virtual intersection in direction of the orientation of the cross product of _IntersectingAxes[1]_ and the orthogonal complement of the _IntersectingAxes[1]_ (which is the positive or negative direction of the z axis of the design grid position).
+\* _OffsetDistances[1]_ sets the offset to _IntersectingAxes[1]_,
+\* _OffsetDistances[2]_ sets the offset to _IntersectingAxes[2]_, and
+\* _OffsetDistances[3]_ sets the offset to the virtual intersection in direction of the orientation of the cross product of _IntersectingAxes[1]_ and the orthogonal complement of the _IntersectingAxes[1]_ (which is the positive or negative direction of the z axis of the design grid position).
 
 The following figures explain the usage of the _OffsetDistances_ and _IntersectingAxes_ attributes.
 
@@ -32,6 +32,8 @@ z-axis of the design grid placement) to the virtual intersection in the xy plane
 <td>&nbsp;</td></tr>
 </table>
 
+
+
 The distance of the offset curve (_OffsetDistances[n]_) is measured from the basis curve. The distance may be positive, negative or zero. A positive value of distance defines an offset in the direction which is normal to the curve in the sense of an anti-clockwise rotation through 90 degrees from the tangent vector T at the given point. (This is in the direction of orthogonal complement(T).) This can be reverted by the _SameSense_ attribute at _IfcGridAxis_ which may switch the sense of the _AxisCurve_.
 
 <table cellpadding="2" cellspacing="2">
@@ -50,6 +52,8 @@ The distance of the offset curve (_OffsetDistances[n]_) is measured from the bas
 <tr><td><p class="figure">Figure 3 &mdash; Virtual grid intersection negative offset</p></td>
 <td>&nbsp;</td></tr>
 </table>
+
+
 
 > HISTORY&nbsp; New entity in IFC1.5.
 

@@ -4,7 +4,7 @@ An _IfcSurface_ is a 2-dimensional representation item positioned in 3-dimension
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
 > A surface can be envisioned as a set of connected points in 3-dimensional space which is always locally 2-dimensional, but need not be a manifold.
 
-> NOTE&nbsp; Entity adapted from **surface** defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from \*\*surface\*\* defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC1.5
 

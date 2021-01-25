@@ -11,7 +11,7 @@ Figure 1 shows the use of _IfcTriangulatedFaceSet_ with colours per face.
     <td><img src="../../../../../../figures/ifcindexedcolourmap_example-01.png" alt="IfcIndexedColourMap_example-01"></td>
     <td>
       <p>&nbsp;</p>
-      Figure 2 illustrates an <i>IfcTriangulatedFaceSet</i> represented by
+      Figure 1 illustrates an <i>IfcTriangulatedFaceSet</i> represented by
       <ul>
         <li class="small"><em>IfcTriangulatedFaceSet.CoordIndex</em>: ((1,6,5),(1,2,6), (6,2,7), (7,2,3), (7,8,6), (6,8,5), (5,8,1), (1,8,4), (4,2,1), (2,4,3), (4,8,7), (7,3,4))</li>
         <li class="small"><em>IfcCartesianPointList.CoordList</em>: ((0.,0.,0.), (1.,0.,0.), (1.,1.,0.), (0.,1.,0.), (0.,0.,2.), (1.,0.,2.), (1.,1.,2.), (0.,1.,2.))</li>
@@ -21,9 +21,11 @@ Figure 1 shows the use of _IfcTriangulatedFaceSet_ with colours per face.
     </td>
   </tr>
   <tr>
-    <td><p class="figure">Figure 2 &mdash; Indexed colour map geometry </p></td>
+    <td><p class="figure">Figure 1 &mdash; Indexed colour map geometry </p></td>
     <td>&nbsp;</td>
   </tr>
 </table>
+
+
 
 > HISTORY&nbsp; New entity in IFC4.

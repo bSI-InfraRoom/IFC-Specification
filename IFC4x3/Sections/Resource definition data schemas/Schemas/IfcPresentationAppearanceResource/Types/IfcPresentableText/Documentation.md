@@ -4,6 +4,6 @@ _IfcPresentableText_ is a text string used to capture the content of a text lite
 
 > NOTE&nbsp; The _IfcPresentableText_ is an entity that had been adopted from ISO 10303, Industrial automation systems and integration&mdash;Product data representation and exchange, Part 46: Integrated generic resources: Visual presentation.
 
-> NOTE&nbsp; Entity adapted from **presentable_text** defined in ISO10303-46.
+> NOTE&nbsp; Entity adapted from \*\*presentable_text\*\* defined in ISO10303-46.
 
 > HISTORY&nbsp; New type in IFC2x2.

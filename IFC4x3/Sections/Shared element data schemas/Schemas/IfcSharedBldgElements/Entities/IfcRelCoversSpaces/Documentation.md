@@ -4,9 +4,9 @@ The objectified relationship, _IfcRelCoversSpace_, relates a space object to one
 
 The IFC specification provides two relationships:
 
-* _IfcRelCoversBldgElements_ to assign coverings to elements. 
+\* _IfcRelCoversBldgElements_ to assign coverings to elements. 
 >> NOTE&nbsp; This relationship is now deprecated and replaced by _IfcRelAggregates_. 
-* _IfcRelCoversSpaces_ to assign coverings to spaces   
+\* _IfcRelCoversSpaces_ to assign coverings to spaces   
 >> NOTE&nbsp; This relationship is now deprecated and replaced by _IfcRelContainedInSpatialStructure_. 
 
 Whether the relationship between the covering and the space, or between the covering and the element, is regarded as primary, has to be determined within the context of a model view definition.

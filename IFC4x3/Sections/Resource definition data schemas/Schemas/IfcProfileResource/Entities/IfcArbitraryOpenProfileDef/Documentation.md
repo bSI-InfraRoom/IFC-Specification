@@ -9,7 +9,7 @@ Informal Propositions:
 
 Figure 1 illustrates the arbitrary open profile definition. The _Curve_ is defined in the underlying coordinate system. The underlying coordinate system is defined by the swept surface that uses the profile definition. It is the xy plane of:
 
-* _IfcSweptSurface.Position_
+\* _IfcSweptSurface.Position_
 
 The _Curve_ attribute defines a two dimensional open bounded curve.
 

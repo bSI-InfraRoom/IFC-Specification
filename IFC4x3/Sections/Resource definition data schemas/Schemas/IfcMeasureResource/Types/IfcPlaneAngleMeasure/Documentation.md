@@ -6,6 +6,6 @@ Usually measured in radian (rad, m/m = 1), but also grads may be used. The grad 
 
 Type: REAL
 
-> NOTE&nbsp; Type adapted from **plane_angle_measure** defined in ISO 10303-41.
+> NOTE&nbsp; Type adapted from \*\*plane_angle_measure\*\* defined in ISO 10303-41.
 
 > HISTORY&nbsp; New type in IFC1.5.1.

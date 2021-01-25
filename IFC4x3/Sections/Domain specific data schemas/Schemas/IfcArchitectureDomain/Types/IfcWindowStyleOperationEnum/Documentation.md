@@ -84,6 +84,8 @@ the third one is vertically at the right hand side.<br></td>
 </tr>
 </table>
 
+
+
 > HISTORY&nbsp; New Enumeration in IFC2.0.
 
 NOTE

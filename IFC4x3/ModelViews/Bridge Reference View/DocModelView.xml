@@ -83,7 +83,7 @@
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Container" UniqueId="201e475d-2267-4e43-87a8-7523b18bd531">
-					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcBridge_, they are associated with the _IfcBridge_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBridge_ references them by its inverse relationship: &gt; *  _IfcBridge.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
+					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcBridge_, they are associated with the _IfcBridge_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBridge_ references them by its inverse relationship: &gt; \*  _IfcBridge.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 					<Items>
 						<DocTemplateItem UniqueId="7bb436be-24ba-4355-99ed-b9804ca058f0" RuleParameters="Type=IfcElement;">
@@ -100,8 +100,8 @@
 				<DocTemplateUsage Name="Product Local Placement" UniqueId="9a0582fd-3d2a-4e89-a3b6-dd681bcbb895">
 					<Documentation>The local placement for _IfcBridge_ is defined by its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_ or _IfcLinearPlacement_, which establishes the local coordinate system that is referenced by all geometric representations.
 
-* The _PlacementRelTo_ relationship of _IfcObjectPlacement_ shall point to the subtype of _IfcSpatialStructureElement_ that is referenced by the _Spatial Decomposition_ concept (usually of type _IfcSite_).
-* If the _IfcBridge_ is the uppermost spatial structure element, the _PlacementRelTo_ shall not be set.</Documentation>
+\* The _PlacementRelTo_ relationship of _IfcObjectPlacement_ shall point to the subtype of _IfcSpatialStructureElement_ that is referenced by the _Spatial Decomposition_ concept (usually of type _IfcSite_).
+\* If the _IfcBridge_ is the uppermost spatial structure element, the _PlacementRelTo_ shall not be set.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 					<Items>
 						<DocTemplateItem UniqueId="8bcaa939-1535-4093-a20b-37769f27f605" RuleParameters="HasPlacement=IfcLocalPlacement;">
@@ -171,8 +171,8 @@ _IfcBridgePart_ needs to have a different and higher
 				<DocTemplateUsage Name="Product Local Placement" UniqueId="77fb680e-090e-4a42-8c3f-3af4ed345b80">
 					<Documentation>The local placement for _IfcBridgePart_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_ or _IfcLinearPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-* The _PlacementRelTo_ relationship of _IfcObjectPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcBridge_, or of type _IfcBridgePart_ (e.g. to position a bridge part relative to a bridge part complex, or a partial bridge part to a bridge part).
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
+\* The _PlacementRelTo_ relationship of _IfcObjectPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcBridge_, or of type _IfcBridgePart_ (e.g. to position a bridge part relative to a bridge part complex, or a partial bridge part to a bridge part).
+\* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 					<Items>
 						<DocTemplateItem UniqueId="bc36d2f6-3819-4625-95ff-385a05d40ea9" RuleParameters="HasPlacement=IfcLocalPlacement;">
@@ -187,7 +187,7 @@ _IfcBridgePart_ needs to have a different and higher
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Container" UniqueId="caea3e18-a921-4063-8697-749c69b48924">
-					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcBridge_, they are associated with the _IfcBridge_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBridge_ references them by its inverse relationship: &gt; *  _IfcBridge.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
+					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcBridge_, they are associated with the _IfcBridge_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBridge_ references them by its inverse relationship: &gt; \*  _IfcBridge.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 					<Items>
 						<DocTemplateItem UniqueId="87ffd881-c34e-4a78-9bec-d651e196924c" RuleParameters="Type=IfcElement;">
@@ -250,7 +250,7 @@ _IfcBridgePart_ needs to have a different and higher
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Container" UniqueId="f253d721-690b-4fef-bc1f-6247735caebb">
-					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcFacility_ (like a curtain wall spanning several stories), they are associated with the _IfcFacility_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcFacility_ references them by its inverse relationship: &gt; *  _IfcFacility.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
+					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcFacility_ (like a curtain wall spanning several stories), they are associated with the _IfcFacility_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcFacility_ references them by its inverse relationship: &gt; \*  _IfcFacility.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 					<Items>
 						<DocTemplateItem UniqueId="2fcccbdc-5674-432e-b7e2-7d455a3c860f" RuleParameters="Type=IfcElement;">
@@ -267,8 +267,8 @@ _IfcBridgePart_ needs to have a different and higher
 				<DocTemplateUsage Name="Product Local Placement" UniqueId="b7aa6c15-4396-461a-ac2c-5b62e55056bf">
 					<Documentation>The local placement for _IfcFacility_ is defined by its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_ or _IfcLinearPlacement_, which establishes the local coordinate system that is referenced by all geometric representations.
 
-* The _PlacementRelTo_ relationship of _IfcObjectPlacement_ shall point to the subtype of _IfcSpatialStructureElement_ that is referenced by the _Spatial Decomposition_ concept (usually of type _IfcSite_).
-* If the _IfcFacility_ is the uppermost spatial structure element, the _PlacementRelTo_ shall not be set.</Documentation>
+\* The _PlacementRelTo_ relationship of _IfcObjectPlacement_ shall point to the subtype of _IfcSpatialStructureElement_ that is referenced by the _Spatial Decomposition_ concept (usually of type _IfcSite_).
+\* If the _IfcFacility_ is the uppermost spatial structure element, the _PlacementRelTo_ shall not be set.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 					<Items>
 						<DocTemplateItem UniqueId="92bc1c63-23d0-455d-9ad8-c1e7e222880c" RuleParameters="HasPlacement=IfcLocalPlacement;">
@@ -315,8 +315,8 @@ _IfcBridgePart_ needs to have a different and higher
 				<DocTemplateUsage Name="Product Local Placement" UniqueId="d552bdb1-7f7d-4595-9fd5-a583b149300a">
 					<Documentation>The local placement for _IfcFacilityPart_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_ or _IfcLinearPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-* The _PlacementRelTo_ relationship of _IfcObjectPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcBridge_, or of type _IfcFacilityPart_ (e.g. to position a facility part relative to a facility part complex, or a partial facility part to a facility part).
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
+\* The _PlacementRelTo_ relationship of _IfcObjectPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcBridge_, or of type _IfcFacilityPart_ (e.g. to position a facility part relative to a facility part complex, or a partial facility part to a facility part).
+\* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 					<Items>
 						<DocTemplateItem UniqueId="360215b9-d27f-4d62-8464-dbb24a30dc9a" RuleParameters="HasPlacement=IfcLocalPlacement;">
@@ -325,7 +325,7 @@ _IfcBridgePart_ needs to have a different and higher
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Container" UniqueId="5dbfcbcf-5ea1-4ff6-8d1a-10d7c0bd1e44">
-					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcBridge_, they are associated with the _IfcBridge_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBridge_ references them by its inverse relationship: &gt; *  _IfcBridge.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
+					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcBridge_, they are associated with the _IfcBridge_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBridge_ references them by its inverse relationship: &gt; \*  _IfcBridge.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 					<Items>
 						<DocTemplateItem UniqueId="1e3f372b-87da-4d13-bb56-b0dd9fa841cb" RuleParameters="Type=IfcElement;">

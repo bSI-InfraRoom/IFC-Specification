@@ -2,7 +2,7 @@
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
 > A vertex point is a vertex which has its geometry defined as a point.
 
-> NOTE&nbsp; Entity adapted from **vertex_point** defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from \*\*vertex_point\*\* defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC2x.
 

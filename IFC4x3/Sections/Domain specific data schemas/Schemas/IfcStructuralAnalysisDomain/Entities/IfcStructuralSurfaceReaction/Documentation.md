@@ -2,11 +2,11 @@ This entity defines a reaction which occurs distributed over a surface. A surfac
 
 > HISTORY&nbsp; New entity in IFC4.
 
-****Coordinate Systems****:
+\*\*\*\*Coordinate Systems\*\*\*\*:
 
 See definitions at _IfcStructuralActivity_.
 
-****Topology Use Definitions****:
+\*\*\*\*Topology Use Definitions\*\*\*\*:
 
 See definitions at _IfcStructuralActivity_.
 

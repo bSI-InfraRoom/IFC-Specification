@@ -12,7 +12,7 @@ Figure 1 illustrates the definition of the _IfcHalfSpaceSolid_ within a given co
 >   
 > NOTE&nbsp; A half space is not a subtype of solid model, half space solids are only useful as operands in Boolean expressions.
 
-> NOTE&nbsp; Entity adapted from **half_space_solid** defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from \*\*half_space_solid\*\* defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC1.5
 

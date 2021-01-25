@@ -2,7 +2,7 @@ Describes linearly elastic support conditions or connection conditions.
 
 Applicability:
 
-* Point supports and connections.
+\* Point supports and connections.
 
 > HISTORY&nbsp; New entity in IFC2x2.  
 > IFC 2x4 change: Attributes _LinearStiffnessX/Y/Z_ renamed to _TranslationalStiffnessX/Y/Z_.

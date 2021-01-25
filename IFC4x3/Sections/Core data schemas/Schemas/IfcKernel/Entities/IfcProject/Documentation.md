@@ -2,13 +2,13 @@ _IfcProject_ indicates the undertaking of some design, engineering, construction
 
 The context provided by the _IfcProject_ includes:
 
-* the default units
-* the geometric representation context for exchange structures including shape representations 
-    * the project coordinate system
-    * the coordinate space dimension
-    * the precision used within the geometric representations
-    * optionally the indication of the true north
-    * optionally the map conversion between the project coordinate system and the geospatial coordinate reference system. 
+\* the default units
+\* the geometric representation context for exchange structures including shape representations 
+    \* the project coordinate system
+    \* the coordinate space dimension
+    \* the precision used within the geometric representations
+    \* optionally the indication of the true north
+    \* optionally the map conversion between the project coordinate system and the geospatial coordinate reference system. 
 
 > HISTORY&nbsp; New entity in IFC1.0
 

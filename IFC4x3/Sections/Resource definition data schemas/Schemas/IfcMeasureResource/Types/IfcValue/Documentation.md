@@ -2,8 +2,8 @@ _IfcValue_ is a select type for selecting between more specialised select types 
 
 SELECT
 
-* **IfcSimpleValue** A select type for basic defined types of simple data type.
-* **IfcMeasureValue** A select type for basic measure types of ISO 10303-41.
-* **IfcDerivedMeasureValue** A select type for derived measure types.
+\* \*\*IfcSimpleValue\*\* A select type for basic defined types of simple data type.
+\* \*\*IfcMeasureValue\*\* A select type for basic measure types of ISO 10303-41.
+\* \*\*IfcDerivedMeasureValue\*\* A select type for derived measure types.
 
 > HISTORY&nbsp; New type in IFC2x.

@@ -9,4 +9,4 @@ Containment Use Definition
 
 Voiding features shall have no spatial containment relationship to the spatial structure since they are dependent on element types without spatial containment relationships or on an element occurrence with own spatial containment relationship.
 
-* The _SELF\IfcElement.ContainedInStructure_ relationship shall be NIL.
+\* The _SELF\IfcElement.ContainedInStructure_ relationship shall be NIL.

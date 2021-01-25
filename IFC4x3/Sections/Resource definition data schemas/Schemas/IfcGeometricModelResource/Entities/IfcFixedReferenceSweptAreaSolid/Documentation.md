@@ -12,15 +12,15 @@ The _Directrix_ and the _ReferenceSurface_ are positioned within the object coor
   
 The orientation of the _SweptArea_ as it sweeps along the _Directrix_ is precisely defined by a _CartesianTransformationOperator3d_ with attributes:  
   
-\* _LocalOrigin_ as point (0; 0; 0),  
-\* _Axis1_ as the _FixedReference_.  
-\* _Axis3_ as the direction of the tangent vector \*\*t\*\* at the point of the _Directrix_ with parameter \*\*u\*\*.  
+\\* _LocalOrigin_ as point (0; 0; 0),  
+\\* _Axis1_ as the _FixedReference_.  
+\\* _Axis3_ as the direction of the tangent vector \\*\\*t\\*\\* at the point of the _Directrix_ with parameter \\*\\*u\\*\\*.  
   
-The remaining attributes are defaulted to define a corresponding transformation matrix \*\*T(u)\*\*, which varies with the _Directrix_ parameter \*\*u\*\*.  
+The remaining attributes are defaulted to define a corresponding transformation matrix \\*\\*T(u)\\*\\*, which varies with the _Directrix_ parameter \\*\\*u\\*\\*.  
   
 > NOTE&nbsp; The geometric shape of the solid is not dependent upon the curve parameterization; the volume depends upon the area swept and the length of the _Directrix_.  
   
-> NOTE&nbsp; Entity adapted from \*\*fixed_reference_swept_surface\*\* defined in ISO 10303-42.  
+> NOTE&nbsp; Entity adapted from \\*\\*fixed_reference_swept_surface\\*\\* defined in ISO 10303-42.  
   
 > HISTORY&nbsp; New entity in IFC4.  
   

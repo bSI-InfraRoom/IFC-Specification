@@ -1087,8 +1087,8 @@
 
 The main attributes to be provided for a _Object Occurrence Predefined Type_ are:
 
-* _PredefinedType_: holds the entity specific enumeration of predefined types to further classify the entity
-* _ObjectType_: allows for a custom value, if no applicable enumerator can be found
+\* _PredefinedType_: holds the entity specific enumeration of predefined types to further classify the entity
+\* _ObjectType_: allows for a custom value, if no applicable enumerator can be found
 
 
 
@@ -1341,8 +1341,8 @@ Physical element types may be further identified via the Tag attribute. This is 
 
 Specific subtypes introduce additional attributes for _User Identity_.
 
-* Spatial element type sub types may be further identified via the _Tag_ attribute. While there is no restriction on usage of such tags, it is recommended the _Tag_ is unique within it&apos;s containing scope.
-* Spatial element type sub types may be further attributed via the _LongName_ attribute. While the _Name_ attribute generally provides a coded or abbreviated identifier, the _LongName_ provides a functional name for the location such as &quot;Reception Area&quot;. 
+\* Spatial element type sub types may be further identified via the _Tag_ attribute. While there is no restriction on usage of such tags, it is recommended the _Tag_ is unique within it&apos;s containing scope.
+\* Spatial element type sub types may be further attributed via the _LongName_ attribute. While the _Name_ attribute generally provides a coded or abbreviated identifier, the _LongName_ provides a functional name for the location such as &quot;Reception Area&quot;. 
 
 &gt; NOTE&amp;nbsp; Since the corresponding occurrences of _IfcSpatialElementType_ do not have a _Tag_ attribute, it is recommended not to use it here.</Documentation>
 					<Rules>
@@ -1366,8 +1366,8 @@ Specific subtypes introduce additional attributes for _User Identity_.
 
 Specific subtypes introduce additional attributes for _User Identity_.
 
-* Spatial objects may be further identified via the _LongName_ attribute. This value should generally correspond to building signage describing floor levels or rooms. While the _Name_ attribute generally provides a coded or abbreviated identifier, the _LongName_ provides a functional name for the location such as &quot;Reception Area&quot;. See concept template _Spatial Element Occurrence Attributes_
-* Physical elements may be further identified via the _Tag_ attribute. This is a human readable identifier such as an element or item number While there is no restriction on usage of such tags, it is recommended the _Tag_ is unique within it&apos;s containing scope. See concept template _Element Occurrence Attributes_</Documentation>
+\* Spatial objects may be further identified via the _LongName_ attribute. This value should generally correspond to building signage describing floor levels or rooms. While the _Name_ attribute generally provides a coded or abbreviated identifier, the _LongName_ provides a functional name for the location such as &quot;Reception Area&quot;. See concept template _Spatial Element Occurrence Attributes_
+\* Physical elements may be further identified via the _Tag_ attribute. This is a human readable identifier such as an element or item number While there is no restriction on usage of such tags, it is recommended the _Tag_ is unique within it&apos;s containing scope. See concept template _Element Occurrence Attributes_</Documentation>
 			<Localization>
 				<DocLocalization Locale="tt">
 					<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;

@@ -21,11 +21,11 @@
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Approval" UniqueId="3WqHUizTf3redk1ORzX6Ed">
-					<Documentation>Approvals may be associated to indicate the status of acceptance or rejection using the [IfcRelAssociatesApproval](../../ifccontrolextension/lexical/ifcrelassociatesapproval.htm) relationship where _RelatingApproval_ refers to an [IfcApproval](../../ifcapprovalresource/lexical/ifcapproval.htm) and _RelatedObjects_ contains the **IfcActionRequest**. Approvals may be split into sub-approvals using [IfcApprovalRelationship](../../ifcapprovalresource/lexical/ifcapprovalrelationship.htm) to track approval status separately for each party where _RelatingApproval_ refers to the higher-level approval and _RelatedApprovals_ contains one or more lower-level approvals. The hierarchy of approvals implies sequencing such that a higher-level approval is not executed until all of its lower-level approvals have been accepted.</Documentation>
+					<Documentation>Approvals may be associated to indicate the status of acceptance or rejection using the [IfcRelAssociatesApproval](../../ifccontrolextension/lexical/ifcrelassociatesapproval.htm) relationship where _RelatingApproval_ refers to an [IfcApproval](../../ifcapprovalresource/lexical/ifcapproval.htm) and _RelatedObjects_ contains the \*\*IfcActionRequest\*\*. Approvals may be split into sub-approvals using [IfcApprovalRelationship](../../ifcapprovalresource/lexical/ifcapprovalrelationship.htm) to track approval status separately for each party where _RelatingApproval_ refers to the higher-level approval and _RelatedApprovals_ contains one or more lower-level approvals. The hierarchy of approvals implies sequencing such that a higher-level approval is not executed until all of its lower-level approvals have been accepted.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Approval_Association_1ILXQGe50dQe7saXJ0YIU" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Aggregation" UniqueId="2ilRK$A9H9Q9p6haDUJKGs">
-					<Documentation>As shown in Figure 1, an **IfcActionRequest** may be aggregated into components.
+					<Documentation>As shown in Figure 1, an \*\*IfcActionRequest\*\* may be aggregated into components.
 
 ![&quot;Composition Use Definition&quot;](../../figures/ifcactionrequest-composition.png &quot;Figure 1 &amp;mdash; Action request composition&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Aggregation_02xlp6icnF89nymmhdJhcf" />
@@ -44,13 +44,13 @@
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Control Assignment" UniqueId="1NshBwMdP5JfG4iLT_creQ">
-					<Documentation>As shown in Figure 1, an **IfcActionRequest** may be assigned to the following entities using relationships as indicated:
+					<Documentation>As shown in Figure 1, an \*\*IfcActionRequest\*\* may be assigned to the following entities using relationships as indicated:
 
-* [IfcActor](../../ifckernel/lexical/ifcactor.htm) ([IfcRelAssignsToActor](../../ifckernel/lexical/ifcrelassignstoactor.htm)): Person or organization issuing the request such as a tenant or owner.
+\* [IfcActor](../../ifckernel/lexical/ifcactor.htm) ([IfcRelAssignsToActor](../../ifckernel/lexical/ifcrelassignstoactor.htm)): Person or organization issuing the request such as a tenant or owner.
 
-The **IfcActionRequest** may have assignments of its own using the [IfcRelAssignsToControl](../../ifckernel/lexical/ifcrelassignstocontrol.htm) relationship where _RelatingControl_ refers to the **IfcActionRequest** and _RelatedObjects_ contains one or more objects of the following types:
+The \*\*IfcActionRequest\*\* may have assignments of its own using the [IfcRelAssignsToControl](../../ifckernel/lexical/ifcrelassignstocontrol.htm) relationship where _RelatingControl_ refers to the \*\*IfcActionRequest\*\* and _RelatedObjects_ contains one or more objects of the following types:
 
-* [IfcActor](../../ifckernel/lexical/ifcactor.htm): Person or organization(s) fulfilling the request such as a facilities manager or contractor. 
+\* [IfcActor](../../ifckernel/lexical/ifcactor.htm): Person or organization(s) fulfilling the request such as a facilities manager or contractor. 
 
 ![&quot;Assignment Use Definition&quot;](../../figures/ifcactionrequest-assignment.png &quot;Figure 1 &amp;mdash; Action request assignment&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Control_Assignment_21FdF_La56IAQ0Y8VFGrdn" />
@@ -981,8 +981,8 @@ The **IfcActionRequest** may have assignments of its own using the [IfcRelAssign
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="0ZTNa$io9Bsvrk0t0RzYkb">
 					<Documentation>The _IfcBeam_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.</Documentation>
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 					<Items>
 						<DocTemplateItem UniqueId="87c7147f-0f4b-4888-aabf-26e2c526a5bc" RuleParameters="RelatingStructure=IfcBuildingStorey;">
@@ -1027,9 +1027,9 @@ The **IfcActionRequest** may have assignments of its own using the [IfcRelAssign
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="2906ad09-a736-498a-ac87-d73c039ef25a">
 					<Documentation>The following additional constraints apply to the &apos;SweptSolid&apos; representation type:
 
-* **Solid**: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
-* **Profile**: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
-* **Extrusion**:&amp;nbsp; All extrusion directions shall be supported.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
+\* \*\*Profile\*\*: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
+\* \*\*Extrusion\*\*:&amp;nbsp; All extrusion directions shall be supported.
 
 Figure 1 illustrates the &apos;SweptSolid&apos; geometric representation. There are no restrictions or conventions on how to use the local placement (black), solid of extrusion placement (red) and profile placement (green).
 
@@ -1043,19 +1043,19 @@ Figure 2 illustrates the use of non-perpendicular extrusion to create the _IfcEx
 				<DocTemplateUsage Name="Body AdvancedSweptSolid Geometry" UniqueId="25a36b91-bad3-4f7d-98b8-1f26b5496cd1">
 					<Documentation>The following additional constraints apply to the &apos;AdvancedSweptSolid&apos; representation type:
 
-* **Solid**: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
+\* \*\*Solid\*\*: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
 &gt;&gt; NOTE&amp;nbsp; View definitions and implementer agreement can further constrain the allowed swept solid types. 
-* **Profile**: see &apos;SweptSolid&apos; geometric representation
-* **Extrusion**: not applicable</Documentation>
+\* \*\*Profile\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Extrusion\*\*: not applicable</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSweptSolid_Geometry_1KP7XTvT5FTPxCRBEI571U" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="89e37549-18f3-4aa5-87d1-01f5c441a5fd">
 					<Documentation>The following additional constraints apply to the &apos;Clipping&apos; representation type:
 
-* **Solid**: see &apos;SweptSolid&apos; geometric representation
-* **Profile**: see &apos;SweptSolid&apos; geometric representation
-* **Extrusion**: see &apos;SweptSolid&apos; geometric representation
-* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
+\* \*\*Solid\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Profile\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Extrusion\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
 
 Figure 1 illustrates use of _IfcBooleanClippingResult_ between an _IfcExtrudedAreaSolid_ and an _IfcHalfSpaceSolid_ to create a clipped body.
 
@@ -1135,15 +1135,15 @@ Figure 1 illustrates use of _IfcBooleanClippingResult_ between an _IfcExtrudedAr
 				<DocTemplateUsage Name="Placement" UniqueId="0gEM_o_HHF7vpUIJjOYTxB">
 					<Documentation>The following restriction is imposed:
 
-* The local placement shall provide the location and directions for the standard beam, the x/y plane is the plane for the start profile, and the z-axis is the extrusion axis for the beam body (in case of rotation, the tangent direction).</Documentation>
+\* The local placement shall provide the location and directions for the standard beam, the x/y plane is the plane for the start profile, and the z-axis is the extrusion axis for the beam body (in case of rotation, the tangent direction).</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Axis 3D Geometry" UniqueId="cb4a7cf7-710b-4d92-beb0-f247c525dfe6">
 					<Documentation>The following additional constraints apply to the &apos;Axis&apos; representation, if the &apos;Body&apos; shape representation has the _RepresentationType_ : &apos;SweptSolid&apos;:
 
-* _Axis_ 
-    * _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the z axis of the object coordinate system.
-    * _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcRevolvedAreaSolid_. The axis curve lies on the x/z plane of the object coordinate system, the tangent at the start is along the positive z-axis. 
+\* _Axis_ 
+    \* _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the z axis of the object coordinate system.
+    \* _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcRevolvedAreaSolid_. The axis curve lies on the x/z plane of the object coordinate system, the tangent at the start is along the positive z-axis. 
 
 &amp;nbsp;
 
@@ -1178,23 +1178,23 @@ Figure 1 illustrates use of _IfcBooleanClippingResult_ between an _IfcExtrudedAr
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="f46e3ec0-d156-494e-86b8-90fab2e50513">
 					<Documentation>The following additional constraints apply to the &apos;SweptSolid&apos; representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
-* **Solid Position** : The _IfcSweptAreaSolid.Position_ shall exclusively been used to correspond to the cardinal point. The x/y offset of the _Position_ represents the cardinal point offset of the profile against the axis. No rotation shall be allowed.
-* **Profile**: All subtypes of _IfcParameterizedProfileDef_
-* **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
-* **Extrusion**:&amp;nbsp;Perpendicular to the profile direction. The _IfcExtrudedAreaSolid.ExtrudedDirection_ shall be [0.,0.,1.].
-* **Orientation**: The y-axis of the profile, as determined by _IfcSweptAreaSolid.Position.P[2]_ shall point upwards. It indicates the &quot;role&quot; of the beam, a role=0&amp;deg; means y-axis of profile pointing upwards.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
+\* \*\*Solid Position\*\* : The _IfcSweptAreaSolid.Position_ shall exclusively been used to correspond to the cardinal point. The x/y offset of the _Position_ represents the cardinal point offset of the profile against the axis. No rotation shall be allowed.
+\* \*\*Profile\*\*: All subtypes of _IfcParameterizedProfileDef_
+\* \*\*Profile Position\*\* : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
+\* \*\*Extrusion\*\*:&amp;nbsp;Perpendicular to the profile direction. The _IfcExtrudedAreaSolid.ExtrudedDirection_ shall be [0.,0.,1.].
+\* \*\*Orientation\*\*: The y-axis of the profile, as determined by _IfcSweptAreaSolid.Position.P[2]_ shall point upwards. It indicates the &quot;role&quot; of the beam, a role=0&amp;deg; means y-axis of profile pointing upwards.
 
-Figure 1 illustrates a standard geometric representation with cardinal point applied as **1** (bottom left).
+Figure 1 illustrates a standard geometric representation with cardinal point applied as \*\*1\*\* (bottom left).
 
 The following interpretation of dimension parameter applies for rectangular beams with linear extrusions:
 
-* _IfcRectangleProfileDef.YDim_ interpreted as beam height
-* _IfcRectangleProfileDef.XDim_ interpreted as beam width
+\* _IfcRectangleProfileDef.YDim_ interpreted as beam height
+\* _IfcRectangleProfileDef.XDim_ interpreted as beam width
 
 The following interpretation of dimension parameter applies for circular beams:
 
-* _IfcCircleProfileDef.Radius_ interpreted as beam radius.
+\* _IfcCircleProfileDef.Radius_ interpreted as beam radius.
 
 ![&quot;standard beam&quot;](../../figures/ifcbeamstandardcase_sweptsolid-01.png &quot;Figure 1 &amp;mdash; Beam body extrusion&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_Geometry_3BV1ZwpuDDiRuRm1EwJjPo" />
@@ -1202,26 +1202,26 @@ The following interpretation of dimension parameter applies for circular beams:
 				<DocTemplateUsage Name="Body AdvancedSweptSolid Geometry" UniqueId="2f06485f-48e1-41c6-86ce-ef478cd410f0">
 					<Documentation>The following additional constraints apply to the &apos;AdvancedSweptSolid&apos; representation type:
 
-* **Solid**: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
+\* \*\*Solid\*\*: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
 &gt;&gt; NOTE&amp;nbsp; View definitions and implementer agreement can further constrain the allowed swept solid types. 
-* **Solid Position** : see &apos;SweptSolid&apos; geometric representation
-* **Profile**: see &apos;SweptSolid&apos; geometric representation
-* **Profile Position** : see &apos;SweptSolid&apos; geometric representation
-* **Extrusion**:&amp;nbsp;not applicable</Documentation>
+\* \*\*Solid Position\*\* : see &apos;SweptSolid&apos; geometric representation
+\* \*\*Profile\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Profile Position\*\* : see &apos;SweptSolid&apos; geometric representation
+\* \*\*Extrusion\*\*:&amp;nbsp;not applicable</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSweptSolid_Geometry_1KP7XTvT5FTPxCRBEI571U" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="73108d59-5678-4e77-851c-fefd8a2c2312">
 					<Documentation>The following constraints apply to the &apos;Clipping&apos; representation:
 
-* **Solid** : see &apos;SweptSolid&apos; geometric representation
-* **Solid Position** : see &apos;SweptSolid&apos; geometric representation
-* **Profile** : see &apos;SweptSolid&apos; geometric representation
-* **Profile Position** : see &apos;SweptSolid&apos; geometric representation
-* **Extrusion** : see &apos;SweptSolid&apos; geometric representation
-* **Orientation** : see &apos;SweptSolid&apos; geometric representation
-* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
+\* \*\*Solid\*\* : see &apos;SweptSolid&apos; geometric representation
+\* \*\*Solid Position\*\* : see &apos;SweptSolid&apos; geometric representation
+\* \*\*Profile\*\* : see &apos;SweptSolid&apos; geometric representation
+\* \*\*Profile Position\*\* : see &apos;SweptSolid&apos; geometric representation
+\* \*\*Extrusion\*\* : see &apos;SweptSolid&apos; geometric representation
+\* \*\*Orientation\*\* : see &apos;SweptSolid&apos; geometric representation
+\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
 
-Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of _IfcBooleanClippingResult_ between an _IfcExtrudedAreaSolid_ and an _IfcHalfSpaceSolid_ to create a clipped body, with cardinal point applied as **4** (mid-depth left)
+Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of _IfcBooleanClippingResult_ between an _IfcExtrudedAreaSolid_ and an _IfcHalfSpaceSolid_ to create a clipped body, with cardinal point applied as \*\*4\*\* (mid-depth left)
 
 ![&quot;clipped beam&quot;](../../figures/ifcbeamstandardcase_clipping-01.png &quot;Figure 1 &amp;mdash; Beam body clipping&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Clipping_Geometry_0isyBrcmn3wfqgdNBG57u0" />
@@ -1393,7 +1393,7 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Container" UniqueId="cdd0bb13-3af9-4a0e-a248-f1e4be0740a6">
-					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcBridge_, they are associated with the _IfcBridge_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBridge_ references them by its inverse relationship: &gt; *  _IfcBridge.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
+					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcBridge_, they are associated with the _IfcBridge_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBridge_ references them by its inverse relationship: &gt; \*  _IfcBridge.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 					<Items>
 						<DocTemplateItem UniqueId="5bca9db1-8afb-43da-86bb-cdd287e32adf" RuleParameters="Type=IfcElement;">
@@ -1432,8 +1432,8 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 					<Documentation>The local placement for _IfcBridge_ is defined in its supertype _IfcProduct_. It is defined by _IfcLocalPlacement_ or by _IfcLinearPlacement&gt;/em&gt; which defines the local coordinate
       system that is referenced by all geometric representations._
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcSite_, or of type _IfcBuilding_ (e.g. to position a building relative to a building complex, or a building section to a building). 
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
+\* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcSite_, or of type _IfcBuilding_ (e.g. to position a building relative to a building complex, or a building section to a building). 
+\* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Property Sets for Objects" UniqueId="e061cc9c-d307-498d-88fa-a97891a04d96">
@@ -1492,7 +1492,7 @@ _IfcBridgePart_ needs to have a different and higher
 				<DocTemplateUsage Name="Spatial Container" UniqueId="10c6e02b-cfcb-4d44-8259-409121ca419a">
 					<Documentation>If there are building elements and/or other elements directly related to the _IfcBridgePart_ (like most building elements, such as walls, columns, etc.), they are associated with the _IfcBridgePart_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBridgePart_ references them by its inverse relationship:
 
-* _IfcBridgePart.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.
+\* _IfcBridgePart.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.
 
 Elements can also be referenced in an _IfcBridgePart_, for example, if they span through several storeys. This is expressed by using the objectified relationship _IfcRelReferencedInSpatialStructure_. Systems, such as building service or electrical distribution systems, zonal systems, or structural analysis systems, relate to _IfcBridgePart_ by using the objectified relationship _IfcRelServicesBuildings_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
@@ -1503,8 +1503,8 @@ Elements can also be referenced in an _IfcBridgePart_, for example, if they span
 				<DocTemplateUsage Name="Placement" UniqueId="20d2ab3b-39c3-47bb-b02e-19d4c3e99c8f">
 					<Documentation>The local placement for _IfcBridgePart_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_ or _IfcLinearPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ or _IfcLinearPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcBridge_, or of type _IfcBridgePart_ (e.g. to position a bridge part relative to a bridge part complex, or a partial bridge part to a bridge part).
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
+\* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ or _IfcLinearPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcBridge_, or of type _IfcBridgePart_ (e.g. to position a bridge part relative to a bridge part complex, or a partial bridge part to a bridge part).
+\* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Geometry" UniqueId="21c8a293-0cbd-4070-a0ab-55fe0f8e5804">
@@ -1550,7 +1550,7 @@ Elements can also be referenced in an _IfcBridgePart_, for example, if they span
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Container" UniqueId="1b10e0cf-9b2a-4b99-9377-aa6ded511e32">
-					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcBuilding_ (like a curtain wall spanning several stories), they are associated with the _IfcBuilding_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBuilding_ references them by its inverse relationship: &gt; *  _IfcBuilding.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
+					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcBuilding_ (like a curtain wall spanning several stories), they are associated with the _IfcBuilding_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBuilding_ references them by its inverse relationship: &gt; \*  _IfcBuilding.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 					<Items>
 						<DocTemplateItem UniqueId="382c1d9b-aad7-4cde-92dd-d29e983f7b77">
@@ -1682,8 +1682,8 @@ Elements can also be referenced in an _IfcBridgePart_, for example, if they span
 				<DocTemplateUsage Name="Placement" UniqueId="1KBwcAmPj6d9zpZqXq5gnO">
 					<Documentation>The local placement for _IfcBuilding_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcSite_, or of type _IfcBuilding_ (e.g. to position a building relative to a building complex, or a building section to a building). 
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
+\* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcSite_, or of type _IfcBuilding_ (e.g. to position a building relative to a building complex, or a building section to a building). 
+\* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="FootPrint GeomSet Geometry" UniqueId="7c219577-fe60-4218-bc2e-790c653387f9">
@@ -1826,8 +1826,8 @@ Material information can also be given at the _IfcBuildingElementProxyType_, def
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="3QKQoZ1AX44veUMCeGu3_3">
 					<Documentation>The _IfcBuildingElementProxy_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.</Documentation>
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 					<Items>
 						<DocTemplateItem UniqueId="b25de08a-a60b-4982-a4af-5d4c371c02ea" RuleParameters="RelatingStructure=IfcBuildingStorey;">
@@ -1888,7 +1888,7 @@ _IfcBuildingStorey_ needs to have a different and higher
 				<DocTemplateUsage Name="Spatial Container" UniqueId="43072948-3a70-47ef-9885-23638400251e">
 					<Documentation>If there are building elements and/or other elements directly related to the _IfcBuildingStorey_ (like most building elements, such as walls, columns, etc.), they are associated with the _IfcBuildingStorey_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBuildingStorey_ references them by its inverse relationship:
 
-* _IfcBuildingStorey.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.
+\* _IfcBuildingStorey.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.
 
 Elements can also be referenced in an _IfcBuildingStorey_, for example, if they span through several storeys. This is expressed by using the objectified relationship _IfcRelReferencedInSpatialStructure_. Systems, such as building service or electrical distribution systems, zonal systems, or structural analysis systems, relate to _IfcBuildingStorey_ by using the objectified relationship _IfcRelServicesBuildings_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
@@ -1924,8 +1924,8 @@ Elements can also be referenced in an _IfcBuildingStorey_, for example, if they 
 				<DocTemplateUsage Name="Placement" UniqueId="28JUI55UPC6u6bKhILDCrJ">
 					<Documentation>The local placement for _IfcBuildingStorey_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcBuilding_, or of type _IfcBuildingStorey_ (e.g. to position a building storey relative to a building storey complex, or a partial building storey to a building storey).
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
+\* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcBuilding_, or of type _IfcBuildingStorey_ (e.g. to position a building storey relative to a building storey complex, or a partial building storey to a building storey).
+\* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="FootPrint GeomSet Geometry" UniqueId="3a7d8b5a-2c60-41a2-9b5f-2d47186b577b">
@@ -2632,8 +2632,8 @@ Elements can also be referenced in an _IfcBuildingStorey_, for example, if they 
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="380a3295-e342-4765-9602-e9fb37aaa1a5">
 					<Documentation>The _IfcChimney_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.</Documentation>
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 					<Items>
 						<DocTemplateItem UniqueId="f4cf28e9-7d3c-4da0-af9e-13d2dec8088e" RuleParameters="RelatingStructure=IfcBuildingStorey;">
@@ -3024,8 +3024,8 @@ Elements can also be referenced in an _IfcBuildingStorey_, for example, if they 
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="2Ft8PMUHnCvwQnbihzv4Lx">
 					<Documentation>The _IfcColumn_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.</Documentation>
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 					<Items>
 						<DocTemplateItem UniqueId="9ae8a213-6483-4dca-9f73-e9baa43b361c" RuleParameters="RelatingStructure=IfcBuildingStorey;">
@@ -3053,9 +3053,9 @@ Elements can also be referenced in an _IfcBuildingStorey_, for example, if they 
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="a1f9f2e4-92ab-4e97-b043-1f4c3191cd40">
 					<Documentation>The following additional constraints apply to the &apos;SweptSolid&apos; representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
-* **Profile**: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_) 
-* **Extrusion**: All extrusion directions shall be supported
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
+\* \*\*Profile\*\*: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_) 
+\* \*\*Extrusion\*\*: All extrusion directions shall be supported
 
 Figure 1 illustrates a &apos;SweptSolid&apos; geometric representation. There are no restrictions or conventions on how to use the local placement (black), solid of extrusion placement (red) and profile placement (green).
 
@@ -3069,19 +3069,19 @@ Figure 2 illustrates use of a special profile type (here _IfcIShapeProfileDef_) 
 				<DocTemplateUsage Name="Body AdvancedSweptSolid Geometry" UniqueId="88647bf7-f385-4707-ada1-1cdbecfec63e">
 					<Documentation>The following additional constraints apply to the &apos;AdvancedSweptSolid&apos; representation type:
 
-* **Solid**: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
+\* \*\*Solid\*\*: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
 &gt;&gt; NOTE&amp;nbsp; View definitions and implementer agreements can further constrain the allowed swept solid types. 
-* **Profile**: see &apos;SweptSolid&apos; geometric representation
-* **Extrusion**: not applicable</Documentation>
+\* \*\*Profile\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Extrusion\*\*: not applicable</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSweptSolid_Geometry_1KP7XTvT5FTPxCRBEI571U" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="2bf0d296-4003-4b1d-9d2a-ad9495327b90">
 					<Documentation>The following constraints apply to the &apos;Clipping&apos; representation:
 
-* **Solid**: see &apos;SweptSolid&apos; geometric representation
-* **Profile**: see &apos;SweptSolid&apos; geometric representation
-* **Extrusion**: see &apos;SweptSolid&apos; geometric representation
-* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_.
+\* \*\*Solid\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Profile\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Extrusion\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_.
 
 Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of _IfcBooleanClippingResult_ between an _IfcExtrudedAreaSolid_ and an _IfcHalfSpaceSolid_ to create a clipped body.
 
@@ -3116,7 +3116,7 @@ Figure 2 illustrates cardinal point alignment.
 
 &gt; NOTE  It has to be guaranteed that the use of _IfcCardinalPointEnum_ is consistent to the placement of the extrusion body provided by _IfcExtrudedAreaSolid.Position_
 
-&gt; NOTE  The cardinal points **7** (top left), and **6** (mid-depth right) are assigned according to the definition at _IfcCardinalPointReference_
+&gt; NOTE  The cardinal points \*\*7\*\* (top left), and \*\*6\*\* (mid-depth right) are assigned according to the definition at _IfcCardinalPointReference_
 
 ![&quot;Cardinal point usage&quot;](../../figures/ifccolumnstandardcase_cardinalpoint.png &quot;Figure 2 &amp;mdash; Column cardinal points&quot;)
 
@@ -3128,15 +3128,15 @@ Figure 3 illustrates assignment of a composite profile by using _IfcCompositePro
 				<DocTemplateUsage Name="Product Placement" UniqueId="faee9ed5-99e8-46a8-8200-6cffff73e6f8">
 					<Documentation>The following restriction is imposed:
 
-* The local placement shall provide the location and directions for the standard column, the x/y plane is the plane for the start profile, and the z-axis is the extrusion axis for the column body (in case of rotation, the tangent direction).</Documentation>
+\* The local placement shall provide the location and directions for the standard column, the x/y plane is the plane for the start profile, and the z-axis is the extrusion axis for the column body (in case of rotation, the tangent direction).</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Axis 3D Geometry" UniqueId="92140617-d5b1-4aef-96e8-5c0eab296a14">
 					<Documentation>The following additional constraints apply to the &apos;Axis&apos; representation, if the &apos;Body&apos; shape representation has the _RepresentationType_ : &apos;SweptSolid&apos;:
 
-* _Axis_ 
-    * _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the z axis of the object coordinate system.
-    * _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcRevolvedAreaSolid_. The axis curve lies on the x/z plane of the object coordinate system, the tangent at the start is along the positive z-axis. 
+\* _Axis_ 
+    \* _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the z axis of the object coordinate system.
+    \* _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcRevolvedAreaSolid_. The axis curve lies on the x/z plane of the object coordinate system, the tangent at the start is along the positive z-axis. 
 
 &amp;nbsp;
 
@@ -3179,22 +3179,22 @@ length of the column.&lt;/blockquote&gt;
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="1a39bb06-a204-46d0-a7b5-49a58973aa4f">
 					<Documentation>The following additional constraints apply to the &apos;SweptSolid&apos; representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
-* **Profile**: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
-* **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
-* **Extrusion**: perpendicular to the profile direction. The _IfcExtrudedAreaSolid.ExtrudedDirection_ shall be [0.,0.,1.].
-* **Orientation**: The y-axis of the profile, as determined by _IfcSweptAreaSolid.Position.P[2]_ shall point to the Y-Axis. It indicates the &quot;role&quot; of the column, a role=0&amp;deg; means y-axis of profile = Y-axis of reference coordinate system.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
+\* \*\*Profile\*\*: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
+\* \*\*Profile Position\*\* : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
+\* \*\*Extrusion\*\*: perpendicular to the profile direction. The _IfcExtrudedAreaSolid.ExtrudedDirection_ shall be [0.,0.,1.].
+\* \*\*Orientation\*\*: The y-axis of the profile, as determined by _IfcSweptAreaSolid.Position.P[2]_ shall point to the Y-Axis. It indicates the &quot;role&quot; of the column, a role=0&amp;deg; means y-axis of profile = Y-axis of reference coordinate system.
 
-Figure 1 illustrates a standard geometric representation with cardinal point applied as **5** (mid-depth centre).
+Figure 1 illustrates a standard geometric representation with cardinal point applied as \*\*5\*\* (mid-depth centre).
 
 The following interpretation of dimension parameter applies for rectangular columns:
 
-* _IfcRectangleProfileDef.YDim_ interpreted as column width
-* _IfcRectangleProfileDef.XDim_ interpreted as column depth
+\* _IfcRectangleProfileDef.YDim_ interpreted as column width
+\* _IfcRectangleProfileDef.XDim_ interpreted as column depth
 
 The following interpretation of dimension parameter applies for circular columns:
 
-* _IfcCircleProfileDef.Radius_ interpreted as column radius.
+\* _IfcCircleProfileDef.Radius_ interpreted as column radius.
 
 ![&quot;standard column&quot;](../../figures/ifccolumnstandardcase_sweptsolid-01.png &quot;Figure 1 &amp;mdash; Column body extrusion&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_Geometry_3BV1ZwpuDDiRuRm1EwJjPo" />
@@ -3202,24 +3202,24 @@ The following interpretation of dimension parameter applies for circular columns
 				<DocTemplateUsage Name="Body AdvancedSweptSolid Geometry" UniqueId="8b261a0a-3d31-49d4-a214-8e672ec7d965">
 					<Documentation>The following additional constraints apply to the &apos;AdvancedSweptSolid&apos; representation type:
 
-* **Solid**: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
+\* \*\*Solid\*\*: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
 &gt;&gt; NOTE&amp;nbsp; View definitions and implementer agreement can further constrain the allowed swept solid types. 
-* **Profile**: see &apos;SweptSolid&apos; geometric representation
-* **Profile Position** : see &apos;SweptSolid&apos; geometric representation
-* **Extrusion**: not applicable</Documentation>
+\* \*\*Profile\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Profile Position\*\* : see &apos;SweptSolid&apos; geometric representation
+\* \*\*Extrusion\*\*: not applicable</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSweptSolid_Geometry_1KP7XTvT5FTPxCRBEI571U" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="d3f57034-f244-446f-ab05-cb94c52faea1">
 					<Documentation>The following constraints apply to the &apos;Clipping&apos; representation:
 
-* **Solid**: see &apos;SweptSolid&apos; geometric representation
-* **Profile**: see &apos;SweptSolid&apos; geometric representation
-* **Profile Position** : see &apos;SweptSolid&apos; geometric representation
-* **Extrusion**: see &apos;SweptSolid&apos; geometric representation
-* **Orientation**: see &apos;SweptSolid&apos; geometric representation
-* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
+\* \*\*Solid\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Profile\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Profile Position\*\* : see &apos;SweptSolid&apos; geometric representation
+\* \*\*Extrusion\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Orientation\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
 
-Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of _IfcBooleanClippingResult_ between an _IfcExtrudedAreaSolid_ and an _IfcHalfSpaceSolid_ to create a clipped body, with cardinal point applied as **2** (bottom centre).
+Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of _IfcBooleanClippingResult_ between an _IfcExtrudedAreaSolid_ and an _IfcHalfSpaceSolid_ to create a clipped body, with cardinal point applied as \*\*2\*\* (bottom centre).
 
 ![&quot;clipped column&quot;](../../figures/ifccolumnstandardcase_clipping-01.png &quot;Figure 1 &amp;mdash; Column body clipping&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Clipping_Geometry_0isyBrcmn3wfqgdNBG57u0" />
@@ -4071,7 +4071,7 @@ A common scenario is two nesting levels where the first-level resources have no 
 
 There is always a summary cost item as the root item of the tree representing the cost item nesting. Subsequent instances of _IfcCostItem_ are assigned to the summary cost item using _IfcRelNests_. The summary cost item itself is assigned to _IfcCostSchedule_ through the _IfcRelAssignsToControl_ relationship.
 
-Figure 1 illustrates a cost item composition used for a cost schedule. Each line item has a quantity and separate unit costs where _IfcCostValue.CostType_ indicates the category of cost. The summary item has a hierarchy of costs calculated according to _IfcAppliedValueRelationship.ArithmeticOperator_, where _IfcCostValue.CostType_ identifies the category to be totalled. The Tax component has _IfcCostValue.CostType_ set to &apos;Material&apos; which indicates it is the sum of all nested values of the &apos;Material&apos; category ($3 x 3000 + $118 x 100 = $20800). The Subtotal component has _IfcCostValue.CostType_ set to an asterisk (&apos;\*&apos;) which indicates it is the sum of all nested values of all categories.
+Figure 1 illustrates a cost item composition used for a cost schedule. Each line item has a quantity and separate unit costs where _IfcCostValue.CostType_ indicates the category of cost. The summary item has a hierarchy of costs calculated according to _IfcAppliedValueRelationship.ArithmeticOperator_, where _IfcCostValue.CostType_ identifies the category to be totalled. The Tax component has _IfcCostValue.CostType_ set to &apos;Material&apos; which indicates it is the sum of all nested values of the &apos;Material&apos; category ($3 x 3000 + $118 x 100 = $20800). The Subtotal component has _IfcCostValue.CostType_ set to an asterisk (&apos;\\*&apos;) which indicates it is the sum of all nested values of all categories.
 
 ![&quot;cost item&quot;](../../figures/ifccostitem-composition.png &quot;Figure 1 &amp;mdash; Cost composition&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Nesting_0uoeU8NaT178AKrM_UcbQH" />
@@ -4120,17 +4120,17 @@ Figure 1 illustrates cost item assignment derived from building elements. The _I
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcCostSchedule" />
 			<Concepts>
 				<DocTemplateUsage Name="Approval" UniqueId="3ml9$cHGv9jvkcfDN03WjO">
-					<Documentation>Approvals may be associated to indicate the status of acceptance or rejection using the [IfcRelAssociatesApproval](../../ifccontrolextension/lexical/ifcrelassociatesapproval.htm) relationship where _RelatingApproval_ refers to an [IfcApproval](../../ifcapprovalresource/lexical/ifcapproval.htm) and _RelatedObjects_ contains the **IfcCostSchedule**. Approvals may be split into sub-approvals using [IfcApprovalRelationship](../../ifcapprovalresource/lexical/ifcapprovalrelationship.htm) to track approval status separately for each party where _RelatingApproval_ refers to the higher-level approval and _RelatedApprovals_ contains one or more lower-level approvals. The hierarchy of approvals implies sequencing such that a higher-level approval is not executed until all of its lower-level approvals have been accepted.</Documentation>
+					<Documentation>Approvals may be associated to indicate the status of acceptance or rejection using the [IfcRelAssociatesApproval](../../ifccontrolextension/lexical/ifcrelassociatesapproval.htm) relationship where _RelatingApproval_ refers to an [IfcApproval](../../ifcapprovalresource/lexical/ifcapproval.htm) and _RelatedObjects_ contains the \*\*IfcCostSchedule\*\*. Approvals may be split into sub-approvals using [IfcApprovalRelationship](../../ifcapprovalresource/lexical/ifcapprovalrelationship.htm) to track approval status separately for each party where _RelatingApproval_ refers to the higher-level approval and _RelatedApprovals_ contains one or more lower-level approvals. The hierarchy of approvals implies sequencing such that a higher-level approval is not executed until all of its lower-level approvals have been accepted.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Approval_Association_1ILXQGe50dQe7saXJ0YIU" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Control Assignment" UniqueId="12em3NEif0meUYnAe0VKjk">
-					<Documentation>The **IfcCostSchedule** may be assigned to the following entities using relationships as indicated:
+					<Documentation>The \*\*IfcCostSchedule\*\* may be assigned to the following entities using relationships as indicated:
 
-* [IfcActor](../../ifckernel/lexical/ifcactor.htm) ([IfcRelAssignsToActor](../../ifckernel/lexical/ifcrelassignstoactor.htm)): Persons and organizations involved in the preparation, submittal, and as target users.
+\* [IfcActor](../../ifckernel/lexical/ifcactor.htm) ([IfcRelAssignsToActor](../../ifckernel/lexical/ifcrelassignstoactor.htm)): Persons and organizations involved in the preparation, submittal, and as target users.
 
-The **IfcCostSchedule** may have assignments of its own using the [IfcRelAssignsToControl](../../ifckernel/lexical/ifcrelassignstocontrol.htm) relationship where _RelatingControl_ refers to the **IfcCostSchedule** and _RelatedObjects_ contains one or more objects of the following types:
+The \*\*IfcCostSchedule\*\* may have assignments of its own using the [IfcRelAssignsToControl](../../ifckernel/lexical/ifcrelassignstocontrol.htm) relationship where _RelatingControl_ refers to the \*\*IfcCostSchedule\*\* and _RelatedObjects_ contains one or more objects of the following types:
 
-* [IfcCostItem](../../ifcsharedmgmtelements/lexical/ifccostitem.htm): Indicates costs published within this cost schedule, typically a single root cost item forming a hierarchy of nested cost items.</Documentation>
+\* [IfcCostItem](../../ifcsharedmgmtelements/lexical/ifccostitem.htm): Indicates costs published within this cost schedule, typically a single root cost item forming a hierarchy of nested cost items.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Control_Assignment_21FdF_La56IAQ0Y8VFGrdn" />
 				</DocTemplateUsage>
 			</Concepts>
@@ -4181,7 +4181,7 @@ The **IfcCostSchedule** may have assignments of its own using the [IfcRelAssigns
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="32JzPSCN92ZwuW1uXh6Uok">
 					<Documentation>The _IfcCovering_ has a containment relationship within the hierarchical spatial structure.
 
-* The _IfcCovering_ is places within the project spatial hierarchy using the objectified relationship _IfcRelContainedInSpatialStructure_, referring to it by its inverse attribute _SELF\IfcElement.ContainedInStructure_. Subtypes of _IfcSpatialStructureElement_ are valid spatial containers, with _IfcSpace_ being the default container.</Documentation>
+\* The _IfcCovering_ is places within the project spatial hierarchy using the objectified relationship _IfcRelContainedInSpatialStructure_, referring to it by its inverse attribute _SELF\IfcElement.ContainedInStructure_. Subtypes of _IfcSpatialStructureElement_ are valid spatial containers, with _IfcSpace_ being the default container.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 					<Items>
 						<DocTemplateItem UniqueId="2a2296c1-866e-4658-994a-6664f50a9fc4" RuleParameters="RelatingStructure=IfcSpace;" />
@@ -4214,8 +4214,8 @@ The **IfcCostSchedule** may have assignments of its own using the [IfcRelAssigns
 				<DocTemplateUsage Name="Surface Geometry" UniqueId="3fuqys6dHAvAfPf22C$SvZ">
 					<Documentation>The following additional constraints apply to the &apos;GeometricSet&apos; representation of _IfcCovering_:
 
-* for planar base surfaces - bounded surface representation
-* for cylindrical base surfaces - swept surface representation
+\* for planar base surfaces - bounded surface representation
+\* for cylindrical base surfaces - swept surface representation
 
 &amp;nbsp;
 
@@ -4284,8 +4284,8 @@ cylindrical&lt;/p&gt;
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="57fa00e6-30ca-4650-8686-9f8fc8fbb90b">
 					<Documentation>The following additional constraints apply to the &apos;SweptSolid&apos; representation of _IfcCovering_:
 
-* for planar base surfaces - swept area representation
-* for cylindrical base surfaces - swept area representation
+\* for planar base surfaces - swept area representation
+\* for cylindrical base surfaces - swept area representation
 
 &amp;nbsp;
 
@@ -4448,13 +4448,13 @@ parameter of the &lt;em&gt;IfcSurfaceOfLinearExtrusion&lt;/em&gt;.&lt;/li&gt;
 				<DocTemplateUsage Name="Placement" UniqueId="2WwkHYOKDFyxaH_e527kbi">
 					<Documentation>The following restriction may be imposed by view definitions or implementer agreements:
 
-* If the _IfcCurtainWall_ establishes an aggregate, then all contained elements shall be placed relative to the _IfcCurtainWall.ObjectPlacement_.</Documentation>
+\* If the _IfcCurtainWall_ establishes an aggregate, then all contained elements shall be placed relative to the _IfcCurtainWall.ObjectPlacement_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Axis 2D Geometry" UniqueId="05ce60f3-e203-4c86-9eb3-ae9dba04e770">
 					<Documentation>The following additional constraints apply to the &apos;Axis&apos; representation:
 
-* **Geometry** : _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of type _IfcLine_ or _IfcCircle_.</Documentation>
+\* \*\*Geometry\*\* : _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of type _IfcLine_ or _IfcCircle_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Axis_2D_Geometry_1u94Jere57Mf0qgUVrF6rb" />
 				</DocTemplateUsage>
 			</Concepts>
@@ -4629,12 +4629,12 @@ parameter of the &lt;em&gt;IfcSurfaceOfLinearExtrusion&lt;/em&gt;.&lt;/li&gt;
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Material Constituents" UniqueId="1luLmNWxr3QwOPrhkWu8i8">
-					<Documentation>The material of the **IfcDistributionChamberElement** is defined by [IfcMaterialConstituentSet](../../ifcmaterialresource/lexical/ifcmaterialconstituentset.htm) or as a fallback by [IfcMaterial](../../ifcmaterialresource/lexical/ifcmaterial.htm), and attached by the _RelatingMaterial_ attribute on the [IfcRelAssociatesMaterial](../../ifcproductextension/lexical/ifcrelassociatesmaterial.htm) relationship. It is accessible by the _HasAssociations_ inverse attribute. Material information can also be given at the [IfcDistributionChamberElementType](../../ifcsharedbldgserviceelements/lexical/ifcdistributionchamberelementtype.htm), defining the common attribute data for all occurrences of the same type. The following keywords for _IfcMaterialConstituentSet.MaterialConstituents[n].Name_ shall be used:
+					<Documentation>The material of the \*\*IfcDistributionChamberElement\*\* is defined by [IfcMaterialConstituentSet](../../ifcmaterialresource/lexical/ifcmaterialconstituentset.htm) or as a fallback by [IfcMaterial](../../ifcmaterialresource/lexical/ifcmaterial.htm), and attached by the _RelatingMaterial_ attribute on the [IfcRelAssociatesMaterial](../../ifcproductextension/lexical/ifcrelassociatesmaterial.htm) relationship. It is accessible by the _HasAssociations_ inverse attribute. Material information can also be given at the [IfcDistributionChamberElementType](../../ifcsharedbldgserviceelements/lexical/ifcdistributionchamberelementtype.htm), defining the common attribute data for all occurrences of the same type. The following keywords for _IfcMaterialConstituentSet.MaterialConstituents[n].Name_ shall be used:
 
-* **&apos;Base&apos;**: The material from which the base of the duct is constructed.
-* **&apos;Cover&apos;**: The material from which the access cover to the chamber is constructed.
-* **&apos;Fill&apos;**: The material that is used to fill the duct (where used).
-* **&apos;Wall&apos;**: The material from which the wall of the duct is constructed.</Documentation>
+\* \*\*&apos;Base&apos;\*\*: The material from which the base of the duct is constructed.
+\* \*\*&apos;Cover&apos;\*\*: The material from which the access cover to the chamber is constructed.
+\* \*\*&apos;Fill&apos;\*\*: The material that is used to fill the duct (where used).
+\* \*\*&apos;Wall&apos;\*\*: The material from which the wall of the duct is constructed.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Constituent_Set_3PRtzzvq9Dk9jT6ADgRVY4" />
 					<Items>
 						<DocTemplateItem UniqueId="4a350fdf-d81a-446f-87b0-25587a62a1bd" RuleParameters="Name=Base;">
@@ -4695,10 +4695,10 @@ Figure 1 illustrates classification usage.
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Product Assignment" UniqueId="3_sx4o6cr4oAB2$XzNdkgY">
-					<Documentation>The **IfcDistributionControlElement** may be assigned to the following entities using relationships as indicated:
+					<Documentation>The \*\*IfcDistributionControlElement\*\* may be assigned to the following entities using relationships as indicated:
 
-* [IfcDistributionSystem](../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm) ([IfcRelAssignsToGroup](../../ifckernel/lexical/ifcrelassignstogroup.htm)): Indicates a system containing interconnected devices, where control elements are typically part of a control system having _PredefinedType=CONTROL_.
-* [IfcPerformanceHistory](../../ifccontrolextension/lexical/ifcperformancehistory.htm) ([IfcRelAssignsToControl](../../ifckernel/lexical/ifcrelassignstocontrol.htm)): Indicates realtime or historical infomation captured for the device.</Documentation>
+\* [IfcDistributionSystem](../../ifcsharedbldgserviceelements/lexical/ifcdistributionsystem.htm) ([IfcRelAssignsToGroup](../../ifckernel/lexical/ifcrelassignstogroup.htm)): Indicates a system containing interconnected devices, where control elements are typically part of a control system having _PredefinedType=CONTROL_.
+\* [IfcPerformanceHistory](../../ifccontrolextension/lexical/ifcperformancehistory.htm) ([IfcRelAssignsToControl](../../ifckernel/lexical/ifcrelassignstocontrol.htm)): Indicates realtime or historical infomation captured for the device.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Assignment_3idFi4hVv8Q85erufbQaJ" />
 					<Items>
 						<DocTemplateItem UniqueId="0fb6595c-a479-46d5-8399-b7db1579245c" RuleParameters="Type=IfcTask;">
@@ -4998,10 +4998,10 @@ Ports may be further nested into sub-ports, for indicating specific connections 
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Port_Nesting_2w9EtqE92s8JFNQ8EuKWA" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Port Connectivity" UniqueId="1Yg7ZbCA55fxzx_FdZsykS">
-					<Documentation>**IfcDistributionPort** may be connected to other objects as follows using the indicated relationship:
+					<Documentation>\*\*IfcDistributionPort\*\* may be connected to other objects as follows using the indicated relationship:
 
-* **IfcDistributionPort** (_IfcRelConnectsPorts_) : Indicates a connection to another port having the same type and opposite flow direction. For port connections between elements, the _RelatingPort_ is set to a port having _FlowDirection=SOURCE_ and the _RelatedPort_ is set to a port having _FlowDirection=SINK_. For aggregation scenarios, ports on a device may be mapped to aggregated devices within, in which case ports on the outer device indicate a single _FlowDirection_ but have an additional connection internally to a port on an aggregated inner device. Refer to [IfcUnitaryEquipment](../../ifchvacdomain/lexical/ifcunitaryequipment.htm) for an example.
-* _IfcDistributionElement_ (through _IfcRelConnectsPortToElement_): For dynamic ports, indicates the containing element. 
+\* \*\*IfcDistributionPort\*\* (_IfcRelConnectsPorts_) : Indicates a connection to another port having the same type and opposite flow direction. For port connections between elements, the _RelatingPort_ is set to a port having _FlowDirection=SOURCE_ and the _RelatedPort_ is set to a port having _FlowDirection=SINK_. For aggregation scenarios, ports on a device may be mapped to aggregated devices within, in which case ports on the outer device indicate a single _FlowDirection_ but have an additional connection internally to a port on an aggregated inner device. Refer to [IfcUnitaryEquipment](../../ifchvacdomain/lexical/ifcunitaryequipment.htm) for an example.
+\* _IfcDistributionElement_ (through _IfcRelConnectsPortToElement_): For dynamic ports, indicates the containing element. 
 
 Figure 1 illustrates distribution port connectivity.
 
@@ -5009,10 +5009,10 @@ Figure 1 illustrates distribution port connectivity.
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Port_Connectivity_0MeHlCh55bRkmnAq5FQia" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Product Assignment" UniqueId="0$rMA_opv1Ex3XQqeiMAN4">
-					<Documentation>The **IfcDistributionPort** may be assigned to the following entities using relationships as indicated:
+					<Documentation>The \*\*IfcDistributionPort\*\* may be assigned to the following entities using relationships as indicated:
 
-* _IfcDistributionSystem_ (through _IfcRelAssignsToGroup_): Indicates a system containing interconnected devices.
-* _IfcPerformanceHistory_&lt; (through _IfcRelAssignsToControl_): Indicates real time or historical infomation captured for the device.</Documentation>
+\* _IfcDistributionSystem_ (through _IfcRelAssignsToGroup_): Indicates a system containing interconnected devices.
+\* _IfcPerformanceHistory_&lt; (through _IfcRelAssignsToControl_): Indicates real time or historical infomation captured for the device.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Assignment_3idFi4hVv8Q85erufbQaJ" />
 					<Items>
 						<DocTemplateItem UniqueId="595d226a-a45f-4cd8-a704-9e2183b79cd5" RuleParameters="Type=IfcDistributionSystem;">
@@ -5194,6 +5194,8 @@ pictures).&lt;/small&gt;&lt;/td&gt;
 
 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p class=&quot;figure&quot;&gt;Figure 1 &amp;mdash; Door swing&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
+
+
 &gt; NOTE&amp;nbsp; The _OverallWidth_ and _OverallHeight_ parameters are for informational purpose only.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Door_Attributes_0UNQGfptnF8uioKwsOuZYj" />
 				</DocTemplateUsage>
@@ -5312,8 +5314,8 @@ A &apos;Profile&apos; representation has to be provided if a parametric represen
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="3pexxz9uzAHfRoVJD4vQop">
 					<Documentation>The _IfcDoor_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.
 
 The _IfcDoor_ may also be connected to the _IfcOpeningElement_ in which it is placed as a filler. In this case, the spatial containment relationship shall be provided, see Figure 1.
 
@@ -5371,13 +5373,13 @@ structure by
 				<DocTemplateUsage Name="Profile 3D Geometry" UniqueId="0d95222e-eff2-45ae-ad74-8102ad593373">
 					<Documentation>The door profile is represented by a three-dimensional closed curve within a particular shape representation. The profile is used to apply the parameter of the parametric door representation. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _RepresentationIdentifier_ : &apos;Profile&apos;
-* _RepresentationType_ : &apos;Curve3D&apos; or &apos;GeometricCurveSet&apos;, in case of &apos;GeometricCurveSet&apos; only a single closed curve shall be contained in the set of _IfcShapeRepresentation.Items_.
+\* _RepresentationIdentifier_ : &apos;Profile&apos;
+\* _RepresentationType_ : &apos;Curve3D&apos; or &apos;GeometricCurveSet&apos;, in case of &apos;GeometricCurveSet&apos; only a single closed curve shall be contained in the set of _IfcShapeRepresentation.Items_.
 
 The following additional constraints apply to the &apos;Profile&apos; representation type:
 
-* **Curve**: being an _IfcPolyline_ defining a rectangle.
-* **Position**: The curve shall lie in the xz plane of the object placement coordinate (the y coordinate values of the _IfcCartesianPoint_&apos;s shall be 0.).
+\* \*\*Curve\*\*: being an _IfcPolyline_ defining a rectangle.
+\* \*\*Position\*\*: The curve shall lie in the xz plane of the object placement coordinate (the y coordinate values of the _IfcCartesianPoint_&apos;s shall be 0.).
 
 &amp;nbsp;
 
@@ -5447,8 +5449,8 @@ height. Distance to the centre line of the transom.&lt;/li&gt;
 				<DocTemplateUsage Name="Property Sets for Types" UniqueId="02e378e8-72f0-42b5-aeb8-4138e2899b7a">
 					<Documentation>Two subtypes of _IfcPreDefinedPropertySet_ are applicable to _IfcDoorType_:
 
-* _IfcDoorLiningProperties_ - a single instance to define the shape parameters of the door lining
-* _IfcDoorPanelProperties_ - one or several instances to define the shape parameters of the door panel(s)</Documentation>
+\* _IfcDoorLiningProperties_ - a single instance to define the shape parameters of the door lining
+\* _IfcDoorPanelProperties_ - one or several instances to define the shape parameters of the door panel(s)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Types_1Bup4gCPb9Bh84oi8YcfhU" />
 				</DocTemplateUsage>
 			</Concepts>
@@ -6507,8 +6509,8 @@ The same constraints, as given for &apos;SurfaceOrSolidModel&apos;, &apos;Surfac
 				<DocTemplateUsage Name="Aggregation" UniqueId="0oauVMQRP7TxukCU32hE2K">
 					<Documentation>The _IfcElementAssembly_ shall represent an aggregate, i.e. it should have other elements, being subtypes of _IfcElement_, as contained (sub)parts. The table above only represents a selection of subtypes of _IfcElement_ that are legitimate as parts in an _IfcElementAssembly_
 
-* The _IfcElementAssembly_ is an aggregate i.e. being composed by other elements and acting as an assembly using the objectified relationship _IfcRelAggregates_, refering to it by its inverse attribute _SELF\IfcObjectDefinition.IsDecomposedBy_. Components of an assembly are described by instances of subtypes of _IfcElement_.
-* In this case, the contained subtypes of _IfcElement_ shall not be additionally contained in the project spatial hierarchy, i.e. the inverse attribute _SELF\IfcElement.ContainedInStructure_ of those _IfcElement_&apos;s shall be _NIL._
+\* The _IfcElementAssembly_ is an aggregate i.e. being composed by other elements and acting as an assembly using the objectified relationship _IfcRelAggregates_, refering to it by its inverse attribute _SELF\IfcObjectDefinition.IsDecomposedBy_. Components of an assembly are described by instances of subtypes of _IfcElement_.
+\* In this case, the contained subtypes of _IfcElement_ shall not be additionally contained in the project spatial hierarchy, i.e. the inverse attribute _SELF\IfcElement.ContainedInStructure_ of those _IfcElement_&apos;s shall be _NIL._
 
 Figure 1 illustrates spatial containment and element aggregation relationships.
 
@@ -6590,6 +6592,8 @@ A single instance of a subtype of _IfcElementComponent_ can stand for several ac
  &lt;/tr&gt;
 
 &lt;/table&gt;
+
+
 
 Representation identifier and type are the same as in single mapped representation. The number of mapped items in the representation corresponds with the count of element components in the _IfcElementQuantity_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Mapped_Geometry_3iTV8STL4dxyWvZebtBcw" />
@@ -6894,7 +6898,7 @@ Representation identifier and type are the same as in single mapped representati
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Container" UniqueId="9b85fa17-e486-4cfc-b09b-1d4d38191d62">
-					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcFacility_ (like a curtain wall spanning several stories), they are associated with the _IfcFacility_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcFacility_ references them by its inverse relationship: &gt; *  _IfcFacility.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
+					<Documentation>&gt; NOTE&amp;nbsp; If there are building elements and/or other elements directly related to the _IfcFacility_ (like a curtain wall spanning several stories), they are associated with the _IfcFacility_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcFacility_ references them by its inverse relationship: &gt; \*  _IfcFacility.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 					<Items>
 						<DocTemplateItem UniqueId="7055aee8-a184-4b8f-bfbd-43d2b7ae0e0d" RuleParameters="Type=IfcElement;">
@@ -6912,8 +6916,8 @@ Representation identifier and type are the same as in single mapped representati
 					<Documentation>The placement for _IfcFacility_ is defined in its supertype _IfcProduct_. It is defined by either _IfcLocalPlacement_ or by _IfcLinearPlacement&gt;/em&gt; which define the local coordinate
  system  that is referenced by all geometric representations._
 
-* The _PlacementRelTo_ relationship of _IfcObjectPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcSite_, or of type _IfcFacility_ (e.g. to position a facility relative to a facility complex, or a facility section to a facility). 
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
+\* The _PlacementRelTo_ relationship of _IfcObjectPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcSite_, or of type _IfcFacility_ (e.g. to position a facility relative to a facility complex, or a facility section to a facility). 
+\* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Geometry" UniqueId="9ce8d558-e8ad-4425-ab88-938c5d8eaeab">
@@ -6946,7 +6950,7 @@ _IfcFacilityPart_ needs to have a different and higher
 				<DocTemplateUsage Name="Spatial Container" UniqueId="88798054-8a86-47b2-b217-080ec7064658">
 					<Documentation>If there are building elements and/or other elements directly related to the _IfcFacilityPart_ (like most building elements, such as walls, columns, etc.), they are associated with the _IfcFacilityPart_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcFacilityPart_ references them by its inverse relationship:
 
-* _IfcFacilityPart.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.
+\* _IfcFacilityPart.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.
 
 Elements can also be referenced in an _IfcFacilityPart_, for example, if they span through several storeys. This is expressed by using the objectified relationship _IfcRelReferencedInSpatialStructure_. Systems, such as building service or electrical distribution systems, zonal systems, or structural analysis systems, relate to _IfcFacilityPart_ by using the objectified relationship _IfcRelServicesBuildings_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
@@ -6954,8 +6958,8 @@ Elements can also be referenced in an _IfcFacilityPart_, for example, if they sp
 				<DocTemplateUsage Name="Placement" UniqueId="cb0db60b-ec38-4bb9-8b79-19aeb341241d">
 					<Documentation>The local placement for _IfcFacilityPart_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations or by _IfcLinearPlacement_ which measures along a linear positioning element.
 
-* The _PlacementRelTo_ attribute of _IfcObjectPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcFacility_, or of type _IfcFacilityPart_ (e.g. to position a facility relative to a facility part complex, or a partial facility part to a facility part).
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
+\* The _PlacementRelTo_ attribute of _IfcObjectPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcFacility_, or of type _IfcFacilityPart_ (e.g. to position a facility relative to a facility part complex, or a partial facility part to a facility part).
+\* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Geometry" UniqueId="199eefdc-9a23-4ba7-9ba5-e3bceb89874d">
@@ -7090,7 +7094,7 @@ Elements can also be referenced in an _IfcFacilityPart_, for example, if they sp
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="3i1UBcT1r8Vg0K54GylPWr">
 					<Documentation>As a subordinate part being fully dependent on the master element the _IfcFeatureElement_ shall have no independent containment relationship to the spatial structure.
 
-* The _SELF\IfcElement.ContainedInStructure_ relationship shall be NIL.</Documentation>
+\* The _SELF\IfcElement.ContainedInStructure_ relationship shall be NIL.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 				</DocTemplateUsage>
 			</Concepts>
@@ -7414,12 +7418,12 @@ Elements can also be referenced in an _IfcFacilityPart_, for example, if they sp
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcFlowSegment" />
 			<Concepts>
 				<DocTemplateUsage Name="Material Profile Set Usage" UniqueId="3cZjuxykH1ehU4isJCTUGj">
-					<Documentation>The material of the **IfcFlowSegment** is defined using one of the following entities:
+					<Documentation>The material of the \*\*IfcFlowSegment\*\* is defined using one of the following entities:
 
-* [IfcMaterialProfileSetUsage](../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm) : for parametric segments, this defines the cross section and alignment to the &apos;Axis&apos; representation, from which the &apos;Body&apos; representation may be generated.
-* [IfcMaterialProfileSet](../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm) : for non-parametric segments (having fixed length or path), this may define the cross section for analysis purposes, however the &apos;Body&apos; representation is independently generated.
-* [IfcMaterialConstituentSet](../../ifcmaterialresource/lexical/ifcmaterialconstituentset.htm) : for elements containing multiple materials where profiles are not applicable, this indicates materials at named parts. 
-*  [IfcMaterial](../../ifcmaterialresource/lexical/ifcmaterial.htm) : for elements comprised of a single material where profiles are not applicable, this indicates the material.
+\* [IfcMaterialProfileSetUsage](../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm) : for parametric segments, this defines the cross section and alignment to the &apos;Axis&apos; representation, from which the &apos;Body&apos; representation may be generated.
+\* [IfcMaterialProfileSet](../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm) : for non-parametric segments (having fixed length or path), this may define the cross section for analysis purposes, however the &apos;Body&apos; representation is independently generated.
+\* [IfcMaterialConstituentSet](../../ifcmaterialresource/lexical/ifcmaterialconstituentset.htm) : for elements containing multiple materials where profiles are not applicable, this indicates materials at named parts. 
+\*  [IfcMaterial](../../ifcmaterialresource/lexical/ifcmaterial.htm) : for elements comprised of a single material where profiles are not applicable, this indicates the material.
 
 The material is attached by the _RelatingMaterial_ attribute on the [IfcRelAssociatesMaterial](../../ifcproductextension/lexical/ifcrelassociatesmaterial.htm) relationship. It is accessible by the _HasAssociations_ inverse attribute. Material information can also be given at the [IfcFlowSegmentType](../../ifcsharedbldgserviceelements/lexical/ifcflowsegmenttype.htm), defining the common attribute data for all occurrences of the same type. Standard names and material types are defined at subtypes.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Profile_Set_Usage_1ge1GfjMPBDeTQCM88YfWn" />
@@ -7680,9 +7684,9 @@ The material is attached by the _RelatingMaterial_ attribute on the [IfcRelAssoc
 				<DocTemplateUsage Name="Classification Association" UniqueId="1zCYxu8j1FchtkQfr0DGbZ">
 					<Documentation>An _IfcGeographicElement_ might be further qualified by referencing a feature catalog as a particular classification. The feature classification is assigned using the inverse relationship _HasAssociations_ pointing to _IfcClassificationReference_. The attributes should have the following meaning:
 
-* Catalog : _IfcClassification.Name_ 
-* Identity: _IfcClassificationReference.Identification_ 
-* ElementName: _IfcClassificationReference.Name_</Documentation>
+\* Catalog : _IfcClassification.Name_ 
+\* Identity: _IfcClassificationReference.Identification_ 
+\* ElementName: _IfcClassificationReference.Name_</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Classification_Association_1A8aO9PNXCTQFYl_eRbxo" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="1_hnLG9BL8jg7ZidGjlB2E">
@@ -8564,8 +8568,8 @@ The material is attached by the _RelatingMaterial_ attribute on the [IfcRelAssoc
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="1hyDrr1tL7Ru_ThEeaDOhO">
 					<Documentation>The _IfcMember_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.</Documentation>
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 					<Items>
 						<DocTemplateItem UniqueId="c7376a1e-2033-4b2b-ba89-be2fab3b7cf8" RuleParameters="RelatingStructure=IfcBuildingStorey;">
@@ -8593,9 +8597,9 @@ The material is attached by the _RelatingMaterial_ attribute on the [IfcRelAssoc
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="3972b9bf-f315-47b6-bb97-7f71374fdcca">
 					<Documentation>The following additional constraints apply to the &apos;SweptSolid&apos; representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
-* **Profile**: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_) 
-* **Extrusion**: All extrusion directions shall be supported.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
+\* \*\*Profile\*\*: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_) 
+\* \*\*Extrusion\*\*: All extrusion directions shall be supported.
 
 Figure 1 illustrates a &apos;SweptSolid&apos; geometric representation. There are no restrictions or conventions on how to use the local placement (black), solid of extrusion placement (red) and profile placement (green).
 
@@ -8605,10 +8609,10 @@ Figure 1 illustrates a &apos;SweptSolid&apos; geometric representation. There ar
 				<DocTemplateUsage Name="Body AdvancedSweptSolid Geometry" UniqueId="cb70286f-77ba-4d7e-9587-bfe72edfa4ae">
 					<Documentation>The following additional constraints apply to the &apos;AdvancedSweptSolid&apos; representation type:
 
-* **Solid**: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
+\* \*\*Solid\*\*: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
 &gt;&gt; NOTE&amp;nbsp; View definitions and implementer agreements can further constrain the allowed swept solid types. 
-* **Profile**: see &apos;SweptSolid&apos; geometric representation
-* **Extrusion**: not applicable
+\* \*\*Profile\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Extrusion\*\*: not applicable
 
 _MappedRepresentation Representation Type_</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSweptSolid_Geometry_1KP7XTvT5FTPxCRBEI571U" />
@@ -8616,10 +8620,10 @@ _MappedRepresentation Representation Type_</Documentation>
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="1ea06ddb-bf9b-4644-bd58-f730cf2a4008">
 					<Documentation>The following constraints apply to the &apos;Clipping&apos; representation:
 
-* **Solid**: see &apos;SweptSolid&apos; geometric representation
-* **Profile**: see &apos;SweptSolid&apos; geometric representation
-* **Extrusion**: see &apos;SweptSolid&apos; geometric representation
-* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
+\* \*\*Solid\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Profile\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Extrusion\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
 
 Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of _IfcBooleanClippingResult_ between an _IfcExtrudedAreaSolid_ and an _IfcHalfSpaceSolid_ to create a clipped body.
 
@@ -8661,22 +8665,22 @@ Figure 2 illustrates assignment of a composite profile by using _IfcCompositePro
 
 The material of the _IfcMemberStandardCase_ is defined by _IfcMaterialProfileSetUsage_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship. Composite profile members can be represented by refering to several _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSet_ that is referenced from the _IfcMaterialProfileSetUsage_.
 
-Material information can also be given at the _IfcMemberType_, defining the common attribute data for all occurrences of the same type. It is then accessible by the inverse _IsDefinedBy_ relationship pointing to _IfcMemberType.HasAssociations_ and via _IfcRelAssociatesMaterial.RelatingMaterial_. See **Type Use
-Definition** for additional agreements for standard members.</Documentation>
+Material information can also be given at the _IfcMemberType_, defining the common attribute data for all occurrences of the same type. It is then accessible by the inverse _IsDefinedBy_ relationship pointing to _IfcMemberType.HasAssociations_ and via _IfcRelAssociatesMaterial.RelatingMaterial_. See \*\*Type Use
+Definition\*\* for additional agreements for standard members.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Profile_Set_Usage_1ge1GfjMPBDeTQCM88YfWn" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Product Placement" UniqueId="b6a21ed7-2ea7-4146-a83e-7a6320c89ca7">
 					<Documentation>The following restriction is imposed:
 
-* The local placement shall provide the location and directions for the standard member, the x/y plane is the plane for the start profile, and the z-axis is the extrusion axis for the member body (in case of rotation, the tangent direction).</Documentation>
+\* The local placement shall provide the location and directions for the standard member, the x/y plane is the plane for the start profile, and the z-axis is the extrusion axis for the member body (in case of rotation, the tangent direction).</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Axis 3D Geometry" UniqueId="546014f1-7a14-4700-89a0-de4866526669">
 					<Documentation>The following additional constraints apply to the &apos;Axis&apos; representation, if the &apos;Body&apos; shape representation has the _RepresentationType_ : &apos;SweptSolid&apos;:
 
-* _Axis_ 
-    * _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the z axis of the object coordinate system.
-    * _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcRevolvedAreaSolid_. The axis curve lies on the x/z plane of the object coordinate system, the tangent at the start is along the positive z-axis. 
+\* _Axis_ 
+    \* _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the z axis of the object coordinate system.
+    \* _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcRevolvedAreaSolid_. The axis curve lies on the x/z plane of the object coordinate system, the tangent at the start is along the positive z-axis. 
 
 &amp;nbsp;
 
@@ -8718,22 +8722,22 @@ Definition** for additional agreements for standard members.</Documentation>
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="fc6ffae2-2f64-4c72-91db-3cc23b404dcb">
 					<Documentation>The following additional constraints apply to the &apos;SweptSolid&apos; representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
-* **Profile**: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
-* **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
-* **Extrusion**: perpendicular to the profile direction.
-* **Orientation**: The y-axis of the profile, as determined by _IfcSweptAreaSolid.Position.P[2]_ shall point to the Z-Axis. It indicates the &quot;role&quot; of the column, a role=0&amp;deg; means y-axis of profile = Z-axis of reference coordinate system. In the exception of a vertical member, the y-axis shall point to the Y-axis.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
+\* \*\*Profile\*\*: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
+\* \*\*Profile Position\*\* : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
+\* \*\*Extrusion\*\*: perpendicular to the profile direction.
+\* \*\*Orientation\*\*: The y-axis of the profile, as determined by _IfcSweptAreaSolid.Position.P[2]_ shall point to the Z-Axis. It indicates the &quot;role&quot; of the column, a role=0&amp;deg; means y-axis of profile = Z-axis of reference coordinate system. In the exception of a vertical member, the y-axis shall point to the Y-axis.
 
-Figure 1 illustrates a &apos;SweptSolid&apos; geometric representation with cardinal point applied as **1** (bottom left).
+Figure 1 illustrates a &apos;SweptSolid&apos; geometric representation with cardinal point applied as \*\*1\*\* (bottom left).
 
 The following interpretation of dimension parameter applies for rectangular members:
 
-* &lt;small&gt;&lt;em&gt;IfcRectangleProfileDef.YDim&lt;/em&gt; interpreted as member width&lt;/small&gt;
-* &lt;small&gt;&lt;em&gt;IfcRectangleProfileDef.XDim&lt;/em&gt; interpreted as member depth&lt;/small&gt;
+\* &lt;small&gt;&lt;em&gt;IfcRectangleProfileDef.YDim&lt;/em&gt; interpreted as member width&lt;/small&gt;
+\* &lt;small&gt;&lt;em&gt;IfcRectangleProfileDef.XDim&lt;/em&gt; interpreted as member depth&lt;/small&gt;
 
 The following interpretation of dimension parameter applies for circular members:
 
-* &lt;small&gt;&lt;em&gt;IfcCircleProfileDef.Radius&lt;/em&gt; interpreted as beam radius.&lt;/small&gt;
+\* &lt;small&gt;&lt;em&gt;IfcCircleProfileDef.Radius&lt;/em&gt; interpreted as beam radius.&lt;/small&gt;
 
 ![&quot;standard member&quot;](../../figures/ifcbeamstandardcase_sweptsolid-01.png &quot;Figure 1 &amp;mdash; Member body extrusion&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_Geometry_3BV1ZwpuDDiRuRm1EwJjPo" />
@@ -8741,24 +8745,24 @@ The following interpretation of dimension parameter applies for circular members
 				<DocTemplateUsage Name="Body AdvancedSweptSolid Geometry" UniqueId="9002a781-c364-4efd-b5fa-030744d36b5c">
 					<Documentation>The following additional constraints apply to the &apos;AdvancedSweptSolid&apos; representation type:
 
-* **Solid**: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
+\* \*\*Solid\*\*: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
 &gt;&gt; NOTE&amp;nbsp; View definitions and implementer agreement can further constrain the allowed swept solid types. 
 &gt;&gt; NOTE&amp;nbsp; Using _IfcExtrudedAreaSolidTapered_, or _IfcRevolvedAreaSolidTapered_ requires the use of two _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSet_ assinged to the _IfcBeamStandardCase_ 
-* **Profile**: see &apos;SweptSolid&apos; geometric representation
-* **Profile Position** : see &apos;SweptSolid&apos; geometric representation
-* **Extrusion**: not applicable</Documentation>
+\* \*\*Profile\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Profile Position\*\* : see &apos;SweptSolid&apos; geometric representation
+\* \*\*Extrusion\*\*: not applicable</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSweptSolid_Geometry_1KP7XTvT5FTPxCRBEI571U" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="4d15430a-d638-4fd3-bc27-9b62ac85107d">
 					<Documentation>The following constraints apply to the advanced representation:
 
-* **Solid**: see &apos;SweptSolid&apos; geometric representation
-* **Profile**: see &apos;SweptSolid&apos; geometric representation
-* **Profile Position** : see &apos;SweptSolid&apos; geometric representation
-* **Extrusion**: see &apos;SweptSolid&apos; geometric representation
-* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
+\* \*\*Solid\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Profile\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Profile Position\*\* : see &apos;SweptSolid&apos; geometric representation
+\* \*\*Extrusion\*\*: see &apos;SweptSolid&apos; geometric representation
+\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
 
-Figure 1 illustrates an advanced geometric representation with use of _IfcBooleanClippingResult_ between an _IfcExtrudedAreaSolid_ and an _IfcHalfSpaceSolid_ to create a clipped body, with cardinal point applied as **4** (mid-depth left).
+Figure 1 illustrates an advanced geometric representation with use of _IfcBooleanClippingResult_ between an _IfcExtrudedAreaSolid_ and an _IfcHalfSpaceSolid_ to create a clipped body, with cardinal point applied as \*\*4\*\* (mid-depth left).
 
 ![&quot;clipped beam&quot;](../../figures/ifcbeamstandardcase_clipping-01.png &quot;Figure 1 &amp;mdash; Member body clipping&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Clipping_Geometry_0isyBrcmn3wfqgdNBG57u0" />
@@ -8958,7 +8962,7 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 				<DocTemplateUsage Name="Product Local Placement" UniqueId="33_bAIJa94_henvaHAuJxG">
 					<Documentation>The local placement for _IfcOpeningElement_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ should point to the local placement of the same element, which is voided by the opening, i.e. referred to by _VoidsElement.RelatingBuildingElement_.</Documentation>
+\* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ should point to the local placement of the same element, which is voided by the opening, i.e. referred to by _VoidsElement.RelatingBuildingElement_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Geometry" UniqueId="3rN$JhdKr3APmMEtzWa1eh">
@@ -8969,14 +8973,14 @@ Extrusion_
 
 The &apos;SweptSolid&apos; geometric representation of _IfcOpeningElement_, using horizontal extrusion direction (for walls), is defined using the swept area solid geometry. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _RepresentationIdentifier_ : &apos;Body&apos;
-* _RepresentationType_ : &apos;SweptSolid&apos;
+\* _RepresentationIdentifier_ : &apos;Body&apos;
+\* _RepresentationType_ : &apos;SweptSolid&apos;
 
 The following additional constraints apply to the swept solid representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_ is required, the set of _IfcShapeRepresentation.Items_ may include a single, or multiple, instances of _IfcExtrudedAreaSolid_.
-* **Profile**: _IfcRectangleProfileDef_, _IfcCircleProfileDef_ and _IfcArbitraryClosedProfileDef_ shall be supported.
-* **Extrusion**: The profile shall be extruded horizontally (perpendicular to the extrusion direction of the voided element such as for wall openings), or vertically (in the extrusion direction of the voided element such as for for floor openings). If multiple instances of _IfcExtrudedAreaSolid_ are used, the extrusion direction of each extrusion should be equal.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required, the set of _IfcShapeRepresentation.Items_ may include a single, or multiple, instances of _IfcExtrudedAreaSolid_.
+\* \*\*Profile\*\*: _IfcRectangleProfileDef_, _IfcCircleProfileDef_ and _IfcArbitraryClosedProfileDef_ shall be supported.
+\* \*\*Extrusion\*\*: The profile shall be extruded horizontally (perpendicular to the extrusion direction of the voided element such as for wall openings), or vertically (in the extrusion direction of the voided element such as for for floor openings). If multiple instances of _IfcExtrudedAreaSolid_ are used, the extrusion direction of each extrusion should be equal.
 
 &gt; NOTE&amp;nbsp; In case of non-parallel jambs, the shape representation shall be a &apos;SweptSolid&apos; representation with vertical extrusion.
 
@@ -8992,7 +8996,7 @@ Figure 2 illustrates an opening for a recess.
 
 &gt; NOTE&amp;nbsp; Rectangles are now defined centric, the placement location has to be set:
 
-* _IfcCartesianPoint_(XDim/2,YDim/2)
+\* _IfcCartesianPoint_(XDim/2,YDim/2)
 
 ![&quot;recess&quot;](../../figures/ifcopeningelement_recess-layout1.png &quot;Figure 2 &amp;mdash; Opening with recess extrusion&quot;)
 
@@ -9000,14 +9004,14 @@ _Swept Solid Representation with Vertical Extrusion_
 
 The &apos;SweptSolid&apos; geometric representation of _IfcOpeningElement_, using vertical extrusion direction (for walls), is defined using the swept area solid geometry, however the extrusion direction may be vertical, i.e. in case of a wall opening, the extrusion would be in the direction of the wall height. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _RepresentationIdentifier_ : &apos;Body&apos;
-* _RepresentationType_ : &apos;SweptSolid&apos;
+\* _RepresentationIdentifier_ : &apos;Body&apos;
+\* _RepresentationType_ : &apos;SweptSolid&apos;
 
 The following additional constraints apply to the swept solid representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_ is required, the set of _IfcShapeRepresentation.Items_ may include a single, or multiple, instances of _IfcExtrudedAreaSolid_.
-* **Profile**: _IfcRectangleProfileDef_, _IfcCircleProfileDef_ and _IfcArbitraryClosedProfileDef_ shall be supported.
-* **Extrusion**: The profile shall be extruded vertically, i.e. for wall openings along the extrusion direction of the voided element.  If multiple instances of _IfcExtrudedAreaSolid_ are used, the extrusion direction should be equal.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required, the set of _IfcShapeRepresentation.Items_ may include a single, or multiple, instances of _IfcExtrudedAreaSolid_.
+\* \*\*Profile\*\*: _IfcRectangleProfileDef_, _IfcCircleProfileDef_ and _IfcArbitraryClosedProfileDef_ shall be supported.
+\* \*\*Extrusion\*\*: The profile shall be extruded vertically, i.e. for wall openings along the extrusion direction of the voided element.  If multiple instances of _IfcExtrudedAreaSolid_ are used, the extrusion direction should be equal.
 
 Vertical extrusions shall be used when an opening or recess has a non rectangular foot print geometry that does not change along the height of the opening or recess.
 
@@ -9031,15 +9035,15 @@ Figure 3 shows a vertical extrusion with multiple extrusion bodies for the openi
 				<DocTemplateUsage Name="Placement" UniqueId="3nMQNXf1L8fRONjKxcp992">
 					<Documentation>The following constraint is mandatory for _IfcOpeningStandardCase_
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ should point to the local placement of the same element, which is voided by the opening, i.e. referred to by _VoidsElement.RelatingBuildingElement_.</Documentation>
+\* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ should point to the local placement of the same element, which is voided by the opening, i.e. referred to by _VoidsElement.RelatingBuildingElement_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Geometry" UniqueId="0_m1K1kAf4iguIPeZTHB8B">
 					<Documentation>The geometric representation of _IfcOpeningStandardCase_ is defined using the following multiple shape representations for its definition:
 
-* Body: A SweptSolid representation defining the 3D subtraction shape of the standard opening
+\* Body: A SweptSolid representation defining the 3D subtraction shape of the standard opening
 
-**Body Representation**
+\*\*Body Representation\*\*
 
 The body representation of _IfcOpeningStandardCase_ is represented using the representation type &apos;SweptSolid&apos;.
 
@@ -9048,19 +9052,19 @@ Extrusion_
 
 The standard geometric representation of _IfcOpeningStandardCase_ is defined using the &apos;SweptSolid&apos; representation. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used::
 
-* _RepresentationIdentifier_ : &apos;Body&apos;
-* _RepresentationType_ : &apos;SweptSolid&apos;
+\* _RepresentationIdentifier_ : &apos;Body&apos;
+\* _RepresentationType_ : &apos;SweptSolid&apos;
 
 The following additional constraints apply to the swept solid representation:
 
-* **Solid**: a single _IfcExtrudedAreaSolid_ is required
-* **Profile**: _IfcRectangleProfileDef_, _IfcCircleProfileDef_ and _IfcArbitraryClosedProfileDef_ shall be supported.
-* **Extrusion**: The profile shall be extruded horizontally (i.e. perpendicular to the extrusion direction of the voided element) for wall openings, or vertically (i.e. in the extrusion direction of the voided element), for slab openings.
+\* \*\*Solid\*\*: a single _IfcExtrudedAreaSolid_ is required
+\* \*\*Profile\*\*: _IfcRectangleProfileDef_, _IfcCircleProfileDef_ and _IfcArbitraryClosedProfileDef_ shall be supported.
+\* \*\*Extrusion\*\*: The profile shall be extruded horizontally (i.e. perpendicular to the extrusion direction of the voided element) for wall openings, or vertically (i.e. in the extrusion direction of the voided element), for slab openings.
 
 As shown in Figure 36, the orientation of the opening profile that is extruded for the opening body shall guarantee the following interpretation of dimension parameter for rectangular openings:
 
-* _IfcRectangleProfileDef.YDim_ interpreted as opening width
-* _IfcRectangleProfileDef.XDim_ interpreted as opening height
+\* _IfcRectangleProfileDef.YDim_ interpreted as opening width
+\* _IfcRectangleProfileDef.XDim_ interpreted as opening height
 
 ![&quot;standard opening&quot;](../../figures/ifcopeningstandardcase_wall-layout1.png &quot;Figure 1 &amp;mdash; Opening standard representation&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Geometry_34HhqMBUDBbxDFH4Qi2wt2" />
@@ -9251,11 +9255,11 @@ In addition to standard property sets defined within this specification, if the 
 				<DocTemplateUsage Name="Control Assignment" UniqueId="3nd$sD$En3COHwPNPmD8he">
 					<Documentation>Figure 1 illustrates assignment relationships as indicated:
 
-* [IfcActor](../../ifckernel/lexical/ifcactor.htm) ([IfcRelAssignsToActor](../../ifckernel/lexical/ifcrelassignstoactor.htm)): Organization issuing the permit such as a local government agency or security organization.
+\* [IfcActor](../../ifckernel/lexical/ifcactor.htm) ([IfcRelAssignsToActor](../../ifckernel/lexical/ifcrelassignstoactor.htm)): Organization issuing the permit such as a local government agency or security organization.
 
-The **IfcPermit** may have assignments of its own using the [IfcRelAssignsToControl](../../ifckernel/lexical/ifcrelassignstocontrol.htm) relationship where _RelatingControl_ refers to the **IfcPermit** and _RelatedObjects_ contains one or more objects of the following types:
+The \*\*IfcPermit\*\* may have assignments of its own using the [IfcRelAssignsToControl](../../ifckernel/lexical/ifcrelassignstocontrol.htm) relationship where _RelatingControl_ refers to the \*\*IfcPermit\*\* and _RelatedObjects_ contains one or more objects of the following types:
 
-* [IfcActor](../../ifckernel/lexical/ifcactor.htm): Organization(s) bound to the permit, typically a single contractor. 
+\* [IfcActor](../../ifckernel/lexical/ifcactor.htm): Organization(s) bound to the permit, typically a single contractor. 
 
 ![&quot;Assignment Use Definition&quot;](../../figures/ifcpermit-assignment.png &quot;Figure 1 &amp;mdash; Permit assignment&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Control_Assignment_21FdF_La56IAQ0Y8VFGrdn" />
@@ -9730,8 +9734,8 @@ The **IfcPermit** may have assignments of its own using the [IfcRelAssignsToCont
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="1B7$9Pmb161upnOOYM$Vcb">
 					<Documentation>The _IfcPlate_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.</Documentation>
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 					<Items>
 						<DocTemplateItem UniqueId="8563eb99-cd74-4d11-a6d6-6ec4d555bf10" RuleParameters="RelatingStructure=IfcBuildingStorey;">
@@ -9752,9 +9756,9 @@ The **IfcPermit** may have assignments of its own using the [IfcRelAssignsToCont
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="723555d9-81d4-44e0-b110-141797e9963e">
 					<Documentation>The following additional constraints apply to the &apos;SweptSolid&apos; representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_ is required,
-* **Profile**: _IfcArbitraryClosedProfileDef, IfcArbitraryProfileDefWithVoids, IfcRectangleProfileDef, IfcCircleProfileDef, IfcEllipseProfileDef_ shall be supported.
-* **Extrusion**: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.</Documentation>
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required,
+\* \*\*Profile\*\*: _IfcArbitraryClosedProfileDef, IfcArbitraryProfileDefWithVoids, IfcRectangleProfileDef, IfcCircleProfileDef, IfcEllipseProfileDef_ shall be supported.
+\* \*\*Extrusion\*\*: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_Geometry_3BV1ZwpuDDiRuRm1EwJjPo" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="a577ea40-6d39-4437-87c6-ac91929d44f6">
@@ -9795,14 +9799,16 @@ Figure 1 illustrates assignment of _IfcMaterialLayerSetUsage_ and _IfcMaterialLa
 
 &lt;/table&gt;
 
+
+
 As shown in Figure 106, the following conventions shall be met:
 
-* The reference coordinate system is the coordinate system established by the _IfcExtrudedAreaSolid.Position_.
-* The reference plane is the plane defined by the extruded profile of _IfcExtrudedAreaSolid.SweptSolid_. The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is given as a distance from this plane.
-* The _IfcMaterialLayerSetUsage.DirectionSense_ defines how the _IfcMaterialLayer_&apos;s are assigned to the reference plane. POSITIVE means in direction to the positive z-axis of the reference coordinate system.
-* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is the distance parallel to the reference plane and always perpendicular to the base (XY) plane of the reference coordinate system. This is independent of a potential non-perpendicular extrusion given by _IfcExtrudedAreaSolid.ExtrudedDirection_ &amp;lt;&amp;gt; 0.,0.,1. A positive value of _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ would then point into the positive z-axis of the reference coordinate system.
-* The _Thickness_ of each _IfcMaterialLayer_ shall be the parallel distance (measured perpendicular to the base plane). The _TotalThickness_ of the _IfcMaterialLayerSet_ is the sum of all layer thicknesses and in case of a perpendicular extrusion identical with _IfcExtrudedAreaSolid.Depth_
-* The _IfcMaterialLayerSetUsage.LayerSetDirection_ i always AXIS3.
+\* The reference coordinate system is the coordinate system established by the _IfcExtrudedAreaSolid.Position_.
+\* The reference plane is the plane defined by the extruded profile of _IfcExtrudedAreaSolid.SweptSolid_. The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is given as a distance from this plane.
+\* The _IfcMaterialLayerSetUsage.DirectionSense_ defines how the _IfcMaterialLayer_&apos;s are assigned to the reference plane. POSITIVE means in direction to the positive z-axis of the reference coordinate system.
+\* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is the distance parallel to the reference plane and always perpendicular to the base (XY) plane of the reference coordinate system. This is independent of a potential non-perpendicular extrusion given by _IfcExtrudedAreaSolid.ExtrudedDirection_ &amp;lt;&amp;gt; 0.,0.,1. A positive value of _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ would then point into the positive z-axis of the reference coordinate system.
+\* The _Thickness_ of each _IfcMaterialLayer_ shall be the parallel distance (measured perpendicular to the base plane). The _TotalThickness_ of the _IfcMaterialLayerSet_ is the sum of all layer thicknesses and in case of a perpendicular extrusion identical with _IfcExtrudedAreaSolid.Depth_
+\* The _IfcMaterialLayerSetUsage.LayerSetDirection_ i always AXIS3.
 
 ![&quot;plate material layer set&quot;](../../figures/ifcmateriallayersetusage_slab-01.png &quot;Figure 2 &amp;mdash; Plate material layers&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Layer_Set_Usage_1jNxXlFor9_vKe1tXLtSn7" />
@@ -9810,16 +9816,16 @@ As shown in Figure 106, the following conventions shall be met:
 				<DocTemplateUsage Name="Product Placement" UniqueId="d95d323a-6927-443f-b43e-b6decf804d51">
 					<Documentation>The following restriction is imposed:
 
-* The local placement shall provide the location and directions for the standard plate, the x/y plane is the plane for the profile, and the z-axis is the extrusion axis for the plate body.</Documentation>
+\* The local placement shall provide the location and directions for the standard plate, the x/y plane is the plane for the profile, and the z-axis is the extrusion axis for the plate body.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="90ca967a-0973-42af-9c29-002011484d1d">
 					<Documentation>The following additional constraints apply to the swept solid representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_ is required,
-* **Profile**: _IfcArbitraryClosedProfileDef, IfcRectangleProfileDef, IfcRoundedRectangleProfileDef, IfcCircleProfileDef, IfcEllipseProfileDef_ shall be supported.
-* **Extrusion**: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.
-* **Material**: The definition of the _IfcMaterialLayerSetUsage_, particularly of the _OffsetFromReferenceLine_ and the _ForLayerSet.TotalThickness_, has to be consistent to the &apos;SweptSolid&apos; representation.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required,
+\* \*\*Profile\*\*: _IfcArbitraryClosedProfileDef, IfcRectangleProfileDef, IfcRoundedRectangleProfileDef, IfcCircleProfileDef, IfcEllipseProfileDef_ shall be supported.
+\* \*\*Extrusion\*\*: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.
+\* \*\*Material\*\*: The definition of the _IfcMaterialLayerSetUsage_, particularly of the _OffsetFromReferenceLine_ and the _ForLayerSet.TotalThickness_, has to be consistent to the &apos;SweptSolid&apos; representation.
 
 &amp;nbsp;
 
@@ -9846,11 +9852,11 @@ As shown in Figure 106, the following conventions shall be met:
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="7a2d052c-d51e-4b15-9f74-ef6de89fa06c">
 					<Documentation>The following constraints apply to the &apos;Clipping&apos; representation:
 
-* **Solid**: see &apos;SweptSolid&apos; shape representation,
-* **Profile**:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
-* **Extrusion**:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
-* **Material**:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
-* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_.
+\* \*\*Solid\*\*: see &apos;SweptSolid&apos; shape representation,
+\* \*\*Profile\*\*:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
+\* \*\*Extrusion\*\*:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
+\* \*\*Material\*\*:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
+\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_.
 
 &amp;nbsp;
 
@@ -9899,21 +9905,21 @@ The shared material layer set definition is defined by assigning an _IfcMaterial
 				<DocTemplateUsage Name="Placement" UniqueId="0szo8QoCX4rP2L$9QDCd9j">
 					<Documentation>The local placement for _IfcGrid_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if given) to the local placement of the same _IfcSpatialStructureElement_, which is used in the _ContainedInStructure_ inverse attribute, or to a spatial structure element at a higher level, referenced by that. 
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
+\* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if given) to the local placement of the same _IfcSpatialStructureElement_, which is used in the _ContainedInStructure_ inverse attribute, or to a spatial structure element at a higher level, referenced by that. 
+\* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Footprint Geometry" UniqueId="0N565O$6v6x8yXn$04Pown">
 					<Documentation>The 2D geometric representation of _IfcGrid_ is defined using the &apos;GeometricCurveSet&apos; geometry. The following attribute values should be inserted
 
-*  _IfcShapeRepresentation.RepresentationIdentifier_ = &apos;FootPrint&apos;. 
-*  _IfcShapeRepresentation.RepresentationType_ = &apos;GeometricCurveSet&apos; . 
+\*  _IfcShapeRepresentation.RepresentationIdentifier_ = &apos;FootPrint&apos;. 
+\*  _IfcShapeRepresentation.RepresentationType_ = &apos;GeometricCurveSet&apos; . 
 
 The following constraints apply to the 2D representation:
 
-* The _IfcGeometricCurveSet_ shall be an (and the only) _Item_ of the _IfcShapeRepresentation_. It should contain an _IfcGeometricCurveSet_ containing subtypes of _IfcCurve_, each representing a grid axis. Applicable subtypes of _IfcCurve_ are: _IfcPolyline_, _IfcCircle_, _IfcTrimmedCurve_ (based on _BaseCurve_ referencing _IfcLine_ or _IfcCircle_), and _IfcOffsetCurve2D_. 
-* Each subtype of _IfcCurve_ may have a curve style assigned, using _IfcStyledItem_ referencing _IfcCurveStyle_. 
-* Optionally the grid axis labels may be added as _IfcTextLiteral_, and they may have text styles assigned, using _IfcStyledItem_ referencing _IfcTextStyle_. 
+\* The _IfcGeometricCurveSet_ shall be an (and the only) _Item_ of the _IfcShapeRepresentation_. It should contain an _IfcGeometricCurveSet_ containing subtypes of _IfcCurve_, each representing a grid axis. Applicable subtypes of _IfcCurve_ are: _IfcPolyline_, _IfcCircle_, _IfcTrimmedCurve_ (based on _BaseCurve_ referencing _IfcLine_ or _IfcCircle_), and _IfcOffsetCurve2D_. 
+\* Each subtype of _IfcCurve_ may have a curve style assigned, using _IfcStyledItem_ referencing _IfcCurveStyle_. 
+\* Optionally the grid axis labels may be added as _IfcTextLiteral_, and they may have text styles assigned, using _IfcStyledItem_ referencing _IfcTextStyle_. 
 
 &lt;table cellpadding=&quot;2&quot; cellspacing=&quot;2&quot;&gt;
       &lt;tbody&gt;
@@ -9947,6 +9953,8 @@ The following constraints apply to the 2D representation:
         &lt;/tr&gt;
       &lt;/tbody&gt;
     &lt;/table&gt;
+
+
 
 &amp;nbsp;
 
@@ -10206,8 +10214,8 @@ The following constraints are applied to using the relationshio _IfcRelAggregate
 
 &gt; NOTE&amp;nbsp; The anomaly to use the composition structure through _IfcRelAggregates_ for assigning the uppermost spatial container to _IfcProject_ is due to upward compatibility reasons with earlier releases of this standard.
 
-* _IfcProject_.Decomposes -- it shall be NIL, i.e. the _IfcProject_ shall be on top of the root of the spatial structure tree.
-* _IfcProject_.IsDecomposedBy -- referencing (_IfcSite_ || _IfcBuilding_ || _IfcSpatialZone_) by using _IfcRelAggregates_.RelatedObjects. The _IfcSite_, _IfcBuilding_, or _IfcSpatialZone_ being referenced shall be the root of the spatial structure.
+\* _IfcProject_.Decomposes -- it shall be NIL, i.e. the _IfcProject_ shall be on top of the root of the spatial structure tree.
+\* _IfcProject_.IsDecomposedBy -- referencing (_IfcSite_ || _IfcBuilding_ || _IfcSpatialZone_) by using _IfcRelAggregates_.RelatedObjects. The _IfcSite_, _IfcBuilding_, or _IfcSpatialZone_ being referenced shall be the root of the spatial structure.
 
 Figure 1 illustrates project relationships with spatial structures, elements, and element type libraries.
 
@@ -10243,28 +10251,28 @@ Figure 1 illustrates project relationships with spatial structures, elements, an
 				<DocTemplateUsage Name="Placement" UniqueId="3$Jtk1WkfCPu0Lzsy91jP7">
 					<Documentation>The local placement for _IfcOpeningRecess_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ should point to the local placement of the same element, to which the projection adds, i.e. referred to by _ProjectsElement.RelatingBuildingElement_.</Documentation>
+\* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ should point to the local placement of the same element, to which the projection adds, i.e. referred to by _ProjectsElement.RelatingBuildingElement_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Geometry" UniqueId="3xRBdaxtzCleU2Cbof2KA3">
 					<Documentation>The geometric representation of _IfcProjectionElement_ is defined using the swept area solid geometry. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _RepresentationIdentifier_ : &apos;Body&apos;
-* _RepresentationType_ : &apos;SweptSolid&apos;
+\* _RepresentationIdentifier_ : &apos;Body&apos;
+\* _RepresentationType_ : &apos;SweptSolid&apos;
 
 The following additional constraints apply to the swept solid representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_ is required.
-* **Profile**: _IfcRectangleProfileDef_, _IfcCircleProfileDef_ and _IfcArbitraryClosedProfileDef_ shall be supported.
-* **Extrusion**: The profile shall be extruded horizontally (that is, perpendicular to the extrusion direction of the modified element), such as for wall projections, or vertically (that is, in the extrusion direction of the projected element), such as for floor projections.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required.
+\* \*\*Profile\*\*: _IfcRectangleProfileDef_, _IfcCircleProfileDef_ and _IfcArbitraryClosedProfileDef_ shall be supported.
+\* \*\*Extrusion\*\*: The profile shall be extruded horizontally (that is, perpendicular to the extrusion direction of the modified element), such as for wall projections, or vertically (that is, in the extrusion direction of the projected element), such as for floor projections.
 
 As shown in Figure 1, the following interpretation of dimension parameter applies for rectangular projection:
 
-* _IfcRectangleProfileDef.YDim_ interpreted as projection width
-* _IfcRectangleProfileDef.XDim_ interpreted as projection height
-* _IfcExtrudedAreaSolid.Depth_ is interpreted as projection depth
+\* _IfcRectangleProfileDef.YDim_ interpreted as projection width
+\* _IfcRectangleProfileDef.XDim_ interpreted as projection height
+\* _IfcExtrudedAreaSolid.Depth_ is interpreted as projection depth
 
-&gt; NOTE&amp;nbsp; Rectangles are now defined centric, the placement location has to be set: &gt; * _IfcCartesianPoint_(XDim/2,YDim/2)
+&gt; NOTE&amp;nbsp; Rectangles are now defined centric, the placement location has to be set: &gt; \* _IfcCartesianPoint_(XDim/2,YDim/2)
 
 &gt; NOTE&amp;nbsp; The local placement directions for the _IfcProjectionElement_ are only given as an example, other directions are valid as well.
 
@@ -10272,8 +10280,8 @@ As shown in Figure 1, the following interpretation of dimension parameter applie
 
 The general b-rep geometric representation of _IfcProjectionElement_ is defined using the Brep geometry. The Brep representation allows for the representation of complex element shape. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _RepresentationIdentifier_ : &apos;Body&apos;
-* _RepresentationType_ : &apos;Brep&apos;</Documentation>
+\* _RepresentationIdentifier_ : &apos;Body&apos;
+\* _RepresentationType_ : &apos;Brep&apos;</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Geometry_34HhqMBUDBbxDFH4Qi2wt2" />
 					<Items>
 						<DocTemplateItem UniqueId="deb0c6ed-6801-42b1-8645-1340694f557d" RuleParameters="RepresentationType=SweptSolid;Geometry=IfcExtrudedAreaSolid;" />
@@ -10287,7 +10295,7 @@ The general b-rep geometric representation of _IfcProjectionElement_ is defined 
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcProjectOrder" />
 			<Concepts>
 				<DocTemplateUsage Name="Approval" UniqueId="0o1DiolFLEOOU0xXFd$RXd">
-					<Documentation>Approvals may be associated to indicate the status of acceptance or rejection using the [IfcRelAssociatesApproval](../../ifccontrolextension/lexical/ifcrelassociatesapproval.htm) relationship where _RelatingApproval_ refers to an [IfcApproval](../../ifcapprovalresource/lexical/ifcapproval.htm) and _RelatedObjects_ contains the **IfcProjectOrder**. Approvals may be split into sub-approvals using [IfcApprovalRelationship](../../ifcapprovalresource/lexical/ifcapprovalrelationship.htm) to track approval status separately for each party where _RelatingApproval_ refers to the higher-level approval and _RelatedApprovals_ contains one or more lower-level approvals. The hierarchy of approvals implies sequencing such that a higher-level approval is not executed until all of its lower-level approvals have been accepted.</Documentation>
+					<Documentation>Approvals may be associated to indicate the status of acceptance or rejection using the [IfcRelAssociatesApproval](../../ifccontrolextension/lexical/ifcrelassociatesapproval.htm) relationship where _RelatingApproval_ refers to an [IfcApproval](../../ifcapprovalresource/lexical/ifcapproval.htm) and _RelatedObjects_ contains the \*\*IfcProjectOrder\*\*. Approvals may be split into sub-approvals using [IfcApprovalRelationship](../../ifcapprovalresource/lexical/ifcapprovalrelationship.htm) to track approval status separately for each party where _RelatingApproval_ refers to the higher-level approval and _RelatedApprovals_ contains one or more lower-level approvals. The hierarchy of approvals implies sequencing such that a higher-level approval is not executed until all of its lower-level approvals have been accepted.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Approval_Association_1ILXQGe50dQe7saXJ0YIU" />
 				</DocTemplateUsage>
 				<DocTemplateUsage UniqueId="01MSk87K53kwbyVKIfXajx">
@@ -10301,7 +10309,7 @@ The general b-rep geometric representation of _IfcProjectionElement_ is defined 
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Aggregation" UniqueId="08gY1IarfCL8BkT86ya3eA">
-					<Documentation>As shown in Figure 160, an **IfcProjectOrder** may be aggregated into components.
+					<Documentation>As shown in Figure 160, an \*\*IfcProjectOrder\*\* may be aggregated into components.
 
 ![&quot;Composition Use Definition&quot;](../../figures/ifcprojectorder-composition.png &quot;Figure 1 &amp;mdash; Project order composition&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Aggregation_02xlp6icnF89nymmhdJhcf" />
@@ -10323,13 +10331,13 @@ The general b-rep geometric representation of _IfcProjectionElement_ is defined 
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Control Assignment" UniqueId="0I3pFn9IrASQLXqUBEO1mv">
-					<Documentation>Figure 1 illustrates **IfcProjectOrder** assignment relationships as indicated:
+					<Documentation>Figure 1 illustrates \*\*IfcProjectOrder\*\* assignment relationships as indicated:
 
-* _IfcActor_ (_IfcRelAssignsToActor_): Organization issuing the order such as an owner or contractor.
+\* _IfcActor_ (_IfcRelAssignsToActor_): Organization issuing the order such as an owner or contractor.
 
-The **IfcProjectOrder** may have assignments of its own using the _IfcRelAssignsToControl_ relationship where _RelatingControl_ refers to the **IfcProjectOrder** and _RelatedObjects_ contains one or more objects of the following types:
+The \*\*IfcProjectOrder\*\* may have assignments of its own using the _IfcRelAssignsToControl_ relationship where _RelatingControl_ refers to the \*\*IfcProjectOrder\*\* and _RelatedObjects_ contains one or more objects of the following types:
 
-* _IfcActor_: Organization(s) contracted to fulfill the order, typically a single contractor, subcontractor, or supplier. 
+\* _IfcActor_: Organization(s) contracted to fulfill the order, typically a single contractor, subcontractor, or supplier. 
 
 ![&quot;Assignment Use Definition&quot;](../../figures/ifcprojectorder-assignment.png &quot;Figure 1 &amp;mdash; Project order assignment&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Control_Assignment_21FdF_La56IAQ0Y8VFGrdn" />
@@ -10849,8 +10857,8 @@ The **IfcProjectOrder** may have assignments of its own using the _IfcRelAssigns
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="1rnO$E2vL4qBjv$T5zFixo">
 					<Documentation>The _IfcRailing_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.</Documentation>
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 					<Items>
 						<DocTemplateItem UniqueId="1bd84752-24e5-43f0-b7fe-ec3c55be570d" RuleParameters="RelatingStructure=IfcBuildingStorey;">
@@ -10990,8 +10998,8 @@ Material information can also be given at the _IfcRampType_, defining the common
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="58522b23-5a15-448d-88a0-3f19cae6c523">
 					<Documentation>The _IfcRamp_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.</Documentation>
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 					<Items>
 						<DocTemplateItem UniqueId="1f4a6345-68a5-40ed-bed4-201dac364104" RuleParameters="RelatingStructure=IfcBuildingStorey;">
@@ -11039,7 +11047,7 @@ Material information can also be given at the _IfcRampType_, defining the common
 				<DocTemplateUsage Name="Placement" UniqueId="10qEaxQn508hB28zjB$02j">
 					<Documentation>The following restriction may be imposed by view definitions or implementer agreements:
 
-* If the _IfcRamp_ establishes an aggregate, then all contained elements shall be placed relative to the _IfcRamp.ObjectPlacement_.</Documentation>
+\* If the _IfcRamp_ establishes an aggregate, then all contained elements shall be placed relative to the _IfcRamp.ObjectPlacement_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Axis 2D Geometry" UniqueId="72ed3085-7599-49df-ade7-cb88ecddee12">
@@ -11170,8 +11178,8 @@ Material information can also be given at the _IfcRampType_, defining the common
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="28gaOQF8n6CuRLsMdtTaY0">
 					<Documentation>The _IfcRampFlight_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.
 
 &gt; NOTE&amp;nbsp; Model view definitions or implementer agreements may force an _IfcRampFlight_ to be solely used as a part within an _IfcRamp_ container. In this case, no _Spatial containment_ shall be used.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
@@ -11192,9 +11200,9 @@ Material information can also be given at the _IfcRampType_, defining the common
 
 Figure 1 illustrates the axis representation which has the following constraints:
 
-* In case of straight flights the curve shall be a single item of type _IfcPolyline_.
-* In case of winding flights the curve shall be a single item of type _IfcCompositeCurve_.
-* In case of a curved flight or a spiral flight the curve shall be a single item of type _IfcTrimmedCurve_.
+\* In case of straight flights the curve shall be a single item of type _IfcPolyline_.
+\* In case of winding flights the curve shall be a single item of type _IfcCompositeCurve_.
+\* In case of a curved flight or a spiral flight the curve shall be a single item of type _IfcTrimmedCurve_.
 
 ![&quot;walking line&quot;](../../figures/ifcstairflight_01-layout1.gif &quot;Figure 1 &amp;mdash; Ramp flight axis&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Axis_2D_Geometry_1u94Jere57Mf0qgUVrF6rb" />
@@ -11204,9 +11212,9 @@ Figure 1 illustrates the axis representation which has the following constraints
 
 Figure 1 illustrates the footprint representation which has the following constraints:
 
-* In case of straight flights the curve set shall consist of a single item of type _IfcPolyline_.
-* In case of winding flights or curved flights the curve set shall consists of a single item of type _IfcCompositeCurve_.
-* In case of a spiral flight the curve set shall consists of a single item of type _IfcConic_ or _IfcPolyline_.
+\* In case of straight flights the curve set shall consist of a single item of type _IfcPolyline_.
+\* In case of winding flights or curved flights the curve set shall consists of a single item of type _IfcCompositeCurve_.
+\* In case of a spiral flight the curve set shall consists of a single item of type _IfcConic_ or _IfcPolyline_.
 
 ![&quot;boundary&quot;](../../figures/ifcstairflight_02-layout1.gif &quot;Figure 1 &amp;mdash; Ramp flight footprint&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="FootPrint_Geometry_1FLtVNQEb5dAeiHgtpw8qn" />
@@ -11214,9 +11222,9 @@ Figure 1 illustrates the footprint representation which has the following constr
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="c0ff08eb-dd3f-4797-a2ff-876bd8f8f7ff">
 					<Documentation>The following additional constraints apply to the &apos;SweptSolid&apos; representation type:
 
-* **Solid**: _IfcExtrudedAreaSolid_ is required,
-* **Profile**: _IfcRectangleProfileDef_ and _IfcArbitraryClosedProfileDef_ shall be supported.
-* **Extrusion**: The profile shall be extruded in any direction relative to the XY plane of the position coordinate system of the _IfcExtrudedAreaSolid_. Therefore non-perpendicular sweep operation has to be supported. It might be further constrained to be in the direction of the global z-axis in implementers agreements.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required,
+\* \*\*Profile\*\*: _IfcRectangleProfileDef_ and _IfcArbitraryClosedProfileDef_ shall be supported.
+\* \*\*Extrusion\*\*: The profile shall be extruded in any direction relative to the XY plane of the position coordinate system of the _IfcExtrudedAreaSolid_. Therefore non-perpendicular sweep operation has to be supported. It might be further constrained to be in the direction of the global z-axis in implementers agreements.
 
 Figure 1 illustrates the body representation.
 
@@ -11448,7 +11456,7 @@ Figure 1 illustrates roof placement, with an _IfcRoof_ defining the local placem
 				<DocTemplateUsage Name="Placement" UniqueId="1gXbSZPLzCE9AdtH_OjYjY">
 					<Documentation>The following restriction may be imposed by view definitions or implementer agreements:
 
-* If the _IfcRoof_ establishes an aggregate, then all contained elements shall be placed relative to the _IfcRoof.ObjectPlacement_.</Documentation>
+\* If the _IfcRoof_ establishes an aggregate, then all contained elements shall be placed relative to the _IfcRoof.ObjectPlacement_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 			</Concepts>
@@ -11699,8 +11707,8 @@ Figure 1 illustrates roof placement, with an _IfcRoof_ defining the local placem
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="500e570a-d61c-4893-a243-77800382e381">
 					<Documentation>The _IfcShadingDevice_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.</Documentation>
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 					<Items>
 						<DocTemplateItem UniqueId="0e1004cc-d9b2-4d3c-8e7d-d564a3cb2b16" RuleParameters="RelatingStructure=IfcBuildingStorey;">
@@ -11743,7 +11751,7 @@ Figure 1 illustrates roof placement, with an _IfcRoof_ defining the local placem
 				<DocTemplateUsage Name="Spatial Container" UniqueId="8c4c40f5-f6ce-4a82-9ac3-1632962f9a75">
 					<Documentation>If there are building elements and/or other elements directly related to the _IfcSite_ (like a fence, or a shear wall), they are associated with the _IfcSite_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcIfcSite_ references them by its inverse relationship:
 
-* _IfcSite.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_</Documentation>
+\* _IfcSite.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 				</DocTemplateUsage>
 				<DocTemplateUsage UniqueId="0meLZbemf0qhWVGqd3Uv6r">
@@ -11787,8 +11795,8 @@ Figure 1 illustrates roof placement, with an _IfcRoof_ defining the local placem
 				<DocTemplateUsage Name="Placement" UniqueId="0p9uoKL79EtuRQPNa9uWiO">
 					<Documentation>The local placement for _IfcSite_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point to the _IfcSpatialStructureElement_ of type &quot;_IfcSite_&quot;, if relative placement is used (e.g. to position a site relative a a site complex, or a site section to a site).
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system. If there is only one site object, then this is the default situation.</Documentation>
+\* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point to the _IfcSpatialStructureElement_ of type &quot;_IfcSite_&quot;, if relative placement is used (e.g. to position a site relative a a site complex, or a site section to a site).
+\* If the relative placement is not used, the absolute placement is defined within the world coordinate system. If there is only one site object, then this is the default situation.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="FootPrint GeomSet Geometry" UniqueId="4edce3c7-a773-463d-8d0c-2e720b16fe38">
@@ -11800,8 +11808,8 @@ Figure 1 illustrates roof placement, with an _IfcRoof_ defining the local placem
 
 The representation identifier and type of this geometric representation of _IfcSite_ is:
 
-* _IfcShapeRepresentation.RepresentationIdentifier_ = &apos;SurveyPoints&apos;
-* _IfcShapeRepresentation.RepresentationType_ = &apos;GeometricCurveSet&apos;
+\* _IfcShapeRepresentation.RepresentationIdentifier_ = &apos;SurveyPoints&apos;
+\* _IfcShapeRepresentation.RepresentationType_ = &apos;GeometricCurveSet&apos;
 
 Figure 1 shows a set of survey points, given as 3D Cartesian points within the object coordinate system of the site. Figure 2 shows the result after facetation.
 
@@ -11818,6 +11826,8 @@ The set of _IfcCartesianPoint_ is included in the set of _IfcGeometricCurveSet.E
 &lt;/tr&gt;
 &lt;/table&gt;
 
+
+
 Figure 3 shows A set of survey points, given as 3D Cartesian points, and a set of break points, given as a set of lines, connecting some survey points, within the object coordinate system of the site. Figure 4 shows the result after facetation.
 
 The set of _IfcCartesianPoint_ and the set of _IfcPolyline_ are included in the set of _IfcGeometricCurveSet.Elements_.
@@ -11833,6 +11843,8 @@ The set of _IfcCartesianPoint_ and the set of _IfcPolyline_ are included in the 
 &lt;/tr&gt;
 &lt;/table&gt;
 
+
+
 &gt; NOTE&amp;nbsp; The geometric representation of the site has been based on the ARM level description of the site_shape_representation given within the ISO 10303-225 &quot;Building Elements using explicit shape representation&quot;.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Survey_Points_Geometry_0gaFKlUM5DlOLWL6uj2tEx" />
 					<Items>
@@ -11844,8 +11856,8 @@ The set of _IfcCartesianPoint_ and the set of _IfcPolyline_ are included in the 
 
 The representation identifier and type of this representation of _IfcSite_ is:
 
-* _IfcShapeRepresentation.RepresentationIdentifier_ = &apos;Body&apos;
-* _IfcShapeRepresentation.RepresentationType_ = &apos;Brep&apos;, or &apos;SurfaceModel&apos;</Documentation>
+\* _IfcShapeRepresentation.RepresentationIdentifier_ = &apos;Body&apos;
+\* _IfcShapeRepresentation.RepresentationType_ = &apos;Brep&apos;, or &apos;SurfaceModel&apos;</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Geometry_34HhqMBUDBbxDFH4Qi2wt2" />
 					<Items>
 						<DocTemplateItem UniqueId="41464663-1983-4039-8d14-e89360b4a5c2" RuleParameters="RepresentationType=Brep;Geometry=IfcFacetedBrep;" />
@@ -12014,8 +12026,8 @@ The representation identifier and type of this representation of _IfcSite_ is:
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="153Tp2Pqj8KOCv84qsqWdE">
 					<Documentation>The _IfcSlab_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.</Documentation>
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 					<Items>
 						<DocTemplateItem UniqueId="0330d43a-9aaf-44c4-8901-7fdb9dcc11fc" RuleParameters="RelatingStructure=IfcBuildingStorey;">
@@ -12036,13 +12048,13 @@ The representation identifier and type of this representation of _IfcSite_ is:
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="0a146d06-df59-4562-b075-cdccd1a7e1f6">
 					<Documentation>The following additional constraints apply to the swept solid representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_ is required,
-* **Profile**: _IfcArbitraryClosedProfileDef, IfcRectangleProfileDef, IfcCircleProfileDef, IfcEllipseProfileDef_ shall be supported.
-* **Extrusion**: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required,
+\* \*\*Profile\*\*: _IfcArbitraryClosedProfileDef, IfcRectangleProfileDef, IfcCircleProfileDef, IfcEllipseProfileDef_ shall be supported.
+\* \*\*Extrusion\*\*: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.
 
 Figure 1 illustrates a &apos;SweptSolid&apos; geometric representation.
 
-&gt; NOTE&amp;nbsp; The following interpretation of dimension parameter applies for polygonal slabs (in ground floor view): &gt; * _IfcArbitraryClosedProfileDef.OuterCurve_: closed bounded curve interpreted as area (or foot print) of the slab.
+&gt; NOTE&amp;nbsp; The following interpretation of dimension parameter applies for polygonal slabs (in ground floor view): &gt; \* _IfcArbitraryClosedProfileDef.OuterCurve_: closed bounded curve interpreted as area (or foot print) of the slab.
 
 ![&quot;standard slab&quot;](../../figures/ifcslab_standard-layout1.gif &quot;Figure 1 &amp;mdash; Slab body extrusion&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_Geometry_3BV1ZwpuDDiRuRm1EwJjPo" />
@@ -12050,10 +12062,10 @@ Figure 1 illustrates a &apos;SweptSolid&apos; geometric representation.
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="0b434ff6-66be-43f1-9550-fccff87e07eb">
 					<Documentation>The following constraints apply to the &apos;Clipping&apos; representation:
 
-* **Solid**: see &apos;SweptSolid&apos; shape representation,
-* **Profile**: see &apos;SweptSolid&apos; shape representation,
-* **Extrusion**: see &apos;SweptSolid&apos; shape representation,
-* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_.
+\* \*\*Solid\*\*: see &apos;SweptSolid&apos; shape representation,
+\* \*\*Profile\*\*: see &apos;SweptSolid&apos; shape representation,
+\* \*\*Extrusion\*\*: see &apos;SweptSolid&apos; shape representation,
+\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_.
 
 Figure 1 illustrates a &apos;Clipping&apos; geometric representation with definition of a roof slab using advanced geometric representation. The profile is extruded non-perpendicular and the slab body is clipped at the eave.
 
@@ -12088,10 +12100,10 @@ Figure 1 illustrates a &apos;Clipping&apos; geometric representation with defini
 				<DocTemplateUsage Name="Aggregation" UniqueId="2Rr0gTFiL4XgmWWufUL9dZ">
 					<Documentation>The following guidance is provided for the components of the _IfcSlabElementedCase_. The following component entity types should be used:
 
-* Precast hollow core slabs 
-    * double tee or plank components : _IfcBeam_
-    * topping : _IfcBuildingElementPart_
-    * others : _IfcBuildingElementPart_</Documentation>
+\* Precast hollow core slabs 
+    \* double tee or plank components : _IfcBeam_
+    \* topping : _IfcBuildingElementPart_
+    \* others : _IfcBuildingElementPart_</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Aggregation_02xlp6icnF89nymmhdJhcf" />
 					<Items>
 						<DocTemplateItem UniqueId="f7c16e38-6012-4e94-b388-6ce613349cc0" RuleParameters="PredefinedType=;RelatedObjects=IfcBeam;">
@@ -12144,14 +12156,16 @@ Material information can also be given at the _IfcSlabType_, defining the common
 
 &lt;/table&gt;
 
+
+
 Figure 2 illustrates slab material usage, where the following conventions shall be met:
 
-* The reference coordinate system is the coordinate system established by the _IfcExtrudedAreaSolid.Position_.
-* The reference plane is the plane defined by the extruded profile of _IfcExtrudedAreaSolid.SweptSolid_. The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is given as a distance from this plane.
-* The _IfcMaterialLayerSetUsage.DirectionSense_ defines how the _IfcMaterialLayer_&apos;s are assigned to the reference plane. POSITIVE means in direction to the positive z-axis of the reference coordinate system.
-* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is the distance parallel to the reference plane and always perpendicular to the base (XY) plane of the reference coordinate system. This is independent of a potential non-perpendicular extrusion given by _IfcExtrudedAreaSolid.ExtrudedDirection_ &amp;lt;&amp;gt; 0.,0.,1. A positive value of _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ would then point into the positive z-axis of the reference coordinate system.
-* The _Thickness_ of each _IfcMaterialLayer_ shall be the parallel distance (measured perpendicular to the base plane). The _TotalThickness_ of the _IfcMaterialLayerSet_ is the sum of all layer thicknesses and in case of a perpendicular extrusion identical with _IfcExtrudedAreaSolid.Depth_
-* The _IfcMaterialLayerSetUsage.LayerSetDirection_ is always AXIS3.
+\* The reference coordinate system is the coordinate system established by the _IfcExtrudedAreaSolid.Position_.
+\* The reference plane is the plane defined by the extruded profile of _IfcExtrudedAreaSolid.SweptSolid_. The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is given as a distance from this plane.
+\* The _IfcMaterialLayerSetUsage.DirectionSense_ defines how the _IfcMaterialLayer_&apos;s are assigned to the reference plane. POSITIVE means in direction to the positive z-axis of the reference coordinate system.
+\* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is the distance parallel to the reference plane and always perpendicular to the base (XY) plane of the reference coordinate system. This is independent of a potential non-perpendicular extrusion given by _IfcExtrudedAreaSolid.ExtrudedDirection_ &amp;lt;&amp;gt; 0.,0.,1. A positive value of _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ would then point into the positive z-axis of the reference coordinate system.
+\* The _Thickness_ of each _IfcMaterialLayer_ shall be the parallel distance (measured perpendicular to the base plane). The _TotalThickness_ of the _IfcMaterialLayerSet_ is the sum of all layer thicknesses and in case of a perpendicular extrusion identical with _IfcExtrudedAreaSolid.Depth_
+\* The _IfcMaterialLayerSetUsage.LayerSetDirection_ is always AXIS3.
 
 &lt;table summary=&quot;material use definition for standard slabs&quot;&gt;
 
@@ -12168,16 +12182,16 @@ Figure 2 illustrates slab material usage, where the following conventions shall 
 				<DocTemplateUsage Name="Product Placement" UniqueId="a0b3d9e6-c41d-4492-83d0-61cc701d0ee6">
 					<Documentation>The following restriction is imposed:
 
-* The local placement shall provide the location and directions for the standard slab, the x/y plane is the plane for the profile, and the z-axis is the extrusion axis for the slab body.</Documentation>
+\* The local placement shall provide the location and directions for the standard slab, the x/y plane is the plane for the profile, and the z-axis is the extrusion axis for the slab body.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="0dc72568-a7ee-451c-a4ca-df85da09a127">
 					<Documentation>The following additional constraints apply to the swept solid representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_ is required,
-* **Profile**: _IfcArbitraryClosedProfileDef, IfcRectangleProfileDef, IfcCircleProfileDef, IfcEllipseProfileDef_ shall be supported.
-* **Extrusion**: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.
-* **Material**: The definition of the _IfcMaterialLayerSetUsage_, particularly of the _OffsetFromReferenceLine_ and the _ForLayerSet.TotalThickness_, has to be consistent to the &apos;SweptSolid&apos; representation.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required,
+\* \*\*Profile\*\*: _IfcArbitraryClosedProfileDef, IfcRectangleProfileDef, IfcCircleProfileDef, IfcEllipseProfileDef_ shall be supported.
+\* \*\*Extrusion\*\*: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.
+\* \*\*Material\*\*: The definition of the _IfcMaterialLayerSetUsage_, particularly of the _OffsetFromReferenceLine_ and the _ForLayerSet.TotalThickness_, has to be consistent to the &apos;SweptSolid&apos; representation.
 
 &amp;nbsp;
 
@@ -12204,11 +12218,11 @@ Figure 2 illustrates slab material usage, where the following conventions shall 
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="181cb8b7-a85b-4bcb-bd23-692ce0652d01">
 					<Documentation>The following constraints apply to the &apos;Clipping&apos; representation:
 
-* **Solid**: see &apos;SweptSolid&apos; shape representation,
-* **Profile**:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
-* **Extrusion**:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
-* **Material**:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
-* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_.
+\* \*\*Solid\*\*: see &apos;SweptSolid&apos; shape representation,
+\* \*\*Profile\*\*:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
+\* \*\*Extrusion\*\*:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
+\* \*\*Material\*\*:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
+\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_.
 
 &amp;nbsp;
 
@@ -12328,7 +12342,7 @@ The shared material layer set definition is defined by assigning an _IfcMaterial
 				<DocTemplateUsage Name="Spatial Container" UniqueId="b1a346d6-80fe-41d5-9093-d6db3b303405">
 					<Documentation>If there are building elements and/or other elements directly related to the _IfcSpace_ (like most furniture and distribution elements), they are associated with the _IfcSpace_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcSpace_ references them by its inverse relationship:
 
-* _IfcSpace.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
+\* _IfcSpace.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
 				</DocTemplateUsage>
 				<DocTemplateUsage UniqueId="2xk7pA5KX7MvweVEEC_yrS">
@@ -12533,14 +12547,14 @@ The shared material layer set definition is defined by assigning an _IfcMaterial
 				<DocTemplateUsage Name="Product Local Placement" UniqueId="1d7DE8d8zBGukO0CHCny4D">
 					<Documentation>The local placement for _IfcSpace_ is defined at its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point to the local placement of the _IfcSpatialStructureElement_ of type _IfcBuildingStorey_ or _IfcSite_ if relative placement is used.
-* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
+\* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point to the local placement of the _IfcSpatialStructureElement_ of type _IfcBuildingStorey_ or _IfcSite_ if relative placement is used.
+\* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="FootPrint GeomSet Geometry" UniqueId="4479fc6b-1c26-4cb4-8418-8290d497aa78">
 					<Documentation>The following constraints apply to the 2D representation:
 
-* An _IfcBoundedCurve_ is required, using _IfcPolyline_ for faceted space contours or _IfcCompositeCurve_ for space contours with arc segments. For spaces with inner boundaries, a set of _IfcBoundedCurve_&apos;s is used, that should be grouped into an _IfcGeometricCurveSet_.
+\* An _IfcBoundedCurve_ is required, using _IfcPolyline_ for faceted space contours or _IfcCompositeCurve_ for space contours with arc segments. For spaces with inner boundaries, a set of _IfcBoundedCurve_&apos;s is used, that should be grouped into an _IfcGeometricCurveSet_.
 
 &amp;nbsp;
 
@@ -12568,9 +12582,9 @@ foot print of &lt;em&gt;IfcSpace&lt;/em&gt;.&lt;/blockquote&gt;&lt;/td&gt;
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="dbfe4f57-2de4-4e74-a1a1-406faad360c9">
 					<Documentation>The following constraints apply to the standard representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_ is required,
-* **Profile**: _IfcArbitraryClosedProfileDef_ is required, _IfcArbitraryProfileDefWithVoids_ shall be supported.
-* **Extrusion**: The extrusion direction shall be vertically, i.e., along the positive Z Axis of the co-ordinate system of the containing spatial structure element.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required,
+\* \*\*Profile\*\*: _IfcArbitraryClosedProfileDef_ is required, _IfcArbitraryProfileDefWithVoids_ shall be supported.
+\* \*\*Extrusion\*\*: The extrusion direction shall be vertically, i.e., along the positive Z Axis of the co-ordinate system of the containing spatial structure element.
 
 Figure 1 shows an extrusion of an arbitrary profile definition with voids into the swept area solid of _IfcSpace_.
 
@@ -12580,10 +12594,10 @@ Figure 1 shows an extrusion of an arbitrary profile definition with voids into t
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="bd69adee-801d-44bf-88e3-d3b3c2191ee7">
 					<Documentation>The following additional constraints apply to the advanced representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_ is required,
-* **Profile**: _IfcArbitraryClosedProfileDef_ is required, _IfcArbitraryProfileDefWithVoids_ shall be supported.
-* **Extrusion**: The extrusion direction shall be vertically, i.e., along the positive Z Axis of the co-ordinate system of the containing spatial structure element.
-* **Boolean result**: The difference operation with the second operand being of type _IfcHalfSpaceSolid_ (or one of its subtypes) shall be supported.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required,
+\* \*\*Profile\*\*: _IfcArbitraryClosedProfileDef_ is required, _IfcArbitraryProfileDefWithVoids_ shall be supported.
+\* \*\*Extrusion\*\*: The extrusion direction shall be vertically, i.e., along the positive Z Axis of the co-ordinate system of the containing spatial structure element.
+\* \*\*Boolean result\*\*: The difference operation with the second operand being of type _IfcHalfSpaceSolid_ (or one of its subtypes) shall be supported.
 
 Figure 1 shows an extrusion of an arbitrary profile definition into the swept area solid. The solid and an half space solid are operands of the Boolean result of _IfcSpace_.
 
@@ -12936,8 +12950,8 @@ Material information can also be given at the _IfcStairType_, defining the commo
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="0K8URHoPD0wx5PIXHehUK9">
 					<Documentation>The _IfcStair_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.</Documentation>
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 					<Items>
 						<DocTemplateItem UniqueId="9a664d59-f26e-436b-a311-e2ec170a9745" RuleParameters="RelatingStructure=IfcBuildingStorey;">
@@ -12975,7 +12989,7 @@ Figure 1 illustrates stair placement, where the _IfcStair_ defines the local pla
 				<DocTemplateUsage Name="Placement" UniqueId="2JDZtgyA1EJBX1I0wf7aTx">
 					<Documentation>The following restriction may be imposed by view definitions or implementer agreements:
 
-* If the _IfcStair_ establishes an aggregate, then all contained elements shall be placed relative to the _IfcStair.ObjectPlacement_.</Documentation>
+\* If the _IfcStair_ establishes an aggregate, then all contained elements shall be placed relative to the _IfcStair.ObjectPlacement_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Axis 2D Geometry" UniqueId="1873b460-0c20-4f13-9529-b4ef73ee4309">
@@ -13108,8 +13122,8 @@ Figure 1 illustrates stair placement, where the _IfcStair_ defines the local pla
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="12ydnTyiTESBLKnGil0rcM">
 					<Documentation>The _IfcStairFlight_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.
 
 &gt; NOTE&amp;nbsp; Model view definitions or implementer agreements may force an _IfcStairFlight_ to be solely used as a part within an _IfcStair_ container. In this case, no _Spatial containment_ shall be used.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
@@ -13130,9 +13144,9 @@ Figure 1 illustrates stair placement, where the _IfcStair_ defines the local pla
 
 Figure 1 illustrates the axis representation which has the following constraints:
 
-* In case of straight flights the curve shall be a single item of type _IfcPolyline_.
-* In case of winding flights the curve shall be a single item of type _IfcCompositeCurve_.
-* In case of a curved flight or a spiral flight the curve shall be a single item of type _IfcTrimmedCurve_.
+\* In case of straight flights the curve shall be a single item of type _IfcPolyline_.
+\* In case of winding flights the curve shall be a single item of type _IfcCompositeCurve_.
+\* In case of a curved flight or a spiral flight the curve shall be a single item of type _IfcTrimmedCurve_.
 
 ![&quot;walking line&quot;](../../figures/ifcstairflight_01-layout1.gif &quot;Figure 1 &amp;mdash; Stair flight axis&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Axis_2D_Geometry_1u94Jere57Mf0qgUVrF6rb" />
@@ -13142,9 +13156,9 @@ Figure 1 illustrates the axis representation which has the following constraints
 
 Figure 1 illustrates the footprint representation which has the following constraints:
 
-* In case of straight flights the curve set shall consists of a single item of type _IfcPolyline_.
-* In case of winding flights or curved flights the curve set shall consists of a single item of type _IfcCompositeCurve_.
-* In case of a spiral flight the curve set shall consists of a single item of type _IfcConic_ or _IfcPolyline_.
+\* In case of straight flights the curve set shall consists of a single item of type _IfcPolyline_.
+\* In case of winding flights or curved flights the curve set shall consists of a single item of type _IfcCompositeCurve_.
+\* In case of a spiral flight the curve set shall consists of a single item of type _IfcConic_ or _IfcPolyline_.
 
 ![&quot;boundary&quot;](../../figures/ifcstairflight_02-layout1.gif &quot;Figure 1 &amp;mdash; Stair flight footprint&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="FootPrint_Geometry_1FLtVNQEb5dAeiHgtpw8qn" />
@@ -13245,11 +13259,11 @@ The material (_IfcMaterial_) in each _IfcMaterialProfile_(_Set_) is specified mi
 
 The profile (_IfcProfileDef_) in each _IfcMaterialProfile_(_Set_) is specified minimally by a name which corresponds with an agreed upon standardized structural profile designation. An external reference to the source which specifies the profile designation should be provided. Alternatively or additionally, explicit profile geometry should be provided by using respective subtypes of _IfcProfileDef_. Alternatively or additionally, structural profile properties may be provided by means of subtypes of _IfcProfileProperties_.
 
-An _IfcProfileDef_ is a two-dimensional geometric object with a x~p~,y~p~ coordinate system. The profile is inserted into the curve member model thus that the origin of x~p~,y~p~ is located at the member&apos;s reference curve and that x~p~,y~p~ are parallel with and directed like the local y,z.
+An _IfcProfileDef_ is a two-dimensional geometric object with a x\~p\~,y\~p\~ coordinate system. The profile is inserted into the curve member model thus that the origin of x\~p\~,y\~p\~ is located at the member&apos;s reference curve and that x\~p\~,y\~p\~ are parallel with and directed like the local y,z.
 
 &gt; NOTE&amp;nbsp; Due to convention in structural mechanics, axis names of _IfcStructuralCurveMember_ differ from axis names of building elements like _IfcBeamStandardCase_: The extrusion axis of _IfcStructuralCurveMember_ is called x while the extrusion axis of _IfcBeamStandardCase_ is called z. Hence x,y,z of _IfcStructuralCurveMember_ correspond with z,x,y of _IfcBeamStandardCase_.
 
-If the profile is meant to be inserted centrically in terms of structural section properties, it is necessary that the origin of x~p~,y~p~ is identical with the geometric centroid of the profile (commonly also called centre of gravity). If subtypes of _IfcParameterizedProfileDef_ are used which are only singly symmetric or are asymmetric, an explicit translation by _IfcParameterizedProfileDef.Position.Location_ is required then.
+If the profile is meant to be inserted centrically in terms of structural section properties, it is necessary that the origin of x\~p\~,y\~p\~ is identical with the geometric centroid of the profile (commonly also called centre of gravity). If subtypes of _IfcParameterizedProfileDef_ are used which are only singly symmetric or are asymmetric, an explicit translation by _IfcParameterizedProfileDef.Position.Location_ is required then.
 
 If the profile is inserted at its geometric centroid, _IfcMaterialProfileSetUsage.CardinalPoint_ shall be set to 10.
 
@@ -13492,8 +13506,8 @@ The local coordinate system is established by the reference surface given by top
 				<DocTemplateUsage Name="Placement" UniqueId="1L_73juFr2YguVjws0cYrn">
 					<Documentation>The local placement for _IfcSurfaceFeatureElement_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-* In case of features which are part of an element type, absolute placement into the type object&apos;s implied coordinate system shall be used.
-* In case of features which are voiding an element occurrence, the _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point to the local placement of the respective element.</Documentation>
+\* In case of features which are part of an element type, absolute placement into the type object&apos;s implied coordinate system shall be used.
+\* In case of features which are voiding an element occurrence, the _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point to the local placement of the respective element.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body Geometry" UniqueId="2TbEhnZrn56Q0rp1e_4jN6">
@@ -13994,7 +14008,7 @@ If no _IfcTransportElementType_ is attached&amp;nbsp;(i.e. if only occurrence in
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="09893729-e041-4efb-9577-b0a91e20c702">
-					<Documentation>* The _IfcTransportElement_ is placed within the project spatial hierarchy using the objectified relationship _IfcRelContainedInSpatialStructure_, refering to it by its inverse attribute _SELF\IfcElement.ContainedInStructure_. Subtypes of&amp;nbsp;_IfcSpatialStructureElement_ are valid spatial containers, with _IfcBuilding_ being the default container.</Documentation>
+					<Documentation>\* The _IfcTransportElement_ is placed within the project spatial hierarchy using the objectified relationship _IfcRelContainedInSpatialStructure_, refering to it by its inverse attribute _SELF\IfcElement.ContainedInStructure_. Subtypes of&amp;nbsp;_IfcSpatialStructureElement_ are valid spatial containers, with _IfcBuilding_ being the default container.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 				</DocTemplateUsage>
 			</Concepts>
@@ -14529,8 +14543,8 @@ shown above.&lt;/li&gt;
 				<DocTemplateUsage Name="Product Local Placement" UniqueId="29duHE$1LD3OHyttMxDk8z">
 					<Documentation>The local placement for _IfcVoidingFeatureElement_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-* In case of features which are part of an element type, absolute placement into the type object&apos;s implied coordinate system shall be used.
-* In case of features which are voiding an element occurrence, the _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point to the local placement of the respective element.</Documentation>
+\* In case of features which are part of an element type, absolute placement into the type object&apos;s implied coordinate system shall be used.
+\* In case of features which are voiding an element occurrence, the _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point to the local placement of the respective element.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage UniqueId="2t8R1BiDb7Qhqgbdvh3Gxv">
@@ -14694,8 +14708,8 @@ shown above.&lt;/li&gt;
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="2A2R9GKQrD9e0XRNBr582t">
 					<Documentation>The _IfcWall_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.</Documentation>
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Containment_3PeWY01HBmesKdP1dTP15" />
 					<Items>
 						<DocTemplateItem UniqueId="5d78d87e-e72c-4a5c-bf8f-8afea1a79939" RuleParameters="RelatingStructure=IfcBuildingStorey;">
@@ -14725,9 +14739,9 @@ shown above.&lt;/li&gt;
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="c0394013-f38b-499b-9849-73ae4fc4ff9d">
 					<Documentation>The following additional constraints apply to the &apos;SweptSolid&apos; representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_ is required,
-* **Profile**: _IfcArbitraryClosedProfileDef_ is required.
-* **Extrusion**: All extrusion directions shall be supported.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required,
+\* \*\*Profile\*\*: _IfcArbitraryClosedProfileDef_ is required.
+\* \*\*Extrusion\*\*: All extrusion directions shall be supported.
 
 &gt; NOTE&amp;nbsp; If the wall body can be described by a vertical extrusion of a polygonal footprint with constant thickness along the axis (where vertical = into the direction of the global Z axis), the subtype _IfcWallStandardCase_ should be used. If the extrusion is not equal to global Z, then the _IfcWall_ should be used.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_Geometry_3BV1ZwpuDDiRuRm1EwJjPo" />
@@ -14817,15 +14831,17 @@ The _IfcWallType_ should then have a unique _IfcMaterialLayerSet_, that is refer
 
 &lt;/table&gt;
 
+
+
 Figure 2 illustrates material layer usage, where the following conventions shall be met:
 
-* The reference coordinate system is the local coordinate system established by the _ObjectPlacement_ of the _IfcWallStandardCase_.
-* The reference axis is the axis defined by the _IfcShapeRepresentation_ with _RepresentationType_=&apos;Axis&apos; as one of the _Representation.Representations_ of the _IfcWallStandardCase_.
-* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is given as a distance from this axis.
-* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is the distance parallel to the reference axis and always within the base (XY) plane of the reference coordinate system. A positve value of _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ would then point into the positive y-axis of the reference coordinate system.
-* The _IfcMaterialLayerSetUsage.DirectionSense_ defines how the _IfcMaterialLayer_&apos;s are assigned to the reference axis. POSITIVE means in direction to the positive y-axis of the reference coordinate system.
-* The _Thickness_ of each _IfcMaterialLayer_ is provided starting from the _OffsetFromReferenceLine_ and in the direction given by _DirectionSense_. It is applied without any gap or overlap between two consecutive layers. The _TotalThickness_ of the _IfcMaterialLayerSet_ is the sum of all layer thicknesses.
-* The _IfcMaterialLayerSetUsage.LayerSetDirection_ is always AXIS2.
+\* The reference coordinate system is the local coordinate system established by the _ObjectPlacement_ of the _IfcWallStandardCase_.
+\* The reference axis is the axis defined by the _IfcShapeRepresentation_ with _RepresentationType_=&apos;Axis&apos; as one of the _Representation.Representations_ of the _IfcWallStandardCase_.
+\* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is given as a distance from this axis.
+\* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is the distance parallel to the reference axis and always within the base (XY) plane of the reference coordinate system. A positve value of _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ would then point into the positive y-axis of the reference coordinate system.
+\* The _IfcMaterialLayerSetUsage.DirectionSense_ defines how the _IfcMaterialLayer_&apos;s are assigned to the reference axis. POSITIVE means in direction to the positive y-axis of the reference coordinate system.
+\* The _Thickness_ of each _IfcMaterialLayer_ is provided starting from the _OffsetFromReferenceLine_ and in the direction given by _DirectionSense_. It is applied without any gap or overlap between two consecutive layers. The _TotalThickness_ of the _IfcMaterialLayerSet_ is the sum of all layer thicknesses.
+\* The _IfcMaterialLayerSetUsage.LayerSetDirection_ is always AXIS2.
 
 ![&quot;roof slab material layer set&quot;](../../figures/ifcmateriallayersetusage_wall-01.png &quot;Figure 2 &amp;mdash; Wall material layers&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Layer_Set_Usage_1jNxXlFor9_vKe1tXLtSn7" />
@@ -14833,15 +14849,15 @@ Figure 2 illustrates material layer usage, where the following conventions shall
 				<DocTemplateUsage Name="Product Placement" UniqueId="95178cb6-bcc2-4138-88f8-e63b7ac32835">
 					<Documentation>The following restriction is imposed:
 
-* The local placement shall provide the location and directions for the standard wall, the x/y plane is the plane for the profile, and the z-axis is the extrusion axis for the wall body.</Documentation>
+\* The local placement shall provide the location and directions for the standard wall, the x/y plane is the plane for the profile, and the z-axis is the extrusion axis for the wall body.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Axis 2D Geometry" UniqueId="519873f2-d035-4df8-9f67-ce96049074e0">
 					<Documentation>The wall axis is represented by a two-dimensional open curve within a particular shape representation. The wall axis is used to apply the material layer set usage parameter to the wall geometry.
 
-* _Axis_ 
-    * _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for the &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the x/y plane and is parallel to the x-axis of the object coordinate system.
-    * _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the x/y plane of the object coordinate system, the tangent at the start is along the positive x-axis. 
+\* _Axis_ 
+    \* _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for the &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the x/y plane and is parallel to the x-axis of the object coordinate system.
+    \* _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the x/y plane of the object coordinate system, the tangent at the start is along the positive x-axis. 
 
 &amp;nbsp;
 
@@ -14886,9 +14902,9 @@ a single geometric representation item of type &lt;em&gt;IfcTrimmedCurve&lt;/em&
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="8437335e-7581-40d9-8d37-2e8a3579f9cd">
 					<Documentation>The following additional constraints apply to the &apos;SweptSolid&apos; representation:
 
-* **Solid**: _IfcExtrudedAreaSolid_ is required,
-* **Profile**: _IfcArbitraryClosedProfileDef_ and _IfcRectangleProfileDef_ shall be supported.
-* **Extrusion**: The profile shall be extruded vertically, i.e., in the direction of the z-axis of the co-ordinate system of the referred spatial structure element. It might be further constraint to be in the direction of the global z-axis in implementers agreements. The extrusion axis shall be perpendicular to the swept profile, i.e. pointing into the direction of the z-axis of the Position of the _IfcExtrudedAreaSolid_.
+\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required,
+\* \*\*Profile\*\*: _IfcArbitraryClosedProfileDef_ and _IfcRectangleProfileDef_ shall be supported.
+\* \*\*Extrusion\*\*: The profile shall be extruded vertically, i.e., in the direction of the z-axis of the co-ordinate system of the referred spatial structure element. It might be further constraint to be in the direction of the global z-axis in implementers agreements. The extrusion axis shall be perpendicular to the swept profile, i.e. pointing into the direction of the z-axis of the Position of the _IfcExtrudedAreaSolid_.
 
 The profile of a wall is described in the ground view and extruded vertically. The profile (also identical with the foot print of the wall) is defined by the _IfcArbitraryClosedProfileDef_ (excluding its subtypes). The profile is given with all wall connections already resolved.
 
@@ -14911,10 +14927,10 @@ Figure 2 illustrates a body representation for a curved wall. In case of a curve
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="5558384d-c5d1-43f1-91b6-ed21ba000e4b">
 					<Documentation>The following constraints apply to the &apos;Clipping&apos; representation:
 
-* **Solid**: see standard geometric representation
-* **Profile**: see standard geometric representation
-* **Extrusion**: see standard geometric representation
-* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or subtypes).
+\* \*\*Solid\*\*: see standard geometric representation
+\* \*\*Profile\*\*: see standard geometric representation
+\* \*\*Extrusion\*\*: see standard geometric representation
+\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or subtypes).
 
 Figure 1 illustrates a clipping for a straight wall using an _IfcPolygonalBoundedHalfSpace_ as _SecondOperand_ in the _IfcBooleanClippingResult_.
 
@@ -15122,8 +15138,8 @@ If the fall back single _IfcMaterial_ is referenced, it applies to the lining an
 				<DocTemplateUsage Name="Spatial Containment" UniqueId="1FTX9G6016zOcE_$hAxTiV">
 					<Documentation>The _IfcWindow_, as any subtype of _IfcBuildingElement_, may participate alternatively in one of the two different containment relationships:
 
-* the _Spatial Containment_ (defined here), or
-* the _Element Composition_.
+\* the _Spatial Containment_ (defined here), or
+\* the _Element Composition_.
 
 The _IfcWindow_ may also be connected to the _IfcOpeningElement_ in which it is placed as a filler. In this case, the spatial containment relationship shall be provided, see Figure 1.
 
@@ -15162,15 +15178,15 @@ The _IfcWindow_ may also be connected to the _IfcOpeningElement_ in which it is 
 				<DocTemplateUsage Name="Profile 3D Geometry" UniqueId="ca942783-7fe2-4844-9e7f-836b96aa30ab">
 					<Documentation>The window profile is represented by a three-dimensional closed curve within a particular shape representation. The profile is used to apply the parameter of the parametric window representation. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _RepresentationIdentifier_ : &apos;Profile&apos;
-* _RepresentationType_ : &apos;Curve3D&apos;, only a single closed curve shall be contained in the set of _IfcShapeRepresentation.Items_.
+\* _RepresentationIdentifier_ : &apos;Profile&apos;
+\* _RepresentationType_ : &apos;Curve3D&apos;, only a single closed curve shall be contained in the set of _IfcShapeRepresentation.Items_.
 
 A &apos;Profile&apos; representation has to be provided if:
 
-* a parametric representation shall be applied to the window AND
-*  
-    * the window is &apos;free standing&apos;, or
-    * the opening into which the window is inserted is not extruded horizontally (i.e. where the opening profile does not match the window profile)</Documentation>
+\* a parametric representation shall be applied to the window AND
+\*  
+    \* the window is &apos;free standing&apos;, or
+    \* the opening into which the window is inserted is not extruded horizontally (i.e. where the opening profile does not match the window profile)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Profile_3D_Geometry_0TYN8WT0r7avgDNITqnxm0" />
 				</DocTemplateUsage>
 			</Concepts>
@@ -15182,16 +15198,16 @@ A &apos;Profile&apos; representation has to be provided if:
 				<DocTemplateUsage Name="Profile Geometry" UniqueId="2JaK2vU3z5_wiCeXroBcNO">
 					<Documentation>The following additional constraints apply to the &apos;Profile&apos; representation type:
 
-* **Curve**: being an _IfcPolyline_ defining a rectangle.
-* **Position**: The curve shall lie in the xz plane of the object placement coordinate (the y coordinate values of the _IfcCartesianPoint_&apos;s shall be 0.).
+\* \*\*Curve\*\*: being an _IfcPolyline_ defining a rectangle.
+\* \*\*Position\*\*: The curve shall lie in the xz plane of the object placement coordinate (the y coordinate values of the _IfcCartesianPoint_&apos;s shall be 0.).
 
 As shown in Figure 1, the profile defines the outer boundary to which the window lining parameters relate as:
 
-* _IfcWindowLiningProperties.LiningDepth_ starting at distance defined by _LiningOffset_ going into the positive y direction.
-* _IfcWindowLiningProperties.LiningThickness_ offset into the inner side of the rectangle.
-* _IfcWindowLiningProperties.LiningOffset_ distance along the positive y direction to where the _LiningDepth_ applies.
-* _IfcWindowLiningProperties.FirstTransomOffset_ starting at the bottom edge of the rectangle (along local x axis) into the inner side of the rectangle, distance provided as percentage of overall height. Distance to the centre line of the transom. _SecondTransomOffset_ defined accordingly.
-* _IfcWindowLiningProperties.FirstMullionOffset_ starting at the left edge of the rectangle (along local z-axis) into the inner side of the rectangle, distance provided as percentage of overall width. Distance to the centre line of the mullion. _SecondMullionOffset_ defined accordingly.
+\* _IfcWindowLiningProperties.LiningDepth_ starting at distance defined by _LiningOffset_ going into the positive y direction.
+\* _IfcWindowLiningProperties.LiningThickness_ offset into the inner side of the rectangle.
+\* _IfcWindowLiningProperties.LiningOffset_ distance along the positive y direction to where the _LiningDepth_ applies.
+\* _IfcWindowLiningProperties.FirstTransomOffset_ starting at the bottom edge of the rectangle (along local x axis) into the inner side of the rectangle, distance provided as percentage of overall height. Distance to the centre line of the transom. _SecondTransomOffset_ defined accordingly.
+\* _IfcWindowLiningProperties.FirstMullionOffset_ starting at the left edge of the rectangle (along local z-axis) into the inner side of the rectangle, distance provided as percentage of overall width. Distance to the centre line of the mullion. _SecondMullionOffset_ defined accordingly.
 
 ![&quot;standard window&quot;](../../figures/ifcwindowstandardcase-01.png &quot;Figure 1 &amp;mdash; Window profile&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Profile_Geometry_3nRhE_uXFCvVVrLhjEW_L" />
@@ -15208,8 +15224,8 @@ As shown in Figure 1, the profile defines the outer boundary to which the window
 				<DocTemplateUsage Name="Property Sets for Types" UniqueId="2dae2d1f-f980-4015-b7ef-a2f0b63e9253">
 					<Documentation>Two subtypes of _IfcPreDefinedPropertySet_ are applicable to _IfcWindowType_:
 
-* _IfcWindowLiningProperties_ - a single instance to define the shape parameters of the window lining
-* _IfcWindowPanelProperties_ - one or several instances to define the shape parameters of the window panel(s)</Documentation>
+\* _IfcWindowLiningProperties_ - a single instance to define the shape parameters of the window lining
+\* _IfcWindowPanelProperties_ - one or several instances to define the shape parameters of the window panel(s)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Types_1Bup4gCPb9Bh84oi8YcfhU" />
 				</DocTemplateUsage>
 			</Concepts>
@@ -15352,10 +15368,10 @@ As shown in Figure 1, the profile defines the outer boundary to which the window
 
 In case of a zone denoting a (fire) compartment, the following types should be used, if applicable, as values of the _ObjectType_ attribute:
 
-* **&apos;FireCompartment&apos;**: a zone of spaces, collected to represent a single fire compartment.
-* **&apos;ElevatorShaft&apos;**: a collection of spaces within an elevator, potentially going through many storeys.
-* **&apos;RisingDuct&apos;**: A collection of vertical airspaces.
-* **&apos;RunningDuct&apos;**: A collection of horizontal airspaces.</Documentation>
+\* \*\*&apos;FireCompartment&apos;\*\*: a zone of spaces, collected to represent a single fire compartment.
+\* \*\*&apos;ElevatorShaft&apos;\*\*: a collection of spaces within an elevator, potentially going through many storeys.
+\* \*\*&apos;RisingDuct&apos;\*\*: A collection of vertical airspaces.
+\* \*\*&apos;RunningDuct&apos;\*\*: A collection of horizontal airspaces.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Group_Assignment_3rPvPL9D4sQnHatm9h2M3" />
 					<Items>
 						<DocTemplateItem UniqueId="86407b87-09cc-408f-8741-513046bc324d" RuleParameters="Type=IfcSpatialStructureElement;" />

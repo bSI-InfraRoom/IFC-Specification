@@ -13,9 +13,7 @@ For better control of the hatching appearance, when using hatch lines with other
 { .deprecated}
 > DEPRECATION&nbsp; The use of _PointOfReferenceHatchLine_ is deprecated.
 
-<small>Figure 1 illustrates hatch attributes.</small>
-
-<table>
+<small>Figure 1 illustrates hatch attributes.</small><table>
 <tr>
 <td>
 <table border="0" cellpadding="2" cellspacing="2" width="100%">
@@ -86,7 +84,9 @@ from each other.</small></td>
 </tr>
 </table>
 
-> NOTE&nbsp; Entity adapted from **fill_area_style_hatching** defined in ISO10303-46
+
+
+> NOTE&nbsp; Entity adapted from \*\*fill_area_style_hatching\*\* defined in ISO10303-46
 
 > HISTORY&nbsp; New entity in IFC2x2.
 

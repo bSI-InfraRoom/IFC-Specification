@@ -5,11 +5,11 @@ A structural curve action defines an action which is distributed over a curve. A
 { .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Former entity _IfcStructuralLinearActionVarying_ from IFC2x2 has been removed and are replaced by this entity.
 
-****Coordinate Systems****:
+\*\*\*\*Coordinate Systems\*\*\*\*:
 
 See definitions at _IfcStructuralActivity_.
 
-****Topology Use Definitions****:
+\*\*\*\*Topology Use Definitions\*\*\*\*:
 
 Standard Case:  
 If connected with a curve item, instances of _IfcStructuralCurveAction_ shall not have an _ObjectPlacement_ nor a _Representation_. It is implied that the placement and representation of the _IfcStructuralActivity_ is the same as the ones of the member or connection.

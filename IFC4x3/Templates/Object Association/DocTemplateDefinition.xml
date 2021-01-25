@@ -40,10 +40,10 @@
 		<DocTemplateDefinition id="Classification_Association_1A8aO9PNXCTQFYl_eRbxo" Name="Classification Association" UniqueId="1A8aO9PNXCTQ$FYl_eRbxo" Type="IfcObjectDefinition">
 			<Documentation>The concept _Classification Association_ describes how objects and object types can be further described by associating references to external sources of information. The source of information can be:
 
-* a classification system;
-* a dictionary server;
-* any external catalogue that classifies the object further;
-* any service that combine the above features.
+\* a classification system;
+\* a dictionary server;
+\* any external catalogue that classifies the object further;
+\* any service that combine the above features.
 
 An individual item within the external source of information can be selected. It then applies the inherent meaning of the item to the _IfcObject_ or _IfcTypeObject_.
 
@@ -51,8 +51,8 @@ An individual item within the external source of information can be selected. It
 
 The main attributes to be provided for a _Classification Association_ are:
 
-* _Identification_: holds the key provided for a specific references to classification items (or tables)
-* _Name_: allows for a human interpretable designation of a classification notation</Documentation>
+\* _Identification_: holds the key provided for a specific references to classification items (or tables)
+\* _Name_: allows for a human interpretable designation of a classification notation</Documentation>
 			<Localization>
 				<DocLocalization Locale="tt">
 					<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
@@ -380,10 +380,10 @@ Typical document meta data, such as issue date, editor, and similar, can be capt
 		<DocTemplateDefinition Name="Material Association" UniqueId="3gAcE_$Gr2ROOxKiEN3AM5" Type="IfcObjectDefinition">
 			<Documentation>Any product or product type can have associated materials indicating the physical composition of an object.
 
-&gt; EXAMPLE&amp;nbsp; An object can be comprised of a single material or a set of materials with a particular layout. Several examples include: &gt; * a slab may have an associated layer of concrete; 
-&gt; * a beam may have an associated I-Shape profile of steel;
-&gt; * a door may have associated constituents for framing and glazing;
-&gt; * a port may have an associated profile and/or material flowing through it such as hot water.
+&gt; EXAMPLE&amp;nbsp; An object can be comprised of a single material or a set of materials with a particular layout. Several examples include: &gt; \* a slab may have an associated layer of concrete; 
+&gt; \* a beam may have an associated I-Shape profile of steel;
+&gt; \* a door may have associated constituents for framing and glazing;
+&gt; \* a port may have an associated profile and/or material flowing through it such as hot water.
 
 Materials can have representations for surface styles indicating colors, textures, and light reflectance for 3D rendering. Materials can have representations for fill styles indicating colors, tiles, and hatch patterns for 2D rendering. Materials can have properties such as density, elasticity, thermal resistance, and others as defined in this specification. Materials can also be classified according to a referenced industry standard.
 

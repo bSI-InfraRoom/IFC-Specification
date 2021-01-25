@@ -145,7 +145,7 @@ Styled items may provide structure and styles that apply to the representation, 
 
 The representation identifier of the annotation representation is:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Annotation&apos;</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Annotation&apos;</Documentation>
 					<Rules>
 						<DocModelRuleAttribute Name="Representation">
 							<Rules>
@@ -199,12 +199,12 @@ The representation identifier of the annotation representation is:
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ : &apos;Annotation&apos; 
-*  _IfcShapeRepresentation_._RepresentationType_ : &apos;Annotation2D&apos; 
-* _IfcShapeRepresentation_._Items_ : 
-    * subtypes of _IfcPoint_ and _IfcCurve_ being two-dimensional and within an _IfcGeometricCurveSet_ 
-    * subtypes of _IfcAnnotationFillArea_ for hatches 
-    * subtypes of _IfcTextLiteral_ for text</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ : &apos;Annotation&apos; 
+\*  _IfcShapeRepresentation_._RepresentationType_ : &apos;Annotation2D&apos; 
+\* _IfcShapeRepresentation_._Items_ : 
+    \* subtypes of _IfcPoint_ and _IfcCurve_ being two-dimensional and within an _IfcGeometricCurveSet_ 
+    \* subtypes of _IfcAnnotationFillArea_ for hatches 
+    \* subtypes of _IfcTextLiteral_ for text</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -408,11 +408,11 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-*  _IfcShapeRepresentation_._RepresentationIdentifier_ : &apos;Annotation&apos; 
-*  _IfcShapeRepresentation_._RepresentationType_ : &apos;GeometricSet&apos; 
-* _IfcShapeRepresentation_._Items_ : 
-    * subtypes of _IfcPoint_ and _IfcCurve_ being three-dimensional and within an _IfcGeometricSet_
-    * subtypes of _IfcSurface_ being three-dimensional and within an _IfcGeometricSet_</Documentation>
+\*  _IfcShapeRepresentation_._RepresentationIdentifier_ : &apos;Annotation&apos; 
+\*  _IfcShapeRepresentation_._RepresentationType_ : &apos;GeometricSet&apos; 
+\* _IfcShapeRepresentation_._Items_ : 
+    \* subtypes of _IfcPoint_ and _IfcCurve_ being three-dimensional and within an _IfcGeometricSet_
+    \* subtypes of _IfcSurface_ being three-dimensional and within an _IfcGeometricSet_</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -485,7 +485,7 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The representation identifier of the axis representation is:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Axis&apos;
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Axis&apos;
 
 &gt; EXAMPLE&amp;nbsp; A two-dimensional bounded curve is used as the wall axis in standard walls, a three-dimensional bounded curve is used as the reference axis in standard columns.</Documentation>
 					<Rules>
@@ -541,9 +541,9 @@ The representation identifier of the axis representation is:
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Axis&apos;
-* _IfcShapeRepresentation_._RepresentationType_ : &apos;Curve2D&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcBoundedCurve_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Axis&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ : &apos;Curve2D&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcBoundedCurve_</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -612,9 +612,9 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Axis&apos;
-* _IfcShapeRepresentation_._RepresentationType_ : &apos;Curve3D&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcBoundedCurve_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Axis&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ : &apos;Curve3D&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcBoundedCurve_</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -755,7 +755,7 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The representation identifier of the body representation is:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;</Documentation>
 					<Rules>
 						<DocModelRuleAttribute Name="Representation">
 							<Rules>
@@ -808,9 +808,9 @@ The representation identifier of the body representation is:
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;AdvancedBrep&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcAdvancedBrep_, _IfcFacetedBrep_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;AdvancedBrep&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcAdvancedBrep_, _IfcFacetedBrep_</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -877,9 +877,9 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;AdvancedSweptSolid&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcSweptAreaSolid_, _IfcSweptDiskSolid_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;AdvancedSweptSolid&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcSweptAreaSolid_, _IfcSweptDiskSolid_</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -995,10 +995,10 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;AdvancedSweptSolid&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcSweptDiskSolid_, _IfcSweptDiskSolidPolygonal_
-* _IfcShapeRepresentation_._Items[1..n].Directrix_ = _IfcIndexedPolyCurve_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;AdvancedSweptSolid&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcSweptDiskSolid_, _IfcSweptDiskSolidPolygonal_
+\* _IfcShapeRepresentation_._Items[1..n].Directrix_ = _IfcIndexedPolyCurve_</Documentation>
 									<Rules>
 										<DocModelRuleAttribute Name="Representation">
 											<Rules>
@@ -1197,9 +1197,9 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;Brep&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcFacetedBrep_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;Brep&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcFacetedBrep_</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -1257,9 +1257,9 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;Clipping&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcBooleanClippingResult_
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;Clipping&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcBooleanClippingResult_
 
 &gt; NOTE&amp;nbsp; This representation type is predominately used for compatibility with previous releases of the standard.</Documentation>
 							<Rules>
@@ -1363,9 +1363,9 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;CSG&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcCSGSolid_
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;CSG&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcCSGSolid_
 
 &gt; NOTE&amp;nbsp; The _Items__IfcBooleanResult_ and _IfcPrimitive3D_ shall also be allowed for compatibility with previous releases of the standard.</Documentation>
 							<Rules>
@@ -1429,9 +1429,9 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;SurfaceModel&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcTessellateditem_, _IfcShellBasedSurfaceModel_, _IfcFaceBasedSurfaceModel_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;SurfaceModel&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcTessellateditem_, _IfcShellBasedSurfaceModel_, _IfcFaceBasedSurfaceModel_</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -1489,9 +1489,9 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;SurfaceOrSolidModel&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcTessellateditem_, _IfcShellBasedSurfaceModel_, _IfcFaceBasedSurfaceModel_, _IfcSolidModel_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;SurfaceOrSolidModel&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcTessellateditem_, _IfcShellBasedSurfaceModel_, _IfcFaceBasedSurfaceModel_, _IfcSolidModel_</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -1550,9 +1550,9 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;SweptSolid&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;SweptSolid&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -1741,12 +1741,12 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;SweptSolid&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_
-* _IfcShapeRepresentation_._Items[1..n].SweptArea_ = _IfcArbitraryClosedProfileDef_, _IfcArbitraryProfileDefWithVoids_
-* _IfcShapeRepresentation_._Items[1..n].SweptArea.OuterCurve_ = _IfcIndexedPolyCurve_
-* _IfcShapeRepresentation_._Items[1..n].SweptArea.InnerCurves_ = _IfcIndexedPolyCurve_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;SweptSolid&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_
+\* _IfcShapeRepresentation_._Items[1..n].SweptArea_ = _IfcArbitraryClosedProfileDef_, _IfcArbitraryProfileDefWithVoids_
+\* _IfcShapeRepresentation_._Items[1..n].SweptArea.OuterCurve_ = _IfcIndexedPolyCurve_
+\* _IfcShapeRepresentation_._Items[1..n].SweptArea.InnerCurves_ = _IfcIndexedPolyCurve_</Documentation>
 									<Rules>
 										<DocModelRuleAttribute Name="Representation">
 											<Rules>
@@ -1800,9 +1800,9 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;Tessellation&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcTessellatedFaceSet_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Body&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;Tessellation&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcTessellatedFaceSet_</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -1871,9 +1871,9 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The representation identifier and type and the only allowed single representation item of the &apos;Box&apos; representation are:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Box&apos;
-* _IfcShapeRepresentation_._RepresentationType_ : &apos;BoundingBox&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcBoundingBox_
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Box&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ : &apos;BoundingBox&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcBoundingBox_
 
 &gt; NOTE&amp;nbsp; The specification does not determine the method by which the bounding box has to be created. If such a method need to be prescribed the definition has to be established by model view definitions or implementer agreements.</Documentation>
 					<Rules>
@@ -1944,7 +1944,7 @@ The representation identifier and type and the only allowed single representatio
 
 The representation identifier of the clearance representation is:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Clearance&apos;</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Clearance&apos;</Documentation>
 					<Rules>
 						<DocModelRuleAttribute Name="Representation">
 							<Rules>
@@ -1991,9 +1991,9 @@ The representation identifier of the clearance representation is:
 
 The representation identifier and type and the only allowed single representation item of the &apos;CoG&apos; representation are:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;CoG&apos;
-* _IfcShapeRepresentation_._RepresentationType_ : &apos;BoundingBox&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcCartesianPoint_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;CoG&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ : &apos;BoundingBox&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcCartesianPoint_</Documentation>
 					<Rules>
 						<DocModelRuleAttribute Name="Representation">
 							<Rules>
@@ -2040,7 +2040,7 @@ The representation identifier and type and the only allowed single representatio
 
 The representation identifier of the foot print representation is:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;FootPrint&apos;</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;FootPrint&apos;</Documentation>
 					<Rules>
 						<DocModelRuleAttribute Name="Representation">
 							<Rules>
@@ -2094,12 +2094,12 @@ The representation identifier of the foot print representation is:
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-*  _IfcShapeRepresentation_._RepresentationIdentifier_ : &apos;FootPrint&apos; 
-*  _IfcShapeRepresentation_._RepresentationType_ : &apos;Annotation2D&apos; 
-* _IfcShapeRepresentation_._Items_ : 
-    * subtypes of _IfcPoint_ and _IfcCurve_ being two-dimensional and within an _IfcGeometricCurveSet_ 
-    * subtypes of _IfcAnnotationFillArea_ for hatches 
-    * subtypes of _IfcTextLiteral_ for text</Documentation>
+\*  _IfcShapeRepresentation_._RepresentationIdentifier_ : &apos;FootPrint&apos; 
+\*  _IfcShapeRepresentation_._RepresentationType_ : &apos;Annotation2D&apos; 
+\* _IfcShapeRepresentation_._Items_ : 
+    \* subtypes of _IfcPoint_ and _IfcCurve_ being two-dimensional and within an _IfcGeometricCurveSet_ 
+    \* subtypes of _IfcAnnotationFillArea_ for hatches 
+    \* subtypes of _IfcTextLiteral_ for text</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -2170,9 +2170,9 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation are used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ : &apos;FootPrint&apos;
-* _IfcShapeRepresentation_._RepresentationType_ : &apos;GeometricCurveSet&apos;
-* _IfcShapeRepresentation_._Items_ : _IfcGeometricCurveSet_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ : &apos;FootPrint&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ : &apos;GeometricCurveSet&apos;
+\* _IfcShapeRepresentation_._Items_ : _IfcGeometricCurveSet_</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -2345,9 +2345,9 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The representation identifier and type and the only allowed single representation item of the &apos;Lighting&apos; representation are:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Lighting&apos;
-* _IfcShapeRepresentation_._RepresentationType_ : &apos;LightSource&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcLightSource_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Lighting&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ : &apos;LightSource&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcLightSource_</Documentation>
 					<Rules>
 						<DocModelRuleAttribute Name="Representation">
 							<Rules>
@@ -2410,8 +2410,8 @@ The representation identifier and type and the only allowed single representatio
 
 The representation identifier of the mapped geometry representation is any of the other valid geometric representation identifiers, such as &apos;Body&apos;, &apos;FootPrint&apos;, or &apos;Axis&apos;.
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = (any, see above)
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;MappedRepresentation&apos;</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = (any, see above)
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;MappedRepresentation&apos;</Documentation>
 					<Rules>
 						<DocModelRuleAttribute Name="Representation">
 							<Rules>
@@ -2532,7 +2532,7 @@ The representation identifier of the mapped geometry representation is any of th
 
 The representation identifier of the profile representation is:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Profile&apos;</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Profile&apos;</Documentation>
 					<Rules>
 						<DocModelRuleAttribute Name="Representation">
 							<Rules>
@@ -2579,9 +2579,9 @@ The representation identifier of the profile representation is:
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Profile&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;Curve3D&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcBoundedCurve_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Profile&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;Curve3D&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcBoundedCurve_</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -2645,7 +2645,7 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 &gt; EXAMPLE&amp;nbsp; An example is the use of &apos;Reference&apos; representation is for opening elements that shall not be used to create a void using the _IfcRelVoidsElement_ relationship, since the voids are already part of the &apos;Body&apos; representation of the voided element. The representation identifier of the representation is:
 &gt; 
-&gt; * _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Reference&apos;</Documentation>
+&gt; \* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Reference&apos;</Documentation>
 					<Rules>
 						<DocModelRuleAttribute Name="Representation">
 							<Rules>
@@ -2698,9 +2698,9 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Reference&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;SweptSolid&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Reference&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;SweptSolid&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -2762,12 +2762,12 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Reference&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;SweptSolid&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_
-* _IfcShapeRepresentation_._Items[1..n].SweptArea_ = _IfcArbitraryClosedProfileDef_, _IfcArbitraryProfileDefWithVoids_
-* _IfcShapeRepresentation_._Items[1..n].SweptArea.OuterCurve_ = _IfcIndexedPolyCurve_
-* _IfcShapeRepresentation_._Items[1..n].SweptArea.InnerCurves_ = _IfcIndexedPolyCurve_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Reference&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;SweptSolid&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_
+\* _IfcShapeRepresentation_._Items[1..n].SweptArea_ = _IfcArbitraryClosedProfileDef_, _IfcArbitraryProfileDefWithVoids_
+\* _IfcShapeRepresentation_._Items[1..n].SweptArea.OuterCurve_ = _IfcIndexedPolyCurve_
+\* _IfcShapeRepresentation_._Items[1..n].SweptArea.InnerCurves_ = _IfcIndexedPolyCurve_</Documentation>
 									<Rules>
 										<DocModelRuleAttribute Name="Representation">
 											<Rules>
@@ -2830,9 +2830,9 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Reference&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;Tessellation&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcTessellatedFaceSet_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Reference&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;Tessellation&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcTessellatedFaceSet_</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -2901,7 +2901,7 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The representation identifier of the surface representation is:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Surface&apos;</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Surface&apos;</Documentation>
 					<Rules>
 						<DocModelRuleAttribute Name="Representation">
 							<Rules>
@@ -2948,9 +2948,9 @@ The representation identifier of the surface representation is:
 
 The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Surface&apos;
-* _IfcShapeRepresentation_._RepresentationType_ = &apos;Surface3D&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcBoundedSurface_, _IfcSweptSurface_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;Surface&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ = &apos;Surface3D&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcBoundedSurface_, _IfcSweptSurface_</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -3120,9 +3120,9 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 The representation identifier and type and the only allowed single representation item of the &apos;SurveyPoints&apos; representation are:
 
-* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;SurveyPoints&apos;
-* _IfcShapeRepresentation_._RepresentationType_ : &apos;GeometricCurveSet&apos;
-* _IfcShapeRepresentation_._Items_ = _IfcGeometricCurveSet_</Documentation>
+\* _IfcShapeRepresentation_._RepresentationIdentifier_ = &apos;SurveyPoints&apos;
+\* _IfcShapeRepresentation_._RepresentationType_ : &apos;GeometricCurveSet&apos;
+\* _IfcShapeRepresentation_._Items_ = _IfcGeometricCurveSet_</Documentation>
 					<Rules>
 						<DocModelRuleAttribute Name="Representation">
 							<Rules>
@@ -3377,14 +3377,14 @@ The representation identifier and type and the only allowed single representatio
 
 Placement follows aggregation and containment relationships as follows:
 
-* at the outermost level, a site is globally positioned according to latitude, longitude, and elevation;
-* for spatial structures, positioning is relative to aggregation. For example, a site may aggregate multiple buildings, each building may aggregate multiple building storeys, and each building storey may aggregate multiple spaces;
-* for building elements, positioning is relative to the containing spatial structure. For example, a building storey may contain slabs, walls, columns, and beams; 
-* for aggregated parts, positioning is relative to aggregation. For example, a staircase may aggregate one or more stair flights;
-* for feature elements, positioning is relative to the affected building element. For example, an opening element is positioned relative to the wall it voids, which in turn is positioned relative to a building storey;
-* for fillings, positioning is relative to the filled opening. For example, a door is positioned relative to an opening which in turn is positioned relative to a wall; 
-* for distribution ports, positioning is relative to the containing distribution element. For example, an air terminal may have a port connection for a duct segment or fitting;
-* for distribution elements, positioning is relative to the containing spatial structure, however may be constrained by port connections. For example, a electrical junction box may fill an opening within a wall, and the junction box may contain ports for contained outlets or switches; the placement of such connected elements is contrained relative to connected port of the junction box. As another example, an air terminal may fill a ceiling covering which is placed relative to a space; the placement of a connecting duct fitting may be constrained relative to the air terminal. 
+\* at the outermost level, a site is globally positioned according to latitude, longitude, and elevation;
+\* for spatial structures, positioning is relative to aggregation. For example, a site may aggregate multiple buildings, each building may aggregate multiple building storeys, and each building storey may aggregate multiple spaces;
+\* for building elements, positioning is relative to the containing spatial structure. For example, a building storey may contain slabs, walls, columns, and beams; 
+\* for aggregated parts, positioning is relative to aggregation. For example, a staircase may aggregate one or more stair flights;
+\* for feature elements, positioning is relative to the affected building element. For example, an opening element is positioned relative to the wall it voids, which in turn is positioned relative to a building storey;
+\* for fillings, positioning is relative to the filled opening. For example, a door is positioned relative to an opening which in turn is positioned relative to a wall; 
+\* for distribution ports, positioning is relative to the containing distribution element. For example, an air terminal may have a port connection for a duct segment or fitting;
+\* for distribution elements, positioning is relative to the containing spatial structure, however may be constrained by port connections. For example, a electrical junction box may fill an opening within a wall, and the junction box may contain ports for contained outlets or switches; the placement of such connected elements is contrained relative to connected port of the junction box. As another example, an air terminal may fill a ceiling covering which is placed relative to a space; the placement of a connecting duct fitting may be constrained relative to the air terminal. 
 
 If a containing spatial structure contains a grid, then placement may also be based relative to grid coordinates. In certain use cases, an absolute placement may be used by omiting the _IfcObjectPlacement_. In this case, the shape representation is defined within the world coordinate system.</Documentation>
 					<Localization>

@@ -8,7 +8,7 @@ The _IfcSurfaceOfLinearExtrusion_ is a surface derived by sweeping a curve along
 >> ![Image](../../../../../../figures/ifcsurfaceoflinearextrusion-math1.gif)
 >  The parameterization range for _v_ is -&infin; &lt; _v_ &lt; &infin; and for _u_ it is defined by the curve parameterization.
 
-> NOTE&nbsp; Entity adapted from **surface_of_linear_extrusion** defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from \*\*surface_of_linear_extrusion\*\* defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC2x.
 

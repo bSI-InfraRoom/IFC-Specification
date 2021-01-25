@@ -25,4 +25,6 @@ SELECT
 		</tr> 
 	 </table>
 
+
+
 > HISTORY&nbsp; New type in IFC2x2.

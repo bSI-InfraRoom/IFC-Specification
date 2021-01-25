@@ -5,11 +5,11 @@ This entity defines a reaction which occurs at a point. A point reaction is typi
 { .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Attributes in the supertypes _IfcStructuralActivity_ and _IfcStructuralReaction_ changed. Use definitions changed, informal propositions added.
 
-****Coordinate Systems****:
+\*\*\*\*Coordinate Systems\*\*\*\*:
 
 See definitions at _IfcStructuralActivity_.
 
-****Topology Use Definitions****:
+\*\*\*\*Topology Use Definitions\*\*\*\*:
 
 Standard Case:  
 If connected with a point item, instances of _IfcStructuralPointReaction_ shall not have an _ObjectPlacement_ nor a _Representation_. It is implied that the placement and representation of the reaction is the same as the structural item.

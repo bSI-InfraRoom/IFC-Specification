@@ -6,6 +6,6 @@ An _IfcPlacement_ is an abstract supertype of placement subtypes that define the
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
 > A placement locates a geometric item with respect to the coordinate system of its geometric context. It locates the item to be defined and, in the case of the axis placement subtypes, gives its orientation.
 
-> NOTE&nbsp; Entity adapted from **placement** defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from \*\*placement\*\* defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC1.0

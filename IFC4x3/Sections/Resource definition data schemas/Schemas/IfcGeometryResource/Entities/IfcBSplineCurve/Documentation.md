@@ -53,6 +53,7 @@ are derived to provide simple default capabilities.</p>
 <li style=" font-size:inherit;">Logical flag is provided to indicate whether the curve self intersects or not.</li>
 </ol>
 
-> NOTE&nbsp; Entity adapted from **b_spline_curve** defined in ISO10303-42.
+
+> NOTE&nbsp; Entity adapted from \*\*b_spline_curve\*\* defined in ISO10303-42.
 
 > HISTORY&nbsp; New entity in IFC2x2.

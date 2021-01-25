@@ -2,7 +2,7 @@ The text literal is a geometric representation item which describes a text strin
 
 The text string is placed within the planar extent (the box) defined within the subtype _IfcTextLiteralWithExtent_.
 
-> NOTE&nbsp; Entity adapted from **text_literal** defined in ISO10303-46
+> NOTE&nbsp; Entity adapted from \*\*text_literal\*\* defined in ISO10303-46
 
 > HISTORY&nbsp; New entity in IFC2x2.
 

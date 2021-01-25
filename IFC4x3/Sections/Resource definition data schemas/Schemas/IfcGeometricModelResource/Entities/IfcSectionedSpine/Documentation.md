@@ -6,9 +6,9 @@ The spine curve shall be of type _IfcCompositeCurve_, each of its segments repre
 
 Figure 1 illustrates an example of an _IfcSectionedSpine_.
 
-* The _SpineCurve_ is given by an _IfcCompositeCurve_ with two _Segments_. The _Segments[1]_ has a _ParentCurve_ of type _IfcPolyline_ and a _Transition_ = CONTSAMEGRADIENT. The _Segments[2]_ has a _ParentCurve_ of type _IfcTrimmedCurve_ and a _Transition_ = DISCONTINUOUS.
-* Each _CrossSectionPosition_ lies at a start or end point of the _Segments_.
-* Each _CrossSections_ are inserted by the _CrossSectionPositions_. The first two cross sections are of type _IfcRectangleProfileDef_, the third is of type _IfcDerivedProfileDef_.
+\* The _SpineCurve_ is given by an _IfcCompositeCurve_ with two _Segments_. The _Segments[1]_ has a _ParentCurve_ of type _IfcPolyline_ and a _Transition_ = CONTSAMEGRADIENT. The _Segments[2]_ has a _ParentCurve_ of type _IfcTrimmedCurve_ and a _Transition_ = DISCONTINUOUS.
+\* Each _CrossSectionPosition_ lies at a start or end point of the _Segments_.
+\* Each _CrossSections_ are inserted by the _CrossSectionPositions_. The first two cross sections are of type _IfcRectangleProfileDef_, the third is of type _IfcDerivedProfileDef_.
 
 !["spine 1"](../../../../../../figures/ifcsectionedspine-layout1.gif "Figure 1 &mdash; Sectioned spine geometry")
 
@@ -22,7 +22,7 @@ Figure 2 illustrates the final result of the _IfcSectionedSpine_. The body (show
 >   
 > NOTE&nbsp; A sectioned spine may be used to represent a surface or a solid but the interpolation of the shape between the cross-sections is not defined. For the representation of a solid all cross-sections are closed curves.
 
-> NOTE&nbsp; Entity adapted from **sectioned_spine** defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from \*\*sectioned_spine\*\* defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC2x.
 

@@ -8,6 +8,6 @@
 > 6. For all other knots the knot multiplicity is bounded by 1 and degree.
 > 7. The consecutive knots are increasing in value.
 
-> NOTE&nbsp; Function adapted from **constraints_param_b_spline** defined in ISO 10303-42.
+> NOTE&nbsp; Function adapted from \*\*constraints_param_b_spline\*\* defined in ISO 10303-42.
 
 > HISTORY&nbsp; New function in IFC4

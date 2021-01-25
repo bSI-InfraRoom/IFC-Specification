@@ -2,7 +2,7 @@ The entity _IfcRelConnectsStructuralMember_ defines all needed properties descri
 
 > HISTORY&nbsp; New entity in IFC2x2.
 
-**Use Definition**
+\*\*Use Definition\*\*
 
 _Point Connection_  
 Instances of the entity _IfcRelConnectsStructuralMember_ shall be used to describe a connection between an instance of _IfcStructuralPointConnection_ and either an instance of _IfcStructuralCurveMember_ or _IfcStructuralSurfaceMember_. The _RelatedStructuralConnection_ for point connections has to be of type _IfcStructuralPointConnection_.

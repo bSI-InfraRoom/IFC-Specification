@@ -148,6 +148,8 @@ open.</td>
 <tr><td><p class="figure">Figure 1 &mdash; Door style operations</p></td></tr>
 </table>
 
+
+
 > HISTORY&nbsp; New enumeration in IFC2x.
 
 NOTE

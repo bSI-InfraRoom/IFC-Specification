@@ -39,6 +39,8 @@ The parameters of the _IfcDoorPanelProperties_ define a standard door panel, inc
  </tr>
 </table>
 
+
+
 > HISTORY&nbsp; New entity in IFC2.0.
 
 { .change-ifc2x4}

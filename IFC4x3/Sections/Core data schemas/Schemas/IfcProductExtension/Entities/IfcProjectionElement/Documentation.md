@@ -8,7 +8,7 @@ An _IfcProjectionElement_ has to be linked to a element (all subtypes of _IfcEle
 
 The _IfcProjectionElement_ shall not participate in the containment relationship, i.e. it is not linked directly to the spatial structure of the project. It has a mandatory _ProjectsElements_ inverse relationship pointing to the _IfcElement_ that is contained in the spatial structure.
 
-* The inverse relationship _ContainedInStructure_ shall be NIL.
+\* The inverse relationship _ContainedInStructure_ shall be NIL.
 
 > HISTORY&nbsp; New entity in IFC2x2.
 

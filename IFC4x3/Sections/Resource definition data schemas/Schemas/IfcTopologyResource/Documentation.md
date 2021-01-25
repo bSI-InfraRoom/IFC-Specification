@@ -4,10 +4,10 @@ The schema _IfcTopologyResource_ defines the resources used for topological repr
 
 The definitions taken from ISO/IS 10303-42:1994 have undergone an adaptation process, characterized by:
 
-* adaptation of the IFC naming convention (inner majuscules and Ifc prefix)
-* adaptation of the ISO 10303 entities, where multiple inheritance or non-exclusive inheritance (that is, AND or ANDOR subtype constraints) are used
-* selection of a subset of the IR, using subtype and select pruning
-* omission of the name attribute at the representation item
+\* adaptation of the IFC naming convention (inner majuscules and Ifc prefix)
+\* adaptation of the ISO 10303 entities, where multiple inheritance or non-exclusive inheritance (that is, AND or ANDOR subtype constraints) are used
+\* selection of a subset of the IR, using subtype and select pruning
+\* omission of the name attribute at the representation item
 
 The topological representation of the shape is defined following the adaptation of 10303-42. The type, class, and function semantic definition sections follow the adapted wording of the working draft, which is clearly indicated and quoted at each reference. The definitions on geometric and topological representation (when taken from ISO/CD 10303-42:1992) are explicitly excluded from the copyright of this specification.
 
@@ -16,6 +16,6 @@ The topological representation of the shape is defined following the adaptation 
 
 The following are within the scope of the topology schema:
 
-* definition of the fundamental topological entities vertex, edge, and face, each with a specialized subtype to enable it to be associated with the geometry of a point, curve, or surface, respectively; 
-* collections of the basic entities to form topological structures of path, loop and shell and constraints to ensure the integrity of these structures;
-* orientation of topological entities.
+\* definition of the fundamental topological entities vertex, edge, and face, each with a specialized subtype to enable it to be associated with the geometry of a point, curve, or surface, respectively; 
+\* collections of the basic entities to form topological structures of path, loop and shell and constraints to ensure the integrity of these structures;
+\* orientation of topological entities.

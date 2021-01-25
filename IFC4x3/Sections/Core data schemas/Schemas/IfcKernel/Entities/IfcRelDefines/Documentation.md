@@ -1,8 +1,8 @@
 A generic and abstract relationship which subtypes are used to:
 
-* assign a object type to an object occurrence
-* assign a property set to an object instance
-* assign a property set template to a property set
+\* assign a object type to an object occurrence
+\* assign a property set to an object instance
+\* assign a property set template to a property set
 
 > EXAMPLE&nbsp; Several instances of windows within the IFC project model may be of the same (catalogue or manufacturer) type. Thereby they share the same properties. This relationship is established by the subtype _IfcRelDefinesByType_ of _IfcRelDefines_ relationship assigning an _IfcWindowStyle_ to multiple occurrences _IfcWindow_.
 

@@ -18,41 +18,41 @@ Similarly, whilst the electrical domain schema may be used for data, telecommuni
 
 The _IfcElectricalDomain_ schema supports ideas including types of:
 
-* audio-visual appliance,
-* cable carrier fittings (for conduit, cable tray, cable duct and ladder),
-* electrical appliance,
-* electric motor,
-* distribution panels,
-* generator,
-* junction box,
-* light fixture,
-* lamp,
-* outlet,
-* protective device,
-* protective device tripping unit, 
-* switching device,
-* transformer,
+\* audio-visual appliance,
+\* cable carrier fittings (for conduit, cable tray, cable duct and ladder),
+\* electrical appliance,
+\* electric motor,
+\* distribution panels,
+\* generator,
+\* junction box,
+\* light fixture,
+\* lamp,
+\* outlet,
+\* protective device,
+\* protective device tripping unit, 
+\* switching device,
+\* transformer,
 
 The following items are in scope but not elaborated:
 
-* medium and high voltage installations over 1000V AC and 1500V DC
-* systems with voltage of less than 12 volts (AC/DC)
-* audio-visual systems
-* telecommunications systems
-* data systems
-* cabling for signal and control systems 
-* cable routers (cable ladders) 
-* computer network cabling and devices used on networks
+\* medium and high voltage installations over 1000V AC and 1500V DC
+\* systems with voltage of less than 12 volts (AC/DC)
+\* audio-visual systems
+\* telecommunications systems
+\* data systems
+\* cabling for signal and control systems 
+\* cable routers (cable ladders) 
+\* computer network cabling and devices used on networks
 
 The following are deemed to be out of scope of the _IfcElectricalDomain_ schema at this time:
 
-* public utility supply of electrical services
-* non steady state/transient states of operation of electrical installations
-* security arrangements associated with safety of electrical installations
-* communication signals between automation devices or bus systems
-* sensors (which are dealt with in the _IfcBuildingControl_ domain schema)
-* spotlight mirror systems whereby a spotlight is directed towards a distant mirror that the distributes the light energy (other than as a group of separately defined objects)
-* lighting for specialist purposes (for example, stage, painting) 
+\* public utility supply of electrical services
+\* non steady state/transient states of operation of electrical installations
+\* security arrangements associated with safety of electrical installations
+\* communication signals between automation devices or bus systems
+\* sensors (which are dealt with in the _IfcBuildingControl_ domain schema)
+\* spotlight mirror systems whereby a spotlight is directed towards a distant mirror that the distributes the light energy (other than as a group of separately defined objects)
+\* lighting for specialist purposes (for example, stage, painting) 
 
 An electrical circuit is formed from electrical devices connected together with power carrying cables. Up to IFC4, an instance of an electrical circuit has been defined as an _IfcElectricalCircuit_ (subtype of _IfcSystem_). This is now deleted as of IFC4. Instead, electrical systems together with other cable systems and other forms of distribution system are now identified through the _IfcDistributionSystem.PredefinedType::IfcDistributionSystemTypeEnum_, along with specific property sets.
 

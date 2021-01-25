@@ -4,6 +4,6 @@ The lexical representation for _IfcTime_ is: hh:mm:ss where where hh represents 
 
 > EXAMPLE&nbsp; 13:20:00-05:00 represents 1:20 pm for a time zone which is 5 hours behind Coordinated Universal Time (such as Eastern Standard Time)
 
-> NOTE&nbsp; See extended format representation of **time** as defined in ISO&nbsp;8601. The restrictions defined in XML Schema Part 2 apply.
+> NOTE&nbsp; See extended format representation of \*\*time\*\* as defined in ISO&nbsp;8601. The restrictions defined in XML Schema Part 2 apply.
 
 > HISTORY&nbsp; New type in IFC4.

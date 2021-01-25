@@ -4,7 +4,7 @@ Assignment of style information to a styled item.
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
 > The presentation style assignment is a set of styles which are assigned to styled items for the purpose of presenting these styled items.
 
-> NOTE&nbsp; Entity adapted from **presentation_style_assignment** defined in 0ISO10303-46.
+> NOTE&nbsp; Entity adapted from \*\*presentation_style_assignment\*\* defined in 0ISO10303-46.
 
 > HISTORY&nbsp; New entity in IFC2x2.
 

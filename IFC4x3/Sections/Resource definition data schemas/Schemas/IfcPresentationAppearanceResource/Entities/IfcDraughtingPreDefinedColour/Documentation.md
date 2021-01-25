@@ -1,14 +1,14 @@
 The draughting pre defined colour is a pre defined colour for the purpose to identify a colour by name. Allowable names are:
 
-* 'black',
-* 'red',
-* 'green',
-* 'blue',
-* 'yellow',
-* 'magenta',
-* 'cyan',
-* 'white',
-* 'by layer'
+\* 'black',
+\* 'red',
+\* 'green',
+\* 'blue',
+\* 'yellow',
+\* 'magenta',
+\* 'cyan',
+\* 'white',
+\* 'by layer'
 
 > NOTE&nbsp; The _IfcDraughtingPreDefinedColour_ is an entity that had been adopted from ISO 10303-202, Industrial automation systems and integration&mdash;Product data representation and exchange, Part 202: Application protocol: Associative draughting.
 
@@ -79,6 +79,8 @@ The following table states the RGB values associated with the names given by the
 </tr>
 </tbody>
 </table>
+
+
 
 > NOTE&nbsp; Corresponding ISO 10303 name: draughting_pre_defined_colour. Please refer to ISO/IS 10303-202:1994 page 194 for the final definition of the formal standard.
 

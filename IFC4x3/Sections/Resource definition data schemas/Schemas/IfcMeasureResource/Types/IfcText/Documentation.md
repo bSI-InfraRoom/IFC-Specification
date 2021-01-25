@@ -2,7 +2,7 @@ An _IfcText_ is an alphanumeric string of characters which is intended to be rea
 
 Type: STRING
 
-> NOTE&nbsp; Type adapted from **text** defined in ISO 10303-41.
+> NOTE&nbsp; Type adapted from \*\*text\*\* defined in ISO 10303-41.
 
 > HISTORY&nbsp; New type in IFC2x.
 

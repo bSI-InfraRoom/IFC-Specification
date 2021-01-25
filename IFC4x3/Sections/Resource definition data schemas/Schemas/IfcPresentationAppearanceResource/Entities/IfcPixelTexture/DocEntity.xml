@@ -34,7 +34,7 @@
 			<Expression>{1 &lt;= ColourComponents &lt;= 4}</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="SizeOfPixelList" UniqueId="e83dd612-9ffa-495d-b7c0-fcc0eafa72c1">
-			<Documentation>The list of pixel shall have exactly width\*height members.</Documentation>
+			<Documentation>The list of pixel shall have exactly width\\*height members.</Documentation>
 			<Expression>SIZEOF(Pixel) = (Width * Height)</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="PixelAsByteAndSameLength" UniqueId="fa13e19a-c3ec-4039-8437-388611cd8115">

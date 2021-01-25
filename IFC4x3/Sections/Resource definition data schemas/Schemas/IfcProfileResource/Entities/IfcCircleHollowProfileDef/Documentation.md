@@ -4,7 +4,7 @@ _IfcCircleHollowProfileDef_ defines a section profile that provides the defining
 
 Figure 1 illustrates parameters of the circular hollow profile definition. The parameterized profile defines its own position coordinate system. The underlying coordinate system is defined by the swept area solid that uses the profile definition. It is the xy plane of:
 
-* _IfcSweptAreaSolid.Position_
+\* _IfcSweptAreaSolid.Position_
 
 By using offsets of the position location, the parameterized profile can be positioned centric (using x,y offsets = 0.), or at any position relative to the profile. Explicit coordinate offsets are used to define cardinal points (for example, upper-left bound). The parameterized profile is defined by a set of parameter attributes.
 

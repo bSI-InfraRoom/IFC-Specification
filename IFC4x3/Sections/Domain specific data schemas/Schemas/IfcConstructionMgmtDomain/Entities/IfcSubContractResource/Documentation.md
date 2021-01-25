@@ -11,7 +11,7 @@ The purpose of an _IfcSubContractResource_ is to indicate work of a particular t
 
 A subcontract resource may be described at various stages and levels of detail through its assignments:
 
-* Subcontract resource designated for particular tasks
-* Actors identified to request bids
-* Cost schedules (bids) received from actors
-* Project order (work order, change order, etc.) executed
+\* Subcontract resource designated for particular tasks
+\* Actors identified to request bids
+\* Cost schedules (bids) received from actors
+\* Project order (work order, change order, etc.) executed

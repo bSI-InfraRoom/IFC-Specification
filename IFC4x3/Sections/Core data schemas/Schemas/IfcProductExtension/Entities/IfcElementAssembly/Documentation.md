@@ -7,5 +7,5 @@ The geometry of an _IfcElementAssembly_ is generally formed from its components,
 > NOTE&nbsp; View definitions or implementer agreements may further constrain the applicability of certain shape representations at the _IfcElementAssembly_ in respect of the shape representations of its parts.  
 > HISTORY&nbsp; New entity in IFC2x2.  
   
-**Informal Propositions:**  
+\*\*Informal Propositions:\*\*  
 1. The _IfcElementAssembly_ shall have an aggregation relationship to the contained parts, i.e. the (INV) IsDecomposedBy relationship shall be utilized.

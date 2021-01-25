@@ -25,6 +25,8 @@ where
 </tr>
 </table>
 
-> NOTE&nbsp; Entity adapted from **rational_b_spline_curve** in ISO 10303-42.
+
+
+> NOTE&nbsp; Entity adapted from \*\*rational_b_spline_curve\*\* in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC4.

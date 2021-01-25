@@ -2,10 +2,10 @@ The _IfcDayInWeekNumber_ is an integer that defines the position of the specifie
 
 Ordinal day numbers map to calendar days as follows:
 
-* **1**: Monday
-* **2**: Tuesday
-* **3**: Wednesday
-* **4**: Thursday
-* **5**: Friday
-* **6**: Saturday
-* **7**: Sunday
+\* \*\*1\*\*: Monday
+\* \*\*2\*\*: Tuesday
+\* \*\*3\*\*: Wednesday
+\* \*\*4\*\*: Thursday
+\* \*\*5\*\*: Friday
+\* \*\*6\*\*: Saturday
+\* \*\*7\*\*: Sunday

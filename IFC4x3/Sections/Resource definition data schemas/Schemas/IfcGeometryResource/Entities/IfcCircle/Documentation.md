@@ -30,7 +30,7 @@ Figure 1 illustrates the definition of _IfcCircle_ within a three-dimensional po
 >> 
 >>> ![formula](../../../../../../figures/ifccircle-math2.gif)
 >> 
-> The positive sense of the circle at any point is in the tangent direction, **T**, to the curve at the point, where
+> The positive sense of the circle at any point is in the tangent direction, \*\*T\*\*, to the curve at the point, where
 > 
 >> 
 >>> ![formula](../../../../../../figures/ifccircle-math3.gif)
@@ -38,6 +38,6 @@ Figure 1 illustrates the definition of _IfcCircle_ within a three-dimensional po
 
 
 > 
-> NOTE&nbsp; Entity adapted from **circle** defined in ISO 10303-42
+> NOTE&nbsp; Entity adapted from \*\*circle\*\* defined in ISO 10303-42
 
 > HISTORY&nbsp; New entity in IFC1.0

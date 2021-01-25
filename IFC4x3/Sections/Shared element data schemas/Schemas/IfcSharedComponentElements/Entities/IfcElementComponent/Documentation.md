@@ -9,11 +9,11 @@ It is often desirable to model a number of same-shaped element components by mea
 To express the multiplicity of element components also on a higher semantic level, a _Qto_ElementComponentPatternQuantities_ should be provided via _IfcRelDefinesByProperties_ and contain the number of pieces which are placed by a single _IfcElementComponent_ instance.
 
 { .use-head}
-**Symbolic Representation**
+\*\*Symbolic Representation\*\*
 
 A symbolic representation is defined for a row of components or several rows of components within a single instance of _IfcElementComponent_. Such rows or arrays may contain possibly large numbers of individual pieces. The product definition shape consists of an _IfcShapeRepresentation_ with the attribute values
 
-* _RepresentationIdentifier_ : 'Row'
-* _RepresentationType_ : 'GeometricCurveSet'
+\* _RepresentationIdentifier_ : 'Row'
+\* _RepresentationType_ : 'GeometricCurveSet'
 
 and one or several curves as geometric items. The curves represent where reference points of the pieces are located. For example, such reference points may be at the heads of mechanical fasteners or at the starting point of the extrusion axis of reinforcement bars. In case of straight components (bolts, nails, staples, straight reinforcement bars, or similar), the local placement of the _IfcElementComponent_ shall be located and oriented such that the local z axis is parallel with the axes of the components. A _Qto_ElementComponentPatternQuantities_ should denote the count of pieces in the row or array and their spacing.

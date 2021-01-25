@@ -8,7 +8,7 @@ Figure 1 illustrates four girders of a bridge having a constant parameterized pr
 
 !["spatial structure"](../../../../../../figures/ifcsectionedsolidhorizontal.png "Figure 1 &mdash; Sectioned solid horizontal")
 
-**Informal Propositions:**
+\*\*Informal Propositions:\*\*
 
 1. No two consecutive sections shall intersect.
 2. If the type of sections is not IfcParameterizedProfileDef (i.e. an arbitrary profile), then the number of points and edges should be the same for two consecutive profiles

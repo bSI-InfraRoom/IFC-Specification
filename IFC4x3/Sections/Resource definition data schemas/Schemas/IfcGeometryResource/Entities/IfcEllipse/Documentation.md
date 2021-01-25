@@ -20,6 +20,8 @@ representation.</span></p>
 </tr>
 </table>
 
+
+
 > NOTE&nbsp; An elliptical arc segment is defined by using the _IfcTrimmedCurve_ with _BasisCurve_
 
 { .extDef}
@@ -49,6 +51,6 @@ representation.</span></p>
 
 
 > 
-> NOTE&nbsp; Entity adapted from **ellipse** defined in ISO 10303-42
+> NOTE&nbsp; Entity adapted from \*\*ellipse\*\* defined in ISO 10303-42
 
 > HISTORY&nbsp; New entity in IFC1.0

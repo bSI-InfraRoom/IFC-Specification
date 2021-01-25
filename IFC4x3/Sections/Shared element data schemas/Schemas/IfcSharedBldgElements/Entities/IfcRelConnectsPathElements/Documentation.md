@@ -46,6 +46,8 @@ The connection is described by a connection geometry, given within the object co
  </tr> 
 </table>
 
+
+
 > NOTE&nbsp; The two wall axes connect in each case.
 
 &nbsp;

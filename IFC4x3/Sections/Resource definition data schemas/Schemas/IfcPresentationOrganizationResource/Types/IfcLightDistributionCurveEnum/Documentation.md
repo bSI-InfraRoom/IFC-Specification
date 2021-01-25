@@ -5,6 +5,8 @@ There are three kinds of light distribution curves, see Figure 1.
 <table
 
 
+
+
 <tr><td>
 <table border="1"> 
 <tr> 

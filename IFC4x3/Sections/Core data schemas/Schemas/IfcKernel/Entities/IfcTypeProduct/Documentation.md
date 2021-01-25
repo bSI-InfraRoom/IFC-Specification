@@ -6,8 +6,8 @@ An _IfcTypeProduct_ may have a list of property set attached and an optional set
 
 The representations at the occurrence level (represented by subtypes of _IfcProduct_) can override the specific representations at the type level:
 
-* for geometric representations, a Cartesian transformation operator can be applied at the occurrence level.
-* for property sets, a property within an occurrence property set, assigned at the product occurrence, overrides the same property assigned to the product type.
+\* for geometric representations, a Cartesian transformation operator can be applied at the occurrence level.
+\* for property sets, a property within an occurrence property set, assigned at the product occurrence, overrides the same property assigned to the product type.
 
 An _IfcTypeProduct_ may be exchanged without being already assigned to subtypes of _IfcProduct_.
 

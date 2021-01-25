@@ -2,14 +2,14 @@ The schema _IfcGeometricModelResource_ defines the resources used for geometric 
 
 The following is within the scope of the geometric model representation in the current version of the geometric model resource:
 
-* data describing the precise geometric form of three-dimensional solid objects;
-* constructive solid geometry (CSG) models;
-* definition of half-spaces;
-* creation of solid models by sweeping operations;
-* manifold boundary representation (brep) models;
-* surface models;
-* tessellated models; 
-* geometric sets.
+\* data describing the precise geometric form of three-dimensional solid objects;
+\* constructive solid geometry (CSG) models;
+\* definition of half-spaces;
+\* creation of solid models by sweeping operations;
+\* manifold boundary representation (brep) models;
+\* surface models;
+\* tessellated models; 
+\* geometric sets.
 
 &nbsp;
 

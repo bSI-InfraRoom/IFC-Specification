@@ -4,6 +4,6 @@ The _IfcGeometricSet_ is used for the exchange of shape representation consistin
 > NOTE&nbsp; Definition from ISO/CD 10303-42:  
 > This entity is intended for the transfer of models when a topological structure is not available.
 
-> NOTE&nbsp; Entity adapted from **geometric_set** defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from \*\*geometric_set\*\* defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC2x.

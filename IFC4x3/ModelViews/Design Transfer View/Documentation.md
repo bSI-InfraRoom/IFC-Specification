@@ -6,23 +6,23 @@ To enable such editing, higher-level design parameters must be preserved for tho
 
 Examples of this design transfer workflow are:
 
-* Coordination planning and execution (combining different discipline specific IFC models for collaboration)
-* Clash detection and resolution (finding clashes and resolutions between different discipline specific IFC models)
-* Integrated reference (loading an IFC model, usually from a different discipline) as an integrated model
-* Quantity take-off (determine the quantities of the various model elements with the IFC model)
-* Construction sequencing (taking the IFC model and associating it to a construction schedule)
-* Visual presentation (for presenting the IFC model to a broad audience)
+\* Coordination planning and execution (combining different discipline specific IFC models for collaboration)
+\* Clash detection and resolution (finding clashes and resolutions between different discipline specific IFC models)
+\* Integrated reference (loading an IFC model, usually from a different discipline) as an integrated model
+\* Quantity take-off (determine the quantities of the various model elements with the IFC model)
+\* Construction sequencing (taking the IFC model and associating it to a construction schedule)
+\* Visual presentation (for presenting the IFC model to a broad audience)
 
 Common characteristics of the workflow using design transfer models are:
 
-* The source of the BIM information remains with the originator or may be shared
-* The full parametric behaviour, and thereby the intellectual engineering property, remains with the originator or may be tranfered
-* The ownership of the model, and responsibility for its correctness, remains with the originator or may be transfered
-* The original model is published as IFC4 Design Transfer model reflecting the as-is status
-* The receiver of the IFC4 Design Transfer View does not need to have access to the full model content
-* The receiver of the IFC4 Design Transfer View may modify the model
-* The receiver of the IFC4 Design Transfer View can analyse and extract the information of the model
-* If the receiver suggests or demands a change, it may be made to the model directly
+\* The source of the BIM information remains with the originator or may be shared
+\* The full parametric behaviour, and thereby the intellectual engineering property, remains with the originator or may be tranfered
+\* The ownership of the model, and responsibility for its correctness, remains with the originator or may be transfered
+\* The original model is published as IFC4 Design Transfer model reflecting the as-is status
+\* The receiver of the IFC4 Design Transfer View does not need to have access to the full model content
+\* The receiver of the IFC4 Design Transfer View may modify the model
+\* The receiver of the IFC4 Design Transfer View can analyse and extract the information of the model
+\* If the receiver suggests or demands a change, it may be made to the model directly
 
 The Level of Detail of the shape representation and the Level of Information for the property content of the actual reference models depends on the source model. The buildingSMART standard IDM (Information Delivery Manual) can be used to determine the minimum content for a particular workflow support. The IFC4 Design Transfer View allows rich content to be published.
 
@@ -67,5 +67,9 @@ _Elemented-case_ entities are defined by compositions of elements, where each co
 { .gridtable}
 Entity | Components
 ------ | ----------
-_IfcSlabElementedCase_ | _IfcPlateStandardCase_ (subfloor)<br/>_IfcElementAssembly_ (joists)<br/>_IfcBuildingElementPart_ (ceiling drywall)
-_IfcWallElementedCase_ | _IfcBuildingElementPart_ (panels on forward side)<br/>_IfcElementAssembly_ (studs, track, insulation)<br/>_IfcBuildingElementPart_ (panels on reverse side)
+_IfcSlabElementedCase_ | _IfcPlateStandardCase_ (subfloor)  
+_IfcElementAssembly_ (joists)  
+_IfcBuildingElementPart_ (ceiling drywall)
+_IfcWallElementedCase_ | _IfcBuildingElementPart_ (panels on forward side)  
+_IfcElementAssembly_ (studs, track, insulation)  
+_IfcBuildingElementPart_ (panels on reverse side)

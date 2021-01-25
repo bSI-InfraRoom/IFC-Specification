@@ -8,8 +8,8 @@ The scope of the _IfcHvacDomain_ schema is defined as:
 
 The following are deemed to be out of scope of the _IfcHvacDomain_ schema at this time:
 
-* Industrial and institutional specialty equipment such as that used for power production, manufacturing and fabrication, etc.
-* Provisions for dealing explicitly with hazardous materials such as chemical or biological agents
-* Controls systems and sequencing systems for these equipment beyond what is defined in the _IfcBuildingControls_ domain schema
+\* Industrial and institutional specialty equipment such as that used for power production, manufacturing and fabrication, etc.
+\* Provisions for dealing explicitly with hazardous materials such as chemical or biological agents
+\* Controls systems and sequencing systems for these equipment beyond what is defined in the _IfcBuildingControls_ domain schema
 
 > HISTORY&nbsp; This schema has been significantly modified in IFC2x2.

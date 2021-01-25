@@ -89,6 +89,8 @@ type</td>
 <tr><td><p class="figure">Figure 1 &mdash; Window partitioning</p></td></tr>
 </table>
 
+
+
 NOTE
 
 1. The way how each panel operates is defined at the _IfcWindowPanelProperties.OperationType_.

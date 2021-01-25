@@ -6,7 +6,7 @@ Figure 1 shows the use of planar extent and box alignment to position the text s
 
 The planar extent defines the box model within which the text is placed. Padding maybe defined in the text style that offsets the text from the box to its inside.
 
-> NOTE&nbsp; Entity adapted from **text_literal_with_extent** defined in ISO10303-46
+> NOTE&nbsp; Entity adapted from \*\*text_literal_with_extent\*\* defined in ISO10303-46
 
 > HISTORY&nbsp; New entity in IFC2x2.
 

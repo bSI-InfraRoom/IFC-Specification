@@ -8,16 +8,16 @@ The _IfcTessellatedFaceSet_ is an abstract supertype of tesselated face sets eac
 
 The following attributes apply to all subtypes:
 
-* The _Coordinates_ are the ordered list of Cartesian points representing the vertices of the tessellated item. An index list, defined at the level of subtypes, uses the points, identified by index position, to construct the polylines that represent the faces.
-* The _HasColours_ inverse relation provides an indexed colour map with an corresponding list of indices providing a colour for each face of the tessellated face set.
-* The _HasTextures_ inverse relation provides an indexed texture map with an corresponding list of indices providing texture coordinates that map to the geometric coordinates of the polylines representing the faces.
+\* The _Coordinates_ are the ordered list of Cartesian points representing the vertices of the tessellated item. An index list, defined at the level of subtypes, uses the points, identified by index position, to construct the polylines that represent the faces.
+\* The _HasColours_ inverse relation provides an indexed colour map with an corresponding list of indices providing a colour for each face of the tessellated face set.
+\* The _HasTextures_ inverse relation provides an indexed texture map with an corresponding list of indices providing texture coordinates that map to the geometric coordinates of the polylines representing the faces.
 
 Each face of the tessellated face set shall have:
 
-* at least three non-coincident vertices;
-* vertices that define a planar polygon;
-* vertices that define a non-self-intersecting polygon.
+\* at least three non-coincident vertices;
+\* vertices that define a planar polygon;
+\* vertices that define a non-self-intersecting polygon.
 
-> NOTE&nbsp; The definition of _IfcTessellatedFaceSet_ is based on the **indexedFaceSet** defined in ISO/IEC 19775-1
+> NOTE&nbsp; The definition of _IfcTessellatedFaceSet_ is based on the \*\*indexedFaceSet\*\* defined in ISO/IEC 19775-1
 
 > HISTORY&nbsp; New entity in IFC4.

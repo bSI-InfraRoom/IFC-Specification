@@ -2,7 +2,7 @@ The _IfcSpaceBoundarySelect_ selects either an internal space for internal or e
 
 > HISTORY&nbsp; New select type in IFC4.
 
-**SELECT**
+\*\*SELECT\*\*
 
-* _IfcSpace_,
-* _IfcExternalSpatialElement_
+\* _IfcSpace_,
+\* _IfcExternalSpatialElement_

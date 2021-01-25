@@ -2,13 +2,13 @@ The Industry Foundation Classes, IFC, are an open international standard for Bui
 
 The Industry Foundation Classes specify a data schema and an exchange file format structure. The data schema is defined in
 
-* EXPRESS data specification language, defined in [ISO 10303-11](../schema/chapter-2.htm#iso-10303-11),
-* XML Schema definition language (XSD), defined in [XML Schema W3C Recommendation](../schema/chapter-2.htm#w3c-xml-schema-part-1),
+\* EXPRESS data specification language, defined in [ISO 10303-11](../schema/chapter-2.htm#iso-10303-11),
+\* XML Schema definition language (XSD), defined in [XML Schema W3C Recommendation](../schema/chapter-2.htm#w3c-xml-schema-part-1),
 
 whereas the EXPRESS schema definition is the source and the XML schema definition is generated from the EXPRESS schema according to the mapping rules defined in [ISO 10303-28](../schema/chapter-2.htm#iso-10303-28). The exchange file formats for exchanging and sharing data according to the conceptual schema are
 
-* Clear text encoding of the exchange structure, defined in [ISO 10303-21](../schema/chapter-2.htm#iso-10303-21),
-* Extensible Markup Language (XML), defined in [XML W3C Recommendation](../schema/chapter-2.htm#w3c-xml).
+\* Clear text encoding of the exchange structure, defined in [ISO 10303-21](../schema/chapter-2.htm#iso-10303-21),
+\* Extensible Markup Language (XML), defined in [XML W3C Recommendation](../schema/chapter-2.htm#w3c-xml).
 
 Alternative exchange file formats may be used if they conform to the data schemas.
 
