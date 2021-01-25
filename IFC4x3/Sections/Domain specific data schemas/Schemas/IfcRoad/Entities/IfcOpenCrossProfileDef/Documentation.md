@@ -3,4 +3,4 @@ The behaviour of OpenCrossProfileDef in sweeping operation can be controlled by 
 ******Formal propositions:*** The profile type shall be CURVE.
 * The list of slopes and the list of widths shall be of the same size, and the list of tags shall have one more member.
 
-[<font color="#0000ff"><u>IfcOpenCrossProfileDef-1</u></font>]($imageman://id=1364904450;mdg=Global;name=IfcOpenCrossProfileDef-1;type=Bitmap;)[<font color="#0000ff"><u> </u></font>]($imageman://id=1110734429;mdg=Global;name=OpenCrossProfileDef-1;type=Bitmap;)
+!["open cross profile"](../../../../../../figures/IfcOpenCrossProfileDef.png "Figure 1 &mdash; Open cross profile")

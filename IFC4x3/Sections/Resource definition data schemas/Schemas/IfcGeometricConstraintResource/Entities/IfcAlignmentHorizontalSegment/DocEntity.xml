@@ -11,10 +11,10 @@
 			<Documentation>The direction of the tangent at the start point. Direction value 0. indicates a curve with a start tangent along the positive x-axis. Values increases counter-clockwise, and decreases clockwise. Depending on the plane angle unit, either degree or radians, the sensible range is -360° ≤ n ≤ 360° (or -2π ≤ n ≤ 2π). Values larger then a full circle (&gt;|360°| or &gt;|2 π| shall not be used.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="StartRadiusOfCurvature" UniqueId="a8a7c32e-d91b-41e0-ba7f-79c753e4ac01" DefinedType="IfcLengthMeasure">
-			<Documentation>For a NONLINEAR horizontal segment type the radius of the curve at the start point (_Placement_ of the segment). For CIRCULAR type it is constant i.e. _StartRadiusOfCurvature_ and _EndRadiusOfCurvature_ are always the same. For LINE type, both _StartRadiusOfCurvature_ and _EndRadiusOfCurvature_ is 0. If the radius is 0 it shall be interpreted as INFINITE.</Documentation>
+			<Documentation>For a NONLINEAR horizontal segment type the radius of the curve at the start point (_Placement_ of the segment). For CIRCULAR type it is constant i.e. _StartRadiusOfCurvature_ and _EndRadiusOfCurvature_ are always the same. For LINE type, both _StartRadiusOfCurvature_ and _EndRadiusOfCurvature_ is 0. If the radius is 0 it shall be interpreted as INFINITE. Positive values imply a CCW direction whereas negative CW.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="EndRadiusOfCurvature" UniqueId="8147aa05-9061-43f0-a0f5-e90a19e3e111" DefinedType="IfcLengthMeasure">
-			<Documentation>For a NONLINEAR horizontal segment type the radius of the curve at the end point. If the radius is 0 it shall be interpreted as INFINITE.</Documentation>
+			<Documentation>For a NONLINEAR horizontal segment type the radius of the curve at the end point. If the radius is 0 it shall be interpreted as INFINITE. Positive values imply a CCW direction whereas negative CW.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="SegmentLength" UniqueId="c9466d68-d95a-43f1-b397-fc6cb7e483a8" DefinedType="IfcPositiveLengthMeasure">
 			<Documentation>The length along the curve.</Documentation>
