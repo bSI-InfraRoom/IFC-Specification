@@ -2,7 +2,7 @@ An identifier is an alphanumeric string which allows an individual thing to be i
 
 Type: STRING of up to 255 characters
 
-> NOTE&nbsp; Type adapted from \*\*identifier\*\* defined in ISO 10303-41.
+> NOTE&nbsp; Type adapted from **identifier** defined in ISO 10303-41.
 
 > HISTORY&nbsp; New type in IFC2x.
 

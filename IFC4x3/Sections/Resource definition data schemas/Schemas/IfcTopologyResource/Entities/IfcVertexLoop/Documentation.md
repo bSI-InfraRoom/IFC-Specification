@@ -5,7 +5,7 @@
 
 
 > 
-> NOTE&nbsp; Entity adapted from \*\*vertex_loop\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from **vertex_loop** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC2x2.
 

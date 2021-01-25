@@ -20,7 +20,7 @@ Figure 2 shows in instance diagram explaining the override of _IfcPresentationLa
 
 !["styles assigned by layer and styled item"](../../../../../../figures/ifcrepresentationitem_style-2.png "Figure 2 &mdash; Representation item style override")
 
-> NOTE&nbsp; Entity adapted from \*\*representation_map\*\* defined in ISO 10303-43.
+> NOTE&nbsp; Entity adapted from **representation_map** defined in ISO 10303-43.
 
 > HISTORY&nbsp; New entity in IFC2x.
 

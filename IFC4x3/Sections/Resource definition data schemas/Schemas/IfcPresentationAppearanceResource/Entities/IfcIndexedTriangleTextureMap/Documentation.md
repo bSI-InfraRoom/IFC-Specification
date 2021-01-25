@@ -2,8 +2,8 @@ The _IfcIndexedTriangleTextureMap_ provides the mapping of the 2-dimensional tex
 
 The _IfcIndexedTriangleTextureMap_ defines an index into an indexed list of texture coordinates. The _TexCoordIndex_ is a two-dimensional list, where
 
-\* first dimension is the unbounded list of faces corresponding to the list of triangles defined by _CoordIndex_ at _IfcTriangulatedFaceSet_; 
-\* second dimension is the fixed list of three indices to texture vertices cooresponding to the fixed list of indices to vertices at _IfcTriangulatedFaceSet_ 
+* first dimension is the unbounded list of faces corresponding to the list of triangles defined by _CoordIndex_ at _IfcTriangulatedFaceSet_; 
+* second dimension is the fixed list of three indices to texture vertices cooresponding to the fixed list of indices to vertices at _IfcTriangulatedFaceSet_ 
 
 The _TexCoords_ defined at supertype _IfcIndexedTextureMap_ are a two-dimensional list of texture coordinates provided by two parameter values. Each index of the second dimension list of _TexCoordIndex_ points to a texture vertex in _TexCoords_.
 
@@ -28,8 +28,6 @@ Figure 1 shows the use of _IfcTriangulatedFaceSet_ with textures.
         </td>
       </tr>
     </table>
-
-
 
 Figure 2 illustrates an _IfcTriangulatedFaceSet_ represented by   
 _IfcTriangulatedFaceSet.CoordIndex_: ((1,6,5), (1,2,6), (6,2,7), (7,2,3), (7,8,6), (6,8,5), (5,8,1), (1,8,4), (4,2,1), (2,4,3), (4,8,7), (7,3,4))  
@@ -56,7 +54,5 @@ _IfcTextureVertexList.TexCoordsList_: ((0. -0.5), (1. -0.5), (0. 1.5), (1. 1.5),
         </td>
       </tr>
     </table>
-
-
 
 > HISTORY&nbsp; New entity in IFC4.

@@ -1,8 +1,8 @@
 The element type _IfcCoveringType_ defines commonly shared information for occurrences of coverings. The set of shared information may include:
 
-\* common properties within shared property sets
-\* common material (layer set) information
-\* common shape representations
+* common properties within shared property sets
+* common material (layer set) information
+* common shape representations
 
 It is used to define an covering specification or covering style (i.e. the specific product information, that is common to all occurrences of that product type). Covering types may be exchanged without being already assigned to occurrences.
 

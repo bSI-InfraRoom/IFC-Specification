@@ -28,8 +28,6 @@ to the object coordinate system. The extrusion direction of the subtraction body
 </tr>
 </table>
 
-
-
 The polygonal bounded half space is used to limit the volume of the half space in Boolean difference expressions. Only the part that is defined by a theoretical intersection between the half space solid and an extruded area solid, defined by extruding the polygonal boundary, is used for Boolean expressions.
 
 The _PolygonalBoundary_ defines the 2D polyline which bounds the effectiveness of the half space in Boolean expressions. The _BaseSurface_ is defined by a plane, and the normal of the plane together with the _AgreementFlag_ defines the side of the material of the half space.

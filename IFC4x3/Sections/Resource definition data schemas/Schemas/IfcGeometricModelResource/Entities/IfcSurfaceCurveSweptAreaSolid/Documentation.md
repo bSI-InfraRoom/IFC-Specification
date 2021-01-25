@@ -16,8 +16,6 @@ The resulting body of the swept solid is not repositioned if the inherited _Posi
   
 <table border="0" cellpadding="2" cellspacing="2" summary="surface curve wept area solid"><br><tr><br><td><img src="../../../../../../figures/ifcsurfacecurvesweptareasolid_01.png" alt="surface curve wept area solid" width="600" height="450"></td><br><td><blockquote class="example">EXAMPLE&nbsp; Figure 1 illustrates an example using a cylindrical reference surface and a p-curve for sweeping a rectangle. The <em>Postion</em> is not provided and therefore it does not reposition the resulting swept solid. Figure 2 shows the expected result.</blockquote><br><blockquote class="note">NOTE&nbsp; The start of the directrix lies at the origin of the object coordinate system, as shown in the illustration,<br>only by coincidence. The start of the directrix and thereby the start of the sweeping operation might be at any point within the object coordinate <br>system and only depends on the position of the directrix.</blockquote></td><br></tr><br><tr><br><td><br><p class="figure">Figure 1 &mdash; Surface curve wept area solid parameter</p><br></td><br><td>&nbsp;</td><br></tr><br><tr><br><td><img src="../../../../../../figures/ifcsurfacecurvesweptareasolid_02.png" alt="surface curve wept area solid" width="600" height="450"></td><br></tr><br><tr><br><td><br><p class="figure">Figure 2 &mdash; Surface curve wept area solid results</p><br></td><br></tr><br></table>
 
-
-
   
   
 { .extDef}  
@@ -26,11 +24,11 @@ The resulting body of the swept solid is not repositioned if the inherited _Posi
 >     
 > The _SweptArea_ is required to be a curve bounded surface lying in the plane z = 0 and this is swept along the _Directrix_ in such a way that the origin of the local coordinate system used to define the _SweptArea_ is on the _Directrix_ and the local x-axis is in the direction of the normal to the _ReferenceSurface_ at the current point. The resulting solid has the property that the cross section of the surface by the normal plane to the _Directrix_ at any point is a copy of the _SweptArea_.    
 >     
-> The orientation of the _SweptArea_ as it sweeps along the _Directrix_ is precisely defined by a Cartesian Transformation Operator 3D with attributes: > \\* Local origin as point (0., 0., 0),  
-> \\* Axis 1 as the normal N to the reference surface at the point of the directrix with parameter u.  
-> \\* Axis 3 as the direction of the tangent vector t at the point of the directrix with parameter u.   The remaining attributes are defaulted to define a corresponding transformation matrix T(u), which varies with the directrix parameter u.  
+> The orientation of the _SweptArea_ as it sweeps along the _Directrix_ is precisely defined by a Cartesian Transformation Operator 3D with attributes: > \* Local origin as point (0., 0., 0),  
+> \* Axis 1 as the normal N to the reference surface at the point of the directrix with parameter u.  
+> \* Axis 3 as the direction of the tangent vector t at the point of the directrix with parameter u.   The remaining attributes are defaulted to define a corresponding transformation matrix T(u), which varies with the directrix parameter u.  
   
-> NOTE&nbsp; Entity adapted from \\*\\*surface_curve_swept_area_solid\\*\\* defined in ISO 10303-42.  
+> NOTE&nbsp; Entity adapted from \*\*surface_curve_swept_area_solid\*\* defined in ISO 10303-42.  
   
 > HISTORY&nbsp; New entity in IFC2x2.  
   

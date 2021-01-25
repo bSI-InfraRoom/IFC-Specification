@@ -35,8 +35,6 @@ A grid may support a rectangular layout as shown in Figure 1, a radial layout as
       </tbody>
     </table>
 
-
-
 > HISTORY&nbsp; New entity in IFC1.0.
 
 { .change-ifc2x4}

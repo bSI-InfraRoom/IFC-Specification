@@ -2,8 +2,8 @@ The objectified relationship _IfcRelAssociatesClassification_ handles the assign
 
 The relationship is used to assign a classification item, or a classification system itself to objects. Depending on the type of the _RelatingClassification_ it is either:
 
-\* a reference to an classification item within an external classification system, or
-\* a reference to the classification system itself
+* a reference to an classification item within an external classification system, or
+* a reference to the classification system itself
 
 > NOTE&nbsp; The reference to a classification item includes a link to the classification system within which the item is declared. It assigns the meaning of the classification item to the object (ocurrence or type). The reference to the classification system provides the information that the object (occurrence or type) is governed by the classification system but no assignment of a particular items has been done yet.
 

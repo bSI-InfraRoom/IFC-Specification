@@ -231,8 +231,6 @@ Table 1 illustrates application of _IfcLogicalOperatorEnum_ in a case of three o
 <tr><td><p class="table">Table 1 &mdash; Logical operators</p></td></tr>
 </table>
 
-
-
 > HISTORY&nbsp; New enumeration in IFC2.0.
 
 { .change-ifc2x4}

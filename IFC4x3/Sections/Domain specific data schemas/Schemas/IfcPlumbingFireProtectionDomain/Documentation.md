@@ -8,16 +8,16 @@ In the case of fire protection, the scope includes for all services from the poi
 
 In particular, _IfcPlumbingFireProtectionDomain_ schema supports ideas including types of:
 
-\* sanitary element concerned with personal and public hygiene,
-\* trap on waste pipelines to prevent backflow and odor transmission,
-\* interceptor to capture unwanted liquid and solid waste materials and prevent their passage into drainage pipelines,
-\* waste disposal unit,
-\* cowl terminating ventilation and rainwater pipes at their highest elevation,
-\* automatic and manual terminal point that can be activated to extinguish fire,
-\* hydrant that provide a source of water for hoses in the event of fire or other need for a temporary water supply.
+* sanitary element concerned with personal and public hygiene,
+* trap on waste pipelines to prevent backflow and odor transmission,
+* interceptor to capture unwanted liquid and solid waste materials and prevent their passage into drainage pipelines,
+* waste disposal unit,
+* cowl terminating ventilation and rainwater pipes at their highest elevation,
+* automatic and manual terminal point that can be activated to extinguish fire,
+* hydrant that provide a source of water for hoses in the event of fire or other need for a temporary water supply.
 
 The following are deemed to be out of scope of the _IfcPlumbingFireProtectionDomain_ schema at this time:
 
-\* public utility water and waste services
+* public utility water and waste services
 
 > HISTORY&nbsp; New schema in IFC2x2

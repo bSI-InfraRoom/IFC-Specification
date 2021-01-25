@@ -6,11 +6,11 @@ The _IfcMeasureResource_ schema specifies units and defined measure types that m
 
 In different types of units there are five basic cases:
 
-\* Basic SI-units, which cover a number of fundamental units of mainly physical quantities defined by [ISO-1000](../../bibliography.htm#iso-1000){ .int-ref} such as meter or millimeter as unit for length measure or square meter as a unit for area measure. The unit may have a scaling prefix (for example: milli, kilo).
-\* Derived SI-units, which are defined as a derivation of the basic SI-units, for example, Newton (kg m / s2) as a unit of force. Both basic and derived SI-units are in the IFCs represented by IfcSIUnit.
-\* Conversion based units, which can be derived from SI-units by a scaling factor; e.g. inch which can be defined using SI-unit for length measure, i.e. an inch is 25.4 millimeters.
-\* Derived units, which can be defined as a derivation or combination of a number of basic units. In a derived unit each of the basic unit "component" has a dimensional exponent in defining the derived unit; e.g. kg / m2, where kilogram (kg) has dimensional exponent 1 and meter (m) has exponent -2.
-\* Context dependent units, which cannot be defined as conversion based unit using SI-units.
+* Basic SI-units, which cover a number of fundamental units of mainly physical quantities defined by [ISO-1000](../../bibliography.htm#iso-1000){ .int-ref} such as meter or millimeter as unit for length measure or square meter as a unit for area measure. The unit may have a scaling prefix (for example: milli, kilo).
+* Derived SI-units, which are defined as a derivation of the basic SI-units, for example, Newton (kg m / s2) as a unit of force. Both basic and derived SI-units are in the IFCs represented by IfcSIUnit.
+* Conversion based units, which can be derived from SI-units by a scaling factor; e.g. inch which can be defined using SI-unit for length measure, i.e. an inch is 25.4 millimeters.
+* Derived units, which can be defined as a derivation or combination of a number of basic units. In a derived unit each of the basic unit "component" has a dimensional exponent in defining the derived unit; e.g. kg / m2, where kilogram (kg) has dimensional exponent 1 and meter (m) has exponent -2.
+* Context dependent units, which cannot be defined as conversion based unit using SI-units.
 
 With regard to the usage of the measure defined types (for example, _IfcLengthMeasure_, _IfcTimeMeasure_) as attribute datatypes in this specification, there are three basic cases:
 
@@ -35,7 +35,6 @@ In this case the relevant measure defined type (from the IfcMeasureWithUnit.Valu
 <li>The entity type has a separate "unit" attribute which allows for defining the unit for another attribute of the entity type for representing the actual value:
 <blockquote><code>
 ENTITY IfcPropertySingleValue<br>SUBTYPE OF (IfcSimpleProperty);<br>NominalValue : IfcValue;<br>Unit : OPTIONAL IfcUnit;<br>END_ENTITY;<br></code></blockquote></li></ol>
-
 Although in the cases 2 and 3 different units could be used for different instances of the same entity type or for the same measure type in attributes of different entity types, it is recommended not to mix different units for same measure defined types, if it can be avoided. Below some examples of each of the above basic cases are given.
 
 > NOTE&nbsp; In the example instantiations in the form of IFC data exchange files, mainly the measure and unit -relevant attributes are given the values; the other attributes are given no values (in the form of $-sign) independent of whether they should actually have values because of being nonoptional attributes.

@@ -4,9 +4,9 @@ It defines the assignment of two offset values for a material layer in its inten
 
 > EXAMPLE&nbsp; At the top of a standard wall, with shape representation 'SweptSolid', offset of a given layer can be specified in the direction of the extrusion (positive Z axis), applied at the start or end (extruded from bottom to top), and with a positive (extending above extrusion) or negative (ending below extrusion).  
 >   
-> Take a standard wall with the outer material layer for the external isolation extending above extrusion by 100mm, but starting at the same base height. In this case the following values are set: > \* _OffsetDirection_ = .AXIS3.
-> \* _OffsetValues[1]_ = 0.0
-> \* _OffsetValues[2]_ = 100.0 (default unit assumed to be mm)
+> Take a standard wall with the outer material layer for the external isolation extending above extrusion by 100mm, but starting at the same base height. In this case the following values are set: > * _OffsetDirection_ = .AXIS3.
+> * _OffsetValues[1]_ = 0.0
+> * _OffsetValues[2]_ = 100.0 (default unit assumed to be mm)
 
 > NOTE&nbsp; The 'Body' shape representation of an _IfcWall_ or an _IfcWallStandardCase_ may have multiple _Items_ each being an _IfcExtrudedAreaSolid_ corresponding to the _IfcMaterialLayer_ and _IfcMaterialLayerWithOffsets_. 
 >> HISTORY&nbsp; New entity in IFC4.

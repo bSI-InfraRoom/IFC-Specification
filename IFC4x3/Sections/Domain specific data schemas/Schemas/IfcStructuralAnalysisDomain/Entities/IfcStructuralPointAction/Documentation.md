@@ -5,11 +5,11 @@ This entity defines an action which acts on a point. A point action is typically
 { .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Attributes in the supertypes _IfcStructuralActivity_ and _IfcStructuralAction_ changed. Use definitions changed, informal propositions added.
 
-\*\*\*\*Coordinate Systems\*\*\*\*:
+****Coordinate Systems****:
 
 See definitions at _IfcStructuralActivity_.
 
-\*\*\*\*Topology Use Definitions\*\*\*\*:
+****Topology Use Definitions****:
 
 Standard Case:  
 If connected with a point item, instances of _IfcStructuralPointAction_ shall not have an _ObjectPlacement_ nor a _Representation_. It is implied that the placement and representation of the action is the same as the structural item.

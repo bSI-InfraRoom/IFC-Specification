@@ -51,6 +51,4 @@ Limitation: For backward compatibility, all _IfcTableRow_ objects referenced by 
       </tr>
     </table>
 
-
-
 > HISTORY&nbsp; New entity in IFC1.5.

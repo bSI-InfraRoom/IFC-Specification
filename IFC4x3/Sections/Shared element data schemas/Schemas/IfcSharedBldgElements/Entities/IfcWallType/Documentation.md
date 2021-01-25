@@ -1,9 +1,9 @@
 The element type _IfcWallType_ defines commonly shared information for occurrences of walls. The set of shared information may include:
 
-\* common properties within shared property sets
-\* common material information
-\* common material layer definitions
-\* common shape representations
+* common properties within shared property sets
+* common material information
+* common material layer definitions
+* common shape representations
 
 > NOTE&nbsp; It is illegal to share shape representations as representation maps for occurrences of _IfcWallStandardcase_.
 

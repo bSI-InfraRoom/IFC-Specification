@@ -4,7 +4,7 @@ The _IfcRepresentationContext_ defines the context to which the _IfcRepresentati
 > NOTE&nbsp; Definition from ISO 10303-42  
 > A representation context is a context in which a set of representation items are related.
 
-> NOTE&nbsp; Entity adapted from \*\*representation_context\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from **representation_context** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC1.5.
 

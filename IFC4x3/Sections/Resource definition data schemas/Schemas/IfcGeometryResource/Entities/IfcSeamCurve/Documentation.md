@@ -10,6 +10,6 @@ Figure 1 shows an instance diagram explaining the use of _IfcSeamCurve_ as a bou
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
 > A seam curve is a type of surface curve, that is a curve on a closed parametric surface which has two distinct representations as constant parameter curves at the two extremes of the parameter range for the surface.
 
-> NOTE&nbsp; Entity adapted from \*\*surface_curve\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from **surface_curve** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC4 Add2.

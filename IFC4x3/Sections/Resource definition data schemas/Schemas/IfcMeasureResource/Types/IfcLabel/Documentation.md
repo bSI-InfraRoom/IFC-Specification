@@ -2,7 +2,7 @@ A label is the term by which something may be referred to. It is a string which 
 
 Type: STRING of up to 255 characters
 
-> NOTE&nbsp; Type adapted from \*\*label\*\* defined in ISO 10303-41.
+> NOTE&nbsp; Type adapted from **label** defined in ISO 10303-41.
 
 > HISTORY&nbsp; New type in IFC2x.
 

@@ -2,9 +2,9 @@ An _IfcClassificationReference_ is a reference into a classification system or s
 
 The inherited attributes have the following meaning:
 
-\* _Identification_: holds the key provided for a specific references to classification items (or tables).
-\* _Name_: allows for a human interpretable designation of a classification notation.
-\* _Location_: optionally holds a direct URI link into the classification system (or source) to hyperlink the classification key.
+* _Identification_: holds the key provided for a specific references to classification items (or tables).
+* _Name_: allows for a human interpretable designation of a classification notation.
+* _Location_: optionally holds a direct URI link into the classification system (or source) to hyperlink the classification key.
 
 The _IfcClassificationReference_ can either be assigned directly to the _IfcClassification_, such as if no classification hierarchy has to be included, or it references the parent classification notation, if the fully classification hierarchy is included in the data set. The first is refered to as "lightweight classification", and the second as "full classification". The attribute _ReferencedSource_ then holds the following information (choice by _IfcClassificationReferenceSelect_):
 

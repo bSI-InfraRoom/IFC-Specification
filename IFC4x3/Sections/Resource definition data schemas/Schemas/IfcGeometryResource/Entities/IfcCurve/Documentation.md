@@ -3,7 +3,7 @@ An _IfcCurve_ is a curve in two-dimensional or three-dimensional space. It inclu
 > NOTE&nbsp; Definition according to ISO 10303-42:  
 > A curve can be envisioned as the path of a point moving in its coordinate space.
 
-> NOTE Entity adapted from \*\*curve\*\* defined in ISO 10303-42
+> NOTE Entity adapted from **curve** defined in ISO 10303-42
 
 > HISTORY&nbsp; New entity in IFC1.0
 

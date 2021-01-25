@@ -6,11 +6,11 @@ The _IfcPolyline_ is a bounded curve with only linear segments defined by a list
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
-> A polyline is a bounded curve of _n_ - 1 linear segments, defined by a list of _n_ points, P\~1\~, P\~2\~ ... P\~n\~. The _i_th segment of the curve is parameterized as follows: 
+> A polyline is a bounded curve of _n_ - 1 linear segments, defined by a list of _n_ points, P~1~, P~2~ ... P~n~. The _i_th segment of the curve is parameterized as follows: 
 { .extDef}
 >> ![Image](../../../../../../figures/ifcpolyline-math1.gif)&nbsp;&nbsp;&nbsp; _for_ 1 &le; _i_ &le; _n_ - 1
 >  where _i_ - 1 &le; _u_ &le; _i_ and with parametric range of 0 <&le; _u_ &le; _n_ - 1.
 
-> NOTE&nbsp; Entity adapted from \*\*polyline\*\* in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from **polyline** in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC1.0

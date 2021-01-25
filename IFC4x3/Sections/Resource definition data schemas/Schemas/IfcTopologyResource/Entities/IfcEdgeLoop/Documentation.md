@@ -2,7 +2,7 @@
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
 > An edge_loop is a loop with nonzero extent. It is a path in which the start and end vertices are the same. Its domain, if present, is a closed curve. An edge_loop may overlap itself.
 
-> NOTE&nbsp; Entity adapted from \*\*edge_loop\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from **edge_loop** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC2x2.
 

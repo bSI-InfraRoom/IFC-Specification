@@ -2,8 +2,8 @@ _IfcPreDefinedPropertySet_ is a generalization of all statically defined propert
 
 Property sets are related to other objects by using the relationship object that refers to the corresponding object:
 
-\* \*\*Occurrence Object\*\*: _IfcRelDefinesByProperties_ using the inverse attribute _DefinesOccurrence_.
-\* \*\*Type Object\*\*: using a direct link by inverse attribute _DefinesType_.
+* **Occurrence Object**: _IfcRelDefinesByProperties_ using the inverse attribute _DefinesOccurrence_.
+* **Type Object**: using a direct link by inverse attribute _DefinesType_.
 
 _IfcPreDefinedPropertySet_'s can be assigned to objects and object types but do not have a defining property set template.
 

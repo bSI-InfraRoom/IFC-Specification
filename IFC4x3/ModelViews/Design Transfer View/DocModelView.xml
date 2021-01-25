@@ -77,9 +77,9 @@
 				<DocTemplateUsage Name="Axis 3D Geometry" UniqueId="bcfd5d22-13b1-495c-b8ac-cc125b484c20">
 					<Documentation>The following additional constraints apply to the &apos;Axis&apos; representation, if the &apos;Body&apos; shape representation has the _RepresentationType_ : &apos;SweptSolid&apos;:
 
-\* _Axis_ 
-    \* _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the z axis of the object coordinate system.
-    \* _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcRevolvedAreaSolid_. The axis curve lies on the x/z plane of the object coordinate system, the tangent at the start is along the positive z-axis. 
+* _Axis_ 
+    * _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the z axis of the object coordinate system.
+    * _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcRevolvedAreaSolid_. The axis curve lies on the x/z plane of the object coordinate system, the tangent at the start is along the positive z-axis. 
 
 &amp;nbsp;
 
@@ -122,23 +122,23 @@
 				<DocTemplateUsage Name="Body SweptSolid StandardizedProfile Geometry" UniqueId="e1c5f3f4-35b0-4a5d-a074-1c4a206f4fae">
 					<Documentation>The following additional constraints apply to the &apos;SweptSolid&apos; representation:
 
-\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
-\* \*\*Solid Position\*\* : The _IfcSweptAreaSolid.Position_ shall exclusively been used to correspond to the cardinal point. The x/y offset of the _Position_ represents the cardinal point offset of the profile against the axis. No rotation shall be allowed.
-\* \*\*Profile\*\*: All subtypes of _IfcParameterizedProfileDef_
-\* \*\*Profile Position\*\* : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
-\* \*\*Extrusion\*\*: Perpendicular to the profile direction. The _IfcExtrudedAreaSolid.ExtrudedDirection_ shall be [0.,0.,1.].
-\* \*\*Orientation\*\*: The y-axis of the profile, as determined by _IfcSweptAreaSolid.Position.P[2]_ shall point upwards. It indicates the &quot;role&quot; of the beam, a role=0&amp;deg; means y-axis of profile pointing upwards.
+* **Solid**: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
+* **Solid Position** : The _IfcSweptAreaSolid.Position_ shall exclusively been used to correspond to the cardinal point. The x/y offset of the _Position_ represents the cardinal point offset of the profile against the axis. No rotation shall be allowed.
+* **Profile**: All subtypes of _IfcParameterizedProfileDef_
+* **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
+* **Extrusion**: Perpendicular to the profile direction. The _IfcExtrudedAreaSolid.ExtrudedDirection_ shall be [0.,0.,1.].
+* **Orientation**: The y-axis of the profile, as determined by _IfcSweptAreaSolid.Position.P[2]_ shall point upwards. It indicates the &quot;role&quot; of the beam, a role=0&amp;deg; means y-axis of profile pointing upwards.
 
-Figure 1 illustrates a standard geometric representation with cardinal point applied as \*\*1\*\* (bottom left).
+Figure 1 illustrates a standard geometric representation with cardinal point applied as **1** (bottom left).
 
 The following interpretation of dimension parameter applies for rectangular beams with linear extrusions:
 
-\* _IfcRectangleProfileDef.YDim_ interpreted as beam height
-\* _IfcRectangleProfileDef.XDim_ interpreted as beam width
+* _IfcRectangleProfileDef.YDim_ interpreted as beam height
+* _IfcRectangleProfileDef.XDim_ interpreted as beam width
 
 The following interpretation of dimension parameter applies for circular beams:
 
-\* _IfcCircleProfileDef.Radius_ interpreted as beam radius.
+* _IfcCircleProfileDef.Radius_ interpreted as beam radius.
 
 ![&quot;standard beam&quot;](../../figures/ifcbeamstandardcase_sweptsolid-01.png &quot;Figure 1 &amp;mdash; Beam body extrusion&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_ParameterizedProfile_Geometry_0TW7c_cFjCFg82IViXYwn" />
@@ -149,19 +149,19 @@ The following interpretation of dimension parameter applies for circular beams:
 				<DocTemplateUsage Name="Body AdvancedSwept Directrix Geometry" UniqueId="52eeabe6-f650-4bb6-af40-8e8515baaf9c">
 					<Documentation>The following additional constraints apply to the &apos;AdvancedSweptSolid&apos; representation type:
 
-\* \*\*Solid\*\*: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_ shall be supported.
-\* \*\*Solid Position\*\* : The _IfcSweptAreaSolid.Position_ shall exclusively been used to correspond to the cardinal point. The x/y offset of the _Position_ represents the cardinal point offset of the profile against the axis. No rotation shall be allowed.
-\* \*\*Profile\*\*: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
-\* \*\*Profile Position\*\* : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.</Documentation>
+* **Solid**: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_ shall be supported.
+* **Solid Position** : The _IfcSweptAreaSolid.Position_ shall exclusively been used to correspond to the cardinal point. The x/y offset of the _Position_ represents the cardinal point offset of the profile against the axis. No rotation shall be allowed.
+* **Profile**: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
+* **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSwept_Directrix_Geometry_1rhoOTsFz6le0t01amD9y7" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body AdvancedSwept Tapered Geometry" UniqueId="1f924cde-b215-478c-b416-8bf620132cc1">
 					<Documentation>The following additional constraints apply to the &apos;AdvancedSweptSolid&apos; representation type:
 
-\* \*\*Solid\*\*: _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported.
-\* \*\*Solid Position\*\* : The _IfcSweptAreaSolid.Position_ shall exclusively been used to correspond to the cardinal point. The x/y offset of the _Position_ represents the cardinal point offset of the profile against the axis. No rotation shall be allowed.
-\* \*\*Profile\*\*: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
-\* \*\*Profile Position\*\* : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
+* **Solid**: _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported.
+* **Solid Position** : The _IfcSweptAreaSolid.Position_ shall exclusively been used to correspond to the cardinal point. The x/y offset of the _Position_ represents the cardinal point offset of the profile against the axis. No rotation shall be allowed.
+* **Profile**: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
+* **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
 
 &gt; NOTE&amp;nbsp; Using _IfcExtrudedAreaSolidTapered_, or _IfcRevolvedAreaSolidTapered_ requires the use of two _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSetUsageTapering_ assinged to the _IfcBeamStandardCase_</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSwept_Tapered_Geometry_1nHIAqI8v9NRg1yGfUGR7S" />
@@ -169,15 +169,15 @@ The following interpretation of dimension parameter applies for circular beams:
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="d637ed64-415e-43a1-b33c-bb4907381bd2">
 					<Documentation>The following constraints apply to the &apos;Clipping&apos; representation:
 
-\* \*\*Solid\*\* : see &apos;SweptSolid&apos; geometric representation
-\* \*\*Solid Position\*\* : see &apos;SweptSolid&apos; geometric representation
-\* \*\*Profile\*\* : see &apos;SweptSolid&apos; geometric representation
-\* \*\*Profile Position\*\* : see &apos;SweptSolid&apos; geometric representation
-\* \*\*Extrusion\*\* : see &apos;SweptSolid&apos; geometric representation
-\* \*\*Orientation\*\* : see &apos;SweptSolid&apos; geometric representation
-\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
+* **Solid** : see &apos;SweptSolid&apos; geometric representation
+* **Solid Position** : see &apos;SweptSolid&apos; geometric representation
+* **Profile** : see &apos;SweptSolid&apos; geometric representation
+* **Profile Position** : see &apos;SweptSolid&apos; geometric representation
+* **Extrusion** : see &apos;SweptSolid&apos; geometric representation
+* **Orientation** : see &apos;SweptSolid&apos; geometric representation
+* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
 
-Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of _IfcBooleanClippingResult_ between an _IfcExtrudedAreaSolid_ and an _IfcHalfSpaceSolid_ to create a clipped body, with cardinal point applied as \*\*4\*\* (mid-depth left)
+Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of _IfcBooleanClippingResult_ between an _IfcExtrudedAreaSolid_ and an _IfcHalfSpaceSolid_ to create a clipped body, with cardinal point applied as **4** (mid-depth left)
 
 ![&quot;clipped beam&quot;](../../figures/ifcbeamstandardcase_clipping-01.png &quot;Figure 1 &amp;mdash; Beam body clipping&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Clipping_Geometry_0isyBrcmn3wfqgdNBG57u0" />
@@ -287,7 +287,7 @@ Figure 2 illustrates cardinal point alignment.
 
 &gt; NOTE  It has to be guaranteed that the use of _IfcCardinalPointEnum_ is consistent to the placement of the extrusion body provided by _IfcExtrudedAreaSolid.Position_
 
-&gt; NOTE  The cardinal points \*\*7\*\* (top left), and \*\*6\*\* (mid-depth right) are assigned according to the definition at _IfcCardinalPointReference_
+&gt; NOTE  The cardinal points **7** (top left), and **6** (mid-depth right) are assigned according to the definition at _IfcCardinalPointReference_
 
 ![&quot;Cardinal point usage&quot;](../../figures/ifccolumnstandardcase_cardinalpoint.png &quot;Figure 2 &amp;mdash; Column cardinal points&quot;)
 
@@ -307,9 +307,9 @@ Figure 3 illustrates assignment of a composite profile by using _IfcCompositePro
 				<DocTemplateUsage Name="Axis 3D Geometry" UniqueId="d2fac1d9-2b46-454f-a70d-ce75a49bd3a4">
 					<Documentation>The following additional constraints apply to the &apos;Axis&apos; representation, if the &apos;Body&apos; shape representation has the _RepresentationType_ : &apos;SweptSolid&apos;:
 
-\* _Axis_ 
-    \* _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the z axis of the object coordinate system.
-    \* _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcRevolvedAreaSolid_. The axis curve lies on the x/z plane of the object coordinate system, the tangent at the start is along the positive z-axis. 
+* _Axis_ 
+    * _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the z axis of the object coordinate system.
+    * _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcRevolvedAreaSolid_. The axis curve lies on the x/z plane of the object coordinate system, the tangent at the start is along the positive z-axis. 
 
 &amp;nbsp;
 
@@ -360,22 +360,22 @@ length of the column.&lt;/blockquote&gt;
 				<DocTemplateUsage Name="Body SweptSolid StandardizedProfile Geometry" UniqueId="8b7949f3-d464-407d-8e42-3a8031cdedac">
 					<Documentation>The following additional constraints apply to the &apos;SweptSolid&apos; representation:
 
-\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
-\* \*\*Profile\*\*: All subtypes of _IfcParameterizedProfileDef_
-\* \*\*Profile Position\*\* : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
-\* \*\*Extrusion\*\*: perpendicular to the profile direction. The _IfcExtrudedAreaSolid.ExtrudedDirection_ shall be [0.,0.,1.].
-\* \*\*Orientation\*\*: The y-axis of the profile, as determined by _IfcSweptAreaSolid.Position.P[2]_ shall point to the Y-Axis. It indicates the &quot;role&quot; of the column, a role=0&amp;deg; means y-axis of profile = Y-axis of reference coordinate system.
+* **Solid**: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
+* **Profile**: All subtypes of _IfcParameterizedProfileDef_
+* **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
+* **Extrusion**: perpendicular to the profile direction. The _IfcExtrudedAreaSolid.ExtrudedDirection_ shall be [0.,0.,1.].
+* **Orientation**: The y-axis of the profile, as determined by _IfcSweptAreaSolid.Position.P[2]_ shall point to the Y-Axis. It indicates the &quot;role&quot; of the column, a role=0&amp;deg; means y-axis of profile = Y-axis of reference coordinate system.
 
-Figure 1 illustrates a standard geometric representation with cardinal point applied as \*\*5\*\* (mid-depth centre).
+Figure 1 illustrates a standard geometric representation with cardinal point applied as **5** (mid-depth centre).
 
 The following interpretation of dimension parameter applies for rectangular columns:
 
-\* _IfcRectangleProfileDef.YDim_ interpreted as column width
-\* _IfcRectangleProfileDef.XDim_ interpreted as column depth
+* _IfcRectangleProfileDef.YDim_ interpreted as column width
+* _IfcRectangleProfileDef.XDim_ interpreted as column depth
 
 The following interpretation of dimension parameter applies for circular columns:
 
-\* _IfcCircleProfileDef.Radius_ interpreted as column radius.
+* _IfcCircleProfileDef.Radius_ interpreted as column radius.
 
 ![&quot;standard column&quot;](../../figures/ifccolumnstandardcase_sweptsolid-01.png &quot;Figure 1 &amp;mdash; Column body extrusion&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_ParameterizedProfile_Geometry_0TW7c_cFjCFg82IViXYwn" />
@@ -386,17 +386,17 @@ The following interpretation of dimension parameter applies for circular columns
 				<DocTemplateUsage Name="Body AdvancedSwept Directrix Geometry" UniqueId="ecb9102f-7309-459d-be8b-8944f7f9dc33">
 					<Documentation>The following additional constraints apply to the &apos;AdvancedSweptSolid&apos; representation type:
 
-\* \*\*Solid\*\*: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, shall be supported. 
-\* \*\*Profile\*\*: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
-\* \*\*Profile Position\*\* : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.</Documentation>
+* **Solid**: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, shall be supported. 
+* **Profile**: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
+* **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSwept_Directrix_Geometry_1rhoOTsFz6le0t01amD9y7" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Body AdvancedSwept Tapered Geometry" UniqueId="d6473840-b06f-476e-b550-8c13b76d6c2a">
 					<Documentation>The following additional constraints apply to the &apos;AdvancedSweptSolid&apos; representation type:
 
-\* \*\*Solid\*\*: _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
-\* \*\*Profile\*\*: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
-\* \*\*Profile Position\*\* : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
+* **Solid**: _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
+* **Profile**: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
+* **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
 
 &gt; NOTE&amp;nbsp; Using _IfcExtrudedAreaSolidTapered_, or _IfcRevolvedAreaSolidTapered_ requires the use of two _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSetUsageTapering_ assinged to the _IfcColumnStandardCase_</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSwept_Tapered_Geometry_1nHIAqI8v9NRg1yGfUGR7S" />
@@ -404,14 +404,14 @@ The following interpretation of dimension parameter applies for circular columns
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="42430896-d460-4183-8f42-d492db5d7ce4">
 					<Documentation>The following constraints apply to the &apos;Clipping&apos; representation:
 
-\* \*\*Solid\*\*: see &apos;SweptSolid&apos; geometric representation
-\* \*\*Profile\*\*: see &apos;SweptSolid&apos; geometric representation
-\* \*\*Profile Position\*\* : see &apos;SweptSolid&apos; geometric representation
-\* \*\*Extrusion\*\*: see &apos;SweptSolid&apos; geometric representation
-\* \*\*Orientation\*\*: see &apos;SweptSolid&apos; geometric representation
-\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
+* **Solid**: see &apos;SweptSolid&apos; geometric representation
+* **Profile**: see &apos;SweptSolid&apos; geometric representation
+* **Profile Position** : see &apos;SweptSolid&apos; geometric representation
+* **Extrusion**: see &apos;SweptSolid&apos; geometric representation
+* **Orientation**: see &apos;SweptSolid&apos; geometric representation
+* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
 
-Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of _IfcBooleanClippingResult_ between an _IfcExtrudedAreaSolid_ and an _IfcHalfSpaceSolid_ to create a clipped body, with cardinal point applied as \*\*2\*\* (bottom centre).
+Figure 1 illustrates a &apos;Clipping&apos; geometric representation with use of _IfcBooleanClippingResult_ between an _IfcExtrudedAreaSolid_ and an _IfcHalfSpaceSolid_ to create a clipped body, with cardinal point applied as **2** (bottom centre).
 
 ![&quot;clipped column&quot;](../../figures/ifccolumnstandardcase_clipping-01.png &quot;Figure 1 &amp;mdash; Column body clipping&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Clipping_Geometry_0isyBrcmn3wfqgdNBG57u0" />
@@ -520,13 +520,13 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 				<DocTemplateUsage Name="Profile 3D Geometry" UniqueId="d0e968af-22c6-4d49-8d08-855b9709cd62">
 					<Documentation>The door profile is represented by a three-dimensional closed curve within a particular shape representation. The profile is used to apply the parameter of the parametric door representation. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
 
-\* _RepresentationIdentifier_ : &apos;Profile&apos;
-\* _RepresentationType_ : &apos;Curve3D&apos; or &apos;GeometricCurveSet&apos;, in case of &apos;GeometricCurveSet&apos; only a single closed curve shall be contained in the set of _IfcShapeRepresentation.Items_.
+* _RepresentationIdentifier_ : &apos;Profile&apos;
+* _RepresentationType_ : &apos;Curve3D&apos; or &apos;GeometricCurveSet&apos;, in case of &apos;GeometricCurveSet&apos; only a single closed curve shall be contained in the set of _IfcShapeRepresentation.Items_.
 
 The following additional constraints apply to the &apos;Profile&apos; representation type:
 
-\* \*\*Curve\*\*: being an _IfcPolyline_ defining a rectangle.
-\* \*\*Position\*\*: The curve shall lie in the xz plane of the object placement coordinate (the y coordinate values of the _IfcCartesianPoint_&apos;s shall be 0.).
+* **Curve**: being an _IfcPolyline_ defining a rectangle.
+* **Position**: The curve shall lie in the xz plane of the object placement coordinate (the y coordinate values of the _IfcCartesianPoint_&apos;s shall be 0.).
 
 &amp;nbsp;
 
@@ -759,12 +759,12 @@ Figure 2 illustrates an element assembly type used for wall framing.
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcFlowSegment" />
 			<Concepts>
 				<DocTemplateUsage Name="Material Profile Set Usage" UniqueId="b5d91ee7-fdc2-4f18-b96b-e6a37c5ff274">
-					<Documentation>The material of the \*\*IfcFlowSegment\*\* is defined using one of the following entities:
+					<Documentation>The material of the **IfcFlowSegment** is defined using one of the following entities:
 
-\* [IfcMaterialProfileSetUsage](../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm) : for parametric segments, this defines the cross section and alignment to the &apos;Axis&apos; representation, from which the &apos;Body&apos; representation may be generated.
-\* [IfcMaterialProfileSet](../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm) : for non-parametric segments (having fixed length or path), this may define the cross section for analysis purposes, however the &apos;Body&apos; representation is independently generated.
-\* [IfcMaterialConstituentSet](../../ifcmaterialresource/lexical/ifcmaterialconstituentset.htm) : for elements containing multiple materials where profiles are not applicable, this indicates materials at named parts. 
-\*  [IfcMaterial](../../ifcmaterialresource/lexical/ifcmaterial.htm) : for elements comprised of a single material where profiles are not applicable, this indicates the material.
+* [IfcMaterialProfileSetUsage](../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm) : for parametric segments, this defines the cross section and alignment to the &apos;Axis&apos; representation, from which the &apos;Body&apos; representation may be generated.
+* [IfcMaterialProfileSet](../../ifcmaterialresource/lexical/ifcmaterialprofilesetusage.htm) : for non-parametric segments (having fixed length or path), this may define the cross section for analysis purposes, however the &apos;Body&apos; representation is independently generated.
+* [IfcMaterialConstituentSet](../../ifcmaterialresource/lexical/ifcmaterialconstituentset.htm) : for elements containing multiple materials where profiles are not applicable, this indicates materials at named parts. 
+*  [IfcMaterial](../../ifcmaterialresource/lexical/ifcmaterial.htm) : for elements comprised of a single material where profiles are not applicable, this indicates the material.
 
 The material is attached by the _RelatingMaterial_ attribute on the [IfcRelAssociatesMaterial](../../ifcproductextension/lexical/ifcrelassociatesmaterial.htm) relationship. It is accessible by the _HasAssociations_ inverse attribute. Material information can also be given at the [IfcFlowSegmentType](../../ifcsharedbldgserviceelements/lexical/ifcflowsegmenttype.htm), defining the common attribute data for all occurrences of the same type. Standard names and material types are defined at subtypes.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Profile_Set_Usage_1ge1GfjMPBDeTQCM88YfWn" />
@@ -836,8 +836,8 @@ Figure 2 illustrates assignment of a composite profile by using _IfcCompositePro
 
 The material of the _IfcMemberStandardCase_ is defined by _IfcMaterialProfileSetUsage_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship. Composite profile members can be represented by refering to several _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSet_ that is referenced from the _IfcMaterialProfileSetUsage_.
 
-Material information can also be given at the _IfcMemberType_, defining the common attribute data for all occurrences of the same type. It is then accessible by the inverse _IsDefinedBy_ relationship pointing to _IfcMemberType.HasAssociations_ and via _IfcRelAssociatesMaterial.RelatingMaterial_. See \*\*Type Use
-Definition\*\* for additional agreements for standard members.</Documentation>
+Material information can also be given at the _IfcMemberType_, defining the common attribute data for all occurrences of the same type. It is then accessible by the inverse _IsDefinedBy_ relationship pointing to _IfcMemberType.HasAssociations_ and via _IfcRelAssociatesMaterial.RelatingMaterial_. See **Type Use
+Definition** for additional agreements for standard members.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Profile_Set_Usage_1ge1GfjMPBDeTQCM88YfWn" />
 					<Exchanges>
 						<DocExchangeItem Applicability="export" Requirement="mandatory">
@@ -851,9 +851,9 @@ Definition\*\* for additional agreements for standard members.</Documentation>
 				<DocTemplateUsage Name="Axis 3D Geometry" UniqueId="3779ba15-e438-4fa5-a25a-46fc5d8c02d0">
 					<Documentation>The following additional constraints apply to the &apos;Axis&apos; representation, if the &apos;Body&apos; shape representation has the _RepresentationType_ : &apos;SweptSolid&apos;:
 
-\* _Axis_ 
-    \* _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the z axis of the object coordinate system.
-    \* _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcRevolvedAreaSolid_. The axis curve lies on the x/z plane of the object coordinate system, the tangent at the start is along the positive z-axis. 
+* _Axis_ 
+    * _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the z axis of the object coordinate system.
+    * _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcRevolvedAreaSolid_. The axis curve lies on the x/z plane of the object coordinate system, the tangent at the start is along the positive z-axis. 
 
 &amp;nbsp;
 
@@ -903,22 +903,22 @@ Definition\*\* for additional agreements for standard members.</Documentation>
 				<DocTemplateUsage Name="Body SweptSolid StandardizedProfile Geometry" UniqueId="83869936-d0ad-4391-bc3d-719fed73460d">
 					<Documentation>The following additional constraints apply to the &apos;SweptSolid&apos; representation:
 
-\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
-\* \*\*Profile\*\*: All subtypes of _IfcParameterizedProfileDef_
-\* \*\*Profile Position\*\* : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
-\* \*\*Extrusion\*\*: perpendicular to the profile direction.
-\* \*\*Orientation\*\*: The y-axis of the profile, as determined by _IfcSweptAreaSolid.Position.P[2]_ shall point to the Z-Axis. It indicates the &quot;role&quot; of the column, a role=0&amp;deg; means y-axis of profile = Z-axis of reference coordinate system. In the exception of a vertical member, the y-axis shall point to the Y-axis.
+* **Solid**: _IfcExtrudedAreaSolid_, _IfcRevolvedAreaSolid_ shall be supported
+* **Profile**: All subtypes of _IfcParameterizedProfileDef_
+* **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
+* **Extrusion**: perpendicular to the profile direction.
+* **Orientation**: The y-axis of the profile, as determined by _IfcSweptAreaSolid.Position.P[2]_ shall point to the Z-Axis. It indicates the &quot;role&quot; of the column, a role=0&amp;deg; means y-axis of profile = Z-axis of reference coordinate system. In the exception of a vertical member, the y-axis shall point to the Y-axis.
 
-Figure 1 illustrates a &apos;SweptSolid&apos; geometric representation with cardinal point applied as \*\*1\*\* (bottom left).
+Figure 1 illustrates a &apos;SweptSolid&apos; geometric representation with cardinal point applied as **1** (bottom left).
 
 The following interpretation of dimension parameter applies for rectangular members:
 
-\* &lt;small&gt;&lt;em&gt;IfcRectangleProfileDef.YDim&lt;/em&gt; interpreted as member width&lt;/small&gt;
-\* &lt;small&gt;&lt;em&gt;IfcRectangleProfileDef.XDim&lt;/em&gt; interpreted as member depth&lt;/small&gt;
+* &lt;small&gt;&lt;em&gt;IfcRectangleProfileDef.YDim&lt;/em&gt; interpreted as member width&lt;/small&gt;
+* &lt;small&gt;&lt;em&gt;IfcRectangleProfileDef.XDim&lt;/em&gt; interpreted as member depth&lt;/small&gt;
 
 The following interpretation of dimension parameter applies for circular members:
 
-\* &lt;small&gt;&lt;em&gt;IfcCircleProfileDef.Radius&lt;/em&gt; interpreted as beam radius.&lt;/small&gt;
+* &lt;small&gt;&lt;em&gt;IfcCircleProfileDef.Radius&lt;/em&gt; interpreted as beam radius.&lt;/small&gt;
 
 ![&quot;standard member&quot;](../../figures/ifcbeamstandardcase_sweptsolid-01.png &quot;Figure 1 &amp;mdash; Member body extrusion&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_ParameterizedProfile_Geometry_0TW7c_cFjCFg82IViXYwn" />
@@ -929,9 +929,9 @@ The following interpretation of dimension parameter applies for circular members
 				<DocTemplateUsage Name="Body AdvancedSwept Directrix Geometry" UniqueId="3da8997c-9474-488b-9c70-3b3b2f3a9c89">
 					<Documentation>The following additional constraints apply to the &apos;AdvancedSweptSolid&apos; representation type:
 
-\* \*\*Solid\*\*: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, shall be supported. 
-\* \*\*Profile\*\*: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
-\* \*\*Profile Position\*\* : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
+* **Solid**: _IfcSurfaceCurveSweptAreaSolid_, _IfcFixedReferenceSweptAreaSolid_, shall be supported. 
+* **Profile**: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
+* **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
 
 &gt; NOTE&amp;nbsp; Using _IfcExtrudedAreaSolidTapered_, or _IfcRevolvedAreaSolidTapered_ requires the use of two _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSetUsageTapering_ assinged to the _IfcMemberStandardCase_</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSwept_Directrix_Geometry_1rhoOTsFz6le0t01amD9y7" />
@@ -939,9 +939,9 @@ The following interpretation of dimension parameter applies for circular members
 				<DocTemplateUsage Name="Body AdvancedSwept Tapered Geometry" UniqueId="3ca529e8-5d72-4851-96eb-089cb3884868">
 					<Documentation>The following additional constraints apply to the &apos;AdvancedSweptSolid&apos; representation type:
 
-\* \*\*Solid\*\*: _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
-\* \*\*Profile\*\*: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
-\* \*\*Profile Position\*\* : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
+* **Solid**: _IfcExtrudedAreaSolidTapered_, _IfcRevolvedAreaSolidTapered_ shall be supported. 
+* **Profile**: all subtypes of _IfcProfileDef_ (with exception of _IfcArbitraryOpenProfileDef_)
+* **Profile Position** : For all single profiles, the _IfcParameterizedProfileDef.Position_ shall be NIL, or having _Location_ = 0.,0. and _RefDirection_ = 1.,0.
 
 &gt; NOTE&amp;nbsp; Using _IfcExtrudedAreaSolidTapered_, or _IfcRevolvedAreaSolidTapered_ requires the use of two _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSetUsageTapering_ assinged to the _IfcMemberStandardCase_</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_AdvancedSwept_Tapered_Geometry_1nHIAqI8v9NRg1yGfUGR7S" />
@@ -949,13 +949,13 @@ The following interpretation of dimension parameter applies for circular members
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="affe7195-874c-438e-9de4-fda87a65368f">
 					<Documentation>The following constraints apply to the advanced representation:
 
-\* \*\*Solid\*\*: see &apos;SweptSolid&apos; geometric representation
-\* \*\*Profile\*\*: see &apos;SweptSolid&apos; geometric representation
-\* \*\*Profile Position\*\* : see &apos;SweptSolid&apos; geometric representation
-\* \*\*Extrusion\*\*: see &apos;SweptSolid&apos; geometric representation
-\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
+* **Solid**: see &apos;SweptSolid&apos; geometric representation
+* **Profile**: see &apos;SweptSolid&apos; geometric representation
+* **Profile Position** : see &apos;SweptSolid&apos; geometric representation
+* **Extrusion**: see &apos;SweptSolid&apos; geometric representation
+* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or its subtypes).
 
-Figure 1 illustrates an advanced geometric representation with use of _IfcBooleanClippingResult_ between an _IfcExtrudedAreaSolid_ and an _IfcHalfSpaceSolid_ to create a clipped body, with cardinal point applied as \*\*4\*\* (mid-depth left).
+Figure 1 illustrates an advanced geometric representation with use of _IfcBooleanClippingResult_ between an _IfcExtrudedAreaSolid_ and an _IfcHalfSpaceSolid_ to create a clipped body, with cardinal point applied as **4** (mid-depth left).
 
 ![&quot;clipped beam&quot;](../../figures/ifcbeamstandardcase_clipping-01.png &quot;Figure 1 &amp;mdash; Member body clipping&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Clipping_Geometry_0isyBrcmn3wfqgdNBG57u0" />
@@ -1106,16 +1106,14 @@ Figure 1 illustrates assignment of _IfcMaterialLayerSetUsage_ and _IfcMaterialLa
 
 &lt;/table&gt;
 
-
-
 As shown in Figure 106, the following conventions shall be met:
 
-\* The reference coordinate system is the coordinate system established by the _IfcExtrudedAreaSolid.Position_.
-\* The reference plane is the plane defined by the extruded profile of _IfcExtrudedAreaSolid.SweptSolid_. The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is given as a distance from this plane.
-\* The _IfcMaterialLayerSetUsage.DirectionSense_ defines how the _IfcMaterialLayer_&apos;s are assigned to the reference plane. POSITIVE means in direction to the positive z-axis of the reference coordinate system.
-\* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is the distance parallel to the reference plane and always perpendicular to the base (XY) plane of the reference coordinate system. This is independent of a potential non-perpendicular extrusion given by _IfcExtrudedAreaSolid.ExtrudedDirection_ &amp;lt;&amp;gt; 0.,0.,1. A positive value of _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ would then point into the positive z-axis of the reference coordinate system.
-\* The _Thickness_ of each _IfcMaterialLayer_ shall be the parallel distance (measured perpendicular to the base plane). The _TotalThickness_ of the _IfcMaterialLayerSet_ is the sum of all layer thicknesses and in case of a perpendicular extrusion identical with _IfcExtrudedAreaSolid.Depth_
-\* The _IfcMaterialLayerSetUsage.LayerSetDirection_ i always AXIS3.
+* The reference coordinate system is the coordinate system established by the _IfcExtrudedAreaSolid.Position_.
+* The reference plane is the plane defined by the extruded profile of _IfcExtrudedAreaSolid.SweptSolid_. The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is given as a distance from this plane.
+* The _IfcMaterialLayerSetUsage.DirectionSense_ defines how the _IfcMaterialLayer_&apos;s are assigned to the reference plane. POSITIVE means in direction to the positive z-axis of the reference coordinate system.
+* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is the distance parallel to the reference plane and always perpendicular to the base (XY) plane of the reference coordinate system. This is independent of a potential non-perpendicular extrusion given by _IfcExtrudedAreaSolid.ExtrudedDirection_ &amp;lt;&amp;gt; 0.,0.,1. A positive value of _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ would then point into the positive z-axis of the reference coordinate system.
+* The _Thickness_ of each _IfcMaterialLayer_ shall be the parallel distance (measured perpendicular to the base plane). The _TotalThickness_ of the _IfcMaterialLayerSet_ is the sum of all layer thicknesses and in case of a perpendicular extrusion identical with _IfcExtrudedAreaSolid.Depth_
+* The _IfcMaterialLayerSetUsage.LayerSetDirection_ i always AXIS3.
 
 ![&quot;plate material layer set&quot;](../../figures/ifcmateriallayersetusage_slab-01.png &quot;Figure 2 &amp;mdash; Plate material layers&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Layer_Set_Usage_1jNxXlFor9_vKe1tXLtSn7" />
@@ -1131,10 +1129,10 @@ As shown in Figure 106, the following conventions shall be met:
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="e0569a83-7996-4a08-9ff0-08815329e52d">
 					<Documentation>The following additional constraints apply to the swept solid representation:
 
-\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required,
-\* \*\*Profile\*\*: _IfcArbitraryClosedProfileDef, IfcRectangleProfileDef, IfcRoundedRectangleProfileDef, IfcCircleProfileDef, IfcEllipseProfileDef_ shall be supported.
-\* \*\*Extrusion\*\*: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.
-\* \*\*Material\*\*: The definition of the _IfcMaterialLayerSetUsage_, particularly of the _OffsetFromReferenceLine_ and the _ForLayerSet.TotalThickness_, has to be consistent to the &apos;SweptSolid&apos; representation.
+* **Solid**: _IfcExtrudedAreaSolid_ is required,
+* **Profile**: _IfcArbitraryClosedProfileDef, IfcRectangleProfileDef, IfcRoundedRectangleProfileDef, IfcCircleProfileDef, IfcEllipseProfileDef_ shall be supported.
+* **Extrusion**: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.
+* **Material**: The definition of the _IfcMaterialLayerSetUsage_, particularly of the _OffsetFromReferenceLine_ and the _ForLayerSet.TotalThickness_, has to be consistent to the &apos;SweptSolid&apos; representation.
 
 &amp;nbsp;
 
@@ -1175,11 +1173,11 @@ As shown in Figure 106, the following conventions shall be met:
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="dce3a2a0-5086-4827-9462-ff826158dc59">
 					<Documentation>The following constraints apply to the &apos;Clipping&apos; representation:
 
-\* \*\*Solid\*\*: see &apos;SweptSolid&apos; shape representation,
-\* \*\*Profile\*\*:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
-\* \*\*Extrusion\*\*:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
-\* \*\*Material\*\*:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
-\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_.
+* **Solid**: see &apos;SweptSolid&apos; shape representation,
+* **Profile**:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
+* **Extrusion**:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
+* **Material**:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
+* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_.
 
 &amp;nbsp;
 
@@ -1319,9 +1317,9 @@ The shared material layer set definition is defined by assigning an _IfcMaterial
 		<DocConceptRoot UniqueId="0a03833e-eb30-441d-aa09-fc88c792a19d">
 			<Documentation>Elemented slabs extend the concepts of standard slabs with the following features, as shown in Figure 234:
 
-\* The slab has a type (_IfcSlabType_) that indicates material layers and corresponding elements to be placed parametrically.
-\* The slab is decomposed into elements for part occurrences, each corresponding to parts defined at the slab type.
-\* The relationship _IfcRelConnectsWithRealizingElements_ indicates how parts are connected.
+* The slab has a type (_IfcSlabType_) that indicates material layers and corresponding elements to be placed parametrically.
+* The slab is decomposed into elements for part occurrences, each corresponding to parts defined at the slab type.
+* The relationship _IfcRelConnectsWithRealizingElements_ indicates how parts are connected.
 
 ![&quot;voiding&quot;](../../figures/ifcslabelementedcase-floor.png &quot;Figure 1 &amp;mdash; Slab elemented case&quot;)</Documentation>
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSlabElementedCase" />
@@ -1380,16 +1378,14 @@ Material information can also be given at the _IfcSlabType_, defining the common
 
 &lt;/table&gt;
 
-
-
 Figure 2 illustrates slab material usage, where the following conventions shall be met:
 
-\* The reference coordinate system is the coordinate system established by the _IfcExtrudedAreaSolid.Position_.
-\* The reference plane is the plane defined by the extruded profile of _IfcExtrudedAreaSolid.SweptSolid_. The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is given as a distance from this plane.
-\* The _IfcMaterialLayerSetUsage.DirectionSense_ defines how the _IfcMaterialLayer_&apos;s are assigned to the reference plane. POSITIVE means in direction to the positive z-axis of the reference coordinate system.
-\* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is the distance parallel to the reference plane and always perpendicular to the base (XY) plane of the reference coordinate system. This is independent of a potential non-perpendicular extrusion given by _IfcExtrudedAreaSolid.ExtrudedDirection_ &amp;lt;&amp;gt; 0.,0.,1. A positive value of _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ would then point into the positive z-axis of the reference coordinate system.
-\* The _Thickness_ of each _IfcMaterialLayer_ shall be the parallel distance (measured perpendicular to the base plane). The _TotalThickness_ of the _IfcMaterialLayerSet_ is the sum of all layer thicknesses and in case of a perpendicular extrusion identical with _IfcExtrudedAreaSolid.Depth_
-\* The _IfcMaterialLayerSetUsage.LayerSetDirection_ is always AXIS3.
+* The reference coordinate system is the coordinate system established by the _IfcExtrudedAreaSolid.Position_.
+* The reference plane is the plane defined by the extruded profile of _IfcExtrudedAreaSolid.SweptSolid_. The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is given as a distance from this plane.
+* The _IfcMaterialLayerSetUsage.DirectionSense_ defines how the _IfcMaterialLayer_&apos;s are assigned to the reference plane. POSITIVE means in direction to the positive z-axis of the reference coordinate system.
+* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is the distance parallel to the reference plane and always perpendicular to the base (XY) plane of the reference coordinate system. This is independent of a potential non-perpendicular extrusion given by _IfcExtrudedAreaSolid.ExtrudedDirection_ &amp;lt;&amp;gt; 0.,0.,1. A positive value of _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ would then point into the positive z-axis of the reference coordinate system.
+* The _Thickness_ of each _IfcMaterialLayer_ shall be the parallel distance (measured perpendicular to the base plane). The _TotalThickness_ of the _IfcMaterialLayerSet_ is the sum of all layer thicknesses and in case of a perpendicular extrusion identical with _IfcExtrudedAreaSolid.Depth_
+* The _IfcMaterialLayerSetUsage.LayerSetDirection_ is always AXIS3.
 
 &lt;table summary=&quot;material use definition for standard slabs&quot;&gt;
 
@@ -1414,10 +1410,10 @@ Figure 2 illustrates slab material usage, where the following conventions shall 
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="9a7af5ff-c14e-4736-bf25-42d34e56a21c">
 					<Documentation>The following additional constraints apply to the swept solid representation:
 
-\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required,
-\* \*\*Profile\*\*: _IfcArbitraryClosedProfileDef, IfcRectangleProfileDef, IfcCircleProfileDef, IfcEllipseProfileDef_ shall be supported.
-\* \*\*Extrusion\*\*: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.
-\* \*\*Material\*\*: The definition of the _IfcMaterialLayerSetUsage_, particularly of the _OffsetFromReferenceLine_ and the _ForLayerSet.TotalThickness_, has to be consistent to the &apos;SweptSolid&apos; representation.
+* **Solid**: _IfcExtrudedAreaSolid_ is required,
+* **Profile**: _IfcArbitraryClosedProfileDef, IfcRectangleProfileDef, IfcCircleProfileDef, IfcEllipseProfileDef_ shall be supported.
+* **Extrusion**: The profile can be extruded perpendicularly or non-perpendicularly to the plane of the swept profile.
+* **Material**: The definition of the _IfcMaterialLayerSetUsage_, particularly of the _OffsetFromReferenceLine_ and the _ForLayerSet.TotalThickness_, has to be consistent to the &apos;SweptSolid&apos; representation.
 
 &amp;nbsp;
 
@@ -1457,11 +1453,11 @@ Figure 2 illustrates slab material usage, where the following conventions shall 
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="f55e4367-c6c1-4206-b23f-d225aff213e6">
 					<Documentation>The following constraints apply to the &apos;Clipping&apos; representation:
 
-\* \*\*Solid\*\*: see &apos;SweptSolid&apos; shape representation,
-\* \*\*Profile\*\*:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
-\* \*\*Extrusion\*\*:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
-\* \*\*Material\*\*:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
-\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_.
+* **Solid**: see &apos;SweptSolid&apos; shape representation,
+* **Profile**:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
+* **Extrusion**:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
+* **Material**:&amp;nbsp;see &apos;SweptSolid&apos; shape representation,
+* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_.
 
 &amp;nbsp;
 
@@ -1520,16 +1516,16 @@ Figure 2 illustrates slab material usage, where the following conventions shall 
 		<DocConceptRoot UniqueId="14eda651-97c1-4571-8496-be3538999c20">
 			<Documentation>Slab types may be described at several levels of detail to support the following slab occurrences:
 
-\* _IfcSlab_: Explicit geometry instantiated in exact form at occurrences.
-\* _IfcSlabStandardCase_: Implicit material layers filling boundary (&apos;FootPrint&apos; representation) defined at occurrences.
-\* _IfcSlabElementedCase_: implicit material layers and corresponding aggregated parts filling each layer.
+* _IfcSlab_: Explicit geometry instantiated in exact form at occurrences.
+* _IfcSlabStandardCase_: Implicit material layers filling boundary (&apos;FootPrint&apos; representation) defined at occurrences.
+* _IfcSlabElementedCase_: implicit material layers and corresponding aggregated parts filling each layer.
 
 As shown in Figure 1, each material layer may be elaborated into an element (where the Name matches exactly), and each element may be defined by its own type, which may be further elaborated by material layers and/or parts. The _LayerThickness_ of _IfcMaterialLayer_ must be derived from the corresponding element as follows:
 
-\* if element does not have a type, then the thickness must be regarded as 0 (supporting scenario where a particular configuration may have one side a wall unfinished) 
-\* if element has a material layer set, then it must equal the total thickness of the element&apos;s material layer set
-\* if element has a material profile set, then it must equal the total thickness of the element&apos;s material profile set
-\* if element is decomposed into parts (such as _IfcElementAssemblyType_ for slab framing), then it must equal the bounding extent of the parts according to the layer set direction - if parts do not have representations, then such thickness is calculated according to the material layers or profiles.
+* if element does not have a type, then the thickness must be regarded as 0 (supporting scenario where a particular configuration may have one side a wall unfinished) 
+* if element has a material layer set, then it must equal the total thickness of the element&apos;s material layer set
+* if element has a material profile set, then it must equal the total thickness of the element&apos;s material profile set
+* if element is decomposed into parts (such as _IfcElementAssemblyType_ for slab framing), then it must equal the bounding extent of the parts according to the layer set direction - if parts do not have representations, then such thickness is calculated according to the material layers or profiles.
 
 ![&quot;voiding&quot;](../../figures/ifcslabtype-floor.png &quot;Figure 1 &amp;mdash; Slab type&quot;)</Documentation>
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSlabType" />
@@ -1617,9 +1613,9 @@ The shared material layer set definition is defined by assigning an _IfcMaterial
 				<DocTemplateUsage Name="Axis 2D Geometry" UniqueId="2ae73f28-4064-4b13-acf1-78bac1b3827c">
 					<Documentation>The wall axis is represented by a two-dimensional open curve within a particular shape representation. The wall axis is used to apply the material layer set usage parameter to the wall geometry.
 
-\* _Axis_ 
-    \* _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for the &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the x/y plane and is parallel to the x-axis of the object coordinate system.
-    \* _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the x/y plane of the object coordinate system, the tangent at the start is along the positive x-axis. 
+* _Axis_ 
+    * _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for the &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the x/y plane and is parallel to the x-axis of the object coordinate system.
+    * _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the x/y plane of the object coordinate system, the tangent at the start is along the positive x-axis. 
 
 &amp;nbsp;
 
@@ -1690,17 +1686,15 @@ The _IfcWallType_ should then have a unique _IfcMaterialLayerSet_, that is refer
 
 &lt;/table&gt;
 
-
-
 Figure 2 illustrates material layer usage, where the following conventions shall be met:
 
-\* The reference coordinate system is the local coordinate system established by the _ObjectPlacement_ of the _IfcWallStandardCase_.
-\* The reference axis is the axis defined by the _IfcShapeRepresentation_ with _RepresentationType_=&apos;Axis&apos; as one of the _Representation.Representations_ of the _IfcWallStandardCase_.
-\* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is given as a distance from this axis.
-\* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is the distance parallel to the reference axis and always within the base (XY) plane of the reference coordinate system. A positve value of _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ would then point into the positive y-axis of the reference coordinate system.
-\* The _IfcMaterialLayerSetUsage.DirectionSense_ defines how the _IfcMaterialLayer_&apos;s are assigned to the reference axis. POSITIVE means in direction to the positive y-axis of the reference coordinate system.
-\* The _Thickness_ of each _IfcMaterialLayer_ is provided starting from the _OffsetFromReferenceLine_ and in the direction given by _DirectionSense_. It is applied without any gap or overlap between two consecutive layers. The _TotalThickness_ of the _IfcMaterialLayerSet_ is the sum of all layer thicknesses.
-\* The _IfcMaterialLayerSetUsage.LayerSetDirection_ is always AXIS2.
+* The reference coordinate system is the local coordinate system established by the _ObjectPlacement_ of the _IfcWallStandardCase_.
+* The reference axis is the axis defined by the _IfcShapeRepresentation_ with _RepresentationType_=&apos;Axis&apos; as one of the _Representation.Representations_ of the _IfcWallStandardCase_.
+* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is given as a distance from this axis.
+* The _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ is the distance parallel to the reference axis and always within the base (XY) plane of the reference coordinate system. A positve value of _IfcMaterialLayerSetUsage.OffsetFromReferenceLine_ would then point into the positive y-axis of the reference coordinate system.
+* The _IfcMaterialLayerSetUsage.DirectionSense_ defines how the _IfcMaterialLayer_&apos;s are assigned to the reference axis. POSITIVE means in direction to the positive y-axis of the reference coordinate system.
+* The _Thickness_ of each _IfcMaterialLayer_ is provided starting from the _OffsetFromReferenceLine_ and in the direction given by _DirectionSense_. It is applied without any gap or overlap between two consecutive layers. The _TotalThickness_ of the _IfcMaterialLayerSet_ is the sum of all layer thicknesses.
+* The _IfcMaterialLayerSetUsage.LayerSetDirection_ is always AXIS2.
 
 ![&quot;roof slab material layer set&quot;](../../figures/ifcmateriallayersetusage_wall-01.png &quot;Figure 2 &amp;mdash; Wall material layers&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Layer_Set_Usage_1jNxXlFor9_vKe1tXLtSn7" />
@@ -1716,9 +1710,9 @@ Figure 2 illustrates material layer usage, where the following conventions shall
 				<DocTemplateUsage Name="Axis 2D Geometry" UniqueId="0be1a27c-e4b0-46b4-ab5e-d354f213507b">
 					<Documentation>The wall axis is represented by a two-dimensional open curve within a particular shape representation. The wall axis is used to apply the material layer set usage parameter to the wall geometry.
 
-\* _Axis_ 
-    \* _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for the &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the x/y plane and is parallel to the x-axis of the object coordinate system.
-    \* _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the x/y plane of the object coordinate system, the tangent at the start is along the positive x-axis. 
+* _Axis_ 
+    * _IfcPolyline_ having two _Points_, or _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcLine_ for the &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the x/y plane and is parallel to the x-axis of the object coordinate system.
+    * _IfcTrimmedCurve_ with _BasisCurve_ of Type _IfcCircle_ for &apos;SweptSolid&apos; provided as _IfcExtrudedAreaSolid_. The axis curve lies on the x/y plane of the object coordinate system, the tangent at the start is along the positive x-axis. 
 
 &amp;nbsp;
 
@@ -1763,9 +1757,9 @@ a single geometric representation item of type &lt;em&gt;IfcTrimmedCurve&lt;/em&
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="012a3a32-8cff-4cf2-a2f5-2cb0f3553b69">
 					<Documentation>The following additional constraints apply to the &apos;SweptSolid&apos; representation:
 
-\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required,
-\* \*\*Profile\*\*: _IfcArbitraryClosedProfileDef_ and _IfcRectangleProfileDef_ shall be supported.
-\* \*\*Extrusion\*\*: The profile shall be extruded vertically, i.e., in the direction of the z-axis of the co-ordinate system of the referred spatial structure element. It might be further constraint to be in the direction of the global z-axis in implementers agreements. The extrusion axis shall be perpendicular to the swept profile, i.e. pointing into the direction of the z-axis of the Position of the _IfcExtrudedAreaSolid_.
+* **Solid**: _IfcExtrudedAreaSolid_ is required,
+* **Profile**: _IfcArbitraryClosedProfileDef_ and _IfcRectangleProfileDef_ shall be supported.
+* **Extrusion**: The profile shall be extruded vertically, i.e., in the direction of the z-axis of the co-ordinate system of the referred spatial structure element. It might be further constraint to be in the direction of the global z-axis in implementers agreements. The extrusion axis shall be perpendicular to the swept profile, i.e. pointing into the direction of the z-axis of the Position of the _IfcExtrudedAreaSolid_.
 
 The profile of a wall is described in the ground view and extruded vertically. The profile (also identical with the foot print of the wall) is defined by the _IfcArbitraryClosedProfileDef_ (excluding its subtypes). The profile is given with all wall connections already resolved.
 
@@ -1800,10 +1794,10 @@ Figure 2 illustrates a body representation for a curved wall. In case of a curve
 				<DocTemplateUsage Name="Body Clipping Geometry" UniqueId="284d4606-6b61-48d7-a5c3-533bdbe1c926">
 					<Documentation>The following constraints apply to the &apos;Clipping&apos; representation:
 
-\* \*\*Solid\*\*: see standard geometric representation
-\* \*\*Profile\*\*: see standard geometric representation
-\* \*\*Extrusion\*\*: see standard geometric representation
-\* \*\*Boolean result\*\*: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or subtypes).
+* **Solid**: see standard geometric representation
+* **Profile**: see standard geometric representation
+* **Extrusion**: see standard geometric representation
+* **Boolean result**: The _IfcBooleanClippingResult_ shall be supported, allowing for Boolean differences between the swept solid (here _IfcExtrudedAreaSolid_) and one or several _IfcHalfSpaceSolid_ (or subtypes).
 
 Figure 1 illustrates a clipping for a straight wall using an _IfcPolygonalBoundedHalfSpace_ as _SecondOperand_ in the _IfcBooleanClippingResult_.
 
@@ -1851,16 +1845,16 @@ Figure 2 illustrates a clipping for a curved wall using an _IfcHalfSpaceSolid_ a
 		<DocConceptRoot UniqueId="ad096c5d-d9ab-40f6-b871-2f3c3a773ef5">
 			<Documentation>Wall types may be described at several levels of detail to support the following wall occurrences:
 
-\* _IfcWall_: Explicit geometry instantiated in exact form at occurrences.
-\* _IfcWallStandardCase_: Implicit material layers following path (&apos;Axis&apos; representation) defined at occurrences.
-\* _IfcWallElementedCase_: implicit material layers and corresponding aggregated parts filling each layer.
+* _IfcWall_: Explicit geometry instantiated in exact form at occurrences.
+* _IfcWallStandardCase_: Implicit material layers following path (&apos;Axis&apos; representation) defined at occurrences.
+* _IfcWallElementedCase_: implicit material layers and corresponding aggregated parts filling each layer.
 
 As shown in Figure 1, each material layer may be elaborated into an element (where the Name matches exactly), and each element may be defined by its own type, which may be further elaborated by material layers and/or parts. The _LayerThickness_ of _IfcMaterialLayer_ must be derived from the corresponding element as follows:
 
-\* if element does not have a type, then the thickness must be regarded as 0 (supporting scenario where a particular configuration may have one side a wall unfinished) 
-\* if element has a material layer set, then it must equal the total thickness of the element&apos;s material layer set
-\* if element has a material profile set, then it must equal the total thickness of the element&apos;s material profile set
-\* if element is decomposed into parts (such as _IfcElementAssemblyType_ for wall framing), then it must equal the bounding extent of the parts according to the layer set direction - if parts do not have representations, then such thickness is calculated according to the material layers or profiles.
+* if element does not have a type, then the thickness must be regarded as 0 (supporting scenario where a particular configuration may have one side a wall unfinished) 
+* if element has a material layer set, then it must equal the total thickness of the element&apos;s material layer set
+* if element has a material profile set, then it must equal the total thickness of the element&apos;s material profile set
+* if element is decomposed into parts (such as _IfcElementAssemblyType_ for wall framing), then it must equal the bounding extent of the parts according to the layer set direction - if parts do not have representations, then such thickness is calculated according to the material layers or profiles.
 
 ![&quot;voiding&quot;](../../figures/ifcwalltype-partitioning.png &quot;Figure 1 &amp;mdash; Wall type&quot;)</Documentation>
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcWallType" />
@@ -1878,7 +1872,6 @@ If a wall type is decomposed into parts, then material layers of the _IfcWallTyp
 
 The following is an example of a framed wall composition, where layers are ordered in the direction away from the viewer facing the right side of the wall:
 
-{ .gridtable}
 { .gridtable}
 &lt;table class=&quot;gridtable&quot;&gt;
 &lt;tr&gt;&lt;th&gt;#&lt;/th&gt;&lt;th&gt;Layer/Element Name&lt;/th&gt;&lt;th&gt;Element Type&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;
@@ -1913,16 +1906,16 @@ The following is an example of a framed wall composition, where layers are order
 				<DocTemplateUsage Name="Profile Geometry" UniqueId="6359e739-90d9-4845-b5bd-f8eb3f884dd2">
 					<Documentation>The following additional constraints apply to the &apos;Profile&apos; representation type:
 
-\* \*\*Curve\*\*: being an _IfcPolyline_ defining a rectangle.
-\* \*\*Position\*\*: The curve shall lie in the xz plane of the object placement coordinate (the y coordinate values of the _IfcCartesianPoint_&apos;s shall be 0.).
+* **Curve**: being an _IfcPolyline_ defining a rectangle.
+* **Position**: The curve shall lie in the xz plane of the object placement coordinate (the y coordinate values of the _IfcCartesianPoint_&apos;s shall be 0.).
 
 As shown in Figure 1, the profile defines the outer boundary to which the window lining parameters relate as:
 
-\* _IfcWindowLiningProperties.LiningDepth_ starting at distance defined by _LiningOffset_ going into the positive y direction.
-\* _IfcWindowLiningProperties.LiningThickness_ offset into the inner side of the rectangle.
-\* _IfcWindowLiningProperties.LiningOffset_ distance along the positive y direction to where the _LiningDepth_ applies.
-\* _IfcWindowLiningProperties.FirstTransomOffset_ starting at the bottom edge of the rectangle (along local x axis) into the inner side of the rectangle, distance provided as percentage of overall height. Distance to the centre line of the transom. _SecondTransomOffset_ defined accordingly.
-\* _IfcWindowLiningProperties.FirstMullionOffset_ starting at the left edge of the rectangle (along local z-axis) into the inner side of the rectangle, distance provided as percentage of overall width. Distance to the centre line of the mullion. _SecondMullionOffset_ defined accordingly.
+* _IfcWindowLiningProperties.LiningDepth_ starting at distance defined by _LiningOffset_ going into the positive y direction.
+* _IfcWindowLiningProperties.LiningThickness_ offset into the inner side of the rectangle.
+* _IfcWindowLiningProperties.LiningOffset_ distance along the positive y direction to where the _LiningDepth_ applies.
+* _IfcWindowLiningProperties.FirstTransomOffset_ starting at the bottom edge of the rectangle (along local x axis) into the inner side of the rectangle, distance provided as percentage of overall height. Distance to the centre line of the transom. _SecondTransomOffset_ defined accordingly.
+* _IfcWindowLiningProperties.FirstMullionOffset_ starting at the left edge of the rectangle (along local z-axis) into the inner side of the rectangle, distance provided as percentage of overall width. Distance to the centre line of the mullion. _SecondMullionOffset_ defined accordingly.
 
 ![&quot;standard window&quot;](../../figures/ifcwindowstandardcase-01.png &quot;Figure 1 &amp;mdash; Window profile&quot;)</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Profile_Geometry_3nRhE_uXFCvVVrLhjEW_L" />

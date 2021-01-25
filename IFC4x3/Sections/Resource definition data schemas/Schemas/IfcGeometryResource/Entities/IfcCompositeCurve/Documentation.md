@@ -6,24 +6,24 @@ Figure 1 illustrates an example of a composite curve.
 
 Consider an _IfcCompositeCurve_ having line segment and an arc segment. The line should be parameterized:
 
-\* _IfcPolyline_ with start= 0.,0. end= 0.,1., _SameSense_= TRUE, parametric length = 1.
+* _IfcPolyline_ with start= 0.,0. end= 0.,1., _SameSense_= TRUE, parametric length = 1.
 
 The arch should be parameterized:
 
-\* _IfcTrimmedCurve_ with start= 180', end= 90', _SameSense_= FALSE, parametric length = 90.
+* _IfcTrimmedCurve_ with start= 180', end= 90', _SameSense_= FALSE, parametric length = 90.
 
 Then the parameterization of the composite curve is:
 
-\* _IfcCompositeCurve_ with 0. &le; T &le; 1. (line segment) and 1. &le; T &le; 91. (arc segment), parametric length = 91.
+* _IfcCompositeCurve_ with 0. &le; T &le; 1. (line segment) and 1. &le; T &le; 91. (arc segment), parametric length = 91.
 
 &nbsp;
 
 { .extDef}
 > NOTE Definition according to ISO 10303-42:  
-> A composite curve is a collection of curves joined end-to-end. The individual segments of the curve are themselves defined as composite curve segments. The parameterization of the composite curve is an accumulation of the parametric ranges of the referenced bounded curves. The first segment is parameterized from _0_ to _l\~<small>1</small>\~_ and for _i__&le;__2_, the _i\^<small>th</small>\^_ segment is parameterized from:
+> A composite curve is a collection of curves joined end-to-end. The individual segments of the curve are themselves defined as composite curve segments. The parameterization of the composite curve is an accumulation of the parametric ranges of the referenced bounded curves. The first segment is parameterized from _0_ to _l~<small>1</small>~_ and for _i__&le;__2_, the _i^<small>th</small>^_ segment is parameterized from:
 > 
 >> ![formula](../../../../../../figures/ifccompositecurve-math1.gif)
-> where _l\~<small>k</small>\~_ is the parametric length (i.e., difference between maximum and minimum parameter values) of the curve underlying the _k\^<small>th</small>\^_ segment. Let _T_ denote the parameter for the composite curve. Then, if the _i_th segment is not a reparameterised composite curve segment, _T_ is related to the parameter _t\~i\~_; _t\~i0\~__&le;__t\~i\~__&le;__t\~i1\~_; for the _i_th segment by the equation:
+> where _l~<small>k</small>~_ is the parametric length (i.e., difference between maximum and minimum parameter values) of the curve underlying the _k^<small>th</small>^_ segment. Let _T_ denote the parameter for the composite curve. Then, if the _i_th segment is not a reparameterised composite curve segment, _T_ is related to the parameter _t~i~_; _t~i0~__&le;__t~i~__&le;__t~i1~_; for the _i_th segment by the equation:
 > 
 >> ![formula](../../../../../../figures/ifccompositecurve-math2.gif) if _Segments[i].SameSense_ = TRUE;
 > or by the equation:
@@ -35,7 +35,7 @@ Then the parameterization of the composite curve is:
 
 
 > 
-> NOTE&nbsp; Entity adapted from \*\*composite_curve\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from **composite_curve** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC1.0
 

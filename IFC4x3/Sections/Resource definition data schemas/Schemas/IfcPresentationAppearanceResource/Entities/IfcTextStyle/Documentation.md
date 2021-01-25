@@ -2,9 +2,9 @@ The _IfcTextStyle_ is a presentation style for annotations that place a text in 
 
 An _IfcTextStyle_ is instantiated with:
 
-\* _TextCharacterAppearance_: _IfcTextStyleForDefinedFont_
-\* _TextStyle_: _IfcTextStyleTextModel_
-\* _TextFontStyle_: _IfcTextStyleFontModel_
+* _TextCharacterAppearance_: _IfcTextStyleForDefinedFont_
+* _TextStyle_: _IfcTextStyleTextModel_
+* _TextFontStyle_: _IfcTextStyleFontModel_
 
 An _IfcTextStyle_ is assigned to _IfcTextLiteral_ through the _IfcStyledItem_ entity.
 

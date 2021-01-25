@@ -2,7 +2,7 @@ Describes linearly elastic support conditions or connection conditions, includin
 
 Applicability:
 
-\* Point supports and connections.
+* Point supports and connections.
 
 > HISTORY&nbsp; New entity in IFC2x2.
 

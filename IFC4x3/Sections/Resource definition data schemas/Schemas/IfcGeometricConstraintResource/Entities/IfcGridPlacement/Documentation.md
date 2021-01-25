@@ -4,9 +4,9 @@ The location of the object coordinate system is given by the attribute _Placemen
 
 The axis direction of the x-axis of the object coordinate system is given either:
 
-\* _PlacementRefDirection_ = NIL: by the tangent of the first grid axis (_PlacementLocation.IntersectingAxes[1]_) at the virtual intersection (maybe using the offset curve, if _PlacementLocation.OffsetDistances_ is given);
-\* _PlacementRefDirection_ = _IfcDirection_: by the explicitly provided direction information;
-\* _PlacementRefDirection_ = _IfcVirtualGridIntersection_: by the tangent between the virtual grid intersection of _PlacementLocation_ and the virtual grid intersection of _PlacementRefDirection_. Offsets as potentially provided in the _IfcVirtualGridIntersection_'s of _PlacementLocation_ and _PlacementRefDirection_ have to be taken into account.
+* _PlacementRefDirection_ = NIL: by the tangent of the first grid axis (_PlacementLocation.IntersectingAxes[1]_) at the virtual intersection (maybe using the offset curve, if _PlacementLocation.OffsetDistances_ is given);
+* _PlacementRefDirection_ = _IfcDirection_: by the explicitly provided direction information;
+* _PlacementRefDirection_ = _IfcVirtualGridIntersection_: by the tangent between the virtual grid intersection of _PlacementLocation_ and the virtual grid intersection of _PlacementRefDirection_. Offsets as potentially provided in the _IfcVirtualGridIntersection_'s of _PlacementLocation_ and _PlacementRefDirection_ have to be taken into account.
 
 The direction of the y-axis of the _IfcGridPlacement_ is the orthogonal complement to the x-axis. The plane defined by the x and y axis shall be co-planar to the xy plane of the local placement of the _IfcGrid_.
 
@@ -63,8 +63,6 @@ The following figures show the usage of placement location and direction for an 
 <td>&nbsp;</td>
 </tr>
 </table>
-
-
 
 > HISTORY  New entity in IFC1.5. The entity name was changed from IfcConstrainedPlacement in IFC2x.
 

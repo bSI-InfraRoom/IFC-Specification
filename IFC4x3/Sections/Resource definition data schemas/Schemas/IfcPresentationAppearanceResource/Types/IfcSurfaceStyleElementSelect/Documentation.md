@@ -6,6 +6,6 @@ The _IfcSurfaceStyleElementSelect_ provides a selection between different surfac
 > NOTE&nbsp; Definition according to ISO/CD 10303-46:1992  
 > The surface style element select is a selection of the different surface styles to use in the presentation of the side of a surface.
 
-> NOTE&nbsp; Type adapted from \*\*surface_style_element_select\*\* defined in ISO10303-46.
+> NOTE&nbsp; Type adapted from **surface_style_element_select** defined in ISO10303-46.
 
 > HISTORY&nbsp; New select type in IFC2x2.

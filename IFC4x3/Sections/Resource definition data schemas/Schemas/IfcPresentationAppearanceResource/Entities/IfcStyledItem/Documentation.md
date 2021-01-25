@@ -1,13 +1,13 @@
 The _IfcStyledItem_ holds presentation style information for products, either explicitly for an _IfcGeometricRepresentationItem_ being part of an _IfcShapeRepresentation_ assigned to a product, or by assigning presentation information to _IfcMaterial_ being assigned as other representation for a product.
 
-\* If the _IfcStyledItem_ is used within a reference from an _IfcProductDefinitionShape_ then one _Item_ shall be provided.
-\* If the _IfcStyledItem_ is used within a reference from an _IfcMaterialDefinitionRepresentation_ then no _Item_ shall be provided.
+* If the _IfcStyledItem_ is used within a reference from an _IfcProductDefinitionShape_ then one _Item_ shall be provided.
+* If the _IfcStyledItem_ is used within a reference from an _IfcMaterialDefinitionRepresentation_ then no _Item_ shall be provided.
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-46:1992  
 > The styled item is an assignment of style for presentation to a geometric representation item as it is used in a representation.
 
-> NOTE&nbsp; Entity adapted from \*\*styled_item\*\* defined in ISO10303-46.
+> NOTE&nbsp; Entity adapted from **styled_item** defined in ISO10303-46.
 
 > HISTORY &nbsp;New entity in IFC2x2.
 
@@ -25,8 +25,8 @@ Use Definition
 
 Figure 1 illustrates use of _IfcStyledItem_ for the two usage examples:
 
-\* <small>As a presentation for a geometric representation item</small>
-\* <small>As a presentation for a material definition</small>
+* <small>As a presentation for a geometric representation item</small>
+* <small>As a presentation for a material definition</small>
 
 > NOTE&nbsp; The new _IfcStyleAssignmentSelect_ allows the direct assignment styles, such as _IfcCurveStyle_, _IfcSurfaceStyle_ without using the intermediate _IfcPresentationStyleAssignment_
 

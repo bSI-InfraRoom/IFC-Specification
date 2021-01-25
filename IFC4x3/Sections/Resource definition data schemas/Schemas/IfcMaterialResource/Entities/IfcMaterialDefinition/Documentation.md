@@ -2,9 +2,9 @@ _IfcMaterialDefinition_ is a general supertype for all material related informat
 
 There are three ways of assigning materials to a single component or multiple components; they are characterized as:
 
-\* by layer - assigning a material to a layer with constant thickness
-\* by profile - assigning a material to a profile with a constant of varying shape along an extrusion
-\* by constituents - assigning a material to an identified part of a component shape; the identification is by a keyword rather than by a shape parameter
+* by layer - assigning a material to a layer with constant thickness
+* by profile - assigning a material to a profile with a constant of varying shape along an extrusion
+* by constituents - assigning a material to an identified part of a component shape; the identification is by a keyword rather than by a shape parameter
 
 Each instantiable subtype of _IfcMaterialDefinition_ may have material properties assigned, or have an external classification of its definition. It can be assigned to either a subtype of _IfcElement_, or a subtype of _IfcElementType_ by using the objectified relationship _IfcRelAssociatesMaterial_.
 

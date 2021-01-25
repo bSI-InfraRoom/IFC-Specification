@@ -21,6 +21,4 @@ underlying AxisCurve supports this concept.</p>
 </tr>
 </table>
 
-
-
 > HISTORY&nbsp; New entity in IFC1.0

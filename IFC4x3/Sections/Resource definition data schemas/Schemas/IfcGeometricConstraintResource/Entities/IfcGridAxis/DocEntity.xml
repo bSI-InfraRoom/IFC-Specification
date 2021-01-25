@@ -31,7 +31,9 @@
 &gt; IFC2x3 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="HasIntersections" UniqueId="351beb68-0443-424d-8205-71b6086c5eb7" DefinedType="IfcVirtualGridIntersection" AttributeFlags="8" AggregationType="3" Inverse="IntersectingAxes">
-			<Documentation>The reference to a set of &lt;ifcvirtualgridintersection&apos;s, that=&quot;&quot; connect=&quot;&quot; other=&quot;&quot; grid=&quot;&quot; axes=&quot;&quot; to=&quot;&quot; this=&quot;&quot; grid=&quot;&quot; axis.=&quot;&quot; {=&quot;&quot; .change-ifc2x3}=&quot;&quot;&gt; IFC2x3 CHANGE&amp;nbsp; New inverse attribute.&lt;/ifcvirtualgridintersection&apos;s,&gt;</Documentation>
+			<Documentation>The reference to a set of &lt;IfcVirtualGridIntersection&apos;s, that connect other grid axes to this grid axis.
+{ .change-ifc2x3}
+&gt; IFC2x3 CHANGE&amp;nbsp; New inverse attribute.</Documentation>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
@@ -41,9 +43,9 @@
 		</DocWhereRule>
 		<DocWhereRule Name="WR2" UniqueId="4fd0b532-1700-4550-a83d-4d0da28f8626">
 			<Documentation>The _IfcGridAxis_ needs to be used by exactly one of the three attributes of _IfcGrid_:
-\* _UAxes_
-\* _VAxes_
-\* _WAxes_
+* _UAxes_
+* _VAxes_
+* _WAxes_
 
 
 i.e. it can only refer to a single instance of _IfcGrid_ in one of the three list of axes.</Documentation>

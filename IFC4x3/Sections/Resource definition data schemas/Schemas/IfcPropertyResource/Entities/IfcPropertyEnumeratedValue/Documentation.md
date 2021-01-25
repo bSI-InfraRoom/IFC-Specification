@@ -4,8 +4,8 @@ A property with an enumerated value, _IfcPropertyEnumeratedValue_, defines a pro
 
 The unit is handled by the _Unit_ attribute, see Table 1 for an example of a enumerated property:
 
-\* If the _Unit_ attribute is not given, then the unit is already implied by the type of _IfcMeasureValue_ or _IfcDerivedMeasureValue_. The associated unit can be found at the _IfcUnitAssignment_ globally defined at the project level (_IfcProject.UnitsInContext_).
-\* If the _Unit_ attribute is given, then the unit assigned by the unit attribute overrides the globally assigned unit.
+* If the _Unit_ attribute is not given, then the unit is already implied by the type of _IfcMeasureValue_ or _IfcDerivedMeasureValue_. The associated unit can be found at the _IfcUnitAssignment_ globally defined at the project level (_IfcProject.UnitsInContext_).
+* If the _Unit_ attribute is given, then the unit assigned by the unit attribute overrides the globally assigned unit.
 
 More precisely: The _IfcPropertyEnumeratedValue_ defines a property, which value is selected from a defined list of enumerators. The enumerators are stored in a dynamic enumeration of values including the type information from _IfcValue_ (see _IfcPropertyEnumeration_). This enables applications to use an enumeration value as a property within a property set (_IfcPropertySet_) including the allowed list of values.
 
@@ -43,8 +43,6 @@ More precisely: The _IfcPropertyEnumeratedValue_ defines a property, which value
  </tr>
 </table>
 
-
-
 &nbsp;
 
 The _IfcPropertyEnumeratedValue_ refers to an _IfcPropertyEnumeration_, see Table 2 for an example:
@@ -72,8 +70,6 @@ The _IfcPropertyEnumeratedValue_ refers to an _IfcPropertyEnumeration_, see Tabl
   <td><p class="table">Table 2 &mdash; Property enumeration with enumerators</p></td>
  </tr>
 </table>
-
-
 
 It is not mandatory to use an instance of _IfcPropertyEnumeration_ to hold the applicable values for _IfcPropertyEnumeratedValue_, however this is the preferred way. A single instance of _IfcPropertyEnumeration_ can be referenced by multiple instances of _IfcPropertyEnumeratedValue_.
 

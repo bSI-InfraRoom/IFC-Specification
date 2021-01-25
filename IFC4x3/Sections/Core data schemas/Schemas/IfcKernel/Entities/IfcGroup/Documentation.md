@@ -6,9 +6,9 @@ A group can hold any collection of objects, the relationship _IfcRelAssignsToGro
 
 Groups are assigned to other objects (such as a process or a resource) by the relationship object that refers to the corresponding object:
 
-\* Process: assigned using _IfcRelAssignsToProcess_
-\* Resource: assigned using _IfcRelAssignsToResource_
-\* Controls: affecting the group using _IfcRelAssignsToControl_
+* Process: assigned using _IfcRelAssignsToProcess_
+* Resource: assigned using _IfcRelAssignsToResource_
+* Controls: affecting the group using _IfcRelAssignsToControl_
 
 A group can be exchanged without having already objects within the group collection.
 

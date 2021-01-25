@@ -10,7 +10,6 @@ applied to geometry nodes.</span></li>
 texture plus the general parameters necessary for mapping the
 texture to geometry.</span></li>
 </ul>
-
 Texture are defined by 2D images that contain an array of colour values describing the texture. The texture values are interpreted differently depending on the number of components in the texture and the specifics of the image format. In general, texture may be described using one of the following forms:
 
 1. Intensity textures (one-component)
@@ -28,7 +27,7 @@ Figure 1 illustrates the texture coordinate system.
 
 The following definitions from ISO/IEC 19775-1 X3D Architecture and base components ([X3D Specification](http://www.web3d.org/x3d/specifications/)) on texture coordinates apply:
 
-\* <span style="font-size:smaller;color:blue">Texture maps are defined in a 2D coordinate system (s,&nbsp;t) that ranges from [0.0, 1.0] in both directions. The bottom edge of the image corresponds to the S-axis of the texture map, and left edge of the image corresponds to the T-axis of the texture map. The lower-left pixel of the image corresponds to s=0, t=0, and the top-right pixel of the image corresponds to s=1, t=1. Texture maps may be viewed as two dimensional colour functions that, given an <em>(s,&nbsp;t)</em> coordinate, return a colour value <em>colour(s,&nbsp;t)</em>.</span>
+* <span style="font-size:smaller;color:blue">Texture maps are defined in a 2D coordinate system (s,&nbsp;t) that ranges from [0.0, 1.0] in both directions. The bottom edge of the image corresponds to the S-axis of the texture map, and left edge of the image corresponds to the T-axis of the texture map. The lower-left pixel of the image corresponds to s=0, t=0, and the top-right pixel of the image corresponds to s=1, t=1. Texture maps may be viewed as two dimensional colour functions that, given an <em>(s,&nbsp;t)</em> coordinate, return a colour value <em>colour(s,&nbsp;t)</em>.</span>
 
 If multiple surface textures are included in the _IfcSurfaceStyleWithTextures_ applying them to a geometric item, a mode and optional parameters can be included that blending operations.
 
@@ -73,7 +72,6 @@ scale T = <em>TextureTransform.Scale2</em></span></li>
 </ul>
 </li>
 </ul>
-
 > NOTE&nbsp; The definitions of texturing within this standard have been developed in dependence on the texture component of X3D. See ISO/IEC 19775-1.2:2008 X3D Architecture and base components Edition 2, Part 1, 18 Texturing component for the definitions in the international standard.
 
 > HISTORY&nbsp; New entity in IFC2x2.

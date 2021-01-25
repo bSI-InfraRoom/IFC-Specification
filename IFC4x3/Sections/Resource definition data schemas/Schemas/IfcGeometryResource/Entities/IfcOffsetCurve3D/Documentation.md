@@ -6,9 +6,9 @@ An _IfcOffsetCurve3D_ is a curve defined by an offset in 3D space from its _Basi
 >> NOTE&nbsp; The offset curve 3d may differ in nature from the basis curve; the offset of a non self- intersecting curve can be self-intersecting. Care should be taken to ensure that the offset to a continuous curve does not become discontinuous.
 >  The offset curve 3d takes its parameterization from the basis curve. The offset curve 3d is parameterized as: 
 >> ![Math](../../../../../../figures/ifcoffsetcurve3d-math1.gif)
-> \*\*T\*\* is the unit tangent vector to the basis curve \*\*C\*\*(_u_) at parameter value _u_, and _d_ is distance. The underlying curve shall be three-dimensional.
+> **T** is the unit tangent vector to the basis curve **C**(_u_) at parameter value _u_, and _d_ is distance. The underlying curve shall be three-dimensional.
 
-> NOTE Entity adapted from \*\*offset_curve_3d\*\* defined in ISO 10303-42
+> NOTE Entity adapted from **offset_curve_3d** defined in ISO 10303-42
 
 > HISTORY&nbsp; New entity in IFC2x
 

@@ -64,8 +64,6 @@ Several representation identifiers for shape representation are included as pred
 </tr>
 </table>
 
-
-
 Several representation types for shape representation are included as predefined values for _RepresentationType_. Table 2 indicates the defined list of values for _RepresentationType_.
 
 <table>
@@ -215,10 +213,8 @@ some additional representation types are provided:</td>
 </tr>
 </table>
 
-
-
 { .extDef}
-> NOTE&nbsp; The definition relates to \*\*shape_representation\*\* defined in ISO 10303-41.
+> NOTE&nbsp; The definition relates to **shape_representation** defined in ISO 10303-41.
 
 > HISTORY&nbsp; New entity in IFC1.5.
 

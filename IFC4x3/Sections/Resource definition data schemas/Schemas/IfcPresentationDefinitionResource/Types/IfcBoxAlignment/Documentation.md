@@ -1,14 +1,14 @@
 The box alignment specifies the alignment of the text box relative to its position. The following string values shall be used:
 
-\* top-left
-\* top-middle
-\* top-right
-\* middle-left
-\* center
-\* middle-right
-\* bottom-left
-\* bottom-middle
-\* bottom-right
+* top-left
+* top-middle
+* top-right
+* middle-left
+* center
+* middle-right
+* bottom-left
+* bottom-middle
+* bottom-right
 
 > NOTE&nbsp; The top-left is the default value.
 

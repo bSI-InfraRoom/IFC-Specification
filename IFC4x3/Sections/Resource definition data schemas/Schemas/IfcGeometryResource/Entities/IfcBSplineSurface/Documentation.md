@@ -67,7 +67,6 @@ In the rational case the surface equation is:
 </li>
 </ol>
 
-
-> NOTE&nbsp; Entity adapted from \*\*b_spline_surface\*\* defined in ISO10303-42.
+> NOTE&nbsp; Entity adapted from **b_spline_surface** defined in ISO10303-42.
 
 > HISTORY&nbsp; New entity in IFC4.

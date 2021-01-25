@@ -1,13 +1,13 @@
 The _IfcStructuralAnalysisModel_ is used to assemble all information needed to represent a structural analysis model. It encompasses certain general properties (such as analysis type), references to all contained structural members, structural supports or connections, as well as loads and the respective load results.  
 Important functionalities for the description of an analysis model are derived from existing IFC entities:  
-\* <font color="#ff0000">From </font>_IfcSystem_<font color="#ff0000">  it inherits the ability to couple the built system via </font>_IfcRelReferencedInSpatialStructure_<font color="#ff0000">  to one or more </font>_IfcSpatialElement_<font color="#ff0000"> subtypes as necessary.</font>
-\* From _IfcGroup_ it inherits the inverse attribute IsGroupedBy, pointing to the relationship class _IfcRelAssignsToGroup_ . This allows the grouping of structural members (instances of _IfcStructuralMember_), and supports (instances of _IfcStructuralConnection_ which belong to a specific analysis model.
+* <font color="#ff0000">From </font>_IfcSystem_<font color="#ff0000">  it inherits the ability to couple the built system via </font>_IfcRelReferencedInSpatialStructure_<font color="#ff0000">  to one or more </font>_IfcSpatialElement_<font color="#ff0000"> subtypes as necessary.</font>
+* From _IfcGroup_ it inherits the inverse attribute IsGroupedBy, pointing to the relationship class _IfcRelAssignsToGroup_ . This allows the grouping of structural members (instances of _IfcStructuralMember_), and supports (instances of _IfcStructuralConnection_ which belong to a specific analysis model.
 
   
 > NOTE&nbsp; Loads (as instances of _IfcStructuralAction_ are not included through IsGroupedBy. Loads are assigned through the LoadedBy attribute relationship, using load groups as a grouping mechanism. Only top-level load groups should be referenced via LoadedBy, i.e. load combinations if any load combinations exist, or load cases if no load combinations exist in this analysis model.
 > NOTE&nbsp; Results (as instances of _IfcStructuralReaction_ are not included through IsGroupedBy. Results are assigned through the HasResults attribute relationship, using result groups as a grouping mechanism.
 
-\* From _IfcObjectDefinition_ it inherits the inverse attribute IsDecomposedBy pointing to the relationship class _IfcRelAggregates_. It provides the hierarchy between the separate (partial) analysis models.
+* From _IfcObjectDefinition_ it inherits the inverse attribute IsDecomposedBy pointing to the relationship class _IfcRelAggregates_. It provides the hierarchy between the separate (partial) analysis models.
 
   
 > HISTORY&nbsp; New entity in IFC2x2.

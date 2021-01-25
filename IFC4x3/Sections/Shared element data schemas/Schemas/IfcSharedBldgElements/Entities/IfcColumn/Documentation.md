@@ -1,4 +1,7 @@
-<an _ifccolumn_="" is="" a="" vertical="" structural="" member="" which="" often="" is="" aligned="" with="" a="" structural="" grid="" intersection.="" it="" represents="" a="" vertical,="" or="" nearly="" vertical,="" structural="" member="" that="" transmits,="" through="" compression,="" the="" weight="" of="" the="" structure="" above="" to="" other="" structural="" elements="" below.="" it="" represents="" such="" a="" member="" from="" an="" architectural="" point="" of="" view.="" it="" is="" not="" required="" to="" be="" load="" bearing.="" {="" .extdef}=""> NOTE&nbsp; Definition according to ISO 6707-1  
+<An _IfcColumn_ is a vertical structural member which often is aligned with a structural grid intersection. It represents a vertical, or nearly vertical, structural member that transmits, through compression, the weight of the structure above to other structural elements below. It represents such a member from an architectural point of view. It is not required to be load bearing.
+
+{ .extDef}
+> NOTE&nbsp; Definition according to ISO 6707-1  
 > structural member of slender form, usually vertical, that transmits to its base the forces, primarily in compression, that are applied to it.
 
 > NOTE&nbsp; The representation of a column in a structural analysis model is provided by _IfcStructuralCurveMember_ being part of an _IfcStructuralAnalysisModel_.
@@ -11,4 +14,4 @@ The IFC specification provides two entities for column occurrences:
 >> NOTE&nbsp; View definitions and implementer agreements may further constrain the applicable geometry types, for example by excluding tapering from an _IfcColumnStandardCase_ implementation. 
 * _IfcColumn_ used for all other occurrences of columns, particularly for columns with changing profile sizes along the extrusion, or columns defined by non-linear extrusion, or columns having only 'Brep', or 'SurfaceModel' geometry.
 
-> HISTORY&nbsp; New entity in IFC1.0</an>
+> HISTORY&nbsp; New entity in IFC1.0

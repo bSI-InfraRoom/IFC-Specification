@@ -4,6 +4,6 @@ The _IfcFillStyleSelect_ provides a selection between a simple fill colour, a ha
 > NOTE&nbsp; Definition according to ISO/CD 10303-46:1992  
 > The fill style select is a selection between different fill area styles.
 
-> NOTE&nbsp; Type adapted from \*\*fill_style_select\*\* defined in ISO10303-46.
+> NOTE&nbsp; Type adapted from **fill_style_select** defined in ISO10303-46.
 
 > HISTORY&nbsp; New select type in IFC2x2.

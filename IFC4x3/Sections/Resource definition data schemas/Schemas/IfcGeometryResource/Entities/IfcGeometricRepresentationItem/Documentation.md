@@ -4,9 +4,9 @@ An _IfcGeometricRepresentationItem_ is the common supertype of all geometric ite
 > NOTE Definition according to ISO/CD 10303-42:1992  
 > An geometric representation item is a representation item that has the additional meaning of having geometric position or orientation or both. This meaning is present by virtue of:
 > 
-> \* being a Cartesian point or a direction
-> \* referencing directly a Cartesian point or direction
-> \* referencing indirectly a Cartesian point or direction
+> * being a Cartesian point or a direction
+> * referencing directly a Cartesian point or direction
+> * referencing indirectly a Cartesian point or direction
 
 An indirect reference to a Cartesian point or direction means that a given geometric item references the Cartesian point or direction through one or more intervening geometry or topology items.
 > 
@@ -15,6 +15,6 @@ An indirect reference to a Cartesian point or direction means that a given geome
 
 
 > 
-> NOTE&nbsp; Entity adapted from \*\*geometric_representation_item\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from **geometric_representation_item** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC1.5

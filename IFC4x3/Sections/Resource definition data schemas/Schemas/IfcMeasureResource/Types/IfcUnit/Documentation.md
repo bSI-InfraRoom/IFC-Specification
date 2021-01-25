@@ -8,8 +8,8 @@
 
 SELECT
 
-\* _IfcNamedUnit_: A unit which is identified by a name.
-\* _IfcDerivedUnit_: A unit which is derived from an expression of units.
-\* _IfcMonetaryUnit_: A unit for defining currencies.
+* _IfcNamedUnit_: A unit which is identified by a name.
+* _IfcDerivedUnit_: A unit which is derived from an expression of units.
+* _IfcMonetaryUnit_: A unit for defining currencies.
 
 > HISTORY&nbsp; New type in IFC1.5.1.

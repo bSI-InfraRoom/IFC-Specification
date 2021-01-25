@@ -1,9 +1,9 @@
 An _IfcTextureMap_ provides the mapping of the 2-dimensional texture coordinates to the surface onto which it is mapped. It is used for mapping the texture to surfaces of vertex based geometry models, such as
 
-\*  _IfcFacetedBrep_ 
-\*  _IfcFacetedBrepWithVoids_ 
-\*  _IfcFaceBasedSurfaceModel_ 
-\*  _IfcShellBasedSurfaceModel_ 
+*  _IfcFacetedBrep_ 
+*  _IfcFacetedBrepWithVoids_ 
+*  _IfcFaceBasedSurfaceModel_ 
+*  _IfcShellBasedSurfaceModel_ 
 
 The _IfcTextureMap_ has a list of _TextureVertex_, that corresponds to the points of the outer face bound of the vertex based geometry item. The corresponding pair of lists is:
 
@@ -34,8 +34,6 @@ Each _IfcTextureVertex_ (given as S, T coordinates of the 2-dimension texture co
 				<td>&nbsp;</td>
       </tr>
     </table>
-
-
 
 > HISTORY&nbsp; New entity in IFC2x2.
 

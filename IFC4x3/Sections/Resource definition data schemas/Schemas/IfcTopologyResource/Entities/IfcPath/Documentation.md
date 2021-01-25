@@ -4,7 +4,7 @@
 >   
 > An individual edge can only be referenced once by an individual path. An edge can be referenced by multiple paths. An edge can exist independently of a path.
 
-> NOTE&nbsp; Entity adapted from \*\*path\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from **path** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC2.0
 

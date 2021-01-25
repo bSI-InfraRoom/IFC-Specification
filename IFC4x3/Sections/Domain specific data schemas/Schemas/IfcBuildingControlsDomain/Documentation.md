@@ -2,12 +2,12 @@ The _IfcBuildingControlsDomain_ schema forms part of the Domain Layer of the IFC
 
 The _IfcBuildingControlsDomain_ schema supports ideas including types and occurrences of:
 
-\* actuator
-\* alarm
-\* controller
-\* sensor
-\* flow instrument
-\* unitary control element
+* actuator
+* alarm
+* controller
+* sensor
+* flow instrument
+* unitary control element
 
 Elements that perform the control action such as valves and dampers are principally types of distribution flow element and are located in the _IfcHvacDomain_ and _IfcElectricalDomain_ schemas.
 
@@ -21,14 +21,14 @@ To connect control elements to physical flow elements measured or controlled, th
 
 The _IfcBuildingControlsDomain_ schema does not specify building automation protocols, but may be mapped to standard protocols or vendor implementations for commissioning and operations interoperability. Common applicable entities are described as follows:
 
-\* _IfcPerformanceHistory_: Captures realtime device data in the form of property sets.
-\* _IfcPropertySet_: Captures a set of realtime device data, either using predefined data structures or custom information.
-\* _IfcPropertySetTemplate_: Captures metadata about custom properties, such as names, descriptions, data types, units, and ranges.
-\* _IfcRelAssociatesClassification_: Associates addresses of devices and control points to uniquely identify within a control system.
-\* _IfcController_: Captures non-realtime occurrence information for hardware or software-based arbitrary analog and digital data.
-\* _IfcAlarm_: Captures non-realtime occurrence information for hardware or software-based alarm sources.
-\* _IfcEvent_: Captures alarm event handling information.
-\* _IfcProcedure_: Captures device procedures that may be run arbitrarily or in response to events.
-\* _IfcTask_: Captures device programs that may be scheduled at various times.
+* _IfcPerformanceHistory_: Captures realtime device data in the form of property sets.
+* _IfcPropertySet_: Captures a set of realtime device data, either using predefined data structures or custom information.
+* _IfcPropertySetTemplate_: Captures metadata about custom properties, such as names, descriptions, data types, units, and ranges.
+* _IfcRelAssociatesClassification_: Associates addresses of devices and control points to uniquely identify within a control system.
+* _IfcController_: Captures non-realtime occurrence information for hardware or software-based arbitrary analog and digital data.
+* _IfcAlarm_: Captures non-realtime occurrence information for hardware or software-based alarm sources.
+* _IfcEvent_: Captures alarm event handling information.
+* _IfcProcedure_: Captures device procedures that may be run arbitrarily or in response to events.
+* _IfcTask_: Captures device programs that may be scheduled at various times.
 
 > HISTORY&nbsp; New schema in IFC2x2.

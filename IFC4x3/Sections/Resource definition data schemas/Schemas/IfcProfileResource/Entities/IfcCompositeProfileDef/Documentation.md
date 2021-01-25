@@ -4,13 +4,13 @@ The _IfcCompositeProfileDef_ defines the profile by composition of other profile
 
 Figure 314 illustrates the composite profile definition. The _IfcCompositeProfileDef_ does not define an own position coordinate system, it is directly defined in the underlying coordinate system. The underlying coordinate system is defined by the swept surface or swept area solid that uses the profile definition. It is the xy plane of either:
 
-\* _IfcSweptSurface.Position_
-\* _IfcSweptAreaSolid.Position_
+* _IfcSweptSurface.Position_
+* _IfcSweptAreaSolid.Position_
 
 Or in case of sectioned spines it is the xy plane of each list member of _IfcSectionedSpine.CrossSectionPositions_. The _IfcCompositeProfileDef_ is defined using other profile definitions. Those other profile definitions are directly inserted into the underlying coordinate system.
 
-\* In case of parameterized profile definitions, the _Position_ attribute of those standard profiles is used to place the profiles relatively to each other.
-\* In case of arbitrary profile definitions, each Cartesian coordinate is given directly within the underlying coordinate system.
+* In case of parameterized profile definitions, the _Position_ attribute of those standard profiles is used to place the profiles relatively to each other.
+* In case of arbitrary profile definitions, each Cartesian coordinate is given directly within the underlying coordinate system.
 
 > NOTE&nbsp; The black coordinate axes show the underlying coordinate system of the swept surface or swept area solid.
 

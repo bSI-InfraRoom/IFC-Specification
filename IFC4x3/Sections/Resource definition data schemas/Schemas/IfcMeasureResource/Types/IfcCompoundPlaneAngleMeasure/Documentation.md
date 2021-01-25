@@ -11,10 +11,10 @@ Type: LIST [3:4] OF INTEGER
 { .use-head}
 Value restrictions
 
-\* The first integer measure is the number of degrees and is generally not range-restricted. However, when _IfcCompoundPlaneAngleMeasure_ is used to express geographic coordinates, only latitudes of [-90, 90] and longitudes of [-180, 180] are used in practice.
-\* The second integer measure is the number of minutes and shall be in the range (-60, 60).
-\* The third integer measure is the number of seconds and shall be in the range (-60, 60).
-\* The optional fourth integer measure is the number of millionth-seconds and shall be in the range (-1 000 000, 1 000 000).
+* The first integer measure is the number of degrees and is generally not range-restricted. However, when _IfcCompoundPlaneAngleMeasure_ is used to express geographic coordinates, only latitudes of [-90, 90] and longitudes of [-180, 180] are used in practice.
+* The second integer measure is the number of minutes and shall be in the range (-60, 60).
+* The third integer measure is the number of seconds and shall be in the range (-60, 60).
+* The optional fourth integer measure is the number of millionth-seconds and shall be in the range (-1 000 000, 1 000 000).
 
 { .use-head}
 Signedness
@@ -25,19 +25,19 @@ All measure components have the same sign (positive or negative). It is therefor
 > ```
 > 
 LOCAL  
-> &nbsp;&nbsp;a : IfcPlaneAngleMeasure := -50.975864; &nbsp;(\\* decimal degrees, -50&deg; 58' 33" 110400 \\*)  
+> &nbsp;&nbsp;a : IfcPlaneAngleMeasure := -50.975864; &nbsp;(\* decimal degrees, -50&deg; 58' 33" 110400 \*)  
 > &nbsp;&nbsp;b : IfcPlaneAngleMeasure;  
 > &nbsp;&nbsp;c : IfcCompoundPlaneAngleMeasure;  
 > &nbsp;&nbsp;s : IfcText;  
 > END_LOCAL;  
 >   
-> (\\* convert from float to compound \\*)  
+> (\* convert from float to compound \*)  
 > &nbsp;&nbsp;c[1] := &nbsp;&nbsp;&nbsp;a; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- -50  
-> &nbsp;&nbsp;c[2] := &nbsp;&nbsp;(a - c[1]) \\* 60; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- -58  
-> &nbsp;&nbsp;c[3] := &nbsp;((a - c[1]) \\* 60 - c[2]) \\* 60; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- -33  
-> &nbsp;&nbsp;c[4] := (((a - c[1]) \\* 60 - c[2]) \\* 60 - c[3]) \\* 1.e6; &nbsp;-- -110400  
+> &nbsp;&nbsp;c[2] := &nbsp;&nbsp;(a - c[1]) \* 60; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- -58  
+> &nbsp;&nbsp;c[3] := &nbsp;((a - c[1]) \* 60 - c[2]) \* 60; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- -33  
+> &nbsp;&nbsp;c[4] := (((a - c[1]) \* 60 - c[2]) \* 60 - c[3]) \* 1.e6; &nbsp;-- -110400  
 >   
-> (\\* convert from compound to float \\*)  
+> (\* convert from compound to float \*)  
 > &nbsp;&nbsp;b := c[1] + c[2]/60. + c[3]/3600. + c[4]/3600.e6; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- -50.975864  
 > 
 > ```
@@ -51,7 +51,7 @@ When a compound plane angle measure is formatted for display or printout, the si
 > 
 > ```
 > 
-(\\* convert from compound to human-readable string \\*)  
+(\* convert from compound to human-readable string \*)  
 > &nbsp;&nbsp;s := FORMAT(c[1], '+##') &nbsp;&nbsp;&nbsp;&nbsp;+ "000000B0"  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ FORMAT(ABS(c[2]), '##') + ''''  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ FORMAT(ABS(c[3]), '##') + '"'  

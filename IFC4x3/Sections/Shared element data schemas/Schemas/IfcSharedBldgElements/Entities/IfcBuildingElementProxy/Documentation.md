@@ -8,7 +8,7 @@ In addition to the provision for voids, the building element proxy can also repr
 
 Other usages of _IfcBuildingElementProxy_ include:
 
-\* The _IfcBuildingElementProxy_ can be used to exchange special types of building elements for which the current specification does not yet provide a semantic definition.
-\* The _IfcBuildingElementProxy_ can also be used to represent building elements for which the participating applications can not provide a semantic definition.
+* The _IfcBuildingElementProxy_ can be used to exchange special types of building elements for which the current specification does not yet provide a semantic definition.
+* The _IfcBuildingElementProxy_ can also be used to represent building elements for which the participating applications can not provide a semantic definition.
 
 > HISTORY&nbsp; New entity in IFC2x.

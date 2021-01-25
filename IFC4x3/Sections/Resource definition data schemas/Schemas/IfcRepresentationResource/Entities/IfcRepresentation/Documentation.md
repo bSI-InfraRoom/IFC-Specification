@@ -6,7 +6,7 @@ The _IfcRepresentation_ defines the general concept of representing product prop
 >   
 > A representation item can be related to a representation context directly, when it occurs as an element is a representation, or indirectly, when it is referenced through any number of intervening entities, each of type representation item.
 
-> NOTE&nbsp; Entity adapted from \*\*representation\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from **representation** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC2.0
 
@@ -21,8 +21,8 @@ Representation Use Definition
 
 Each representation, either _IfcShapeRepresentation_, or _IfcTopologyRepresentation_ shall have a well defined:
 
-\*  _ContextOfItems_: Reference to an _IfcGeometricRepresentationContext_ as agreed for this representation. 
-\*  _RepresentationIdentifier_: Name of the representation, for example, 'Body' for 3D shape, 'FootPrint' for 2D ground view, 'Axis' for reference axis. 
-\*  _RepresentationType_: Name for the geometric, or topological representation type, for example, 'SweptSolid' for 3D swept solids, 'Brep' for boundary representation. 
+*  _ContextOfItems_: Reference to an _IfcGeometricRepresentationContext_ as agreed for this representation. 
+*  _RepresentationIdentifier_: Name of the representation, for example, 'Body' for 3D shape, 'FootPrint' for 2D ground view, 'Axis' for reference axis. 
+*  _RepresentationType_: Name for the geometric, or topological representation type, for example, 'SweptSolid' for 3D swept solids, 'Brep' for boundary representation. 
 
 > NOTE&nbsp; Guidelines for applying correct values to those attributes are provided in the geometry use definition section at each subtype of _IfcElement_. These guidelines can be further refined in view definitions or implementer agreements.

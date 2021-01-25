@@ -11,18 +11,16 @@ The _IfcBoundingBox_ that provides the enclosure is given for the convenience of
 <td width="600" valign="top" align="left"><img src="../../../../../../figures/ifcboxedhalfspace-layout1.png" border="0" height="480" width="600" alt="boxed half space"></td>
 <td>The <em>Enclosure</em> therefore helps to prevent dealing with infinite-size related issues. The enclosure box is
 positioned within the object coordinate system, established by the <em>ObjectPlacement</em> of the element represented
-(for example, by <em>IfcLocalPlacement</em>). Figure 1 shows the <em>Enclosure</em> box being sufficiently large to
+(for example, by <em>IfcLocalPlacement</em>). Figure 2 shows the <em>Enclosure</em> box being sufficiently large to
 fully enclose the Boolean result.</td>
 </tr>
 <tr>
 <td>
-<p class="figure">Figure 1 &mdash; Boxed half space geometry</p>
+<p class="figure">Figure 2 &mdash; Boxed half space geometry</p>
 </td>
 <td>&nbsp;</td>
 </tr>
 </table>
-
-
 
 &nbsp;
 
@@ -31,7 +29,7 @@ fully enclose the Boolean result.</td>
 > This entity is a subtype of the half space solid which is trimmed by a surrounding rectangular box. The box has its edges parallel to the coordinate axes of the geometric coordinate system.  
 > The purpose of the box is to facilitate CSG computations by producing a solid of finite size.
 
-> NOTE&nbsp; Entity adapted from \*\*boxed_half_space\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from **boxed_half_space** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC1.5.1
 

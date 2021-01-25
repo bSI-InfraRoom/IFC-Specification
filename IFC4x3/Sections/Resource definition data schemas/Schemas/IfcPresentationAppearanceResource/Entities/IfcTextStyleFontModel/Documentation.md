@@ -3,7 +3,7 @@
 > Setting font properties will be among the most common uses of style sheets. Unfortunately, there exists no well-defined and universally accepted taxonomy for classifying fonts, and terms that apply to one font family may not be appropriate for others. For example, 'italic' is commonly used to label slanted text, but slanted text may also be labeled as being _Oblique_, _Slanted_, _Incline_, _Cursive_ or _Kursiv_. Therefore it is not a simple problem to map typical font selection properties to a specific font.
 
 { .extDef}
-> \*\*Font matching\*\*  
+> **Font matching**  
 > Because there is no accepted, universal taxonomy of font properties, matching of properties to font faces must be done carefully. The properties are matched in a well-defined order to ensure that the results of this matching process are as consistent as possible across user agents (assuming that the same library of font faces is presented to each of them).
 
 1. The user agent makes (or accesses) a database of relevant CSS1 properties of all the fonts of which the UA is aware. The UA may be aware of a font because it has been installed locally or it has been previously downloaded over the web. If there are two fonts with exactly the same properties, one of them is ignored. 

@@ -1,8 +1,8 @@
 The _IfcSphere_ is a Construction Solid Geometry (CSG) 3D primitive. It is a solid where all points at the surface have the same distance from the center point. The inherited _Position_ attribute defines the _IfcAxisPlacement3D_ and provides:
 
-\* _SELF\IfcCsgPrimitive3D.Position_: The location and orientation of the axis system for the primitive.&nbsp;
-\* _SELF\IfcCsgPrimitive3D.Position.Location_: The center of the sphere.
-\* _SELF\IfcCsgPrimitive3D.Position.Position[3]:_ The z axis points at its positve direction towards the north pole, and by its negative directions towards the south pole.
+* _SELF\IfcCsgPrimitive3D.Position_: The location and orientation of the axis system for the primitive.&nbsp;
+* _SELF\IfcCsgPrimitive3D.Position.Location_: The center of the sphere.
+* _SELF\IfcCsgPrimitive3D.Position.Position[3]:_ The z axis points at its positve direction towards the north pole, and by its negative directions towards the south pole.
 
 &nbsp;
 
@@ -19,13 +19,11 @@ coordiante system relative to the object coordinate system. The origin is the ce
 </tr>
 </table>
 
-
-
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
 > A sphere is a CSG primitive with a spherical shape defined by a centre and a radius.
 
-> NOTE&nbsp; Entity adapted from \*\*sphere\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from **sphere** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC2x3.
 
@@ -36,7 +34,6 @@ Textures are aligned facing upright with origin at the back (+Y direction) revol
 
 Figure 2 illustrates default texture mapping with a clamped texture (RepeatS=False and RepeatT=False). The image on the left shows the texture where the S axis points to the right and the T axis points up. The image on the right shows the texture applied to the geometry where the X axis points back to the right, the Y axis points back to the left, and the Z axis points up.
 
-{ .gridtable}
 { .gridtable}
 <table summary="texture" class="gridtable">
 <tr>

@@ -5,10 +5,10 @@ Instances of _IfcStructuralSurfaceConnection_ describe face 'nodes', i.e. faces 
 { .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Use definitions added.
 
-\*\*\*\*Coordinate Systems\*\*\*\*:
+****Coordinate Systems****:
 
 See definitions at _IfcStructuralItem_. The local coordinate system is established by the reference surface given by topology representation.
 
-\*\*\*\*Topology Use Definitions\*\*\*\*:
+****Topology Use Definitions****:
 
 Instances of _IfcStructuralSurfaceConnection_ shall have a topology representation which consists of one _IfcFaceSurface_, representing the reference surface of the surface connection. See definitions at _IfcStructuralItem_ for further specifications.

@@ -20,8 +20,6 @@ co-ordinate system).</p>
 </tr>
 </table>
 
-
-
-> NOTE&nbsp; Corresponding STEP type \*\*box_domain\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Corresponding STEP type **box_domain** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC1.0.

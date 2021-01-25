@@ -10,9 +10,9 @@ Any instance of _IfcProduct_ defines a particular occurrence of a product, the c
 
 On a generic level products can be assigned to processes, controls, resources, project by using the relationship objects that refer to the corresponding object:
 
-\* \*\*Having a control applied\*\*: assigned using _IfcRelAssignsToControl_ linking the _IfcProduct_ to an _IfcControl_
-\* \*\*Being assigned to a process\*\*: assigned using _IfcRelAssignsToProcess_ linking the _IfcProduct_ to an _IfcProcess_
-\* \*\*Being assigned to a resource\*\*: assigned using _IfcRelAssignsToResource_ linking the _IfcProduct_ to an _IfcResource_
+* **Having a control applied**: assigned using _IfcRelAssignsToControl_ linking the _IfcProduct_ to an _IfcControl_
+* **Being assigned to a process**: assigned using _IfcRelAssignsToProcess_ linking the _IfcProduct_ to an _IfcProcess_
+* **Being assigned to a resource**: assigned using _IfcRelAssignsToResource_ linking the _IfcProduct_ to an _IfcResource_
 
 > EXAMPLE&nbsp; An example of the control relationship is the assignment of a performance history to a distribution element. An example of process assignment relationship is the assignment of products like wall, slab, column to a contruction task for construction planning. And an example of resource assignment relationship is the assignment of products to a construction resource that consumes the product.
 

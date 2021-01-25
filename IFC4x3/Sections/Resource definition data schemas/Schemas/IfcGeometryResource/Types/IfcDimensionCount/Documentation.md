@@ -6,6 +6,6 @@ The _IfcDimensionCount_ defins the dimensionality of the coordinate space. It is
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
 > A dimension count is a positive integer used to define the coordinate space dimensionality.
 
-> NOTE&nbsp; Type adapted from \*\*dimension_count\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Type adapted from **dimension_count** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New Type in IFC1.5

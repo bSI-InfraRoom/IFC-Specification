@@ -5,8 +5,8 @@ A ramp is a vertical passageway which provides a human or vehicle circulation li
 
 The _IfcRamp_ shall either be represented:
 
-\* as a ramp assembly that aggregates all parts(ramp flight, landing, etc.) with own shape representations, or
-\* as a single ramp without decomposition including all shape representations directly at the ramp entity.
+* as a ramp assembly that aggregates all parts(ramp flight, landing, etc.) with own shape representations, or
+* as a single ramp without decomposition including all shape representations directly at the ramp entity.
 
 > NOTE&nbsp; In case of an _IfcRamp_ being the assembly of all parts of the ramp the aggregation is handled by the _IfcRelAggregates_ relationship, relating an _IfcRamp_ with the related _IfcRampFlight_ and landings, _IfcSlab_ with PredefinedType=LANDING. _IfcRailing_'s belonging to the ramp may also be included into the aggregation.
 

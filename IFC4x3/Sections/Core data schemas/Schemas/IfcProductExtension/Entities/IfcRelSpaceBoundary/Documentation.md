@@ -1,19 +1,21 @@
 The space boundary defines the physical or virtual delimiter of a space by the relationship _IfcRelSpaceBoundary_ to the surrounding elements.
 
-\* In the case of a physical space boundary, the placement and shape of the boundary may be given, and the building element, providing the boundary, is referenced,
-\* In the case of a virtual space boundary, the placement and shape of the boundary may be given, and a virtual element is referenced.
+* In the case of a physical space boundary, the placement and shape of the boundary may be given, and the building element, providing the boundary, is referenced,
+* In the case of a virtual space boundary, the placement and shape of the boundary may be given, and a virtual element is referenced.
 
 The _IfcRelSpaceBoundary_ is defined as an objectified relationship that handles the element to space relationship by objectifying the relationship between an element and the space it bounds. It is given as a one-to-one relationship, but allows each element (including virutal elements and openings) to define many such relationship and each space to be defined by many such relationships.
 
 Space boundaries are always defined as seen from the space. In general two basic types of space boundaries are distinguished:
 
-\* 1\^<small>st</small>\^ level space boundary: defined as boundaries of the space, not taking into account any change in building element or spaces on the other side.
-\* 2\^<small>nd</small>\^ level space boundary: defined as boundary taking any change in building element or spaces on the other side into account. It can be further distinguished into 
-    \* 2\^<small>nd</small>\^ level type A: There is a space on the other side.
-    \* 2\^<small>nd</small>\^ level type B: There is a building element on the other side. 
+* 1^<small>st</small>^ level space boundary: defined as boundaries of the space, not taking into account any change in building element or spaces on the other side.
+* 2^<small>nd</small>^ level space boundary: defined as boundary taking any change in building element or spaces on the other side into account. It can be further distinguished into 
+    * 2^<small>nd</small>^ level type A: There is a space on the other side.
+    * 2^<small>nd</small>^ level type B: There is a building element on the other side. 
 
-> <small>The exact definition of how space boundaries are broken down depends on the view definition, more detailed conventions on how space boundaries are decomposed can only be given at the domain or application type level.</small>> \* <small>In an architectural or FM related view, a space boundary is defined totally from inside the space. This is a 1<sup><small>st</small></sup> level space boundary.</small>
-> \* <small>In a thermal view, the decomposition of the space boundary depends on the material of the providing building element and the adjacent spaces behind. This is a 2<sup><small>nd</small></sup> level space boundary.</small><table summary="space boundary types" border="0">
+> <small>The exact definition of how space boundaries are broken down depends on the view definition, more detailed conventions on how space boundaries are decomposed can only be given at the domain or application type level.</small>> * <small>In an architectural or FM related view, a space boundary is defined totally from inside the space. This is a 1<sup><small>st</small></sup> level space boundary.</small>
+> * <small>In a thermal view, the decomposition of the space boundary depends on the material of the providing building element and the adjacent spaces behind. This is a 2<sup><small>nd</small></sup> level space boundary.</small>
+
+<table summary="space boundary types" border="0">
 <tr>
  <td><img src="../../../../../../figures/ifcrelspaceboundary_1stlevel.png" alt="1st level"></td>
  <td><img src="../../../../../../figures/ifcrelspaceboundary_2ndlevel.png" alt="2nd level"></td>
@@ -32,12 +34,10 @@ Space boundaries are always defined as seen from the space. In general two basic
 </tr>
 </table>
 
+The differences between the 1^<small>st</small>^ and 2^<small>nd</small>^ level space boundaries is identified by:
 
-
-The differences between the 1\^<small>st</small>\^ and 2\^<small>nd</small>\^ level space boundaries is identified by:
-
-\* \*\*1\^<small>st</small>\^ level:\*\*   SELF\IfcRoot.Name = "1stLevel"   SELF\IfcRootDescription = NIL
-\* \*\*2\^<small>nd</small>\^ level:\*\*   SELF\IfcRoot.Name = "2ndLevel"   SELF\IfcRootDescription = "2a", or "2b"
+* **1^<small>st</small>^ level:**   SELF\IfcRoot.Name = "1stLevel"   SELF\IfcRootDescription = NIL
+* **2^<small>nd</small>^ level:**   SELF\IfcRoot.Name = "2ndLevel"   SELF\IfcRootDescription = "2a", or "2b"
 
 Differentiation between physical and virtual space boundary is illustrated in Figure 1 and Figure 42.
 
@@ -59,38 +59,38 @@ The _IfcRelSpaceBoundary_ may have geometry attached. If geometry is not attache
 
 The geometric representation (through the _ConnectionGeometry_ attribute) is defined using either 2D curve geometry or 3D surface geometry for space boundaries. In most view definitions the 3D connection surface geometry is required.
 
-\* 1\^<small>st</small>\^ level space boundary: 
-    \* only connection geometry for related space shall be provided
-    \* only surface connection geometry shall be provided
-    \* only the following surface representations are supported: 
-        \* _IfcSurfaceOfLinearExtrusion_
-        \* _IfcCurveBoundedPlane_
-        \* _IfcCurveBoundedSurface_
-        \* _IfcFaceBasedSurfaceModel_ 
-\* 2\^<small>nd</small>\^ level space boundary: 
-    \* only connection geometry for related space shall be provided
-    \* only surface connection geometry shall be provided
-    \* only the following surface representations are supported: 
-        \* _IfcCurveBoundedPlane_ with restrictions to have polygonal boundaries only
-        \* _IfcFaceBasedSurfaceModel_ 
+* 1^<small>st</small>^ level space boundary: 
+    * only connection geometry for related space shall be provided
+    * only surface connection geometry shall be provided
+    * only the following surface representations are supported: 
+        * _IfcSurfaceOfLinearExtrusion_
+        * _IfcCurveBoundedPlane_
+        * _IfcCurveBoundedSurface_
+        * _IfcFaceBasedSurfaceModel_ 
+* 2^<small>nd</small>^ level space boundary: 
+    * only connection geometry for related space shall be provided
+    * only surface connection geometry shall be provided
+    * only the following surface representations are supported: 
+        * _IfcCurveBoundedPlane_ with restrictions to have polygonal boundaries only
+        * _IfcFaceBasedSurfaceModel_ 
 
-\*\*Surface connection geometry\*\*
+**Surface connection geometry**
 
 The following constraints apply to the surface connection geometry representation:
 
-\* planar boundaries: 
-    \* _IfcSurfaceOfLinearExtrusion_ defined by a _SweptCurve_ being an _IfcArbitraryOpenProfileDef_ with straight segements, or
-    \* _IfcCurveBoundedPlane_ 
-\* curved boundaries 
-    \* _IfcSurfaceOfLinearExtrusion_ defined by a _SweptCurve_ being an _IfcArbitraryOpenProfileDef_ with curves segements, or
-    \* _IfcCurveBoundedSurface_ with a _BasisSurface_ being a non planar surface, such as _IfcCylindricalSurface_, or
-    \* _IfcFaceBasedSurfaceModel_ if already faceted. 
+* planar boundaries: 
+    * _IfcSurfaceOfLinearExtrusion_ defined by a _SweptCurve_ being an _IfcArbitraryOpenProfileDef_ with straight segements, or
+    * _IfcCurveBoundedPlane_ 
+* curved boundaries 
+    * _IfcSurfaceOfLinearExtrusion_ defined by a _SweptCurve_ being an _IfcArbitraryOpenProfileDef_ with curves segements, or
+    * _IfcCurveBoundedSurface_ with a _BasisSurface_ being a non planar surface, such as _IfcCylindricalSurface_, or
+    * _IfcFaceBasedSurfaceModel_ if already faceted. 
 
-\*\*Curve connection geometry\*\*
+**Curve connection geometry**
 
 The following constraints apply to the 2D curve representation:
 
-\* Curve: _IfcPolyline_, _IfcTrimmedCurve_ or _IfcCompositeCurve_
+* Curve: _IfcPolyline_, _IfcTrimmedCurve_ or _IfcCompositeCurve_
 
 > HISTORY&nbsp; New entity in IFC1.5, the entity has been modified in IFC2x.
 

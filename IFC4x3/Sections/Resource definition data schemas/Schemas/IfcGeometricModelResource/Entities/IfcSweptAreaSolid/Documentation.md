@@ -8,7 +8,7 @@ The optional _Positio_n coordinate system allows for re-positioning the resultin
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
 > The swept area solid entity collects the entities which are defined procedurally by sweeping action on planar bounded surfaces. The position is space of the swept solid will be dependent upon the position of the swept area. The swept area will be a face of the resulting swept area solid, except for the case of a revolved area solid with angle equal to 2&pi; (or 360 degrees).
 
-> NOTE&nbsp; Entity adapted from \*\*swept_area_solid\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from **swept_area_solid** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC1.5
 

@@ -5,8 +5,8 @@ A stair is a vertical passageway allowing occupants to walk (step) from one floo
 
 The _IfcStair_ shall either be represented:
 
-\* as a stair assembly entity that aggregates all parts (stair flight, landing, etc. with own representations), or
-\* as a single stair entity without decomposition including all representation directly at the stair entity.
+* as a stair assembly entity that aggregates all parts (stair flight, landing, etc. with own representations), or
+* as a single stair entity without decomposition including all representation directly at the stair entity.
 
 > NOTE&nbsp; In case of an _IfcStair_ being the aggregate of all parts of the stair the aggregation is handled by the _IfcRelAggregates_ relationship, relating an _IfcStair_ with the related _IfcStairFlight_ and landings, _IfcSlab_ with PredefinedType=LANDING. _IfcRailing_'s belonging to the stair may also be included into the aggregation.
 

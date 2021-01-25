@@ -9,8 +9,8 @@ The geometric representation of _IfcCurtainWall_ is given by the _IfcProductDefi
 
 The geometric representation of _IfcCurtainWall_ is defined using the following multiple shape representations for its definition:
 
-\* Axis: A two-dimensional open curve (for restrictions see below) defining the axis for the curtain wall. 
-    \* This is an optional representation for curtain walls. 
-\* Body: A surface model or boundary representation model representation defining the 3D shape of the curtain wall. 
-    \* If the _IfcCurtainWall_ has components (referenced by _SELF\IfcObject.IsDecomposedBy_) then no independent shape representation with _RepresentationType_ = 'Body' shall be defined. The body of _IfcCurtainWall_ is then geometrically represented by the shape representation of its components. The components are accessed via _SELF\IfcObject.IsDecomposedBy[1].RelatedObjects_. 
-    \* If the _IfcCurtainWall_ has no components defined (empty set of _SELF\IfcObject.IsDecomposedBy_) then the _IfcCurtainWall_ may be represented by an shape representation with the _RepresentationIdentifier_ ='Body'.
+* Axis: A two-dimensional open curve (for restrictions see below) defining the axis for the curtain wall. 
+    * This is an optional representation for curtain walls. 
+* Body: A surface model or boundary representation model representation defining the 3D shape of the curtain wall. 
+    * If the _IfcCurtainWall_ has components (referenced by _SELF\IfcObject.IsDecomposedBy_) then no independent shape representation with _RepresentationType_ = 'Body' shall be defined. The body of _IfcCurtainWall_ is then geometrically represented by the shape representation of its components. The components are accessed via _SELF\IfcObject.IsDecomposedBy[1].RelatedObjects_. 
+    * If the _IfcCurtainWall_ has no components defined (empty set of _SELF\IfcObject.IsDecomposedBy_) then the _IfcCurtainWall_ may be represented by an shape representation with the _RepresentationIdentifier_ ='Body'.

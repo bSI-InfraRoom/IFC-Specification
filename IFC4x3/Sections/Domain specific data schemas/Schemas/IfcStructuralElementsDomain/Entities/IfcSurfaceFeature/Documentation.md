@@ -4,29 +4,29 @@ The standard use of instances of _IfcSurfaceFeature_ is as a part of element typ
 
 > HISTORY&nbsp; New entity in IFC4.
 
-\*\*\*\*Containment Use Definition\*\*\*\*:
+****Containment Use Definition****:
 
 Surface features shall have no spatial containment relationship to the spatial structure since they are dependent on element types without spatial containment relationships or on an element occurrence with own spatial containment relationship.
 
-\* The _SELF\IfcElement.ContainedInStructure_ relationship shall be NIL.
+* The _SELF\IfcElement.ContainedInStructure_ relationship shall be NIL.
 
-\*\*\*\*Geometry use definition\*\*\*\*:
+****Geometry use definition****:
 
 The geometric representation of _IfcSurfaceFeatureElement_ is given by the _IfcProductDefinitionShape_, allowing multiple geometric representation.
 
-\*\*Local Placement\*\*
+**Local Placement**
 
 The local placement for _IfcSurfaceFeatureElement_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-\* In case of features which are part of an element type, absolute placement into the type object's implied coordinate system shall be used.
-\* In case of features which are voiding an element occurrence, the _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point to the local placement of the respective element.
+* In case of features which are part of an element type, absolute placement into the type object's implied coordinate system shall be used.
+* In case of features which are voiding an element occurrence, the _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point to the local placement of the respective element.
 
-\*\*Shape representation\*\*
+**Shape representation**
 
 Different shape representations may be used, depending on the nature of the feature and information requirements:
 
-\* Symbolic representation, such as the two-dimensional bounding box of a tag. 
-\* A geometric set representing the geometric items of a mark.
-\* Surface representations of treated parts of the lement surface by means of _IfcShellBasedSurfaceModel_. The faces within the surface model may be included into a B-Rep model within a representation map of the parent element type.
+* Symbolic representation, such as the two-dimensional bounding box of a tag. 
+* A geometric set representing the geometric items of a mark.
+* Surface representations of treated parts of the lement surface by means of _IfcShellBasedSurfaceModel_. The faces within the surface model may be included into a B-Rep model within a representation map of the parent element type.
 
 Higher-level parameters (geometric and non-geometric) may be provided by property sets based on local agreements.

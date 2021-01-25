@@ -24,13 +24,13 @@ Representation of other activities
 
 The use definitions for _IfcTask_ have been generalised to represent other activities as well, including activities that had been defined by own entities in previous IFC releases. This includes
 
-\* Order actions
-\* Move operations
+* Order actions
+* Move operations
 
 _IfcTask_ represents an order that might be carried out by a Helpdesk acting the role of interface for the organization between the facility user and the functional requirement of fulfilling their needs. The actual task represented by the _IfcTask_ entity is turning a request into an order and initiating the action that will enable the order to be completed. The _IfcProjectOrder_ or one of its subtypes including maintenance work order, is related to the _IfcTask_ using _IfcRelAssignsToControl_.
 
 _IfcTask_ can also be used to describe an activity that moves people, groups within an organization or complete organizations together with their associated furniture and equipment from one place to another. It thus replaces the previous IFC entity IfcMove. The functionality is represented in _IfcTask_ as follows:
 
-\* Move from: The place from which actors and their associated equipment are moving.   Use _IfcRelAssignsToProcess_ where _RelatingProcess_ points to the task and _RelatedObjects_ holds the location(s) from which to move.
-\* Move to: The place to which actors and their associated equipment are moving.   Use _IfcRelAssignsToProduct_ where _RelatedObjects_ points to the task(s) and _RelatingProduct_ points to the location to which to move.
-\* Punch list: A list of points concerning a move that require attention.   Use _LongDescription_ or else identify sub-tasks to track punch list items individually via _IfcRelNests_.
+* Move from: The place from which actors and their associated equipment are moving.   Use _IfcRelAssignsToProcess_ where _RelatingProcess_ points to the task and _RelatedObjects_ holds the location(s) from which to move.
+* Move to: The place to which actors and their associated equipment are moving.   Use _IfcRelAssignsToProduct_ where _RelatedObjects_ points to the task(s) and _RelatingProduct_ points to the location to which to move.
+* Punch list: A list of points concerning a move that require attention.   Use _LongDescription_ or else identify sub-tasks to track punch list items individually via _IfcRelNests_.

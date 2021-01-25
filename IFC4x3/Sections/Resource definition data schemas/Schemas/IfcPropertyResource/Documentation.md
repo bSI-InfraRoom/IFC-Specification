@@ -4,8 +4,8 @@ The _IfcPropertyResource_ defines a basic set of property types that can be asso
 
 The association of attributes to objects can be defined by two different ways:
 
-\* by defining a type object (_IfcTypeObject_) which defines a specific object information (including the relevant properties) that is assigned to all instances (or occurrences) of the type object (via the _IfcRelDefinesByType_ relationship).
-\* by defining a property set (_IfcPropertySet_, a logical grouping of related properties) which defines the common property information for an individual instance (or occurrence), this is done via the _IfcRelDefinesByProperties_ relationship.
+* by defining a type object (_IfcTypeObject_) which defines a specific object information (including the relevant properties) that is assigned to all instances (or occurrences) of the type object (via the _IfcRelDefinesByType_ relationship).
+* by defining a property set (_IfcPropertySet_, a logical grouping of related properties) which defines the common property information for an individual instance (or occurrence), this is done via the _IfcRelDefinesByProperties_ relationship.
 
 The semantic information of what an individual property denotes has to be given by the _Name_ attribute. The _Name_ is human interpretable and can also be computer interpretable by convention. This convention has to be established by implementers' agreements.
 

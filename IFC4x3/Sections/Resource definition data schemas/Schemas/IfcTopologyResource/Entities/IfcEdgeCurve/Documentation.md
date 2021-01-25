@@ -11,15 +11,13 @@ An _IfcEdgeCurve_ defines two vertices being connected topologically including t
 <tr><td><p class="figure">Figure 1 &mdash; Edge curve</p></td><td>&nbsp;</td><td>&nbsp;</td></tr>
 </table>
 
-
-
 &nbsp;
 
 { .extDef}
 > NOTE&nbsp; Definition according to ISO/CD 10303-42:1992  
 > An edge curve is a special subtype of edge which has its geometry fully defined. The geometry is defined by associating the edge with a curve which may be unbounded. As the topological and geometric directions may be opposed, an indicator (same sense) is used to identify whether the edge and curve directions agree or are opposed. The Boolean value indicates whether the curve direction agrees with (TRUE) or is in the opposite direction (FALSE) to the edge direction. Any geometry associated with the vertices of the edge shall be consistent with the edge geometry. Multiple edges can reference the same curve.
 
-> NOTE&nbsp; Entity adapted from \*\*edge_curve\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from **edge_curve** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC2x.
 

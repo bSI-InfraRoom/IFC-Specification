@@ -8,17 +8,17 @@
 
 On instance level, an object occurrence instance may have:
 
-\* similar state as its object type instance by applying all characteristics defined at the type;
-\* overridden state for particular characteristics;
-\* no defined object type instance.
+* similar state as its object type instance by applying all characteristics defined at the type;
+* overridden state for particular characteristics;
+* no defined object type instance.
 
 Characteristics defined at the object type level may include:
 
-\* common naming and predefined type;
-\* common properties within a type driven property set;
-\* common geometry representations, applied as mapped representation to each occurences;
-\* common material assignments (with exception of material set usages);
-\* common definition of a decomposition structure.
+* common naming and predefined type;
+* common properties within a type driven property set;
+* common geometry representations, applied as mapped representation to each occurences;
+* common material assignments (with exception of material set usages);
+* common definition of a decomposition structure.
 
 Many object occurrence and object type entities have an attribute named _PredefinedType_ consisting of a specific enumeration. Such predefined type essentially provides another level of inheritance to further differentiate objects without the need for additional entities. Predefined types are not just informational; various rules apply such as applicable property sets, part composition, and distribution ports. If the object is typed by an _IfcTypeObject_, then the _PredefinedType_ at the _IfcObject_ occurrence shall only be used if the _PredefinedType_ at _IfcTypeObject_ is set to _NOTDEFINED_.
 

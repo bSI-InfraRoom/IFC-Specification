@@ -2,8 +2,8 @@ _IfcDerivedProfileDef_ defines the profile by transformation from the parent pro
 
 The transformation effects the position, rotation, mirroring or scale of the profile at the underlying coordinate system, i.e. the coordinate system defined by the swept surface or swept area solid that uses the profile definition. It is the xy plane of either:
 
-\* _IfcSweptSurface.Position_
-\* _IfcSweptAreaSolid.Position_
+* _IfcSweptSurface.Position_
+* _IfcSweptAreaSolid.Position_
 
 or in case of sectioned spines the xy plane of each list member of _IfcSectionedSpine.CrossSectionPositions_. The position and potential rotation of the _ParentProfile_ within the underlying coordinate system is taken into consideration before applying the Cartesian transformation operator.
 

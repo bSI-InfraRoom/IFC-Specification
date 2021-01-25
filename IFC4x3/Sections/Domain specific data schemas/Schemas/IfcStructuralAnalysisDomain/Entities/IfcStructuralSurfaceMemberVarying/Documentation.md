@@ -7,10 +7,10 @@ This entity describes surface members with varying section properties. The prope
 { .change-ifc2x4}
 > IFC4 CHANGE&nbsp; Use definition changed and attributes deleted.
 
-\*\*\*\*Coordinate Systems\*\*\*\*:
+****Coordinate Systems****:
 
 See definitions at _IfcStructuralItem_ and _IfcStructuralSurfaceMember_. The local coordinates of an aggregate are generally undefined since continuity of local coordinates of the parts is not ensured.
 
-\*\*\*\*Material Use Definition\*\*\*\*
+****Material Use Definition****
 
 In case of aggregation, only the individual parts (direct instances of _IfcStructuralSurfaceMember_) carry material and thickness information. Otherwise, definitions at _IfcStructuralSurfaceMember_ apply.

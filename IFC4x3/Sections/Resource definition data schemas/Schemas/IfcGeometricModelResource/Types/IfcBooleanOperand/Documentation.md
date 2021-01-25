@@ -4,7 +4,7 @@ Select type including all geometric representation items which may participate i
 > NOTE&nbsp; Definition from ISO 10303-42:  
 > This select type identifies all those types of entities which may participate in a boolean operation to form a CSG solid.
 
-> NOTE&nbsp; Corresponding STEP type \*\*boolean_operand\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Corresponding STEP type **boolean_operand** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New type in IFC1.5.1.
 

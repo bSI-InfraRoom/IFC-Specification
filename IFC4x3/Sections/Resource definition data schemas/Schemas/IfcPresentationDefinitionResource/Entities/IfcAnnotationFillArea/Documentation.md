@@ -19,9 +19,7 @@ Figure 1 illustrates annotation fill area.
 </tr>
 </table>
 
-
-
-> NOTE&nbsp; Entity adapted from \*\*annotation_fill_area\*\* defined in ISO10303-46
+> NOTE&nbsp; Entity adapted from **annotation_fill_area** defined in ISO10303-46
 
 > HISTORY&nbsp; New entity in IFC2x2.
 

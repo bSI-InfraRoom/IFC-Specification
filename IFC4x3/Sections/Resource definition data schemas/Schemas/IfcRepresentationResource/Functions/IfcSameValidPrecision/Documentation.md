@@ -11,5 +11,4 @@ accepted precision values to about 0.1.</small>
   </ul>
 </ul>
 
-
 > HISTORY&nbsp; New function in IFC2x2

@@ -22,9 +22,9 @@ The listing of an entity below does not mean that instances of such entity must 
 
 General requirements of software implementing the Reference Exchange:
 
-\* For import, the schema identifier and model view identifier must be read from the file, and if such identifiers are different than that in this specification (and are otherwise not recognized), then the following message must be displayed to the user (localized accordingly): &quot;The selected file contains functionality that is not supported by this application version. A list of applications supporting the functionality within this file may be found at http://www.buildingsmart-tech.org/apps/[SCHEMA_IDENTIFIER]/[MODELVIEW_IDENTIFIER]&quot;. Note that it is also possible for applications to dynamically discover model views by constructing the URL http://www.buildingsmart-tech.org/mvdxml/[SCHEMA_IDENTIFIER]/[MODELVIEW_IDENTIFIER], where such MVDXML file may be used to configure importing or exporting -- if such application understands the full IFC schema and mvdXML, then it would be possible for the application to support any model view arbitrarily.
-\* For export, the schema identifier and model view identifier must be written to the file.
-\* If an application supports both Reference View and Design Transfer View, then it must provide the user an option to choose which to export and display the following text to the user (localized accordingly): &quot;Reference View contains simplified geometry designed for viewing within the widest range of applications. Design Transfer View contains higher-level geometry designed for editing within design applications.&quot;. There is no requirement where such choice may be made; i.e. such option could be available every time the user exports a file, or such option could be a general application setting.</Documentation>
+* For import, the schema identifier and model view identifier must be read from the file, and if such identifiers are different than that in this specification (and are otherwise not recognized), then the following message must be displayed to the user (localized accordingly): &quot;The selected file contains functionality that is not supported by this application version. A list of applications supporting the functionality within this file may be found at http://www.buildingsmart-tech.org/apps/[SCHEMA_IDENTIFIER]/[MODELVIEW_IDENTIFIER]&quot;. Note that it is also possible for applications to dynamically discover model views by constructing the URL http://www.buildingsmart-tech.org/mvdxml/[SCHEMA_IDENTIFIER]/[MODELVIEW_IDENTIFIER], where such MVDXML file may be used to configure importing or exporting -- if such application understands the full IFC schema and mvdXML, then it would be possible for the application to support any model view arbitrarily.
+* For export, the schema identifier and model view identifier must be written to the file.
+* If an application supports both Reference View and Design Transfer View, then it must provide the user an option to choose which to export and display the following text to the user (localized accordingly): &quot;Reference View contains simplified geometry designed for viewing within the widest range of applications. Design Transfer View contains higher-level geometry designed for editing within design applications.&quot;. There is no requirement where such choice may be made; i.e. such option could be available every time the user exports a file, or such option could be a general application setting.</Documentation>
 			<Icon>"089504E470D0A1A0A0000000D4948445200000010000000100802000000909168360000000467414D410000B18F0BFC6105000000097048597300000EC300000EC301C76FA8640000006049444154384F95D2D10D00100C0450B512933187CDEC4485A4D150C7779F6B93231792FB799E875B2D3819E0CB2C801B01A0D900620450CCC83D5B0262F44A4FA3016F659B03B0CD1918E60A6E86B87C6097E66D56826AE4FC7724E055E5C90E4E1D281D264C695B0000000049454E44AE426082"</Icon>
 		</DocExchangeDefinition>
 	</Exchanges>
@@ -952,8 +952,8 @@ General requirements of software implementing the Reference Exchange:
 				<DocTemplateUsage Name="Product Local Placement" UniqueId="958a6c8c-c17a-4c9a-9035-f6a9d1e4e7ab">
 					<Documentation>The local placement for _IfcBuilding_ is defined by its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which establishes the local coordinate system that is referenced by all geometric representations.
 
-\* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point to the subtype of _IfcSpatialStructureElement_ that is referenced by the _Spatial Decomposition_ concept (usually of type _IfcSite_).
-\* If the _IfcBuilding_ is the uppermost spatial structure element, the _PlacementRelTo_ shall not be set.</Documentation>
+* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point to the subtype of _IfcSpatialStructureElement_ that is referenced by the _Spatial Decomposition_ concept (usually of type _IfcSite_).
+* If the _IfcBuilding_ is the uppermost spatial structure element, the _PlacementRelTo_ shall not be set.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 					<Items>
 						<DocTemplateItem UniqueId="fef8deea-598f-4b35-88ad-5769c4ab2da6" RuleParameters="HasPlacement=IfcLocalPlacement;">
@@ -1120,7 +1120,7 @@ _IfcBuildingStorey_ needs to have a different and higher
 				<DocTemplateUsage Name="Spatial Container" UniqueId="3P$JwmpPH5hAet3sC7DFd6">
 					<Documentation>If there are building elements and/or other elements directly related to the _IfcBuildingStorey_ (like most building elements, such as walls, columns, etc.), they are associated with the _IfcBuildingStorey_ by using the objectified relationship _IfcRelContainedInSpatialStructure_. The _IfcBuildingStorey_ references them by its inverse relationship:
 
-\* _IfcBuildingStorey.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.
+* _IfcBuildingStorey.ContainsElements_ -- referencing any subtype of _IfcProduct_ (with the exception of other spatial structure element) by _IfcRelContainedInSpatialStructure.RelatedElements_.
 
 Elements can also be referenced in an _IfcBuildingStorey_, for example, if they span through several storeys. This is expressed by using the objectified relationship _IfcRelReferencedInSpatialStructure_. Systems, such as building service or electrical distribution systems, zonal systems, or structural analysis systems, relate to _IfcBuildingStorey_ by using the objectified relationship _IfcRelServicesBuildings_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
@@ -1200,8 +1200,8 @@ Elements can also be referenced in an _IfcBuildingStorey_, for example, if they 
 				<DocTemplateUsage Name="Placement" UniqueId="72b5d7d2-ee16-4f50-884f-0229970679ac">
 					<Documentation>The local placement for _IfcBuildingStorey_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-\* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcBuilding_, or of type _IfcBuildingStorey_ (e.g. to position a building storey relative to a building storey complex, or a partial building storey to a building storey).
-\* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
+* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point (if relative placement is used) to the _IfcSpatialStructureElement_ of type _IfcBuilding_, or of type _IfcBuildingStorey_ (e.g. to position a building storey relative to a building storey complex, or a partial building storey to a building storey).
+* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage UniqueId="c38a5dc9-19d5-4292-8344-7491dfa17db0">
@@ -2802,10 +2802,10 @@ Upon connecting elements through ports with rigid connections, each object shall
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Port Connectivity" UniqueId="2bo4X9H8b9_xqkX$agnm9E">
-					<Documentation>\*\*IfcDistributionPort\*\* may be connected to other objects as follows using the indicated relationship:
+					<Documentation>**IfcDistributionPort** may be connected to other objects as follows using the indicated relationship:
 
-\* \*\*IfcDistributionPort\*\* (_IfcRelConnectsPorts_) : Indicates a connection to another port having the same type and opposite flow direction. For port connections between elements, the _RelatingPort_ is set to a port having _FlowDirection=SOURCE_ and the _RelatedPort_ is set to a port having _FlowDirection=SINK_. For aggregation scenarios, ports on a device may be mapped to aggregated devices within, in which case ports on the outer device indicate a single _FlowDirection_ but have an additional connection internally to a port on an aggregated inner device. Refer to [IfcUnitaryEquipment](../../ifchvacdomain/lexical/ifcunitaryequipment.htm) for an example.
-\* _IfcDistributionElement_ (_IfcRelConnectsPortToElement_): For dynamic ports, indicates the containing element. 
+* **IfcDistributionPort** (_IfcRelConnectsPorts_) : Indicates a connection to another port having the same type and opposite flow direction. For port connections between elements, the _RelatingPort_ is set to a port having _FlowDirection=SOURCE_ and the _RelatedPort_ is set to a port having _FlowDirection=SINK_. For aggregation scenarios, ports on a device may be mapped to aggregated devices within, in which case ports on the outer device indicate a single _FlowDirection_ but have an additional connection internally to a port on an aggregated inner device. Refer to [IfcUnitaryEquipment](../../ifchvacdomain/lexical/ifcunitaryequipment.htm) for an example.
+* _IfcDistributionElement_ (_IfcRelConnectsPortToElement_): For dynamic ports, indicates the containing element. 
 
 Figure 1 illustrates distribution port connectivity.
 
@@ -3006,8 +3006,6 @@ pictures).&lt;/small&gt;&lt;/td&gt;
 &lt;/table&gt;
 
 &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p class=&quot;figure&quot;&gt;Figure 1 &amp;mdash; Door swing&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-
-
 
 &gt; NOTE&amp;nbsp; The _OverallWidth_ and _OverallHeight_ parameters are for informational purpose only.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Door_Attributes_0UNQGfptnF8uioKwsOuZYj" />
@@ -3895,8 +3893,8 @@ pictures).&lt;/small&gt;&lt;/td&gt;
 				<DocTemplateUsage UniqueId="0SHxfGarH3JQci7Nm5ef3Z">
 					<Documentation>Placement of elements is defined by a local placement (a transformation matrix relative to:
 
-\* the spatial container (_IfcRelContainedInSpatialStructure_._RelatingSpatialStructure_)
-\* the parent aggregation element (_IfcRelAggregates_._RelatingObject_), if it is an aggregated part</Documentation>
+* the spatial container (_IfcRelContainedInSpatialStructure_._RelatingSpatialStructure_)
+* the parent aggregation element (_IfcRelAggregates_._RelatingObject_), if it is an aggregated part</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 					<Items>
 						<DocTemplateItem UniqueId="f114e1ec-215e-4f81-b778-ae731c21d3ef" RuleParameters="HasPlacement=IfcLocalPlacement;">
@@ -5589,7 +5587,7 @@ The same constraints, as given for &apos;Tessellation&apos;, &apos;SweptSolid&ap
 				<DocTemplateUsage Name="Product Local Placement" UniqueId="729d5b33-2ec2-4387-9c29-29493ce4b9d5">
 					<Documentation>The local placement for _IfcOpeningElement_ is defined in its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-\* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ should point to the local placement of the same element, which is voided by the opening, i.e. referred to by _VoidsElement_._RelatingBuildingElement_.</Documentation>
+* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ should point to the local placement of the same element, which is voided by the opening, i.e. referred to by _VoidsElement_._RelatingBuildingElement_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 					<Items>
 						<DocTemplateItem UniqueId="bdae2184-287d-4f7d-9e49-891d4453d065" RuleParameters="HasPlacement=IfcLocalPlacement;RelativeTo=IfcLocalPlacement;" />
@@ -6110,14 +6108,14 @@ The same constraints, as given for &apos;Tessellation&apos;, &apos;SweptSolid&ap
 				<DocTemplateUsage Name="FootPrint GeomSet Geometry" UniqueId="f036530f-76d6-4ec0-9040-b20a00f0537f">
 					<Documentation>The 2D geometric representation of _IfcGrid_ is defined using the &apos;GeometricCurveSet&apos; geometry. The following attribute values should be inserted
 
-\*  _IfcShapeRepresentation.RepresentationIdentifier_ = &apos;FootPrint&apos;.
-\*  _IfcShapeRepresentation.RepresentationType_ = &apos;GeometricCurveSet&apos;.
+*  _IfcShapeRepresentation.RepresentationIdentifier_ = &apos;FootPrint&apos;.
+*  _IfcShapeRepresentation.RepresentationType_ = &apos;GeometricCurveSet&apos;.
 
 The following constraints apply to the 2D representation:
 
-\* The _IfcGeometricCurveSet_ shall be an (and the only) _Item_ of the _IfcShapeRepresentation_. It should contain an _IfcGeometricCurveSet_ containing subtypes of _IfcCurve_, each representing a grid axis. Applicable subtypes of _IfcCurve_ are: _IfcPolyline_, _IfcCircle_, _IfcTrimmedCurve_ (based on _BaseCurve_ referencing _IfcLine_ or _IfcCircle_), and _IfcOffsetCurve2D_.
-\* Each subtype of _IfcCurve_ may have a curve style assigned, using _IfcStyledItem_ referencing _IfcCurveStyle_.
-\* Optionally the grid axis labels may be added as _IfcTextLiteral_, and they may have text styles assigned, using _IfcStyledItem_ referencing _IfcTextStyle_.
+* The _IfcGeometricCurveSet_ shall be an (and the only) _Item_ of the _IfcShapeRepresentation_. It should contain an _IfcGeometricCurveSet_ containing subtypes of _IfcCurve_, each representing a grid axis. Applicable subtypes of _IfcCurve_ are: _IfcPolyline_, _IfcCircle_, _IfcTrimmedCurve_ (based on _BaseCurve_ referencing _IfcLine_ or _IfcCircle_), and _IfcOffsetCurve2D_.
+* Each subtype of _IfcCurve_ may have a curve style assigned, using _IfcStyledItem_ referencing _IfcCurveStyle_.
+* Optionally the grid axis labels may be added as _IfcTextLiteral_, and they may have text styles assigned, using _IfcStyledItem_ referencing _IfcTextStyle_.
 
 &lt;table cellpadding=&quot;2&quot; cellspacing=&quot;2&quot;&gt;
 
@@ -6145,8 +6143,6 @@ As shown in Figure 31, the &lt;em&gt;IfcGrid&lt;/em&gt; defines a
 &lt;/td&gt;
  &lt;/tr&gt;
 &lt;/table&gt;
-
-
 
 &amp;nbsp;
 
@@ -6244,8 +6240,8 @@ As shown in Figure 31, the &lt;em&gt;IfcGrid&lt;/em&gt; defines a
 				<DocTemplateUsage UniqueId="0FrsODsE91oxbPKKndZw$f">
 					<Documentation>The _IfcProject_ is used to reference the root of the spatial structure of a building or other construction project (that serves as the primary project breakdown and is required to be hierarchical). The spatial structure elements are linked together, and to the _IfcProject_, by using the objectified relationship _IfcRelAggregates_.
 
-\* _IfcProject_.Decomposes -- shall be NIL, i.e. the _IfcProject_ shall be on top of the root of the spatial structure tree.
-\* _IfcProject_.IsDecomposedBy -- referencing (_IfcSite_ || _IfcBuilding_ || _IfcSpatialZone_) by using _IfcRelAggregates_.RelatedObjects. The _IfcSite_, _IfcBuilding_, or _IfcSpatialZone_ being referenced shall be the root of the spatial structure.</Documentation>
+* _IfcProject_.Decomposes -- shall be NIL, i.e. the _IfcProject_ shall be on top of the root of the spatial structure tree.
+* _IfcProject_.IsDecomposedBy -- referencing (_IfcSite_ || _IfcBuilding_ || _IfcSpatialZone_) by using _IfcRelAggregates_.RelatedObjects. The _IfcSite_, _IfcBuilding_, or _IfcSpatialZone_ being referenced shall be the root of the spatial structure.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_1cVuH3xCvAZQOan_h15FW" />
 					<Items>
 						<DocTemplateItem UniqueId="1eacdeb9-91bf-4990-b7f9-76b63898df87">
@@ -8002,14 +7998,14 @@ Figure 1 illustrates roof placement, with an _IfcRoof_ defining the local placem
 				<DocTemplateUsage Name="Product Local Placement" UniqueId="7d82617c-3d38-47cc-86fe-f729fc3ed84f">
 					<Documentation>The local placement for _IfcSpace_ is defined at its supertype _IfcProduct_. It is defined by the _IfcLocalPlacement_, which defines the local coordinate system that is referenced by all geometric representations.
 
-\* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point to the local placement of the _IfcSpatialStructureElement_ of type _IfcBuildingStorey_ or _IfcSite_ if relative placement is used.
-\* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
+* The _PlacementRelTo_ relationship of _IfcLocalPlacement_ shall point to the local placement of the _IfcSpatialStructureElement_ of type _IfcBuildingStorey_ or _IfcSite_ if relative placement is used.
+* If the relative placement is not used, the absolute placement is defined within the world coordinate system.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="FootPrint GeomSet Geometry" UniqueId="fcddf0b1-ae2e-4ec0-855b-bc6e976107a8">
 					<Documentation>The following constraints apply to the 2D representation:
 
-\* An _IfcBoundedCurve_ is required, using _IfcPolyline_ for faceted space contours or _IfcCompositeCurve_ for space contours with arc segments. For spaces with inner boundaries, a set of _IfcBoundedCurve_&apos;s is used, that should be grouped into an _IfcGeometricCurveSet_.
+* An _IfcBoundedCurve_ is required, using _IfcPolyline_ for faceted space contours or _IfcCompositeCurve_ for space contours with arc segments. For spaces with inner boundaries, a set of _IfcBoundedCurve_&apos;s is used, that should be grouped into an _IfcGeometricCurveSet_.
 
 &amp;nbsp;
 
@@ -8048,9 +8044,9 @@ foot print of &lt;em&gt;IfcSpace&lt;/em&gt;.&lt;/blockquote&gt;&lt;/td&gt;
 				<DocTemplateUsage Name="Body SweptSolid PolyCurve Geometry" UniqueId="eb232576-bd64-469e-87a2-8a77a507e881">
 					<Documentation>The following constraints apply to the &apos;Body&apos; &apos;SweptSolid&apos; representation:
 
-\* \*\*Solid\*\*: _IfcExtrudedAreaSolid_ is required,
-\* \*\*Profile\*\*: _IfcArbitraryClosedProfileDef_ and _IfcArbitraryProfileDefWithVoids_ shall be supported. The profile outline and inline curves are defined using _IfcIndexedPolyCurve_.
-\* \*\*Extrusion\*\*: The extrusion direction shall be vertically, i.e., along the positive Z Axis of the co-ordinate system of the containing spatial structure element.
+* **Solid**: _IfcExtrudedAreaSolid_ is required,
+* **Profile**: _IfcArbitraryClosedProfileDef_ and _IfcArbitraryProfileDefWithVoids_ shall be supported. The profile outline and inline curves are defined using _IfcIndexedPolyCurve_.
+* **Extrusion**: The extrusion direction shall be vertically, i.e., along the positive Z Axis of the co-ordinate system of the containing spatial structure element.
 
 Figure 1 shows an extrusion of an arbitrary profile definition with voids into the swept area solid of _IfcSpace_.
 
@@ -9521,10 +9517,10 @@ Figure 2 illustrates an example of referencing a representation multiple times m
 
 In case of a zone denoting a (fire) compartment, the following types should be used, if applicable, as values of the _ObjectType_ attribute:
 
-\* \*\*&apos;FireCompartment&apos;\*\*: a zone of spaces, collected to represent a single fire compartment.
-\* \*\*&apos;ElevatorShaft&apos;\*\*: a collection of spaces within an elevator, potentially going through many storeys.
-\* \*\*&apos;RisingDuct&apos;\*\*: A collection of vertical airspaces.
-\* \*\*&apos;RunningDuct&apos;\*\*: A collection of horizontal airspaces.</Documentation>
+* **&apos;FireCompartment&apos;**: a zone of spaces, collected to represent a single fire compartment.
+* **&apos;ElevatorShaft&apos;**: a collection of spaces within an elevator, potentially going through many storeys.
+* **&apos;RisingDuct&apos;**: A collection of vertical airspaces.
+* **&apos;RunningDuct&apos;**: A collection of horizontal airspaces.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Group_Assignment_3rPvPL9D4sQnHatm9h2M3" />
 				</DocTemplateUsage>
 			</Concepts>

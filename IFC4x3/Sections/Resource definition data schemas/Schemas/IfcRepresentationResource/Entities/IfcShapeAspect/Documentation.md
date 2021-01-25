@@ -12,7 +12,7 @@ Figure 1 indicates the association of material characteristics to shape aspects.
 > NOTE&nbsp; Definition from ISO 10303-41:  
 > A shape aspect is an identifiable element of the shape of an object.
 
-> NOTE&nbsp; Entity adapted from \*\*shape_aspect\*\* defined in ISO 10303-42.
+> NOTE&nbsp; Entity adapted from **shape_aspect** defined in ISO 10303-42.
 
 > HISTORY&nbsp; New entity in IFC2.0
 

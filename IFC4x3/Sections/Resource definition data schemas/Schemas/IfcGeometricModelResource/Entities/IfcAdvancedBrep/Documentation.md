@@ -30,9 +30,7 @@ An advanced B-rep is a boundary representation model in which all faces, edges a
 </tr>
 </table>
 
-
-
-> NOTE&nbsp; Entity adapted from \*\*advanced_brep_shape_representation\*\* defined in ISO 10303-514.
+> NOTE&nbsp; Entity adapted from **advanced_brep_shape_representation** defined in ISO 10303-514.
 
 > HISTORY&nbsp; New entity in IFC4
 

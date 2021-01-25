@@ -10,8 +10,8 @@ Informal Propositions:
 
 Figure 1 illustrates the arbitrary closed profile definition. The _OuterCurve_ is defined in the underlying coordinate system. The underlying coordinate system is defined by the swept surface or swept area solid that uses the profile definition. It is the xy plane of either:
 
-\* IfcSweptSurface.Position
-\* IfcSweptAreaSolid.Position
+* IfcSweptSurface.Position
+* IfcSweptAreaSolid.Position
 
 or in case of sectioned spines the xy plane of each list member of _IfcSectionedSpine.CrossSectionPositions_. The _OuterCurve_ attribute defines a two dimensional closed bounded curve.
 

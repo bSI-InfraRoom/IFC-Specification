@@ -76,8 +76,6 @@ Windows which are subdivided into more than three panels have to be defined by t
 <tr><td><p class="figure">Figure 1 &mdash; Window panel positions</p></td></tr>
 </table>
 
-
-
 > HISTORY&nbsp; New enumeration in IFC2.0.
 
 NOTE

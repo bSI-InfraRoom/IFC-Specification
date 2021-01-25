@@ -26,14 +26,13 @@ e.g. by excluding tapering from an <em>IfcBeamStandardCase</em>
 implementation.</small></blockquote>
 </li>
 </ul>
-
 > HISTORY&nbsp; New entity in IFC4.
 
-\*\*_Geometric Representations_\*\*
+**_Geometric Representations_**
 
 The geometric representation of _IfcColumnStandardCase_ is defined using the following multiple shape representations for its definition:
 
-\* \*\*Axis\*\*: A three-dimensional open curve (subtype of _IfcBoundedCurve_) defining the axis for the standard column. The cardinal point is determined by the column axis.
-\* \*\*Body\*\*: A Swept Solid Representation or a CSG representation defining the 3D shape of the standard column.
+* **Axis**: A three-dimensional open curve (subtype of _IfcBoundedCurve_) defining the axis for the standard column. The cardinal point is determined by the column axis.
+* **Body**: A Swept Solid Representation or a CSG representation defining the 3D shape of the standard column.
 
 > NOTE&nbsp; It is invalid to exchange a 'SurfaceModel', 'Brep', or 'MappedRepresentation' representation for the 'Body' shape representation of an _IfcColumnStandardCase_.
