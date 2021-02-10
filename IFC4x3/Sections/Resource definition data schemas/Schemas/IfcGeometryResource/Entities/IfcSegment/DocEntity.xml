@@ -4,6 +4,9 @@
 		<DocAttribute Name="Transition" UniqueId="940dc80b-fba5-469c-b3d3-dc1e309473a3" DefinedType="IfcTransitionCode">
 			<Documentation>Connectivity between the continuous segments is not enforced per se to be tangential. Setting &quot;TangentialContinuity&quot; to True means that the current segment shall continue with tangential continuity to the previous one.</Documentation>
 		</DocAttribute>
+		<DocAttribute Name="UsingCurves" UniqueId="1cede6f4-cc66-4b43-8893-d6a8a6afe94a" DefinedType="IfcCompositeCurve" AttributeFlags="8" AggregationType="3" AggregationLower="1" AggregationUpper="0" Inverse="Segments">
+			<Documentation>The set of composite curves which use this composite curve segment as a segment. This set shall not be empty.</Documentation>
+		</DocAttribute>
 	</Attributes>
 </DocEntity>
 
