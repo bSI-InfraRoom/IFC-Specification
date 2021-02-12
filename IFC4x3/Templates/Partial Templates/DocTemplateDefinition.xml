@@ -404,6 +404,15 @@ Scaling is supported to correlate the size of a texture with its physical dimens
 			<Templates>
 				<DocTemplateDefinition Name="Curve Axis Geometry" UniqueId="d1bbb094-d206-43eb-861d-d30b55524748" Type="IfcBoundedCurve">
 					<Templates>
+						<DocTemplateDefinition Name="Gradient Curve" UniqueId="cf0d4709-dc5b-484e-ae24-946553d6a4e1" Type="IfcGradientCurve">
+							<Rules>
+								<DocModelRuleAttribute Name="BaseCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcCompositeCurve" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
 						<DocTemplateDefinition id="Segmented_Reference_Curve_2gHse8jCz80xYJLZgX6oV" Name="Segmented Reference Curve" UniqueId="aa476a08-b4cf-4803-b893-563aa1fc6c9f" Type="IfcBoundedCurve">
 							<Rules>
 								<DocModelRuleAttribute Name="BaseCurve" />
@@ -443,6 +452,75 @@ Scaling is supported to correlate the size of a texture with its physical dimens
 								<DocModelRuleAttribute Name="EndPoint">
 									<Rules>
 										<DocModelRuleEntity Name="IfcPlacement" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+					</Templates>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition Name="Curve Segment Geometry" UniqueId="2a8cab53-ed00-4d33-ac5f-85ae1dbf3ff7" Type="IfcCurveSegment">
+					<Templates>
+						<DocTemplateDefinition id="Helmert_Transition_Segment_2GmQ8gyA1CgdJxW6bT3OO" Name="Helmert Transition Segment" UniqueId="90c1a22a-f0a0-4cfe-a9d3-ee01a5743618" Type="IfcCurveSegment">
+							<Documentation>The Helmert transition segment is a special case of a fourth order spiral where the curvature rate of change is a quadratic function where the terms are dependent on the segment length L. The parameter value is defined as the deflection i.e. tangent angle &amp;Theta..</Documentation>
+							<Rules>
+								<DocModelRuleAttribute Name="ParentCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcHelmertCurve">
+											<Rules>
+												<DocModelRuleAttribute Name="QuadraticTerm">
+													<Rules>
+														<DocModelRuleEntity id="IfcReal_0000000000000000000000" Name="IfcReal" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="LinearTerm">
+													<Rules>
+														<DocModelRuleEntity id="IfcReal_0000000000000000000000" Name="IfcReal" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="Constant">
+													<Rules>
+														<DocModelRuleEntity id="IfcReal_0000000000000000000000" Name="IfcReal">
+															<Rules>
+																<DocModelRuleConstraint>
+																	<Expression xsi:type="DocOpLogical" Operation="and">
+																		<ExpressionA xsi:type="DocOpLogical" Operation="and">
+																			<ExpressionA xsi:type="DocOpStatement" Operation="compareequal">
+																				<Reference xsi:type="DocOpReference">
+																					<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcReal_0000000000000000000000" />
+																				</Reference>
+																				<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="-1" />
+																			</ExpressionA>
+																			<ExpressionB xsi:type="DocOpStatement" Operation="compareequal">
+																				<Reference xsi:type="DocOpReference">
+																					<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcReal_0000000000000000000000" />
+																				</Reference>
+																				<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="4/L" />
+																			</ExpressionB>
+																		</ExpressionA>
+																		<ExpressionB xsi:type="DocOpStatement" Operation="compareequal">
+																			<Reference xsi:type="DocOpReference">
+																				<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcReal_0000000000000000000000" />
+																			</Reference>
+																			<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="2/L²" />
+																		</ExpressionB>
+																	</Expression>
+																</DocModelRuleConstraint>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SegmentStart">
+									<Rules>
+										<DocModelRuleEntity Name="IfcParameterValue" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SegmentLength">
+									<Rules>
+										<DocModelRuleEntity Name="IfcParameterValue" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>

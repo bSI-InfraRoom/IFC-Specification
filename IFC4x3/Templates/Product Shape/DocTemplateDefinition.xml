@@ -136,6 +136,43 @@
 								</DocModelRuleAttribute>
 							</Rules>
 						</DocTemplateDefinition>
+						<DocTemplateDefinition Name="Alignment Geometry Vertical" UniqueId="c9be2304-1385-4c9f-9803-58cf95c53efd" Type="IfcAlignment">
+							<Rules>
+								<DocModelRuleAttribute Name="Representation">
+									<Rules>
+										<DocModelRuleEntity Name="IfcProductDefinitionShape">
+											<Rules>
+												<DocModelRuleAttribute Name="Name" />
+												<DocModelRuleAttribute Name="Description" />
+												<DocModelRuleAttribute Name="Representations">
+													<Rules>
+														<DocModelRuleEntity Name="IfcShapeRepresentation">
+															<Rules>
+																<DocModelRuleAttribute Name="ContextOfItems">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcGeometricRepresentationContext" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
 					</Templates>
 				</DocTemplateDefinition>
 				<DocTemplateDefinition Name="Annotation Geometry" UniqueId="2GFxPJ1Sn77gMEQrYvnsze" Type="IfcAnnotation">
