@@ -39,7 +39,7 @@
 				</DocModelRuleAttribute>
 			</Rules>
 			<Templates>
-				<DocTemplateDefinition id="Alignment_Geometry_1ZI6NYVGLBIQ2aAV9Y8RWE" Name="Alignment Geometry" UniqueId="634865e2-7d05-4b49-a0a4-29f26221b80e" Type="IfcAlignment">
+				<DocTemplateDefinition Name="Alignment Geometry" UniqueId="634865e2-7d05-4b49-a0a4-29f26221b80e" Type="IfcAlignment">
 					<Rules>
 						<DocModelRuleAttribute Name="Representation">
 							<Rules>
@@ -136,7 +136,7 @@
 								</DocModelRuleAttribute>
 							</Rules>
 						</DocTemplateDefinition>
-						<DocTemplateDefinition Name="Alignment Geometry Vertical" UniqueId="c9be2304-1385-4c9f-9803-58cf95c53efd" Type="IfcAlignment">
+						<DocTemplateDefinition id="Alignment_Geometry_Gradient_39lYC44uLCdvW3MC_LnJxz" Name="Alignment Geometry Gradient" UniqueId="c9be2304-1385-4c9f-9803-58cf95c53efd" Type="IfcAlignment">
 							<Rules>
 								<DocModelRuleAttribute Name="Representation">
 									<Rules>
@@ -161,6 +161,31 @@
 																<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
 																	<Rules>
 																		<DocModelRuleEntity Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Items">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcGradientCurve">
+																			<Rules>
+																				<DocModelRuleAttribute Name="BaseCurve">
+																					<Rules>
+																						<DocModelRuleEntity Name="IfcCompositeCurve">
+																							<Rules>
+																								<DocModelRuleAttribute Name="Segments">
+																									<Rules>
+																										<DocModelRuleEntity Name="IfcCurveSegment">
+																											<References>
+																												<DocTemplateDefinition xsi:nil="true" href="Helmert_Transition_Segment_2GmQ8gyA1CgdJxW6bT3OO" />
+																											</References>
+																										</DocModelRuleEntity>
+																									</Rules>
+																								</DocModelRuleAttribute>
+																							</Rules>
+																						</DocModelRuleEntity>
+																					</Rules>
+																				</DocModelRuleAttribute>
+																			</Rules>
+																		</DocModelRuleEntity>
 																	</Rules>
 																</DocModelRuleAttribute>
 															</Rules>

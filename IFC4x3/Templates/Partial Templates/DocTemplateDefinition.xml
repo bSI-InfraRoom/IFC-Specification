@@ -460,24 +460,44 @@ Scaling is supported to correlate the size of a texture with its physical dimens
 				</DocTemplateDefinition>
 				<DocTemplateDefinition Name="Curve Segment Geometry" UniqueId="2a8cab53-ed00-4d33-ac5f-85ae1dbf3ff7" Type="IfcCurveSegment">
 					<Templates>
+						<DocTemplateDefinition Name="Bloss Transition Segment" UniqueId="fba4e3b1-2735-4c54-8d9e-88f5b4a4d90c" Type="IfcCurveSegment" />
+						<DocTemplateDefinition Name="Clothoid Transition Segment" UniqueId="bd1f5ac4-e795-4de7-b5aa-8551fe51086d" Type="IfcCurveSegment">
+							<Documentation>A clothoid segment is based on the IfcClothoid where the value for the clothoid constant is specified as √L.</Documentation>
+							<Rules>
+								<DocModelRuleAttribute Name="ParentCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcClothoid">
+											<Rules>
+												<DocModelRuleAttribute Name="ClothoidConstant">
+													<Rules>
+														<DocModelRuleEntity id="IfcLengthMeasure_0h34FPignBNvAzYZAWLsog" Name="IfcLengthMeasure" UniqueId="2b0c43d9-b2ac-4b5f-92bd-8a32a0576caa">
+															<Rules>
+																<DocModelRuleConstraint>
+																	<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																		<Reference xsi:type="DocOpReference">
+																			<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLengthMeasure_0h34FPignBNvAzYZAWLsog" />
+																		</Reference>
+																		<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="1/L" />
+																	</Expression>
+																</DocModelRuleConstraint>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
 						<DocTemplateDefinition id="Helmert_Transition_Segment_2GmQ8gyA1CgdJxW6bT3OO" Name="Helmert Transition Segment" UniqueId="90c1a22a-f0a0-4cfe-a9d3-ee01a5743618" Type="IfcCurveSegment">
-							<Documentation>The Helmert transition segment is a special case of a fourth order spiral where the curvature rate of change is a quadratic function where the terms are dependent on the segment length L. The parameter value is defined as the deflection i.e. tangent angle &amp;Theta..</Documentation>
+							<Documentation>The Helmert transition segment is a special case of a fourth order spiral where the curvature rate of change is a quadratic function where the terms are dependent on the segment length L. The parameter value is defined as the deflection i.e. tangent angle &amp;Theta.</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="ParentCurve">
 									<Rules>
 										<DocModelRuleEntity Name="IfcHelmertCurve">
 											<Rules>
-												<DocModelRuleAttribute Name="QuadraticTerm">
-													<Rules>
-														<DocModelRuleEntity id="IfcReal_0000000000000000000000" Name="IfcReal" />
-													</Rules>
-												</DocModelRuleAttribute>
-												<DocModelRuleAttribute Name="LinearTerm">
-													<Rules>
-														<DocModelRuleEntity id="IfcReal_0000000000000000000000" Name="IfcReal" />
-													</Rules>
-												</DocModelRuleAttribute>
-												<DocModelRuleAttribute Name="Constant">
+												<DocModelRuleAttribute Name="QuadraticTerm" Identification="QuadraticTerm">
 													<Rules>
 														<DocModelRuleEntity id="IfcReal_0000000000000000000000" Name="IfcReal">
 															<Rules>
@@ -507,6 +527,16 @@ Scaling is supported to correlate the size of a texture with its physical dimens
 																</DocModelRuleConstraint>
 															</Rules>
 														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="LinearTerm" Identification="LinearTerm">
+													<Rules>
+														<DocModelRuleEntity xsi:nil="true" href="IfcReal_0000000000000000000000" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="Constant" Identification="Constant">
+													<Rules>
+														<DocModelRuleEntity xsi:nil="true" href="IfcReal_0000000000000000000000" />
 													</Rules>
 												</DocModelRuleAttribute>
 											</Rules>

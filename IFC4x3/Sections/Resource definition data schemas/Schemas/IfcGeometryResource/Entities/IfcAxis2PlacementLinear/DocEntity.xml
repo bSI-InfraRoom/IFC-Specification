@@ -13,7 +13,7 @@
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="WR1" UniqueId="ddfd5e8e-1e10-49f8-b258-ad23005a13ae">
-			<Expression>&apos;IFCGEOMETRYRESOURCE.IfcPointByDistanceExpression&apos; IN TYPEOF(SELF\IfcPlacement.Location)</Expression>
+			<Expression>&apos;IFCGEOMETRYRESOURCE.IFCPOINTBYDISTANCEEXPRESSION&apos; IN TYPEOF(SELF\IfcPlacement.Location)</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="WR2" UniqueId="e893de7d-a87c-4fc6-8e1d-5a167ae89cbf">
 			<Documentation>The _Axis_ and _RefDirection_ shall not be parallel or anti-parallel.</Documentation>
