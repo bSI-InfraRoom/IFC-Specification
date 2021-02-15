@@ -16,7 +16,7 @@
 		<DocAttribute Name="EndRadiusOfCurvature" UniqueId="8147aa05-9061-43f0-a0f5-e90a19e3e111" DefinedType="IfcLengthMeasure">
 			<Documentation>For a NONLINEAR horizontal segment type the radius of the curve at the end point. If the radius is 0 it shall be interpreted as INFINITE. Positive values imply a CCW direction whereas negative CW.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="SegmentLength" UniqueId="c9466d68-d95a-43f1-b397-fc6cb7e483a8" DefinedType="IfcPositiveLengthMeasure">
+		<DocAttribute Name="SegmentLength" UniqueId="c9466d68-d95a-43f1-b397-fc6cb7e483a8" DefinedType="IfcNonNegativeLengthMeasure">
 			<Documentation>The length along the curve.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="GravityCenterLineHeight" UniqueId="316f4ff6-2669-4774-9d6b-a2acdbf6f814" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">

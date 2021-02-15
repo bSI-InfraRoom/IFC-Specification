@@ -176,6 +176,12 @@
 																										<DocModelRuleEntity Name="IfcCurveSegment">
 																											<References>
 																												<DocTemplateDefinition xsi:nil="true" href="Helmert_Transition_Segment_2GmQ8gyA1CgdJxW6bT3OO" />
+																												<DocTemplateDefinition xsi:nil="true" href="Bloss_Transition_Segment_3xfEEn9pLCL8sUYFMqfDaC" />
+																												<DocTemplateDefinition xsi:nil="true" href="Clothoid_Transition_Segment_2z7rh4vvLDvxMgXL7_KGXj" />
+																												<DocTemplateDefinition xsi:nil="true" href="Sine_Transition_Segment_2bmCqzBzH0wx4ONLuNbUSH" />
+																												<DocTemplateDefinition xsi:nil="true" href="Cosine_Transition_Segment_3si9Ib7Y5E0AqPu1b5AM0M" />
+																												<DocTemplateDefinition xsi:nil="true" href="Arc_Segment_0AFJtPzoP2zAjI9GzCYRL6" />
+																												<DocTemplateDefinition xsi:nil="true" href="Linear_Segment_2dPyjjaBH3buW4ESqzNjEG" />
 																											</References>
 																										</DocModelRuleEntity>
 																									</Rules>
@@ -3395,31 +3401,22 @@ The representation identifier and type and the only allowed single representatio
 					</Rules>
 				</DocTemplateDefinition>
 				<DocTemplateDefinition id="Product_Linear_Placement_2BSSvyDSzAhvG2y638nNlp" Name="Product Linear Placement" UniqueId="8b71ce7c-35cf-4aaf-9402-f060c8c57bf3" Type="IfcProduct">
+					<Documentation>A Product Linear Placement takes into account the ISO 19148 Linear referencing. Each product placed with Product Linear Placement has an absolute placement on the _IfcLinearPositioningElement_._Representation_ which is typically instantiated as an IfcAlignment with its appropriate axis geometry. Therefore, similarly to how _IfcSpatialElement_._ObjectPlacement_ sets the context for all contained elements, the IfcLinearPositioningElement sets the context for all elements positioned on it. Consequently, each product placement that uses Product Linear Placement references an _IfcLocalPlacement_ which is the placement of an _IfcLinearPositioningElement_ through _IfcLinearPlacement_._PlacementRelTo_.</Documentation>
 					<Rules>
 						<DocModelRuleAttribute Name="ObjectPlacement" Identification="HasPlacement">
 							<Rules>
 								<DocModelRuleEntity Name="IfcLinearPlacement">
 									<Rules>
-										<DocModelRuleAttribute Name="PlacementRelTo">
-											<Rules>
-												<DocModelRuleEntity Name="IfcObjectPlacement" />
-											</Rules>
-										</DocModelRuleAttribute>
-										<DocModelRuleAttribute Name="Distance">
-											<Rules>
-												<DocModelRuleEntity Name="IfcPointByDistanceExpression" />
-											</Rules>
-										</DocModelRuleAttribute>
-										<DocModelRuleAttribute Name="Orientation">
+										<DocModelRuleAttribute Name="RelativePlacement">
 											<Rules>
 												<DocModelRuleEntity Name="IfcAxis2PlacementLinear" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute Name="PlacementMeasuredAlong">
+										<DocModelRuleAttribute Name="PlacementRelTo">
 											<Rules>
-												<DocModelRuleEntity Name="IfcBoundedCurve">
+												<DocModelRuleEntity Name="IfcLocalPlacement">
 													<Rules>
-														<DocModelRuleAttribute Name="PositioningElement" Identification="LinearPositioninElement">
+														<DocModelRuleAttribute Name="PlacesObject">
 															<Rules>
 																<DocModelRuleEntity Name="IfcLinearPositioningElement" />
 															</Rules>

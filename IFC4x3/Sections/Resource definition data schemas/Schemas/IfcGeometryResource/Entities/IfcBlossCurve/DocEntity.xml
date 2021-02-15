@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBlossCurve" UniqueId="fb8706d9-cdf9-45c9-b533-ccd35b17d59c" BaseDefinition="IfcSpiral" EntityFlags="32">
 	<Attributes>
-		<DocAttribute Name="CurveLength" UniqueId="7e127c4b-861e-4909-9a7b-f730262bf5f1" DefinedType="IfcPositiveLengthMeasure" />
-		<DocAttribute Name="Radius" UniqueId="33b84002-7fc5-49bc-8f8f-b615ea2aaa51" DefinedType="IfcPositiveLengthMeasure" />
+		<DocAttribute Name="QubicTerm" UniqueId="a6a9e3ee-3806-4ee3-8f8a-2f7ca5474131" DefinedType="IfcLengthMeasure" />
+		<DocAttribute Name="QuadraticTerm" UniqueId="3ca73660-f211-460e-82c4-deb0962f1ad7" DefinedType="IfcLengthMeasure" AttributeFlags="1" />
+		<DocAttribute Name="LinearTerm" UniqueId="4c87d0bb-ca6c-419c-be0a-d6abc25f8176" DefinedType="IfcLengthMeasure" AttributeFlags="1" />
 	</Attributes>
 </DocEntity>
 

@@ -6,4 +6,4 @@ In the case of the clothoid and higher order transition spirals, the parametriza
 x = ∫cos&Thetadl
 y = ∫sin&Thetadl
 
-where &Theta is the deflection or in other notation the tangen angle and dl the differential of the spiral length.
+where &Theta is the deflection or bearing angle and dl the differential of the spiral length.
