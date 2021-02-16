@@ -488,7 +488,7 @@ Scaling is supported to correlate the size of a texture with its physical dimens
 							</Rules>
 						</DocTemplateDefinition>
 						<DocTemplateDefinition id="Bloss_Transition_Segment_3xfEEn9pLCL8sUYFMqfDaC" Name="Bloss Transition Segment" UniqueId="fba4e3b1-2735-4c54-8d9e-88f5b4a4d90c" Type="IfcCurveSegment">
-							<Documentation>The Bloss transition segment is a special case of a fifht order spiral where the curvature rate of change is a cubic function and the terms are dependent on the segment length L. The parameter value is defined as the deflection i.e. bearing angle &amp;Theta.
+							<Documentation>The Bloss transition segment is a special case of a fifht order spiral where the curvature rate of change is a cubic function and the terms are dependent on the length L measured from the inflection point. The parameter value is defined as the deflection i.e. bearing angle &amp;Theta.
 
 Only the cubic and quadratic terms are populated with the following values:
 QubicTerm = L/³√2
@@ -515,7 +515,7 @@ QuadraticTerm = L/√3</Documentation>
 							</Rules>
 						</DocTemplateDefinition>
 						<DocTemplateDefinition id="Clothoid_Transition_Segment_2z7rh4vvLDvxMgXL7_KGXj" Name="Clothoid Transition Segment" UniqueId="bd1f5ac4-e795-4de7-b5aa-8551fe51086d" Type="IfcCurveSegment">
-							<Documentation>A clothoid segment is based on the IfcClothoid where the value for the clothoid constant is specified as √L and L is the length of the clothoid segment.</Documentation>
+							<Documentation>A clothoid segment is based on the IfcClothoid where the value for the clothoid constant is specified as √L and L is the length measured from the inflection point.</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="ParentCurve">
 									<Rules>
@@ -523,18 +523,7 @@ QuadraticTerm = L/√3</Documentation>
 											<Rules>
 												<DocModelRuleAttribute Name="ClothoidConstant">
 													<Rules>
-														<DocModelRuleEntity id="IfcLengthMeasure_0h34FPignBNvAzYZAWLsog" Name="IfcLengthMeasure" UniqueId="2b0c43d9-b2ac-4b5f-92bd-8a32a0576caa">
-															<Rules>
-																<DocModelRuleConstraint>
-																	<Expression xsi:type="DocOpStatement" Operation="compareequal">
-																		<Reference xsi:type="DocOpReference">
-																			<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLengthMeasure_0h34FPignBNvAzYZAWLsog" />
-																		</Reference>
-																		<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="1/L" />
-																	</Expression>
-																</DocModelRuleConstraint>
-															</Rules>
-														</DocModelRuleEntity>
+														<DocModelRuleEntity Name="IfcLengthMeasure" UniqueId="2b0c43d9-b2ac-4b5f-92bd-8a32a0576caa" />
 													</Rules>
 												</DocModelRuleAttribute>
 											</Rules>
@@ -554,7 +543,7 @@ QuadraticTerm = L/√3</Documentation>
 							</Rules>
 						</DocTemplateDefinition>
 						<DocTemplateDefinition id="Cosine_Transition_Segment_3si9Ib7Y5E0AqPu1b5AM0M" Name="Cosine Transition Segment" UniqueId="f6b094a5-1e21-4e00-ad19-e01945296016" Type="IfcCurveSegment">
-							<Documentation>The cosine transition segment is a special case of a spiral where the curvature rate of change is a cosine function and the terms are dependent on the segment length L. The parameter value is defined as the deflection i.e. bearing angle &amp;Theta.
+							<Documentation>The cosine transition segment is a special case of a spiral where the curvature rate of change is a cosine function and the terms are dependent on the length L measured from the inflection point. The parameter value is defined as the deflection i.e. bearing angle &amp;Theta.
 
 The values of its individual terms dependent on segment length L:
 CosineTerm = L
@@ -591,7 +580,7 @@ Constant = 1</Documentation>
 							</Rules>
 						</DocTemplateDefinition>
 						<DocTemplateDefinition id="Helmert_Transition_Segment_2GmQ8gyA1CgdJxW6bT3OO" Name="Helmert Transition Segment" UniqueId="90c1a22a-f0a0-4cfe-a9d3-ee01a5743618" Type="IfcCurveSegment">
-							<Documentation>The Helmert transition segment is a special case of a fourth order spiral where the curvature rate of change is a quadratic function and the terms are dependent on the segment length L. The parameter value is defined as the deflection i.e. bearing angle &amp;Theta.
+							<Documentation>The Helmert transition segment is a special case of a fourth order spiral where the curvature rate of change is a quadratic function and the terms are dependent on the length L measured from the inflection point. The parameter value is defined as the deflection i.e. bearing angle &amp;Theta.
 
 The terms for the first half of the segment:
 QuadraticTerm = L/√2
@@ -600,7 +589,9 @@ rest are 0.
 Terms for the second half of the segment:
 QuadraticTerm =  -L/√2
 LinearTerm = L/4
-Constant = -1</Documentation>
+Constant = -1
+
+SegmentStart is the bearing angle at start and Segment length is the bearing angle at the end of the segment.</Documentation>
 							<Rules>
 								<DocModelRuleAttribute Name="ParentCurve">
 									<Rules>
@@ -658,7 +649,7 @@ Constant = -1</Documentation>
 							</Rules>
 						</DocTemplateDefinition>
 						<DocTemplateDefinition id="Sine_Transition_Segment_2bmCqzBzH0wx4ONLuNbUSH" Name="Sine Transition Segment" UniqueId="a5c0cd3d-2fd4-40eb-b118-5d5e1795e711" Type="IfcCurveSegment">
-							<Documentation>The sine transition segment is a special case of a spiral where the curvature rate of change is a sine function and the terms are dependent on the segment length L. The parameter value is defined as the deflection i.e. bearing angle &amp;Theta.
+							<Documentation>The sine transition segment is a special case of a spiral where the curvature rate of change is a sine function and the terms are dependent on the length L measured from the inflection point. The parameter value is defined as the deflection i.e. bearing angle &amp;Theta.
 
 The values of its individual terms are identical and equal to the lenght of the segment L:
 SineTerm = L
