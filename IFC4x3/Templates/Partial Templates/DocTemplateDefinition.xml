@@ -579,6 +579,26 @@ Constant = 1</Documentation>
 								</DocModelRuleAttribute>
 							</Rules>
 						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Cubic_Transition_Segment_0dqin2zM18UPoEDKUyhVUM" Name="Cubic Transition Segment" UniqueId="27d2cc42-f560-4879-9c8e-3547bcadf796" Type="IfcCurveSegment">
+							<Documentation>The cubic transition segment is modelled with _IfcPolynomial_ with certain restrictions. The size of the attribute CoefficientsX is restricted to 4. The cubic term is on position 4.
+
+Without a parametrization, the _SegmentStart_ and _SegmentLength_ should be of type _IfcNonNegativeLengthMeasure_.</Documentation>
+							<Rules>
+								<DocModelRuleAttribute Name="ParentCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPolynomialCurve">
+											<Rules>
+												<DocModelRuleAttribute Name="CoefficientsX">
+													<Rules>
+														<DocModelRuleEntity Name="IfcReal" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
 						<DocTemplateDefinition id="Helmert_Transition_Segment_2GmQ8gyA1CgdJxW6bT3OO" Name="Helmert Transition Segment" UniqueId="90c1a22a-f0a0-4cfe-a9d3-ee01a5743618" Type="IfcCurveSegment">
 							<Documentation>The Helmert transition segment is a special case of a fourth order spiral where the curvature rate of change is a quadratic function and the terms are dependent on the length L measured from the inflection point. The parameter value is defined as the deflection i.e. bearing angle &amp;Theta.
 
