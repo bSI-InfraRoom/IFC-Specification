@@ -558,7 +558,7 @@ Constant = 1</Documentation>
 														<DocModelRuleEntity Name="IfcLengthMeasure" />
 													</Rules>
 												</DocModelRuleAttribute>
-												<DocModelRuleAttribute Name="Constant">
+												<DocModelRuleAttribute Name="ConstantTerm">
 													<Rules>
 														<DocModelRuleEntity Name="IfcReal" />
 													</Rules>
@@ -580,7 +580,7 @@ Constant = 1</Documentation>
 							</Rules>
 						</DocTemplateDefinition>
 						<DocTemplateDefinition id="Cubic_Transition_Segment_0dqin2zM18UPoEDKUyhVUM" Name="Cubic Transition Segment" UniqueId="27d2cc42-f560-4879-9c8e-3547bcadf796" Type="IfcCurveSegment">
-							<Documentation>The cubic transition segment is modelled with _IfcPolynomial_ with certain restrictions. The size of the attribute CoefficientsY is restricted to 4. The cubic term is on position 4. In general, the CoefficietsX size would be restricted to 2 and values specified as [0, 1]. This produces the following result:
+							<Documentation>The cubic transition segment is modelled with _IfcPolynomialCurve_ with certain restrictions. The size of the attribute CoefficientsY is restricted to 4. The cubic term is on position 4. In general, the CoefficietsX size would be restricted to 2 and values specified as [0, 1]. This produces the following result:
 
 y = CoefficientsX[3]*x³, where other values in CoefficientsY are 0.</Documentation>
 							<Rules>
@@ -589,6 +589,11 @@ y = CoefficientsX[3]*x³, where other values in CoefficientsY are 0.</Documentat
 										<DocModelRuleEntity Name="IfcPolynomialCurve">
 											<Rules>
 												<DocModelRuleAttribute Name="CoefficientsX">
+													<Rules>
+														<DocModelRuleEntity Name="IfcReal" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="CoefficientsY">
 													<Rules>
 														<DocModelRuleEntity Name="IfcReal" />
 													</Rules>
@@ -664,6 +669,31 @@ SegmentStart is the bearing angle at start and Segment length is the bearing ang
 								<DocModelRuleAttribute Name="SegmentLength">
 									<Rules>
 										<DocModelRuleEntity Name="IfcParameterValue" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Parabolic_Transition_Segment_3D7kHU_Mv6IgCaHurqkubB" Name="Parabolic Transition Segment" UniqueId="cd1ee45e-f96e-464a-a324-478d74bb894b" Type="IfcCurveSegment">
+							<Documentation>The parabolic transition segment is modelled with _IfcPolynomialCurve_ with certain restrictions. The size of the attribute CoefficientsY is restricted to 3. The quadratic term is on position 3. In general, the CoefficietsX size would be restricted to 2 and values specified as [0, 1]. This produces the following result:
+
+y = CoefficientsX[3]*x², where other values in CoefficientsY are 0.</Documentation>
+							<Rules>
+								<DocModelRuleAttribute Name="ParentCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPolynomialCurve">
+											<Rules>
+												<DocModelRuleAttribute Name="CoefficientsX">
+													<Rules>
+														<DocModelRuleEntity Name="IfcReal" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="CoefficientsY">
+													<Rules>
+														<DocModelRuleEntity Name="IfcReal" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>

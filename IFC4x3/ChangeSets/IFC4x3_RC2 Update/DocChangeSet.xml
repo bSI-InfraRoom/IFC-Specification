@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocChangeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IFC4x3_RC2 Update" UniqueId="9da06d0c-d92c-4539-b46b-b2f1409ba64e" VersionBaseline="4.3.0.0">
+<DocChangeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IFC4x3_RC2 Update" UniqueId="486d3ac0-77c9-41bc-a4e5-57b4114f567d" VersionBaseline="4.3.0.0">
 	<ChangesEntities>
-		<DocChangeAction Name="Shared element data schemas" UniqueId="4c5e5e9e-d63b-4bfc-9ff8-b46c44a31c68">
+		<DocChangeAction Name="Shared element data schemas" UniqueId="ebe7ced7-14fe-4936-ab33-2d4870a9492d">
 			<Changes>
-				<DocChangeAction Name="IfcSharedInfrastructureElements" UniqueId="bc871c57-5a57-4416-9949-9118d7329a4e">
+				<DocChangeAction Name="IfcSharedInfrastructureElements" UniqueId="19e131cd-3e04-4d8d-bddd-0dd896583c8d">
 					<Changes>
-						<DocChangeAction Name="IfcSpatialReferenceSelect" UniqueId="f3791f1a-cd2f-4ee6-abab-4d301c08c276">
+						<DocChangeAction Name="IfcSpatialReferenceSelect" UniqueId="2407f1a3-bb9c-48d8-9b15-03d55ef1d350">
 							<Changes>
-								<DocChangeAction Name="IfcGroup" UniqueId="a8874b0a-09f7-47a3-be73-6a632dcc71f5" Action="added" />
-								<DocChangeAction Name="IfcSystem" UniqueId="fa4a8dd8-a57b-4748-931e-9d9c41f3e9a4" Action="deleted" />
+								<DocChangeAction Name="IfcGroup" UniqueId="ae3ed89e-591e-4206-9ba2-8b60f458c211" Action="added" />
+								<DocChangeAction Name="IfcSystem" UniqueId="ea4bf34b-4ce0-4837-b78e-40c9c6ca54a3" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
 			</Changes>
 		</DocChangeAction>
-		<DocChangeAction Name="Resource definition data schemas" UniqueId="7c5351eb-808f-4508-a368-15c560e167d2">
+		<DocChangeAction Name="Resource definition data schemas" UniqueId="1f9f4242-6ea4-463c-85a5-fecb47ad250c">
 			<Changes>
-				<DocChangeAction Name="IfcGeometricConstraintResource" UniqueId="d2c3f8fc-f7a7-48a4-9d65-b4e006f81b9a">
+				<DocChangeAction Name="IfcGeometricConstraintResource" UniqueId="a3f5caab-37e0-44ca-b666-5a9fdfa1d410">
 					<Changes>
-						<DocChangeAction Name="IfcAlignmentHorizontalSegmentTypeEnum" UniqueId="634438c5-d006-4f7b-90e8-483885370fc8">
+						<DocChangeAction Name="IfcAlignmentHorizontalSegmentTypeEnum" UniqueId="f474bf33-1f26-4964-89a5-b223d0cd20eb">
 							<Changes>
-								<DocChangeAction Name="CUBICPARABOLA" UniqueId="8a6728aa-3d2d-42d5-b96b-79b2bcaaf3d6" Action="added" />
+								<DocChangeAction Name="CUBICPARABOLA" UniqueId="dcf59c42-5d0e-4a8c-afd9-26de3b750c13" Action="added" />
 							</Changes>
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcGeometryResource" UniqueId="f2a81ef0-69d8-4564-a710-c3efe5107499">
+				<DocChangeAction Name="IfcGeometryResource" UniqueId="5d194a2f-c528-44d5-9121-b2ed4e9f97f8">
 					<Changes>
-						<DocChangeAction Name="IfcCurveSegment" UniqueId="15dc747c-cfdc-4b2d-9963-433819b26bcf">
+						<DocChangeAction Name="IfcCurveSegment" UniqueId="fb4baae8-0dc4-475e-9686-d98437d96569">
 							<Changes>
-								<DocChangeAction Name="Placement" UniqueId="ef0ce31f-f24b-41e6-90e1-3f8f54f86ade" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="Placement" UniqueId="8a4920c6-7245-4b4c-9a22-947d2f62f883" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartPlacement" NewValue="Placement" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="SegmentStart" UniqueId="94e00a7f-b937-43e7-9c7c-63e06a44683c" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="SegmentStart" UniqueId="ac8d84f9-a07f-4567-95d4-af6431628557" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="SegmentLength" NewValue="SegmentStart" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="SegmentLength" UniqueId="ab02a9a4-089c-4203-b7b9-874471f3b9c3" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="SegmentLength" UniqueId="03f9b4b6-6c11-4606-b9de-a3b817671eea" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="ParentCurve" NewValue="SegmentLength" />
 										<DocChangeAspect Aspect="type" OldValue="IfcCurve" NewValue="IfcCurveMeasureSelect" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="ParentCurve" UniqueId="9c9da164-558c-43a3-a607-826f37ae3ca4" Action="added" />
+								<DocChangeAction Name="ParentCurve" UniqueId="394a58a0-ae65-45b4-bcb1-12e0bd69f07f" Action="added" />
 							</Changes>
 						</DocChangeAction>
 					</Changes>
@@ -55,14 +55,14 @@
 		</DocChangeAction>
 	</ChangesEntities>
 	<ChangesProperties>
-		<DocChangeAction Name="PEnum_RiskRating" UniqueId="191ab9d5-f082-47dc-a172-231115654ab2">
+		<DocChangeAction Name="PEnum_RiskRating" UniqueId="62c195c4-dc85-428a-b43c-483b69c46436">
 			<Changes>
-				<DocChangeAction Name="CRITICAL" UniqueId="daa6988f-c349-46ec-9d7a-b1d0fbf99ab3" Action="added" />
-				<DocChangeAction Name="CONSIDERABLE" UniqueId="3cc6ebae-558f-4179-8a1e-cf91de044149" Action="added" />
-				<DocChangeAction Name="SOME" UniqueId="c46d4321-9250-4737-9538-5f6d8770a8da" Action="added" />
-				<DocChangeAction Name="INSIGNIFICANT" UniqueId="8e7fad69-b776-4210-9bd0-c664d620949c" Action="added" />
-				<DocChangeAction Name="UNSET" UniqueId="5454a513-a789-4726-bc16-a1071f43a016" Action="added" />
-				<DocChangeAction Name="NOTAPPLICABLE" UniqueId="3d17264a-42e4-41e2-bda6-41d105cc85fa" Action="deleted" />
+				<DocChangeAction Name="CRITICAL" UniqueId="401ce9d2-5254-46d6-abfb-3bc21e699f42" Action="added" />
+				<DocChangeAction Name="CONSIDERABLE" UniqueId="67ac6746-08db-4fed-bd86-2219c9599575" Action="added" />
+				<DocChangeAction Name="SOME" UniqueId="beb19f6b-a423-41b4-a438-ade72231319b" Action="added" />
+				<DocChangeAction Name="INSIGNIFICANT" UniqueId="4fe69b1c-5848-4d01-b30e-298743eb01c9" Action="added" />
+				<DocChangeAction Name="UNSET" UniqueId="6be5f615-75da-4de6-9110-bcd887478a45" Action="added" />
+				<DocChangeAction Name="NOTAPPLICABLE" UniqueId="a5666946-b973-47c9-8c8c-6070a4e902d8" Action="deleted" />
 			</Changes>
 		</DocChangeAction>
 	</ChangesProperties>
