@@ -580,7 +580,9 @@ Constant = 1</Documentation>
 							</Rules>
 						</DocTemplateDefinition>
 						<DocTemplateDefinition id="Cubic_Transition_Segment_0dqin2zM18UPoEDKUyhVUM" Name="Cubic Transition Segment" UniqueId="27d2cc42-f560-4879-9c8e-3547bcadf796" Type="IfcCurveSegment">
-							<Documentation>The cubic transition segment is modelled with _IfcPolynomial_ with certain restrictions. The size of the attribute CoefficientsX is restricted to 4. The cubic term is on position 4.
+							<Documentation>The cubic transition segment is modelled with _IfcPolynomial_ with certain restrictions. The size of the attribute CoefficientsX is restricted to 4. The cubic term is on position 4. In general, the CoefficietsY size would be restricted to 2 and values specified as [0, 1]. This produces the following result:
+
+y = CoefficientsX[3]*x³, where other values in CoefficientsX are 0.
 
 Without a parametrization, the _SegmentStart_ and _SegmentLength_ should be of type _IfcNonNegativeLengthMeasure_.</Documentation>
 							<Rules>
