@@ -11,5 +11,13 @@
 &gt; IFC4 CHANGE The attribute has been added at the end of the entity definition.</Documentation>
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="5604b181-98db-444d-9b3b-a0a7d050a0f8">
+			<Documentation>Either _PredefinedType_ is unset or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED or _PredefinedType_.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcProjectionElementTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcProjectionElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 
