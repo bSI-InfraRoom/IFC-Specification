@@ -1,1 +1,1 @@
-Target vale at which maintenance is triggered
+Target value at which maintenance is triggered

@@ -1,1 +1,1 @@
-Target vale at which replacement is triggered
+Target value at which replacement is triggered
