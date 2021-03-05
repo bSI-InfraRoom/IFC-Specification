@@ -6491,13 +6491,10 @@ The same constraints, as given for &apos;SurfaceOrSolidModel&apos;, &apos;Surfac
 					<Documentation>Product placement with a _Product Linear Placement_ template. It defines the local coordinate system based on the curve which is referenced by _IfcLinearPlacement_._RelativePlacement_ which is an _IfcAxis2PlacementLinear_._Location_ using an _IfcPointByDistanceExpression_._BasisCurve_. The local coordinate system is based on the tangent of the curve at Location, its normal in the global Z plane and the cross product of the aforementioned vectors.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Linear_Placement_2BSSvyDSzAhvG2y638nNlp" />
 					<Items>
-						<DocTemplateItem UniqueId="95af7069-609f-48fe-90fc-b07db503ef69" RuleParameters="LinearPositioninElement=IfcLinearPositioningElement;">
-							<Documentation>DIstance can be measured along any physical element that has a representation featuring an IfcBoundedCurve that can be used as an Axis in IfcLinearPositioningElement.</Documentation>
+						<DocTemplateItem UniqueId="95af7069-609f-48fe-90fc-b07db503ef69">
+							<Documentation>Distance can be measured along any physical element that has a representation featuring an IfcBoundedCurve that can be used as an Axis in IfcLinearPositioningElement.</Documentation>
 						</DocTemplateItem>
 					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Relative Position" UniqueId="caf56738-c8cd-4cc8-aa7f-3f11982e8a90">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Relative_Positioning_1jo2X5iK969AcbDz7acLTX" />
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="f44ee7f3-f22f-4e10-918d-d01d83d3071b" Type="IfcElement" />
@@ -10079,6 +10076,10 @@ The following constraints apply to the 2D representation:
 
 &gt; NOTE&amp;nbsp; A detailed specification of how to apply the local placement and which shape representaions are applicable is provided at the level of subtypes of _IfcProduct_ and is further determined by the model view definition and implementer agreements.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Geometric_Representation_0J_MaK6jH1rBgPGHgUoLd" />
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Relative Position" UniqueId="8e918ac9-7aee-483e-9ecb-7f31812f382b">
+					<Documentation>If</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Relative_Positioning_1jo2X5iK969AcbDz7acLTX" />
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="c05ec892-7ee3-4be3-a779-d9e51cbaa80d" Type="IfcProduct" />
