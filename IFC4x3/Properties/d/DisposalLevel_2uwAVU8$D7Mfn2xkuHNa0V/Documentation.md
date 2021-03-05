@@ -1,1 +1,1 @@
-Target vale at which disposal is triggered
+Target value at which disposal is triggered

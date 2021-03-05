@@ -1,1 +1,1 @@
-Properties for performance based mainetnance policies
+Properties for performance based maintenance policies

@@ -36,6 +36,17 @@
 			<Expression>(SIZEOF(IsTypedBy) = 0) 
 OR (&apos;IFCSHAREDBLDGELEMENTS.IFCDOORTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="e5222602-e656-4d29-8599-c69a478c4fb4">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcDoorType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcDoorTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcDoorTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="5ed623b3-0c97-4f1c-a1ef-e4a42d81a3ea">
+			<Documentation>Either there is no door type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcDoorType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCDOORTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
 

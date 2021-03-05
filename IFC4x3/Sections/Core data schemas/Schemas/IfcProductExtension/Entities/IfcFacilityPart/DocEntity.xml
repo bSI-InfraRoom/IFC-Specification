@@ -11,5 +11,22 @@
 			<Documentation></Documentation>
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="f5b6615f-7220-4ba6-9d80-dcb7ed611985">
+			<Documentation>Either _PredefinedType_ is unset or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED or _PredefinedType_.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+((PredefinedType &lt;&gt; IfcBridgePartTypeEnum.USERDEFINED) AND
+(PredefinedType &lt;&gt; IfcRailwayPartTypeEnum.USERDEFINED) AND
+(PredefinedType &lt;&gt; IfcRoadPartTypeEnum.USERDEFINED) AND
+(PredefinedType &lt;&gt; IfcMarinePartTypeEnum.USERDEFINED) AND
+(PredefinedType &lt;&gt; IfcFacilityPartCommonTypeEnum.USERDEFINED)) OR
+(((PredefinedType = IfcBridgePartTypeEnum.USERDEFINED) OR
+(PredefinedType = IfcRailwayPartTypeEnum.USERDEFINED) OR
+(PredefinedType = IfcRoadPartTypeEnum.USERDEFINED) OR
+(PredefinedType = IfcMarinePartTypeEnum.USERDEFINED) OR
+(PredefinedType = IfcFacilityPartCommonTypeEnum.USERDEFINED))
+AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

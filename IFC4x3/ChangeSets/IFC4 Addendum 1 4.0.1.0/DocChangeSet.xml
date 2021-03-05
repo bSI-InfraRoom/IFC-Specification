@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocChangeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IFC4 Addendum 1 4.0.1.0" UniqueId="dfb8bd29-49ac-4273-bd3f-159085a263c8">
+<DocChangeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IFC4 Addendum 1 4.0.1.0" UniqueId="cce835fd-f6be-4681-9bb3-12c87ea6cad4">
 	<ChangesEntities>
-		<DocChangeAction Name="Core data schemas" UniqueId="dc13d0fc-2baa-40cf-ad42-cc22ccdf3abf">
+		<DocChangeAction Name="Core data schemas" UniqueId="facd0af9-ebb1-44fb-b0b1-55b57ad77640">
 			<Changes>
-				<DocChangeAction Name="IfcProcessExtension" UniqueId="4024ccd2-ed2d-4182-9b31-8953fdd4f04d">
+				<DocChangeAction Name="IfcProcessExtension" UniqueId="c0560e3a-cff5-422d-8896-539b4981c7d8">
 					<Changes>
-						<DocChangeAction Name="IfcTask" UniqueId="2adc7a4b-44ca-4e77-a90d-df2cec526db0">
+						<DocChangeAction Name="IfcTask" UniqueId="b700ce4a-4e12-453b-8589-bd0024534838">
 							<Changes>
-								<DocChangeAction Name="IsMilestone" UniqueId="52d266ea-e02c-4d9e-bf17-37dc9056c588" Action="modified">
+								<DocChangeAction Name="IsMilestone" UniqueId="8a0237e4-13e4-4f0c-adfb-79fe9a37deef" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Priority" UniqueId="f74e801d-66d1-4670-933b-c59d8506fd89" Action="modified">
+								<DocChangeAction Name="Priority" UniqueId="76491fe0-eef5-44ca-b667-5b5acc2872b9" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
 									</Aspects>
@@ -21,112 +21,112 @@
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcProductExtension" UniqueId="295d3e8e-f540-4455-89c1-e6b863c9cc68">
+				<DocChangeAction Name="IfcProductExtension" UniqueId="6bb7fa7b-f801-49f9-8d9d-55a57c117b6e">
 					<Changes>
-						<DocChangeAction Name="IfcCivilElement" UniqueId="034733cb-16ec-4d45-bf9f-eadccca180b4">
+						<DocChangeAction Name="IfcCivilElement" UniqueId="f4dadb6d-edc4-4800-bcf4-801973a1f639">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="2255f049-fb80-4f6a-a72d-4e0b7c1da841" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="2dd733ad-f05d-43a9-9f52-a4344acb8f09" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcDistributionElement" UniqueId="e2e3d082-610d-491a-a293-88fefd29dd7b">
+						<DocChangeAction Name="IfcDistributionElement" UniqueId="212f6346-fc3c-4bea-99b7-243fb127cc09">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="3583c55f-55c5-401a-a086-8f158d25459d" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="d8dee2d2-1fbd-4c4e-88de-cd8d43feb5ad" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcElementAssembly" UniqueId="82267cb0-82a2-455c-804b-1033c9235f42">
+						<DocChangeAction Name="IfcElementAssembly" UniqueId="3e3a9137-c65a-437b-9fcb-063d886b7919">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="a3b81538-d240-4cbc-9b27-67e0cf44443a" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="e6148ef3-ab07-4ceb-b6e7-1953a267e70d" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcFurnishingElement" UniqueId="77d30e67-3487-4127-b2ad-776036845b33">
+						<DocChangeAction Name="IfcFurnishingElement" UniqueId="85802e1d-3400-480e-81de-87a4bfbd8313">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="2b174cfe-578c-40eb-a8f2-53e5ada6c7d2" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="d1fb8ce9-4d50-4c67-9536-d3d200e67767" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcGeographicElement" UniqueId="1166807a-a879-4685-b9f4-7a8d61c1c729">
+						<DocChangeAction Name="IfcGeographicElement" UniqueId="cbbfea91-b869-4d61-aef3-b1675aac1ed3">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="780c3a30-26c6-4d58-b9c3-a84e7abc738c" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="c982c42d-a97d-4efc-9225-cbbb4ec2c672" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcOpeningElement" UniqueId="2af979ed-608d-49f2-8d28-21cd7fade3e7">
+						<DocChangeAction Name="IfcOpeningElement" UniqueId="88f34abb-a242-4b12-9c42-998230caff55">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="10d56e4a-27ac-475a-bd4a-1cf329f2fd77" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="e138434f-7446-4e96-9124-ce5d5f882afc" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcOpeningStandardCase" UniqueId="fc7d949c-00a5-4831-bba2-8335b9a3a0d2">
+						<DocChangeAction Name="IfcOpeningStandardCase" UniqueId="23c6d470-845b-4dec-9c8f-d1dff20df8c9">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="621bb4f4-4fbc-4384-b218-54fd064faea9" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="44840fa3-6037-473f-bfc5-7052680bb2d4" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcProjectionElement" UniqueId="fe0b9057-6c1b-4b09-931b-93872d7923bb">
+						<DocChangeAction Name="IfcProjectionElement" UniqueId="6731cee7-5c1c-4935-ad1b-2e8583e26105">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="cc917b9b-49ba-4bba-86b8-bba7e2b53f54" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="390c93ea-23f0-457f-8872-3860a4404c8f" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcTransportElement" UniqueId="f9accfad-f860-416b-a12f-162b52862a93">
+						<DocChangeAction Name="IfcTransportElement" UniqueId="5cafc743-2a97-4cb5-930f-4c1c568a3efb">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="fa4b7721-5bc1-4ec2-bb6d-0ba03c8ec528" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="0776da21-031a-450c-9240-bf5951ff24cc" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcVirtualElement" UniqueId="79e0bfbe-fa40-4b78-b1e3-727c6934777f">
+						<DocChangeAction Name="IfcVirtualElement" UniqueId="1d9ae2c3-7f08-4fb7-81aa-4a38ee676b5e">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="e4242ee3-52e3-4758-9f27-e9511ecc9f79" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="3146f682-45c8-4e78-85d9-d48b84e5d1d2" Action="added" />
 							</Changes>
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
 			</Changes>
 		</DocChangeAction>
-		<DocChangeAction Name="Shared element data schemas" UniqueId="84ef1b50-afeb-4498-8c57-f43cf0ef407b">
+		<DocChangeAction Name="Shared element data schemas" UniqueId="b4593d96-83a0-4f31-8f3a-2ba1ad44dac3">
 			<Changes>
-				<DocChangeAction Name="IfcSharedBldgElements" UniqueId="0962ee80-aab5-4d6f-ba0d-d1cf42d5b90e">
+				<DocChangeAction Name="IfcSharedBldgElements" UniqueId="0ddef99e-e0cc-4053-a0ed-879efc43fc3e">
 					<Changes>
-						<DocChangeAction Name="IfcBuildingSystem" UniqueId="b7b21029-5cf7-4227-a0ab-71d22f3f109f">
+						<DocChangeAction Name="IfcBuildingSystem" UniqueId="dc9af61b-5e23-4890-b3eb-44c172a5d390">
 							<Changes>
-								<DocChangeAction Name="LongName" UniqueId="813f48f9-ddc4-4b83-adda-41108c9c7639" Action="added" />
+								<DocChangeAction Name="LongName" UniqueId="8acf223d-30b0-401a-8f34-c00c09278213" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcDoorType" UniqueId="43d41eb2-53d8-46bd-9270-99b0faa50a5b">
+						<DocChangeAction Name="IfcDoorType" UniqueId="2b5e9b5a-1ae6-4f7f-af3f-df19ab2d8304">
 							<Changes>
-								<DocChangeAction Name="ParameterTakesPrecedence" UniqueId="a0a8f9b4-04ec-4ec8-a339-cf5ccd14855c" Action="modified">
+								<DocChangeAction Name="ParameterTakesPrecedence" UniqueId="da1cfb26-cd9d-498f-b751-a02689fab0ad" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcRelConnectsPathElements" UniqueId="1147d563-be05-4a51-8212-b0af7adb4fa3">
+						<DocChangeAction Name="IfcRelConnectsPathElements" UniqueId="a23cd062-a1f0-4ce5-9edb-0bc9e2566862">
 							<Changes>
-								<DocChangeAction Name="RelatingPriorities" UniqueId="40acf659-cd61-4a20-ac85-0ff1d3d69e30" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="RelatingPriorities" UniqueId="38fe3647-7a02-4655-b928-f626b3b47c3f" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="NUMBER" NewValue="IfcInteger" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="RelatedPriorities" UniqueId="65938c94-8916-4b3e-8a87-8e3d2c854d58" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="RelatedPriorities" UniqueId="f78ae0d4-1bc5-476f-aff6-2e9d8da2fdd2" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="NUMBER" NewValue="IfcInteger" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcStairFlight" UniqueId="afe233f0-a16d-4b84-87c7-d59352cd18ef">
+						<DocChangeAction Name="IfcStairFlight" UniqueId="a05660e5-2956-4cfd-94f6-b55d6cf3a86e">
 							<Changes>
-								<DocChangeAction Name="NumberOfRisers" UniqueId="8ee51ca2-60c5-4858-b2f7-ad191c46cf39" Action="modified">
+								<DocChangeAction Name="NumberOfRisers" UniqueId="dd38d1b7-edd0-4143-8321-2111d99a5f11" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="NumberOfRiser" NewValue="NumberOfRisers" />
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="NumberOfTreads" UniqueId="951d627d-4670-41dc-a6bb-ee69ad8bfedf" Action="modified">
+								<DocChangeAction Name="NumberOfTreads" UniqueId="9b7f6b68-28c6-4888-83bd-f58a462c17e3" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcWindowType" UniqueId="d33ec40a-2007-401d-a04a-11f209d24773">
+						<DocChangeAction Name="IfcWindowType" UniqueId="e0cecb7d-78b1-4b21-9c17-99a409b1dbe2">
 							<Changes>
-								<DocChangeAction Name="ParameterTakesPrecedence" UniqueId="b150defe-0e97-439e-97d8-338d5744c79a" Action="modified">
+								<DocChangeAction Name="ParameterTakesPrecedence" UniqueId="eb08f270-dadd-45e1-a38c-701572508abe" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
@@ -135,612 +135,612 @@
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcSharedBldgServiceElements" UniqueId="95b92d27-2121-46d0-9a8c-aa43f4e5e530">
+				<DocChangeAction Name="IfcSharedBldgServiceElements" UniqueId="ebde3d4c-c797-4a37-8a20-6d3905daa531">
 					<Changes>
-						<DocChangeAction Name="IfcDistributionChamberElement" UniqueId="9daa963f-07da-40ac-a046-3b79858bb969">
+						<DocChangeAction Name="IfcDistributionChamberElement" UniqueId="1616a78c-9368-4174-94d4-2e4926cabb95">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="3bdbc93a-82d0-407c-95e7-61466b9c5d81" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="b4eed5f9-8edf-4254-9f51-fe45b33a7796" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcDistributionControlElement" UniqueId="2c5f1e59-4638-4f7a-a98e-9dd224aa2ff2">
+						<DocChangeAction Name="IfcDistributionControlElement" UniqueId="e7a1c4ae-a17d-4d3c-b21a-6eab7c24b4fb">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="9407bd06-16e2-481f-9ef6-ccf6f2de1574" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="cdfa42bf-e85c-4531-b2c4-98a73dedf5c8" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcDistributionFlowElement" UniqueId="8912f8c2-1934-4de5-8032-8cfbda622774">
+						<DocChangeAction Name="IfcDistributionFlowElement" UniqueId="5fb1d6f2-8181-44a7-941c-9f1617ccd0b7">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="2f0d8da4-e0da-4916-a05f-1b79e982048d" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="c4fa12a1-1782-408d-b0cf-5d62fe836625" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcEnergyConversionDevice" UniqueId="e80da1ec-fd08-4614-a3b6-4b7aa3262a0f">
+						<DocChangeAction Name="IfcEnergyConversionDevice" UniqueId="2489699c-ae40-4f0b-a401-7f4b095e0e3b">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="719a539a-6489-4c05-bfd8-2e3df40f971b" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="92962862-8b1a-4054-a114-805276b32e9c" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcFlowController" UniqueId="491b8d4e-e666-485d-9b0d-31ba5ae45b84">
+						<DocChangeAction Name="IfcFlowController" UniqueId="7f6a3be0-6d45-498c-8d32-ec46c99767ac">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="f6a8cb36-4154-4980-9507-8dfaf66c6ce2" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="a51cca68-1d8a-455a-916f-7319509beb15" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcFlowFitting" UniqueId="874800e1-eb04-46b7-863c-e50a28fa1ab9">
+						<DocChangeAction Name="IfcFlowFitting" UniqueId="6997362a-e95f-4ef2-b7cc-a0a3a291dde8">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="acf36184-de26-4d0b-b33d-62d6815024d9" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="c76362c0-2902-4664-b67e-b2018935c298" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcFlowMovingDevice" UniqueId="23e07506-5800-4e44-b818-07ad4f4d88d8">
+						<DocChangeAction Name="IfcFlowMovingDevice" UniqueId="9786be8e-465a-49a2-9103-fe6c10d9a5ca">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="e930e78a-e302-4a8d-afdd-713e449513b0" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="012c89bb-fbc1-4be5-94cd-1141fe028cbb" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcFlowSegment" UniqueId="6e77efc4-8142-41fc-a43a-62c958c4522a">
+						<DocChangeAction Name="IfcFlowSegment" UniqueId="d9382987-2fdc-4bde-a4af-e6efa8b4c483">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="1186a3cb-c7c0-46da-afc9-454693fb2cad" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="c2cfcc17-4900-4727-9ad7-51e286e7c56d" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcFlowStorageDevice" UniqueId="49e51668-01a1-464d-9ef2-d4d95840732c">
+						<DocChangeAction Name="IfcFlowStorageDevice" UniqueId="a31ebed6-fe23-4491-841a-ad0966f0a08e">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="44c84302-6f58-46d9-a952-910c61baa6d3" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="d49f3d09-ced5-43df-b0a0-9bfe87707667" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcFlowTerminal" UniqueId="d246c2b6-b285-4ee8-998e-b15176903ea7">
+						<DocChangeAction Name="IfcFlowTerminal" UniqueId="d725fcef-c744-4587-878c-78bf170ce2d3">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="a8a64015-eaa9-42e0-957e-d21c348c3a4d" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="5370b654-dfe3-4c56-b6e1-d29725fc1351" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcFlowTreatmentDevice" UniqueId="34cf03df-c17d-46c7-ba0f-e908e9eeedf2">
+						<DocChangeAction Name="IfcFlowTreatmentDevice" UniqueId="84b0d18e-b08d-4b85-a190-7ecc1b7fd823">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="be83b45d-495e-40de-b47d-cbb93f029b79" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="a6b1bbc4-b3ec-40ef-a639-4b4d474657c1" Action="added" />
 							</Changes>
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcSharedComponentElements" UniqueId="2767cf38-1806-4436-b5ef-e856c9db028b">
+				<DocChangeAction Name="IfcSharedComponentElements" UniqueId="da19d6a7-8d02-42ff-a770-49ca01f92f2f">
 					<Changes>
-						<DocChangeAction Name="IfcBuildingElementPart" UniqueId="1247b9d4-39b5-4b97-a1fa-74b5d935301c">
+						<DocChangeAction Name="IfcBuildingElementPart" UniqueId="c1b2f52b-11e2-43e5-902f-520a383ae17a">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="89d4bfe8-d47b-41e2-a57f-d1eafc1a07e8" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="b8d8ebc9-4b40-4df0-af59-4ca75907a9e0" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcDiscreteAccessory" UniqueId="b175c16f-c07d-43d9-a05b-702ad76018c5">
+						<DocChangeAction Name="IfcDiscreteAccessory" UniqueId="856eaf5e-81b1-4dbf-b70b-be1653f8c33d">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="50eb3bde-173c-4d6a-9d89-3b95dc35f370" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="01c531e2-aac4-4301-813c-26fdd6e72b8e" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcFastener" UniqueId="4ce487a7-0e8f-46ec-9248-13ec21525275">
+						<DocChangeAction Name="IfcFastener" UniqueId="3ae35429-914d-4c36-b0f2-8ef940c18d57">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="4e73d7c7-1612-4628-bdde-d0b45bde7721" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="62bb4c1f-993e-4cb4-8ec1-2a9b8b3b0eff" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcMechanicalFastener" UniqueId="df239fb6-69e5-4fa0-8bd2-9d1bee89df9b">
+						<DocChangeAction Name="IfcMechanicalFastener" UniqueId="16d87552-d9c2-440c-8e26-25a30eac7692">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="a97b888d-08ed-4802-99d3-395347011f56" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="59a94354-afee-479d-898f-f133582d01a7" Action="added" />
 							</Changes>
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcSharedFacilitiesElements" UniqueId="5159394a-9883-41af-a593-b128e83eb6c7">
+				<DocChangeAction Name="IfcSharedFacilitiesElements" UniqueId="fcfb5603-f7fe-491e-8ab9-e3a2a500e7d2">
 					<Changes>
-						<DocChangeAction Name="IfcFurniture" UniqueId="da05c3c5-cae3-4260-9e5b-c3d9a5ff8ff7">
+						<DocChangeAction Name="IfcFurniture" UniqueId="d58f6318-6122-441e-b4b6-80c864d85b22">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="854a60ad-37b0-44d7-a535-91273a341b81" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="74f1a29c-6dc7-4b36-b800-0193c32f8bde" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcSystemFurnitureElement" UniqueId="04a42f7d-e70c-45a3-83ff-44e0b9857195">
+						<DocChangeAction Name="IfcSystemFurnitureElement" UniqueId="4fd50b41-4aae-4ac4-9f60-85e597110456">
 							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="b1a7abe5-3c6f-4df5-bc38-0ae1e19a1cc6" Action="added" />
-							</Changes>
-						</DocChangeAction>
-					</Changes>
-				</DocChangeAction>
-			</Changes>
-		</DocChangeAction>
-		<DocChangeAction Name="Domain specific data schemas" UniqueId="159fe393-fad4-4dfa-b023-7ad50147cfdf">
-			<Changes>
-				<DocChangeAction Name="IfcArchitectureDomain" UniqueId="8df0ffc0-6658-4552-8d07-19ec863a4dc4">
-					<Changes>
-						<DocChangeAction Name="IfcDoorStyle" UniqueId="060008a8-df6c-4f9d-afa3-0844aa1e468a">
-							<Changes>
-								<DocChangeAction Name="ParameterTakesPrecedence" UniqueId="850fc359-5f95-449b-ba4d-914c63219231" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
-									</Aspects>
-								</DocChangeAction>
-								<DocChangeAction Name="Sizeable" UniqueId="1018c64e-373d-481c-8742-c823481fe28d" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
-									</Aspects>
-								</DocChangeAction>
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcWindowStyle" UniqueId="f167f6cd-5124-4a14-8cd6-ae35609bb769">
-							<Changes>
-								<DocChangeAction Name="ParameterTakesPrecedence" UniqueId="9a54feb0-3912-47f7-a6c3-9d96383ad9cc" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
-									</Aspects>
-								</DocChangeAction>
-								<DocChangeAction Name="Sizeable" UniqueId="3a5e54db-365d-4065-9c3e-69c84b2653d3" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
-									</Aspects>
-								</DocChangeAction>
-							</Changes>
-						</DocChangeAction>
-					</Changes>
-				</DocChangeAction>
-				<DocChangeAction Name="IfcBuildingControlsDomain" UniqueId="5b797ca2-f85b-4355-a5cf-595579dac70e">
-					<Changes>
-						<DocChangeAction Name="IfcSensorTypeEnum" UniqueId="b7a3573c-29d3-4a9f-b0cd-1beb3117708e">
-							<Changes>
-								<DocChangeAction Name="CO2SENSOR" UniqueId="9de90b19-52a3-42a4-adc9-7ce2aaae80b1" Action="added" />
-								<DocChangeAction Name="FROSTSENSOR" UniqueId="13356c4b-5a6c-4789-805d-3c9aa50b5e71" Action="added" />
-								<DocChangeAction Name="IDENTIFIERSENSOR" UniqueId="3aadee9c-0bf6-4f3f-a155-5fb5d2d83989" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcActuator" UniqueId="fdd0e026-333a-4671-a38a-0426b4eaacbc">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="aa385167-b357-4271-b2bd-18a5b44559af" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcAlarm" UniqueId="31b44640-f149-4821-b5a8-19ea3c923673">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="78c3793e-d08f-4a7a-90b1-5910b601548e" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcController" UniqueId="79375c27-cbfc-46ea-a380-791c10dbb0f5">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="7d9ed64e-a6f7-43b9-9ccd-da6f7115d7e6" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcFlowInstrument" UniqueId="2d456419-8601-493c-96e3-b74aa0ecf58a">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="e7428d05-6ba8-4d98-b93f-23fa246af308" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcSensor" UniqueId="36899163-410c-47c4-8430-45a784b4d971">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="61a2fccf-3da0-471c-800d-69ae3765ca63" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcUnitaryControlElement" UniqueId="645e1ed8-d9bd-46b9-afd3-d744243f4816">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="2b499583-7840-4181-a9a4-bb25f51d78f8" Action="added" />
-							</Changes>
-						</DocChangeAction>
-					</Changes>
-				</DocChangeAction>
-				<DocChangeAction Name="IfcElectricalDomain" UniqueId="d83d219a-3a77-47b3-94a6-a3ec40ee83ee">
-					<Changes>
-						<DocChangeAction Name="IfcAudioVisualAppliance" UniqueId="939bed1c-d320-4ac0-ac33-e03bad8f50f5">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="589fa50a-6547-4a3a-a023-7c78da417c63" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcCableCarrierFitting" UniqueId="8378c53e-43ab-4a84-8b52-20ad25db4752">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="b1013e95-f907-4fca-98d5-34c673b59280" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcCableCarrierSegment" UniqueId="1f2a9636-c00b-4871-8c5b-55e1fdead6cd">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="0ad8c564-eb4a-49b2-a61e-4860a26af012" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcCableFitting" UniqueId="c8d5cd85-254d-4816-9203-746a2260baaa">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="df0d3dda-82be-418f-8bbc-839cee04a575" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcCableSegment" UniqueId="22e8effd-a56b-414e-8e13-24f533f78ca6">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="26ff160c-d254-47e6-a67f-2c079c8c9800" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcCommunicationsAppliance" UniqueId="c0d33e89-fc2b-4ac3-9d18-afa568151065">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="8d05b565-998a-4b26-87d7-a471fb3d0faa" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcElectricAppliance" UniqueId="e415961a-1d4a-400d-834b-f59c27d4bc58">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="98c99ec5-94ab-462b-b15b-abafc27ab7da" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcElectricDistributionBoard" UniqueId="687e73f5-aecb-4fb8-a08c-f633ac027ddc">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="ea65bb0d-4563-441f-b447-06e8e1e0f685" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcElectricFlowStorageDevice" UniqueId="053f0efb-1670-46c6-91eb-4a18fbbb0fe6">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="a5da2e1c-39a1-45ed-92de-390d185b1c5d" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcElectricGenerator" UniqueId="2a4169e9-8b21-48a8-ba1f-dc5a6aa1912c">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="cd796c4d-2f52-4cf2-9f48-e0aac4445180" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcElectricMotor" UniqueId="bf062930-997c-4daf-8dc7-970ae0947f3e">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="0a5c3386-b48b-4af8-ab1e-a56eeeff6910" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcElectricTimeControl" UniqueId="23dd82d6-0ce3-416c-af02-6ee17f977b83">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="2a7469cb-5166-4620-a925-a58009f8eee9" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcJunctionBox" UniqueId="9de21122-ad3b-4e7c-be51-d6dc64e51e5f">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="77542b9a-7a7d-42f7-8246-98c0d5bee5ce" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcLamp" UniqueId="4f72459d-f583-4d9c-9801-241af8e798e5">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="84e9da24-973f-47b3-87e3-f092e7080813" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcLightFixture" UniqueId="60143768-57cb-49a2-a3ef-575b21c26c54">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="e7ca2c65-6082-4ad3-8a09-2339987c5e58" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcMotorConnection" UniqueId="6f043f5b-ad46-44b1-b2f9-973bbe0b3108">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="82a34ced-1970-4095-af70-e00181e0f217" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcOutlet" UniqueId="3a11a81b-1f54-4e39-9183-933c042acb03">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="fe5f7872-d31f-41a3-8fbd-6e20bfc70217" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcProtectiveDevice" UniqueId="1288354c-6b9c-489b-a830-51b1e7bf7578">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="45707343-f47a-4eb0-9d22-01eb5d87c45f" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcProtectiveDeviceTrippingUnit" UniqueId="1e495b34-0d56-4e73-8839-82d9c68760f0">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="3af77d71-6602-4781-8d73-0dea90e0b68f" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcSolarDevice" UniqueId="c5e4476d-5c46-4616-8ec9-52f5b6bd3c1c">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="db749edd-42fb-4723-84b7-d2abc41868da" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcSwitchingDevice" UniqueId="4ac3179d-0e99-4928-a81e-0b2e0d111028">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="94205922-15d6-4bd8-9f52-5153da8fe4b7" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcTransformer" UniqueId="9777f40f-93bb-4f36-8b9c-413a3227a117">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="58b81f4f-0475-4cbd-817c-573910e429f1" Action="added" />
-							</Changes>
-						</DocChangeAction>
-					</Changes>
-				</DocChangeAction>
-				<DocChangeAction Name="IfcHvacDomain" UniqueId="5b57f90f-7249-4fce-84c6-4ba682994ea7">
-					<Changes>
-						<DocChangeAction Name="IfcAirTerminal" UniqueId="e216dc9c-6b32-4bbf-86b7-1d216f201f8e">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="2d855461-6632-41be-933c-b0ea0d72124e" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcAirTerminalBox" UniqueId="36939ad2-2542-4b6b-851e-64416f2f1378">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="e43ddf40-e429-49c0-a876-a37dbf9c38f3" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcAirToAirHeatRecovery" UniqueId="98358c55-70a8-47f7-a62b-a8e69d32808e">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="d70ea2eb-3b60-4503-b228-d5d681a0dfd5" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcBoiler" UniqueId="07f70cde-03b5-4459-a73d-dcbc38aabae0">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="7b202405-d868-4b54-8ae3-2e6e47f8f2ac" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcBurner" UniqueId="a7789edc-f2ae-4a2c-a2e7-13e9d6ef1c58">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="73224b8e-d3be-4602-943a-c58e5cbe3f4c" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcChiller" UniqueId="407cfda9-e6d3-4285-b9c0-4a8854265164">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="8fbc2bf8-d9d4-4554-ac6e-872fbd52316e" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcCoil" UniqueId="5a9a2d81-cdc5-4fb6-9b3d-1310b2d09f6b">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="f243c901-3213-4ee3-b19f-e0c9df8c398b" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcCompressor" UniqueId="f7cb85e0-9290-4d50-a9d9-1bda0b265463">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="c8978e8f-5c5d-4d18-a92b-4cca2a1e088f" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcCondenser" UniqueId="e57ffd5b-a020-463a-b1d9-ca8f95fe3fb8">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="1bfcbcda-3fc8-415c-97e0-37417b873cf4" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcCooledBeam" UniqueId="33004228-c4b6-4679-ace7-77382a7bd436">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="25ea9bd3-e4b8-48e9-87de-d49ee384fbcd" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcCoolingTower" UniqueId="57fc0b13-a18e-4bbe-97e0-c858ad9ac400">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="ff7a857b-3a10-4295-8f88-6e2f281a4f5e" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcDamper" UniqueId="3db47335-6f05-48cd-838e-437bd717b885">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="21963cb3-8fbd-4a48-bf42-a1e6e6dcf5ec" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcDuctFitting" UniqueId="78ec8748-ea3c-4d9d-a0b6-b6d36ece4538">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="029ca52c-529e-4d43-b143-9731d4f49770" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcDuctSegment" UniqueId="fec4960f-6495-4d52-b071-9575e6fdaede">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="50c61952-7ff3-40da-a297-2b1e88e714d0" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcDuctSilencer" UniqueId="2285b374-0d85-44b1-b06a-9fe48e9f2592">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="ee7bf220-555d-4da2-aeea-e1851e9baa64" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcEngine" UniqueId="a65a8025-6b93-4080-ad42-b3c48aea843f">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="65b78c10-0f7f-4b96-a15d-426dae4bccd5" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcEvaporativeCooler" UniqueId="f2622598-f5c2-46ec-bfdd-81c9259e22e3">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="3606e207-8824-4850-9206-52e82e4a8760" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcEvaporator" UniqueId="54d7d73d-3e95-499e-ba8d-2b0f6df1f424">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="0f8df4c7-0699-45de-b715-afe93ea6f147" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcFan" UniqueId="c67acdc2-c75d-4afb-98e0-67adddad1546">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="7aa028dd-1cd8-4272-afb7-cc30403ee06e" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcFilter" UniqueId="d4dc9ffd-ac4e-41d1-991e-d2bed04321fd">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="5e246002-2294-4484-ba3c-39163a6f885f" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcFlowMeter" UniqueId="078dbfd7-1af6-46f2-834c-5958b4bdd13b">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="d35f32a7-372d-46a9-b0fb-5a9e0c692fca" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcHeatExchanger" UniqueId="00ff5b15-f13e-4745-8532-ed092fe0a77c">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="9e70f9df-fc07-4056-b191-8527e1884c94" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcHumidifier" UniqueId="b21a5082-e769-4f89-855b-0f1eb8409c6d">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="b2dba8b5-e027-49be-bdd4-45080d38f1da" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcMedicalDevice" UniqueId="d7792480-a5a1-4721-b200-0cf302d11f57">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="7063b517-e236-4710-a02b-ee4cec181725" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcPipeFitting" UniqueId="656d776b-b3ba-4920-a1a8-79eb91b4a389">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="3ec198f8-6f09-458c-809c-c8297d05327b" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcPipeSegment" UniqueId="03470fbd-6100-4256-8207-c37f4e47ef2f">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="8fb4676c-e119-47ec-b814-cfda2550f87e" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcPump" UniqueId="d25ca6ab-a95c-4b8d-8862-f0829128a93d">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="e23a83da-3c64-47bc-a2b4-73ba364adfeb" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcSpaceHeater" UniqueId="b2a08113-b8e3-474e-b24b-c247833435e6">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="3b97c75a-3f13-463c-8928-5f5cc232dd36" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcTank" UniqueId="842d2e4e-5f26-45a7-b4a4-e4b8e0c2a17d">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="5b9be8dc-804b-4f92-8963-c78008523496" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcTubeBundle" UniqueId="d65824a5-3356-4ea7-952f-c71331ae67ab">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="2888b180-03f7-43fa-a8c7-beee0c8cb460" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcUnitaryEquipment" UniqueId="861cfb89-cd07-4387-9c9b-f80bdfbdf4aa">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="819a765c-b58e-4ce9-8ca1-7c717359e084" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcValve" UniqueId="3a7dc565-0d60-42a7-9402-e7ace94d3163">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="62661409-312e-4d55-b6ff-1f29578da082" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcVibrationIsolator" UniqueId="3bbf2c4a-df84-4046-b8a4-df79f5013426">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="ef1fcb6e-4760-4cd0-a730-78b8e358b60c" Action="added" />
-							</Changes>
-						</DocChangeAction>
-					</Changes>
-				</DocChangeAction>
-				<DocChangeAction Name="IfcPlumbingFireProtectionDomain" UniqueId="c800eb1f-b233-4103-b846-1648bde46c2d">
-					<Changes>
-						<DocChangeAction Name="IfcFireSuppressionTerminal" UniqueId="baaf9267-3787-46b9-9e8f-039e01afb250">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="7e3d1693-41c9-428f-b788-178c0cf4141b" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcInterceptor" UniqueId="e7fa8e6d-5327-4755-9cc7-430db5815513">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="f89e0f97-07f0-4623-81a8-e18625ae18f5" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcSanitaryTerminal" UniqueId="fd80a9a9-19db-4326-aa85-07c8ef890812">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="9f164f70-7d38-400b-bfb8-e3e8eea274da" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcStackTerminal" UniqueId="345908ab-a41f-4a57-b7a8-a61c34c53c57">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="483d6f6b-220d-4195-85d7-e7c53c541da0" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcWasteTerminal" UniqueId="87827147-ba39-4ada-ab72-24132a9a543c">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="674fff6c-fa98-43e7-bf11-efec0d3f12b0" Action="added" />
-							</Changes>
-						</DocChangeAction>
-					</Changes>
-				</DocChangeAction>
-				<DocChangeAction Name="IfcStructuralAnalysisDomain" UniqueId="25ca4f58-5baa-424d-9526-ff417668c057">
-					<Changes>
-						<DocChangeAction Name="IfcStructuralCurveAction" UniqueId="ec91ea76-1f7d-4b2a-80db-45c2fff95363">
-							<Changes>
-								<DocChangeAction Name="DestabilizingLoad" UniqueId="42b6a461-352a-436f-876e-ae9bc074e61c" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
-									</Aspects>
-								</DocChangeAction>
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcStructuralLinearAction" UniqueId="d5fe22ff-5a3c-44e0-9394-e6bf354108b4">
-							<Changes>
-								<DocChangeAction Name="DestabilizingLoad" UniqueId="25f27663-59d2-4e34-9e1b-abf00ed2a970" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
-									</Aspects>
-								</DocChangeAction>
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcStructuralPlanarAction" UniqueId="5a0b7888-8e3c-498f-be7d-5a1423790674">
-							<Changes>
-								<DocChangeAction Name="DestabilizingLoad" UniqueId="941c1e31-2172-4597-9962-953bcb69707b" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
-									</Aspects>
-								</DocChangeAction>
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcStructuralPointAction" UniqueId="d7d14eee-b812-4ed0-bccb-b080bdfe870a">
-							<Changes>
-								<DocChangeAction Name="DestabilizingLoad" UniqueId="6cbd7808-95d0-444e-babb-5c674fbb900a" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
-									</Aspects>
-								</DocChangeAction>
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcStructuralResultGroup" UniqueId="97157663-78e5-4726-98cd-eaf5ae039dda">
-							<Changes>
-								<DocChangeAction Name="IsLinear" UniqueId="b8a9a0f2-229c-45e8-9dc9-7fde579b00fe" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
-									</Aspects>
-								</DocChangeAction>
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcStructuralSurfaceAction" UniqueId="5d5b1ba1-1e7d-40d1-ada0-cb91c63c343b">
-							<Changes>
-								<DocChangeAction Name="DestabilizingLoad" UniqueId="a55f901d-79dd-45d8-bc84-5371bf9b668d" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
-									</Aspects>
-								</DocChangeAction>
-							</Changes>
-						</DocChangeAction>
-					</Changes>
-				</DocChangeAction>
-				<DocChangeAction Name="IfcStructuralElementsDomain" UniqueId="ed74b6d5-c053-44b8-942f-ccb32538b6c4">
-					<Changes>
-						<DocChangeAction Name="IfcReinforcingBar" UniqueId="c04afd6f-304a-43c2-a0da-8b4d6466a944">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="7fe3cf13-4cd2-471b-a495-d7fc79599ead" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcReinforcingMesh" UniqueId="15422c93-921a-478b-87fe-04bd4b0b6db9">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="d626c27e-e485-44d0-88f9-6c6b765f49f9" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcSurfaceFeature" UniqueId="6dc8c257-8eaf-45c8-b6c1-de860287ecf4">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="46a317fc-13b5-4797-a701-462819c31049" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcTendon" UniqueId="221c51ff-dbe7-46d7-af02-50d85175beb5">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="0ff2a1c2-e4af-481c-9399-3ef3d8afc475" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcTendonAnchor" UniqueId="a34bc161-467c-40e7-a183-669f80f53b82">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="0c99885d-3110-4ea4-a672-3f29659ab791" Action="added" />
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcVoidingFeature" UniqueId="4f05b9b5-ba52-4292-9e12-1067e86fd690">
-							<Changes>
-								<DocChangeAction Name="HasCoverings" UniqueId="ba755ca4-8c91-445c-afdd-e95dd2fa22d3" Action="added" />
+								<DocChangeAction Name="HasCoverings" UniqueId="4b1994f3-f9a3-40ac-97a6-c81911db5c1c" Action="added" />
 							</Changes>
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
 			</Changes>
 		</DocChangeAction>
-		<DocChangeAction Name="Resource definition data schemas" UniqueId="03cdb244-0ba1-4f79-bc8f-b554a043fc93">
+		<DocChangeAction Name="Domain specific data schemas" UniqueId="cf450586-cbe0-42ed-9e17-b537c6e52f7a">
 			<Changes>
-				<DocChangeAction Name="IfcConstraintResource" UniqueId="fbe58209-d645-499e-ae02-a12cd20aa184">
+				<DocChangeAction Name="IfcArchitectureDomain" UniqueId="9b554997-2e56-40c4-8ddd-9c6262fd7289">
 					<Changes>
-						<DocChangeAction Name="IfcMetric" UniqueId="613d9ac8-673c-4d48-86c0-f729cd985ae6">
+						<DocChangeAction Name="IfcDoorStyle" UniqueId="33e40b76-e79d-4489-9571-31f1273a2a59">
 							<Changes>
-								<DocChangeAction Name="DataValue" UniqueId="dd279462-8405-4189-9372-8b03066a5652" Action="modified">
+								<DocChangeAction Name="ParameterTakesPrecedence" UniqueId="3e369005-a534-4b9a-8945-39e9e8a2c465" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="Sizeable" UniqueId="7ed5867d-ce8d-4c0d-a642-dd6d5108ba8b" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcWindowStyle" UniqueId="282dafd1-a762-46c1-a182-b6a6b034e0c6">
+							<Changes>
+								<DocChangeAction Name="ParameterTakesPrecedence" UniqueId="79573a7c-9c0f-4b93-8eb2-8d2bdea0817e" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="Sizeable" UniqueId="3469b831-ed97-4ba7-b3d6-9428bef1bdf9" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcBuildingControlsDomain" UniqueId="4d374c21-1051-46e8-85e7-e70e211e3ae8">
+					<Changes>
+						<DocChangeAction Name="IfcSensorTypeEnum" UniqueId="62819ccb-61e7-4729-b670-3a027fa11eb2">
+							<Changes>
+								<DocChangeAction Name="CO2SENSOR" UniqueId="520d5e62-a21c-48c7-becc-cdc24554d663" Action="added" />
+								<DocChangeAction Name="FROSTSENSOR" UniqueId="23537526-098a-43cb-af0a-0b2797966d4e" Action="added" />
+								<DocChangeAction Name="IDENTIFIERSENSOR" UniqueId="9f49c4c9-8862-4f57-b371-830d7bd2a0dd" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcActuator" UniqueId="d16f846a-17c6-4b17-aeaa-943d949ea21a">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="06f69f4f-d7b6-48cd-8beb-2338292e6b00" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAlarm" UniqueId="c6a09250-0949-48b8-ab2b-282143d74091">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="0f915ad3-8efa-41b4-8c3f-6e7a63e07767" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcController" UniqueId="f265d120-6270-4a94-b935-0be8a5ef49d3">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="7cdb01eb-057d-45db-931c-979c4dfdf0e8" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFlowInstrument" UniqueId="fe8b78e9-e1b2-4038-9bff-23c8191a7743">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="41694a05-af30-47a8-b401-1936cafadff8" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSensor" UniqueId="8900f706-99d9-4fd1-a10b-412e84d56c26">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="780d64c5-de89-43a4-bcd7-2b09de7aafaf" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcUnitaryControlElement" UniqueId="b4edb5a8-a3f1-493e-896a-fe5fbc7c2dfd">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="3bb33e7a-8795-42a7-89d3-9dcab2173d64" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcElectricalDomain" UniqueId="2bbec70b-b3d3-445b-b4d0-432543793a72">
+					<Changes>
+						<DocChangeAction Name="IfcAudioVisualAppliance" UniqueId="fadc4a2e-6a7c-4893-b412-00e513804c27">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="21836090-93cd-40cf-b82e-0e8fcd93f252" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCableCarrierFitting" UniqueId="82391d02-d269-437f-91ca-5215d13c14ea">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="044b47b0-7d29-4c07-9b3e-ed92240489d9" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCableCarrierSegment" UniqueId="dbbb0dc9-b800-4eb7-9af8-cab4538e8468">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="cad7d9c9-6ee0-4e24-a32b-b47c8a205723" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCableFitting" UniqueId="cb47ca26-054c-4beb-a32c-a449ce799787">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="3ae42f1c-ab88-4d58-b595-615a626243ac" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCableSegment" UniqueId="37158936-709a-41de-8e9d-ddfdcfe2bec2">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="f16e96dd-ffc9-4359-b1a2-7e24ff980eae" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCommunicationsAppliance" UniqueId="6275ae91-f43a-4fe1-a884-83d0f7d853fa">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="2d9ace79-9b4f-487d-8b93-aba9b458703f" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcElectricAppliance" UniqueId="0f25e8bc-6dc4-4955-afe6-bf1ff422a076">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="dae4e74f-5d56-4b25-a323-b35531c67017" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcElectricDistributionBoard" UniqueId="52b5b8c8-9f27-4b0c-9e01-16f4718c4502">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="a1951121-5916-4ce8-ad7d-9aed214b7f0f" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcElectricFlowStorageDevice" UniqueId="b66f6d17-c15c-4308-aa91-16dad82fa539">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="8d0dae43-3cb0-4101-b684-ee13a896af2d" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcElectricGenerator" UniqueId="907daf3a-7fb1-4660-b42d-2cd8dd430b0c">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="9ea57ef0-98c7-4ec6-aa54-4b96c0feb480" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcElectricMotor" UniqueId="dfeb1e39-b265-4b88-80ef-9f69129b10fd">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="87d44dc5-21b0-4c89-a81a-11c046cdec40" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcElectricTimeControl" UniqueId="eb7b7b8a-7ca5-4172-90f2-f88e7906801f">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="3fef055a-ee88-4adb-a27a-291affab76f0" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcJunctionBox" UniqueId="dd28fd94-6377-4b64-9dbf-ca2783b0185f">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="152bb065-0ab9-4609-be0f-66f413228be2" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcLamp" UniqueId="6c09f3a4-da69-405b-a46f-7e719fb792fb">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="6b856930-fdd9-4ef8-8f9a-7f16dec53776" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcLightFixture" UniqueId="e2d8be7a-f31e-4610-bb19-bab227bb245d">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="0c295faf-6ef0-477f-803d-af414f916bd5" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcMotorConnection" UniqueId="1879c957-25b7-46d9-8286-b7172021beb2">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="d1aeaf0d-bf21-4ce4-bb42-2dcce065aa07" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcOutlet" UniqueId="04109bdf-d3cd-47f7-a57b-af424c1bec4b">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="ea0fe0dc-4416-4e68-81b8-144f49a23ebb" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcProtectiveDevice" UniqueId="c68720da-3398-45cd-9580-636dc2a2c7cd">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="0f716a80-afa7-4042-943b-e57e0dfff550" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcProtectiveDeviceTrippingUnit" UniqueId="1c29e730-62e4-4275-b95d-2a4012e142e1">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="6d11d64f-cbee-4820-8811-63f7f98c1d49" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSolarDevice" UniqueId="79056e3d-f10d-4a81-a7e3-ec20727a64a0">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="d15f5764-36d3-42b0-9f42-33c302fec54f" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSwitchingDevice" UniqueId="b0801755-02f5-466a-8558-f3bb6a2c552d">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="15e72471-cb8e-455b-8895-9bfee30e4409" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTransformer" UniqueId="0bd4a865-7846-4672-858f-1b69c156a3e9">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="3a89f112-cbe5-4308-bfc2-af03109894a7" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcHvacDomain" UniqueId="ea9c3ab2-01f8-4362-8a90-a9fb6e824ed2">
+					<Changes>
+						<DocChangeAction Name="IfcAirTerminal" UniqueId="84f5d9f7-8e8f-4ec1-b14c-6ecb325efb29">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="21c4065a-8e00-4a6d-a145-3dd582a0ff9b" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAirTerminalBox" UniqueId="337c515d-420c-4827-afbf-36fefd095eb3">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="22a96d46-815e-4ca1-afa3-dfeaf7624028" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcAirToAirHeatRecovery" UniqueId="6a6a5137-c0f3-4662-85ea-f4888c63526f">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="3f889b7f-672c-4391-9d5e-26b115c8dba7" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcBoiler" UniqueId="632c2c2d-8b3b-4cf0-842f-4917d186f7a8">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="a7823ac4-7ac4-4845-b020-1773acb4b0f2" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcBurner" UniqueId="69cffd5f-2d42-49ce-ae0c-509f94459d88">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="9f67b8c8-a944-431c-a1fd-80b788025e26" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcChiller" UniqueId="3511fa5d-ea53-40b8-9a25-4ffca2281d99">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="56c5d71b-9664-430d-9330-4f1fba8551ed" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCoil" UniqueId="0c9ea619-d3f2-4add-aa09-381bbf0d3f35">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="af429698-29f6-410c-b1c3-eb4f8d2a3e47" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCompressor" UniqueId="9f1eadea-a014-4d64-93bb-bc9f9b4dde46">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="ba557dd7-1556-4406-b6e0-75b94cf34fc2" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCondenser" UniqueId="09c4a395-7211-4f5b-a333-10b09c66914a">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="7ff13778-61fe-4095-be3c-774ecc0b827f" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCooledBeam" UniqueId="05f5b73c-7a47-4316-a050-65c0ec5a7138">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="87db40ab-dd86-4af7-ab03-ff0c4851ba70" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCoolingTower" UniqueId="784251c1-33b4-4667-adb6-ff80ed979701">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="66a106d6-8691-4682-bf91-918c40d33fde" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDamper" UniqueId="d377d3ca-852b-4c75-b784-e405519a264d">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="6a6fbfb0-21d5-4133-a477-46f4e3b81b7a" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDuctFitting" UniqueId="f8d28832-b3c2-402f-9175-3b0057422076">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="5eec51ee-9e94-4d9a-89d9-ba49648525ad" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDuctSegment" UniqueId="95965e13-656b-4c76-bae5-3b58ee18b163">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="72df250c-5f8d-4ac1-9b2a-9c9ccd1eb716" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcDuctSilencer" UniqueId="bdeaad0c-5bb8-4093-9253-1f026abbcbe3">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="26e90c7a-8685-4b51-8e31-d5c656e21c47" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcEngine" UniqueId="7087b4a4-55f0-4204-8641-9d0c661f00cd">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="593ce62e-992c-46cb-8061-f295cb853bf9" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcEvaporativeCooler" UniqueId="b26cd536-bbf0-4d64-8842-11cd7f97ba85">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="7185ac1d-a9ab-4958-a12f-1b81c1877551" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcEvaporator" UniqueId="beaee0ba-444a-4891-8011-c2dbf017b23a">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="7f73a5f3-8d4f-437f-a646-274f2a8bf755" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFan" UniqueId="c2d0ffc1-cdfe-4a24-986b-df2345d5b96d">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="79bc4979-9276-46ec-957c-cf3bbe474766" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFilter" UniqueId="6e77733e-1d03-4c8e-aec4-0be72a034cc3">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="bb2bdb9a-252b-4048-8c96-bcf8fe4e0c8d" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcFlowMeter" UniqueId="944cc9e9-4e71-48d3-a124-6e1776294535">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="de5a4a9f-b3cd-4a80-ba56-9b6a32c6aea8" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcHeatExchanger" UniqueId="44c6914a-3094-4912-8d85-5bf47ac2ce67">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="b2ab17c6-9e86-4bd5-ae39-47bc5927aae8" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcHumidifier" UniqueId="679bae42-0b48-4e42-96a0-a59b35849c89">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="6c67f634-6ca7-4ed9-99da-9068ffe08db5" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcMedicalDevice" UniqueId="0fc67122-66d8-4b2d-8790-99a0ecd451d4">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="4606be7d-5bde-4f32-ae17-3245f56e7da7" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcPipeFitting" UniqueId="c71a9daf-50f0-4c0f-b310-2a271c492e48">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="7bceadc0-25d4-487c-abe0-2db4d54229c1" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcPipeSegment" UniqueId="c030e5b4-88c4-4e38-851a-d1c169d63c33">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="23af7a27-431b-4ea9-b9de-c1ffec80f0d2" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcPump" UniqueId="23e5ea3d-71cd-435a-84de-8eb69892c09b">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="527107dc-99ad-4378-a53e-da098346c34f" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSpaceHeater" UniqueId="0d5aaf1d-aa02-42b9-9834-f6d4bd5ca9c8">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="993b5552-2696-4bd9-b35a-3a356693aa27" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTank" UniqueId="c8ea6d90-447f-4317-a6b4-249a36aa9026">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="37749568-92bd-490a-b013-b515228f9ee9" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTubeBundle" UniqueId="3e89a172-1c3f-45fb-80ee-087fecf48b2a">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="b589a0ef-5469-4141-9fec-f3bb77cdfad3" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcUnitaryEquipment" UniqueId="14b7a2b2-b406-4d28-a5c5-9fab7c43feb9">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="9864b4a8-f6ea-4600-9e05-1646d04fcd0f" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcValve" UniqueId="b4dee925-1c13-4706-9e8b-d17c8954ffec">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="20753ced-ed33-4bb6-9565-20da1eb4e022" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcVibrationIsolator" UniqueId="d90921b5-23d5-411a-8e5e-0886e000446e">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="d09e68a9-f848-4dd3-bddc-cf2600bedbcb" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcPlumbingFireProtectionDomain" UniqueId="9b962981-b62f-475d-a9d3-396c075cb2ff">
+					<Changes>
+						<DocChangeAction Name="IfcFireSuppressionTerminal" UniqueId="ca707587-b5d2-46f3-8d10-997cb6f194af">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="f158838a-fdab-4fa1-9762-bcdf65a2e3b8" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcInterceptor" UniqueId="186a9fe0-c429-41ef-a8a8-d5e2428e5b76">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="c9194bf5-b0fd-4a2c-a1b2-8f3f31e6237e" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSanitaryTerminal" UniqueId="d28d0960-e540-4cab-93c3-9a92adf2f25e">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="b9b2fc85-ac2f-4e57-8131-46ba5217aa7d" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStackTerminal" UniqueId="ed8c8e77-a7db-4163-9fd2-aa515d72a2d1">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="a4a89715-29b6-400a-8482-d50d3cfda4a8" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcWasteTerminal" UniqueId="7dccad6f-2782-49dc-9b66-52f757a09659">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="57119187-d741-40ac-b277-c0b92ab902b2" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcStructuralAnalysisDomain" UniqueId="a0e50751-605d-4812-a684-2d16b8010b14">
+					<Changes>
+						<DocChangeAction Name="IfcStructuralCurveAction" UniqueId="00082d75-a79f-4648-9c07-804fa1668926">
+							<Changes>
+								<DocChangeAction Name="DestabilizingLoad" UniqueId="ba449010-532f-4241-abbe-336adc7822d0" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralLinearAction" UniqueId="8294736e-3d38-4bdf-b57b-e494d1cbafcd">
+							<Changes>
+								<DocChangeAction Name="DestabilizingLoad" UniqueId="7e040d16-be59-494c-8ab2-4cade36fd9f3" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralPlanarAction" UniqueId="46acac41-46fe-474a-8e6d-c80e8c544887">
+							<Changes>
+								<DocChangeAction Name="DestabilizingLoad" UniqueId="f0253e05-2e49-4847-8a89-bc0109110444" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralPointAction" UniqueId="bba76630-ad11-4390-88fb-051d10bfc841">
+							<Changes>
+								<DocChangeAction Name="DestabilizingLoad" UniqueId="ac271b61-886e-4865-8d83-18edd22067a6" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralResultGroup" UniqueId="e78be52f-e261-4d2e-9a64-3eb7948fb5e4">
+							<Changes>
+								<DocChangeAction Name="IsLinear" UniqueId="33a0a4ba-4b29-4a61-9d3e-b920a0dd4d09" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcStructuralSurfaceAction" UniqueId="7559af5f-e696-4624-a325-de3bfe963226">
+							<Changes>
+								<DocChangeAction Name="DestabilizingLoad" UniqueId="52e9da63-4503-44e8-95b7-23d7eb3fa47a" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+				<DocChangeAction Name="IfcStructuralElementsDomain" UniqueId="55b74850-bd71-4663-b85d-21b95b0f856a">
+					<Changes>
+						<DocChangeAction Name="IfcReinforcingBar" UniqueId="d81cfbf3-2237-494c-834d-95c98e6f04c6">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="9aa55b81-955b-4287-ae77-2570d68060af" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcReinforcingMesh" UniqueId="1dc4a926-efb5-4894-beb9-51ebcf017bb9">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="362e9f12-00a1-473c-865d-b67da1a2d8b7" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcSurfaceFeature" UniqueId="97d350cf-eeb8-4f81-9eef-f1637ba825e6">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="efd743e0-5386-4ea4-9582-1d502a2727cb" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTendon" UniqueId="35086626-4b1a-4e5e-aa9e-772086928e04">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="d4b165c7-6ad2-4d17-b700-0598bb9f0eb2" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTendonAnchor" UniqueId="3678e92d-a6ab-4303-a1f7-652448596742">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="546bb672-8522-4d9d-90b2-8c32d59c42c1" Action="added" />
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcVoidingFeature" UniqueId="2631d362-5454-45c2-81a0-e59454d20834">
+							<Changes>
+								<DocChangeAction Name="HasCoverings" UniqueId="ee83857e-39c3-4e8f-8e4f-911adcfcf475" Action="added" />
+							</Changes>
+						</DocChangeAction>
+					</Changes>
+				</DocChangeAction>
+			</Changes>
+		</DocChangeAction>
+		<DocChangeAction Name="Resource definition data schemas" UniqueId="16420bdc-fb5b-486f-a6c7-8354b871012b">
+			<Changes>
+				<DocChangeAction Name="IfcConstraintResource" UniqueId="fd56e2a1-3d50-4680-b60a-2dbb24103de8">
+					<Changes>
+						<DocChangeAction Name="IfcMetric" UniqueId="3206323e-8e12-4eec-b0ac-3cf37119a5eb">
+							<Changes>
+								<DocChangeAction Name="DataValue" UniqueId="da9e1cd2-99f7-453c-a56e-f3c874871350" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="instantiation" NewValue="OPTIONAL" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="PropertiesForConstraint" UniqueId="f2f04133-47bd-4603-adae-178a03cd8ba7" Action="added" />
-								<DocChangeAction Name="ConstrainedResources" UniqueId="950ca096-0a94-46f4-8ac3-0b58d65c4b5f" Action="deleted" />
-								<DocChangeAction Name="ConstrainedObjects" UniqueId="b71deec7-345e-4946-8e47-c00b1cf9d2a6" Action="deleted" />
+								<DocChangeAction Name="PropertiesForConstraint" UniqueId="4ec22d4d-90f5-48f7-b496-0c98c608a068" Action="added" />
+								<DocChangeAction Name="ConstrainedResources" UniqueId="a13b645a-06a6-4b27-b10d-4b5718a14b7e" Action="deleted" />
+								<DocChangeAction Name="ConstrainedObjects" UniqueId="29889f1d-9cf1-432d-8e24-f2a6f35a3974" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcObjective" UniqueId="89891663-b0d5-4d79-930d-8d60e6fb5ce9">
+						<DocChangeAction Name="IfcObjective" UniqueId="817ef42f-e9a2-4778-b0b7-d1681482b232">
 							<Changes>
-								<DocChangeAction Name="PropertiesForConstraint" UniqueId="4a334b8c-d29f-4050-b737-7f3229d7eb37" Action="added" />
-								<DocChangeAction Name="ConstrainedResources" UniqueId="2c3af5a1-73b2-437b-aa71-294b66405cfe" Action="deleted" />
-								<DocChangeAction Name="ConstrainedObjects" UniqueId="551bf1f2-1bed-438f-9696-c8edb6a9ef94" Action="deleted" />
+								<DocChangeAction Name="PropertiesForConstraint" UniqueId="ec7b79d3-41c3-4a4c-9fd8-5ab60526302a" Action="added" />
+								<DocChangeAction Name="ConstrainedResources" UniqueId="b0510ce0-b810-47f8-a739-47ea2c215626" Action="deleted" />
+								<DocChangeAction Name="ConstrainedObjects" UniqueId="905ee58a-4eae-4bdf-95cd-97b5223e5fe0" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcReference" UniqueId="fd341518-fae5-4cab-94ce-c3c8ee07a396">
+						<DocChangeAction Name="IfcReference" UniqueId="a3bd2076-5f58-4173-ae29-fd6047da5992">
 							<Changes>
-								<DocChangeAction Name="ListPositions" UniqueId="870a3f75-5229-4ae6-bcb5-3a431094b57e" Action="modified">
+								<DocChangeAction Name="ListPositions" UniqueId="5973dbeb-9c31-48eb-89d7-b23bdca4a905" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
 									</Aspects>
@@ -749,34 +749,34 @@
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcDateTimeResource" UniqueId="00e54ba3-85fa-4985-9778-44dc10f28863">
+				<DocChangeAction Name="IfcDateTimeResource" UniqueId="be3cc847-989c-4cc2-8694-bd7e1b286644">
 					<Changes>
-						<DocChangeAction Name="IfcResourceTime" UniqueId="eceec2ab-4ed1-4a36-b0c6-da16851f74d7">
+						<DocChangeAction Name="IfcResourceTime" UniqueId="904ef087-d4a5-4e94-b9ac-10dab61e957d">
 							<Changes>
-								<DocChangeAction Name="IsOverAllocated" UniqueId="83bb1289-267f-4f90-97e5-d4fc35085fa7" Action="modified">
+								<DocChangeAction Name="IsOverAllocated" UniqueId="d55d3513-89a7-4dd8-b433-53701461d07c" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcTaskTime" UniqueId="30c42cc0-7436-4e8d-a676-15c131df36bc">
+						<DocChangeAction Name="IfcTaskTime" UniqueId="98dac136-e5b3-4e9c-9e8d-995e8b81ee73">
 							<Changes>
-								<DocChangeAction Name="IsCritical" UniqueId="7a276e2b-4cff-4d1f-91f2-cf0943170e59" Action="modified">
+								<DocChangeAction Name="IsCritical" UniqueId="85da517c-9981-4c7c-b1ad-ffd7e6024fc7" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcTaskTimeRecurring" UniqueId="36b9d17f-0805-461a-a287-89868aa9fc34">
+						<DocChangeAction Name="IfcTaskTimeRecurring" UniqueId="b273c4df-ff4e-4695-8e68-f879db7b05c8">
 							<Changes>
-								<DocChangeAction Name="IsCritical" UniqueId="a2f1a564-6638-48b8-9286-6bdb97d1e987" Action="modified">
+								<DocChangeAction Name="IsCritical" UniqueId="c845f804-0f66-4f0d-ba36-c564c572ef79" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Recurrence" UniqueId="a1f42348-1ff5-4eca-b796-975e9de36876" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="Recurrence" UniqueId="83f29448-41f8-4849-bd12-c5963dbe3a10" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="Recurrance" NewValue="Recurrence" />
 									</Aspects>
@@ -785,49 +785,49 @@
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcGeometricModelResource" UniqueId="1681c9be-0f33-4aa6-afe8-3d5a64460cb1">
+				<DocChangeAction Name="IfcGeometricModelResource" UniqueId="17258f09-4f05-48fe-b7b6-e140e4c7246a">
 					<Changes>
-						<DocChangeAction Name="IfcBoxedHalfSpace" UniqueId="bc77983b-66a9-4d6d-ad2a-dbc502158833">
+						<DocChangeAction Name="IfcBoxedHalfSpace" UniqueId="e70f72a2-7599-459b-8971-84833a3fdb4e">
 							<Changes>
-								<DocChangeAction Name="AgreementFlag" UniqueId="bfdcaa62-25a2-41ed-a53e-ac8ae8d651d0" Action="modified">
+								<DocChangeAction Name="AgreementFlag" UniqueId="4602c7fa-0720-4e71-991d-70addd30ca22" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcCartesianPointList2D" UniqueId="acbf367f-53b7-4c50-a152-b003743f0649" Action="added" />
-						<DocChangeAction Name="IfcHalfSpaceSolid" UniqueId="a753a6bb-6164-4eb7-90c6-7c8b9e26f255">
+						<DocChangeAction Name="IfcCartesianPointList2D" UniqueId="056d9e15-2062-40df-8994-53358c3b22f6" Action="added" />
+						<DocChangeAction Name="IfcHalfSpaceSolid" UniqueId="d4c93598-364f-4ec9-8140-420ed0c80f6f">
 							<Changes>
-								<DocChangeAction Name="AgreementFlag" UniqueId="caab35aa-0360-4a7d-a472-67a56fb31e45" Action="modified">
+								<DocChangeAction Name="AgreementFlag" UniqueId="5534f16f-60ff-4e15-875c-6a1eae79c991" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcPolygonalBoundedHalfSpace" UniqueId="164da253-87cc-4701-9b8d-7a9463d6167f">
+						<DocChangeAction Name="IfcPolygonalBoundedHalfSpace" UniqueId="18437b1e-7f95-4e42-b5e3-528a4e6ddf88">
 							<Changes>
-								<DocChangeAction Name="AgreementFlag" UniqueId="8c03b66f-d819-4cc3-a765-389c7656c9fe" Action="modified">
+								<DocChangeAction Name="AgreementFlag" UniqueId="cadafa5f-e147-4a9e-b3d1-22173ec1a2e7" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcTriangulatedFaceSet" UniqueId="bda06abc-2b88-433d-8855-cfeefdd887a2">
+						<DocChangeAction Name="IfcTriangulatedFaceSet" UniqueId="a8536857-1a1f-48ca-ab06-45734e857b97">
 							<Changes>
-								<DocChangeAction Name="Closed" UniqueId="e0847946-6e32-4658-ace9-208d937073bb" Action="modified">
+								<DocChangeAction Name="Closed" UniqueId="357a15ec-5b2e-433d-9a50-b26c92230600" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="CoordIndex" UniqueId="69fb759a-6c7b-45cb-a5b8-654a24fe0145" Action="modified">
+								<DocChangeAction Name="CoordIndex" UniqueId="2d735c94-d02a-4c45-a0b4-b7f9bc3edfca" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcPositiveInteger" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="NormalIndex" UniqueId="40a83edb-3114-4e89-aaae-6334b14fe437" Action="modified">
+								<DocChangeAction Name="NormalIndex" UniqueId="94f02fb6-218e-434d-bf86-6845c0cd346a" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcPositiveInteger" />
 									</Aspects>
@@ -836,306 +836,306 @@
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcGeometryResource" UniqueId="800b5ea6-6364-441a-9316-bbedad4a08a6">
+				<DocChangeAction Name="IfcGeometryResource" UniqueId="12885de0-469f-40fd-8f47-849e5d401f88">
 					<Changes>
-						<DocChangeAction Name="IfcArcIndex" UniqueId="ae648156-7c1b-4ecb-8ed7-f9a4255e9480" Action="added" />
-						<DocChangeAction Name="IfcLineIndex" UniqueId="878835c6-e769-4551-8dd8-af90f745b279" Action="added" />
-						<DocChangeAction Name="IfcSegmentIndexSelect" UniqueId="3fcbfbd9-f309-48de-b2ab-f06478718ab0" Action="added" />
-						<DocChangeAction Name="IfcBoundaryCurve" UniqueId="ad72e860-da22-435b-89ac-c4e9341d3364">
+						<DocChangeAction Name="IfcArcIndex" UniqueId="1578fae9-a0cb-4b40-86b6-ef55e4882166" Action="added" />
+						<DocChangeAction Name="IfcLineIndex" UniqueId="57213fc3-4e71-4dec-a358-67dbc1946245" Action="added" />
+						<DocChangeAction Name="IfcSegmentIndexSelect" UniqueId="72fa2c47-e755-4ce0-9fb5-9cb0b34a18ca" Action="added" />
+						<DocChangeAction Name="IfcBoundaryCurve" UniqueId="a59d62d9-aad5-480d-be0d-3b4e7fa62a92">
 							<Changes>
-								<DocChangeAction Name="SelfIntersect" UniqueId="b4438f82-ca8a-4fd1-aa36-32950ef56257" Action="modified">
+								<DocChangeAction Name="SelfIntersect" UniqueId="696d1389-63a4-45c8-906a-0fef37973de0" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcBSplineCurveWithKnots" UniqueId="d5a6c3f8-46a6-4112-a626-b9c9c0d4605a">
+						<DocChangeAction Name="IfcBSplineCurveWithKnots" UniqueId="81fd4470-5fe8-4e0c-870f-92a93e169adb">
 							<Changes>
-								<DocChangeAction Name="Degree" UniqueId="5373d27c-6ea3-4f53-8b0c-eea338889ae6" Action="modified">
+								<DocChangeAction Name="Degree" UniqueId="a68709c7-8912-4143-89ad-939c0a1b129b" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="ClosedCurve" UniqueId="24527e9c-d0e9-49b7-9e35-a441a30ba980" Action="modified">
+								<DocChangeAction Name="ClosedCurve" UniqueId="3e1e4a5c-e9fe-4208-baeb-d4757a14e75b" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="SelfIntersect" UniqueId="f1ce4f40-e3de-4e0d-b17d-11b438792e40" Action="modified">
+								<DocChangeAction Name="SelfIntersect" UniqueId="3ae4ed95-030b-4dec-87a8-d680a7ee2390" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="KnotMultiplicities" UniqueId="7d0897bf-cd06-4013-93c1-a7cb4f8d9c2a" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
-									</Aspects>
-								</DocChangeAction>
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcBSplineSurfaceWithKnots" UniqueId="a079ae59-d666-4836-a297-e6d0a5d9da83">
-							<Changes>
-								<DocChangeAction Name="UDegree" UniqueId="259dfeca-792d-42e1-b059-4bf0e83bb384" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
-									</Aspects>
-								</DocChangeAction>
-								<DocChangeAction Name="VDegree" UniqueId="7d76d892-9b59-42c3-93db-6a3c48daea24" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
-									</Aspects>
-								</DocChangeAction>
-								<DocChangeAction Name="UClosed" UniqueId="bcee1852-cac5-45ce-a1e0-a42f9942bb3c" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
-									</Aspects>
-								</DocChangeAction>
-								<DocChangeAction Name="VClosed" UniqueId="f70e8bfa-6dff-4632-82a8-409b570c77bf" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
-									</Aspects>
-								</DocChangeAction>
-								<DocChangeAction Name="SelfIntersect" UniqueId="c88253f5-46c7-43cd-b095-5df61e20bda3" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
-									</Aspects>
-								</DocChangeAction>
-								<DocChangeAction Name="UMultiplicities" UniqueId="579255d6-88ab-46e6-90a2-a9fe848b48ff" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
-									</Aspects>
-								</DocChangeAction>
-								<DocChangeAction Name="VMultiplicities" UniqueId="8565be83-dc01-4587-bc50-d4ab199eed22" Action="modified">
+								<DocChangeAction Name="KnotMultiplicities" UniqueId="9208e838-f242-484e-a879-caf90b7ad011" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcCartesianTransformationOperator2D" UniqueId="746ad6d6-0055-458d-990e-2a8d0b6af7cf">
+						<DocChangeAction Name="IfcBSplineSurfaceWithKnots" UniqueId="ec7c90a5-5d68-46ba-9ea3-2ea478a41aa7">
 							<Changes>
-								<DocChangeAction Name="Scale" UniqueId="06f0aa2f-5dd1-45c9-b4d3-830a5ea115a7" Action="modified">
+								<DocChangeAction Name="UDegree" UniqueId="84b25b40-96e7-4b42-a857-17e1eaa2ae2f" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="VDegree" UniqueId="39d607de-bea6-45f4-81bc-3df04d8b95f5" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="UClosed" UniqueId="d14b9e67-d06d-4e37-8e95-d52590942bf5" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="VClosed" UniqueId="c77cdd55-fb74-45a2-95c5-e1afedb2a1c7" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="SelfIntersect" UniqueId="4ac70d34-3a18-45da-aa95-c1aa73790a60" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="UMultiplicities" UniqueId="91017ae3-9895-4d4c-b0db-e1c4134f3979" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
+									</Aspects>
+								</DocChangeAction>
+								<DocChangeAction Name="VMultiplicities" UniqueId="2b3d6e0e-3a17-400e-9df8-c967b9f6e6d3" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcCartesianTransformationOperator2D" UniqueId="d4e6d269-621a-4129-8d0d-d6844b9d5f5a">
+							<Changes>
+								<DocChangeAction Name="Scale" UniqueId="1fd7103c-5cf6-4928-b3c1-dea560ec2abe" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="REAL" NewValue="IfcReal" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcCartesianTransformationOperator2DnonUniform" UniqueId="4d9f68cd-0e58-456d-9994-68cac890bb01">
+						<DocChangeAction Name="IfcCartesianTransformationOperator2DnonUniform" UniqueId="7eaaa4be-896a-4a9e-beb6-a87787b485de">
 							<Changes>
-								<DocChangeAction Name="Scale" UniqueId="658418f6-6d4c-463f-9694-b641211c3024" Action="modified">
+								<DocChangeAction Name="Scale" UniqueId="00091b1e-381d-4f72-83a0-8a538c760744" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="REAL" NewValue="IfcReal" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Scale2" UniqueId="08740a7b-9cd2-43b8-b51d-20837660be25" Action="modified">
+								<DocChangeAction Name="Scale2" UniqueId="2fd1cb55-2491-434b-a2d0-cd05576619f0" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="REAL" NewValue="IfcReal" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcCartesianTransformationOperator3D" UniqueId="65139683-ad43-4a75-a3b1-89952fdd4c7d">
+						<DocChangeAction Name="IfcCartesianTransformationOperator3D" UniqueId="ba8c3100-0420-402c-823e-7c59cb7db41a">
 							<Changes>
-								<DocChangeAction Name="Scale" UniqueId="215a2db4-7254-47c9-b01a-cddc04e38372" Action="modified">
+								<DocChangeAction Name="Scale" UniqueId="deb3c8e8-d386-406e-b69d-90a4646ab380" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="REAL" NewValue="IfcReal" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcCartesianTransformationOperator3DnonUniform" UniqueId="bbe5eead-d5c1-47d6-b18e-f1940abd2d84">
+						<DocChangeAction Name="IfcCartesianTransformationOperator3DnonUniform" UniqueId="188d99f9-8b16-4677-8b9a-0fea46980fca">
 							<Changes>
-								<DocChangeAction Name="Scale" UniqueId="24c87948-1a2a-43a5-8c72-bd9602108789" Action="modified">
+								<DocChangeAction Name="Scale" UniqueId="a62e8d93-692d-4591-8634-45248c7f2845" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="REAL" NewValue="IfcReal" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Scale2" UniqueId="78069fb8-b513-446d-821c-d07cd51a8712" Action="modified">
+								<DocChangeAction Name="Scale2" UniqueId="e3d3ad67-a946-4d84-84d7-17cb79daf71f" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="REAL" NewValue="IfcReal" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Scale3" UniqueId="9a8cbf22-32c3-4b00-9e8c-380f9e978eb5" Action="modified">
+								<DocChangeAction Name="Scale3" UniqueId="5d31d44e-b735-462f-9612-5c5e25ac5fef" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="REAL" NewValue="IfcReal" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcCompositeCurve" UniqueId="617ddae6-383b-488e-8ee1-470fbea07ad5">
+						<DocChangeAction Name="IfcCompositeCurve" UniqueId="482ac85e-3dbe-4cba-b593-08d641bf7ea1">
 							<Changes>
-								<DocChangeAction Name="SelfIntersect" UniqueId="2e910dd3-11c2-4f7c-96b1-7408de388d18" Action="modified">
+								<DocChangeAction Name="SelfIntersect" UniqueId="5ecd1973-9b3c-4866-ab97-c6a7c12b29ff" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcCompositeCurveOnSurface" UniqueId="228771e7-3017-4e84-b610-c1949bed61ea">
+						<DocChangeAction Name="IfcCompositeCurveOnSurface" UniqueId="7028c357-a339-4a76-bb9d-45294978dfdc">
 							<Changes>
-								<DocChangeAction Name="SelfIntersect" UniqueId="cbed1e8e-4fe0-4850-a0e0-e517dd36e922" Action="modified">
+								<DocChangeAction Name="SelfIntersect" UniqueId="c410773d-d7bb-4a78-99b6-a74ec8582f08" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcCompositeCurveSegment" UniqueId="35152dd2-7aa8-4f78-a839-3d995432f22f">
+						<DocChangeAction Name="IfcCompositeCurveSegment" UniqueId="4dad87b4-218a-4a30-8eca-f6e054f3d985">
 							<Changes>
-								<DocChangeAction Name="SameSense" UniqueId="0943ea8d-8847-4478-8e3e-fe3b1a68b1cd" Action="modified">
+								<DocChangeAction Name="SameSense" UniqueId="e08a691c-6112-43da-9f04-4b9c3cc6734d" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcCurveBoundedSurface" UniqueId="0a18430d-d7dc-43f0-8caa-68fed8d4aaba">
+						<DocChangeAction Name="IfcCurveBoundedSurface" UniqueId="a77ed376-d400-4c19-8597-bfa410ddff9c">
 							<Changes>
-								<DocChangeAction Name="ImplicitOuter" UniqueId="ec71d3f8-6e62-48e0-803e-6866ea6f1dbe" Action="modified">
+								<DocChangeAction Name="ImplicitOuter" UniqueId="4c932c81-b9f6-47fd-8aa0-16e6251a4a19" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcDirection" UniqueId="1a03c13a-fb92-44dc-b14c-5dd09ae7e2ad">
+						<DocChangeAction Name="IfcDirection" UniqueId="29c97016-e7bf-47ba-b518-21f67b33022a">
 							<Changes>
-								<DocChangeAction Name="DirectionRatios" UniqueId="07c40cc0-60ba-4177-9f22-3fd4dda35ea2" Action="modified">
+								<DocChangeAction Name="DirectionRatios" UniqueId="bdd8c5c0-19f6-427a-a96e-f1944b2025d5" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="REAL" NewValue="IfcReal" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcIndexedPolyCurve" UniqueId="304a815b-ad60-424a-94d3-29785dd7176a" Action="added" />
-						<DocChangeAction Name="IfcOffsetCurve2D" UniqueId="8edc011d-4524-47fc-9a1c-46379c9cd0a5">
+						<DocChangeAction Name="IfcIndexedPolyCurve" UniqueId="9ac696b8-a6ea-4789-8c75-e15b7b1fd861" Action="added" />
+						<DocChangeAction Name="IfcOffsetCurve2D" UniqueId="f85a68bd-d4fd-4d50-b3f4-d38844429543">
 							<Changes>
-								<DocChangeAction Name="SelfIntersect" UniqueId="40e4c492-fc3c-4166-9cff-f8fa817f9d4c" Action="modified">
+								<DocChangeAction Name="SelfIntersect" UniqueId="e69725bd-e662-4776-aa03-09e00cdcccae" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcOffsetCurve3D" UniqueId="7f6b72c1-0a76-4a78-91fb-4de579b95ec3">
+						<DocChangeAction Name="IfcOffsetCurve3D" UniqueId="1f1a1e19-10f8-4303-b54b-2894ec5a0dce">
 							<Changes>
-								<DocChangeAction Name="SelfIntersect" UniqueId="b0a6027f-05d5-4dd4-bd82-ce17149223ef" Action="modified">
+								<DocChangeAction Name="SelfIntersect" UniqueId="1f2a5a9b-de33-4279-aa78-8bd361149d9c" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcOuterBoundaryCurve" UniqueId="2daffc6f-b6a2-41c2-bba0-c888f0d85395">
+						<DocChangeAction Name="IfcOuterBoundaryCurve" UniqueId="a8663587-447e-4da6-a45a-6a4b0005eb13">
 							<Changes>
-								<DocChangeAction Name="SelfIntersect" UniqueId="467db75c-3df1-4bcb-8a12-5735c89eece2" Action="modified">
+								<DocChangeAction Name="SelfIntersect" UniqueId="a82ecb86-ccf5-4099-99c7-06a20e026ef9" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcRationalBSplineCurveWithKnots" UniqueId="9b83876a-56b3-441b-89b2-3748de7f6fd7">
+						<DocChangeAction Name="IfcRationalBSplineCurveWithKnots" UniqueId="d7185bd7-f632-495b-8fc7-446c4c184d38">
 							<Changes>
-								<DocChangeAction Name="Degree" UniqueId="e32dd039-fe40-40f6-a92c-997dc7ce2172" Action="modified">
+								<DocChangeAction Name="Degree" UniqueId="db150f8a-b477-4204-94fd-d2f8e12d07c0" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="ClosedCurve" UniqueId="eafbfef6-967b-447e-afb2-43086b4003f9" Action="modified">
+								<DocChangeAction Name="ClosedCurve" UniqueId="4cfff029-20e9-4755-ace3-1bcf82fffb62" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="SelfIntersect" UniqueId="7c39c097-8112-4dd1-90e4-c4a3129f8f26" Action="modified">
+								<DocChangeAction Name="SelfIntersect" UniqueId="52becc51-d535-4a88-a31d-532cd872ac53" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="KnotMultiplicities" UniqueId="67e35a7e-f5d1-429e-b945-d024b19cd5ea" Action="modified">
+								<DocChangeAction Name="KnotMultiplicities" UniqueId="9bc6659f-ee76-4946-ac22-3a91d943e028" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="WeightsData" UniqueId="97ca707f-42b4-4035-9016-14893e32c85c" Action="modified">
+								<DocChangeAction Name="WeightsData" UniqueId="0e32a179-45bb-47e7-8b1b-d07150ec391d" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="REAL" NewValue="IfcReal" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcRationalBSplineSurfaceWithKnots" UniqueId="2f0ff5ae-05b7-4b67-8139-3c48fe1ce3ca">
+						<DocChangeAction Name="IfcRationalBSplineSurfaceWithKnots" UniqueId="62bd202f-99c9-4f4d-a4ce-0e5ba53e9eb1">
 							<Changes>
-								<DocChangeAction Name="UDegree" UniqueId="a1d813de-3c45-401b-badf-b8f715ca3975" Action="modified">
+								<DocChangeAction Name="UDegree" UniqueId="71420533-21ea-4570-9f42-6a59c80b67b7" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="VDegree" UniqueId="ea33dabc-089f-49b8-bed3-df132fc5a1f8" Action="modified">
+								<DocChangeAction Name="VDegree" UniqueId="91495ffe-ba86-46e1-9404-27a2efdcc77e" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="UClosed" UniqueId="34aa5b11-2498-4c6f-a3d5-4b91f9bf7a58" Action="modified">
+								<DocChangeAction Name="UClosed" UniqueId="c2da3830-d3e3-43cd-8397-d36474372767" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="VClosed" UniqueId="7c793de0-d014-4108-92af-b63fb39ae1ba" Action="modified">
+								<DocChangeAction Name="VClosed" UniqueId="eecc032e-8ca5-450a-8d66-79ed5e346343" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="SelfIntersect" UniqueId="32aec447-ceae-4bde-ab55-487ebb72a210" Action="modified">
+								<DocChangeAction Name="SelfIntersect" UniqueId="215aea46-cbef-4c99-b882-83c6c84a8353" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="UMultiplicities" UniqueId="2c9a314f-0c4e-47f0-8fd9-9f18096da3d9" Action="modified">
+								<DocChangeAction Name="UMultiplicities" UniqueId="c239e229-9997-41a3-81a6-2260f1359d6e" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="VMultiplicities" UniqueId="a9e77e5a-0065-4653-8e5a-b20aff6d8bfd" Action="modified">
+								<DocChangeAction Name="VMultiplicities" UniqueId="776eea76-25f6-4aaf-b2c1-586b673a2fac" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcInteger" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="WeightsData" UniqueId="f531bd26-a1ca-4ace-ae8a-9eb1d1583b27" Action="modified">
+								<DocChangeAction Name="WeightsData" UniqueId="07b5bd35-4d3e-4bb9-8901-1260f16a4880" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="REAL" NewValue="IfcReal" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcRectangularTrimmedSurface" UniqueId="09cc3ae9-7500-4875-809e-244d031fa0e7">
+						<DocChangeAction Name="IfcRectangularTrimmedSurface" UniqueId="eab9581b-e88e-4430-8c72-feac8f743d39">
 							<Changes>
-								<DocChangeAction Name="Usense" UniqueId="1e43f9d0-5ae9-4d2c-beb1-7e6f92885a50" Action="modified">
+								<DocChangeAction Name="Usense" UniqueId="24d58cf3-b8fc-42be-92ff-3dfbb9a1a116" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Vsense" UniqueId="4f553bd7-4b06-430d-b173-5dacc02fa994" Action="modified">
-									<Aspects>
-										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
-									</Aspects>
-								</DocChangeAction>
-							</Changes>
-						</DocChangeAction>
-						<DocChangeAction Name="IfcReparametrisedCompositeCurveSegment" UniqueId="b8a08b31-a7da-4be5-99fc-bba5f2f978e8">
-							<Changes>
-								<DocChangeAction Name="SameSense" UniqueId="61398a17-f7ff-4cd6-aea2-e254e24dd33c" Action="modified">
+								<DocChangeAction Name="Vsense" UniqueId="a7d87fab-aab2-4331-8a86-e3e46b82a114" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcTrimmedCurve" UniqueId="8c454dba-cb18-4cca-914f-b8001c3d0137">
+						<DocChangeAction Name="IfcReparametrisedCompositeCurveSegment" UniqueId="1d95106d-e01b-4d4f-8283-a818035dbc87">
 							<Changes>
-								<DocChangeAction Name="SenseAgreement" UniqueId="57d7f038-1534-4562-81e3-cb307ede5233" Action="modified">
+								<DocChangeAction Name="SameSense" UniqueId="1b07a204-1b9c-47c5-a7a6-8539520fb873" Action="modified">
+									<Aspects>
+										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
+									</Aspects>
+								</DocChangeAction>
+							</Changes>
+						</DocChangeAction>
+						<DocChangeAction Name="IfcTrimmedCurve" UniqueId="e1ea283d-1107-464c-ad91-f45c09703a5a">
+							<Changes>
+								<DocChangeAction Name="SenseAgreement" UniqueId="9b2f4dfe-3050-4df1-a78c-89e261839b13" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
@@ -1144,121 +1144,121 @@
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcMeasureResource" UniqueId="e249615f-c139-4e88-ba95-2244feb69597">
+				<DocChangeAction Name="IfcMeasureResource" UniqueId="ee666a6f-2c0f-4b06-a275-9288733fe9bb">
 					<Changes>
-						<DocChangeAction Name="IfcBinary" UniqueId="46f75e41-145b-4153-9fb8-a0645e2af467" Action="added" />
-						<DocChangeAction Name="IfcPositiveInteger" UniqueId="26b17a40-0082-4b83-8d9e-ec95d51af624" Action="added" />
-						<DocChangeAction Name="IfcSimpleValue" UniqueId="03806648-2a1a-469f-b756-eebd54cc4cf6">
+						<DocChangeAction Name="IfcBinary" UniqueId="626a4abd-6d12-4176-a241-b749a5834ef7" Action="added" />
+						<DocChangeAction Name="IfcPositiveInteger" UniqueId="cdfeb4f5-bc28-487f-a1a8-49c13eff8438" Action="added" />
+						<DocChangeAction Name="IfcSimpleValue" UniqueId="5f2fb74c-2914-403f-b9a9-f02af8993d08">
 							<Changes>
-								<DocChangeAction Name="IfcPositiveInteger" UniqueId="18040352-70e0-4e93-8ff4-7207fa9fd910" Action="added" />
+								<DocChangeAction Name="IfcPositiveInteger" UniqueId="37d89ae4-a719-4bb3-a18e-26033aa9b53b" Action="added" />
 							</Changes>
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcPresentationAppearanceResource" UniqueId="6166025b-1d2e-40f3-85d9-3e617b6220bf">
+				<DocChangeAction Name="IfcPresentationAppearanceResource" UniqueId="e1026077-85a2-4084-8ffa-2eb8d9c1884d">
 					<Changes>
-						<DocChangeAction Name="IfcBlobTexture" UniqueId="2dcb557b-1672-4ba5-b143-19c5b31ce2d5">
+						<DocChangeAction Name="IfcBlobTexture" UniqueId="a717e88f-7e90-497a-8256-36b5943b97a6">
 							<Changes>
-								<DocChangeAction Name="RepeatS" UniqueId="d48c60f0-66f1-43f0-a884-1149273c3edf" Action="modified">
+								<DocChangeAction Name="RepeatS" UniqueId="491c6f3b-6e2d-415a-9a55-5bc182ad1496" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="RepeatT" UniqueId="c085a17c-5f34-4218-906b-502b847f45d1" Action="modified">
+								<DocChangeAction Name="RepeatT" UniqueId="bf1ff205-0257-4fb7-9163-c0fa4cf8838f" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="RasterCode" UniqueId="157cac6b-4bb9-434b-a63c-64320503c639" Action="modified">
+								<DocChangeAction Name="RasterCode" UniqueId="61080731-0701-4d45-83f7-1390cacbe461" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BINARY" NewValue="IfcBinary" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcCurveStyle" UniqueId="d3d0dc5d-a6de-4c77-8852-cb5273e6e2f5">
+						<DocChangeAction Name="IfcCurveStyle" UniqueId="ed70c8c5-d8f1-4f25-97e7-270f803d1a41">
 							<Changes>
-								<DocChangeAction Name="ModelOrDraughting" UniqueId="7e530ace-8826-4532-8c6b-84af0f22cfd4" Action="modified">
+								<DocChangeAction Name="ModelOrDraughting" UniqueId="ed53c02a-06bc-490c-a64a-c72659665a8a" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcFillAreaStyle" UniqueId="e09b7c01-6a28-4ca8-a6c7-5b2135a2ce4e">
+						<DocChangeAction Name="IfcFillAreaStyle" UniqueId="edc91477-ee74-418c-a41c-0ff72a1a20da">
 							<Changes>
-								<DocChangeAction Name="ModelorDraughting" UniqueId="0c341ba2-35bd-46d2-a466-4cab183cd9be" Action="modified">
+								<DocChangeAction Name="ModelorDraughting" UniqueId="b5ee2953-2c07-437a-bfc6-83607a143059" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcImageTexture" UniqueId="7b851ebd-fba1-402f-94b6-21d5a06d5b0b">
+						<DocChangeAction Name="IfcImageTexture" UniqueId="7a6dfe2f-5b4d-4656-807d-41d4951cd352">
 							<Changes>
-								<DocChangeAction Name="RepeatS" UniqueId="98aa4284-bb6d-4b85-94ac-bbad34e9cb2d" Action="modified">
+								<DocChangeAction Name="RepeatS" UniqueId="9aa75830-510d-42ca-afa2-babce95b18af" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="RepeatT" UniqueId="7c781f6d-c300-4763-bbe7-4c6f90d5e06e" Action="modified">
+								<DocChangeAction Name="RepeatT" UniqueId="66aca187-430f-4621-86e9-b9345c5aa064" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcIndexedColourMap" UniqueId="102db5bd-fc9d-4e60-9a02-92507b2e631f">
+						<DocChangeAction Name="IfcIndexedColourMap" UniqueId="f47d7a0c-677e-4dba-a384-d2a8fffaed8a">
 							<Changes>
-								<DocChangeAction Name="Opacity" UniqueId="aefb993e-1365-4a85-b2cb-a070c453a1de" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Opacity" UniqueId="d9a9d1dc-2786-4ce0-870b-0e76c8208f13" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="Overrides" NewValue="Opacity" />
 										<DocChangeAspect Aspect="type" OldValue="IfcSurfaceStyleShading" NewValue="IfcNormalisedRatioMeasure" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="ColourIndex" UniqueId="41c79e1d-7e09-419c-8ec2-5910459da0ae" Action="modified">
+								<DocChangeAction Name="ColourIndex" UniqueId="40dd9231-a1c2-4c8d-8859-3eb55ce600f3" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcPositiveInteger" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcIndexedTriangleTextureMap" UniqueId="80309ddc-1344-4ce1-a564-7ff9d55ec94e">
+						<DocChangeAction Name="IfcIndexedTriangleTextureMap" UniqueId="e7e6f7d4-dddb-4b53-8d69-37eaf58ce117">
 							<Changes>
-								<DocChangeAction Name="TexCoordIndex" UniqueId="beed6bb5-9e39-4a8c-9d12-866fdcb9f721" Action="modified">
+								<DocChangeAction Name="TexCoordIndex" UniqueId="3c29a101-b0fc-4e4d-b9a2-4f2efc80cf5e" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="INTEGER" NewValue="IfcPositiveInteger" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcPixelTexture" UniqueId="8d1399ef-fedc-408a-ba28-781ccccbcc66">
+						<DocChangeAction Name="IfcPixelTexture" UniqueId="1a6ddf7c-a79c-4a95-8f84-c76cf97c05c5">
 							<Changes>
-								<DocChangeAction Name="RepeatS" UniqueId="774ec147-93f6-4558-8d06-ff577aae6540" Action="modified">
+								<DocChangeAction Name="RepeatS" UniqueId="fc8d769e-0c69-4736-94ab-a1fdb718cf4f" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="RepeatT" UniqueId="62933a2b-113d-474c-968a-9555353582fe" Action="modified">
+								<DocChangeAction Name="RepeatT" UniqueId="75153867-dab2-4573-9ee1-34fc5bf0208e" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Pixel" UniqueId="907154bd-18f7-4112-a224-adeb01669533" Action="modified">
+								<DocChangeAction Name="Pixel" UniqueId="eeaa18e6-1062-470f-a114-ddbd757a92ee" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BINARY (32)" NewValue="IfcBinary" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcSurfaceStyleShading" UniqueId="0518e9b7-1fe4-4678-bc9a-be7a47d44948">
+						<DocChangeAction Name="IfcSurfaceStyleShading" UniqueId="cbf78763-da6c-4c3e-a0a8-d5b4892255c5">
 							<Changes>
-								<DocChangeAction Name="Transparency" UniqueId="571cd146-66c3-447c-bc51-8632fec486bc" Action="added" />
+								<DocChangeAction Name="Transparency" UniqueId="4af16b9b-5992-4d3d-aad4-3db4e69e7b63" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcTextStyle" UniqueId="16343d83-aaa9-4fe7-b6a4-6b6e1ce445de">
+						<DocChangeAction Name="IfcTextStyle" UniqueId="cfdf4438-6efc-4890-aab1-ab32f46fa937">
 							<Changes>
-								<DocChangeAction Name="ModelOrDraughting" UniqueId="960f0717-c519-4cfa-b2e6-3608c2ecd60d" Action="modified">
+								<DocChangeAction Name="ModelOrDraughting" UniqueId="043d7a63-5541-4e96-9d56-fcb112ece5f9" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
@@ -1267,21 +1267,21 @@
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcPresentationOrganizationResource" UniqueId="4a86fb7e-f20e-42b4-9744-69df6f9f3222">
+				<DocChangeAction Name="IfcPresentationOrganizationResource" UniqueId="3e19d9bf-e7f5-43f9-ab65-71c583c225e0">
 					<Changes>
-						<DocChangeAction Name="IfcPresentationLayerWithStyle" UniqueId="f2f2f54f-83c6-486a-81f2-63aa27d3bf17">
+						<DocChangeAction Name="IfcPresentationLayerWithStyle" UniqueId="dbe43ee5-38eb-417e-bbf6-5e4e40851363">
 							<Changes>
-								<DocChangeAction Name="LayerOn" UniqueId="e037e1c9-81fe-4ff1-bac9-f04649d02f8c" Action="modified">
+								<DocChangeAction Name="LayerOn" UniqueId="ee81460a-e35c-492a-b665-56776aac1804" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="LayerFrozen" UniqueId="8e31e49a-5b5b-49cf-9352-261e282c53f0" Action="modified">
+								<DocChangeAction Name="LayerFrozen" UniqueId="5b1e7153-eb76-429d-b676-7b6c3def0877" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="LayerBlocked" UniqueId="18108af1-7a05-41f2-a4c4-d5d11cbc311f" Action="modified">
+								<DocChangeAction Name="LayerBlocked" UniqueId="4f7902b4-46d6-4ccf-9776-91d0c6477235" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
@@ -1290,97 +1290,97 @@
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcPropertyResource" UniqueId="cef4f87c-cc56-450f-8ea1-e38b5e4c514e">
+				<DocChangeAction Name="IfcPropertyResource" UniqueId="632a8401-fb80-4b58-9834-d2734ad66733">
 					<Changes>
-						<DocChangeAction Name="IfcComplexProperty" UniqueId="d35f3a48-10ac-4074-9f45-3c70bba12fa4">
+						<DocChangeAction Name="IfcComplexProperty" UniqueId="dcaca202-1e1c-4826-9b3c-c72cb1daeaaf">
 							<Changes>
-								<DocChangeAction Name="HasConstraints" UniqueId="7101d364-2ef1-49d0-ba4b-2ad67f9018ac" Action="added" />
-								<DocChangeAction Name="HasApprovals" UniqueId="39bc0fcb-f58f-4a76-9b0a-7b35f207aab5" Action="added" />
+								<DocChangeAction Name="HasConstraints" UniqueId="aba52ab6-9ca7-4899-9487-48e2f9c5142e" Action="added" />
+								<DocChangeAction Name="HasApprovals" UniqueId="15bd2777-36c7-49fe-a7a1-fab6762a0e99" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcPropertyBoundedValue" UniqueId="3e272422-929c-4f5e-a4f4-dbf9dc7b3faf">
+						<DocChangeAction Name="IfcPropertyBoundedValue" UniqueId="737fe36f-6805-46a2-aeaf-93b81c9958e5">
 							<Changes>
-								<DocChangeAction Name="HasConstraints" UniqueId="be961d79-054d-4e1c-aee0-95155bf91b2c" Action="added" />
-								<DocChangeAction Name="HasApprovals" UniqueId="849ea062-c462-42cc-874f-eeea4b9cdde5" Action="added" />
+								<DocChangeAction Name="HasConstraints" UniqueId="7d110a8c-488b-482e-a0bc-5798f1d6614a" Action="added" />
+								<DocChangeAction Name="HasApprovals" UniqueId="f5b2e2cc-9424-44de-b943-5c0de176f1e6" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcPropertyEnumeratedValue" UniqueId="a6267aab-4f64-406b-b7b3-c04fc3c4810c">
+						<DocChangeAction Name="IfcPropertyEnumeratedValue" UniqueId="afa91b5a-4651-44a2-9e5e-8b4310004631">
 							<Changes>
-								<DocChangeAction Name="HasConstraints" UniqueId="7a59090f-4575-4e21-bc4e-23aa174c2c8f" Action="added" />
-								<DocChangeAction Name="HasApprovals" UniqueId="57cdd7de-c8c9-4905-9a4b-64f1d0878829" Action="added" />
+								<DocChangeAction Name="HasConstraints" UniqueId="db1985ec-02b7-4f28-965d-54aac5b91ee2" Action="added" />
+								<DocChangeAction Name="HasApprovals" UniqueId="0f25c0b3-2d44-4925-94c9-8f273750727f" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcPropertyListValue" UniqueId="87b0c210-6dbc-4d93-8aef-a460e361fe7c">
+						<DocChangeAction Name="IfcPropertyListValue" UniqueId="8ac9a237-94df-420c-bdc7-c583340110ce">
 							<Changes>
-								<DocChangeAction Name="HasConstraints" UniqueId="5c589021-244f-4c64-80ac-e9e5dcf37278" Action="added" />
-								<DocChangeAction Name="HasApprovals" UniqueId="bccf6481-8660-4673-b004-65636d192a90" Action="added" />
+								<DocChangeAction Name="HasConstraints" UniqueId="793b9ab9-d48e-480a-a983-e71a2bc5abd1" Action="added" />
+								<DocChangeAction Name="HasApprovals" UniqueId="156f12e7-199e-408f-bbda-3881fdb76959" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcPropertyReferenceValue" UniqueId="2d965424-bc84-40fc-ae84-0dd855ef2c9e">
+						<DocChangeAction Name="IfcPropertyReferenceValue" UniqueId="4085c62b-fa0a-46cb-945e-897adce1e876">
 							<Changes>
-								<DocChangeAction Name="HasConstraints" UniqueId="5ffd3a3b-b883-49a5-bc19-316087d4ac06" Action="added" />
-								<DocChangeAction Name="HasApprovals" UniqueId="0730681d-bd79-4c50-a952-56f5f3af99b0" Action="added" />
+								<DocChangeAction Name="HasConstraints" UniqueId="51927694-4112-4efe-849d-9f6656104449" Action="added" />
+								<DocChangeAction Name="HasApprovals" UniqueId="5459c3b1-861d-490e-8454-dff7bd7a58c2" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcPropertySingleValue" UniqueId="072e7409-8186-4890-9a58-06ae2ff69fac">
+						<DocChangeAction Name="IfcPropertySingleValue" UniqueId="22b3480c-757e-47b8-ab98-f4e3453fe393">
 							<Changes>
-								<DocChangeAction Name="HasConstraints" UniqueId="ca1cf9df-3963-4eea-acbd-d60ae41809b4" Action="added" />
-								<DocChangeAction Name="HasApprovals" UniqueId="a3eac75c-22ce-44fa-ba04-396a91472ac9" Action="added" />
+								<DocChangeAction Name="HasConstraints" UniqueId="b765c861-fedc-4e20-972f-d1d395e282bf" Action="added" />
+								<DocChangeAction Name="HasApprovals" UniqueId="f905f6f3-d0ce-4287-bed6-390059c6d63c" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcPropertyTableValue" UniqueId="659e002a-a1a0-400f-b605-7890fc0a2d77">
+						<DocChangeAction Name="IfcPropertyTableValue" UniqueId="f5d974fb-21cc-4f6c-a59f-42439b54d2a4">
 							<Changes>
-								<DocChangeAction Name="HasConstraints" UniqueId="621c03eb-7947-4369-86bf-631c996d8e25" Action="added" />
-								<DocChangeAction Name="HasApprovals" UniqueId="77070d4a-4e4d-403d-bd96-67b021957c79" Action="added" />
+								<DocChangeAction Name="HasConstraints" UniqueId="1d035302-e180-4ad0-b683-808629a012b7" Action="added" />
+								<DocChangeAction Name="HasApprovals" UniqueId="34fb300a-4e6d-4af1-a8e4-351d682a3f14" Action="added" />
 							</Changes>
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcRepresentationResource" UniqueId="82137ee4-7a4d-4d20-9af2-3612d5228c01">
+				<DocChangeAction Name="IfcRepresentationResource" UniqueId="689551e3-f939-4259-bcfa-679f21487c1d">
 					<Changes>
-						<DocChangeAction Name="IfcGeometricRepresentationContext" UniqueId="a1ecc17a-6176-40d8-a067-abe151ab77f2">
+						<DocChangeAction Name="IfcGeometricRepresentationContext" UniqueId="9f4dd87b-c60d-4a1c-afc3-24d07881d488">
 							<Changes>
-								<DocChangeAction Name="Precision" UniqueId="f8853265-ee12-45ca-8185-e1bccaa37809" Action="modified">
+								<DocChangeAction Name="Precision" UniqueId="3f7a87b5-986d-4595-ae4f-1421fae2e50b" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="REAL" NewValue="IfcReal" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="HasCoordinateOperation" UniqueId="da7079ce-4367-4fff-9803-8692fe220760" Action="added" />
+								<DocChangeAction Name="HasCoordinateOperation" UniqueId="892ba0c5-4eab-4c6b-8b14-c5a897c5c7cf" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcGeometricRepresentationSubContext" UniqueId="a1fcd972-3f1d-4048-a43b-e956e9fb9c42">
+						<DocChangeAction Name="IfcGeometricRepresentationSubContext" UniqueId="be595644-e916-4891-a2dc-0e4d62ce9069">
 							<Changes>
-								<DocChangeAction Name="Precision" UniqueId="7c25fd9f-e071-42b7-8dba-c970e68d052b" Action="modified">
+								<DocChangeAction Name="Precision" UniqueId="793677b6-b0cf-455f-af84-6f6d2dcda845" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="REAL" NewValue="IfcReal" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="HasCoordinateOperation" UniqueId="f2c6d189-b8c0-4c7b-97e5-844c991961f7" Action="added" />
-								<DocChangeAction Name="Precision" UniqueId="c107bd10-4f60-43c2-90d7-abc28512a18f" Action="modified">
+								<DocChangeAction Name="HasCoordinateOperation" UniqueId="daea210b-6ec6-45b8-b137-15d9d606c8ca" Action="added" />
+								<DocChangeAction Name="Precision" UniqueId="107d73c3-129f-4ad0-8957-9927f9118516" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="REAL" NewValue="IfcReal" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcProjectedCRS" UniqueId="b6c8bb56-dc47-4f35-8307-eb4097c01630">
+						<DocChangeAction Name="IfcProjectedCRS" UniqueId="cd505aef-3998-4fe3-9d84-0d2228d21172">
 							<Changes>
-								<DocChangeAction Name="Name" UniqueId="29ea38c2-c056-4e4b-91f2-d3840a9d687c" Action="modified">
+								<DocChangeAction Name="Name" UniqueId="8477a406-fba4-47a9-8c54-24a722bb00c8" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="instantiation" OldValue="OPTIONAL" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="GeodeticDatum" UniqueId="eea88357-8c85-4fdd-b390-ee03e00bdba0" Action="modified">
+								<DocChangeAction Name="GeodeticDatum" UniqueId="a5e1f76c-0185-4551-858b-19eda5b0d714" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="instantiation" NewValue="OPTIONAL" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="HasCoordinateOperation" UniqueId="c0fc01aa-53e7-4330-8b4e-93c71733dc5f" Action="added" />
+								<DocChangeAction Name="HasCoordinateOperation" UniqueId="9c884db5-5bbe-41af-86b4-825fcc33962f" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcShapeAspect" UniqueId="ca3b8311-f678-4eeb-a2ab-6ebda669974d">
+						<DocChangeAction Name="IfcShapeAspect" UniqueId="5e6e6261-938b-4902-8a5b-5b84e5e5bb27">
 							<Changes>
-								<DocChangeAction Name="ProductDefinitional" UniqueId="d5b99e6e-e92c-4af7-b2b1-cec0f1d2b50a" Action="modified">
+								<DocChangeAction Name="ProductDefinitional" UniqueId="eb2e8170-34d0-4783-8afc-ac05b88c20ac" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="LOGICAL" NewValue="IfcLogical" />
 									</Aspects>
@@ -1389,56 +1389,56 @@
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcTopologyResource" UniqueId="ab541160-82ae-4a8f-90b8-ab1bb64c39bc">
+				<DocChangeAction Name="IfcTopologyResource" UniqueId="f12c5fc9-c7fc-4ca3-93dd-f75810ba6e5b">
 					<Changes>
-						<DocChangeAction Name="IfcAdvancedFace" UniqueId="a9dca730-57f2-485e-a2f1-f263de40ee7a">
+						<DocChangeAction Name="IfcAdvancedFace" UniqueId="dbf5866d-b9df-44ea-a3df-82eab240d29d">
 							<Changes>
-								<DocChangeAction Name="SameSense" UniqueId="249f2f33-9494-477c-8277-ecb06633987d" Action="modified">
+								<DocChangeAction Name="SameSense" UniqueId="77094fb9-cc19-407e-9998-56ce0b6d0dfd" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcEdgeCurve" UniqueId="ed6fbc7c-08b5-4fb1-9fc2-01eafc37a50c">
+						<DocChangeAction Name="IfcEdgeCurve" UniqueId="e0fc33db-0ace-4acb-aea3-779102bd3d89">
 							<Changes>
-								<DocChangeAction Name="SameSense" UniqueId="bc02c039-8471-488a-ab77-0a7c6cb4770a" Action="modified">
+								<DocChangeAction Name="SameSense" UniqueId="df2eb7c1-ae01-4bff-8640-97c7b0db3258" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcFaceBound" UniqueId="07ad8239-f916-4d0d-bdcd-0d0d6066d930">
+						<DocChangeAction Name="IfcFaceBound" UniqueId="a183f789-a970-4d9d-bd5f-6119798ff99f">
 							<Changes>
-								<DocChangeAction Name="Orientation" UniqueId="748e185d-405d-4531-9ab6-891a8058cde7" Action="modified">
+								<DocChangeAction Name="Orientation" UniqueId="683aa875-af06-47bf-8ca9-8464e6f8f191" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcFaceOuterBound" UniqueId="5d31c6f9-cbfc-42bf-beb6-b410f9fb4d8b">
+						<DocChangeAction Name="IfcFaceOuterBound" UniqueId="668f9446-4a75-4a53-b951-60f931ff54f3">
 							<Changes>
-								<DocChangeAction Name="Orientation" UniqueId="4c2335c4-a850-40e4-87bf-3be6a7ec936d" Action="modified">
+								<DocChangeAction Name="Orientation" UniqueId="20ea9a28-7924-4b3c-b722-a109aa038ca2" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcFaceSurface" UniqueId="546bb7ed-5b5f-46ad-8399-c3d48bdc5db7">
+						<DocChangeAction Name="IfcFaceSurface" UniqueId="5869e3eb-0471-4b51-825d-e3d4f52affc2">
 							<Changes>
-								<DocChangeAction Name="SameSense" UniqueId="96e15077-c103-42c1-9730-bf4d960e9b70" Action="modified">
+								<DocChangeAction Name="SameSense" UniqueId="fd4750a1-1cd1-4eb8-b3bd-0e8033045949" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcOrientedEdge" UniqueId="57b57e56-44ed-4417-bc0a-12dfc0d625f0">
+						<DocChangeAction Name="IfcOrientedEdge" UniqueId="d8cf04a9-5ed4-443d-b29b-490ddf2739f3">
 							<Changes>
-								<DocChangeAction Name="Orientation" UniqueId="7e7e1782-1748-4820-8b66-af37ae253ffc" Action="modified">
+								<DocChangeAction Name="Orientation" UniqueId="e6beeea7-98ee-45c5-99bc-db68517abfce" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
@@ -1447,16 +1447,16 @@
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcUtilityResource" UniqueId="00a1df23-6d69-4cbf-91fd-c4b5c615e3f7">
+				<DocChangeAction Name="IfcUtilityResource" UniqueId="de7668d4-2933-40f0-9a38-f6b567e0f923">
 					<Changes>
-						<DocChangeAction Name="IfcTableRow" UniqueId="2870f90e-3b67-45db-a6b6-6bd902c2e907">
+						<DocChangeAction Name="IfcTableRow" UniqueId="96d8c04e-ec53-4133-846a-286d6f4cc65f">
 							<Changes>
-								<DocChangeAction Name="IsHeading" UniqueId="fcd53cda-71f8-4cc1-895e-528445349379" Action="modified">
+								<DocChangeAction Name="IsHeading" UniqueId="a764d90c-199d-4e06-bab8-6a28639c25f4" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="BOOLEAN" NewValue="IfcBoolean" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="OfTable" UniqueId="c33b1162-b12d-48c4-a93b-2591d0ec3dca" Action="deleted" />
+								<DocChangeAction Name="OfTable" UniqueId="c7353bce-6369-4d59-a719-c45fbf322cfe" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
 					</Changes>
@@ -1465,18 +1465,18 @@
 		</DocChangeAction>
 	</ChangesEntities>
 	<ChangesProperties>
-		<DocChangeAction Name="Core data schemas" UniqueId="cdb9ce29-8ae4-4cf0-b6e2-3395e56cf07f">
+		<DocChangeAction Name="Core data schemas" UniqueId="ee98d0b1-9ddc-4b8e-b7a7-b7635a8991bf">
 			<Changes>
-				<DocChangeAction Name="IfcProductExtension" UniqueId="eb958baf-b1ec-4325-a9da-7a7b7570fef9">
+				<DocChangeAction Name="IfcProductExtension" UniqueId="f79a3272-e5fa-4325-98e9-ee78a01ce105">
 					<Changes>
-						<DocChangeAction Name="Pset_EnvironmentalImpactValues" UniqueId="a82c5292-f0f6-4a9e-b81a-6cabc352aa44">
+						<DocChangeAction Name="Pset_EnvironmentalImpactValues" UniqueId="e9070fbc-715c-4844-976a-4090cb11eb7a">
 							<Changes>
-								<DocChangeAction Name="LeadInTime" UniqueId="9f5995eb-bde9-4db2-8f2e-5e57d0752d66" Action="added" />
-								<DocChangeAction Name="Duration" UniqueId="d232c132-d6de-449b-ab4b-c46c3a96419b" Action="added" />
-								<DocChangeAction Name="LeadOutTime" UniqueId="f9bafa34-2800-4b78-9f5b-2e275046352e" Action="added" />
+								<DocChangeAction Name="LeadInTime" UniqueId="0f4be6c5-b175-44f1-bfaa-fd975e46b9f2" Action="added" />
+								<DocChangeAction Name="Duration" UniqueId="215f4b0b-cc4d-4b19-a39c-81ac7d185fab" Action="added" />
+								<DocChangeAction Name="LeadOutTime" UniqueId="6e1ed382-9856-4e64-8800-200b0cff24f3" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="Pset_ShadingDeviceCommon" UniqueId="26a39f33-156c-4894-8e05-32c356b78347" Action="moved">
+						<DocChangeAction Name="Pset_ShadingDeviceCommon" UniqueId="6e417f61-14f7-40d2-8bcf-04b6525d294a" Action="moved">
 							<Aspects>
 								<DocChangeAspect Aspect="schema" OldValue="IFCPRODUCTEXTENSION" NewValue="IFCSHAREDBLDGELEMENTS" />
 							</Aspects>
@@ -1485,60 +1485,60 @@
 				</DocChangeAction>
 			</Changes>
 		</DocChangeAction>
-		<DocChangeAction Name="Shared element data schemas" UniqueId="666f42ca-c740-4380-83af-4b382b17a952">
+		<DocChangeAction Name="Shared element data schemas" UniqueId="3a51fd7f-082b-4f4c-bfcc-fcb60a651085">
 			<Changes>
-				<DocChangeAction Name="IfcSharedBldgElements" UniqueId="032e1a97-fb12-4b07-ab1e-258b1777daae">
+				<DocChangeAction Name="IfcSharedBldgElements" UniqueId="3750ad54-ee15-46fa-a459-4142ab3e6e3a">
 					<Changes>
-						<DocChangeAction Name="Pset_DoorCommon" UniqueId="a588b177-e940-4baa-8d8d-f6d2a69f86cc">
+						<DocChangeAction Name="Pset_DoorCommon" UniqueId="46b62e23-4919-4a5b-9f6d-5a19cf7f7ad3">
 							<Changes>
-								<DocChangeAction Name="WaterTightnessRating" UniqueId="34694309-8760-48b0-8ec7-b1a8d2cb1c57" Action="added" />
-								<DocChangeAction Name="MechanicalLoadRating" UniqueId="60e9ad03-ad96-420c-81fe-4a91bc9ce487" Action="added" />
-								<DocChangeAction Name="WindLoadRating" UniqueId="40a9214a-c70c-4439-a168-04af4faaa88c" Action="added" />
+								<DocChangeAction Name="WaterTightnessRating" UniqueId="17986db7-f29f-40a1-a704-75e8e1a05f04" Action="added" />
+								<DocChangeAction Name="MechanicalLoadRating" UniqueId="baf95aa2-7d53-41fc-998a-36986954ee2a" Action="added" />
+								<DocChangeAction Name="WindLoadRating" UniqueId="35d52496-eeee-44c2-9ef7-50d4082e8f3b" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="Pset_ShadingDeviceCommon" UniqueId="04f41c97-9f76-4125-b200-7819a1c8b31b" Action="moved">
+						<DocChangeAction Name="Pset_ShadingDeviceCommon" UniqueId="07c2f672-2120-4691-93c1-11b66e9e2fc9" Action="moved">
 							<Aspects>
 								<DocChangeAspect Aspect="schema" OldValue="IFCPRODUCTEXTENSION" NewValue="IFCSHAREDBLDGELEMENTS" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="Pset_WindowCommon" UniqueId="ace823c8-e2d2-47fc-a705-52d501674cd5">
+						<DocChangeAction Name="Pset_WindowCommon" UniqueId="eee7097b-d68c-4007-9a3e-4b39d038391a">
 							<Changes>
-								<DocChangeAction Name="WaterTightnessRating" UniqueId="4d997eca-d873-4a69-aa1e-f89580e53e86" Action="added" />
-								<DocChangeAction Name="MechanicalLoadRating" UniqueId="3f207fed-c83c-4366-b5b4-9cc413574e96" Action="added" />
-								<DocChangeAction Name="WindLoadRating" UniqueId="39225c26-b3fd-45ec-8f04-0ef288e854df" Action="added" />
+								<DocChangeAction Name="WaterTightnessRating" UniqueId="8036e032-4a54-491a-ad92-c1f4a41db23c" Action="added" />
+								<DocChangeAction Name="MechanicalLoadRating" UniqueId="041d8ec0-5eaa-4313-a269-f5369eff0533" Action="added" />
+								<DocChangeAction Name="WindLoadRating" UniqueId="ecd6bc53-5f36-4aba-bf5b-af4bec9c58c3" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="Pset_DoorWindowShadingType" UniqueId="e5a94556-dff6-42f5-ac0b-3c91a2dcb2b0" Action="deleted" />
+						<DocChangeAction Name="Pset_DoorWindowShadingType" UniqueId="d09b6aad-6d8f-4b9d-9bcf-59c64a142407" Action="deleted" />
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcSharedBldgServiceElements" UniqueId="e766f69f-c56c-4432-9586-61f28be82dc2">
+				<DocChangeAction Name="IfcSharedBldgServiceElements" UniqueId="80ec3936-a4a0-4868-a093-9540e3deba33">
 					<Changes>
-						<DocChangeAction Name="Pset_DistributionPortPHistoryCable" UniqueId="cd95a576-aba3-42ba-a95f-0620ae928a10" Action="modified">
+						<DocChangeAction Name="Pset_DistributionPortPHistoryCable" UniqueId="c2d9f8f8-a56d-47be-a24e-53e179f496c5" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="instantiation" OldValue="IfcDistributionPort/ELECTRICAL" NewValue="IfcDistributionPort/CABLE" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="Pset_DistributionPortPHistoryDuct" UniqueId="ea2a51f0-a72b-4f4e-be30-e33e8e09a884" Action="modified">
+						<DocChangeAction Name="Pset_DistributionPortPHistoryDuct" UniqueId="2c213fd5-9d94-49f2-b99d-a0ef31826d41" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="instantiation" OldValue="IfcDistributionPort/AIRCONDITIONING" NewValue="IfcDistributionPort/DUCT" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="Pset_DistributionPortPHistoryPipe" UniqueId="bd1bd94f-d87e-483d-8a13-c4d773191948" Action="modified">
+						<DocChangeAction Name="Pset_DistributionPortPHistoryPipe" UniqueId="727d2a56-0716-46be-9caf-536f94e9f4f5" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="instantiation" OldValue="IfcDistributionPort/GAS" NewValue="IfcDistributionPort/PIPE" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="Pset_DistributionPortTypeCable" UniqueId="98c6ce6b-8d1e-49c3-b4ab-b1d2e96d23e0" Action="modified">
+						<DocChangeAction Name="Pset_DistributionPortTypeCable" UniqueId="12edb791-0304-41b9-b821-218c8ded22c9" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="instantiation" OldValue="IfcDistributionPort/ELECTRICAL" NewValue="IfcDistributionPort/CABLE" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="Pset_DistributionPortTypeDuct" UniqueId="266ec3e9-5bd9-4b48-8629-13f18f858a49" Action="modified">
+						<DocChangeAction Name="Pset_DistributionPortTypeDuct" UniqueId="603cc42d-c86e-4622-97f7-fd3597f65608" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="instantiation" OldValue="IfcDistributionPort/AIRCONDITIONING" NewValue="IfcDistributionPort/DUCT" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="Pset_DistributionPortTypePipe" UniqueId="60c7f506-abd8-4e9e-94e0-26b3c09e6d8d" Action="modified">
+						<DocChangeAction Name="Pset_DistributionPortTypePipe" UniqueId="c653f25e-ddee-498b-adaa-055d726a66f1" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="instantiation" OldValue="IfcDistributionPort/CHEMICAL" NewValue="IfcDistributionPort/PIPE" />
 							</Aspects>
@@ -1547,35 +1547,35 @@
 				</DocChangeAction>
 			</Changes>
 		</DocChangeAction>
-		<DocChangeAction Name="Domain specific data schemas" UniqueId="cc5f0510-4a75-49c1-a9c2-361b2ef8452c">
+		<DocChangeAction Name="Domain specific data schemas" UniqueId="1ebd42b3-9d05-44ae-a7fb-043519c90011">
 			<Changes>
-				<DocChangeAction Name="IfcHvacDomain" UniqueId="f12955f1-b04b-46d1-a51f-82869d5714d9">
+				<DocChangeAction Name="IfcHvacDomain" UniqueId="02cae072-0631-4cc7-852c-8b3500aff623">
 					<Changes>
-						<DocChangeAction Name="Pset_CompressorTypeCommon" UniqueId="23b590aa-9cd2-4e38-9167-9f866a486cee">
+						<DocChangeAction Name="Pset_CompressorTypeCommon" UniqueId="6f2722e4-6b7b-4c2c-a6db-bbc69aa496c9">
 							<Changes>
-								<DocChangeAction Name="RefrigerantType" UniqueId="9d146eb3-b863-4614-bac2-4c228a0b0251" Action="deleted" />
+								<DocChangeAction Name="RefrigerantType" UniqueId="4dcaacb5-193a-4e94-b26c-af214f042b98" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="Pset_CondenserTypeCommon" UniqueId="f59e37ac-2c82-4a8a-843d-533546411c35">
+						<DocChangeAction Name="Pset_CondenserTypeCommon" UniqueId="17919a35-3fbe-4124-a796-595fbfe47bfb">
 							<Changes>
-								<DocChangeAction Name="RefrigerantMaterial" UniqueId="7b964278-288d-47b4-a829-7d747a188426" Action="deleted" />
+								<DocChangeAction Name="RefrigerantMaterial" UniqueId="c6efda8b-5ac8-4d74-9c44-dee780e14e83" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="Pset_DamperTypeCommon" UniqueId="ba8cc7fe-5a78-424f-880a-93e10f499a0b">
+						<DocChangeAction Name="Pset_DamperTypeCommon" UniqueId="43cec36d-d7da-4510-8f88-1e5e3d9eb93c">
 							<Changes>
-								<DocChangeAction Name="BladeMaterial" UniqueId="244c096f-f963-444a-a823-d2c76334b580" Action="deleted" />
-								<DocChangeAction Name="SealMaterial" UniqueId="dfbac6f8-b2e0-46c3-91f0-7d3e59d06477" Action="deleted" />
-								<DocChangeAction Name="FrameMaterial" UniqueId="f7a7a60f-cbe8-4af8-a6b3-118debef3c68" Action="deleted" />
+								<DocChangeAction Name="BladeMaterial" UniqueId="ad891b3f-0ac1-46b3-bf35-a49be3f03a54" Action="deleted" />
+								<DocChangeAction Name="SealMaterial" UniqueId="6966d3fd-66c8-4d18-92e3-1870dcabc614" Action="deleted" />
+								<DocChangeAction Name="FrameMaterial" UniqueId="494963e3-823c-4df3-a916-2fbb7d6b4291" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="Pset_EvaporatorTypeCommon" UniqueId="24dae982-9775-4df1-bcef-c25bb734bc6a">
+						<DocChangeAction Name="Pset_EvaporatorTypeCommon" UniqueId="1d8e5b83-9857-4381-979e-a189fc5894a0">
 							<Changes>
-								<DocChangeAction Name="RefrigerantType" UniqueId="b0621342-fa55-4857-b6e1-02d1f23fc085" Action="deleted" />
+								<DocChangeAction Name="RefrigerantType" UniqueId="3648ba20-ca1f-4846-8f17-bc3a5f75c1d0" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="Pset_ValveTypeCommon" UniqueId="52bb16e9-43a2-49ae-a6a0-6d58169804e9">
+						<DocChangeAction Name="Pset_ValveTypeCommon" UniqueId="fa8815d0-fa34-4fb0-a909-7bb2e271954f">
 							<Changes>
-								<DocChangeAction Name="BodyMaterial" UniqueId="59667b57-5e67-4cc9-a938-a4c1c5886920" Action="deleted" />
+								<DocChangeAction Name="BodyMaterial" UniqueId="282f25c1-050e-426f-b6e9-9e3d903c5a41" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
 					</Changes>
@@ -1584,11 +1584,11 @@
 		</DocChangeAction>
 	</ChangesProperties>
 	<ChangesQuantities>
-		<DocChangeAction Name="Domain specific data schemas" UniqueId="1093a6ac-86b3-4154-be17-b1af56138a57">
+		<DocChangeAction Name="Domain specific data schemas" UniqueId="da96f3dd-3d8c-4b75-9965-a7935c33f7d0">
 			<Changes>
-				<DocChangeAction Name="IfcStructuralElementsDomain" UniqueId="cdba0b53-9eee-433c-bf62-1843f4b24396">
+				<DocChangeAction Name="IfcStructuralElementsDomain" UniqueId="b41948e7-4097-4d4f-bca4-5a8e9f9f03ec">
 					<Changes>
-						<DocChangeAction Name="Qto_ReinforcingElementBaseQuantities" UniqueId="a35b8bd4-8a39-4570-a9cb-66b9d2f43af7" Action="added" />
+						<DocChangeAction Name="Qto_ReinforcingElementBaseQuantities" UniqueId="e65332e6-af49-4458-bf51-3696f3076b46" Action="added" />
 					</Changes>
 				</DocChangeAction>
 			</Changes>

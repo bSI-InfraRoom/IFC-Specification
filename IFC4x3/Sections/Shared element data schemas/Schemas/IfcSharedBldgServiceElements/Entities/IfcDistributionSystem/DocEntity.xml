@@ -17,5 +17,13 @@
 			<Documentation></Documentation>
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="0d30d1b1-dcf3-44a1-95ba-efb350ac88b8">
+			<Documentation>Either the _PredefinedType_ attribute is unset, or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcDistributionSystemEnum.USERDEFINED) OR
+((PredefinedType = IfcDistributionSystemEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

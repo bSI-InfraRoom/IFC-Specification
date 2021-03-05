@@ -1,1 +1,1 @@
-Properties for triggered mainenance policies
+Properties for triggered maintenance policies

@@ -830,7 +830,25 @@
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="3daa0f75-0016-4280-8e08-cfd06949a5af" Type="IfcPresentationStyle" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="d85280c2-1463-4a8b-bfb9-0a9e72973bf8">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcPresentationStyleAssignment" />
+			<ApplicableEntity xsi:type="DocEntity" Name="IfcPresentationStyleAssignment" UniqueId="3ca4cc70-a4c3-45fa-8e65-f85288defd8b" EntityFlags="229">
+				<Documentation>Assignment of style information to a styled item.
+
+{ .extDef}
+&gt; NOTE&amp;nbsp; Definition according to ISO/CD 10303-42:1992  
+&gt; The presentation style assignment is a set of styles which are assigned to styled items for the purpose of presenting these styled items.
+
+&gt; NOTE&amp;nbsp; Entity adapted from **presentation_style_assignment** defined in 0ISO10303-46.
+
+&gt; HISTORY&amp;nbsp; New entity in IFC2x2.
+
+{ .deprecated}
+&gt; Deprecation&amp;nbsp; Entity deprecated, it shall not be used anymore. Use direct assignment of _IfcPresentationStyle_ to _IfcStyledItem_.</Documentation>
+				<Localization>
+					<DocLocalization Locale="de" Name="Präsentationsstil - Zuweisung" />
+					<DocLocalization Locale="en" Name="Presentation Style Assignment" />
+					<DocLocalization Locale="fr" Name="Assignation d&apos;un type de présentation" />
+				</Localization>
+			</ApplicableEntity>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="0762de0b-0332-4404-9fe8-318a8d4d7155" Type="IfcPresentationStyleAssignment" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4e1ea038-6e2e-4fe5-851e-1683400789ce">

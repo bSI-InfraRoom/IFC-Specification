@@ -404,6 +404,15 @@ Scaling is supported to correlate the size of a texture with its physical dimens
 			<Templates>
 				<DocTemplateDefinition Name="Curve Axis Geometry" UniqueId="d1bbb094-d206-43eb-861d-d30b55524748" Type="IfcBoundedCurve">
 					<Templates>
+						<DocTemplateDefinition Name="Gradient Curve" UniqueId="cf0d4709-dc5b-484e-ae24-946553d6a4e1" Type="IfcGradientCurve">
+							<Rules>
+								<DocModelRuleAttribute Name="BaseCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcCompositeCurve" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
 						<DocTemplateDefinition id="Segmented_Reference_Curve_2gHse8jCz80xYJLZgX6oV" Name="Segmented Reference Curve" UniqueId="aa476a08-b4cf-4803-b893-563aa1fc6c9f" Type="IfcBoundedCurve">
 							<Rules>
 								<DocModelRuleAttribute Name="BaseCurve" />
@@ -443,6 +452,285 @@ Scaling is supported to correlate the size of a texture with its physical dimens
 								<DocModelRuleAttribute Name="EndPoint">
 									<Rules>
 										<DocModelRuleEntity Name="IfcPlacement" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+					</Templates>
+				</DocTemplateDefinition>
+				<DocTemplateDefinition Name="Curve Segment Geometry" UniqueId="2a8cab53-ed00-4d33-ac5f-85ae1dbf3ff7" Type="IfcCurveSegment">
+					<Templates>
+						<DocTemplateDefinition id="Arc_Segment_0AFJtPzoP2zAjI9GzCYRL6" Name="Arc Segment" UniqueId="0a3d3dd9-f726-42f4-ab52-250f4c89b546" Type="IfcCurveSegment">
+							<Rules>
+								<DocModelRuleAttribute Name="ParentCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcCircle">
+											<Rules>
+												<DocModelRuleAttribute Name="Radius">
+													<Rules>
+														<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SegmentStart">
+									<Rules>
+										<DocModelRuleEntity Name="IfcParameterValue" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SegmentLength">
+									<Rules>
+										<DocModelRuleEntity Name="IfcParameterValue" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Bloss_Transition_Segment_3xfEEn9pLCL8sUYFMqfDaC" Name="Bloss Transition Segment" UniqueId="fba4e3b1-2735-4c54-8d9e-88f5b4a4d90c" Type="IfcCurveSegment">
+							<Documentation>The Bloss transition segment is a special case of a fifht order spiral where the curvature rate of change is a cubic function and the terms are dependent on the length L measured from the inflection point. The parameter value is defined as the deflection i.e. bearing angle &amp;Theta.
+
+Only the cubic and quadratic terms are populated with the following values:
+QubicTerm = L/³√2
+QuadraticTerm = L/√3</Documentation>
+							<Rules>
+								<DocModelRuleAttribute Name="ParentCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcBlossCurve">
+											<Rules>
+												<DocModelRuleAttribute Name="QubicTerm">
+													<Rules>
+														<DocModelRuleEntity Name="IfcLengthMeasure" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="QuadraticTerm">
+													<Rules>
+														<DocModelRuleEntity Name="IfcLengthMeasure" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Clothoid_Transition_Segment_2z7rh4vvLDvxMgXL7_KGXj" Name="Clothoid Transition Segment" UniqueId="bd1f5ac4-e795-4de7-b5aa-8551fe51086d" Type="IfcCurveSegment">
+							<Documentation>A clothoid segment is based on the IfcClothoid where the value for the clothoid constant is specified as √L and L is the length measured from the inflection point.</Documentation>
+							<Rules>
+								<DocModelRuleAttribute Name="ParentCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcClothoid">
+											<Rules>
+												<DocModelRuleAttribute Name="ClothoidConstant">
+													<Rules>
+														<DocModelRuleEntity Name="IfcLengthMeasure" UniqueId="2b0c43d9-b2ac-4b5f-92bd-8a32a0576caa" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SegmentStart">
+									<Rules>
+										<DocModelRuleEntity Name="IfcParameterValue" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SegmentLength">
+									<Rules>
+										<DocModelRuleEntity Name="IfcParameterValue" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Cosine_Transition_Segment_3si9Ib7Y5E0AqPu1b5AM0M" Name="Cosine Transition Segment" UniqueId="f6b094a5-1e21-4e00-ad19-e01945296016" Type="IfcCurveSegment">
+							<Documentation>The cosine transition segment is a special case of a spiral where the curvature rate of change is a cosine function and the terms are dependent on the length L measured from the inflection point. The parameter value is defined as the deflection i.e. bearing angle &amp;Theta.
+
+The values of its individual terms dependent on segment length L:
+CosineTerm = L
+Constant = 1</Documentation>
+							<Rules>
+								<DocModelRuleAttribute Name="ParentCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcCosine">
+											<Rules>
+												<DocModelRuleAttribute Name="CosineTerm">
+													<Rules>
+														<DocModelRuleEntity Name="IfcLengthMeasure" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="ConstantTerm">
+													<Rules>
+														<DocModelRuleEntity Name="IfcReal" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SegmentStart">
+									<Rules>
+										<DocModelRuleEntity Name="IfcParameterValue" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SegmentLength">
+									<Rules>
+										<DocModelRuleEntity Name="IfcParameterValue" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Cubic_Transition_Segment_0dqin2zM18UPoEDKUyhVUM" Name="Cubic Transition Segment" UniqueId="27d2cc42-f560-4879-9c8e-3547bcadf796" Type="IfcCurveSegment">
+							<Documentation>The cubic transition segment is modelled with _IfcPolynomialCurve_ with certain restrictions. The size of the attribute CoefficientsY is restricted to 4. The cubic term is on position 4. In general, the CoefficietsX size would be restricted to 2 and values specified as [0, 1]. This produces the following result:
+
+y = CoefficientsX[3]*x³, where other values in CoefficientsY are 0.</Documentation>
+							<Rules>
+								<DocModelRuleAttribute Name="ParentCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPolynomialCurve">
+											<Rules>
+												<DocModelRuleAttribute Name="CoefficientsX">
+													<Rules>
+														<DocModelRuleEntity Name="IfcReal" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="CoefficientsY">
+													<Rules>
+														<DocModelRuleEntity Name="IfcReal" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Helmert_Transition_Segment_2GmQ8gyA1CgdJxW6bT3OO" Name="Helmert Transition Segment" UniqueId="90c1a22a-f0a0-4cfe-a9d3-ee01a5743618" Type="IfcCurveSegment">
+							<Documentation>The Helmert transition segment is a special case of a fourth order spiral where the curvature rate of change is a quadratic function and the terms are dependent on the length L measured from the inflection point. The parameter value is defined as the deflection i.e. bearing angle &amp;Theta.
+
+The terms for the first half of the segment:
+QuadraticTerm = L/√2
+rest are 0.
+
+Terms for the second half of the segment:
+QuadraticTerm =  -L/√2
+LinearTerm = L/4
+Constant = -1
+
+SegmentStart is the bearing angle at start and Segment length is the bearing angle at the end of the segment.</Documentation>
+							<Rules>
+								<DocModelRuleAttribute Name="ParentCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcHelmertCurve">
+											<Rules>
+												<DocModelRuleAttribute Name="QuadraticTerm" Identification="QuadraticTerm">
+													<Rules>
+														<DocModelRuleEntity Name="IfcLengthMeasure" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="LinearTerm" Identification="LinearTerm">
+													<Rules>
+														<DocModelRuleEntity Name="IfcLengthMeasure" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="ConstantTerm" Identification="Constant">
+													<Rules>
+														<DocModelRuleEntity Name="IfcReal" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SegmentStart">
+									<Rules>
+										<DocModelRuleEntity Name="IfcParameterValue" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SegmentLength">
+									<Rules>
+										<DocModelRuleEntity Name="IfcParameterValue" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Linear_Segment_2dPyjjaBH3buW4ESqzNjEG" Name="Linear Segment" UniqueId="a767cb6d-90b4-4397-8804-39cd3d5ed390" Type="IfcCurveSegment">
+							<Rules>
+								<DocModelRuleAttribute Name="ParentCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPolyline" />
+										<DocModelRuleEntity Name="IfcLine" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SegmentStart">
+									<Rules>
+										<DocModelRuleEntity Name="IfcParameterValue" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SegmentLength">
+									<Rules>
+										<DocModelRuleEntity Name="IfcParameterValue" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Parabolic_Transition_Segment_3D7kHU_Mv6IgCaHurqkubB" Name="Parabolic Transition Segment" UniqueId="cd1ee45e-f96e-464a-a324-478d74bb894b" Type="IfcCurveSegment">
+							<Documentation>The parabolic transition segment is modelled with _IfcPolynomialCurve_ with certain restrictions. The size of the attribute CoefficientsY is restricted to 3. The quadratic term is on position 3. In general, the CoefficietsX size would be restricted to 2 and values specified as [0, 1]. This produces the following result:
+
+y = CoefficientsX[3]*x², where other values in CoefficientsY are 0.</Documentation>
+							<Rules>
+								<DocModelRuleAttribute Name="ParentCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPolynomialCurve">
+											<Rules>
+												<DocModelRuleAttribute Name="CoefficientsX">
+													<Rules>
+														<DocModelRuleEntity Name="IfcReal" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="CoefficientsY">
+													<Rules>
+														<DocModelRuleEntity Name="IfcReal" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Sine_Transition_Segment_2bmCqzBzH0wx4ONLuNbUSH" Name="Sine Transition Segment" UniqueId="a5c0cd3d-2fd4-40eb-b118-5d5e1795e711" Type="IfcCurveSegment">
+							<Documentation>The sine transition segment is a special case of a spiral where the curvature rate of change is a sine function and the terms are dependent on the length L measured from the inflection point. The parameter value is defined as the deflection i.e. bearing angle &amp;Theta.
+
+The values of its individual terms are identical and equal to the lenght of the segment L:
+SineTerm = L
+LinearTerm = L</Documentation>
+							<Rules>
+								<DocModelRuleAttribute Name="ParentCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcSine">
+											<Rules>
+												<DocModelRuleAttribute Name="SineTerm">
+													<Rules>
+														<DocModelRuleEntity Name="IfcLengthMeasure" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="LinearTerm">
+													<Rules>
+														<DocModelRuleEntity Name="IfcLengthMeasure" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SegmentStart">
+									<Rules>
+										<DocModelRuleEntity Name="IfcParameterValue" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SegmentLength">
+									<Rules>
+										<DocModelRuleEntity Name="IfcParameterValue" />
 									</Rules>
 								</DocModelRuleAttribute>
 							</Rules>

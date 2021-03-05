@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="General_Usage_3toDTuDGz3Iv6LyOE_qraH" Name="General Usage" UniqueId="3toDTuDGz3Iv6LyOE_qraH" Code="IFC4x3_RC2" Version="4x3 RC2" Status="Draft" Owner="bSI" Copyright="&amp;copy; 1996-2017 buildingSMART International Ltd." BaseView="f7c8d778-350f-434b-9195-f183bed35911" XsdUri="http://www.buildingsmart-tech.org/ifc/IFC4x2" IncludeAllDefinitions="true">
+<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="General_Usage_3toDTuDGz3Iv6LyOE_qraH" Name="General Usage" UniqueId="3toDTuDGz3Iv6LyOE_qraH" Code="IFC4x3_RC3" Version="4x3 RC3" Status="Draft" Owner="bSI" Copyright="&amp;copy; 1996-2017 buildingSMART International Ltd." BaseView="f7c8d778-350f-434b-9195-f183bed35911" XsdUri="http://www.buildingsmart-tech.org/ifc/IFC4x2" IncludeAllDefinitions="true">
 	<ConceptRoots>
 		<DocConceptRoot UniqueId="2A5Uybr$DEpB106VBrrx6q">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcActionRequest" />
@@ -506,20 +506,23 @@ The **IfcActionRequest** may have assignments of its own using the [IfcRelAssign
 		<DocConceptRoot UniqueId="733a949d-1cc8-4d40-bd6a-3836e3c195dd">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcAlignment" />
 			<Concepts>
-				<DocTemplateUsage Name="Alignment Attributes" UniqueId="d0249472-003e-4fc6-a663-6d8d44069c31">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Alignment_Geometry_1ZI6NYVGLBIQ2aAV9Y8RWE" />
-					<Items>
-						<DocTemplateItem UniqueId="882d72cf-b823-4f1a-9ffe-eae8149d9ff0" />
-					</Items>
-				</DocTemplateUsage>
 				<DocTemplateUsage Name="Alignment Decomposition" UniqueId="e554c63e-acc9-473f-9469-6124fef84b4a">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Alignment_Decomposition_0pJdzdMb6NxCKeW4AcNHb" />
 					<Items>
 						<DocTemplateItem UniqueId="b141e610-0b3c-4d9b-9dbb-f53827904de3" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Alignment Geometry" UniqueId="96e3207b-6b8c-4f01-a637-9891df453b79">
-					<Definition xsi:type="DocTemplateDefinition" Name="Alignment Geometry" UniqueId="c319ff3d-26d8-4475-afd1-5d3b31b7b8da" Type="IfcAlignment" />
+				<DocTemplateUsage Name="Alignment Geometry Gradient" UniqueId="1d7ba8a9-6245-46c9-8d2e-d02779fdb8ae">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Alignment_Geometry_Gradient_39lYC44uLCdvW3MC_LnJxz" />
+					<Items>
+						<DocTemplateItem UniqueId="e448b008-5812-4c4f-a0d2-464e0263b65c" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Referent Nesting" UniqueId="1da6f9f0-6ffc-42f6-ba24-f16e4f6450a0">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Nesting_0uoeU8NaT178AKrM_UcbQH" />
+					<Items>
+						<DocTemplateItem UniqueId="47d0906d-3757-4532-82c7-e5e6d7c514e6" RuleParameters="Type=IfcReferent;" />
+					</Items>
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="425ea152-03b9-4561-a5c8-8bc3b50f9289" Type="IfcAlignment" />
@@ -6485,12 +6488,16 @@ The same constraints, as given for &apos;SurfaceOrSolidModel&apos;, &apos;Surfac
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Element_Projecting_0KYHuPBgf6GOaJOfkvfWW1" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Linear Placement" UniqueId="e8eec15a-5c2e-4bad-9767-f157690cd5a3">
+					<Documentation>Product placement with a _Product Linear Placement_ template. It defines the local coordinate system based on the curve which is referenced by _IfcLinearPlacement_._RelativePlacement_ which is an _IfcAxis2PlacementLinear_._Location_ using an _IfcPointByDistanceExpression_._BasisCurve_. The local coordinate system is based on the tangent of the curve at Location, its normal in the global Z plane and the cross product of the aforementioned vectors.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Linear_Placement_2BSSvyDSzAhvG2y638nNlp" />
 					<Items>
 						<DocTemplateItem UniqueId="95af7069-609f-48fe-90fc-b07db503ef69" RuleParameters="LinearPositioninElement=IfcLinearPositioningElement;">
 							<Documentation>DIstance can be measured along any physical element that has a representation featuring an IfcBoundedCurve that can be used as an Axis in IfcLinearPositioningElement.</Documentation>
 						</DocTemplateItem>
 					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Relative Position" UniqueId="caf56738-c8cd-4cc8-aa7f-3f11982e8a90">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Relative_Positioning_1jo2X5iK969AcbDz7acLTX" />
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="f44ee7f3-f22f-4e10-918d-d01d83d3071b" Type="IfcElement" />

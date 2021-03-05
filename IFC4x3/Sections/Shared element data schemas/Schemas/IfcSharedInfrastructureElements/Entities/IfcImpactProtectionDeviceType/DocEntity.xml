@@ -8,8 +8,13 @@
 	<WhereRules>
 		<DocWhereRule Name="CorrectPredefinedType" UniqueId="4bab7e06-567e-40f9-aaab-c34cee089597">
 			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
-			<Expression>(PredefinedType &lt;&gt; IfcImpactProtectionDeviceTypeEnum.USERDEFINED) OR
-((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+			<Expression>(PredefinedType &lt;&gt; IfcImpactProtectionDeviceTypeEnum.USERDEFINED AND
+PredefinedType &lt;&gt; IfcVibrationDamperTypeEnum.USERDEFINED AND
+PredefinedType &lt;&gt; IfcVibrationIsolatorTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED OR
+PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED OR
+PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED)
+AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

@@ -3,17 +3,7 @@
 	<Localization>
 		<DocLocalization Locale="en" Name="Linear Placement" />
 	</Localization>
-	<Subtypes>
-		<DocSubtype UniqueId="0a54d268-e46d-4b8a-9882-06d851fcf058" DefinedType="IfcLinearPlacementWithInclination" />
-		<DocSubtype UniqueId="2ed0e6d3-8ba9-4227-9ec9-2d238a596f23" DefinedType="IfcLinearSpanPlacement" />
-	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="PlacementMeasuredAlong" UniqueId="2758b73a-4868-4d7d-bfe8-d70f2911006f" Status="Deprecated" DefinedType="IfcCurve">
-			<Documentation></Documentation>
-		</DocAttribute>
-		<DocAttribute Name="Distance" UniqueId="8567b7f1-9a00-4631-a603-3e0cd846fc4b" Status="Deprecated" DefinedType="IfcPointByDistanceExpression">
-			<Documentation></Documentation>
-		</DocAttribute>
 		<DocAttribute Name="RelativePlacement" UniqueId="491cd034-261f-4ef5-a2a3-67f84ca906e5" DefinedType="IfcAxis2PlacementLinear" />
 		<DocAttribute Name="CartesianPosition" UniqueId="f8d7e56b-5255-4bba-9c62-a7f44ef1c042" DefinedType="IfcAxis2Placement3D" AttributeFlags="1">
 			<Documentation></Documentation>

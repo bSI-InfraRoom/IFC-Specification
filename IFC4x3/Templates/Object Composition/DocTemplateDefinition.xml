@@ -12,9 +12,9 @@ Aggregation is a bi-directional relationship, the relationship from the composit
 			<Templates>
 				<DocTemplateDefinition id="Alignment_Decomposition_0pJdzdMb6NxCKeW4AcNHb" Name="Alignment Decomposition" UniqueId="334e7f67-fd69-465f-b314-a2010a997465" Type="IfcAlignment">
 					<Rules>
-						<DocModelRuleAttribute Name="IsDecomposedBy">
+						<DocModelRuleAttribute Name="IsNestedBy">
 							<Rules>
-								<DocModelRuleEntity Name="IfcRelAggregates">
+								<DocModelRuleEntity Name="IfcRelNests">
 									<Rules>
 										<DocModelRuleAttribute Name="RelatedObjects">
 											<Rules>
@@ -28,7 +28,7 @@ Aggregation is a bi-directional relationship, the relationship from the composit
 																			<Rules>
 																				<DocModelRuleEntity Name="IfcAlignmentSegment">
 																					<Rules>
-																						<DocModelRuleAttribute Name="GeometricParameters">
+																						<DocModelRuleAttribute Name="DesignParameters">
 																							<Rules>
 																								<DocModelRuleEntity Name="IfcAlignmentHorizontalSegment" />
 																							</Rules>
@@ -53,7 +53,7 @@ Aggregation is a bi-directional relationship, the relationship from the composit
 																			<Rules>
 																				<DocModelRuleEntity Name="IfcAlignmentSegment">
 																					<Rules>
-																						<DocModelRuleAttribute Name="GeometricParameters">
+																						<DocModelRuleAttribute Name="DesignParameters">
 																							<Rules>
 																								<DocModelRuleEntity Name="IfcAlignmentVerticalSegment" />
 																							</Rules>
@@ -78,7 +78,7 @@ Aggregation is a bi-directional relationship, the relationship from the composit
 																			<Rules>
 																				<DocModelRuleEntity Name="IfcAlignmentSegment">
 																					<Rules>
-																						<DocModelRuleAttribute Name="GeometricParameters">
+																						<DocModelRuleAttribute Name="DesignParameters">
 																							<Rules>
 																								<DocModelRuleEntity Name="IfcAlignmentCantSegment" />
 																							</Rules>

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSegmentedReferenceCurve" UniqueId="83c7429a-f0bd-4259-8c77-2138cca61740" BaseDefinition="IfcBoundedCurve" EntityFlags="32">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSegmentedReferenceCurve" UniqueId="83c7429a-f0bd-4259-8c77-2138cca61740" BaseDefinition="IfcCompositeCurve" EntityFlags="32">
 	<Attributes>
 		<DocAttribute Name="BaseCurve" UniqueId="a795c837-4e08-40a0-9340-38a9e90b00c4" DefinedType="IfcBoundedCurve" />
-		<DocAttribute Name="Segments" UniqueId="2a12927f-737b-487b-8519-3b951bc88e2d" DefinedType="IfcCurveSegment" AggregationType="1" AggregationLower="1" AggregationUpper="0" />
 		<DocAttribute Name="EndPoint" UniqueId="704ceec5-922b-4926-8edc-bf479f919057" DefinedType="IfcPlacement" AttributeFlags="1" />
 	</Attributes>
 </DocEntity>
