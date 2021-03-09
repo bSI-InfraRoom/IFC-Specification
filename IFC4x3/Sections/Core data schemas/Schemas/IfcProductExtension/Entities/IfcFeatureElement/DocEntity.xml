@@ -8,5 +8,11 @@
 		<DocSubtype UniqueId="5e859002-f162-4984-8c68-3cd337157692" DefinedType="IfcFeatureElementAddition" />
 		<DocSubtype UniqueId="6af04daf-4c27-42af-a1a1-a966bd2d364c" DefinedType="IfcFeatureElementSubtraction" />
 	</Subtypes>
+	<WhereRules>
+		<DocWhereRule Name="NotContained" UniqueId="5ebc2e1b-b049-4c1a-894e-b2e52979d33b">
+			<Documentation>Element is not contained in spatial structure.</Documentation>
+			<Expression>SIZEOF(ContainedInStructure) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 
