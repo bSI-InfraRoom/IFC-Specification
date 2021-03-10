@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocChangeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IFC4x3_RC1 to IFC4x3_RC2" UniqueId="456dbd99-1b51-4924-98e7-2b98575a3e9b" VersionBaseline="4.3.0.0">
+<DocChangeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IFC4x3_RC1 to IFC4x3_RC2" UniqueId="975bda90-01e7-49e1-b353-48fdef737605" VersionBaseline="4.3.0.0">
 	<ChangesEntities>
-		<DocChangeAction Name="Core data schemas" UniqueId="533e7417-b039-40de-ab4b-8ed24125f3ae">
+		<DocChangeAction Name="Core data schemas" UniqueId="17caf229-9e4b-4d46-826b-f6282f4788ca">
 			<Changes>
-				<DocChangeAction Name="IfcProductExtension" UniqueId="bbcafb80-388a-43ab-82cb-2aa29f726cbb">
+				<DocChangeAction Name="IfcProductExtension" UniqueId="e12e0360-d503-4752-93ec-a9ff6d4606c7">
 					<Changes>
-						<DocChangeAction Name="IfcAlignment" UniqueId="e5741b9f-a7f5-4acf-b03a-cb0197638d74">
+						<DocChangeAction Name="IfcAlignment" UniqueId="17b9c043-89db-4480-a37c-522b16cd3225">
 							<Changes>
-								<DocChangeAction Name="Axis" UniqueId="91afe9ba-79f4-4789-b5f4-989a915945f5" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Axis" UniqueId="57ebd2aa-971f-483b-b0db-6c308a98142a" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcLinearAxisSelect" NewValue="IfcCurve" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAlignmentHorizontal" UniqueId="145b5129-9f4c-4b6a-883e-e5a67133bc9a" Action="modified">
+						<DocChangeAction Name="IfcAlignmentHorizontal" UniqueId="5b99b09a-0bdd-49b5-901c-9fa66cf5a646" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="schema" OldValue="IFCGEOMETRICCONSTRAINTRESOURCE" NewValue="IFCPRODUCTEXTENSION" />
 								<DocChangeAspect Aspect="name" OldValue="IfcAlignment2DHorizontal" NewValue="IfcAlignmentHorizontal" />
 							</Aspects>
 							<Changes>
-								<DocChangeAction Name="GlobalId" UniqueId="625729f9-ce5c-454c-8cfa-6021a101746b" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="GlobalId" UniqueId="19469e24-977e-4ada-a190-93af108a30dd" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartDistAlong" NewValue="GlobalId" />
 										<DocChangeAspect Aspect="type" OldValue="IfcLengthMeasure" NewValue="IfcGloballyUniqueId" />
 										<DocChangeAspect Aspect="instantiation" OldValue="OPTIONAL" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="OwnerHistory" UniqueId="480a0400-2cbd-4f0b-a560-02fab18e751b" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="OwnerHistory" UniqueId="ed43f667-7fdf-4534-93b9-6a99cad34538" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="Segments" NewValue="OwnerHistory" />
 										<DocChangeAspect Aspect="type" OldValue="IfcAlignment2DHorizontalSegment" NewValue="IfcOwnerHistory" />
@@ -36,88 +36,88 @@
 										<DocChangeAspect Aspect="xsdformat" OldValue="Default" NewValue="Attribute" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Name" UniqueId="a2e77b57-a885-44e0-81a5-635b7681074c" Action="added" />
-								<DocChangeAction Name="Description" UniqueId="a162c2a9-668e-44c5-a9a3-92495b82a827" Action="added" />
-								<DocChangeAction Name="ObjectType" UniqueId="7fa185b4-764c-4d95-a5cc-13f1520bb2b8" Action="added" />
-								<DocChangeAction Name="ObjectPlacement" UniqueId="9d5ba2c3-298f-4742-98c3-3e74912219f2" Action="added" />
-								<DocChangeAction Name="Representation" UniqueId="b6136288-65f3-424f-8e2f-752105a7920d" Action="added" />
-								<DocChangeAction Name="StartDistAlong" UniqueId="0afc5ec1-95df-4f54-baff-e92c062bed13" Action="added" />
-								<DocChangeAction Name="Segments" UniqueId="5a656d13-5150-49b1-a6e2-ef81a1a54c1d" Action="added" />
-								<DocChangeAction Name="HasAssignments" UniqueId="dfbbd031-39c0-420a-989e-dfad707e0bcc" Action="added" />
-								<DocChangeAction Name="Nests" UniqueId="7ecca2f8-0fcf-4cd6-96f3-75230e69d045" Action="added" />
-								<DocChangeAction Name="IsNestedBy" UniqueId="0e6f638a-c50e-40b9-902a-792232c02972" Action="added" />
-								<DocChangeAction Name="HasContext" UniqueId="4f062444-7a41-491b-bcfa-acff1a10374c" Action="added" />
-								<DocChangeAction Name="IsDecomposedBy" UniqueId="6ec9d786-4c43-47e7-892c-0ad363463789" Action="added" />
-								<DocChangeAction Name="Decomposes" UniqueId="0d3fcdc2-0899-450a-8100-41626a17479a" Action="added" />
-								<DocChangeAction Name="HasAssociations" UniqueId="b4697ca7-4ac8-4a99-9f26-16f12eadb894" Action="added" />
-								<DocChangeAction Name="IsDeclaredBy" UniqueId="587ea1fd-7eb3-4249-939a-e2db12f40119" Action="added" />
-								<DocChangeAction Name="Declares" UniqueId="b9d87e48-3ac4-4c7d-9bd4-313391b91bce" Action="added" />
-								<DocChangeAction Name="IsTypedBy" UniqueId="4a47f530-1392-4451-9a0c-db47a0e02df8" Action="added" />
-								<DocChangeAction Name="IsDefinedBy" UniqueId="58babf58-4872-4921-b5c7-b4403e5856f9" Action="added" />
-								<DocChangeAction Name="ReferencedBy" UniqueId="05ef972a-4d1b-4598-9d18-55726989815f" Action="added" />
-								<DocChangeAction Name="PositionedRelativeTo" UniqueId="062a2c06-63da-430c-8a32-504352dda2f3" Action="added" />
-								<DocChangeAction Name="ReferencedInStructures" UniqueId="a795ae31-8833-4c02-9e26-7f25db14dfa7" Action="added" />
-								<DocChangeAction Name="LayerAssignment" UniqueId="71fc92f8-904b-4f41-904f-73172fa5e284" Action="deleted" />
-								<DocChangeAction Name="StyledByItem" UniqueId="563af45c-3a15-41b7-b431-2a9db5291913" Action="deleted" />
-								<DocChangeAction Name="ToAlignmentCurve" UniqueId="c3aa4658-7c03-4343-8557-15c9fce41b20" Action="deleted" />
+								<DocChangeAction Name="Name" UniqueId="30b64746-2c23-410f-9392-3136d79b9491" Action="added" />
+								<DocChangeAction Name="Description" UniqueId="0f95f05e-0d97-49c2-9b45-be9e36fd73ed" Action="added" />
+								<DocChangeAction Name="ObjectType" UniqueId="370b0bfb-34f7-4a92-8d97-558b93c596a9" Action="added" />
+								<DocChangeAction Name="ObjectPlacement" UniqueId="5b4a204a-18f8-4891-adfb-0e7ffbb69e7f" Action="added" />
+								<DocChangeAction Name="Representation" UniqueId="2f6affbb-e969-43de-8604-b1c5f9367388" Action="added" />
+								<DocChangeAction Name="StartDistAlong" UniqueId="28a56172-e621-49ea-a535-762f82f2247b" Action="added" />
+								<DocChangeAction Name="Segments" UniqueId="557db5b4-447b-41e9-b176-04e26f5a0d44" Action="added" />
+								<DocChangeAction Name="HasAssignments" UniqueId="5ce2ad1b-4f2c-4df9-9f68-ee06d3944553" Action="added" />
+								<DocChangeAction Name="Nests" UniqueId="d1a198b4-9f9e-47c0-949a-2d4756fdffb9" Action="added" />
+								<DocChangeAction Name="IsNestedBy" UniqueId="0362515d-5703-4be6-bd8f-57af3772c884" Action="added" />
+								<DocChangeAction Name="HasContext" UniqueId="4b8c1b19-397a-427a-87a8-ed35916d5df3" Action="added" />
+								<DocChangeAction Name="IsDecomposedBy" UniqueId="4aad7b85-cade-4ddb-967d-842f9202c3d6" Action="added" />
+								<DocChangeAction Name="Decomposes" UniqueId="5fbbbdba-a458-4422-ab7c-977b6f190645" Action="added" />
+								<DocChangeAction Name="HasAssociations" UniqueId="8b52e97d-439b-41fd-b349-dc9ae0950a8a" Action="added" />
+								<DocChangeAction Name="IsDeclaredBy" UniqueId="578bb32c-877a-4174-a39c-b8df6da10fda" Action="added" />
+								<DocChangeAction Name="Declares" UniqueId="89f33e2c-849c-47b2-877d-8918fda57565" Action="added" />
+								<DocChangeAction Name="IsTypedBy" UniqueId="91f988e7-f6cd-45bb-8831-38104686e1f2" Action="added" />
+								<DocChangeAction Name="IsDefinedBy" UniqueId="f68eca3c-740b-4fbc-b3b7-66402245d695" Action="added" />
+								<DocChangeAction Name="ReferencedBy" UniqueId="78005bab-f930-430a-ad4a-44ba0b06ea08" Action="added" />
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="8013ef1b-4af2-400d-83d8-6a1ddd98d98e" Action="added" />
+								<DocChangeAction Name="ReferencedInStructures" UniqueId="c9fdbdfd-24d3-4d5b-8f41-13d98dcdad5f" Action="added" />
+								<DocChangeAction Name="LayerAssignment" UniqueId="bffbc80e-75b4-4556-8e09-3e01b3adcaa1" Action="deleted" />
+								<DocChangeAction Name="StyledByItem" UniqueId="6b23d143-073d-4770-8ab1-ab253e80846c" Action="deleted" />
+								<DocChangeAction Name="ToAlignmentCurve" UniqueId="00fe1375-93d7-4cbf-b67f-3c1db2dd61fa" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAlignmentSegment" UniqueId="1df320d3-24ee-4f70-a3b8-d8d383d4815c" Action="modified">
+						<DocChangeAction Name="IfcAlignmentSegment" UniqueId="f1b5f1f4-517c-478e-ac29-f2fe79667653" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="schema" OldValue="IFCGEOMETRICCONSTRAINTRESOURCE" NewValue="IFCPRODUCTEXTENSION" />
 								<DocChangeAspect Aspect="name" OldValue="IfcAlignment2DSegment" NewValue="IfcAlignmentSegment" />
 								<DocChangeAspect Aspect="instantiation" OldValue="ABSTRACT" />
 							</Aspects>
 							<Changes>
-								<DocChangeAction Name="GlobalId" UniqueId="7aa5fc9f-7399-45ea-907d-384ab34d514f" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="GlobalId" UniqueId="0db0a5c5-7ad5-49de-a531-3bf3b21fc083" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="TangentialContinuity" NewValue="GlobalId" />
 										<DocChangeAspect Aspect="type" OldValue="IfcBoolean" NewValue="IfcGloballyUniqueId" />
 										<DocChangeAspect Aspect="instantiation" OldValue="OPTIONAL" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="OwnerHistory" UniqueId="629cce4f-d69a-4db8-b759-c0edf4669210" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="OwnerHistory" UniqueId="6894caf8-dc28-4224-859a-f33bd226070c" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartTag" NewValue="OwnerHistory" />
 										<DocChangeAspect Aspect="type" OldValue="IfcLabel" NewValue="IfcOwnerHistory" />
 										<DocChangeAspect Aspect="xsdformat" OldValue="Default" NewValue="Attribute" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Name" UniqueId="a3e6860e-7ac4-4098-a80b-777752f03b80" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="Name" UniqueId="3f9ce7b2-8d21-439e-b171-9af41cb1e71a" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="EndTag" NewValue="Name" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Description" UniqueId="0c76cd4a-9d41-4f08-a609-4b28d3301cca" Action="added" />
-								<DocChangeAction Name="ObjectType" UniqueId="cced93a0-15b5-4691-b891-9e8631e1399a" Action="added" />
-								<DocChangeAction Name="ObjectPlacement" UniqueId="62120cec-9646-4f8c-8c28-ab86248afda2" Action="added" />
-								<DocChangeAction Name="Representation" UniqueId="a34e468c-a9cd-463d-8c95-9f7079a87749" Action="added" />
-								<DocChangeAction Name="GeometricParameters" UniqueId="c2a3e70f-f979-4e5d-a2d6-b8e655c83302" Action="added" />
-								<DocChangeAction Name="HasAssignments" UniqueId="2386d77b-d2ef-4077-85a1-4191b4657593" Action="added" />
-								<DocChangeAction Name="Nests" UniqueId="13ba8c7c-84b0-411b-8b54-342dc94c957a" Action="added" />
-								<DocChangeAction Name="IsNestedBy" UniqueId="642c93d3-756d-4528-a092-f1e8aed1eb09" Action="added" />
-								<DocChangeAction Name="HasContext" UniqueId="acbd7bd2-3102-408a-b84f-c7b9cc4e2e48" Action="added" />
-								<DocChangeAction Name="IsDecomposedBy" UniqueId="9720c727-451b-441a-a01e-3a3c66d70fde" Action="added" />
-								<DocChangeAction Name="Decomposes" UniqueId="4ff2fda0-cf5b-4d1d-bdb6-422a5b14521a" Action="added" />
-								<DocChangeAction Name="HasAssociations" UniqueId="6a294eb4-e559-44c8-8eb5-9fa38f555757" Action="added" />
-								<DocChangeAction Name="IsDeclaredBy" UniqueId="f22d9172-4ac4-484f-9485-3c236700f0b6" Action="added" />
-								<DocChangeAction Name="Declares" UniqueId="0f0b23e2-7990-48ee-9abf-e1edd475f444" Action="added" />
-								<DocChangeAction Name="IsTypedBy" UniqueId="05069a14-be74-41d3-84c2-563ae88ba84b" Action="added" />
-								<DocChangeAction Name="IsDefinedBy" UniqueId="ccdb69c7-a1e2-4448-8b9c-f07b8bc025a2" Action="added" />
-								<DocChangeAction Name="ReferencedBy" UniqueId="9d26c23d-d4da-42a0-9b17-30cab6d028ea" Action="added" />
-								<DocChangeAction Name="PositionedRelativeTo" UniqueId="17fa2273-eb0b-42a6-a91a-a80633e20bf1" Action="added" />
-								<DocChangeAction Name="ReferencedInStructures" UniqueId="a4adb6d8-dde5-4f92-8242-cc46dc300898" Action="added" />
-								<DocChangeAction Name="LayerAssignment" UniqueId="94dd85fa-ca0e-48d7-ac9d-7414fcb01726" Action="deleted" />
-								<DocChangeAction Name="StyledByItem" UniqueId="201c1847-6813-4a9a-ae37-8f4a05baaf7a" Action="deleted" />
+								<DocChangeAction Name="Description" UniqueId="cd4c8f05-3deb-4d42-aa4c-ddb46564e103" Action="added" />
+								<DocChangeAction Name="ObjectType" UniqueId="d84d7a47-17b8-469d-8f21-b7b4d3e87274" Action="added" />
+								<DocChangeAction Name="ObjectPlacement" UniqueId="7d085aaa-da45-4eef-8408-9736a384794e" Action="added" />
+								<DocChangeAction Name="Representation" UniqueId="7e3831d1-e112-4f69-b51b-5ba3e82f7bb5" Action="added" />
+								<DocChangeAction Name="GeometricParameters" UniqueId="60fbfb7d-c699-41a5-9169-fd6a34b1bd47" Action="added" />
+								<DocChangeAction Name="HasAssignments" UniqueId="da54bf6e-8f43-4d98-ba22-51c3eb97fb70" Action="added" />
+								<DocChangeAction Name="Nests" UniqueId="3945c1ed-84f3-4214-8297-794ab18d9540" Action="added" />
+								<DocChangeAction Name="IsNestedBy" UniqueId="16f66940-3f2f-45f8-898f-58f5f84f37f0" Action="added" />
+								<DocChangeAction Name="HasContext" UniqueId="99ea6bca-33a8-462a-8cfc-c627bca60dba" Action="added" />
+								<DocChangeAction Name="IsDecomposedBy" UniqueId="61c056a0-80ef-41f1-9fd0-daa658f8d942" Action="added" />
+								<DocChangeAction Name="Decomposes" UniqueId="a7b6bd7f-845a-48c3-b73c-cec2b6df1dc8" Action="added" />
+								<DocChangeAction Name="HasAssociations" UniqueId="510d2741-fa55-4afb-b8e1-ff2b7cfc2d6e" Action="added" />
+								<DocChangeAction Name="IsDeclaredBy" UniqueId="6a4ace6e-e110-4898-8818-a82193cd5868" Action="added" />
+								<DocChangeAction Name="Declares" UniqueId="20c661bd-9aef-4a42-8be3-225a1de56981" Action="added" />
+								<DocChangeAction Name="IsTypedBy" UniqueId="03e5d711-4730-4cc9-a1e4-a04313a53c71" Action="added" />
+								<DocChangeAction Name="IsDefinedBy" UniqueId="4b93b0f9-3f8b-4e0d-9720-35dc5fd8bd01" Action="added" />
+								<DocChangeAction Name="ReferencedBy" UniqueId="8c3a490f-0c35-4529-b881-8f492d09fc54" Action="added" />
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="41e1bbe9-90c5-4471-b135-591654740fcd" Action="added" />
+								<DocChangeAction Name="ReferencedInStructures" UniqueId="f3ca2408-931d-4f93-8fdb-ba62031953e8" Action="added" />
+								<DocChangeAction Name="LayerAssignment" UniqueId="559bdb1e-f6d3-496f-889a-c28e279718fd" Action="deleted" />
+								<DocChangeAction Name="StyledByItem" UniqueId="38ebc514-cc8f-40e8-aed9-9d5fb2f9d08d" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAlignmentVertical" UniqueId="0b5b5df8-e937-4223-bda2-0cd43fd00abe" Action="modified">
+						<DocChangeAction Name="IfcAlignmentVertical" UniqueId="cd588293-a894-459e-84f9-9140bd12c82f" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="schema" OldValue="IFCGEOMETRICCONSTRAINTRESOURCE" NewValue="IFCPRODUCTEXTENSION" />
 								<DocChangeAspect Aspect="name" OldValue="IfcAlignment2DVertical" NewValue="IfcAlignmentVertical" />
 							</Aspects>
 							<Changes>
-								<DocChangeAction Name="GlobalId" UniqueId="10200411-31fa-42a1-b556-c718a3fee1d8" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="GlobalId" UniqueId="a37c7905-7640-4cf8-b2c8-c8113887c56a" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="Segments" NewValue="GlobalId" />
 										<DocChangeAspect Aspect="type" OldValue="IfcAlignment2DVerticalSegment" NewValue="IfcGloballyUniqueId" />
@@ -125,36 +125,36 @@
 										<DocChangeAspect Aspect="aggregation" OldValue="LIST" NewValue="NONE" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="OwnerHistory" UniqueId="a4e09f44-4fdc-430f-b1bd-fde6e2f253f0" Action="added" />
-								<DocChangeAction Name="Name" UniqueId="4d05d8e7-8ac8-478c-9b54-931d644f94d9" Action="added" />
-								<DocChangeAction Name="Description" UniqueId="59f04f41-63a7-422b-9e70-2e8350dc221b" Action="added" />
-								<DocChangeAction Name="ObjectType" UniqueId="6cb4c2e5-0106-4014-b236-7a18bfddf1f1" Action="added" />
-								<DocChangeAction Name="ObjectPlacement" UniqueId="27353876-1e15-41d5-a4d4-3816a3b0a662" Action="added" />
-								<DocChangeAction Name="Representation" UniqueId="83ef76a3-158d-4cf1-b3cf-d38d88ac8197" Action="added" />
-								<DocChangeAction Name="Segments" UniqueId="7313c1c3-71c4-471c-9935-b9274e08990f" Action="added" />
-								<DocChangeAction Name="HasAssignments" UniqueId="e7a9a581-3ca0-4a6e-a234-9ffa8a41610d" Action="added" />
-								<DocChangeAction Name="Nests" UniqueId="0f70675f-6180-4bb9-87cd-b2c5a5dfe653" Action="added" />
-								<DocChangeAction Name="IsNestedBy" UniqueId="46f3dca9-84ac-4de9-881b-8f615994aacd" Action="added" />
-								<DocChangeAction Name="HasContext" UniqueId="225ed95e-e3e2-4c71-bd36-2506bc8d0247" Action="added" />
-								<DocChangeAction Name="IsDecomposedBy" UniqueId="06022b4c-6d34-4cf1-8529-68f4cd476f83" Action="added" />
-								<DocChangeAction Name="Decomposes" UniqueId="d0810f58-5e57-4874-ad58-6696c0c1f801" Action="added" />
-								<DocChangeAction Name="HasAssociations" UniqueId="0fc500aa-efe6-4a46-a15a-f30a6589a6ea" Action="added" />
-								<DocChangeAction Name="IsDeclaredBy" UniqueId="886fda9c-cd71-40f3-87f3-92f569cc5373" Action="added" />
-								<DocChangeAction Name="Declares" UniqueId="b5d21d58-222b-4374-ae1c-1eb55c159bc0" Action="added" />
-								<DocChangeAction Name="IsTypedBy" UniqueId="ff047f02-a79e-4aa8-8560-7dfab7ae8c85" Action="added" />
-								<DocChangeAction Name="IsDefinedBy" UniqueId="f3a1eb79-4bed-404c-a678-1bd818f033b6" Action="added" />
-								<DocChangeAction Name="ReferencedBy" UniqueId="e259895f-498d-41fb-b75b-cf184ff77077" Action="added" />
-								<DocChangeAction Name="PositionedRelativeTo" UniqueId="7764b470-8831-4102-ad6c-7a27e2fdb521" Action="added" />
-								<DocChangeAction Name="ReferencedInStructures" UniqueId="6a700a9b-092d-42da-9a15-7611d691cf49" Action="added" />
-								<DocChangeAction Name="LayerAssignment" UniqueId="90da2e90-3cba-45d2-95da-b25cb3eb585e" Action="deleted" />
-								<DocChangeAction Name="StyledByItem" UniqueId="d10ef06c-2557-44fa-89c1-956ea5a7bd12" Action="deleted" />
-								<DocChangeAction Name="ToAlignmentCurve" UniqueId="1a475b35-6f6d-430f-93c8-28628b3f8ef9" Action="deleted" />
+								<DocChangeAction Name="OwnerHistory" UniqueId="198e4dbe-b26b-4815-9c13-cd4cca69e13d" Action="added" />
+								<DocChangeAction Name="Name" UniqueId="38ae3acb-0392-45ef-bf5e-e27b8a76ed6a" Action="added" />
+								<DocChangeAction Name="Description" UniqueId="4522b2ce-1530-4286-b731-0f2f5038187b" Action="added" />
+								<DocChangeAction Name="ObjectType" UniqueId="68e2d317-5b80-4141-97fe-0ac1053e2731" Action="added" />
+								<DocChangeAction Name="ObjectPlacement" UniqueId="e45cd5fc-862a-4026-a240-bcb5f14c71fe" Action="added" />
+								<DocChangeAction Name="Representation" UniqueId="5be408e9-af60-4010-80d0-c51209ea749f" Action="added" />
+								<DocChangeAction Name="Segments" UniqueId="593640ff-1fb7-417c-a7c3-775069c8d15b" Action="added" />
+								<DocChangeAction Name="HasAssignments" UniqueId="dc7f01ad-a9bd-4661-ab83-f8d386cdc39c" Action="added" />
+								<DocChangeAction Name="Nests" UniqueId="307e4470-e931-4745-b48a-2438515e4df4" Action="added" />
+								<DocChangeAction Name="IsNestedBy" UniqueId="1f6858c0-4511-46eb-b4e1-b8f7fe520607" Action="added" />
+								<DocChangeAction Name="HasContext" UniqueId="07169f07-87bb-4cf2-ae87-063822f88588" Action="added" />
+								<DocChangeAction Name="IsDecomposedBy" UniqueId="d1637d1b-683b-499d-bc58-92dc32487751" Action="added" />
+								<DocChangeAction Name="Decomposes" UniqueId="847ef386-0c72-4658-89f0-3fd0b896dc6c" Action="added" />
+								<DocChangeAction Name="HasAssociations" UniqueId="5c42b543-f4d1-4a89-bc63-29c637c12bf6" Action="added" />
+								<DocChangeAction Name="IsDeclaredBy" UniqueId="981e6c9f-f055-4c6b-a296-8eb75044bb5b" Action="added" />
+								<DocChangeAction Name="Declares" UniqueId="60cf6375-f2b5-4840-b4a3-c47b1513b35f" Action="added" />
+								<DocChangeAction Name="IsTypedBy" UniqueId="c4ae1265-1033-40a7-9c0f-64b770877136" Action="added" />
+								<DocChangeAction Name="IsDefinedBy" UniqueId="186d3771-56ce-4099-940f-3339c7729fa0" Action="added" />
+								<DocChangeAction Name="ReferencedBy" UniqueId="8f1d5947-4733-433f-bd76-3b59a7ff3f1b" Action="added" />
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="e6170f71-bab7-49aa-9465-ff88ba47c123" Action="added" />
+								<DocChangeAction Name="ReferencedInStructures" UniqueId="6f90a06a-496e-4746-8058-28bf5617178f" Action="added" />
+								<DocChangeAction Name="LayerAssignment" UniqueId="29661ef0-e451-4c79-b2ca-55bc41445b47" Action="deleted" />
+								<DocChangeAction Name="StyledByItem" UniqueId="e4eafd8a-c23d-432c-aaf6-b13eb483b411" Action="deleted" />
+								<DocChangeAction Name="ToAlignmentCurve" UniqueId="db56c76b-99ab-451f-9455-227b8d35c000" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcLinearElement" UniqueId="0412bd89-20d1-43b0-aa4c-683b3226fc78" Action="added" />
-						<DocChangeAction Name="IfcLinearPositioningElement" UniqueId="4f38f82f-aeeb-4dd0-b87b-85b7e24f0c04">
+						<DocChangeAction Name="IfcLinearElement" UniqueId="54e32733-99f0-4c51-ac4d-8e4b8017afc4" Action="added" />
+						<DocChangeAction Name="IfcLinearPositioningElement" UniqueId="527a5587-94e3-4163-8325-aebd703704bc">
 							<Changes>
-								<DocChangeAction Name="Axis" UniqueId="8cb35389-4eff-464f-9698-1691314bb7e6" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Axis" UniqueId="159f163b-9422-4af8-964e-46f2692798b7" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcLinearAxisSelect" NewValue="IfcCurve" />
 									</Aspects>
@@ -165,21 +165,21 @@
 				</DocChangeAction>
 			</Changes>
 		</DocChangeAction>
-		<DocChangeAction Name="Domain specific data schemas" UniqueId="22eafd74-0df9-4268-9cd1-b9618a654796">
+		<DocChangeAction Name="Domain specific data schemas" UniqueId="8001379d-f154-46e3-9741-46558c9a0207">
 			<Changes>
-				<DocChangeAction Name="IfcRail" UniqueId="9a53339f-91e2-4ee0-82e8-e361291dd86b">
+				<DocChangeAction Name="IfcRail" UniqueId="ade8ab43-5dd4-44d7-90df-1202f4882c6d">
 					<Changes>
-						<DocChangeAction Name="IfcLinearAxisSelect" UniqueId="4bd0c90c-3872-468d-9784-8bfbb209e6ad" Action="modified">
+						<DocChangeAction Name="IfcLinearAxisSelect" UniqueId="9c4fdac7-92be-41de-9dc9-680d36515a35" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAlignmentCant" UniqueId="d0b314d3-8ad6-43b4-873a-93d115e60398" Action="modified">
+						<DocChangeAction Name="IfcAlignmentCant" UniqueId="c76b198d-9ae5-452e-858a-e54d464408c3" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="name" OldValue="IfcAlignment2DCant" NewValue="IfcAlignmentCant" />
 							</Aspects>
 							<Changes>
-								<DocChangeAction Name="GlobalId" UniqueId="6e059335-5447-42a5-9d6e-c8679df77865" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="GlobalId" UniqueId="6bcf6e59-04d2-46ed-9715-10c185ef2a6f" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="Segments" NewValue="GlobalId" />
 										<DocChangeAspect Aspect="type" OldValue="IfcAlignment2DCantSegment" NewValue="IfcGloballyUniqueId" />
@@ -187,7 +187,7 @@
 										<DocChangeAspect Aspect="aggregation" OldValue="LIST" NewValue="NONE" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="OwnerHistory" UniqueId="0e9b750d-6961-4079-b6e7-e85e512e4d62" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="OwnerHistory" UniqueId="189747eb-4ac2-4e35-9af2-dcbe41cbe505" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="RailHeadDistance" NewValue="OwnerHistory" />
 										<DocChangeAspect Aspect="type" OldValue="IfcPositiveLengthMeasure" NewValue="IfcOwnerHistory" />
@@ -195,79 +195,79 @@
 										<DocChangeAspect Aspect="xsdformat" OldValue="Default" NewValue="Attribute" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Name" UniqueId="63c3a71a-2f0f-47ea-96b7-b88667cd07f4" Action="added" />
-								<DocChangeAction Name="Description" UniqueId="d8268aa9-64c6-4e2d-8132-921b1fe748cf" Action="added" />
-								<DocChangeAction Name="ObjectType" UniqueId="7d7ad017-8f48-4f68-924f-9de686b60704" Action="added" />
-								<DocChangeAction Name="ObjectPlacement" UniqueId="752ff6a1-b1e5-40d3-be5d-d89b751d0ebf" Action="added" />
-								<DocChangeAction Name="Representation" UniqueId="cef757a9-09a3-42af-b691-f76543b8e449" Action="added" />
-								<DocChangeAction Name="RailHeadDistance" UniqueId="46e98736-7033-4084-9488-5ea864a5c2fb" Action="added" />
-								<DocChangeAction Name="Segments" UniqueId="453d3086-589e-46e2-8490-c34854c99d87" Action="added" />
-								<DocChangeAction Name="HasAssignments" UniqueId="d8d36525-f67d-4065-8feb-493966b2e6b4" Action="added" />
-								<DocChangeAction Name="Nests" UniqueId="ef1470bb-35bc-4f98-88a7-fd0f61632a78" Action="added" />
-								<DocChangeAction Name="IsNestedBy" UniqueId="3f567ee9-2aa7-45c3-87c3-a15f3e4f2630" Action="added" />
-								<DocChangeAction Name="HasContext" UniqueId="a8035876-80a4-41bf-a42c-ffe256159936" Action="added" />
-								<DocChangeAction Name="IsDecomposedBy" UniqueId="c3023101-d6d4-4a4b-941a-7fc6cac738a4" Action="added" />
-								<DocChangeAction Name="Decomposes" UniqueId="e9c4bcbf-41ac-4258-be99-75a078fb6f04" Action="added" />
-								<DocChangeAction Name="HasAssociations" UniqueId="5b7da5c9-7961-433d-98d3-db054b8fa360" Action="added" />
-								<DocChangeAction Name="IsDeclaredBy" UniqueId="3bb44a02-fe4d-487b-adb6-af34f75e9cfd" Action="added" />
-								<DocChangeAction Name="Declares" UniqueId="7076529f-5498-4633-a5a6-2d43fd0d9381" Action="added" />
-								<DocChangeAction Name="IsTypedBy" UniqueId="96a64f9a-5a38-46ff-9773-84db3a3b254a" Action="added" />
-								<DocChangeAction Name="IsDefinedBy" UniqueId="ba6361df-2208-43c2-8ff4-9ece456d5b18" Action="added" />
-								<DocChangeAction Name="ReferencedBy" UniqueId="0d88f5cb-7d39-487e-b1ef-1d0932d78d00" Action="added" />
-								<DocChangeAction Name="PositionedRelativeTo" UniqueId="254ce9ce-cfba-4a47-b150-82b4c000e807" Action="added" />
-								<DocChangeAction Name="ReferencedInStructures" UniqueId="ee62e2cc-9da9-4aa3-aeb7-2d383594f3eb" Action="added" />
-								<DocChangeAction Name="LayerAssignment" UniqueId="6bc03b29-4986-41e4-8c0d-a8a614fd1ed7" Action="deleted" />
-								<DocChangeAction Name="StyledByItem" UniqueId="766d0e1e-a42d-4723-a4c6-92c0f2e2da39" Action="deleted" />
-								<DocChangeAction Name="ToLinearAxis" UniqueId="833201f8-38ae-443c-bf82-382a56022ae6" Action="deleted" />
+								<DocChangeAction Name="Name" UniqueId="22e03e1e-04bb-430c-aeb3-481c2f2a8368" Action="added" />
+								<DocChangeAction Name="Description" UniqueId="cd949a7c-21fb-48aa-92e2-6fa93907aeca" Action="added" />
+								<DocChangeAction Name="ObjectType" UniqueId="a320923c-58f5-4450-88b3-6c9d8d224291" Action="added" />
+								<DocChangeAction Name="ObjectPlacement" UniqueId="72aeb9a8-3090-4bc0-8a8b-eaf897e9d6ee" Action="added" />
+								<DocChangeAction Name="Representation" UniqueId="2c5bc426-ec1f-4d92-b066-ad4922657ec9" Action="added" />
+								<DocChangeAction Name="RailHeadDistance" UniqueId="a994d729-e7cf-4852-b4e1-ebb55b64e52a" Action="added" />
+								<DocChangeAction Name="Segments" UniqueId="c631248e-fa47-45f2-b25c-59c18fe46b6f" Action="added" />
+								<DocChangeAction Name="HasAssignments" UniqueId="2f85a8b1-995d-463d-874e-46629453200c" Action="added" />
+								<DocChangeAction Name="Nests" UniqueId="00e72a60-2c86-4802-9973-fa0c48433b59" Action="added" />
+								<DocChangeAction Name="IsNestedBy" UniqueId="62456076-c37d-434a-9178-525b87dee1fc" Action="added" />
+								<DocChangeAction Name="HasContext" UniqueId="8322a9f1-1ac2-454e-9305-8bc7dce794bd" Action="added" />
+								<DocChangeAction Name="IsDecomposedBy" UniqueId="0516bcb4-e378-4eec-ab37-51106fac5158" Action="added" />
+								<DocChangeAction Name="Decomposes" UniqueId="dd1845dc-2045-4b14-b87d-528a02e36e2c" Action="added" />
+								<DocChangeAction Name="HasAssociations" UniqueId="0f6531c0-103d-46a2-b958-c775e7f4c9a4" Action="added" />
+								<DocChangeAction Name="IsDeclaredBy" UniqueId="8aa78069-6843-42c0-8435-bb79575da119" Action="added" />
+								<DocChangeAction Name="Declares" UniqueId="2dfa6443-5a73-4314-9734-2bff4ede2fdb" Action="added" />
+								<DocChangeAction Name="IsTypedBy" UniqueId="1040187c-5328-4251-835a-e008ea2c1eab" Action="added" />
+								<DocChangeAction Name="IsDefinedBy" UniqueId="4eb2abf9-16ff-448d-837b-cef5d5431aad" Action="added" />
+								<DocChangeAction Name="ReferencedBy" UniqueId="c43369ba-1060-42f9-b9d1-76d69860a2ea" Action="added" />
+								<DocChangeAction Name="PositionedRelativeTo" UniqueId="65474908-f4cf-47b9-97db-ff583d0a9b3a" Action="added" />
+								<DocChangeAction Name="ReferencedInStructures" UniqueId="e8d0e996-efd6-46d0-b74c-bae34560d5ae" Action="added" />
+								<DocChangeAction Name="LayerAssignment" UniqueId="f39bfbb7-6520-4dc1-8cf5-473b00c3258c" Action="deleted" />
+								<DocChangeAction Name="StyledByItem" UniqueId="903f3365-53fd-4782-9442-521023477c7f" Action="deleted" />
+								<DocChangeAction Name="ToLinearAxis" UniqueId="b54eb12b-1c90-4f87-8ae8-7d80824c5f62" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAxisLateralInclination" UniqueId="d3a4a5a5-8e87-4b59-bc79-5595748d00d4" Action="modified">
+						<DocChangeAction Name="IfcAxisLateralInclination" UniqueId="3dc31d66-ccd2-4e8c-a425-a7bcce833a43" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="instantiation" OldValue="ABSTRACT" />
 								<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcDirectrixDistanceSweptAreaSolid" UniqueId="11af2b02-f81d-48e5-aaf6-cdcc96644de8" Action="modified">
+						<DocChangeAction Name="IfcDirectrixDistanceSweptAreaSolid" UniqueId="79f17104-26d5-42b2-806d-df824e2e0a43" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcInclinedReferenceSweptAreaSolid" UniqueId="e873f577-91e0-470f-9534-a0b408f14bf9">
+						<DocChangeAction Name="IfcInclinedReferenceSweptAreaSolid" UniqueId="02306fc1-1978-4563-b9af-a6dd3bbe51d0">
 							<Changes>
-								<DocChangeAction Name="StartDistance" UniqueId="8c7a97d6-1526-422a-8f34-6b10f67b83e8" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartDistance" UniqueId="30432a1b-d2b5-4105-aafb-d9bc5da1cbb0" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcDistanceExpression" NewValue="IfcPointByDistanceExpression" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="EndDistance" UniqueId="2221c544-174d-4afc-ad95-a1d25997b64f" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="EndDistance" UniqueId="8b1dc35b-5319-4687-a5ce-ab2e1179aa78" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcDistanceExpression" NewValue="IfcPointByDistanceExpression" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcLinearAxisWithInclination" UniqueId="f4066ca8-6561-48cd-93a3-7681a691993e" Action="modified">
+						<DocChangeAction Name="IfcLinearAxisWithInclination" UniqueId="7aae3ed9-96b7-4c98-af8e-a2fcd046c08a" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcLinearPlacementWithInclination" UniqueId="d50a5dff-2006-4403-a60a-07e81479c59b" Action="modified">
+						<DocChangeAction Name="IfcLinearPlacementWithInclination" UniqueId="c5c7727d-1cef-4568-b94a-45b22cfd5605" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 							</Aspects>
 							<Changes>
-								<DocChangeAction Name="PlacementMeasuredAlong" UniqueId="382dd53a-f4bb-4788-a20d-3ee2ac699e3c" Action="modified">
+								<DocChangeAction Name="PlacementMeasuredAlong" UniqueId="8df00275-964e-483e-b927-5c31c8761c13" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Distance" UniqueId="4684a297-69e8-4c24-afe9-c54ce45f1b38" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Distance" UniqueId="89bba600-bab9-4c5f-9117-83125a894c4e" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 										<DocChangeAspect Aspect="type" OldValue="IfcDistanceExpression" NewValue="IfcPointByDistanceExpression" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="RelativePlacement" UniqueId="02879164-6eba-4eb7-b653-dca081abc44b" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="RelativePlacement" UniqueId="b7a3bfd2-3770-48e1-b99d-4c9abf0f2718" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="Orientation" NewValue="RelativePlacement" />
 										<DocChangeAspect Aspect="type" OldValue="IfcOrientationExpression" NewValue="IfcAxis2PlacementLinear" />
@@ -276,40 +276,40 @@
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAlignment2DCantSegLine" UniqueId="078d2036-128c-4604-9ce5-37e9e14d95fd" Action="deleted" ImpactSPF="true" ImpactXML="true" />
-						<DocChangeAction Name="IfcAlignment2DCantSegment" UniqueId="f6d4693c-dba1-480b-8ff4-32cec64129b2" Action="moved">
+						<DocChangeAction Name="IfcAlignment2DCantSegLine" UniqueId="c43fadad-1b9f-4e94-a03e-595755e026f4" Action="deleted" ImpactSPF="true" ImpactXML="true" />
+						<DocChangeAction Name="IfcAlignment2DCantSegment" UniqueId="6cc13c26-bce0-4d95-9090-727f477d2070" Action="moved">
 							<Aspects>
 								<DocChangeAspect Aspect="schema" OldValue="IFCRAIL" NewValue="IFCGEOMETRICCONSTRAINTRESOURCE" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAlignment2DCantSegTransition" UniqueId="28fe887b-0500-4231-8f97-ddec3b5af2de" Action="deleted" ImpactSPF="true" ImpactXML="true" />
-						<DocChangeAction Name="IfcAlignment2DVerSegTransition" UniqueId="15133b56-13e7-4ee0-897d-cb58ab5df964" Action="deleted" ImpactSPF="true" ImpactXML="true" />
-						<DocChangeAction Name="IfcDirectrixCurveSweptAreaSolid" UniqueId="942756ef-a802-4778-b2bc-672148766d0d" Action="moved">
+						<DocChangeAction Name="IfcAlignment2DCantSegTransition" UniqueId="4e088c95-bd22-4826-ba9c-e88080d57151" Action="deleted" ImpactSPF="true" ImpactXML="true" />
+						<DocChangeAction Name="IfcAlignment2DVerSegTransition" UniqueId="404b4334-6d62-42fd-877c-f119274ca52f" Action="deleted" ImpactSPF="true" ImpactXML="true" />
+						<DocChangeAction Name="IfcDirectrixCurveSweptAreaSolid" UniqueId="eb27400c-ff55-42bd-b2ef-05a663e2142e" Action="moved">
 							<Aspects>
 								<DocChangeAspect Aspect="schema" OldValue="IFCRAIL" NewValue="IFCGEOMETRYRESOURCE" />
 							</Aspects>
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcRoad" UniqueId="1b212b17-a968-4a10-99bf-4983b9b35a2f">
+				<DocChangeAction Name="IfcRoad" UniqueId="c79c4ff5-9faa-4464-9df2-6c274dfe7a50">
 					<Changes>
-						<DocChangeAction Name="IfcLinearSpanPlacement" UniqueId="c2b4e010-c7f4-44a7-be52-7333b8a87bde" Action="modified">
+						<DocChangeAction Name="IfcLinearSpanPlacement" UniqueId="bdbcaf69-fd8e-4a42-87a8-ab44345295fe" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 							</Aspects>
 							<Changes>
-								<DocChangeAction Name="PlacementMeasuredAlong" UniqueId="ddc8a3b2-ad3b-4ce6-ace3-8c117903d425" Action="modified">
+								<DocChangeAction Name="PlacementMeasuredAlong" UniqueId="23297fa7-964b-4a26-ab8b-b274b9a60926" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Distance" UniqueId="461770ea-77ea-44c9-ab28-0e4e85d4bfe6" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Distance" UniqueId="48424b89-831d-430c-b5c7-bc5ec9faa6b2" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 										<DocChangeAspect Aspect="type" OldValue="IfcDistanceExpression" NewValue="IfcPointByDistanceExpression" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="RelativePlacement" UniqueId="edadba98-aeb2-4739-bae3-7b82da2250ee" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="RelativePlacement" UniqueId="c4a77996-7578-4bd6-abf7-2cba2e3f370f" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="Orientation" NewValue="RelativePlacement" />
 										<DocChangeAspect Aspect="type" OldValue="IfcOrientationExpression" NewValue="IfcAxis2PlacementLinear" />
@@ -318,9 +318,9 @@
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcSectionedSurface" UniqueId="238bba6f-fa98-4eb6-89e9-17c55911d440">
+						<DocChangeAction Name="IfcSectionedSurface" UniqueId="3a12d72a-4ba3-4d1a-aa90-4779f0e64b5d">
 							<Changes>
-								<DocChangeAction Name="CrossSectionPositions" UniqueId="36219d10-dd6d-4d97-a3e0-1af3358ed145" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="CrossSectionPositions" UniqueId="562c7d10-6c70-4e64-b34e-a81bedac76e0" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcDistanceExpression" NewValue="IfcPointByDistanceExpression" />
 									</Aspects>
@@ -331,309 +331,309 @@
 				</DocChangeAction>
 			</Changes>
 		</DocChangeAction>
-		<DocChangeAction Name="Resource definition data schemas" UniqueId="fb8e3534-9f35-4aab-9d46-06f09383c435">
+		<DocChangeAction Name="Resource definition data schemas" UniqueId="d77be4f7-7412-4fc6-9983-e01d23336669">
 			<Changes>
-				<DocChangeAction Name="IfcGeometricConstraintResource" UniqueId="97356c1a-dc50-4c79-8b03-6fbca263d25b">
+				<DocChangeAction Name="IfcGeometricConstraintResource" UniqueId="2fa5838e-b2a3-4058-a81a-764fcccf38f3">
 					<Changes>
-						<DocChangeAction Name="IfcAlignmentCantSegmentTypeEnum" UniqueId="d6fc8bc6-bf8b-4dde-b55f-dcd82b8f710f" Action="added" />
-						<DocChangeAction Name="IfcAlignmentHorizontalSegmentTypeEnum" UniqueId="05ac90ea-8a15-4553-83e9-5cf63d1842f6" Action="added" />
-						<DocChangeAction Name="IfcAlignmentVerticalSegmentTypeEnum" UniqueId="104339a5-022b-4943-aa45-6d09e15aafb3" Action="added" />
-						<DocChangeAction Name="IfcAlignment2DVerSegCircularArc" UniqueId="455ea111-dae5-4f59-beee-f5c7f868f57a" Action="modified">
+						<DocChangeAction Name="IfcAlignmentCantSegmentTypeEnum" UniqueId="1b783141-e975-4e20-9806-69adda551214" Action="added" />
+						<DocChangeAction Name="IfcAlignmentHorizontalSegmentTypeEnum" UniqueId="2783ccd1-0eb8-45e0-9bd4-c458739a7d81" Action="added" />
+						<DocChangeAction Name="IfcAlignmentVerticalSegmentTypeEnum" UniqueId="a9da3c5c-d8ee-4321-9769-bb9db52f0f76" Action="added" />
+						<DocChangeAction Name="IfcAlignment2DVerSegCircularArc" UniqueId="01654de1-eed4-405d-8dd2-dd91eabb15a2" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 							</Aspects>
 							<Changes>
-								<DocChangeAction Name="StartTag" UniqueId="31d4a544-b0da-451f-a484-4d0467716c28" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartTag" UniqueId="cc4a38e2-271e-43a4-95e5-e83920472148" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="TangentialContinuity" NewValue="StartTag" />
 										<DocChangeAspect Aspect="type" OldValue="IfcBoolean" NewValue="IfcLabel" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="EndTag" UniqueId="8fd691b3-0acb-4a60-9afe-6b5202846b65" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="EndTag" UniqueId="83bfca0c-7d96-43a7-835b-34c73e4ee6d3" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartTag" NewValue="EndTag" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="StartDistAlong" UniqueId="5254b7d0-9675-4735-b8bd-012434b93a48" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartDistAlong" UniqueId="05af0615-cb70-4df7-b124-45974c25595d" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="EndTag" NewValue="StartDistAlong" />
 										<DocChangeAspect Aspect="type" OldValue="IfcLabel" NewValue="IfcLengthMeasure" />
 										<DocChangeAspect Aspect="instantiation" OldValue="OPTIONAL" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="HorizontalLength" UniqueId="edf0cc9f-1f3e-4fa7-8610-ae887178082e" Action="modified">
+								<DocChangeAction Name="HorizontalLength" UniqueId="ed740146-96c0-4a5f-8892-c4654460de02" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartDistAlong" NewValue="HorizontalLength" />
 										<DocChangeAspect Aspect="type" OldValue="IfcLengthMeasure" NewValue="IfcPositiveLengthMeasure" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="StartHeight" UniqueId="58f36532-9add-4de7-900d-ee181b39570e" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartHeight" UniqueId="ca952872-34fd-4648-9486-398cfdab95e3" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="HorizontalLength" NewValue="StartHeight" />
 										<DocChangeAspect Aspect="type" OldValue="IfcPositiveLengthMeasure" NewValue="IfcLengthMeasure" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="StartGradient" UniqueId="3d6bb6c5-49f9-436a-9f02-fe90241cc5ad" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="StartGradient" UniqueId="2381a47e-852a-4b18-b722-b26638667f00" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartHeight" NewValue="StartGradient" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="EndGradient" UniqueId="1d0bae0c-d711-4d26-8cb3-7198f2afdc1a" Action="modified">
+								<DocChangeAction Name="EndGradient" UniqueId="cd4f41fe-d3c4-4410-8722-e8ebd9e29609" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartGradient" NewValue="EndGradient" />
 										<DocChangeAspect Aspect="type" OldValue="IfcRatioMeasure" NewValue="IfcLengthMeasure" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="RadiusOfCurvature" UniqueId="836028f7-99a3-40a6-ba71-3a20ac96c8ae" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="RadiusOfCurvature" UniqueId="980d644d-8b63-4bd7-8c76-2b27588f1d52" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="Radius" NewValue="RadiusOfCurvature" />
 										<DocChangeAspect Aspect="instantiation" NewValue="OPTIONAL" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="PredefinedType" UniqueId="4a5befed-2c1c-4a0c-a98d-78a59688faac" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="PredefinedType" UniqueId="ccf05798-e6eb-4396-b89a-b3adfb61a842" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="IsConvex" NewValue="PredefinedType" />
 										<DocChangeAspect Aspect="type" OldValue="IfcBoolean" NewValue="IfcAlignmentVerticalSegmentTypeEnum" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Radius" UniqueId="31819813-7b6d-42d9-bb89-e002eadc6463" Action="added" />
-								<DocChangeAction Name="IsConvex" UniqueId="42a13173-3849-4d84-aa14-85e80d0a6b60" Action="added" />
-								<DocChangeAction Name="LayerAssignment" UniqueId="1248d81e-19fa-4056-a876-45c3c029e654" Action="deleted" />
-								<DocChangeAction Name="StyledByItem" UniqueId="ed62a7e6-2e01-4059-a966-6324a0c56ad1" Action="deleted" />
-								<DocChangeAction Name="ToVertical" UniqueId="a0527878-7eb2-4a3e-9a02-676815371ab7" Action="deleted" />
+								<DocChangeAction Name="Radius" UniqueId="ecd554ec-92c3-4024-9558-3c6ce16d0b94" Action="added" />
+								<DocChangeAction Name="IsConvex" UniqueId="20b9a6f4-115f-4666-aae9-e69a93b3817b" Action="added" />
+								<DocChangeAction Name="LayerAssignment" UniqueId="1ed534ee-6de1-475d-a4af-163a68956c3d" Action="deleted" />
+								<DocChangeAction Name="StyledByItem" UniqueId="d8d98ba3-dba4-4f4d-b426-f0fc963f7a9d" Action="deleted" />
+								<DocChangeAction Name="ToVertical" UniqueId="7aae788d-9418-4936-8179-b504ce6a251e" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAlignment2DVerSegLine" UniqueId="f5870a4b-6571-477e-9a98-75ce61058aed" Action="modified">
+						<DocChangeAction Name="IfcAlignment2DVerSegLine" UniqueId="da56d477-a349-4b1d-8feb-100379f1aaa8" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 							</Aspects>
 							<Changes>
-								<DocChangeAction Name="StartTag" UniqueId="c87bf293-2486-4c9f-95ff-47aa1c4a647e" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartTag" UniqueId="641f403e-1277-4cd1-8734-ec7fee54491a" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="TangentialContinuity" NewValue="StartTag" />
 										<DocChangeAspect Aspect="type" OldValue="IfcBoolean" NewValue="IfcLabel" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="EndTag" UniqueId="837be180-b3d4-4ebe-8598-f556321b006a" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="EndTag" UniqueId="5c40c98c-9a14-4f64-879a-ad56e2f57b5c" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartTag" NewValue="EndTag" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="StartDistAlong" UniqueId="3a0d2d87-a689-40a6-94a1-78834aa376e2" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartDistAlong" UniqueId="c9f6a881-158d-46bf-86ab-e2fb587339d2" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="EndTag" NewValue="StartDistAlong" />
 										<DocChangeAspect Aspect="type" OldValue="IfcLabel" NewValue="IfcLengthMeasure" />
 										<DocChangeAspect Aspect="instantiation" OldValue="OPTIONAL" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="HorizontalLength" UniqueId="dea37c0a-646f-4bbe-8d1e-c02b9b0637fe" Action="modified">
+								<DocChangeAction Name="HorizontalLength" UniqueId="8d7836ce-1b95-4d3a-b9c2-433cfa3b97bf" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartDistAlong" NewValue="HorizontalLength" />
 										<DocChangeAspect Aspect="type" OldValue="IfcLengthMeasure" NewValue="IfcPositiveLengthMeasure" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="StartHeight" UniqueId="3c8eed4d-5a7f-467e-99df-74d873902c89" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartHeight" UniqueId="3740dad5-9e5b-4185-9938-0c6478b45607" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="HorizontalLength" NewValue="StartHeight" />
 										<DocChangeAspect Aspect="type" OldValue="IfcPositiveLengthMeasure" NewValue="IfcLengthMeasure" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="StartGradient" UniqueId="dc323d13-a3be-4c96-b7cd-d779a7555e40" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="StartGradient" UniqueId="c472e4e8-f61f-4b95-9957-da28c07a1393" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartHeight" NewValue="StartGradient" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="EndGradient" UniqueId="b9405619-6f9d-46d5-a216-f91973894634" Action="modified">
+								<DocChangeAction Name="EndGradient" UniqueId="9cc86e42-efe7-434a-9a54-3c56331e17ad" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartGradient" NewValue="EndGradient" />
 										<DocChangeAspect Aspect="type" OldValue="IfcRatioMeasure" NewValue="IfcLengthMeasure" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="RadiusOfCurvature" UniqueId="292c4999-7b36-4986-a356-c5cba63da3a8" Action="added" />
-								<DocChangeAction Name="PredefinedType" UniqueId="65efed8a-e79b-48bb-a6d7-b1a0db04d9a2" Action="added" />
-								<DocChangeAction Name="LayerAssignment" UniqueId="84a37a5e-8415-47fa-b3f1-2d9ee05ba24b" Action="deleted" />
-								<DocChangeAction Name="StyledByItem" UniqueId="99c8a8a6-cfbc-4897-a26c-041fae05ec5c" Action="deleted" />
-								<DocChangeAction Name="ToVertical" UniqueId="dbea715a-4f6a-41a1-98aa-d57b2e06beda" Action="deleted" />
+								<DocChangeAction Name="RadiusOfCurvature" UniqueId="0472ab47-57f2-43a6-893a-b8090ea185e5" Action="added" />
+								<DocChangeAction Name="PredefinedType" UniqueId="c269e0b2-22de-4367-b60d-9af8a55bafd1" Action="added" />
+								<DocChangeAction Name="LayerAssignment" UniqueId="7bbb9459-dd71-47c0-9a37-b3eb22cc9fe9" Action="deleted" />
+								<DocChangeAction Name="StyledByItem" UniqueId="85f2f241-385f-4f43-a6e4-a8705a548668" Action="deleted" />
+								<DocChangeAction Name="ToVertical" UniqueId="e7c9c221-4d32-4ac6-bfd0-044bfb1a741d" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAlignment2DVerSegParabolicArc" UniqueId="bacff779-f87c-4169-96f0-a92fcecc6acb" Action="modified">
+						<DocChangeAction Name="IfcAlignment2DVerSegParabolicArc" UniqueId="b1d71bec-36bc-4e88-b11b-b2b41d89f79a" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 							</Aspects>
 							<Changes>
-								<DocChangeAction Name="StartTag" UniqueId="bfb71db8-744d-43cc-9cf7-b42051124138" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartTag" UniqueId="a0d72c5a-6518-4af9-bb3e-fa3c4754a52a" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="TangentialContinuity" NewValue="StartTag" />
 										<DocChangeAspect Aspect="type" OldValue="IfcBoolean" NewValue="IfcLabel" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="EndTag" UniqueId="3c8c8ffe-c24c-4d61-991b-25889bbeaa63" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="EndTag" UniqueId="a7e22254-2352-435b-89e0-9e05056e94fc" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartTag" NewValue="EndTag" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="StartDistAlong" UniqueId="b03e664b-853d-4a37-b342-7b4ea38bde16" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartDistAlong" UniqueId="372f24ce-052c-412b-a393-454475a133e0" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="EndTag" NewValue="StartDistAlong" />
 										<DocChangeAspect Aspect="type" OldValue="IfcLabel" NewValue="IfcLengthMeasure" />
 										<DocChangeAspect Aspect="instantiation" OldValue="OPTIONAL" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="HorizontalLength" UniqueId="233cba04-3d5a-4a75-b76f-e4aefd1bbf25" Action="modified">
+								<DocChangeAction Name="HorizontalLength" UniqueId="bf136020-7556-430f-8cdf-b3065389c771" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartDistAlong" NewValue="HorizontalLength" />
 										<DocChangeAspect Aspect="type" OldValue="IfcLengthMeasure" NewValue="IfcPositiveLengthMeasure" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="StartHeight" UniqueId="0adbd07a-0c8e-4f52-b803-4661603978a0" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartHeight" UniqueId="fd5ffbee-7bdb-4ad0-b78d-5184ef189425" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="HorizontalLength" NewValue="StartHeight" />
 										<DocChangeAspect Aspect="type" OldValue="IfcPositiveLengthMeasure" NewValue="IfcLengthMeasure" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="StartGradient" UniqueId="592d1677-f9b1-49d8-9d21-9c00faf1a461" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="StartGradient" UniqueId="d4810339-4fc1-499e-bc95-e79adfabf40a" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartHeight" NewValue="StartGradient" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="EndGradient" UniqueId="867a9edd-ed06-4027-8536-f319d2c2b364" Action="modified">
+								<DocChangeAction Name="EndGradient" UniqueId="140a3dda-9074-4ac9-bb63-81d6e41dcb67" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartGradient" NewValue="EndGradient" />
 										<DocChangeAspect Aspect="type" OldValue="IfcRatioMeasure" NewValue="IfcLengthMeasure" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="RadiusOfCurvature" UniqueId="61279e21-7b30-41b4-842c-5c47c5e4aee6" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="RadiusOfCurvature" UniqueId="52b2386e-759c-4f33-ac88-bbd73718c063" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="ParabolaConstant" NewValue="RadiusOfCurvature" />
 										<DocChangeAspect Aspect="instantiation" NewValue="OPTIONAL" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="PredefinedType" UniqueId="dc680440-942f-4835-8e92-59d9d2d31900" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="PredefinedType" UniqueId="36303f16-7028-4ae5-bb12-1f443a066019" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="IsConvex" NewValue="PredefinedType" />
 										<DocChangeAspect Aspect="type" OldValue="IfcBoolean" NewValue="IfcAlignmentVerticalSegmentTypeEnum" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="ParabolaConstant" UniqueId="41e9c026-aba4-444a-be82-0a656a2d391c" Action="added" />
-								<DocChangeAction Name="IsConvex" UniqueId="2bd6e120-7cf7-48a9-8922-17559c912b84" Action="added" />
-								<DocChangeAction Name="LayerAssignment" UniqueId="a4aaf458-fd68-4579-ba14-cdceb8f71e8c" Action="deleted" />
-								<DocChangeAction Name="StyledByItem" UniqueId="0a856e94-9e16-489d-8ec7-48b8f786617f" Action="deleted" />
-								<DocChangeAction Name="ToVertical" UniqueId="60d9859c-8891-4ab0-95b0-caba8465a24e" Action="deleted" />
+								<DocChangeAction Name="ParabolaConstant" UniqueId="4872f5b4-b6e0-4374-b330-c0d41d430301" Action="added" />
+								<DocChangeAction Name="IsConvex" UniqueId="5af98c84-f757-44ba-9939-43fdd71b047a" Action="added" />
+								<DocChangeAction Name="LayerAssignment" UniqueId="0b773ae6-bd28-468b-a646-0addb5f6df4d" Action="deleted" />
+								<DocChangeAction Name="StyledByItem" UniqueId="147f4bcb-f840-42e6-a5ea-5a2d9b7e46cb" Action="deleted" />
+								<DocChangeAction Name="ToVertical" UniqueId="ee1ff835-e5e1-4632-86a9-62bf200a5987" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAlignmentCantSegment" UniqueId="184447f4-2834-4a85-8f9e-d62804ea3a48" Action="moved">
+						<DocChangeAction Name="IfcAlignmentCantSegment" UniqueId="f57a6921-00c0-47d1-9967-4bb95b62516a" Action="moved">
 							<Aspects>
 								<DocChangeAspect Aspect="schema" OldValue="IFCRAIL" NewValue="IFCGEOMETRICCONSTRAINTRESOURCE" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAlignmentHorizontalSegment" UniqueId="1943f3a2-c277-431b-bd2e-3a9c758073c4" Action="modified">
+						<DocChangeAction Name="IfcAlignmentHorizontalSegment" UniqueId="e7a40061-0a2d-4e22-a133-ebe924fb05c2" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="name" OldValue="IfcAlignment2DHorizontalSegment" NewValue="IfcAlignmentHorizontalSegment" />
 							</Aspects>
 							<Changes>
-								<DocChangeAction Name="StartTag" UniqueId="8956a817-422d-423b-b6cc-0b314686aa42" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartTag" UniqueId="da159cb5-5e04-4aa9-858c-a26a25d0e972" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="TangentialContinuity" NewValue="StartTag" />
 										<DocChangeAspect Aspect="type" OldValue="IfcBoolean" NewValue="IfcLabel" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="EndTag" UniqueId="76e9bc18-6536-4891-9a3c-31f9d8239f86" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="EndTag" UniqueId="3531422f-71d4-42fb-b973-f156ca9d6ca1" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartTag" NewValue="EndTag" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="StartPoint" UniqueId="6996018a-abb8-43c9-a3b2-16d710e5eed1" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartPoint" UniqueId="6297e866-0608-402d-98a8-a91c4d949461" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="EndTag" NewValue="StartPoint" />
 										<DocChangeAspect Aspect="type" OldValue="IfcLabel" NewValue="IfcCartesianPoint" />
 										<DocChangeAspect Aspect="instantiation" OldValue="OPTIONAL" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="StartDirection" UniqueId="762f561a-ca36-4ff2-9272-2821517d003c" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartDirection" UniqueId="33150c20-5911-4540-94e6-c39c704c0129" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="CurveGeometry" NewValue="StartDirection" />
 										<DocChangeAspect Aspect="type" OldValue="IfcCurveSegment2D" NewValue="IfcPlaneAngleMeasure" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="StartRadiusOfCurvature" UniqueId="b7bbe75b-b456-4d6b-8f1c-1ad4853c7bb8" Action="added" />
-								<DocChangeAction Name="EndRadiusOfCurvature" UniqueId="257f3a60-833b-4a13-8eca-4443f2414587" Action="added" />
-								<DocChangeAction Name="SegmentLength" UniqueId="bec9b27f-4e6b-4594-8263-5d060ddbe35d" Action="added" />
-								<DocChangeAction Name="GravityCenterLineHeight" UniqueId="b59cca79-637e-4ed4-b3ec-27706f27f00e" Action="added" />
-								<DocChangeAction Name="PredefinedType" UniqueId="00585e94-90e5-44b6-8a9b-276b9ca59158" Action="added" />
-								<DocChangeAction Name="LayerAssignment" UniqueId="83c15135-ef2f-4b9a-b6cb-0c27952db664" Action="deleted" />
-								<DocChangeAction Name="StyledByItem" UniqueId="dbe99d29-a655-46cc-8fc9-e8ae5bfc69b7" Action="deleted" />
-								<DocChangeAction Name="ToHorizontal" UniqueId="22e69640-0abb-489e-b38a-644f93925d34" Action="deleted" />
+								<DocChangeAction Name="StartRadiusOfCurvature" UniqueId="95e4a41d-383d-4d2f-bc13-50732d1c206c" Action="added" />
+								<DocChangeAction Name="EndRadiusOfCurvature" UniqueId="b60873d2-6232-43fe-a62d-ab6efb6da715" Action="added" />
+								<DocChangeAction Name="SegmentLength" UniqueId="183d68fa-7189-46d1-bedc-57dff4cd4afa" Action="added" />
+								<DocChangeAction Name="GravityCenterLineHeight" UniqueId="fbaf550c-9c35-46de-a207-47b7c85f304f" Action="added" />
+								<DocChangeAction Name="PredefinedType" UniqueId="99387d20-6b35-4617-afe7-4982bfc2af43" Action="added" />
+								<DocChangeAction Name="LayerAssignment" UniqueId="4076db91-6dc6-4e59-82e9-8a82dddc6e33" Action="deleted" />
+								<DocChangeAction Name="StyledByItem" UniqueId="7a7c94a9-b86a-46a2-83cf-e7013db0a473" Action="deleted" />
+								<DocChangeAction Name="ToHorizontal" UniqueId="f47c744f-e1e9-4f87-a6af-36fe64b71f1e" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAlignmentParameterSegment" UniqueId="d58b6517-6e90-4afb-926a-aa5603b4d36a" Action="added" />
-						<DocChangeAction Name="IfcAlignmentVerticalSegment" UniqueId="95bba485-93f6-4819-85bf-60a7c1f71533" Action="modified">
+						<DocChangeAction Name="IfcAlignmentParameterSegment" UniqueId="7daca454-274a-46e3-9836-765de4043cb2" Action="added" />
+						<DocChangeAction Name="IfcAlignmentVerticalSegment" UniqueId="79d6b38c-d6c2-4621-b1b1-1ac136ed444c" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="name" OldValue="IfcAlignment2DVerticalSegment" NewValue="IfcAlignmentVerticalSegment" />
 								<DocChangeAspect Aspect="instantiation" OldValue="ABSTRACT" />
 							</Aspects>
 							<Changes>
-								<DocChangeAction Name="StartTag" UniqueId="b292884f-4934-42ec-b3e0-7bfc63c995b7" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartTag" UniqueId="ca4da5fe-ec17-482a-a4e9-eedcc3a382fd" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="TangentialContinuity" NewValue="StartTag" />
 										<DocChangeAspect Aspect="type" OldValue="IfcBoolean" NewValue="IfcLabel" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="EndTag" UniqueId="bdce376b-2c61-4ce2-9d24-ccafb3c933cb" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="EndTag" UniqueId="61a1d6ce-3ea8-464a-83f4-e7f30cffff54" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartTag" NewValue="EndTag" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="StartDistAlong" UniqueId="08923299-ac97-424f-8a36-b7c75a38cad3" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartDistAlong" UniqueId="d0a6b95c-d0f0-475d-b201-0688935f5fd4" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="EndTag" NewValue="StartDistAlong" />
 										<DocChangeAspect Aspect="type" OldValue="IfcLabel" NewValue="IfcLengthMeasure" />
 										<DocChangeAspect Aspect="instantiation" OldValue="OPTIONAL" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="HorizontalLength" UniqueId="c6f45439-a269-4b5b-b646-bc3725f5a80f" Action="modified">
+								<DocChangeAction Name="HorizontalLength" UniqueId="d2791f52-55bf-4665-baeb-dd8f7d59283d" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartDistAlong" NewValue="HorizontalLength" />
 										<DocChangeAspect Aspect="type" OldValue="IfcLengthMeasure" NewValue="IfcPositiveLengthMeasure" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="StartHeight" UniqueId="f405704c-3f5d-43f5-998a-552a99556513" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="StartHeight" UniqueId="2e554bc1-adf7-4116-b92a-a7c65ba937a3" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="HorizontalLength" NewValue="StartHeight" />
 										<DocChangeAspect Aspect="type" OldValue="IfcPositiveLengthMeasure" NewValue="IfcLengthMeasure" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="StartGradient" UniqueId="eb5eb127-d026-46e6-9382-fa5d232e34a1" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="StartGradient" UniqueId="d18c8fa2-3174-4d69-aa91-9d7d85c79eac" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartHeight" NewValue="StartGradient" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="EndGradient" UniqueId="072cb889-e8cf-4a86-b32c-bb2a803db02c" Action="modified">
+								<DocChangeAction Name="EndGradient" UniqueId="e55bdf47-7f4f-4683-9344-42db6b8757ee" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="StartGradient" NewValue="EndGradient" />
 										<DocChangeAspect Aspect="type" OldValue="IfcRatioMeasure" NewValue="IfcLengthMeasure" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="RadiusOfCurvature" UniqueId="498fc389-b321-4260-8a7b-b8b5dc36fb93" Action="added" />
-								<DocChangeAction Name="PredefinedType" UniqueId="b9884a1c-5cd4-44e2-8778-aeb89a19c757" Action="added" />
-								<DocChangeAction Name="LayerAssignment" UniqueId="7da62005-a7cd-43c6-a404-2ab9dc27e21f" Action="deleted" />
-								<DocChangeAction Name="StyledByItem" UniqueId="a33a3507-b281-4af8-8a80-40ccbfc09620" Action="deleted" />
-								<DocChangeAction Name="ToVertical" UniqueId="1d1029d5-f470-4566-92dd-53e50d08cf91" Action="deleted" />
+								<DocChangeAction Name="RadiusOfCurvature" UniqueId="140a7533-7797-4c44-880b-0f1196844272" Action="added" />
+								<DocChangeAction Name="PredefinedType" UniqueId="5fce717c-3da1-4a35-b040-97a143422596" Action="added" />
+								<DocChangeAction Name="LayerAssignment" UniqueId="10cc14b6-b41c-4c03-8c1a-3e98386002e9" Action="deleted" />
+								<DocChangeAction Name="StyledByItem" UniqueId="765037a2-5955-4f20-b537-c763bf0b8a0d" Action="deleted" />
+								<DocChangeAction Name="ToVertical" UniqueId="74e49173-a1b0-43c1-a074-2cc2375ded59" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcLinearPlacement" UniqueId="1cb9f501-e642-447c-a68b-5c2fd72ce8c9">
+						<DocChangeAction Name="IfcLinearPlacement" UniqueId="13e1143d-81ed-4667-905e-4876667d5a7e">
 							<Changes>
-								<DocChangeAction Name="PlacementMeasuredAlong" UniqueId="f53da3fb-5033-437b-809c-bfcdbfa22c1c" Action="modified">
+								<DocChangeAction Name="PlacementMeasuredAlong" UniqueId="30baca4a-e479-4db2-9f4e-4ccece7ca514" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Distance" UniqueId="54a4ee8c-dbf2-487c-afbc-0d539358d65c" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Distance" UniqueId="fc0f53ab-ff95-447f-bfb7-ac9a395e58ef" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 										<DocChangeAspect Aspect="type" OldValue="IfcDistanceExpression" NewValue="IfcPointByDistanceExpression" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="RelativePlacement" UniqueId="9b6f75d2-a59d-41af-86ee-fa3522ec70dc" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="RelativePlacement" UniqueId="e0a1252c-70fa-47b6-85a8-a001f092d4a7" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="Orientation" NewValue="RelativePlacement" />
 										<DocChangeAspect Aspect="type" OldValue="IfcOrientationExpression" NewValue="IfcAxis2PlacementLinear" />
@@ -642,61 +642,61 @@
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAlignment2DHorizontal" UniqueId="bb83213f-8a91-4d1b-88af-f3a20e0731cc" Action="moved">
+						<DocChangeAction Name="IfcAlignment2DHorizontal" UniqueId="2d720982-f699-48bb-abb2-f56ff79872da" Action="moved">
 							<Aspects>
 								<DocChangeAspect Aspect="schema" OldValue="IFCGEOMETRICCONSTRAINTRESOURCE" NewValue="IFCPRODUCTEXTENSION" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAlignment2DSegment" UniqueId="6d7eb25d-4ad6-4aa9-b08d-e3c8a1aec4d6" Action="moved">
+						<DocChangeAction Name="IfcAlignment2DSegment" UniqueId="82b674ad-392a-46be-a74c-f6cd23d185c0" Action="moved">
 							<Aspects>
 								<DocChangeAspect Aspect="schema" OldValue="IFCGEOMETRICCONSTRAINTRESOURCE" NewValue="IFCPRODUCTEXTENSION" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAlignment2DVertical" UniqueId="ec328330-3c59-4c57-a868-5dfb41cfef0b" Action="moved">
+						<DocChangeAction Name="IfcAlignment2DVertical" UniqueId="314ae394-3540-472a-b8ed-8464c92b9dc3" Action="moved">
 							<Aspects>
 								<DocChangeAspect Aspect="schema" OldValue="IFCGEOMETRICCONSTRAINTRESOURCE" NewValue="IFCPRODUCTEXTENSION" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAlignmentCurve" UniqueId="d753b8a3-1fd9-4157-8933-6ff4f5d1dd57" Action="moved">
+						<DocChangeAction Name="IfcAlignmentCurve" UniqueId="726417d6-5965-4804-8452-e6d4e8990bda" Action="moved">
 							<Aspects>
 								<DocChangeAspect Aspect="schema" OldValue="IFCGEOMETRICCONSTRAINTRESOURCE" NewValue="IFCGEOMETRYRESOURCE" />
 							</Aspects>
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcGeometricModelResource" UniqueId="cd9d309b-fbc6-434e-9733-475d991b95c6">
+				<DocChangeAction Name="IfcGeometricModelResource" UniqueId="13f6de8c-40fc-488d-b182-28c336ad0a9c">
 					<Changes>
-						<DocChangeAction Name="IfcFixedReferenceSweptAreaSolid" UniqueId="229166cc-0b9d-43a3-b149-58b9a87db37b">
+						<DocChangeAction Name="IfcFixedReferenceSweptAreaSolid" UniqueId="06742cb6-7f08-4685-ae00-3236263a83f3">
 							<Changes>
-								<DocChangeAction Name="StartParam" UniqueId="5a16d1bd-c49c-4217-a6b8-1b8be3c93d04" Action="modified">
+								<DocChangeAction Name="StartParam" UniqueId="b2f76a13-8415-4a11-9920-5b26a81dda57" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcParameterValue" NewValue="IfcCurveMeasureSelect" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="EndParam" UniqueId="13ca05db-742c-4fb6-927e-0e843592d9c1" Action="modified">
+								<DocChangeAction Name="EndParam" UniqueId="727fb4ce-9513-4e1b-9671-efe66b0ff727" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcParameterValue" NewValue="IfcCurveMeasureSelect" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcSectionedSolidHorizontal" UniqueId="56776953-6a90-4030-8a15-6f5c1f0da44b">
+						<DocChangeAction Name="IfcSectionedSolidHorizontal" UniqueId="72566c10-9233-4d3c-b66c-61fd9d4237c5">
 							<Changes>
-								<DocChangeAction Name="CrossSectionPositions" UniqueId="2377b955-8f8e-4330-99c7-fed0aff7412b" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="CrossSectionPositions" UniqueId="3c91fd4b-ffd1-4e6c-8348-2ea1b1e3608a" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcDistanceExpression" NewValue="IfcPointByDistanceExpression" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcSurfaceCurveSweptAreaSolid" UniqueId="5c7aaddc-f336-4f3d-a054-c96fc95f66d7">
+						<DocChangeAction Name="IfcSurfaceCurveSweptAreaSolid" UniqueId="cdecd6ab-9c43-4616-bb99-d9d0c3a59a6d">
 							<Changes>
-								<DocChangeAction Name="StartParam" UniqueId="0acb0d7f-a701-4d0d-9a2b-c2c3ecd5ceb1" Action="modified">
+								<DocChangeAction Name="StartParam" UniqueId="99981258-a91c-4955-85ea-82c9aa6cc075" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcParameterValue" NewValue="IfcCurveMeasureSelect" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="EndParam" UniqueId="98a11afb-518f-4527-b104-7315ac8d6173" Action="modified">
+								<DocChangeAction Name="EndParam" UniqueId="a6fa9d03-ba83-4dc0-ada4-9b255f746465" Action="modified">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcParameterValue" NewValue="IfcCurveMeasureSelect" />
 									</Aspects>
@@ -705,155 +705,155 @@
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcGeometryResource" UniqueId="db740d80-440d-413c-865e-44672c47fa09">
+				<DocChangeAction Name="IfcGeometryResource" UniqueId="f6929384-b2b2-4943-b2a8-53a648714c07">
 					<Changes>
-						<DocChangeAction Name="IfcCurveMeasureSelect" UniqueId="2a020799-6f64-4701-a791-b2786c0ef053" Action="added" />
-						<DocChangeAction Name="IfcAlignmentCurve" UniqueId="ebeba299-999f-40de-8c4f-3e993a2060cc" Action="modified">
+						<DocChangeAction Name="IfcCurveMeasureSelect" UniqueId="0e65535d-f598-42a6-8b10-b19d365118da" Action="added" />
+						<DocChangeAction Name="IfcAlignmentCurve" UniqueId="872385db-ac28-4dea-8e9e-b51d769b675d" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="schema" OldValue="IFCGEOMETRICCONSTRAINTRESOURCE" NewValue="IFCGEOMETRYRESOURCE" />
 								<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 							</Aspects>
 							<Changes>
-								<DocChangeAction Name="Horizontal" UniqueId="09d6ce9f-f680-4717-b8d8-844216a20597" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Horizontal" UniqueId="c6887c19-66f7-4671-9967-58ff741aabbb" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcAlignment2DHorizontal" NewValue="IfcAlignmentHorizontal" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Vertical" UniqueId="68048070-c700-4f8e-bcb5-c8d10a4f1944" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Vertical" UniqueId="f543f39a-0d69-4274-b13f-05ff99dbd899" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcAlignment2DVertical" NewValue="IfcAlignmentVertical" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAxis1Placement" UniqueId="470b3730-d338-475a-9bca-a5ca634d81ad">
+						<DocChangeAction Name="IfcAxis1Placement" UniqueId="f119915e-ad0a-4b98-b163-50110ee288e7">
 							<Changes>
-								<DocChangeAction Name="Location" UniqueId="1e119917-59f1-4e7a-b19e-9803ba2f8160" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Location" UniqueId="f1f1d3d3-5587-4a38-86f5-16211f448969" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcCartesianPoint" NewValue="IfcPoint" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAxis2Placement2D" UniqueId="3290e1c3-a636-43bb-bc35-8215af679029">
+						<DocChangeAction Name="IfcAxis2Placement2D" UniqueId="ac80a2cb-85c2-4881-b0ff-4dc280a2704f">
 							<Changes>
-								<DocChangeAction Name="Location" UniqueId="485ba411-3c1a-4544-8535-545b4262884b" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Location" UniqueId="fea9eb69-ba2f-4276-be78-49771eac9522" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcCartesianPoint" NewValue="IfcPoint" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAxis2Placement3D" UniqueId="cf1eabd5-35c4-4168-a6b8-282f40157668">
+						<DocChangeAction Name="IfcAxis2Placement3D" UniqueId="c5682ce8-9275-4f9d-886f-dade230f1caa">
 							<Changes>
-								<DocChangeAction Name="Location" UniqueId="9684e100-833e-4a02-bbb9-b766bd37912c" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Location" UniqueId="ff5e936f-a84f-4d71-81e8-51ed9be5a93c" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcCartesianPoint" NewValue="IfcPoint" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcAxis2PlacementLinear" UniqueId="47453d69-5400-495e-9aff-cf760612beea" Action="modified">
+						<DocChangeAction Name="IfcAxis2PlacementLinear" UniqueId="d3849c83-a6a7-4602-89f2-d2525cbd93f2" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="name" OldValue="IfcOrientationExpression" NewValue="IfcAxis2PlacementLinear" />
 							</Aspects>
 							<Changes>
-								<DocChangeAction Name="Location" UniqueId="6f7d5d6c-c4f4-49ad-901f-4a8951698f9d" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Location" UniqueId="1227c380-0271-4133-9399-5821f2925734" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="LateralAxisDirection" NewValue="Location" />
 										<DocChangeAspect Aspect="type" OldValue="IfcDirection" NewValue="IfcPoint" />
 										<DocChangeAspect Aspect="xsdformat" OldValue="Default" NewValue="Attribute" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="Axis" UniqueId="9a9e4ab7-9a63-442a-8426-243cbe4d531d" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="Axis" UniqueId="355f52a6-d3f4-4e39-aa7a-b110851e7bb2" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="VerticalAxisDirection" NewValue="Axis" />
 										<DocChangeAspect Aspect="instantiation" NewValue="OPTIONAL" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="RefDirection" UniqueId="8900549e-a49c-475f-85c4-7d8807c4a921" Action="added" />
+								<DocChangeAction Name="RefDirection" UniqueId="d16ce040-4955-452b-8c05-7948702b6327" Action="added" />
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcBlossCurve" UniqueId="2705c8ec-2c73-40d6-aae8-f60e342989fe" Action="added" />
-						<DocChangeAction Name="IfcBoundaryCurve" UniqueId="a396bee1-86df-4407-b423-32434cac9fa4">
+						<DocChangeAction Name="IfcBlossCurve" UniqueId="6aa297a5-223d-4cbc-92f1-7063f3b70602" Action="added" />
+						<DocChangeAction Name="IfcBoundaryCurve" UniqueId="49e13046-3194-4f29-8684-fb06c0ffd27c">
 							<Changes>
-								<DocChangeAction Name="Segments" UniqueId="c578d11e-68c4-4ff6-9fbf-1733de895941" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Segments" UniqueId="22073400-f62d-417d-ad80-b11b4fb51625" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcCompositeCurveSegment" NewValue="IfcSegment" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcCircularArcSegment2D" UniqueId="b04a6840-1212-4e44-9207-5b5ca64e0199" Action="modified">
+						<DocChangeAction Name="IfcCircularArcSegment2D" UniqueId="a83b36c4-05c2-4151-b4cd-9432630b05d1" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcClothoid" UniqueId="7bc63b0c-e488-44ef-b21d-bbe9ec68e710" Action="added" />
-						<DocChangeAction Name="IfcCompositeCurve" UniqueId="6cc023d8-3b1c-403c-95cf-eb658cc5168f">
+						<DocChangeAction Name="IfcClothoid" UniqueId="30031a46-d9d0-431d-9e30-2070d027dbf1" Action="added" />
+						<DocChangeAction Name="IfcCompositeCurve" UniqueId="72dddd01-eb84-4798-816a-d554f7cdca77">
 							<Changes>
-								<DocChangeAction Name="Segments" UniqueId="9cb6efdf-68b9-4db4-8b81-923f043d23bd" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Segments" UniqueId="86e7a0da-54c9-41e9-b735-e13eb3753f3d" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcCompositeCurveSegment" NewValue="IfcSegment" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcCompositeCurveOnSurface" UniqueId="2b7bf26e-5f8b-47a5-b101-329007736230">
+						<DocChangeAction Name="IfcCompositeCurveOnSurface" UniqueId="2e5e88be-536a-43c0-8fc8-e709688f9c2a">
 							<Changes>
-								<DocChangeAction Name="Segments" UniqueId="8b8682f8-18e3-4b5c-aef3-b74c99e72cac" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Segments" UniqueId="10e8af64-a2bd-4bf1-9f20-f9ea8a8590d1" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcCompositeCurveSegment" NewValue="IfcSegment" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcCurveSegment" UniqueId="e907328f-2cff-4965-a201-a1d6be047404" Action="added" />
-						<DocChangeAction Name="IfcCurveSegment2D" UniqueId="39328538-9305-4ec1-a3d7-32f17ce8276e" Action="modified">
+						<DocChangeAction Name="IfcCurveSegment" UniqueId="14ef2cc2-ce09-4f6d-aa55-6b7ac4d6fbf6" Action="added" />
+						<DocChangeAction Name="IfcCurveSegment2D" UniqueId="c11e5cf7-ed4e-4e54-857f-7441c7603888" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcDirectrixCurveSweptAreaSolid" UniqueId="60e84aed-21f4-4296-8ab2-820ec16074da" Action="moved">
+						<DocChangeAction Name="IfcDirectrixCurveSweptAreaSolid" UniqueId="debb266f-b0f3-4ae3-8221-3476fdb10008" Action="moved">
 							<Aspects>
 								<DocChangeAspect Aspect="schema" OldValue="IFCRAIL" NewValue="IFCGEOMETRYRESOURCE" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcGradientCurve" UniqueId="d8a6d5bb-81fb-4ea1-8b29-d6024a0d50ec" Action="added" />
-						<DocChangeAction Name="IfcLineSegment2D" UniqueId="a8888bbd-e036-4b4e-83e0-7a23405b63ce" Action="modified">
+						<DocChangeAction Name="IfcGradientCurve" UniqueId="3c27a63b-7f69-4f94-a7ed-092dd09906bb" Action="added" />
+						<DocChangeAction Name="IfcLineSegment2D" UniqueId="45b15a7c-0f01-41cf-b313-c00361aef1d8" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 							</Aspects>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcOffsetCurveByDistances" UniqueId="951e7fa3-a964-448c-beba-00ccc82ee899">
+						<DocChangeAction Name="IfcOffsetCurveByDistances" UniqueId="198d032d-617b-489d-84b4-b26f3c4b107d">
 							<Changes>
-								<DocChangeAction Name="OffsetValues" UniqueId="09be10c5-adf9-49b3-9ae6-2fa21c7cd052" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="OffsetValues" UniqueId="be64744b-e053-487c-98d5-8d4c6c1c475b" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcDistanceExpression" NewValue="IfcPointByDistanceExpression" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcOuterBoundaryCurve" UniqueId="97a5c51b-bc7c-4925-89e6-8c99b1e49eab">
+						<DocChangeAction Name="IfcOuterBoundaryCurve" UniqueId="53b3f98e-3a0e-4c7f-b699-19c4f8deaa81">
 							<Changes>
-								<DocChangeAction Name="Segments" UniqueId="6d52f77c-8ca5-4e2c-be4a-1664ffb563e4" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="Segments" UniqueId="0983fd39-1e43-4e08-ba60-1a37873ddb19" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcCompositeCurveSegment" NewValue="IfcSegment" />
 									</Aspects>
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcPointByDistanceExpression" UniqueId="a5d1eaeb-4057-44ef-9869-d58832aa5ba4" Action="modified">
+						<DocChangeAction Name="IfcPointByDistanceExpression" UniqueId="f9346cd2-fa4e-426a-aa6b-401d3f3eaae0" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="name" OldValue="IfcDistanceExpression" NewValue="IfcPointByDistanceExpression" />
 							</Aspects>
 							<Changes>
-								<DocChangeAction Name="DistanceAlong" UniqueId="9648f43b-8dbd-4ef2-ae5b-2074f20b415a" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="DistanceAlong" UniqueId="f7819091-40b4-43cb-85f3-d89a50692f84" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="type" OldValue="IfcLengthMeasure" NewValue="IfcCurveMeasureSelect" />
 									</Aspects>
 								</DocChangeAction>
-								<DocChangeAction Name="BasisCurve" UniqueId="88584382-ccf9-4ba9-aefd-2c1b6fce6615" Action="modified" ImpactSPF="true" ImpactXML="true">
+								<DocChangeAction Name="BasisCurve" UniqueId="ac4238c9-861c-4a30-8826-c95bc734240e" Action="modified" ImpactSPF="true" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="AlongHorizontal" NewValue="BasisCurve" />
 										<DocChangeAspect Aspect="type" OldValue="IfcBoolean" NewValue="IfcCurve" />
@@ -862,21 +862,21 @@
 								</DocChangeAction>
 							</Changes>
 						</DocChangeAction>
-						<DocChangeAction Name="IfcSegment" UniqueId="e70d45ef-a548-4674-bcf8-65ccc10d7ae2" Action="added" />
-						<DocChangeAction Name="IfcSegmentedReferenceCurve" UniqueId="3a3bf59d-79da-4842-b26b-7790b8739743" Action="added" />
-						<DocChangeAction Name="IfcSeriesParameterCurve" UniqueId="d3bf9852-8e9c-4a66-87b7-3f11ad2cd941" Action="added" />
-						<DocChangeAction Name="IfcTransitionCurveSegment2D" UniqueId="7d646892-6a20-45af-8d97-ecda8c5b7e1d" Action="modified">
+						<DocChangeAction Name="IfcSegment" UniqueId="11da6655-b907-4f7c-81b0-1b39a453fa89" Action="added" />
+						<DocChangeAction Name="IfcSegmentedReferenceCurve" UniqueId="c4c1ff89-e67c-4889-9784-608cd625ed24" Action="added" />
+						<DocChangeAction Name="IfcSeriesParameterCurve" UniqueId="4c3d93ac-e1b3-463d-8e83-8e2d93c8c04b" Action="added" />
+						<DocChangeAction Name="IfcTransitionCurveSegment2D" UniqueId="f1b540e8-0f89-4915-884f-adbd47c2b7b8" Action="modified">
 							<Aspects>
 								<DocChangeAspect Aspect="status" NewValue="Deprecated" />
 							</Aspects>
 						</DocChangeAction>
 					</Changes>
 				</DocChangeAction>
-				<DocChangeAction Name="IfcPresentationAppearanceResource" UniqueId="b460ee2c-516f-4a0c-aa48-dcff5a07e98f">
+				<DocChangeAction Name="IfcPresentationAppearanceResource" UniqueId="485f6fe6-03f7-48d0-8f8b-621bbdaf44df">
 					<Changes>
-						<DocChangeAction Name="IfcFillAreaStyle" UniqueId="86479a3e-07fa-42b3-bf02-7ac109b855e6">
+						<DocChangeAction Name="IfcFillAreaStyle" UniqueId="7e5c8a2b-adbc-493a-a57f-6b53b77ed24b">
 							<Changes>
-								<DocChangeAction Name="ModelOrDraughting" UniqueId="6d346f79-8b23-47cd-84ce-0cafa4853387" Action="modified" ImpactXML="true">
+								<DocChangeAction Name="ModelOrDraughting" UniqueId="22b26c9d-c99f-4fa1-b74a-ba35d815ef88" Action="modified" ImpactXML="true">
 									<Aspects>
 										<DocChangeAspect Aspect="name" OldValue="ModelorDraughting" NewValue="ModelOrDraughting" />
 									</Aspects>
@@ -889,23 +889,23 @@
 		</DocChangeAction>
 	</ChangesEntities>
 	<ChangesProperties>
-		<DocChangeAction Name="PEnum_RiskRating" UniqueId="a9aaed49-3ca1-4f34-a2fc-34d5d73402d6">
+		<DocChangeAction Name="PEnum_RiskRating" UniqueId="5b555d86-5b79-49ed-a0ba-c89f33fc70f4">
 			<Changes>
-				<DocChangeAction Name="CRITICAL" UniqueId="bab9cac6-8779-4d12-94ec-946813dd6577" Action="added" />
-				<DocChangeAction Name="CONSIDERABLE" UniqueId="38686c3a-f43e-480d-b653-d38b9a970f83" Action="added" />
-				<DocChangeAction Name="SOME" UniqueId="d0ea9680-78dd-4f4d-918c-5b08c441e014" Action="added" />
-				<DocChangeAction Name="INSIGNIFICANT" UniqueId="35f455d7-2231-454b-b557-46027ebc69ee" Action="added" />
-				<DocChangeAction Name="UNSET" UniqueId="80c3e3c2-2b16-4845-a81b-5a23114688dd" Action="added" />
-				<DocChangeAction Name="NOTAPPLICABLE" UniqueId="e905d919-191d-46eb-bb36-b3b8eeae62ca" Action="deleted" />
+				<DocChangeAction Name="CRITICAL" UniqueId="bb8ce869-92a8-4af2-a80b-f7a329b60caa" Action="added" />
+				<DocChangeAction Name="CONSIDERABLE" UniqueId="b42bdd5a-1a3b-48ac-88b8-7225fce2bd82" Action="added" />
+				<DocChangeAction Name="SOME" UniqueId="c649d92f-cfee-4968-9490-e6fcf0f86513" Action="added" />
+				<DocChangeAction Name="INSIGNIFICANT" UniqueId="7907ec83-85f5-494d-851d-5f49057b0c9d" Action="added" />
+				<DocChangeAction Name="UNSET" UniqueId="76eb1e7b-0fde-4ead-845e-941c922bbfca" Action="added" />
+				<DocChangeAction Name="NOTAPPLICABLE" UniqueId="0c10e3b2-9d73-48a3-9b0d-555b03d091c8" Action="deleted" />
 			</Changes>
 		</DocChangeAction>
-		<DocChangeAction Name="Shared element data schemas" UniqueId="32e12396-58f6-4892-a4b6-3a5a49138453">
+		<DocChangeAction Name="Shared element data schemas" UniqueId="16ca8813-5921-4e34-8173-dc581d5613ba">
 			<Changes>
-				<DocChangeAction Name="IfcSharedInfrastructureElements" UniqueId="b8dca8e6-393d-46d1-8d23-509c07b4d9f8">
+				<DocChangeAction Name="IfcSharedInfrastructureElements" UniqueId="72ebf9d6-9b33-4675-892b-12e623a66901">
 					<Changes>
-						<DocChangeAction Name="Pset_SolidStratumComposition" UniqueId="740481ab-f47c-487e-aa04-61239ecd924a">
+						<DocChangeAction Name="Pset_SolidStratumComposition" UniqueId="2353dca4-1d6b-4796-af26-cb6938a8abcd">
 							<Changes>
-								<DocChangeAction Name="CompositeFraction" UniqueId="fe0c07b8-4d46-4198-be9a-2df9e91f5312" Action="deleted" />
+								<DocChangeAction Name="CompositeFraction" UniqueId="2338bd3c-afde-48a0-890a-82a9bdc66fe8" Action="deleted" />
 							</Changes>
 						</DocChangeAction>
 					</Changes>
