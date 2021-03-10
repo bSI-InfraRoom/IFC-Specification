@@ -19,7 +19,7 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-09 March 2021
+10 March 2021
 
 *)
 
@@ -4522,8 +4522,8 @@ ENTITY IfcBridge
 	PredefinedType : OPTIONAL IfcBridgeTypeEnum;
  WHERE
 	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
-(PredefinedType <> IfcBridgePartTypeEnum.USERDEFINED) OR
-((PredefinedType = IfcBridgePartTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType));
+(PredefinedType <> IfcBridgeTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcBridgeTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType));
 END_ENTITY;
 
 ENTITY IfcBuilding
@@ -6816,6 +6816,8 @@ ENTITY IfcFeatureElement
     ,IfcFeatureElementSubtraction
     ,IfcSurfaceFeature))
  SUBTYPE OF (IfcElement);
+ WHERE
+	NotContained : SIZEOF(ContainedInStructure) = 0;
 END_ENTITY;
 
 ENTITY IfcFeatureElementAddition
@@ -7425,12 +7427,12 @@ ENTITY IfcImpactProtectionDevice
 	PredefinedType : OPTIONAL IfcImpactProtectionDeviceTypeSelect;
  WHERE
 	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
-(PredefinedType <> IfcImpactProtectionDeviceTypeEnum.USERDEFINED AND
-PredefinedType <> IfcVibrationDamperTypeEnum.USERDEFINED AND
-PredefinedType <> IfcVibrationIsolatorTypeEnum.USERDEFINED) OR
-((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED OR
-PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED OR
-PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED)
+((PredefinedType <> IfcImpactProtectionDeviceTypeEnum.USERDEFINED) AND
+(PredefinedType <> IfcVibrationDamperTypeEnum.USERDEFINED) AND
+(PredefinedType <> IfcVibrationIsolatorTypeEnum.USERDEFINED)) OR
+(((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED) OR
+(PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED) OR
+(PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED))
 AND EXISTS(SELF\IfcObject.ObjectType));
 	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR
 ('IFC4X3_RC3.IFCIMPACTPROTECTIONDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
@@ -7440,12 +7442,12 @@ ENTITY IfcImpactProtectionDeviceType
  SUBTYPE OF (IfcElementComponentType);
 	PredefinedType : IfcImpactProtectionDeviceTypeSelect;
  WHERE
-	CorrectPredefinedType : (PredefinedType <> IfcImpactProtectionDeviceTypeEnum.USERDEFINED AND
-PredefinedType <> IfcVibrationDamperTypeEnum.USERDEFINED AND
-PredefinedType <> IfcVibrationIsolatorTypeEnum.USERDEFINED) OR
-((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED OR
-PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED OR
-PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED)
+	CorrectPredefinedType : ((PredefinedType <> IfcImpactProtectionDeviceTypeEnum.USERDEFINED) AND
+(PredefinedType <> IfcVibrationDamperTypeEnum.USERDEFINED) AND
+(PredefinedType <> IfcVibrationIsolatorTypeEnum.USERDEFINED)) OR
+(((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED) OR
+(PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED) OR
+(PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED))
 AND EXISTS(SELF\IfcObject.ObjectType));
 END_ENTITY;
 
@@ -13575,7 +13577,7 @@ FUNCTION IfcShapeRepresentationTypes
       BEGIN
         Count := SIZEOF(QUERY(temp <* Items | SIZEOF([
                    'IFC4X3_RC3.IFCSWEPTAREASOLID',
-                   'IFC4X3_RC3.IFCSWEPTDISKSOLID'
+                   'IFC4X3_RC3.IFCSWEPTDISKSOLID',
                    'IFC4X3_RC3.IFCSECTIONEDSOLIDHORIZONTAL'] *  TYPEOF(temp)) >= 1
                  ));      
       END;
