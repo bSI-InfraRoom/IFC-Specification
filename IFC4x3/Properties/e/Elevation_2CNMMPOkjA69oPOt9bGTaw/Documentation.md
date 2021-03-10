@@ -1,1 +1,1 @@
-Breakwater elevation
+Elevation of the entity
