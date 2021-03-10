@@ -1,1 +1,0 @@
-Chamber structural type
