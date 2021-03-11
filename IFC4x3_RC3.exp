@@ -19,7 +19,7 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-10 March 2021
+11 March 2021
 
 *)
 
@@ -5652,6 +5652,8 @@ ENTITY IfcCurveSegment
 	SegmentStart : IfcCurveMeasureSelect;
 	SegmentLength : IfcCurveMeasureSelect;
 	ParentCurve : IfcCurve;
+ DERIVE
+	Dim : IfcDimensionCount := ParentCurve.Dim;
 END_ENTITY;
 
 ENTITY IfcCurveStyle
@@ -12854,6 +12856,12 @@ FUNCTION IfcCurveDim
   IF ('IFC4X3_RC3.IFCTRIMMEDCURVE' IN TYPEOF(Curve))
     THEN RETURN(IfcCurveDim(Curve\IfcTrimmedCurve.BasisCurve));
   END_IF;
+  IF ('IFC4X3_RC3.IFCGRADIENTCURVE' IN TYPEOF(Curve))
+    THEN RETURN(3);
+  END_IF;
+  IF ('IFC4X3_RC3.IFCSEGMENTEDREFERENCECURVE' IN TYPEOF(Curve))
+    THEN RETURN(3);
+  END_IF;
   IF ('IFC4X3_RC3.IFCCOMPOSITECURVE' IN TYPEOF(Curve))
     THEN RETURN(Curve\IfcCompositeCurve.Segments[1].Dim);
   END_IF;
@@ -12872,13 +12880,7 @@ FUNCTION IfcCurveDim
   IF ('IFC4X3_RC3.IFCCURVESEGMENT2D' IN TYPEOF(Curve))
     THEN RETURN(2);
   END_IF;
-  IF ('IFC4X3_RC3.IFCGRADIENTCURVE' IN TYPEOF(Curve))
-    THEN RETURN(3);
-  END_IF;
-  IF ('IFC4X3_RC3.IFCSEGMENTEDREFERENCECURVE' IN TYPEOF(Curve))
-    THEN RETURN(3);
-  END_IF;
-  IF ('IFC4X3_RC3.IFCSERIESPARAMETERCURVE' IN TYPEOF(Curve))
+  IF ('IFC4X3_RC3.IFCPOLYNOMIALCURVE' IN TYPEOF(Curve))
     THEN RETURN(3);
   END_IF;
   IF ('IFC4X3_RC3.IFCPCURVE' IN TYPEOF(Curve))
