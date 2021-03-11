@@ -13,6 +13,10 @@
 		<DocAttribute Name="ParentCurve" UniqueId="03e396f9-7ef2-4006-b7cd-e5898529305f" DefinedType="IfcCurve">
 			<Documentation>Curve to be used as base for the segment definition.</Documentation>
 		</DocAttribute>
+		<DocAttribute Name="Dim" UniqueId="755b2c48-9ff0-4294-88ac-b05b38acb82e" DefinedType="IfcDimensionCount">
+			<Documentation>The space dimensionality of this class, defined by the dimensionality of the first ParentCurve.</Documentation>
+			<Derived>ParentCurve.Dim</Derived>
+		</DocAttribute>
 	</Attributes>
 </DocEntity>
 
