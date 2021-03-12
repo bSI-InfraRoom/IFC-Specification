@@ -1,6 +1,6 @@
-A space represents an area or volume bounded actually or theoretically. Spaces are areas or volumes that provide for certain functions within a facility.
+A space represents an area or volume bounded actually or theoretically. Spaces are areas or volumes that provide for certain functions within a building.
 
-A space is associated to a building storey, facility part or a facility (or in case of exterior spaces to a site). A space may span over several connected spaces. Therefore a space group provides for a collection of spaces included in a storey or facility part. A space can also be decomposed in parts, where each part defines a partial space. This is defined by the _CompositionType_ attribute of the supertype _IfcSpatialStructureElement_ which is interpreted as follow:
+A space is associated to a building storey (or in case of exterior spaces to a site). A space may span over several connected spaces. Therefore a space group provides for a collection of spaces included in a storey. A space can also be decomposed in parts, where each part defines a partial space. This is defined by the _CompositionType_ attribute of the supertype _IfcSpatialStructureElement_ which is interpreted as follow:
 
 * COMPLEX = space group
 * ELEMENT = space
@@ -8,7 +8,7 @@ A space is associated to a building storey, facility part or a facility (or in c
 
 > NOTE&nbsp; View definitions and implementation agreements may restrict spaces with _CompositionType_=ELEMENT to be non-overlapping.
 
-The _IfcSpace_ is used to build the spatial structure of a facility (that serves as the primary project breakdown and is required to be hierarchical). The spatial structure elements are linked together by using the objectified relationship _IfcRelAggregates_.
+The _IfcSpace_ is used to build the spatial structure of a building (that serves as the primary project breakdown and is required to be hierarchical). The spatial structure elements are linked together by using the objectified relationship _IfcRelAggregates_.
 
 Figure 1 shows the _IfcSpace_ as part of the spatial structure. It also serves as the spatial container for space related elements.
 
@@ -25,7 +25,7 @@ The following guidelines should apply for using the _Name_, _Description_, _Long
 
 > NOTE&nbsp; In cases of inconsistency between the geometric representation of the _IfcSpace_ and the combined geometric representations of the surrounding _IfcRelSpaceBoundary_, the geometric representation of the space should take priority over the geometric representation of the surrounding space boundaries.
 
-Figure 2 describes the heights and elevations of the _IfcSpace_ in the context of a building.
+Figure 2 describes the heights and elevations of the _IfcSpace_.
 
 * elevation of the space (top of construction slab) equals elevation of storey: provided by _IfcBuildingStorey.Elevation_ relative to em>IfcBuilding.ElevationOfRefHeight
 * elevation of the space flooring (top of flooring on top of slab): provided by _IfcSpace.ElevationWithFlooring_ relative to _IfcBuilding.ElevationOfRefHeight_
