@@ -14,8 +14,17 @@
 		<DocWhereRule Name="CorrectPredefinedType" UniqueId="128290e1-b63b-4747-b69b-cfe36b2b2c37">
 			<Documentation>Either the _IfcTransportElement_ attribute is unset (e.g. because an _IfcTransportElementType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
 			<Expression>NOT(EXISTS(PredefinedType)) OR
-((PredefinedType &lt;&gt; IfcTransportElementFixedTypeEnum.USERDEFINED) AND (PredefinedType &lt;&gt; IfcTransportElementNonFixedTypeEnum.USERDEFINED)) OR
-(((PredefinedType = IfcTransportElementFixedTypeEnum.USERDEFINED) OR (PredefinedType = IfcTransportElementNonFixedTypeEnum.USERDEFINED)) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+(((&apos;IFC4X3_RC3.IFCTRANSPORTELEMENTFIXEDTYPEENUM&apos; IN TYPEOF(PredefinedType))
+AND (PredefinedType &lt;&gt; IfcTransportElementFixedTypeEnum.USERDEFINED))
+OR ((&apos;IFC4X3_RC3.IFCTRANSPORTELEMENTNONFIXEDTYPEENUM&apos; IN TYPEOF(PredefinedType))
+AND (PredefinedType &lt;&gt; IfcTransportElementNonFixedTypeEnum.USERDEFINED)))
+OR
+((((&apos;IFC4X3_RC3.IFCTRANSPORTELEMENTFIXEDTYPEENUM&apos; IN TYPEOF(PredefinedType))
+AND (PredefinedType = IfcTransportElementFixedTypeEnum.USERDEFINED))
+OR
+(((&apos;IFC4X3_RC3.IFCTRANSPORTELEMENTNONFIXEDTYPEENUM&apos; IN TYPEOF(PredefinedType))
+AND PredefinedType = IfcTransportElementNonFixedTypeEnum.USERDEFINED)))
+AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="faeb762c-6063-4275-be6e-062e4168b71d">
 			<Documentation>Either there is no transport element type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcTransportElementType_.</Documentation>

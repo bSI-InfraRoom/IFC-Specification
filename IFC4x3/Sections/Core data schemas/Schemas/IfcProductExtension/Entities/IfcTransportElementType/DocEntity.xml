@@ -13,8 +13,17 @@
 	<WhereRules>
 		<DocWhereRule Name="CorrectPredefinedType" UniqueId="501115f8-7ae2-4429-b433-6fecf90a3c8c">
 			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
-			<Expression>((PredefinedType &lt;&gt; IfcTransportElementFixedTypeEnum.USERDEFINED) AND (PredefinedType &lt;&gt; IfcTransportElementNonFixedTypeEnum.USERDEFINED)) OR
-(((PredefinedType = IfcTransportElementFixedTypeEnum.USERDEFINED) OR (PredefinedType = IfcTransportElementNonFixedTypeEnum.USERDEFINED)) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+			<Expression>(((&apos;IFC4X3_RC2.IFCTRANSPORTELEMENTFIXEDTYPEENUM&apos; IN TYPEOF(PredefinedType))
+AND (PredefinedType &lt;&gt; IfcTransportElementFixedTypeEnum.USERDEFINED))
+OR ((&apos;IFC4X3_RC2.IFCTRANSPORTELEMENTNONFIXEDTYPEENUM&apos; IN TYPEOF(PredefinedType))
+AND (PredefinedType &lt;&gt; IfcTransportElementNonFixedTypeEnum.USERDEFINED)))
+OR
+((((&apos;IFC4X3_RC2.IFCTRANSPORTELEMENTFIXEDTYPEENUM&apos; IN TYPEOF(PredefinedType))
+AND (PredefinedType = IfcTransportElementFixedTypeEnum.USERDEFINED))
+OR
+(((&apos;IFC4X3_RC2.IFCTRANSPORTELEMENTNONFIXEDTYPEENUM&apos; IN TYPEOF(PredefinedType))
+AND (PredefinedType = IfcTransportElementNonFixedTypeEnum.USERDEFINED))))
+AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

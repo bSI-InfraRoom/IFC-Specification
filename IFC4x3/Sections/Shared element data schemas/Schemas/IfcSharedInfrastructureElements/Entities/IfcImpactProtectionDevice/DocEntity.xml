@@ -9,12 +9,19 @@
 		<DocWhereRule Name="CorrectPredefinedType" UniqueId="4622bb08-eb34-47d0-b53d-4eb7ad9013e5">
 			<Documentation>Either the _PredefinedType_ attribute is unset(e.g. because an _IfcImpactProtectionDeviceType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
 			<Expression>NOT(EXISTS(PredefinedType)) OR
-((PredefinedType &lt;&gt; IfcImpactProtectionDeviceTypeEnum.USERDEFINED) AND
-(PredefinedType &lt;&gt; IfcVibrationDamperTypeEnum.USERDEFINED) AND
-(PredefinedType &lt;&gt; IfcVibrationIsolatorTypeEnum.USERDEFINED)) OR
-(((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED) OR
-(PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED) OR
-(PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED))
+(((&apos;IFC4X3_RC3.IFCIMPACTPROTECTIONDEVICETYPEENUM&apos; IN TYPEOF(PredefinedType))
+AND (PredefinedType &lt;&gt; IfcImpactProtectionDeviceTypeEnum.USERDEFINED))
+OR ((&apos;IFC4X3_RC3.IFCVIBRATIONDAMPERTYPEENUM&apos; IN TYPEOF(PredefinedType))
+AND (PredefinedType &lt;&gt; IfcVibrationDamperTypeEnum.USERDEFINED))
+OR ((&apos;IFC4X3_RC3.IFCVIBRATIONISOLATORTYPEENUM&apos; IN TYPEOF(PredefinedType))
+AND (PredefinedType &lt;&gt; IfcVibrationIsolatorTypeEnum.USERDEFINED)))
+ OR
+((((&apos;IFC4X3_RC3.IFCIMPACTPROTECTIONDEVICETYPEENUM&apos; IN TYPEOF(PredefinedType))
+AND (PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED))
+OR ((&apos;IFC4X3_RC3.IFCVIBRATIONDAMPERTYPEENUM&apos; IN TYPEOF(PredefinedType))
+AND (PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED))
+OR (((&apos;IFC4X3_RC3.IFCVIBRATIONISOLATORTYPEENUM&apos; IN TYPEOF(PredefinedType))
+AND PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED))) 
 AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="fe8cea17-7472-479c-8955-e01e5ca6508c">
