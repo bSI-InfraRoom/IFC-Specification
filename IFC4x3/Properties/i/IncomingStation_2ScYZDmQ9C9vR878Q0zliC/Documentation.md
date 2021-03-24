@@ -1,1 +1,1 @@
-The station value for the incoming segment that ends at this referent location.
+The station value of the incoming segment that ends at this location.
