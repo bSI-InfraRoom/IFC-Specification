@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPavement" UniqueId="806e6bf1-7065-41a4-82d3-6e15bdeba9f4" BaseDefinition="IfcBuiltElement" EntityFlags="32">
 	<Attributes>
-		<DocAttribute Name="Flexible" UniqueId="e9ca33dd-7f37-4b9b-9231-d75e23a6aa69" DefinedType="IfcBoolean" AttributeFlags="1">
+		<DocAttribute Name="PredefinedType" UniqueId="e9ca33dd-7f37-4b9b-9231-d75e23a6aa69" DefinedType="IfcPavementTypeEnum" AttributeFlags="1">
 			<Documentation>Boolean to identify the pavement type as a Flexible or Rigid structure.</Documentation>
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="3dd30b3d-21d8-4176-8d8a-385f61be7fa0">
+			<Documentation>Either the _PredefinedType_ attribute is unset(e.g. because an _IfcPavementType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcPavementTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcPavementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="22411671-7364-4337-9c6f-8121758159aa">
+			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcPavementType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSHAREDINFRASTRUCTUREELEMENTS.IFCPAVEMENTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

@@ -8,20 +8,19 @@
 	<WhereRules>
 		<DocWhereRule Name="CorrectPredefinedType" UniqueId="4bab7e06-567e-40f9-aaab-c34cee089597">
 			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
-			<Expression>(((&apos;IFC4X3_RC3.IFCIMPACTPROTECTIONDEVICETYPEENUM&apos; IN TYPEOF(PredefinedType))
-AND (PredefinedType &lt;&gt; IfcImpactProtectionDeviceTypeEnum.USERDEFINED))
-OR ((&apos;IFC4X3_RC3.IFCVIBRATIONDAMPERTYPEENUM&apos; IN TYPEOF(PredefinedType))
-AND (PredefinedType &lt;&gt; IfcVibrationDamperTypeEnum.USERDEFINED))
-OR ((&apos;IFC4X3_RC3.IFCVIBRATIONISOLATORTYPEENUM&apos; IN TYPEOF(PredefinedType))
-AND (PredefinedType &lt;&gt; IfcVibrationIsolatorTypeEnum.USERDEFINED)))
- OR
-((((&apos;IFC4X3_RC3.IFCIMPACTPROTECTIONDEVICETYPEENUM&apos; IN TYPEOF(PredefinedType))
-AND (PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED))
-OR ((&apos;IFC4X3_RC3.IFCVIBRATIONDAMPERTYPEENUM&apos; IN TYPEOF(PredefinedType))
-AND (PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED))
-OR (((&apos;IFC4X3_RC3.IFCVIBRATIONISOLATORTYPEENUM&apos; IN TYPEOF(PredefinedType))
-AND PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED))) 
-AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+			<Expression>((PredefinedType &lt;&gt; IfcImpactProtectionDeviceTypeEnum.USERDEFINED)
+OR
+(PredefinedType &lt;&gt; IfcVibrationDamperTypeEnum.USERDEFINED)
+OR
+(PredefinedType &lt;&gt; IfcVibrationIsolatorTypeEnum.USERDEFINED))
+OR
+(((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED)
+OR 
+(PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED)
+OR 
+(PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED))
+AND
+EXISTS(SELF\IfcObject.ObjectType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

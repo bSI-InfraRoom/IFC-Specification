@@ -6,5 +6,10 @@
 		<DocAttribute Name="CoefficientsY" UniqueId="cf07ed37-36ca-4703-938f-4f3dda102aab" DefinedType="IfcReal" AttributeFlags="1" AggregationType="1" AggregationLower="2" AggregationUpper="0" />
 		<DocAttribute Name="CoefficientsZ" UniqueId="27b421c0-43d3-435b-aea1-dff0da1f4a05" DefinedType="IfcReal" AttributeFlags="1" AggregationType="1" AggregationLower="2" AggregationUpper="0" />
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="ValidCoefficients" UniqueId="81054d7e-d1e8-4984-b8d3-f795d95cf08a">
+			<Expression>(EXISTS(CoefficientsX) AND EXISTS(CoefficientsY)) OR (EXISTS(CoefficientsX) AND EXISTS(CoefficientsZ)) OR (EXISTS(CoefficientsY) AND EXISTS(CoefficientsZ)) OR (EXISTS(CoefficientsX) AND EXISTS(CoefficientsY) AND EXISTS(CoefficientsZ))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 
