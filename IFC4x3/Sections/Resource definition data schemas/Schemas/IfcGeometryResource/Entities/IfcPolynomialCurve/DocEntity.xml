@@ -10,6 +10,10 @@
 		<DocWhereRule Name="ValidCoefficients" UniqueId="81054d7e-d1e8-4984-b8d3-f795d95cf08a">
 			<Expression>(EXISTS(CoefficientsX) AND EXISTS(CoefficientsY)) OR (EXISTS(CoefficientsX) AND EXISTS(CoefficientsZ)) OR (EXISTS(CoefficientsY) AND EXISTS(CoefficientsZ)) OR (EXISTS(CoefficientsX) AND EXISTS(CoefficientsY) AND EXISTS(CoefficientsZ))</Expression>
 		</DocWhereRule>
+		<DocWhereRule Name="CorrectPpsitionDim" UniqueId="79bc2049-e5ec-4248-95c8-5894e65fa6a9">
+			<Documentation>Enforces same Dim of Position and curve Dim.</Documentation>
+			<Expression>((Position.DIm=2) AND (NOT EXISTS(CoefficientsZ))) OR (Position.Dim=3)</Expression>
+		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
 
