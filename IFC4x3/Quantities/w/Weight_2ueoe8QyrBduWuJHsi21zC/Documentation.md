@@ -1,1 +1,0 @@
-Total weight of object
