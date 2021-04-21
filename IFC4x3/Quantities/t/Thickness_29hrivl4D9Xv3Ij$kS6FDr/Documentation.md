@@ -1,1 +1,1 @@
-the geometric thickness of the object
+The geometric thickness of the object.
