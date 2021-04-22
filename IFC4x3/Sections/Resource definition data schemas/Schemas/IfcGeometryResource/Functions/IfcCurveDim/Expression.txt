@@ -38,7 +38,7 @@
     THEN RETURN(2);
   END_IF;
   IF ('IFCGEOMETRYRESOURCE.IFCPOLYNOMIALCURVE' IN TYPEOF(Curve)) THEN
-    IF ( NOT EXISTS(Curve\IfcPolynomialCurve.CoefficientsZ) AND Curve\IfcPolynomialCurve.Position.Dim = 2 )
+    IF ( NOT EXISTS(Curve\IfcPolynomialCurve.CoefficientsZ) AND (Curve\IfcPolynomialCurve.Position.Dim = 2 ))
         THEN RETURN(2);
     END_IF;
     RETURN(3);
