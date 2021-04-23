@@ -1,1 +1,1 @@
-Specifies the structural slope of the pavement as a ratio measure. In cases where this value and the geometric representation differ, the geometric representation takes precedence.
+The nominal side slope (allowable steepness) of the pavement structure (not including side slope fill) as a ratio measure. The slope  information is provided in addition to the shape representation and the geometric parameters used within. In case of inconsistency between the geometric parameters take precedence.

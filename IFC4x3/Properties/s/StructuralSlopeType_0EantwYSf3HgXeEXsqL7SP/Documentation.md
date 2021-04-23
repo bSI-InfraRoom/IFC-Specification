@@ -1,1 +1,1 @@
-User defined description on the type of slope used for the pavement. Examples may be "Even" or "Stepped".
+User defined description on the type of slope used for the pavement structure (not including side slope fill) . Examples are "Even" or "Stepped".
