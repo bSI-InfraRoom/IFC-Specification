@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Resource_Quantity_2WLzS88zH7qgXDYV9FOe" Name="Resource Quantity" UniqueId="2WLzS88zH7qgXDYV$9FO$e" Type="IfcConstructionResource">
+	<Rules>
+		<DocModelRuleAttribute Name="BaseQuantity" Identification="QuantityType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPhysicalSimpleQuantity">
+					<Rules>
+						<DocModelRuleAttribute Name="Name" Identification="QuantityName">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

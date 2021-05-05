@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Swept Disk Solid Geometry" UniqueId="8024f320-16dc-4c01-83d5-f211088951ed" Type="IfcSweptDiskSolid">
+	<Rules>
+		<DocModelRuleAttribute Name="Directrix" />
+		<DocModelRuleAttribute Name="Radius">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="InnerRadius">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="StartParam">
+			<Rules>
+				<DocModelRuleEntity Name="IfcParameterValue" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="EndParam">
+			<Rules>
+				<DocModelRuleEntity Name="IfcParameterValue" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="StyledByItem">
+			<Rules>
+				<DocModelRuleEntity Name="IfcStyledItem">
+					<Rules>
+						<DocModelRuleAttribute Name="Name">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Styles">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSurfaceStyle">
+									<References>
+										<DocTemplateDefinition xsi:nil="true" href="Surface_Color_Style_3gHpLYmULDnwrrpIILsus" />
+									</References>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Material_Layer_Set_Usage_1jNxXlFor9_vKe1tXLtSn7" Name="Material Layer Set Usage" UniqueId="1jNxXlFor9_vKe1tXLtSn7" Type="IfcProduct">
+	<Rules>
+		<DocModelRuleAttribute Name="HasAssociations">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAssociatesMaterial">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingMaterial">
+							<Rules>
+								<DocModelRuleEntity Name="IfcMaterialLayerSetUsage">
+									<Rules>
+										<DocModelRuleAttribute Name="ForLayerSet">
+											<Rules>
+												<DocModelRuleEntity Name="IfcMaterialLayerSet">
+													<Rules>
+														<DocModelRuleAttribute Name="MaterialLayers">
+															<Rules>
+																<DocModelRuleEntity Name="IfcMaterialLayer">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Name" Identification="Name" />
+																		<DocModelRuleAttribute Name="Material">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcMaterial">
+																					<Rules>
+																						<DocModelRuleAttribute Name="HasRepresentation">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcMaterialDefinitionRepresentation">
+																									<References>
+																										<DocTemplateDefinition id="Material_Surface_Color_Style_1kJbqswZn6rQIGcQljECN" Name="Material Surface Color Style" UniqueId="6e4e5d36-ea3c-46d5-a490-99abffb4e317" Type="IfcMaterialDefinitionRepresentation" />
+																									</References>
+																								</DocModelRuleEntity>
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="LayerThickness">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcNonNegativeLengthMeasure" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+																<DocModelRuleEntity Name="IfcMaterialLayerWithOffsets">
+																	<Rules>
+																		<DocModelRuleAttribute Name="OffsetDirection">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcLayerSetDirectionEnum" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="OffsetValues">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcLengthMeasure" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="LayerSetDirection">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLayerSetDirectionEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="DirectionSense">
+											<Rules>
+												<DocModelRuleEntity Name="IfcDirectionSenseEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="OffsetFromReferenceLine">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="ReferenceExtent">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

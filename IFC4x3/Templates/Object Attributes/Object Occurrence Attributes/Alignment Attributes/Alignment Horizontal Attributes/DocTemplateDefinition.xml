@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Alignment Horizontal Attributes" UniqueId="9abb858d-493a-4ce1-9a40-9ae26c74dcc8" Type="IfcAlignmentHorizontal">
+	<Rules>
+		<DocModelRuleAttribute Name="Segments">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAlignmentHorizontalSegment">
+					<Rules>
+						<DocModelRuleAttribute Name="StartTag" />
+						<DocModelRuleAttribute Name="EndTag" />
+						<DocModelRuleAttribute Name="StartPoint">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="StartDirection">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPlaneAngleMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="StartRadiusOfCurvature">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="EndRadiusOfCurvature">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="SegmentLength">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="GravityCenterLineHeight" />
+						<DocModelRuleAttribute Name="PredefinedType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcAlignmentHorizontalSegmentTypeEnum" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

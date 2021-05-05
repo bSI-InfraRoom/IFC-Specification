@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Material_Constituent_Set_3PRtzzvq9Dk9jT6ADgRVY4" Name="Material Constituent Set" UniqueId="3PRtzzvq9Dk9jT6ADgRVY4" Type="IfcObjectDefinition">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;MaterialName[Value]=&apos;PVC&apos; AND ConstituentName[Value]=&apos;Beschichtung&apos; &quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="HasAssociations">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAssociatesMaterial">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingMaterial">
+							<Rules>
+								<DocModelRuleEntity Name="IfcMaterialConstituentSet">
+									<Rules>
+										<DocModelRuleAttribute Name="MaterialConstituents">
+											<Rules>
+												<DocModelRuleEntity Name="IfcMaterialConstituent">
+													<Rules>
+														<DocModelRuleAttribute Name="Name" Identification="ConstituentName">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Description">
+															<Rules>
+																<DocModelRuleEntity Name="IfcText" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Material">
+															<Rules>
+																<DocModelRuleEntity Name="IfcMaterial">
+																	<References>
+																		<DocTemplateDefinition id="Material_1PXhOQjvz4uAadztqSAJX" Name="Material" UniqueId="5986b61a-b79f-44e0-a93f-9fddf470a4e1" Type="IfcMaterial">
+																			<Rules>
+																				<DocModelRuleAttribute Name="Name" Identification="MaterialName">
+																					<Rules>
+																						<DocModelRuleEntity Name="IfcLabel" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute Name="Description">
+																					<Rules>
+																						<DocModelRuleEntity Name="IfcText" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute Name="Category">
+																					<Rules>
+																						<DocModelRuleEntity Name="IfcLabel" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																			</Rules>
+																		</DocTemplateDefinition>
+																	</References>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Category">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Fraction">
+															<Rules>
+																<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Name">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Description">
+											<Rules>
+												<DocModelRuleEntity Name="IfcText" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

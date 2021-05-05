@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Element_Composition_3A3sNYEHDFsue935nw3LGX" Name="Element Composition" UniqueId="ca0f65e2-3913-4fdb-8a09-0c5c7a0d5421" Type="IfcElement">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;Decomposes[Exists]=TRUE AND RelatingObject[Type]=&apos;IfcWallStandardCase&apos; AND ElementName[Value]=&apos;Facade&apos; &quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="Decomposes" Identification="Decomposes">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAggregates">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingObject" Identification="RelatingObject">
+							<Rules>
+								<DocModelRuleEntity Name="IfcElement">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="ElementName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

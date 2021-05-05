@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Property_Sets_with_Override_3YO43eWk9FQhnZh8vjej2k" Name="Property Sets with Override" UniqueId="e26040e8-82e2-4f6a-bc63-ac8e6da2d0ae" Type="IfcObject">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;templaterules operator=&quot;and&quot;&gt;
+  &lt;templaterules operator=&quot;or&quot;&gt;
+    &lt;templaterule parameters=&quot;PsetName[Value]=&apos;Pset_WallCommon&apos; AND PropertyName[Value]=&apos;LoadBearing&apos; AND Value[Value]=&apos;F90&apos;&quot;&gt;&lt;/templaterule&gt;
+    &lt;templaterules operator=&quot;and&quot;&gt;
+        &lt;templaterules operator=&quot;nor&quot;&gt;
+          &lt;templaterule parameters=&quot;PsetName[Value]=&apos;Pset_WallCommon&apos; AND PropertyName[Value]=&apos;LoadBearing&apos;&quot;&gt;&lt;/templaterule&gt;
+        &lt;/templaterules&gt;
+        &lt;templaterules operator=&quot;or&quot;&gt;
+           &lt;templaterule parameters=&quot;TypePsetName[Value]=&apos;Pset_WallCommon&apos; AND TypePropertyName[Value]=&apos;LoadBearing&apos; AND TypeValue[Value]=&apos;F90&apos;&quot;&gt;&lt;/templaterule&gt;
+        &lt;/templaterules&gt;
+    &lt;/templaterules&gt;
+  &lt;/templaterules&gt;
+&lt;/templaterules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+		<DocModelRuleAttribute Name="IsDefinedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByProperties">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingPropertyDefinition">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPropertySet">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="PsetName" />
+										<DocModelRuleAttribute Name="HasProperties" Identification="Properties">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPropertySingleValue">
+													<References>
+														<DocTemplateDefinition xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcPropertyBoundedValue">
+													<References>
+														<DocTemplateDefinition xsi:nil="true" href="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" />
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcPropertyEnumeratedValue">
+													<References>
+														<DocTemplateDefinition xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcPropertyListValue">
+													<References>
+														<DocTemplateDefinition xsi:nil="true" href="List_Value_2E4BQ8aNbEEesoQhogfKj" />
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcPropertyTableValue">
+													<References>
+														<DocTemplateDefinition xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+													</References>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="IsTypedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByType">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcTypeObject">
+									<Rules>
+										<DocModelRuleAttribute Name="HasPropertySets">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPropertySet">
+													<Rules>
+														<DocModelRuleAttribute Name="Name" Identification="TypePsetName" />
+														<DocModelRuleAttribute Name="HasProperties" Identification="TypeProperties">
+															<Rules>
+																<DocModelRuleEntity Name="IfcPropertySingleValue" Prefix="Type">
+																	<References>
+																		<DocTemplateDefinition xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+																	</References>
+																</DocModelRuleEntity>
+																<DocModelRuleEntity Name="IfcPropertyBoundedValue" Prefix="Type">
+																	<References>
+																		<DocTemplateDefinition xsi:nil="true" href="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" />
+																	</References>
+																</DocModelRuleEntity>
+																<DocModelRuleEntity Name="IfcPropertyEnumeratedValue" Prefix="Type">
+																	<References>
+																		<DocTemplateDefinition xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
+																	</References>
+																</DocModelRuleEntity>
+																<DocModelRuleEntity Name="IfcPropertyListValue" Prefix="Type">
+																	<References>
+																		<DocTemplateDefinition xsi:nil="true" href="List_Value_2E4BQ8aNbEEesoQhogfKj" />
+																	</References>
+																</DocModelRuleEntity>
+																<DocModelRuleEntity Name="IfcPropertyTableValue" Prefix="Type">
+																	<References>
+																		<DocTemplateDefinition xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+																	</References>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

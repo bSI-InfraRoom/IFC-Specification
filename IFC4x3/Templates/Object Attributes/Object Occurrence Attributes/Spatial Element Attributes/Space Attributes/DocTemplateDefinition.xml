@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Space_Attributes_1KEbAdUPn3IQ2w1CFyAHJJ" Name="Space Attributes" UniqueId="543a52a7-799c-4349-a0ba-04c3fc2914d3" Type="IfcSpace">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;Name[Value]=&apos;Buero1&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;LongName[Value]=&apos;Bueroraum 1&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;TypeName[Value]=&apos;Buero&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;TypeLongName[Value]=&apos;Bueroraum&apos;&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="LongName" Identification="LongName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Name" Identification="Name">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="CompositionType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcElementCompositionEnum" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ElevationWithFlooring">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="IsTypedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByType">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSpaceType">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="TypeName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="LongName" Identification="TypeLongName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

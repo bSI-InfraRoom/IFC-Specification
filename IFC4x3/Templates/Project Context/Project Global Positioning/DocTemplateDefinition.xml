@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Project_Global_Positioning_3J9e0D0k14GeJdkFjFtWG0" Name="Project Global Positioning" UniqueId="d326800d-02e0-4442-84e7-b8fb4fde0400" Type="IfcContext">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;HasGlobalPosition[Exists]=TRUE&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;CRSName[Value]=EPSG:5555&quot;/&gt;
+	&lt;!-- Other checking parameters: Eastings[Value], Northings[Value], OrthogonalHeight[Value], XaxisAbscissa[Value], XAxisOrdinate[Value] --&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="RepresentationContexts">
+			<Rules>
+				<DocModelRuleEntity Name="IfcGeometricRepresentationContext">
+					<Rules>
+						<DocModelRuleAttribute Name="HasCoordinateOperation" Identification="HasGlobalPosition">
+							<Rules>
+								<DocModelRuleEntity Name="IfcMapConversion">
+									<Rules>
+										<DocModelRuleAttribute Name="Eastings" Identification="Eastings">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Northings" Identification="Northings">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="OrthogonalHeight" Identification="OrthogonalHeight">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="XAxisAbscissa" Identification="XAxisAbscissa">
+											<Rules>
+												<DocModelRuleEntity Name="IfcReal" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="XAxisOrdinate" Identification="XAxisOrdinate">
+											<Rules>
+												<DocModelRuleEntity Name="IfcReal" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Scale">
+											<Rules>
+												<DocModelRuleEntity Name="IfcReal" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="TargetCRS">
+											<Rules>
+												<DocModelRuleEntity Name="IfcProjectedCRS">
+													<Rules>
+														<DocModelRuleAttribute Name="Name" Identification="CRSName">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Description">
+															<Rules>
+																<DocModelRuleEntity Name="IfcText" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="GeodeticDatum">
+															<Rules>
+																<DocModelRuleEntity Name="IfcIdentifier" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="VerticalDatum">
+															<Rules>
+																<DocModelRuleEntity Name="IfcIdentifier" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="MapProjection">
+															<Rules>
+																<DocModelRuleEntity Name="IfcIdentifier" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="MapZone">
+															<Rules>
+																<DocModelRuleEntity Name="IfcIdentifier" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Phase">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ObjectType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="LongName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Revolved_Area_Standardized_Profile_3g6nVRNdX4ihQpif6FTGyD" Name="Revolved Area Standardized Profile" UniqueId="ea1b17db-5e78-44b2-b6b3-b2918f750f0d" Type="IfcRevolvedAreaSolid">
+	<Rules>
+		<DocModelRuleAttribute Name="Position">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAxis2Placement3D">
+					<Rules>
+						<DocModelRuleAttribute Name="Location">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Axis">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RefDirection">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Axis">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAxis1Placement" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Angle">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPlaneAngleMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="SweptArea" Identification="Profile">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProfileDef">
+					<References>
+						<DocTemplateDefinition xsi:nil="true" href="CShape_Profile_Definition_3BQhX1RKzAJ87eFC5TGLtS" />
+						<DocTemplateDefinition xsi:nil="true" href="IShape_Profile_Definition_1k23A9IVb7OfzSmNhIhTu5" />
+						<DocTemplateDefinition xsi:nil="true" href="LShape_Profile_Definition_1QjH5TamDEIQiI7J16cSJ6" />
+						<DocTemplateDefinition xsi:nil="true" href="TShape_Profile_Definition_1A7qNhHKL93QKFFYsH1gee" />
+						<DocTemplateDefinition xsi:nil="true" href="UShape_Profile_Definition_042qRVrDT4Lx_BK8JPdUH" />
+						<DocTemplateDefinition xsi:nil="true" href="ZShape_Profile_Definition_0CQihQTnrC6gOT6YAP06y6" />
+						<DocTemplateDefinition xsi:nil="true" href="IShape_Asymmetric_Profile_Definition_1Oz9fhK1n0aPyDb4OSckxV" />
+					</References>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcProfileDef" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="StyledByItem">
+			<Rules>
+				<DocModelRuleEntity Name="IfcStyledItem">
+					<Rules>
+						<DocModelRuleAttribute Name="Styles">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+								<DocModelRuleEntity Name="IfcLabel" />
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcStyledItem" />
+				<DocModelRuleEntity Name="IfcStyledItem" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

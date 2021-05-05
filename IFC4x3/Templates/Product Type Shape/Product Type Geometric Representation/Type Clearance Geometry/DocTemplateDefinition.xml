@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Type_Clearance_Geometry_3nwx3pbib94gHrq1AYFu5v" Name="Type Clearance Geometry" UniqueId="3nwx3pbib94gHrq1AYFu5v" Type="IfcDistributionElementType">
+	<Rules>
+		<DocModelRuleAttribute Name="RepresentationMaps">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRepresentationMap">
+					<Rules>
+						<DocModelRuleAttribute Name="MappedRepresentation">
+							<Rules>
+								<DocModelRuleEntity Name="IfcShapeRepresentation">
+									<Rules>
+										<DocModelRuleAttribute Name="ContextOfItems">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGeometricRepresentationContext" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationIdentifier">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel">
+													<Rules>
+														<DocModelRuleAttribute Name="Value=Clearance" Description="Value=Clearance" />
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Items" Identification="Geometry">
+											<Rules>
+												<DocModelRuleEntity Name="IfcBoundedSurface" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="MappingOrigin">
+							<Rules>
+								<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+								<DocModelRuleEntity Name="IfcAxis2Placement2D" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

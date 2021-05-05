@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Triangulated_Geometry_With_Textures_2AbkPmnonDtfCwkEcMc3" Name="Triangulated Geometry With Textures" UniqueId="8a96e670-c72c-4dde-933a-b8e9bffd6983" Type="IfcTriangulatedFaceSet">
+	<Rules>
+		<DocModelRuleAttribute Name="Coordinates">
+			<Rules>
+				<DocModelRuleEntity Name="IfcCartesianPointList3D">
+					<Rules>
+						<DocModelRuleAttribute Name="CoordList">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Normals">
+			<Rules>
+				<DocModelRuleEntity Name="IfcParameterValue" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Closed">
+			<Rules>
+				<DocModelRuleEntity Name="IfcBoolean" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="CoordIndex">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveInteger" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="HasColours">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIndexedColourMap">
+					<Rules>
+						<DocModelRuleAttribute Name="Colours">
+							<Rules>
+								<DocModelRuleEntity Name="IfcColourRgbList">
+									<Rules>
+										<DocModelRuleAttribute Name="ColourList">
+											<Rules>
+												<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="ColourIndex">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPositiveInteger" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Opacity">
+							<Rules>
+								<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" />
+								<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="HasTextures">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIndexedTriangleTextureMap">
+					<References>
+						<DocTemplateDefinition id="Indexed_Texture_Map_0szRDwKv17GwYbAodwNL2z" Name="Indexed Texture Map" UniqueId="36f5b37a-5390-4743-a8a5-2b29fa5d50bd" Type="IfcIndexedTriangleTextureMap">
+							<Rules>
+								<DocModelRuleAttribute Name="Maps">
+									<Rules>
+										<DocModelRuleEntity Name="IfcImageTexture">
+											<References>
+												<DocTemplateDefinition xsi:nil="true" href="Image_Texture_0PLqwkKhv3vv4aUQb558RB" />
+											</References>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="TexCoords">
+									<Rules>
+										<DocModelRuleEntity Name="IfcTextureVertexList">
+											<Rules>
+												<DocModelRuleAttribute Name="TexCoordsList" />
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="TexCoordIndex" />
+							</Rules>
+						</DocTemplateDefinition>
+					</References>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="PnIndex">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveInteger" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

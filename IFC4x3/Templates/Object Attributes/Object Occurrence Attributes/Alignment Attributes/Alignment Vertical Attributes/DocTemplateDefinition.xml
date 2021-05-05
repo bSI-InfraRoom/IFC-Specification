@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Alignment Vertical Attributes" UniqueId="10c18187-c07c-4e5b-a9be-2e45d5eac8d2" Type="IfcAlignmentVertical">
+	<Rules>
+		<DocModelRuleAttribute Name="Segments">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAlignmentVerticalSegment">
+					<Rules>
+						<DocModelRuleAttribute Name="StartTag" />
+						<DocModelRuleAttribute Name="EndTag" />
+						<DocModelRuleAttribute Name="StartDistAlong">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="HorizontalLength">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="StartHeight">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="StartGradient">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="EndGradient">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RadiusOfCurvature">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="PredefinedType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcAlignmentVerticalSegmentTypeEnum" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

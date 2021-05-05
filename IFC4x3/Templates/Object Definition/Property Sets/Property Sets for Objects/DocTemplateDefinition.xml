@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" Name="Property Sets for Objects" UniqueId="3tGbMc30vFCOIj99WTjYHX" Version="1" Type="IfcObject">
+	<Rules>
+		<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+		<DocModelRuleAttribute Name="IsDefinedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByProperties">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingPropertyDefinition">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPropertySet">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="PsetName" />
+										<DocModelRuleAttribute Name="HasProperties" Identification="Properties">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPropertySingleValue">
+													<References>
+														<DocTemplateDefinition id="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" Name="Single Value" UniqueId="1cLVRGAQX7k8yzoVpfoQOW" Status="Official" Owner="System" Type="IfcPropertySingleValue">
+															<Rules>
+																<DocModelRuleAttribute Name="Name" Identification="PropertyName">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcIdentifier" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Description">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcText" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="NominalValue" Identification="Value">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcValue" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocTemplateDefinition>
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcPropertyBoundedValue">
+													<References>
+														<DocTemplateDefinition id="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" Name="Bounded Value" UniqueId="0zPwBITXr4sQ2Uj$kn_bOo" Status="Official" Owner="System" Type="IfcPropertyBoundedValue">
+															<Rules>
+																<DocModelRuleAttribute Name="Name" Identification="PropertyName">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcIdentifier" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Description">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcText" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="UpperBoundValue" Identification="UpperValue">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcValue" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="LowerBoundValue" Identification="LowerValue">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcValue" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="SetPointValue" Identification="SetValue">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcValue" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocTemplateDefinition>
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcPropertyEnumeratedValue">
+													<References>
+														<DocTemplateDefinition id="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" Name="Enumerated Value" UniqueId="31IA2Pmr53g99cNptWj5gL" Status="Official" Owner="System" Type="IfcPropertyEnumeratedValue">
+															<Rules>
+																<DocModelRuleAttribute Name="Name" Identification="PropertyName">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcIdentifier" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Description">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcText" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="EnumerationValues" Identification="Value">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcValue" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="EnumerationReference">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcPropertyEnumeration">
+																			<Rules>
+																				<DocModelRuleAttribute Name="Name" Identification="Reference">
+																					<Rules>
+																						<DocModelRuleEntity Name="IfcLabel" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocTemplateDefinition>
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcPropertyListValue">
+													<References>
+														<DocTemplateDefinition id="List_Value_2E4BQ8aNbEEesoQhogfKj" Name="List Value" UniqueId="2E4BQ8aNbEEesoQhog$fKj" Type="IfcPropertyListValue">
+															<Rules>
+																<DocModelRuleAttribute Name="Name" Identification="PropertyName">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcIdentifier" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Description">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcText" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="ListValues" Identification="Value">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcValue" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocTemplateDefinition>
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcPropertyTableValue">
+													<References>
+														<DocTemplateDefinition id="Table_Value_0roKUmQhnB4ux7QMxo11SX" Name="Table Value" UniqueId="0roKUmQhnB4ux7QMxo11SX" Type="IfcPropertyTableValue">
+															<Rules>
+																<DocModelRuleAttribute Name="Name" Identification="PropertyName">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcIdentifier" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Description">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcText" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="DefiningValues" Identification="Value">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcValue" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="DefinedValues" Identification="Reference">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcValue" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Expression">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcText" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="CurveInterpolation">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcCurveInterpolationEnum" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocTemplateDefinition>
+													</References>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Extruded_Area_CompositeCurve_Profile_0jBaLixr5DIPKOfJ5zpCyU" Name="Extruded Area CompositeCurve Profile" UniqueId="2d2e456c-ef51-4d49-9518-a5317dcccf1e" Type="IfcExtrudedAreaSolid">
+	<Rules>
+		<DocModelRuleAttribute Name="Position">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAxis2Placement3D">
+					<Rules>
+						<DocModelRuleAttribute Name="Location">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Axis">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RefDirection">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ExtrudedDirection">
+			<Rules>
+				<DocModelRuleEntity Name="IfcDirection" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Depth">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="SweptArea" Identification="Profile">
+			<Rules>
+				<DocModelRuleEntity Name="IfcArbitraryProfileDefWithVoids">
+					<References>
+						<DocTemplateDefinition id="CompositeCurve_Profile_Definition_1ZWo1I8XrCGPNKfMxbrfw8" Name="CompositeCurve Profile Definition" UniqueId="63832052-221d-4c41-95d4-a56ee5d69e88" Type="IfcArbitraryProfileDefWithVoids">
+							<Documentation>Composite curve profile definitons define the closed two-dimensional curve used for the cross-section by a composite curve, consisting of multiple composite curve segments. Each composite curve segment has a parent curve, being either a polyline or a trimmed curve. Trimmed curves have basis curves of type line, circle or ellipse.</Documentation>
+							<Rules>
+								<DocModelRuleAttribute Name="ProfileType">
+									<Rules>
+										<DocModelRuleEntity Name="IfcProfileTypeEnum" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="ProfileName">
+									<Rules>
+										<DocModelRuleEntity Name="IfcLabel" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="OuterCurve">
+									<Rules>
+										<DocModelRuleEntity Name="IfcCompositeCurve">
+											<Rules>
+												<DocModelRuleAttribute Name="Segments">
+													<Rules>
+														<DocModelRuleEntity Name="IfcCompositeCurveSegment">
+															<Rules>
+																<DocModelRuleAttribute Name="Transition">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcTransitionCode" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="SameSense">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcBoolean" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="ParentCurve">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcTrimmedCurve">
+																			<Rules>
+																				<DocModelRuleAttribute Name="BasisCurve">
+																					<Rules>
+																						<DocModelRuleEntity Name="IfcPolyline">
+																							<Rules>
+																								<DocModelRuleAttribute Name="Points">
+																									<Rules>
+																										<DocModelRuleEntity Name="IfcCartesianPoint" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																							</Rules>
+																						</DocModelRuleEntity>
+																						<DocModelRuleEntity Name="IfcCircle">
+																							<Rules>
+																								<DocModelRuleAttribute Name="Position">
+																									<Rules>
+																										<DocModelRuleEntity Name="IfcAxis2Placement2D" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																								<DocModelRuleAttribute Name="Radius">
+																									<Rules>
+																										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																							</Rules>
+																						</DocModelRuleEntity>
+																						<DocModelRuleEntity Name="IfcEllipse">
+																							<Rules>
+																								<DocModelRuleAttribute Name="Position">
+																									<Rules>
+																										<DocModelRuleEntity Name="IfcAxis2Placement2D" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																								<DocModelRuleAttribute Name="SemiAxis1">
+																									<Rules>
+																										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																								<DocModelRuleAttribute Name="SemiAxis2">
+																									<Rules>
+																										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+																									</Rules>
+																								</DocModelRuleAttribute>
+																							</Rules>
+																						</DocModelRuleEntity>
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute Name="Trim1">
+																					<Rules>
+																						<DocModelRuleEntity Name="IfcCartesianPoint" />
+																						<DocModelRuleEntity Name="IfcParameterValue" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute Name="Trim2">
+																					<Rules>
+																						<DocModelRuleEntity Name="IfcCartesianPoint" />
+																						<DocModelRuleEntity Name="IfcParameterValue" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute Name="SenseAgreement">
+																					<Rules>
+																						<DocModelRuleEntity Name="IfcBoolean" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																				<DocModelRuleAttribute Name="MasterRepresentation">
+																					<Rules>
+																						<DocModelRuleEntity Name="IfcTrimmingPreference" />
+																					</Rules>
+																				</DocModelRuleAttribute>
+																			</Rules>
+																		</DocModelRuleEntity>
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocModelRuleEntity>
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="InnerCurves">
+									<Rules>
+										<DocModelRuleEntity Name="IfcCompositeCurve" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+					</References>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcProfileDef" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="StyledByItem">
+			<Rules>
+				<DocModelRuleEntity Name="IfcStyledItem">
+					<Rules>
+						<DocModelRuleAttribute Name="Styles">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+								<DocModelRuleEntity Name="IfcLabel" />
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcStyledItem" />
+				<DocModelRuleEntity Name="IfcStyledItem" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

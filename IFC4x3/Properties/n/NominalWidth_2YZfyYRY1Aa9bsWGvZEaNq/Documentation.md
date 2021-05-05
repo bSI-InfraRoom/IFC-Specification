@@ -1,1 +1,1 @@
-The nominal width of the object.
+The nominal width or diameter of the duct connection.

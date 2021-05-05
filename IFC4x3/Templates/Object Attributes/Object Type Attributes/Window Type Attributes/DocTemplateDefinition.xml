@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Window Type Attributes" UniqueId="842d3d13-3018-4ebd-9c6c-720abdae7e5c" Type="IfcWindowType">
+	<Rules>
+		<DocModelRuleAttribute Name="PartitioningType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcWindowTypePartitioningEnum" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="UserDefinedPartitioningType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ParameterTakesPrecedence" />
+		<DocModelRuleAttribute Name="HasPropertySets">
+			<Rules>
+				<DocModelRuleEntity Name="IfcWindowLiningProperties" />
+				<DocModelRuleEntity Name="IfcWindowPanelProperties" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

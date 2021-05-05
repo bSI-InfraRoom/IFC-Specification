@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Product_Grid_Placement_3XrC7kR9FHODwhtlgqpHa" Name="Product Grid Placement" UniqueId="e1d7f307-b9b2-4f45-837a-af7bead33464" Type="IfcProduct">
+	<Rules>
+		<DocModelRuleAttribute Name="ObjectPlacement">
+			<Rules>
+				<DocModelRuleEntity Name="IfcGridPlacement">
+					<Rules>
+						<DocModelRuleAttribute Name="PlacementLocation">
+							<Rules>
+								<DocModelRuleEntity Name="IfcVirtualGridIntersection">
+									<Rules>
+										<DocModelRuleAttribute Name="OffsetDistances">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="IntersectingAxes">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGridAxis">
+													<Rules>
+														<DocModelRuleAttribute Name="AxisTag">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="AxisCurve">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLine">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Pnt">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcCartesianPoint">
+																					<Rules>
+																						<DocModelRuleAttribute Name="Coordinates">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcLengthMeasure" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="Dir">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcVector" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="SameSense">
+															<Rules>
+																<DocModelRuleEntity Name="IfcBoolean" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="PlacementRefDirection">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
