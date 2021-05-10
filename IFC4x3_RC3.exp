@@ -19,7 +19,7 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-09 May 2021
+23 April 2021
 
 *)
 
@@ -577,7 +577,7 @@ END_TYPE;
 TYPE IfcAlignmentCantSegmentTypeEnum = ENUMERATION OF
 	(CONSTANTCANT
 	,LINEARTRANSITION
-	,HELMERTCURVE
+	,BIQUADRATICPARABOLA
 	,BLOSSCURVE
 	,COSINECURVE
 	,SINECURVE
@@ -589,7 +589,7 @@ TYPE IfcAlignmentHorizontalSegmentTypeEnum = ENUMERATION OF
 	,CIRCULARARC
 	,CLOTHOID
 	,CUBIC
-	,HELMERTCURVE
+	,BIQUADRATICPARABOLA
 	,BLOSSCURVE
 	,CUBICSPIRAL
 	,COSINECURVE
@@ -4004,6 +4004,7 @@ ENTITY IfcAlignmentCantSegment
 	EndCantLeft : OPTIONAL IfcLengthMeasure;
 	StartCantRight : IfcLengthMeasure;
 	EndCantRight : OPTIONAL IfcLengthMeasure;
+	SmoothingLength : OPTIONAL IfcPositiveLengthMeasure;
 	PredefinedType : IfcAlignmentCantSegmentTypeEnum;
 END_ENTITY;
 
@@ -10364,7 +10365,7 @@ ENTITY IfcSectionedSolidHorizontal
 	FixedAxisVertical : IfcBoolean;
  WHERE
 	CorrespondingSectionPositions : SIZEOF(CrossSections) = SIZEOF(CrossSectionPositions);
-	NoLongitudinalOffsets : SIZEOF(QUERY(temp <* CrossSectionPositions | EXISTS(temp.Location.OffsetLongitudinal))) = 0;
+	NoLongitudinalOffsets : SIZEOF(QUERY(temp <* CrossSectionPositions | EXISTS(temp.OffsetLongitudinal))) = 0;
 END_ENTITY;
 
 ENTITY IfcSectionedSpine
@@ -11757,7 +11758,6 @@ ENTITY IfcThirdOrderPolynomialSpiral
 	QubicTerm : IfcLengthMeasure;
 	QuadraticTerm : OPTIONAL IfcLengthMeasure;
 	LinearTerm : OPTIONAL IfcLengthMeasure;
-	ConstantTerm : OPTIONAL IfcReal;
 END_ENTITY;
 
 ENTITY IfcTimePeriod;
