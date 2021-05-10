@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" Name="Single Value" UniqueId="1cLVRGAQX7k8yzoVpfoQOW" Status="Official" Owner="System" Type="IfcPropertySingleValue">
+	<Rules>
+		<DocModelRuleAttribute Name="Name" Identification="PropertyName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIdentifier" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Description">
+			<Rules>
+				<DocModelRuleEntity Name="IfcText" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="NominalValue" Identification="Value">
+			<Rules>
+				<DocModelRuleEntity Name="IfcValue" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

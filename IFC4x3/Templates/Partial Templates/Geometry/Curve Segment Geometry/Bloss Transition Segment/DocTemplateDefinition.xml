@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Bloss_Transition_Segment_3xfEEn9pLCL8sUYFMqfDaC" Name="Bloss Transition Segment" UniqueId="fba4e3b1-2735-4c54-8d9e-88f5b4a4d90c" Type="IfcCurveSegment">
+	<Rules>
+		<DocModelRuleAttribute Name="ParentCurve">
+			<Rules>
+				<DocModelRuleEntity Name="IfcThirdOrderPolynomialSpiral">
+					<Rules>
+						<DocModelRuleAttribute Name="QubicTerm">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="QuadraticTerm">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

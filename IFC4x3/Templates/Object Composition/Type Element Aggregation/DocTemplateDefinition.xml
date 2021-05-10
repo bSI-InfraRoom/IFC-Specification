@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Type_Element_Aggregation_2Vp5fc8gT1h9CeCNMOHT5I" Name="Type Element Aggregation" UniqueId="9fcc5a66-22a7-41ac-9328-31759845d152" Type="IfcElementType">
+	<Rules>
+		<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+		<DocModelRuleAttribute Name="IsDecomposedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAggregates">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedObjects" Identification="RelatedObjects">
+							<Rules>
+								<DocModelRuleEntity Name="IfcElement" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Decomposes" />
+	</Rules>
+</DocTemplateDefinition>
+

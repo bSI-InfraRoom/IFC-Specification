@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Geometry_Text_Style_0qt3Bw5rr3XvtbD02sZ0fi" Name="Geometry Text Style" UniqueId="34dc32fa-175d-4387-9de5-3400b68c0a6c" Type="IfcTextStyle">
+	<Rules>
+		<DocModelRuleAttribute Name="Name">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="TextCharacterAppearance">
+			<Rules>
+				<DocModelRuleEntity Name="IfcTextStyleForDefinedFont">
+					<Rules>
+						<DocModelRuleAttribute Name="Colour">
+							<Rules>
+								<DocModelRuleEntity Name="IfcColourRgb" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="BackgroundColour">
+							<Rules>
+								<DocModelRuleEntity Name="IfcColourRgb" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="TextStyle" />
+		<DocModelRuleAttribute Name="TextFontStyle">
+			<Rules>
+				<DocModelRuleEntity Name="IfcTextStyleFontModel">
+					<Rules>
+						<DocModelRuleAttribute Name="Name">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="FontFamily">
+							<Rules>
+								<DocModelRuleEntity Name="IfcTextFontName" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="FontStyle">
+							<Rules>
+								<DocModelRuleEntity Name="IfcFontStyle" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="FontVariant">
+							<Rules>
+								<DocModelRuleEntity Name="IfcFontVariant" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="FontWeight">
+							<Rules>
+								<DocModelRuleEntity Name="IfcFontWeight" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="FontSize">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSizeSelect" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

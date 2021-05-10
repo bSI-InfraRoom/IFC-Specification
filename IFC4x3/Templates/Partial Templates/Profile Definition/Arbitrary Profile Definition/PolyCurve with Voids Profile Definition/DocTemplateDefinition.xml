@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="PolyCurve_with_Voids_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" Name="PolyCurve with Voids Profile Definition" UniqueId="d3b8661b-e65b-4077-adc7-c6742d219691" Type="IfcArbitraryProfileDefWithVoids">
+	<Rules>
+		<DocModelRuleAttribute Name="ProfileType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProfileTypeEnum" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ProfileName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="OuterCurve">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIndexedPolyCurve">
+					<Rules>
+						<DocModelRuleAttribute Name="Points">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPointList2D" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Segments">
+							<Rules>
+								<DocModelRuleEntity Name="IfcArcIndex" />
+								<DocModelRuleEntity Name="IfcLineIndex" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="SelfIntersect">
+							<Rules>
+								<DocModelRuleEntity Name="IfcBoolean" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="InnerCurves">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIndexedPolyCurve" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

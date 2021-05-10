@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Actor_Assignment_04W7d1TDrBsRCmHveKZIEF" Name="Actor Assignment" UniqueId="04W7d1TDrBsRCmHveKZIEF" Type="IfcActor">
+	<Rules>
+		<DocModelRuleAttribute Name="IsActingUpon">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAssignsToActor">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedObjects" Identification="Type">
+							<Rules>
+								<DocModelRuleEntity Name="IfcControl" />
+								<DocModelRuleEntity Name="IfcGroup" />
+								<DocModelRuleEntity Name="IfcProduct" />
+								<DocModelRuleEntity Name="IfcProcess" />
+								<DocModelRuleEntity Name="IfcResource" />
+								<DocModelRuleEntity Name="IfcContext" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

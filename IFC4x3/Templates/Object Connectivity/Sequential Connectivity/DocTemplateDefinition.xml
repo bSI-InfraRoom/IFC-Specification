@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Sequential_Connectivity_39yHY0ZFP7gki1SSxG46n" Name="Sequential Connectivity" UniqueId="39yHY0ZFP7$gki1SSxG46n" Type="IfcProcess">
+	<Rules>
+		<DocModelRuleAttribute Name="IsPredecessorTo">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelSequence">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedProcess">
+							<Rules>
+								<DocModelRuleEntity Name="IfcProcess" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="IsSuccessorFrom">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelSequence">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingProcess">
+							<Rules>
+								<DocModelRuleEntity Name="IfcProcess" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

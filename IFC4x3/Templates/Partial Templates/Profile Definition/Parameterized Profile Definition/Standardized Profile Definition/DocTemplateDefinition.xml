@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Standardized Profile Definition" UniqueId="f63e9810-ac6e-43bf-9402-6ae9152b9b50" Type="IfcParameterizedProfileDef">
+	<Rules>
+		<DocModelRuleAttribute Name="ProfileType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProfileTypeEnum" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ProfileName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Position">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAxis2Placement2D">
+					<Rules>
+						<DocModelRuleAttribute Name="Location">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RefDirection">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcAxis2Placement2D" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+	<Templates>
+		<DocTemplateDefinition xsi:nil="true" href="CShape_Profile_Definition_3BQhX1RKzAJ87eFC5TGLtS" />
+		<DocTemplateDefinition xsi:nil="true" href="IShape_Asymmetric_Profile_Definition_1Oz9fhK1n0aPyDb4OSckxV" />
+		<DocTemplateDefinition xsi:nil="true" href="IShape_Profile_Definition_1k23A9IVb7OfzSmNhIhTu5" />
+		<DocTemplateDefinition xsi:nil="true" href="LShape_Profile_Definition_1QjH5TamDEIQiI7J16cSJ6" />
+		<DocTemplateDefinition xsi:nil="true" href="TShape_Profile_Definition_1A7qNhHKL93QKFFYsH1gee" />
+		<DocTemplateDefinition xsi:nil="true" href="UShape_Profile_Definition_042qRVrDT4Lx_BK8JPdUH" />
+		<DocTemplateDefinition xsi:nil="true" href="ZShape_Profile_Definition_0CQihQTnrC6gOT6YAP06y6" />
+	</Templates>
+</DocTemplateDefinition>
+

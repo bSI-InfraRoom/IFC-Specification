@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Object_User_Identity_31di66dFr7AJKdxDG2D1A" Name="Object User Identity" UniqueId="31di66dFr7$AJKdxDG2D1A" Type="IfcObject">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+ &lt;TemplateRule Parameters=&quot;ObjectName[Value]=&apos;Member_1-001&apos;&quot;&gt;&lt;/TemplateRule&gt;
+&lt;/TemplateRules&gt; </Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="Name" Identification="ObjectName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Description" Identification="ObjectDescription">
+			<Rules>
+				<DocModelRuleEntity Name="IfcText" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="IsTypedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByType">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcTypeObject">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="TypeName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Description" Identification="TypeDescription">
+											<Rules>
+												<DocModelRuleEntity Name="IfcText" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

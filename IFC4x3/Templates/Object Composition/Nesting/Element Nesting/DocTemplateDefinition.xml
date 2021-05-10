@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Element_Nesting_3xyZPOf2b4W9j1Ne1PH7WR" Name="Element Nesting" UniqueId="fbf23658-a429-4480-9b41-5e805944781b" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="IsNestedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelNests">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedObjects" Identification="Type">
+							<Rules>
+								<DocModelRuleEntity Name="IfcElement">
+									<Rules>
+										<DocModelRuleAttribute Name="ObjectPlacement">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLocalPlacement" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

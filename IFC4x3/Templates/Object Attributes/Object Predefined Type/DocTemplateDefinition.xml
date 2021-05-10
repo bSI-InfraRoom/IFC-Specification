@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" Name="Object Predefined Type" UniqueId="0b989XcDzD2fDaLbDNNAGX" Type="IfcObject">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+  &lt;TemplateRules operator=&quot;or&quot;&gt;
+	&lt;!-- Other checking type attribute on object or occurrence --&gt;
+	&lt;TemplateRule Parameters=&quot;PredefinedType[Value]=&apos;USERDEFINED&apos; AND UserDefinedType[Value]=&apos;Aussteifung&apos;&quot;/&gt;
+      &lt;TemplateRules operator=&quot;and&quot;&gt;
+          &lt;TemplateRules operator=&quot;nor&quot;&gt;
+            &lt;TemplateRule Parameters=&quot;PredefinedType[Value]=&apos;USERDEFINED&apos; OR UserDefinedType[Value]=&apos;Aussteifung&apos;&quot;/&gt;
+          &lt;/TemplateRules&gt;
+          &lt;TemplateRules operator=&quot;or&quot;&gt;
+             &lt;TemplateRule Parameters=&quot;TypePredefinedType[Value]=&apos;USERDEFINED&apos; AND TypeUserdefinedType[Value]=&apos;Aussteifung&apos;&quot;/&gt;
+          &lt;/TemplateRules&gt;
+      &lt;/TemplateRules&gt;
+  &lt;/TemplateRules&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="ObjectType" Identification="UserDefinedType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+		<DocModelRuleAttribute Name="IsTypedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByType">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcTypeObject">
+									<Rules>
+										<DocModelRuleAttribute Name="ElementType" Identification="TypeUserdefinedType" />
+										<DocModelRuleAttribute Name="PredefinedType" Identification="TypePredefinedType" />
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
