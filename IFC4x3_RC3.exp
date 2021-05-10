@@ -19,7 +19,7 @@ for incidental consequential damages in connection with the furnishing, performa
 of the material. The information contained in this document is subject to change without notice.
 
 Issue date:
-23 April 2021
+11 March 2021
 
 *)
 
@@ -1251,9 +1251,9 @@ TYPE IfcDiscreteAccessoryTypeEnum = ENUMERATION OF
 	,POINTMACHINEMOUNTINGDEVICE
 	,POINT_MACHINE_LOCKING_DEVICE
 	,RAIL_MECHANICAL_EQUIPMENT
-	,BIRDPROTECTION
 	,USERDEFINED
-	,NOTDEFINED);
+	,NOTDEFINED
+	,BIRDPROTECTION);
 END_TYPE;
 
 TYPE IfcDistributionBoardTypeEnum = ENUMERATION OF
@@ -1997,7 +1997,7 @@ END_TYPE;
 TYPE IfcMarineFacilityTypeEnum = ENUMERATION OF
 	(CANAL
 	,WATERWAYSHIPLIFT
-	,REVETMENT
+	,EMBANKMENT
 	,LAUNCHRECOVERY
 	,MARINEDEFENCE
 	,HYDROLIFT
@@ -2190,13 +2190,6 @@ TYPE IfcOutletTypeEnum = ENUMERATION OF
 	,POWEROUTLET
 	,DATAOUTLET
 	,TELEPHONEOUTLET
-	,USERDEFINED
-	,NOTDEFINED);
-END_TYPE;
-
-TYPE IfcPavementTypeEnum = ENUMERATION OF
-	(FLEXIBLE
-	,RIGID
 	,USERDEFINED
 	,NOTDEFINED);
 END_TYPE;
@@ -2782,7 +2775,6 @@ TYPE IfcSpaceTypeEnum = ENUMERATION OF
 	,GFA
 	,INTERNAL
 	,EXTERNAL
-	,BERTH
 	,USERDEFINED
 	,NOTDEFINED);
 END_TYPE;
@@ -4010,6 +4002,7 @@ END_ENTITY;
 
 ENTITY IfcAlignmentHorizontal
  SUBTYPE OF (IfcLinearElement);
+	StartDistAlong : OPTIONAL IfcLengthMeasure;
 END_ENTITY;
 
 ENTITY IfcAlignmentHorizontalSegment
@@ -5800,10 +5793,6 @@ ENTITY IfcDirectrixCurveSweptAreaSolid
 (SIZEOF(['IFC4X3_RC3.IFCCONIC', 'IFC4X3_RC3.IFCBOUNDEDCURVE'] * TYPEOF(Directrix)) = 1);
 END_ENTITY;
 
-ENTITY IfcDirectrixDerivedReferenceSweptAreaSolid
- SUBTYPE OF (IfcFixedReferenceSweptAreaSolid);
-END_ENTITY;
-
 ENTITY IfcDirectrixDistanceSweptAreaSolid
  ABSTRACT SUPERTYPE OF (ONEOF
     (IfcInclinedReferenceSweptAreaSolid))
@@ -6761,27 +6750,18 @@ ENTITY IfcFacilityPart
 	PredefinedType : IfcFacilityPartTypeSelect;
 	UsageType : IfcFacilityUsageEnum;
  WHERE
-	CorrectPredefinedType : ((PredefinedType <> IfcBridgePartTypeEnum.USERDEFINED)
-OR
-(PredefinedType <> IfcRailwayPartTypeEnum.USERDEFINED)
-OR
-(PredefinedType <> IfcRoadPartTypeEnum.USERDEFINED)
-OR
-(PredefinedType <> IfcMarinePartTypeEnum.USERDEFINED)
-OR
-(PredefinedType <> IfcFacilityPartCommonTypeEnum.USERDEFINED))
-OR
-(((PredefinedType = IfcBridgePartTypeEnum.USERDEFINED)
-OR
-(PredefinedType = IfcRailwayPartTypeEnum.USERDEFINED)
-OR
-(PredefinedType = IfcRoadPartTypeEnum.USERDEFINED)
-OR
-(PredefinedType = IfcMarinePartTypeEnum.USERDEFINED)
-OR
+	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
+((PredefinedType <> IfcBridgePartTypeEnum.USERDEFINED) AND
+(PredefinedType <> IfcRailwayPartTypeEnum.USERDEFINED) AND
+(PredefinedType <> IfcRoadPartTypeEnum.USERDEFINED) AND
+(PredefinedType <> IfcMarinePartTypeEnum.USERDEFINED) AND
+(PredefinedType <> IfcFacilityPartCommonTypeEnum.USERDEFINED)) OR
+(((PredefinedType = IfcBridgePartTypeEnum.USERDEFINED) OR
+(PredefinedType = IfcRailwayPartTypeEnum.USERDEFINED) OR
+(PredefinedType = IfcRoadPartTypeEnum.USERDEFINED) OR
+(PredefinedType = IfcMarinePartTypeEnum.USERDEFINED) OR
 (PredefinedType = IfcFacilityPartCommonTypeEnum.USERDEFINED))
-AND
-EXISTS(SELF\IfcObject.ObjectType));
+AND EXISTS(SELF\IfcObject.ObjectType));
 END_ENTITY;
 
 ENTITY IfcFailureConnectionCondition
@@ -6937,8 +6917,6 @@ ENTITY IfcFireSuppressionTerminalType
 END_ENTITY;
 
 ENTITY IfcFixedReferenceSweptAreaSolid
- SUPERTYPE OF (ONEOF
-    (IfcDirectrixDerivedReferenceSweptAreaSolid))
  SUBTYPE OF (IfcDirectrixCurveSweptAreaSolid);
 	FixedReference : IfcDirection;
 END_ENTITY;
@@ -7450,21 +7428,14 @@ ENTITY IfcImpactProtectionDevice
  SUBTYPE OF (IfcElementComponent);
 	PredefinedType : OPTIONAL IfcImpactProtectionDeviceTypeSelect;
  WHERE
-	CorrectPredefinedType : NOT(EXISTS(PredefinedType))
-OR
-((PredefinedType <> IfcImpactProtectionDeviceTypeEnum.USERDEFINED)
-OR
-(PredefinedType <> IfcVibrationDamperTypeEnum.USERDEFINED)
-OR
-(PredefinedType <> IfcVibrationIsolatorTypeEnum.USERDEFINED))
- OR
-(((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED)
-OR
-(PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED)
-OR
+	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
+((PredefinedType <> IfcImpactProtectionDeviceTypeEnum.USERDEFINED) AND
+(PredefinedType <> IfcVibrationDamperTypeEnum.USERDEFINED) AND
+(PredefinedType <> IfcVibrationIsolatorTypeEnum.USERDEFINED)) OR
+(((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED) OR
+(PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED) OR
 (PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED))
-AND
-EXISTS(SELF\IfcObject.ObjectType));
+AND EXISTS(SELF\IfcObject.ObjectType));
 	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR
 ('IFC4X3_RC3.IFCIMPACTPROTECTIONDEVICETYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
 END_ENTITY;
@@ -7473,19 +7444,13 @@ ENTITY IfcImpactProtectionDeviceType
  SUBTYPE OF (IfcElementComponentType);
 	PredefinedType : IfcImpactProtectionDeviceTypeSelect;
  WHERE
-	CorrectPredefinedType : ((PredefinedType <> IfcImpactProtectionDeviceTypeEnum.USERDEFINED)
-OR
-(PredefinedType <> IfcVibrationDamperTypeEnum.USERDEFINED)
-OR
-(PredefinedType <> IfcVibrationIsolatorTypeEnum.USERDEFINED))
-OR
-(((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED)
-OR 
-(PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED)
-OR 
+	CorrectPredefinedType : ((PredefinedType <> IfcImpactProtectionDeviceTypeEnum.USERDEFINED) AND
+(PredefinedType <> IfcVibrationDamperTypeEnum.USERDEFINED) AND
+(PredefinedType <> IfcVibrationIsolatorTypeEnum.USERDEFINED)) OR
+(((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED) OR
+(PredefinedType = IfcVibrationDamperTypeEnum.USERDEFINED) OR
 (PredefinedType = IfcVibrationIsolatorTypeEnum.USERDEFINED))
-AND
-EXISTS(SELF\IfcObject.ObjectType));
+AND EXISTS(SELF\IfcObject.ObjectType));
 END_ENTITY;
 
 ENTITY IfcInclinedReferenceSweptAreaSolid
@@ -8454,21 +8419,12 @@ END_ENTITY;
 
 ENTITY IfcPavement
  SUBTYPE OF (IfcBuiltElement);
-	PredefinedType : OPTIONAL IfcPavementTypeEnum;
- WHERE
-	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
-(PredefinedType <> IfcPavementTypeEnum.USERDEFINED) OR
-((PredefinedType = IfcPavementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType));
-	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR
-('IFC4X3_RC3.IFCPAVEMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
+	Flexible : OPTIONAL IfcBoolean;
 END_ENTITY;
 
 ENTITY IfcPavementType
  SUBTYPE OF (IfcBuiltElementType);
-	PredefinedType : IfcPavementTypeEnum;
- WHERE
-	CorrectPredefinedType : (PredefinedType <> IfcPavementTypeEnum.USERDEFINED) OR
-((PredefinedType = IfcPavementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType));
+	Flexible : IfcBoolean;
 END_ENTITY;
 
 ENTITY IfcPcurve
@@ -8771,9 +8727,6 @@ ENTITY IfcPolynomialCurve
 	CoefficientsX : OPTIONAL LIST [2:?] OF IfcReal;
 	CoefficientsY : OPTIONAL LIST [2:?] OF IfcReal;
 	CoefficientsZ : OPTIONAL LIST [2:?] OF IfcReal;
- WHERE
-	ValidCoefficients : (EXISTS(CoefficientsX) AND EXISTS(CoefficientsY)) OR (EXISTS(CoefficientsX) AND EXISTS(CoefficientsZ)) OR (EXISTS(CoefficientsY) AND EXISTS(CoefficientsZ)) OR (EXISTS(CoefficientsX) AND EXISTS(CoefficientsY) AND EXISTS(CoefficientsZ));
-	CorrectPositionDim : ((Position.Dim=2) AND (NOT EXISTS(CoefficientsZ))) OR (Position.Dim=3);
 END_ENTITY;
 
 ENTITY IfcPort
@@ -10361,7 +10314,7 @@ END_ENTITY;
 
 ENTITY IfcSectionedSolidHorizontal
  SUBTYPE OF (IfcSectionedSolid);
-	CrossSectionPositions : LIST [2:?] OF IfcAxis2PlacementLinear;
+	CrossSectionPositions : LIST [2:?] OF IfcCurveMeasureSelect;
 	FixedAxisVertical : IfcBoolean;
  WHERE
 	CorrespondingSectionPositions : SIZEOF(CrossSections) = SIZEOF(CrossSectionPositions);
@@ -11857,17 +11810,9 @@ ENTITY IfcTransportElement
  SUBTYPE OF (IfcElement);
 	PredefinedType : OPTIONAL IfcTransportElementTypeSelect;
  WHERE
-	CorrectPredefinedType : NOT(EXISTS(PredefinedType))
-OR
-((PredefinedType <> IfcTransportElementFixedTypeEnum.USERDEFINED)
-AND
-(PredefinedType <> IfcTransportElementNonFixedTypeEnum.USERDEFINED))
-OR
-(((PredefinedType = IfcTransportElementFixedTypeEnum.USERDEFINED)
-OR
-(PredefinedType = IfcTransportElementNonFixedTypeEnum.USERDEFINED))
-AND
-EXISTS(SELF\IfcElementType.ElementType));
+	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
+((PredefinedType <> IfcTransportElementFixedTypeEnum.USERDEFINED) AND (PredefinedType <> IfcTransportElementNonFixedTypeEnum.USERDEFINED)) OR
+(((PredefinedType = IfcTransportElementFixedTypeEnum.USERDEFINED) OR (PredefinedType = IfcTransportElementNonFixedTypeEnum.USERDEFINED)) AND EXISTS(SELF\IfcObject.ObjectType));
 	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR
   ('IFC4X3_RC3.IFCTRANSPORTELEMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
 END_ENTITY;
@@ -11876,15 +11821,8 @@ ENTITY IfcTransportElementType
  SUBTYPE OF (IfcElementType);
 	PredefinedType : IfcTransportElementTypeSelect;
  WHERE
-	CorrectPredefinedType : ((PredefinedType <> IfcTransportElementFixedTypeEnum.USERDEFINED)
-AND
-(PredefinedType <> IfcTransportElementNonFixedTypeEnum.USERDEFINED))
-OR
-((PredefinedType = IfcTransportElementFixedTypeEnum.USERDEFINED)
-OR
-(PredefinedType = IfcTransportElementNonFixedTypeEnum.USERDEFINED)
-AND
-EXISTS(SELF\IfcElementType.ElementType));
+	CorrectPredefinedType : ((PredefinedType <> IfcTransportElementFixedTypeEnum.USERDEFINED) AND (PredefinedType <> IfcTransportElementNonFixedTypeEnum.USERDEFINED)) OR
+(((PredefinedType = IfcTransportElementFixedTypeEnum.USERDEFINED) OR (PredefinedType = IfcTransportElementNonFixedTypeEnum.USERDEFINED)) AND EXISTS(SELF\IfcElementType.ElementType));
 END_ENTITY;
 
 ENTITY IfcTrapeziumProfileDef
@@ -12942,11 +12880,8 @@ FUNCTION IfcCurveDim
   IF ('IFC4X3_RC3.IFCCURVESEGMENT2D' IN TYPEOF(Curve))
     THEN RETURN(2);
   END_IF;
-  IF ('IFC4X3_RC3.IFCPOLYNOMIALCURVE' IN TYPEOF(Curve)) THEN
-    IF ( NOT EXISTS(Curve\IfcPolynomialCurve.CoefficientsZ) AND (Curve\IfcPolynomialCurve.Position.Dim = 2 ))
-        THEN RETURN(2);
-    END_IF;
-    RETURN(3);
+  IF ('IFC4X3_RC3.IFCPOLYNOMIALCURVE' IN TYPEOF(Curve))
+    THEN RETURN(3);
   END_IF;
   IF ('IFC4X3_RC3.IFCPCURVE' IN TYPEOF(Curve))
     THEN RETURN(3);
