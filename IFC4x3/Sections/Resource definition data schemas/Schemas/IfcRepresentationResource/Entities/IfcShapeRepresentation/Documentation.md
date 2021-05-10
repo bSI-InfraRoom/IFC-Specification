@@ -20,7 +20,7 @@ Several representation identifiers for shape representation are included as pred
 </tr>
 <tr>
 <td align="left" valign="top" width="210"><b>Annotation</b></td>
-<td align="left" valign="top">2D annotations not representing elements</td>
+<td align="left" valign="top">3D annotations not representing elements</td>
 </tr>
 <tr>
 <td align="left" valign="top" width="210"><b>Axis</b></td>
