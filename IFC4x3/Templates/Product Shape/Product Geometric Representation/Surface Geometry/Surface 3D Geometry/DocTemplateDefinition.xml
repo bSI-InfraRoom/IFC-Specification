@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Surface_3D_Geometry_2zWfWzETL1ifxeyxs7TzCL" Name="Surface 3D Geometry" UniqueId="bd82983d-39d5-41b2-9ee8-f3bd8777d315" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="Representation">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProductDefinitionShape">
+					<Rules>
+						<DocModelRuleAttribute Name="Representations">
+							<Rules>
+								<DocModelRuleEntity Name="IfcShapeRepresentation">
+									<Rules>
+										<DocModelRuleAttribute Name="ContextOfItems">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGeometricRepresentationContext" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel">
+													<Rules>
+														<DocModelRuleAttribute Name="Value=Surface" Description="Value=Surface" />
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
+											<Rules>
+												<DocModelRuleEntity id="IfcLabel_23XE68b2vUw0WD2XXmW3u2" Name="IfcLabel" UniqueId="8384e188-942e-5ee8-080d-0a1870803e02">
+													<Rules>
+														<DocModelRuleConstraint Name="Value=Surface3D" Description="Value=Surface3D">
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_23XE68b2vUw0WD2XXmW3u2" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Literal="Surface3D" />
+															</Expression>
+														</DocModelRuleConstraint>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Items" Identification="Items">
+											<Rules>
+												<DocModelRuleEntity Name="IfcBoundedSurface" />
+												<DocModelRuleEntity Name="IfcSweptSurface" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name" />
+						<DocModelRuleAttribute Name="Description" />
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

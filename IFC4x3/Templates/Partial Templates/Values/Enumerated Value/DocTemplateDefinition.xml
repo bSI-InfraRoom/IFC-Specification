@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" Name="Enumerated Value" UniqueId="31IA2Pmr53g99cNptWj5gL" Status="Official" Owner="System" Type="IfcPropertyEnumeratedValue">
+	<Rules>
+		<DocModelRuleAttribute Name="Name" Identification="PropertyName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIdentifier" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Description">
+			<Rules>
+				<DocModelRuleEntity Name="IfcText" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="EnumerationValues" Identification="Value">
+			<Rules>
+				<DocModelRuleEntity Name="IfcValue" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="EnumerationReference">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPropertyEnumeration">
+					<Rules>
+						<DocModelRuleAttribute Name="Name" Identification="Reference">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

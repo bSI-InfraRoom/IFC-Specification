@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Assignment to Group" UniqueId="de73eaf7-7f2f-4af8-b574-24f353ddab1d" Type="IfcObject">
+	<Rules>
+		<DocModelRuleAttribute Name="HasAssignments" Identification="IsAssigned">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAssignsToGroup">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingGroup" />
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

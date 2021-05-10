@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Extruded_Area_Tapered_PolyCurve_Profile_28Pxb2BunEjvG8xK72ZTvZ" Name="Extruded Area Tapered PolyCurve Profile" UniqueId="8867b942-2f8c-4eb7-9408-ed41c28dde63" Type="IfcExtrudedAreaSolidTapered">
+	<Rules>
+		<DocModelRuleAttribute Name="SweptArea" Identification="Profile">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProfileDef">
+					<References>
+						<DocTemplateDefinition xsi:nil="true" href="PolyCurve_with_Voids_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" />
+					</References>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="StyledByItem">
+			<Rules>
+				<DocModelRuleEntity Name="IfcStyledItem">
+					<Rules>
+						<DocModelRuleAttribute Name="Name">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Styles">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="EndSweptArea">
+			<Rules>
+				<DocModelRuleEntity Name="IfcDerivedProfileDef">
+					<References>
+						<DocTemplateDefinition id="Transformed_Profile_Definition_0nPwta0XbEo8OVkU6VvibY" Name="Transformed Profile Definition" UniqueId="3167ade4-0219-4ec8-861f-b9e19fe6c962" Type="IfcDerivedProfileDef">
+							<Rules>
+								<DocModelRuleAttribute Name="ProfileType">
+									<Rules>
+										<DocModelRuleEntity Name="IfcProfileTypeEnum" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="ProfileName">
+									<Rules>
+										<DocModelRuleEntity Name="IfcLabel" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="ParentProfile">
+									<Rules>
+										<DocModelRuleEntity Name="IfcProfileDef" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="Operator">
+									<Rules>
+										<DocModelRuleEntity Name="IfcCartesianTransformationOperator2D" />
+										<DocModelRuleEntity Name="IfcCartesianTransformationOperator2DnonUniform" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="Label">
+									<Rules>
+										<DocModelRuleEntity Name="IfcLabel" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+					</References>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Position">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAxis2Placement3D">
+					<Rules>
+						<DocModelRuleAttribute Name="Location">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Axis">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RefDirection">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ExtrudedDirection">
+			<Rules>
+				<DocModelRuleEntity Name="IfcDirection" />
+				<DocModelRuleEntity Name="IfcDirection" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Depth">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

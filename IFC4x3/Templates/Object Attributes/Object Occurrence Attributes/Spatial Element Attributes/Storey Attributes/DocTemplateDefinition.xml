@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Storey_Attributes_18Z9koCG9BYRqWGgfmOAu8" Name="Storey Attributes" UniqueId="488c9bb2-3102-4b89-bd20-42aa7060ae08" Type="IfcBuildingStorey">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;Name[Value]=&apos;OG1&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;LongName[Value]=&apos;Obergeschoss 1&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;Elevation[Value]=10.0&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="LongName" Identification="LongName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Name" Identification="Name">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="CompositionType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcElementCompositionEnum" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Elevation" Identification="Elevation">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

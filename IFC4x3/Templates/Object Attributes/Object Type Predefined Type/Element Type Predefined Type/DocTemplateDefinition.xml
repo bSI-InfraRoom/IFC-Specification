@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Element Type Predefined Type" UniqueId="a0b913af-7d13-46dd-b7cf-a737879fd432" Type="IfcElementType">
+	<Rules>
+		<DocModelRuleAttribute Name="PredefinedType" />
+		<DocModelRuleAttribute Name="ElementType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Tag">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

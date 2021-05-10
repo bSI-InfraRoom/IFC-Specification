@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Revolved_Area_PolyCurve_Profile_0uocbBGk17xRKfvHXAPS1C" Name="Revolved Area PolyCurve Profile" UniqueId="38ca694b-42e0-47ed-b529-e5184a65c04c" Type="IfcRevolvedAreaSolid">
+	<Rules>
+		<DocModelRuleAttribute Name="Position">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAxis2Placement3D">
+					<Rules>
+						<DocModelRuleAttribute Name="Location">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Axis">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RefDirection">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Axis">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAxis1Placement">
+					<Rules>
+						<DocModelRuleAttribute Name="Location">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Axis">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Angle">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPlaneAngleMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="SweptArea" Identification="Profile">
+			<Rules>
+				<DocModelRuleEntity Name="IfcArbitraryProfileDefWithVoids">
+					<References>
+						<DocTemplateDefinition xsi:nil="true" href="PolyCurve_with_Voids_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" />
+					</References>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcProfileDef" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="StyledByItem">
+			<Rules>
+				<DocModelRuleEntity Name="IfcStyledItem">
+					<Rules>
+						<DocModelRuleAttribute Name="Styles">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+								<DocModelRuleEntity Name="IfcLabel" />
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcStyledItem" />
+				<DocModelRuleEntity Name="IfcStyledItem" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

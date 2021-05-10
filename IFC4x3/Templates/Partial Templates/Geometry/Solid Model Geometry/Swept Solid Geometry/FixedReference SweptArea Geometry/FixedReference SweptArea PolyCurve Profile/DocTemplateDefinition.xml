@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="FixedReference_SweptArea_PolyCurve_Profile_3CGombyED8EBrtzHxAnR3V" Name="FixedReference SweptArea PolyCurve Profile" UniqueId="cc432c25-f0e3-4838-bd77-f51ecac5b0df" Type="IfcFixedReferenceSweptAreaSolid">
+	<Rules>
+		<DocModelRuleAttribute Name="SweptArea" Identification="Profile">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProfileDef">
+					<References>
+						<DocTemplateDefinition xsi:nil="true" href="PolyCurve_with_Voids_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" />
+					</References>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Position">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Directrix">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIndexedPolyCurve" />
+				<DocModelRuleEntity Name="IfcPcurve" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="StartParam">
+			<Rules>
+				<DocModelRuleEntity Name="IfcParameterValue" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="EndParam">
+			<Rules>
+				<DocModelRuleEntity Name="IfcParameterValue" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="FixedReference">
+			<Rules>
+				<DocModelRuleEntity Name="IfcDirection" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="StyledByItem">
+			<Rules>
+				<DocModelRuleEntity Name="IfcStyledItem">
+					<Rules>
+						<DocModelRuleAttribute Name="Styles">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+								<DocModelRuleEntity Name="IfcLabel" />
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcStyledItem" />
+				<DocModelRuleEntity Name="IfcStyledItem" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Extruded_Area_Tapered_Parameterized_Profile_0lOlqnh6P1JuVLJ1151WzZ" Name="Extruded Area Tapered Parameterized Profile" UniqueId="2f62fd31-ac66-414f-87d5-4c1045060f63" Type="IfcExtrudedAreaSolidTapered">
+	<Rules>
+		<DocModelRuleAttribute Name="SweptArea" Identification="Profile">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProfileDef" />
+				<DocModelRuleEntity Name="IfcParameterizedProfileDef">
+					<References>
+						<DocTemplateDefinition xsi:nil="true" href="Rectangle_Profile_Definition_3gThSDmyr6nhy7ZFZhGo01" />
+						<DocTemplateDefinition xsi:nil="true" href="Rectangle_Hollow_Profile_Definition_1IwJNB7iP26eOj4uYkSu0e" />
+						<DocTemplateDefinition xsi:nil="true" href="Rectangle_Rounded_Profile_Definition_3Ba6DUTED42AwyVlj9xRkC" />
+						<DocTemplateDefinition xsi:nil="true" href="Circle_Profile_Definition_25c_E6h2L6yg4R0FQsjtdj" />
+						<DocTemplateDefinition xsi:nil="true" href="Circle_Hollow_Profile_Definition_1x_XWKbULFvQPW_jwGsRX" />
+						<DocTemplateDefinition xsi:nil="true" href="Ellipse_Profile_Definition_3ik2ToDqvAiwpUGOvpaLea" />
+						<DocTemplateDefinition xsi:nil="true" href="CShape_Profile_Definition_3BQhX1RKzAJ87eFC5TGLtS" />
+						<DocTemplateDefinition xsi:nil="true" href="IShape_Profile_Definition_1k23A9IVb7OfzSmNhIhTu5" />
+						<DocTemplateDefinition xsi:nil="true" href="IShape_Asymmetric_Profile_Definition_1Oz9fhK1n0aPyDb4OSckxV" />
+						<DocTemplateDefinition xsi:nil="true" href="LShape_Profile_Definition_1QjH5TamDEIQiI7J16cSJ6" />
+						<DocTemplateDefinition xsi:nil="true" href="TShape_Profile_Definition_1A7qNhHKL93QKFFYsH1gee" />
+						<DocTemplateDefinition xsi:nil="true" href="UShape_Profile_Definition_042qRVrDT4Lx_BK8JPdUH" />
+						<DocTemplateDefinition xsi:nil="true" href="ZShape_Profile_Definition_0CQihQTnrC6gOT6YAP06y6" />
+					</References>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="StyledByItem">
+			<Rules>
+				<DocModelRuleEntity Name="IfcStyledItem">
+					<Rules>
+						<DocModelRuleAttribute Name="Name">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Styles">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Position">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAxis2Placement3D">
+					<Rules>
+						<DocModelRuleAttribute Name="Location">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Axis">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RefDirection">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ExtrudedDirection">
+			<Rules>
+				<DocModelRuleEntity Name="IfcDirection" />
+				<DocModelRuleEntity Name="IfcDirection" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Depth">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="EndSweptArea">
+			<Rules>
+				<DocModelRuleEntity Name="IfcParameterizedProfileDef" />
+				<DocModelRuleEntity Name="IfcDerivedProfileDef" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

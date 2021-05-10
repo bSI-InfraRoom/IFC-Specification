@@ -1,1 +1,1 @@
-The nominal  thickness of the entity.
+The nominal wall thickness of the duct at the connection point.

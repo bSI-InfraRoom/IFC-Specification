@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Element_Projecting_0KYHuPBgf6GOaJOfkvfWW1" Name="Element Projecting" UniqueId="14891e19-2eaa-4641-8913-629bb9a60801" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="HasProjections">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelProjectsElement">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedFeatureElement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcProjectionElement">
+									<Rules>
+										<DocModelRuleAttribute Name="PredefinedType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcProjectionElementTypeEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Extruded_Area_Basic_Profile_16jwVc3NnESvENO5g_d_Uv" Name="Extruded Area Basic Profile" UniqueId="46b7a7e6-0d7c-4e73-9397-605abe9fe7b9" Type="IfcExtrudedAreaSolid">
+	<Rules>
+		<DocModelRuleAttribute Name="Position">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAxis2Placement3D">
+					<Rules>
+						<DocModelRuleAttribute Name="Location">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Axis">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RefDirection">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ExtrudedDirection">
+			<Rules>
+				<DocModelRuleEntity Name="IfcDirection" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Depth">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="SweptArea" Identification="Profile">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProfileDef">
+					<References>
+						<DocTemplateDefinition id="Rectangle_Profile_Definition_3gThSDmyr6nhy7ZFZhGo01" Name="Rectangle Profile Definition" UniqueId="ea76b70d-c3cd-46c6-bf07-8cf8eb432001" Type="IfcRectangleProfileDef">
+							<Rules>
+								<DocModelRuleAttribute Name="ProfileType">
+									<Rules>
+										<DocModelRuleEntity Name="IfcProfileTypeEnum" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="ProfileName">
+									<Rules>
+										<DocModelRuleEntity Name="IfcLabel" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="Position">
+									<Rules>
+										<DocModelRuleEntity Name="IfcAxis2Placement2D">
+											<Rules>
+												<DocModelRuleAttribute Name="Location">
+													<Rules>
+														<DocModelRuleEntity Name="IfcCartesianPoint" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="RefDirection">
+													<Rules>
+														<DocModelRuleEntity Name="IfcDirection" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="XDim">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="YDim">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Rectangle_Hollow_Profile_Definition_1IwJNB7iP26eOj4uYkSu0e" Name="Rectangle Hollow Profile Definition" UniqueId="52e935cb-1ec6-421a-862d-1388ae738028" Type="IfcRectangleHollowProfileDef">
+							<Rules>
+								<DocModelRuleAttribute Name="ProfileType">
+									<Rules>
+										<DocModelRuleEntity Name="IfcProfileTypeEnum" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="ProfileName">
+									<Rules>
+										<DocModelRuleEntity Name="IfcLabel" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="Position">
+									<Rules>
+										<DocModelRuleEntity Name="IfcAxis2Placement2D">
+											<Rules>
+												<DocModelRuleAttribute Name="Location">
+													<Rules>
+														<DocModelRuleEntity Name="IfcCartesianPoint" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="RefDirection">
+													<Rules>
+														<DocModelRuleEntity Name="IfcDirection" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="XDim">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="YDim">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="WallThickness">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="InnerFilletRadius">
+									<Rules>
+										<DocModelRuleEntity Name="IfcNonNegativeLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="OuterFilletRadius">
+									<Rules>
+										<DocModelRuleEntity Name="IfcNonNegativeLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Rectangle_Rounded_Profile_Definition_3Ba6DUTED42AwyVlj9xRkC" Name="Rectangle Rounded Profile Definition" UniqueId="cb90635e-74e3-4408-aebc-7efb49edbb8c" Type="IfcRoundedRectangleProfileDef">
+							<Rules>
+								<DocModelRuleAttribute Name="ProfileType">
+									<Rules>
+										<DocModelRuleEntity Name="IfcProfileTypeEnum" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="ProfileName">
+									<Rules>
+										<DocModelRuleEntity Name="IfcLabel" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="Position">
+									<Rules>
+										<DocModelRuleEntity Name="IfcAxis2Placement2D">
+											<Rules>
+												<DocModelRuleAttribute Name="Location">
+													<Rules>
+														<DocModelRuleEntity Name="IfcCartesianPoint" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="RefDirection">
+													<Rules>
+														<DocModelRuleEntity Name="IfcDirection" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="XDim">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="YDim">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="RoundingRadius">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Circle_Profile_Definition_25c_E6h2L6yg4R0FQsjtdj" Name="Circle Profile Definition" UniqueId="859be386-ac25-46f2-a11b-00f6b6b779ed" Type="IfcCircleProfileDef">
+							<Rules>
+								<DocModelRuleAttribute Name="ProfileType">
+									<Rules>
+										<DocModelRuleEntity Name="IfcProfileTypeEnum" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="ProfileName">
+									<Rules>
+										<DocModelRuleEntity Name="IfcLabel" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="Position">
+									<Rules>
+										<DocModelRuleEntity Name="IfcAxis2Placement2D">
+											<Rules>
+												<DocModelRuleAttribute Name="Location">
+													<Rules>
+														<DocModelRuleEntity Name="IfcCartesianPoint" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="RefDirection">
+													<Rules>
+														<DocModelRuleEntity Name="IfcDirection" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="Radius">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Circle_Hollow_Profile_Definition_1x_XWKbULFvQPW_jwGsRX" Name="Circle Hollow Profile Definition" UniqueId="7bfa1814-95e5-4fe5-afd9-83eb7a4366e1" Type="IfcCircleHollowProfileDef">
+							<Rules>
+								<DocModelRuleAttribute Name="ProfileType">
+									<Rules>
+										<DocModelRuleEntity Name="IfcProfileTypeEnum" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="ProfileName">
+									<Rules>
+										<DocModelRuleEntity Name="IfcLabel" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="Position">
+									<Rules>
+										<DocModelRuleEntity Name="IfcAxis2Placement2D">
+											<Rules>
+												<DocModelRuleAttribute Name="Location">
+													<Rules>
+														<DocModelRuleEntity Name="IfcCartesianPoint" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="RefDirection">
+													<Rules>
+														<DocModelRuleEntity Name="IfcDirection" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="Radius">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="WallThickness">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+						<DocTemplateDefinition id="Ellipse_Profile_Definition_3ik2ToDqvAiwpUGOvpaLea" Name="Ellipse Profile Definition" UniqueId="ecb82772-374e-4ab3-acde-418e73915a24" Type="IfcEllipseProfileDef">
+							<Rules>
+								<DocModelRuleAttribute Name="ProfileType">
+									<Rules>
+										<DocModelRuleEntity Name="IfcProfileTypeEnum" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="ProfileName">
+									<Rules>
+										<DocModelRuleEntity Name="IfcLabel" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="Position">
+									<Rules>
+										<DocModelRuleEntity Name="IfcAxis2Placement2D">
+											<Rules>
+												<DocModelRuleAttribute Name="Location">
+													<Rules>
+														<DocModelRuleEntity Name="IfcCartesianPoint" />
+													</Rules>
+												</DocModelRuleAttribute>
+												<DocModelRuleAttribute Name="RefDirection">
+													<Rules>
+														<DocModelRuleEntity Name="IfcDirection" />
+													</Rules>
+												</DocModelRuleAttribute>
+											</Rules>
+										</DocModelRuleEntity>
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SemiAxis1">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+								<DocModelRuleAttribute Name="SemiAxis2">
+									<Rules>
+										<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+									</Rules>
+								</DocModelRuleAttribute>
+							</Rules>
+						</DocTemplateDefinition>
+					</References>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcProfileDef" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="StyledByItem">
+			<Rules>
+				<DocModelRuleEntity Name="IfcStyledItem">
+					<Rules>
+						<DocModelRuleAttribute Name="Styles">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+								<DocModelRuleEntity Name="IfcSurfaceStyle" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+								<DocModelRuleEntity Name="IfcLabel" />
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcStyledItem" />
+				<DocModelRuleEntity Name="IfcStyledItem" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

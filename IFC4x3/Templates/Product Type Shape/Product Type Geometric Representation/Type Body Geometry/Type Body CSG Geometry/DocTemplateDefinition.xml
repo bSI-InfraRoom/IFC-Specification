@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Type_Body_CSG_Geometry_3cgCgF6P4XAWUmEZvj5eg" Name="Type Body CSG Geometry" UniqueId="ff9aa32a-3c66-4484-a81e-c0e8f9b45a2a" Type="IfcTypeProduct">
+	<Rules>
+		<DocModelRuleAttribute Name="RepresentationMaps">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRepresentationMap">
+					<Rules>
+						<DocModelRuleAttribute Name="MappedRepresentation">
+							<Rules>
+								<DocModelRuleEntity Name="IfcShapeRepresentation">
+									<Rules>
+										<DocModelRuleAttribute Name="ContextOfItems">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGeometricRepresentationContext" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationIdentifier">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel">
+													<Rules>
+														<DocModelRuleAttribute Name="Value=Body" Description="Value=Body" />
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationType" Identification="RepresentationType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Items" Identification="Geometry">
+											<Rules>
+												<DocModelRuleEntity Name="IfcCsgSolid">
+													<Rules>
+														<DocModelRuleAttribute Name="TreeRootExpression">
+															<Rules>
+																<DocModelRuleEntity Name="IfcBooleanResult">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Operator">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcBooleanOperator" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="FirstOperand">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcBooleanOperand" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="SecondOperand">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcBooleanOperand" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcBlock" />
+												<DocModelRuleEntity Name="IfcRectangularPyramid" />
+												<DocModelRuleEntity Name="IfcRightCircularCone" />
+												<DocModelRuleEntity Name="IfcRightCircularCylinder" />
+												<DocModelRuleEntity Name="IfcSphere" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="MappingOrigin">
+							<Rules>
+								<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+								<DocModelRuleEntity Name="IfcAxis2Placement2D" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Material_Profile_Set_12Ui1LAd52mgGZSMYVfrnP" Name="Material Profile Set" UniqueId="12Ui1LAd52mgGZSMYVfrnP" Type="IfcObjectDefinition">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+ &lt;TemplateRule Parameters=&quot;MaterialName[Value]=&apos;stainless steel&apos; AND ProfileName[Value]=&apos;circle hollow profile&apos;&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="HasAssociations">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAssociatesMaterial">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingMaterial">
+							<Rules>
+								<DocModelRuleEntity Name="IfcMaterialProfileSet">
+									<Rules>
+										<DocModelRuleAttribute Name="MaterialProfiles" Identification="HasProfiles">
+											<Rules>
+												<DocModelRuleEntity Name="IfcMaterialProfile">
+													<Rules>
+														<DocModelRuleAttribute Name="Name">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Description">
+															<Rules>
+																<DocModelRuleEntity Name="IfcText" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMax="1" Name="Material">
+															<Rules>
+																<DocModelRuleEntity Name="IfcMaterial">
+																	<References>
+																		<DocTemplateDefinition xsi:nil="true" href="Material_1PXhOQjvz4uAadztqSAJX" />
+																	</References>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="Profile">
+															<Rules>
+																<DocModelRuleEntity Name="IfcProfileDef">
+																	<Rules>
+																		<DocModelRuleAttribute Name="ProfileType">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcProfileTypeEnum" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="ProfileName" Identification="ProfileName">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcLabel" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Category" Identification="Category">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Priority">
+															<Rules>
+																<DocModelRuleEntity Name="IfcInteger" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Name">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Description">
+											<Rules>
+												<DocModelRuleEntity Name="IfcText" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
