@@ -1,1 +1,1 @@
-Properties for a fender or other energy absorbing device
+Properties common to the definition of all occurrences of _IfcImpactProtectionDevice_ and types of _IfcImpactProtectionDeviceType_ with the predefined type set to FENDER.

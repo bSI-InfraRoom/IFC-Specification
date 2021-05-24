@@ -1,1 +1,1 @@
-Manufacturing tolerance on energy absorbed
+Manufacturing tolerance on energy absorption

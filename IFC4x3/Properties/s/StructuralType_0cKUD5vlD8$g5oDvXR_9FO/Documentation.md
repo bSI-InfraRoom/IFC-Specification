@@ -1,1 +1,1 @@
-Structural type
+Structural type of the object
