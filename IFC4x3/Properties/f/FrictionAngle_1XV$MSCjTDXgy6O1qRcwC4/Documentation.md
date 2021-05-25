@@ -1,1 +1,1 @@
-Friction Angle is the tested inclination angle from horizontal.
+Friction angle is the tested inclination angle from horizontal.
