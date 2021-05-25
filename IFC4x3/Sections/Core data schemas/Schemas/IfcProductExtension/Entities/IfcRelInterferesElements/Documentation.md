@@ -3,20 +3,20 @@ The _IfcRelInterferesElements_ objectified relationship indicates that two eleme
 * When the interference geometry is available it can be passed by the optional attribute _InterferenceGeometry_ pointing to _IfcConnectionGeometry_. The connection geometry is provided as a point, curve, surface, or volume within the local placement coordinate systems of the connecting elements. The _IfcConnectionVolumeGeometry_ is the default type to be used for interference in 3D space, as indicated in e.g. clash detections.  
 * If the interference geometry is omitted then the interference is provided as a logical relationship. Under this circumstance, the connection point, curve, surface, or solid has to be recalculated by the receiving application.  
   
-The _RelatingElement_ and _RelatedElement_ define the two elements in the relationship, that may have different roles. The relation orientation may be forcefully required by some _InterferenceType_ values, this is done  by setting the attribute _ImpliedOrder_ accordingly:
+The _RelatingElement_ and _RelatedElement_ define the two elements in the relationship, that may have different roles. The relation orientation may be required by certain _InterferenceType_ values, this is done  by setting the attribute _ImpliedOrder_ accordingly:
   
 * _ImpliedOrder_=TRUE\S\  The _RelatingElement_ constitutes the primary element of the interference relationship that is oriented from _RelatingElement_ (source) to _RelatedElement_ (target). If the interference is to be resolved by subtracting the overlapping part, it should be subtracted from the _RelatingElement_. The net result would be the _RelatingElement_ subtracted by the _InterferenceGeometry_. This would be the case in interference relationships where the _RelatedElement_ creates a void in the _RelatingElement_ dynamically.  
 * _ImpliedOrder_=FALSE\S\  The _RelatingElement_ and _RelatedElement_ have no priority among each other. If the interference is to be resolved then no information about whether the _InterferenceGeometry_ should be subtracted from the _RelatingElement_ or the _RelatedElement_ can be traced. This would be the case for clash detection results.  
 * _ImpliedOrder_=UNKNOWN No information about the priorities is provided.  
  
-The _IfcConnectionGeometry_ property is used to define the interference shape, it can be part of the shape of one of the elements of the relationship (case of clash, overlapping and crossing relations) or be at the frontier of these shape (case on along, over and under relations).
+The _IfcConnectionGeometry_ property is used to define the interference shape, it can be part of the shape of one of the elements of the relationship (in the case of clash, overlapping and crossing interference types) or define the interface between the two shapes (in the case of along, over and under interference types).
 
-The _InterferenceType_ property optionally precise the type of interferences between the two elements, two set of default types are provided:
+The _InterferenceType_ property optionally specifies the type of interference between the two elements, two set of default types are provided:
 **Oriented interferences types** imply usage of _ImpliedOrder_ set to TRUE and specific choice of _RelatingElement_ and _RelatedElement_ to be meaningful:
 * Crosses: the _RelatingElement_ is crossing the _RelatedElement_ (e.g. Railway crossing a road)
 * PassesThrough: the _RelatingElement_ is passing through the _RelatedElement_ (e.g. a Road passing inside a tunnel)
-* PassesOver: the _RelatingElement_ is passing over the _RelatedElement_ (e.g a Pipe passing over a road)
-* PassesUnder: the _RelatingElement_ is passing under the _RelatedElement_ (e.g a water canal passing under a Bridge)
+* PassesOver: the _RelatingElement_ is passing over the _RelatedElement_ (e.g a bridge passing over a water canal)
+* PassesUnder: the _RelatingElement_ is passing under the _RelatedElement_ (e.g a Pipe passing under a road)
 
 **Non oriented interferences types** do not imply specific values of _ImpliedOrder_ (but can still be set to precise shape interference calculation)
 * Clash: The _RelatingElement_ and _RelatedElement_ have a spatial or shape-based clash
