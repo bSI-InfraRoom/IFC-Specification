@@ -1,1 +1,1 @@
-Total weight of reinforcing.
+Total weight of object
