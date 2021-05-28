@@ -2,3 +2,5 @@ Specifies the direction along the linear element being measured considered as po
 for negative.
 
 > NOTE&nbsp;Definition according to ISO 19148:2021.
+
+> NOTE&nbsp;The positive direction is defined by the increasing length of the _IfcLinearPositioningElement_ (e.g. _IfcAlignment_) being referenced.
