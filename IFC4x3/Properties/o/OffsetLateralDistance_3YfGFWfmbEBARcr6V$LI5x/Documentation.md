@@ -1,3 +1,0 @@
-The measure of the lateral offset of the distance expression. This is the distance left or right of the lateral offset referent (or left or right of the linear element being measured if no lateral offset referent is specified) to the position being specified. A positive (+) value is measured in the direction specified by the positive lateral offset direction of the LRM. A missing value or a value of 0 (zero) shall be interpreted as the absence of a lateral displacement from the lateral offset referent (or the linear element being measured if no lateral offset referent is specified).
-
-> NOTE&nbsp;definition from ISO 19148:2021
