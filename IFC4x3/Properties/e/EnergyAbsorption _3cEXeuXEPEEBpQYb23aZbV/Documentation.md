@@ -1,1 +1,1 @@
-Energy absorption capacity of element
+Energy absorption capacity of the element
