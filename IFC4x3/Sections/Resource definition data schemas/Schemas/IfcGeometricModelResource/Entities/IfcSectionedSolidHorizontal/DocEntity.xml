@@ -18,7 +18,7 @@
 		</DocWhereRule>
 		<DocWhereRule Name="NoLongitudinalOffsets" UniqueId="05b295a8-2adf-47ae-b578-1fb527aaba25">
 			<Documentation>Distance expressions must not use longitudinal offsets.</Documentation>
-			<Expression>SIZEOF(QUERY(temp &lt;* CrossSectionPositions | EXISTS(temp.OffsetLongitudinal))) = 0</Expression>
+			<Expression>SIZEOF(QUERY(temp &lt;* CrossSectionPositions | EXISTS(temp.Location.OffsetLongitudinal))) = 0</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
