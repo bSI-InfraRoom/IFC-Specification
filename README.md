@@ -9,3 +9,9 @@ This repository contains the IFC specification content:
 
 Fork, commit, pull request.
 
+## Tooling
+
+[Github Desktop](https://desktop.github.com/) for working on pull requests:
+
+- Click on Current branch and switch to Pull requests
+- Fetch origin (if not yet initiated automatically)
