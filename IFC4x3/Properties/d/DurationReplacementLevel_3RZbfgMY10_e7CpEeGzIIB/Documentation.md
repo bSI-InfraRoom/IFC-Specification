@@ -1,1 +1,1 @@
-Elapsed time for asset replacement
+Duration interval at which replacement is performed

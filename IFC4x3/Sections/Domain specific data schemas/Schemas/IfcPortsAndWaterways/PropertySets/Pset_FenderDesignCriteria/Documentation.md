@@ -1,1 +1,1 @@
-Properties for the design criteira for a fender or other energy absorbing device
+Properties common to the definition of design criteria of all occurrences of  _IfcImpactProtectionDevice_ and types of _IfcImpactProtectionDeviceType_ with the predefined type set to FENDER.
