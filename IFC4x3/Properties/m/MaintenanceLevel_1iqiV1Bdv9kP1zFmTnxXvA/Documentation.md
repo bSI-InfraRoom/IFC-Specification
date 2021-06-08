@@ -1,1 +1,1 @@
-Target value at which maintenance is triggered
+Performance level at which maintenance takes place

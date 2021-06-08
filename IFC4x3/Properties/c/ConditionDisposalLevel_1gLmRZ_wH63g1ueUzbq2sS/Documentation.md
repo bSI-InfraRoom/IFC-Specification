@@ -1,1 +1,1 @@
-Condition at which disposal is required or triggered
+Condition that will trigger a disposal process

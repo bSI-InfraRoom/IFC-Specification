@@ -1,1 +1,1 @@
-Target value at which replacement is triggered
+Performance level at which replacement takes place

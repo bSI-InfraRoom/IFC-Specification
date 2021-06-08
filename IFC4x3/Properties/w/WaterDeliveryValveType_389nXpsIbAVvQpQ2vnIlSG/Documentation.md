@@ -1,1 +1,1 @@
-Type of water delivery value
+Type of water delivery valve

@@ -1,1 +1,1 @@
-Breakwater style
+Structural style of the element
