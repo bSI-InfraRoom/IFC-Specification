@@ -2,7 +2,8 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcPavement" UniqueId="806e6bf1-7065-41a4-82d3-6e15bdeba9f4" BaseDefinition="IfcBuiltElement" EntityFlags="32">
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="e9ca33dd-7f37-4b9b-9231-d75e23a6aa69" DefinedType="IfcPavementTypeEnum" AttributeFlags="1">
-			<Documentation>Boolean to identify the pavement type as a Flexible or Rigid structure.</Documentation>
+			<Documentation>Identifies the predefined type of a pavement element. This type may associate additional specific property sets.
+NOTE  The PredefinedType shall only be used, if no IfcPavementType is assigned, providing its own IfcCourseType.PredefinedType.</Documentation>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

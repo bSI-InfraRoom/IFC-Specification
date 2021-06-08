@@ -2,7 +2,8 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcImpactProtectionDevice" UniqueId="2ccc5500-de35-4db2-87c6-55b53ca06894" BaseDefinition="IfcElementComponent" EntityFlags="32">
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="69825b4b-9927-4e49-81de-abb82f226a21" DefinedType="IfcImpactProtectionDeviceTypeSelect" AttributeFlags="1">
-			<Documentation></Documentation>
+			<Documentation>Identifies the predefined type of a impact device. This type may associate additional specific property sets.
+NOTE  The PredefinedType shall only be used, if no IfcImpactProtectionDeviceType is assigned, providing its own IfcImpactProtectionDeviceType .PredefinedType.</Documentation>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
