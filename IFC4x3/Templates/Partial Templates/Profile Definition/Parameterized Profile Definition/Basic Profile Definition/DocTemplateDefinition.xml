@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Basic Profile Definition" UniqueId="f729c7c5-f380-4b9b-82d9-bde0cd1c8ebc" Type="IfcParameterizedProfileDef">
+	<Rules>
+		<DocModelRuleAttribute Name="ProfileType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProfileTypeEnum" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ProfileName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Position">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAxis2Placement2D">
+					<Rules>
+						<DocModelRuleAttribute Name="Location">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RefDirection">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+	<Templates>
+		<DocTemplateDefinition xsi:nil="true" href="Circle_Hollow_Profile_Definition_1x_XWKbULFvQPW_jwGsRX" />
+		<DocTemplateDefinition xsi:nil="true" href="Circle_Profile_Definition_25c_E6h2L6yg4R0FQsjtdj" />
+		<DocTemplateDefinition xsi:nil="true" href="Ellipse_Profile_Definition_3ik2ToDqvAiwpUGOvpaLea" />
+		<DocTemplateDefinition xsi:nil="true" href="Rectangle_Hollow_Profile_Definition_1IwJNB7iP26eOj4uYkSu0e" />
+		<DocTemplateDefinition xsi:nil="true" href="Rectangle_Profile_Definition_3gThSDmyr6nhy7ZFZhGo01" />
+		<DocTemplateDefinition xsi:nil="true" href="Rectangle_Rounded_Profile_Definition_3Ba6DUTED42AwyVlj9xRkC" />
+	</Templates>
+</DocTemplateDefinition>
+

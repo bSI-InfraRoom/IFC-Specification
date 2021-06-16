@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" Name="Quantity Sets" UniqueId="1cKZcEPNb4O8oq9YbQpwp7" Version="1" Type="IfcObject">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+    &lt;TemplateRule Parameters=&quot;QsetName[Value]=&apos;Qto_BeamBaseQuantity&apos; AND QuantityName[Value]=&apos;Length&apos; AND LengthValue[Value]=200&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="IsDefinedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByProperties">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingPropertyDefinition">
+							<Rules>
+								<DocModelRuleEntity Name="IfcElementQuantity">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="QsetName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Description">
+											<Rules>
+												<DocModelRuleEntity Name="IfcText" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="MethodOfMeasurement">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Quantities" Identification="Quantities">
+											<Rules>
+												<DocModelRuleEntity Name="IfcQuantityLength">
+													<References>
+														<DocTemplateDefinition id="Length_Quantity_3TXdZXum1FS9rZvJdRIz4S" Name="Length Quantity" UniqueId="3TXdZXum1FS9rZvJdRIz4S" Type="IfcQuantityLength">
+															<Rules>
+																<DocModelRuleAttribute Name="Name" Identification="QuantityName">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Description">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcText" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="LengthValue" Identification="LengthValue">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcLengthMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Formula">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocTemplateDefinition>
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcQuantityArea">
+													<References>
+														<DocTemplateDefinition id="Area_Quantity_1bh4T7Rlz3VfJYP3Kux_6" Name="Area Quantity" UniqueId="1bh4T7Rlz3VfJYP3$Kux_6" Type="IfcQuantityArea">
+															<Rules>
+																<DocModelRuleAttribute Name="Name" Identification="QuantityName">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Description">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcText" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="AreaValue" Identification="AreaValue">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcAreaMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Formula">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocTemplateDefinition>
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcQuantityVolume">
+													<References>
+														<DocTemplateDefinition id="Volume_Quantity_1aaQEmj_b1Ae8clDaSAmiE" Name="Volume Quantity" UniqueId="1aaQEmj_b1Ae8clDaSAmiE" Type="IfcQuantityVolume">
+															<Rules>
+																<DocModelRuleAttribute Name="Name" Identification="QuantityName">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Description">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcText" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="VolumeValue" Identification="VolumeValue">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcVolumeMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Formula">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocTemplateDefinition>
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcQuantityWeight">
+													<References>
+														<DocTemplateDefinition id="Weight_Quantity_3X0MvMF8bFGfPv1_7RF0hx" Name="Weight Quantity" UniqueId="3X0MvMF8bFGfPv1_7RF0hx" Type="IfcQuantityWeight">
+															<Rules>
+																<DocModelRuleAttribute Name="Name" Identification="QuantityName">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Description">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcText" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="WeightValue" Identification="WeightValue">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcMassMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Formula">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocTemplateDefinition>
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcQuantityCount">
+													<References>
+														<DocTemplateDefinition id="Count_Quantity_2AhlyoLonFQgnauXKMOyln" Name="Count Quantity" UniqueId="2AhlyoLonFQgnauXKMOyln" Type="IfcQuantityCount">
+															<Rules>
+																<DocModelRuleAttribute Name="Name" Identification="QuantityName">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Description">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcText" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="CountValue" Identification="CountValue">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcCountMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Formula">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocTemplateDefinition>
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcQuantityTime">
+													<References>
+														<DocTemplateDefinition id="Time_Quantity_13nC1G1DvB3vv3S8lPWW6e" Name="Time Quantity" UniqueId="13nC1G1DvB3vv3S8lPWW6e" Type="IfcQuantityTime">
+															<Rules>
+																<DocModelRuleAttribute Name="Name" Identification="QuantityName">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Description">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcText" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="TimeValue" Identification="TimeValue">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcTimeMeasure" />
+																	</Rules>
+																</DocModelRuleAttribute>
+																<DocModelRuleAttribute Name="Formula">
+																	<Rules>
+																		<DocModelRuleEntity Name="IfcLabel" />
+																	</Rules>
+																</DocModelRuleAttribute>
+															</Rules>
+														</DocTemplateDefinition>
+													</References>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

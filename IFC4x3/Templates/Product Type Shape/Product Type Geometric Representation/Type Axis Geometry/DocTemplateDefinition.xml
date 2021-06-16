@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Type_Axis_Geometry_3X3nGB2XBtfkCYO2N46Fn" Name="Type Axis Geometry" UniqueId="3X3nGB2$XBtfkCYO2N46Fn" Type="IfcElementType">
+	<Rules>
+		<DocModelRuleAttribute Name="RepresentationMaps">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRepresentationMap">
+					<Rules>
+						<DocModelRuleAttribute Name="MappedRepresentation">
+							<Rules>
+								<DocModelRuleEntity Name="IfcShapeRepresentation">
+									<Rules>
+										<DocModelRuleAttribute Name="ContextOfItems">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGeometricRepresentationContext" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationIdentifier">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel">
+													<Rules>
+														<DocModelRuleAttribute Name="Value=Axis" Description="Value=Axis" />
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Items" Identification="Geometry">
+											<Rules>
+												<DocModelRuleEntity Name="IfcBoundedCurve" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="MappingOrigin">
+							<Rules>
+								<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+								<DocModelRuleEntity Name="IfcAxis2Placement2D" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

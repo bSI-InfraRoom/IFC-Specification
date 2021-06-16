@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Sine_Transition_Segment_2bmCqzBzH0wx4ONLuNbUSH" Name="Sine Transition Segment" UniqueId="a5c0cd3d-2fd4-40eb-b118-5d5e1795e711" Type="IfcCurveSegment">
+	<Rules>
+		<DocModelRuleAttribute Name="ParentCurve">
+			<Rules>
+				<DocModelRuleEntity Name="IfcSine">
+					<Rules>
+						<DocModelRuleAttribute Name="SineTerm">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="LinearTerm">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="SegmentStart">
+			<Rules>
+				<DocModelRuleEntity Name="IfcParameterValue" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="SegmentLength">
+			<Rules>
+				<DocModelRuleEntity Name="IfcParameterValue" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

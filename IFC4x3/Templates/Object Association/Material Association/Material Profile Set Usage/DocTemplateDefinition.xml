@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Material_Profile_Set_Usage_1ge1GfjMPBDeTQCM88YfWn" Name="Material Profile Set Usage" UniqueId="1ge1GfjMPBDeTQCM88YfWn" Type="IfcProduct">
+	<Rules>
+		<DocModelRuleAttribute Name="HasAssociations">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAssociatesMaterial">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingMaterial">
+							<Rules>
+								<DocModelRuleEntity Name="IfcMaterialProfileSetUsage">
+									<Rules>
+										<DocModelRuleAttribute Name="ForProfileSet">
+											<Rules>
+												<DocModelRuleEntity Name="IfcMaterialProfileSet">
+													<Rules>
+														<DocModelRuleAttribute Name="MaterialProfiles">
+															<Rules>
+																<DocModelRuleEntity Name="IfcMaterialProfile">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Name" Identification="Name" />
+																		<DocModelRuleAttribute Name="Material">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcMaterial">
+																					<Rules>
+																						<DocModelRuleAttribute Name="HasRepresentation">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcMaterialDefinitionRepresentation">
+																									<References>
+																										<DocTemplateDefinition xsi:nil="true" href="Material_Surface_Color_Style_1kJbqswZn6rQIGcQljECN" />
+																									</References>
+																								</DocModelRuleEntity>
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="Profile">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcProfileDef" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+																<DocModelRuleEntity Name="IfcMaterialProfileWithOffsets">
+																	<Rules>
+																		<DocModelRuleAttribute Name="OffsetValues">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcLengthMeasure" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="CardinalPoint">
+											<Rules>
+												<DocModelRuleEntity Name="IfcCardinalPointReference" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="ReferenceExtent">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+								<DocModelRuleEntity Name="IfcMaterialProfileSetUsageTapering">
+									<Rules>
+										<DocModelRuleAttribute Name="ForProfileEndSet">
+											<Rules>
+												<DocModelRuleEntity Name="IfcMaterialProfileSet" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="CardinalEndPoint">
+											<Rules>
+												<DocModelRuleEntity Name="IfcCardinalPointReference" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

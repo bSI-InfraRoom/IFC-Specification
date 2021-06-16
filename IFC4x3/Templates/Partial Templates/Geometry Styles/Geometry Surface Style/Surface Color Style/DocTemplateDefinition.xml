@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Surface_Color_Style_3gHpLYmULDnwrrpIILsus" Name="Surface Color Style" UniqueId="3gHpLYmULDnwrr$pIILsus" Type="IfcSurfaceStyle">
+	<Rules>
+		<DocModelRuleAttribute Name="Styles">
+			<Rules>
+				<DocModelRuleEntity Name="IfcSurfaceStyleShading">
+					<Rules>
+						<DocModelRuleAttribute Name="SurfaceColour">
+							<Rules>
+								<DocModelRuleEntity Name="IfcColourRgb" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcSurfaceStyleRendering">
+					<Rules>
+						<DocModelRuleAttribute Name="SurfaceColour">
+							<Rules>
+								<DocModelRuleEntity Name="IfcColourRgb">
+									<Rules>
+										<DocModelRuleAttribute Name="Name">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Red">
+											<Rules>
+												<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Green">
+											<Rules>
+												<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Blue">
+											<Rules>
+												<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Transparency">
+							<Rules>
+								<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="DiffuseColour">
+							<Rules>
+								<DocModelRuleEntity Name="IfcColourOrFactor" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="TransmissionColour">
+							<Rules>
+								<DocModelRuleEntity Name="IfcColourOrFactor" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="DiffuseTransmissionColour">
+							<Rules>
+								<DocModelRuleEntity Name="IfcColourOrFactor" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="ReflectionColour">
+							<Rules>
+								<DocModelRuleEntity Name="IfcColourOrFactor" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="SpecularColour">
+							<Rules>
+								<DocModelRuleEntity Name="IfcColourOrFactor" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="SpecularHighlight">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSpecularExponent" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="ReflectanceMethod">
+							<Rules>
+								<DocModelRuleEntity Name="IfcReflectanceMethodEnum" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Name">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Side">
+			<Rules>
+				<DocModelRuleEntity Name="IfcSurfaceSide" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

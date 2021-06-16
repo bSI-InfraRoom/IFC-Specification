@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Annotation_2D_Geometry_01GMQdxoj86BB4IYcaS_V" Name="Annotation 2D Geometry" UniqueId="014166a7-ef2b-4818-bfcb-1128a691cf9f" Type="IfcAnnotation">
+	<Rules>
+		<DocModelRuleAttribute Name="Representation">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProductDefinitionShape">
+					<Rules>
+						<DocModelRuleAttribute Name="Representations">
+							<Rules>
+								<DocModelRuleEntity Name="IfcShapeRepresentation">
+									<Rules>
+										<DocModelRuleAttribute Name="ContextOfItems">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGeometricRepresentationContext" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+											<Rules>
+												<DocModelRuleEntity id="IfcLabel_0KGIXPrGqPy8v3WnTvCl98" Name="IfcLabel" UniqueId="14412859-d50d-19f0-8e43-83177932f248">
+													<Rules>
+														<DocModelRuleConstraint Name="Value=Annotation" Description="Value=Annotation">
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_0KGIXPrGqPy8v3WnTvCl98" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Literal="Annotation" />
+															</Expression>
+														</DocModelRuleConstraint>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
+											<Rules>
+												<DocModelRuleEntity id="IfcLabel_019VtyW9nAjO8dn4Qgn8tX" Name="IfcLabel" UniqueId="0125fdfc-809c-4ab5-8227-c446aac48de1">
+													<Rules>
+														<DocModelRuleConstraint Name="Value=Annotation2D" Description="Value=Annotation2D">
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_019VtyW9nAjO8dn4Qgn8tX" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Literal="Annotation2D" />
+															</Expression>
+														</DocModelRuleConstraint>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Items" Identification="Items">
+											<Rules>
+												<DocModelRuleEntity Name="IfcAnnotationFillArea">
+													<Rules>
+														<DocModelRuleAttribute Name="OuterBoundary">
+															<Rules>
+																<DocModelRuleEntity Name="IfcIndexedPolyCurve">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Points">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcCartesianPointList2D" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="Segments">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcArcIndex" />
+																				<DocModelRuleEntity Name="IfcLineIndex" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="InnerBoundaries">
+															<Rules>
+																<DocModelRuleEntity Name="IfcIndexedPolyCurve">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Points">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcCartesianPointList2D" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="Segments">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcArcIndex" />
+																				<DocModelRuleEntity Name="IfcLineIndex" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="StyledByItem">
+															<Rules>
+																<DocModelRuleEntity Name="IfcStyledItem">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Styles">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcFillAreaStyle">
+																					<References>
+																						<DocTemplateDefinition xsi:nil="true" href="Geometry_Fill_Area_Style_1hQdPNcv98Bs6d7jlRUfS" />
+																					</References>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcIndexedPolyCurve">
+													<Rules>
+														<DocModelRuleAttribute Name="Points">
+															<Rules>
+																<DocModelRuleEntity Name="IfcCartesianPointList2D">
+																	<Rules>
+																		<DocModelRuleAttribute Name="CoordList">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcLengthMeasure" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Segments" />
+														<DocModelRuleAttribute Name="SelfIntersect" />
+														<DocModelRuleAttribute Name="StyledByItem">
+															<Rules>
+																<DocModelRuleEntity Name="IfcStyledItem">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Styles">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcCurveStyle">
+																					<References>
+																						<DocTemplateDefinition xsi:nil="true" href="Geometry_Curve_Style_3C4lU9PzX0TwHH51kePqJO" />
+																					</References>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcCartesianPoint">
+													<Rules>
+														<DocModelRuleAttribute Name="Coordinates" />
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcTextLiteral">
+													<Rules>
+														<DocModelRuleAttribute Name="Literal">
+															<Rules>
+																<DocModelRuleEntity Name="IfcPresentableText" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Placement">
+															<Rules>
+																<DocModelRuleEntity Name="IfcAxis2Placement2D" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Path">
+															<Rules>
+																<DocModelRuleEntity Name="IfcTextPath" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="StyledByItem">
+															<Rules>
+																<DocModelRuleEntity Name="IfcStyledItem">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Styles">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcTextStyle">
+																					<References>
+																						<DocTemplateDefinition xsi:nil="true" href="Geometry_Text_Style_0qt3Bw5rr3XvtbD02sZ0fi" />
+																					</References>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name" />
+						<DocModelRuleAttribute Name="Description" />
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
