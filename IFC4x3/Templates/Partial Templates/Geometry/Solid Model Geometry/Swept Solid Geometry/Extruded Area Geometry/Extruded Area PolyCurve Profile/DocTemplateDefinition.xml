@@ -38,97 +38,12 @@
 			<Rules>
 				<DocModelRuleEntity Name="IfcArbitraryClosedProfileDef">
 					<References>
-						<DocTemplateDefinition id="PolyCurve_Profile_Definition_03SwXg4uT5lRy9kpp3a9BP" Name="PolyCurve Profile Definition" UniqueId="0373a86a-1387-45bd-bf09-bb3cc39092d9" Type="IfcArbitraryClosedProfileDef">
-							<Documentation>Poly curve profile definitons define the closed two-dimensional curve used for the cross-section by a indexed poly curve having straight and circular arc segments.
-
-&gt; NOTE&amp;nbsp; The indexed poly curve has been introduced to provide a less complex and less data set size consuming definition compared to the composite curve.</Documentation>
-							<Rules>
-								<DocModelRuleAttribute Name="ProfileType">
-									<Rules>
-										<DocModelRuleEntity Name="IfcProfileTypeEnum" />
-									</Rules>
-								</DocModelRuleAttribute>
-								<DocModelRuleAttribute Name="ProfileName">
-									<Rules>
-										<DocModelRuleEntity Name="IfcLabel" />
-									</Rules>
-								</DocModelRuleAttribute>
-								<DocModelRuleAttribute Name="OuterCurve">
-									<Rules>
-										<DocModelRuleEntity Name="IfcIndexedPolyCurve">
-											<Rules>
-												<DocModelRuleAttribute Name="Points">
-													<Rules>
-														<DocModelRuleEntity Name="IfcCartesianPointList2D" />
-													</Rules>
-												</DocModelRuleAttribute>
-												<DocModelRuleAttribute Name="Segments">
-													<Rules>
-														<DocModelRuleEntity Name="IfcLineIndex" />
-														<DocModelRuleEntity Name="IfcArcIndex" />
-													</Rules>
-												</DocModelRuleAttribute>
-												<DocModelRuleAttribute Name="SelfIntersect">
-													<Rules>
-														<DocModelRuleEntity Name="IfcBoolean" />
-													</Rules>
-												</DocModelRuleAttribute>
-											</Rules>
-										</DocModelRuleEntity>
-									</Rules>
-								</DocModelRuleAttribute>
-							</Rules>
-						</DocTemplateDefinition>
+						<DocTemplateDefinition xsi:nil="true" href="PolyCurve_Profile_Definition_03SwXg4uT5lRy9kpp3a9BP" />
 					</References>
 				</DocModelRuleEntity>
 				<DocModelRuleEntity Name="IfcArbitraryProfileDefWithVoids">
 					<References>
-						<DocTemplateDefinition id="PolyCurve_with_Voids_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" Name="PolyCurve with Voids Profile Definition" UniqueId="d3b8661b-e65b-4077-adc7-c6742d219691" Type="IfcArbitraryProfileDefWithVoids">
-							<Documentation>Poly curve profile definitons define the closed two-dimensional curve used for the cross-section by a indexed poly curve having straight and circular arc segments.
-
-&gt; NOTE&amp;nbsp; The indexed poly curve has been introduced to provide a less complex and less data set size consuming definition compared to the composite curve.</Documentation>
-							<Rules>
-								<DocModelRuleAttribute Name="ProfileType">
-									<Rules>
-										<DocModelRuleEntity Name="IfcProfileTypeEnum" />
-									</Rules>
-								</DocModelRuleAttribute>
-								<DocModelRuleAttribute Name="ProfileName">
-									<Rules>
-										<DocModelRuleEntity Name="IfcLabel" />
-									</Rules>
-								</DocModelRuleAttribute>
-								<DocModelRuleAttribute Name="OuterCurve">
-									<Rules>
-										<DocModelRuleEntity Name="IfcIndexedPolyCurve">
-											<Rules>
-												<DocModelRuleAttribute Name="Points">
-													<Rules>
-														<DocModelRuleEntity Name="IfcCartesianPointList2D" />
-													</Rules>
-												</DocModelRuleAttribute>
-												<DocModelRuleAttribute Name="Segments">
-													<Rules>
-														<DocModelRuleEntity Name="IfcArcIndex" />
-														<DocModelRuleEntity Name="IfcLineIndex" />
-													</Rules>
-												</DocModelRuleAttribute>
-												<DocModelRuleAttribute Name="SelfIntersect">
-													<Rules>
-														<DocModelRuleEntity Name="IfcBoolean" />
-													</Rules>
-												</DocModelRuleAttribute>
-											</Rules>
-										</DocModelRuleEntity>
-									</Rules>
-								</DocModelRuleAttribute>
-								<DocModelRuleAttribute Name="InnerCurves">
-									<Rules>
-										<DocModelRuleEntity Name="IfcIndexedPolyCurve" />
-									</Rules>
-								</DocModelRuleAttribute>
-							</Rules>
-						</DocTemplateDefinition>
+						<DocTemplateDefinition xsi:nil="true" href="PolyCurve_with_Voids_Profile_Definition_3Jk6ORvbj0Twt7ndGj8PQH" />
 					</References>
 				</DocModelRuleEntity>
 				<DocModelRuleEntity Name="IfcProfileDef" />
