@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Resource_Cost_1dWH7vLbvC7RZ3qXZ4pD1M" Name="Resource Cost" UniqueId="1dWH7vLbvC7RZ3qXZ4pD1M" Type="IfcConstructionResource">
+	<Rules>
+		<DocModelRuleAttribute Name="BaseCosts" Identification="CostType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAppliedValue">
+					<Rules>
+						<DocModelRuleAttribute Name="Name" Identification="CostName">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="AppliedValue" Identification="ValueType" />
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

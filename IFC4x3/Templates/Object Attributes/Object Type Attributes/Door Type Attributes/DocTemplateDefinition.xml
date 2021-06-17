@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Door Type Attributes" UniqueId="0e3b8e5c-0c1e-4f09-8d75-df62df8f7efc" Type="IfcDoorType">
+	<Rules>
+		<DocModelRuleAttribute Name="OperationType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcDoorTypeOperationEnum" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="UserDefinedOperationType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ParameterTakesPrecedence" />
+		<DocModelRuleAttribute Name="HasPropertySets">
+			<Rules>
+				<DocModelRuleEntity Name="IfcDoorLiningProperties" />
+				<DocModelRuleEntity Name="IfcDoorPanelProperties" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

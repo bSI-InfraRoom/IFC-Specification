@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Product Type Geometric Representation" UniqueId="2jCoxTGkvCngXhtP1Bq$TY" Type="IfcTypeProduct">
+	<Rules>
+		<DocModelRuleAttribute Name="RepresentationMaps">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRepresentationMap">
+					<Rules>
+						<DocModelRuleAttribute Name="MappedRepresentation">
+							<Rules>
+								<DocModelRuleEntity Name="IfcShapeRepresentation" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="MappingOrigin">
+							<Rules>
+								<DocModelRuleEntity Name="IfcAxis2Placement2D" />
+								<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

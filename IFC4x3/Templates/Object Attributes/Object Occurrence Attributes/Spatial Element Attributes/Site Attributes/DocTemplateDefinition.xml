@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Site_Attributes_3soUxCzVn0bg0t4iBDJPsN" Name="Site Attributes" UniqueId="f6c9eecc-f5fc-4096-a037-12c2cd4d9d97" Type="IfcSite">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;Name[Value]=&apos;SiteName&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;LongName[Value]=&apos;LongSiteName&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;Latitude[Value]=-50.975864&quot;/&gt;
+      &lt;!-- Other checking parameters: Longitude[Value], Elevation[Value] --&gt; 
+	&lt;TemplateRule Parameters=&quot;HasAddress[Size]&gt;0&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="LongName" Identification="LongName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Name" Identification="Name">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="CompositionType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcElementCompositionEnum" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="LandTitleNumber">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="RefLatitude" Identification="Latitude">
+			<Rules>
+				<DocModelRuleEntity Name="IfcCompoundPlaneAngleMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="RefLongitude" Identification="Longitude">
+			<Rules>
+				<DocModelRuleEntity Name="IfcCompoundPlaneAngleMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="RefElevation" Identification="Elevation">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="SiteAddress" Identification="HasAddress">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPostalAddress">
+					<Rules>
+						<DocModelRuleAttribute Name="Purpose">
+							<Rules>
+								<DocModelRuleEntity Name="IfcAddressTypeEnum" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Description">
+							<Rules>
+								<DocModelRuleEntity Name="IfcText" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="InternalLocation">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="AddressLines">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="PostalBox">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Town">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Region">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="PostalCode">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Country">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="UserDefinedPurpose">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

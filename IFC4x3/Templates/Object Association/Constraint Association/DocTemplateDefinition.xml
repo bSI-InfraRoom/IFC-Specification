@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Constraint_Association_30YoPCzyP7dwzNMHS4mwe" Name="Constraint Association" UniqueId="30YoPCzyP7dwz$NMHS4mwe" Type="IfcObjectDefinition">
+	<Rules>
+		<DocModelRuleAttribute Name="HasAssociations">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAssociatesConstraint">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingConstraint">
+							<Rules>
+								<DocModelRuleEntity Name="IfcObjective">
+									<Rules>
+										<DocModelRuleAttribute Name="BenchmarkValues">
+											<Rules>
+												<DocModelRuleEntity Name="IfcMetric">
+													<Rules>
+														<DocModelRuleAttribute Name="DataValue" Identification="DataValue">
+															<Rules>
+																<DocModelRuleEntity Name="IfcMetricValueSelect" />
+																<DocModelRuleEntity Name="IfcAppliedValue">
+																	<Rules>
+																		<DocModelRuleAttribute Name="ArithmeticOperator">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcArithmeticOperatorEnum" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="Components">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcAppliedValue" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="AppliedValue">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcLengthMeasure" />
+																				<DocModelRuleEntity Name="IfcReal" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+																<DocModelRuleEntity Name="IfcTable">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Rows">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcTableRow" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="Columns">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcTableColumn">
+																					<Rules>
+																						<DocModelRuleAttribute Name="Identifier">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcIdentifier" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute Name="Name">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcLabel" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute Name="Description">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcText" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute Name="ReferencePath">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcReference" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Benchmark">
+															<Rules>
+																<DocModelRuleEntity Name="IfcBenchmarkEnum" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="ReferencePath">
+															<Rules>
+																<DocModelRuleEntity Name="IfcReference">
+																	<Rules>
+																		<DocModelRuleAttribute Name="TypeIdentifier" />
+																		<DocModelRuleAttribute Name="AttributeIdentifier" Identification="Attribute1" />
+																		<DocModelRuleAttribute Name="InnerReference" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Name">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Description">
+															<Rules>
+																<DocModelRuleEntity Name="IfcText" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="ObjectiveQualifier">
+											<Rules>
+												<DocModelRuleEntity Name="IfcObjectiveEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="LogicalAggregator">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLogicalOperatorEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -1,0 +1,111 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "IfcDocLite/1.0.0": {
+        "dependencies": {
+          "BuildingSmart.Serialization": "1.0.0",
+          "BuildingSmart.Serialization.Xml": "1.0.0",
+          "IfcDoc.Formats": "1.0.0",
+          "IfcDoc.Schemas": "1.0.0"
+        },
+        "runtime": {
+          "IfcDocLite.dll": {}
+        }
+      },
+      "BuildingSmart.Serialization/1.0.0": {
+        "runtime": {
+          "BuildingSmart.Serialization.dll": {}
+        }
+      },
+      "BuildingSmart.Serialization.Xml/1.0.0": {
+        "dependencies": {
+          "BuildingSmart.Serialization": "1.0.0"
+        },
+        "runtime": {
+          "BuildingSmart.Serialization.Xml.dll": {}
+        }
+      },
+      "IfcDoc.Formats/1.0.0": {
+        "runtime": {
+          "IfcDoc.Formats.dll": {}
+        }
+      },
+      "IfcDoc.Schemas/1.0.0": {
+        "runtime": {
+          "IfcDoc.Schemas.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.11.34.0": {
+        "runtime": {
+          "HtmlAgilityPack.dll": {
+            "assemblyVersion": "1.11.34.0",
+            "fileVersion": "1.11.34.0"
+          }
+        }
+      },
+      "Markdig/0.17.1.0": {
+        "runtime": {
+          "Markdig.dll": {
+            "assemblyVersion": "0.17.1.0",
+            "fileVersion": "0.17.1.0"
+          }
+        }
+      },
+      "BuildingSmart.Utilities.Conversion/1.0.0.0": {
+        "runtime": {
+          "BuildingSmart.Utilities.Conversion.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IfcDocLite/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuildingSmart.Serialization/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuildingSmart.Serialization.Xml/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IfcDoc.Formats/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IfcDoc.Schemas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HtmlAgilityPack/1.11.34.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Markdig/0.17.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuildingSmart.Utilities.Conversion/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

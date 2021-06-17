@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Parabolic_Transition_Segment_3D7kHU_Mv6IgCaHurqkubB" Name="Parabolic Transition Segment" UniqueId="cd1ee45e-f96e-464a-a324-478d74bb894b" Type="IfcCurveSegment">
+	<Rules>
+		<DocModelRuleAttribute Name="ParentCurve">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPolynomialCurve">
+					<Rules>
+						<DocModelRuleAttribute Name="CoefficientsX">
+							<Rules>
+								<DocModelRuleEntity Name="IfcReal" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="CoefficientsY">
+							<Rules>
+								<DocModelRuleEntity Name="IfcReal" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

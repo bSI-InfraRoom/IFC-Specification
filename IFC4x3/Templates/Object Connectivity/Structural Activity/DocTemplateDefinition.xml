@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Structural_Activity_2JaCfosE98Avc6uE7HNd6K" Name="Structural Activity" UniqueId="9390ca72-d8e2-482b-9986-e0e1d15e7194" Type="IfcStructuralActivity">
+	<Rules>
+		<DocModelRuleAttribute Name="AppliedLoad" Identification="AppliedLoad">
+			<Rules>
+				<DocModelRuleEntity Name="IfcStructuralLoad" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="AssignedToStructuralItem">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelConnectsStructuralActivity">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingElement" Identification="RelatingElement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcStructuralItem" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

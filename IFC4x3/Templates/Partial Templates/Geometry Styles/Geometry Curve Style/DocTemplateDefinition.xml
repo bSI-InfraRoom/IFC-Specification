@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Geometry_Curve_Style_3C4lU9PzX0TwHH51kePqJO" Name="Geometry Curve Style" UniqueId="cc12f789-67d8-4077-a451-141ba86744d8" Type="IfcCurveStyle">
+	<Rules>
+		<DocModelRuleAttribute Name="Name">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="CurveFont">
+			<Rules>
+				<DocModelRuleEntity Name="IfcCurveStyleFont">
+					<Rules>
+						<DocModelRuleAttribute Name="PatternList">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCurveStyleFontPattern">
+									<Rules>
+										<DocModelRuleAttribute Name="VisibleSegmentLength">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="InvisibleSegmentLength">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="CurveWidth">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveRatioMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="CurveColour">
+			<Rules>
+				<DocModelRuleEntity Name="IfcColourRgb" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ModelOrDraughting">
+			<Rules>
+				<DocModelRuleEntity Name="IfcBoolean" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="ShellBased Surface Model" UniqueId="eb907248-a812-405d-967d-7c4d634166d2" Type="IfcShellBasedSurfaceModel">
+	<Rules>
+		<DocModelRuleAttribute Name="SbsmBoundary">
+			<Rules>
+				<DocModelRuleEntity Name="IfcClosedShell">
+					<Rules>
+						<DocModelRuleAttribute Name="CfsFaces">
+							<Rules>
+								<DocModelRuleEntity Name="IfcFaceSurface">
+									<Rules>
+										<DocModelRuleAttribute Name="Bounds">
+											<Rules>
+												<DocModelRuleEntity Name="IfcFaceBound">
+													<Rules>
+														<DocModelRuleAttribute Name="Bound">
+															<Rules>
+																<DocModelRuleEntity Name="IfcPolyLoop">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Polygon">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcCartesianPoint" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Orientation">
+															<Rules>
+																<DocModelRuleEntity Name="IfcBoolean" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcFaceOuterBound" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="SameSense">
+											<Rules>
+												<DocModelRuleEntity Name="IfcBoolean" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcOpenShell" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="StyledByItem">
+			<Rules>
+				<DocModelRuleEntity Name="IfcStyledItem">
+					<Rules>
+						<DocModelRuleAttribute Name="Styles">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSurfaceStyle">
+									<References>
+										<DocTemplateDefinition xsi:nil="true" href="Surface_Color_Style_3gHpLYmULDnwrrpIILsus" />
+									</References>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

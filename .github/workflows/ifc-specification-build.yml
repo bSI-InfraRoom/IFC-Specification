@@ -1,0 +1,69 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Schema
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  filter_schema_modifications:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    outputs:
+      schema_change: ${{ steps.schema_changes.outputs.SCHEMACHANGED }}
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Modified files
+      - id: file_changes
+        uses: trilom/file-changes-action@v1.2.4
+      - name: Filter changed files
+        run: |
+          cat $HOME/files.json
+          echo '${{ steps.file_changes.outputs.files }}'
+      - name: Schema changes
+        id: schema_changes #grep -o .xml files.json | wc -w (for counting multiple instances per line)
+        run: |
+          if [[ $HOME/files.json ]] && [[ $(($(grep -ciF ".xml" $HOME/files.json)-$(egrep -ci "DocProperty.xml|DocQuantity.xmlDoc|PropertySet.xml|DocQuantitySet.xml|DocTemplateDefinition.xml|DocTemplateItem.xml|DocTemplateUsage.xml" $HOME/files.json))) -gt 0 ]]; then
+            echo 'Schema changed.';
+            echo ::set-output name=SCHEMACHANGED::true;
+          else
+            echo 'Schema did not change.';
+            echo ::set-output name=SCHEMACHANGED::false;
+          fi   
+  generate-schema:
+    runs-on: windows-latest
+    needs: filter_schema_modifications
+    if: ${{ needs.filter_schema_modifications.outputs.schema_change == 'true' }}
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run schema generation
+        run: |
+          echo 'Workspace directory is ${{ github.workspace }}'
+          echo 'Home directory is $HOME'
+          & "${{ github.workspace }}\build\IfcDocLite.exe" "${{ github.workspace }}\IFC4x3" -FE
+          dir schema
+          dir build
+          dir IFC4x3
+      - name: Upload schema
+        uses: actions/upload-artifact@v2
+        with:
+          name: IFCSchema
+          path: ${{ github.workspace }}\schema

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" Name="Product Local Placement" UniqueId="3Bw5jVUH9AGukt7cE$GB9j" Type="IfcProduct">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+    &lt;!-- Check existence of ObjectPlacement, the type of RelativeToElement and the name of the element/spatial element it is placed relative to --&gt;
+    &lt;TemplateRule Parameters=&quot;HasPlacement[Exists]=TRUE AND RelativeToElement[Type]=&apos;IfcBuildingStorey&apos; AND SpatialElementName=&apos;EG 1&apos;&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute CardinalityMax="1" Name="ObjectPlacement" Identification="HasPlacement">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLocalPlacement">
+					<Rules>
+						<DocModelRuleAttribute Name="RelativePlacement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="PlacementRelTo">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLocalPlacement">
+									<Rules>
+										<DocModelRuleAttribute Name="PlacesObject" Identification="RelativeToElement">
+											<Rules>
+												<DocModelRuleEntity Name="IfcElement">
+													<Rules>
+														<DocModelRuleAttribute Name="Name" Identification="ElementName">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcSpatialElement">
+													<Rules>
+														<DocModelRuleAttribute Name="Name" Identification="SpatialElementName">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
