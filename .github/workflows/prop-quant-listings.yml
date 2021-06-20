@@ -1,0 +1,28 @@
+name: property-quantity-listings-generation
+
+# Controls when the action will run. 
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  generate-properties-listings:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run property and quantity generation
+        run: |
+          echo 'Workspace directory is ${{ github.workspace }}'
+          & "${{ github.workspace }}\build\IfcDocLite.exe" "${{ github.workspace }}\IFC4x3" -FP
+          dir properties
+          dir IFC4x3
+      - name: Upload property listings
+        uses: actions/upload-artifact@v2
+        with:
+          name: IFC Properties and Quantities
+          path: ${{ github.workspace }}\properties
