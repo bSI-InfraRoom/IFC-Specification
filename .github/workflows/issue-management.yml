@@ -4,7 +4,8 @@ name: Issue-Managemment
 on: workflow_dispatch
 
 jobs:
-  runs-on: ubuntu-latest
+  generate-kpis:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: ABCon-Tech/KPI-action@v1
