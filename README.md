@@ -24,6 +24,8 @@ Fork, commit, pull request.
 ![GitHub pull requests by-label](https://img.shields.io/github/issues-pr/bSI-InfraRoom/IFC-Specification/IFC4x3_RC4)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/bSI-InfraRoom/IFC-Specification)
 
+For a detailed report, go [here](https://github.com/bSI-InfraRoom/IFC-Specification/blob/management/Management/Summary.md).
+
 ## Tooling
 
 [Github Desktop](https://desktop.github.com/) for working on pull requests:
