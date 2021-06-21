@@ -16,20 +16,6 @@ Occurrences of the _IfcDoorType_ within building models are represented by insta
 > HISTORY&nbsp; New entity in IFC4. The entity _IfcDoorType_ replaces the previous definition _IfcDoorStyle_ (which is deprecated in IFC4).
 
 { .use-head}
-Operation type use definition
-
-The _IfcDoorTypeOperationEnum_ defines the general layout of the door type and its symbolic presentation. Depending on the enumerator, the appropriate instances of _IfcDoorLiningProperties_ and _IfcDoorPanelProperties_ are attached in the list of _HasPropertySets_. The _IfcDoorTypeOperationEnum_ mainly determines the hinge side (left hung, or right hung), the operation (swinging, sliding, folding, etc.) and the number of panels.
-
-> NOTE&nbsp; There are different definitions in various countries on what a left opening or left hung or left swing door is (same for right). Therefore the IFC definition may derivate from the local standard and may need to be mapped appropriately.
-
-See geometry use definitions at _IfcDoorTypeOperationEnum_ for the correct usage of opening symbols for different operation types.
-
-{ .use-head}
-Material Use Definition
-
-The material of the _IfcDoorType_ is defined by the _IfcMaterialConstituentSet_ or as fall back by _IfcMaterial_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship.
-
-The following keywords for _IfcMaterialConstituentSet.MaterialConstituents[n].Name_ shall be used:
 
 * 'Lining' - to indicate that the material constituent applies to to the door lining
 * 'Framing' - to indicate that the material constituent applies to to the door framing, if not provided, the 'Lining' material information applied to frams as well

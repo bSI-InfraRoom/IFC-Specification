@@ -3,9 +3,11 @@ The _IfcStructuralAnalysisModel_ is used to assemble all information needed to r
 Important functionalities for the description of an analysis model are derived from existing IFC entities:  
 
 * From _IfcSystem_ it inherits the ability to couple the built system via _IfcRelReferencedInSpatialStructure_ to one or more _IfcSpatialElement_ subtypes as necessary.
+
 * From _IfcGroup_ it inherits the inverse attribute IsGroupedBy, pointing to the relationship class _IfcRelAssignsToGroup_ . This allows the grouping of structural members (instances of _IfcStructuralMember_), and supports (instances of _IfcStructuralConnection_ which belong to a specific analysis model.
 
 >> NOTE&nbsp; Loads (as instances of _IfcStructuralAction_ are not included through IsGroupedBy. Loads are assigned through the LoadedBy attribute relationship, using load groups as a grouping mechanism. Only top-level load groups should be referenced via LoadedBy, i.e. load combinations if any load combinations exist, or load cases if no load combinations exist in this analysis model.
+
 >> NOTE&nbsp; Results (as instances of _IfcStructuralReaction_ are not included through IsGroupedBy. Results are assigned through the HasResults attribute relationship, using result groups as a grouping mechanism.
 
 * From _IfcObjectDefinition_ it inherits the inverse attribute IsDecomposedBy pointing to the relationship class _IfcRelAggregates_. It provides the hierarchy between the separate (partial) analysis models.
