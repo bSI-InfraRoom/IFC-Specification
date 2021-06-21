@@ -1,5 +1,5 @@
 # Progress Summary
-Progress summary for IFC-Specification development upto: 6/21/2021, 11:11:37 AM
+Progress summary for IFC-Specification development upto: 6/21/2021, 11:21:08 AM
 
 Total Number of Issues: 49
 
@@ -18,13 +18,13 @@ Current issues effecting the content of the EXPRESS schema for IFC4x3.
 Issues|1|0|1|
 Pull Requests|3|1|4|
 ### Open Issues
-- [#80](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/80) - IFC schema generation bug
+- [#80](https://github.com/bSI-InfraRoom/IFC-Specification/issues/80) - IFC schema generation bug
 
 
 ### Open Pull Requests
-- [#76](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/76) - Updates in alignment model
-- [#64](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/64) - IfcRelAdheresToElement authoring
-- [#40](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/40) - Update IfcRelInterferesElement DocEntity & Documentation
+- [#40](https://github.com/bSI-InfraRoom/IFC-Specification/pull/40) - Update IfcRelInterferesElement DocEntity & Documentation
+- [#64](https://github.com/bSI-InfraRoom/IFC-Specification/pull/64) - IfcRelAdheresToElement authoring
+- [#76](https://github.com/bSI-InfraRoom/IFC-Specification/pull/76) - Updates in alignment model
 
 
 ## Issues/Pull Requests effecting Documentation
@@ -35,24 +35,24 @@ Current issues effecting the content of the Documentation for IFC4x3.
 Issues|11|2|13|
 Pull Requests|5|8|13|
 ### Open Issues
-- [#69](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/69) - Markdown in IfcFixedReferenceSweptAreaSolid
-- [#62](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/62) - IfcCovering Relationships & Documentation
-- [#58](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/58) - Address the '{ .extDef}' tokens
-- [#51](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/51) - IfcAlignment.Axis documentation is not consistent with EXPRESS file or unit tests
-- [#49](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/49) - Shouldn't be IfcAxis2PlacementLinear.Axis taken from the curve tangent instead of IfcAxis2PlacementLinear.RefDirection?
-- [#44](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/44) - Inconsistent usage of attribute types 
-- [#39](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/39) - IfcRelInterferesElements new usage in IFC Infra project
-- [#32](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/32) - ThirdOrderPolynomial - ConstantTerm
-- [#31](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/31) - Branch concept_template review
-- [#29](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/29) - HasAdditionFeature?
-- [#8](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/8) - Difference and use of IfcExternalSpatialElement & IfcSpace
+- [#8](https://github.com/bSI-InfraRoom/IFC-Specification/issues/8) - Difference and use of IfcExternalSpatialElement & IfcSpace
+- [#29](https://github.com/bSI-InfraRoom/IFC-Specification/issues/29) - HasAdditionFeature?
+- [#31](https://github.com/bSI-InfraRoom/IFC-Specification/issues/31) - Branch concept_template review
+- [#32](https://github.com/bSI-InfraRoom/IFC-Specification/issues/32) - ThirdOrderPolynomial - ConstantTerm
+- [#39](https://github.com/bSI-InfraRoom/IFC-Specification/issues/39) - IfcRelInterferesElements new usage in IFC Infra project
+- [#44](https://github.com/bSI-InfraRoom/IFC-Specification/issues/44) - Inconsistent usage of attribute types 
+- [#49](https://github.com/bSI-InfraRoom/IFC-Specification/issues/49) - Shouldn't be IfcAxis2PlacementLinear.Axis taken from the curve tangent instead of IfcAxis2PlacementLinear.RefDirection?
+- [#51](https://github.com/bSI-InfraRoom/IFC-Specification/issues/51) - IfcAlignment.Axis documentation is not consistent with EXPRESS file or unit tests
+- [#58](https://github.com/bSI-InfraRoom/IFC-Specification/issues/58) - Address the '{ .extDef}' tokens
+- [#62](https://github.com/bSI-InfraRoom/IFC-Specification/issues/62) - IfcCovering Relationships & Documentation
+- [#69](https://github.com/bSI-InfraRoom/IFC-Specification/issues/69) - Markdown in IfcFixedReferenceSweptAreaSolid
 
 
 ### Open Pull Requests
-- [#81](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/81) - Documentation restoration and adjustment
-- [#68](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/68) - mistake with markdown styling
-- [#63](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/63) - correction of Feature Element documentation Fixes #29
-- [#40](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/40) - Update IfcRelInterferesElement DocEntity & Documentation
-- [#23](https://api.github.com/repos/bSI-InfraRoom/IFC-Specification/issues/23) - Documentation Improvements from UML
+- [#23](https://github.com/bSI-InfraRoom/IFC-Specification/pull/23) - Documentation Improvements from UML
+- [#40](https://github.com/bSI-InfraRoom/IFC-Specification/pull/40) - Update IfcRelInterferesElement DocEntity & Documentation
+- [#63](https://github.com/bSI-InfraRoom/IFC-Specification/pull/63) - correction of Feature Element documentation Fixes #29
+- [#68](https://github.com/bSI-InfraRoom/IFC-Specification/pull/68) - mistake with markdown styling
+- [#81](https://github.com/bSI-InfraRoom/IFC-Specification/pull/81) - Documentation restoration and adjustment
 
 
