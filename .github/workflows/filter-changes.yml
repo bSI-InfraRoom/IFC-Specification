@@ -7,8 +7,8 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ develop ]
-  pull_request:
-    branches: [ develop ]
+  # pull_request:
+    # branches: [ develop ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -35,8 +35,8 @@ jobs:
         run: |
           cat $HOME/files.json
           echo '${{ steps.file_changes.outputs.files }}'
-      - name: Schema changes
-        id: schema_changes #grep -o .xml files.json | wc -w (for counting multiple instances per line)
+      - name: Specification modifications
+        id: specification_modifications #grep -o .xml files.json | wc -w (for counting multiple instances per line)
         run: |
           if [[ $HOME/files.json ]] && [[ $(($(grep -ciF ".xml" $HOME/files.json)-$(egrep -ci "DocProperty.xml|DocQuantity.xmlDoc|PropertySet.xml|DocQuantitySet.xml|DocTemplateDefinition.xml|DocTemplateItem.xml|DocTemplateUsage.xml|DocPropertyConstant.xml|DocPropertyEnumeration.xml" $HOME/files.json))) -gt 0 ]]; then
             echo 'Schema changed.';
