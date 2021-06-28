@@ -10,7 +10,7 @@ where &Theta; is the deflection or bearing angle.
 
 The curvature of the curve is calculated as.
 
-K = K0 (s³/QubicTerm³ + s²/QuadraticTerm² + s/LinearTerm
+K = K0 (s³/CubicTerm³ + s²/QuadraticTerm² + s/LinearTerm
 where
 K ... curvature
 K0 ... start curvature
