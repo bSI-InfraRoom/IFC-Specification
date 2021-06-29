@@ -9,7 +9,7 @@
 &gt; NOTE 1&amp;nbsp; The distance along is measured from the start point of _IfcAlignmentHorizontal_, any optionally provided offset expressed by _IfcAlignmentHorizontal_.StartDistanceAlong is not taken into account.
 &gt; NOTE 2&amp;nbsp; The unit of measurement is the global length unit, as set by _IfcContext_.UnitInContext</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="HorizontalLength" UniqueId="a2fe23af-c8fa-4aab-9e63-c03f98770570" DefinedType="IfcPositiveLengthMeasure">
+		<DocAttribute Name="HorizontalLength" UniqueId="a2fe23af-c8fa-4aab-9e63-c03f98770570" DefinedType="IfcNonNegativeLengthMeasure">
 			<Documentation>Length measured as distance along the horizontal alignment of the segment.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="StartHeight" UniqueId="794b3cc4-cf59-4f6d-b090-699a8fb08638" DefinedType="IfcLengthMeasure">
@@ -22,8 +22,8 @@
 		<DocAttribute Name="EndGradient" UniqueId="f91fe698-cbc3-48f4-80f1-5b8a5b0c6f49" DefinedType="IfcRatioMeasure">
 			<Documentation>End gradient of the segment. In the case of a PredefinedType=&apos;.CONSTANTGRADIENT.&apos; the value is the same as _StartGradient_.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="RadiusOfCurvature" UniqueId="4c28f1e4-ef03-421a-a559-862cc0c31b7f" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
-			<Documentation>Radius of parabola or arc.
+		<DocAttribute Name="RadiusOfCurvature" UniqueId="4c28f1e4-ef03-421a-a559-862cc0c31b7f" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>Radius of parabola or arc. Positive values imply a CCW direction whereas negative CW.
 &gt; NOTE1&amp;nbsp; For _PredefinedType_ is ARC. The radius of the basis circle for the arc.  
 &gt; NOTE2&amp;nbsp; For _PredefinedType_ is PARABOLICARC. Parabola constant (determining the “steepness” of the parabola). The parabola constant is provided by the “minimum parabola radius”, the true radius of a parabola at its vertical axis (the zero-gradient point of the parabola). The minimum radius is twice the focal length of the parabola (the distance between the focal point and the vertex).  
 &gt; NOTE3&amp;nbsp; For _PredefinedType_ that is not either ARC or PARABOLICARC the value should be empty.</Documentation>
