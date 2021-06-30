@@ -1,1 +1,1 @@
-The number of leverages or actuatrs needed to move turnouts.
+The number of leverages or actuators needed to move turnouts.
