@@ -14,4 +14,3 @@ It is used to define a door specification, or door style (i.e. the specific prod
 Occurrences of the _IfcDoorType_ within building models are represented by instances of _IfcDoor_ or _IfcDoorStandardCase_.
 
 > HISTORY&nbsp; New entity in IFC4. The entity _IfcDoorType_ replaces the previous definition _IfcDoorStyle_ (which is deprecated in IFC4).
-

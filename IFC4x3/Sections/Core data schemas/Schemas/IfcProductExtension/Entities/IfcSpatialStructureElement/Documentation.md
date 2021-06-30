@@ -4,12 +4,15 @@ A spatial project structure might define as many levels of decomposition as nece
 
 * site as _IfcSite_
 * facility as _IfcFacility_, or specifically
-    * building as IfcBuilding
-    * bridge as IfcBridge
+    * building as _IfcBuilding_
+    * bridge as _IfcBridge_
+    * marine facility as _IfcMarineFacility_
+    * railway as _IfcRailway_
+    * road as _IfcRoad_
 
 * facility part as _IfcFacilityPart_, or specifically
-    * storey as IfcBuildingStorey 
-    * bridge part as IfcBridgePart
+    * storey as _IfcBuildingStorey_
+    * facility part as _IfcFacilityPart_
 
 * space as _IfcSpace_
 

@@ -6,6 +6,7 @@ The _IfcElementAssembly_ represents complex element assemblies aggregated from s
 The assembly structure can be nested, i.e. an _IfcElementAssembly_ could be an aggregated part within another _IfcElementAssembly_.  
 
 > NOTE&nbsp; View definitions and/or implementer agreements may restrict the number of allowed levels of nesting.  
+
 The geometry of an _IfcElementAssembly_ is generally formed from its components, in which case it does not need to have an explicit geometric representation. In some cases it may be useful to also expose an own explicit representation of the aggregate.  
 
 > NOTE&nbsp; View definitions or implementer agreements may further constrain the applicability of certain shape representations at the _IfcElementAssembly_ in respect of the shape representations of its parts.  
@@ -15,4 +16,4 @@ The geometry of an _IfcElementAssembly_ is generally formed from its components,
 { .spec-head}
 Informal Propositions:
 
-1. The _IfcElementAssembly_ shall have an aggregation relationship to the contained parts, i.e. the (INV) _IsDecomposedBy_ relationship shall be utilzed.
+1. The _IfcElementAssembly_ shall have an aggregation relationship to the contained parts, i.e. the (INV) _IsDecomposedBy_ relationship shall be utilized.
