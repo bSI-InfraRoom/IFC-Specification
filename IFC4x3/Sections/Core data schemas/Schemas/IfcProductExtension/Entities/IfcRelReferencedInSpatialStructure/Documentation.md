@@ -16,16 +16,7 @@ Elements can also be references in a spatial zone that is provided as _IfcSpatia
   
 Figure 1 shows the use of _IfcRelContainedInSpatialStructure_ and _IfcRelReferencedInSpatialStructure_ to assign an _IfcCurtainWall_ to two different levels within the spatial structure. It is primarily contained within the ground floor, and additionally referenced within the first and second floor.
 
-<table cellpadding="2" cellspacing="2" width="80%">
-      <tbody>
-        <tr valign="top">
-          <td align="left" valign="top"><img src="../../../../../../figures/ifcrelreferencedinspatialstructure-fig1.png" alt="reference and containment" height="601" width="601"><br>
-          </td>
-        </tr>
-        <tr>
-          <td><p class="figure">Figure 1 &mdash; Relationship for spatial structure referencing</p></td>
-        </tr>
-      </tbody>
-    </table>
+!["reference and containment"](../../../../../../figures/ifcrelreferencedinspatialstructure-fig1.png "Figure 1 &mdash; Relationship for spatial structure referencing")
+
 
 > HISTORY&nbsp; New entity in IFC2x3.
