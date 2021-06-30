@@ -9,8 +9,9 @@
 		<DocAttribute Name="RelatingElement" UniqueId="e5274ffd-853b-4c94-a802-37051c7af75c" DefinedType="IfcElement" XsdFormat="hidden">
 			<Documentation>Element to which the _IfcSurfaceFeature_ is adhered to.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="RelatedSurfaceFeature" UniqueId="e92e5434-81b9-4a2a-83d7-0504609ceb49" DefinedType="IfcSurfaceFeature" XsdFormat="attribute">
-			<Documentation>The _IfcSurfaceFeature_ that adheres to the surface of the parent element.</Documentation>
+		<DocAttribute Name="RelatedSurfaceFeatures" UniqueId="e92e5434-81b9-4a2a-83d7-0504609ceb49" DefinedType="IfcSurfaceFeature" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The _IfcSurfaceFeature_(s) that adheres to the surface of the parent element.</Documentation>
 		</DocAttribute>
 	</Attributes>
 </DocEntity>
+

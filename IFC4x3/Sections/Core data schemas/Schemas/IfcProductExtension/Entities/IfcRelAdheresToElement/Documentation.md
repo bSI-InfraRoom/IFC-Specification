@@ -1,4 +1,4 @@
-The _IfcRelAdheresToElement_ is an objectified relationship between an element and one surface feature element that that adheres to the surface on the element. The relationship is defined to be a 1:1 relationship, if an element has more than one surface feature, several relationship objects have to be used, each pointing to a different surface feature element. The _IfcRelAdheresToElement_ establishes an aggregation relationship between the main element and a sub ordinary surface feature.
+The _IfcRelAdheresToElement_ is an objectified relationship between an element and one surface feature element that that adheres to the surface on the element. The relationship is defined to be a 1 to many relationship. The _IfcRelAdheresToElement_ establishes an aggregation relationship between the main element and a sub ordinary surface feature.
 
 > NOTE&nbsp; In contrary the _IfcRelAggregates_ relationship establishs an aggregation of equal parts to a whole.
 
