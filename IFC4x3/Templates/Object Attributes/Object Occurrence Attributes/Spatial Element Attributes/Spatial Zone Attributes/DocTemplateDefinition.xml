@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Spatial_Zone_Attributes_05GL9TrITEtACcw2mZmmnz" Name="Spatial Zone Attributes" UniqueId="0541525d-d527-4edc-a326-e82c23c30c7d" Type="IfcSpatialZone">
+	<Rules>
+		<DocModelRuleAttribute Name="Name" Identification="Name">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="LongName" Identification="LongName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="IsTypedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByType">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSpatialZoneType">
+									<Rules>
+										<DocModelRuleAttribute Name="LongName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

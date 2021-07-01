@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Reinforcing_Mesh_Attributes_0QQk0gs89EagPV_gRf3cjg" Name="Reinforcing Mesh Attributes" UniqueId="1a6ae02a-d882-4e92-a65f-faa6e90e6b6a" Type="IfcReinforcingMesh">
+	<Rules>
+		<DocModelRuleAttribute Name="Tag">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIdentifier" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="IsTypedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByType">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcReinforcingMeshType">
+									<Rules>
+										<DocModelRuleAttribute Name="MeshLength">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="MeshWidth">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="LongitudinalBarNominalDiameter">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="TransverseBarNominalDiameter">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="LongitudinalBarCrossSectionArea">
+											<Rules>
+												<DocModelRuleEntity Name="IfcAreaMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="TransverseBarCrossSectionArea">
+											<Rules>
+												<DocModelRuleEntity Name="IfcAreaMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="LongitudinalBarSpacing">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="TransverseBarSpacing">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="BendingShapeCode">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="BendingParameters">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLengthMeasure" />
+												<DocModelRuleEntity Name="IfcPlaneAngleMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="MeshLength" />
+		<DocModelRuleAttribute Name="MeshWidth" />
+		<DocModelRuleAttribute Name="LongitudinalBarNominalDiameter" />
+		<DocModelRuleAttribute Name="TransverseBarNominalDiameter" />
+		<DocModelRuleAttribute Name="LongitudinalBarCrossSectionArea" />
+		<DocModelRuleAttribute Name="TransverseBarCrossSectionArea" />
+		<DocModelRuleAttribute Name="LongitudinalBarSpacing" />
+		<DocModelRuleAttribute Name="TransverseBarSpacing" />
+	</Rules>
+</DocTemplateDefinition>
+

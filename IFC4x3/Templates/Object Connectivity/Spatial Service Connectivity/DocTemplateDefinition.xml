@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Spatial_Service_Connectivity_3ZHXQIzCLD_gZr1pIWQOzh" Name="Spatial Service Connectivity" UniqueId="e3461692-f4c5-4dfa-a8f5-0734a0698f6b" Type="IfcSpatialElement">
+	<Rules>
+		<DocModelRuleAttribute Name="ServicedBySystems" Identification="ServicedBySystems">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelServicesBuildings">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingSystem" Identification="RelatedSystem">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSystem">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="SystemName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

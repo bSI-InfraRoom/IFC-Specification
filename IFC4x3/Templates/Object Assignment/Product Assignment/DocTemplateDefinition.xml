@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Product_Assignment_3idFi4hVv8Q85erufbQaJ" Name="Product Assignment" UniqueId="3idFi4hVv8Q85eru$fbQaJ" Type="IfcProduct">
+	<Rules>
+		<DocModelRuleAttribute Name="ReferencedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAssignsToProduct">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedObjects" Identification="Type">
+							<Rules>
+								<DocModelRuleEntity Name="IfcObject" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

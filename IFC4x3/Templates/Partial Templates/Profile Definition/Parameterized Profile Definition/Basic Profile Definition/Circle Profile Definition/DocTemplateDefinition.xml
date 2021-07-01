@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Circle_Profile_Definition_25c_E6h2L6yg4R0FQsjtdj" Name="Circle Profile Definition" UniqueId="859be386-ac25-46f2-a11b-00f6b6b779ed" Type="IfcCircleProfileDef">
+	<Rules>
+		<DocModelRuleAttribute Name="ProfileType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProfileTypeEnum" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ProfileName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Position">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAxis2Placement2D">
+					<Rules>
+						<DocModelRuleAttribute Name="Location">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RefDirection">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Radius">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -2,7 +2,8 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSignal" UniqueId="15911371-83a2-4660-b0a2-b479e9560615" BaseDefinition="IfcFlowTerminal" EntityFlags="32">
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="757c31d1-db40-4b9b-8140-a9f6d36a144a" DefinedType="IfcSignalTypeEnum" AttributeFlags="1">
-			<Documentation></Documentation>
+			<Documentation>Identifies the predefined type of a signal. This type may associate additional specific property sets.
+NOTE  The PredefinedType shall only be used, if no IfcSignalType is assigned, providing its own IfcSignType .PredefinedType.</Documentation>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

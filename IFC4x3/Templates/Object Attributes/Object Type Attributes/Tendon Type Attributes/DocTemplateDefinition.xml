@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Tendon Type Attributes" UniqueId="3f569092-bc7b-4e93-b9fa-ccdfa9cfacb7" Type="IfcTendonType">
+	<Rules>
+		<DocModelRuleAttribute Name="NominalDiameter">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="CrossSectionArea">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAreaMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="SheethDiameter">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

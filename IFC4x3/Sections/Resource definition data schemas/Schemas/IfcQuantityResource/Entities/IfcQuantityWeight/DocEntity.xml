@@ -17,7 +17,8 @@
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="WR21" UniqueId="eedb5c99-fdbd-458f-adb9-eac39d641365">
-			<Documentation>If a unit is given, the unit type shall be mass unit. NOTE&amp;nbsp; There is no distinction between the concept of &quot;Mass&quot; and &quot;Weight&quot; in the current IFC Release.</Documentation>
+			<Documentation>If a unit is given, the unit type shall be mass unit.\
+			&gt;NOTE&amp;nbsp; There is no distinction between the concept of &quot;Mass&quot; and &quot;Weight&quot; in the current IFC Release.</Documentation>
 			<Expression>NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
    (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.MASSUNIT)</Expression>
 		</DocWhereRule>

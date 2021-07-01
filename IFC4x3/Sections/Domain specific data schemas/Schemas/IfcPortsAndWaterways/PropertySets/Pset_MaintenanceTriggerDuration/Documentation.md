@@ -1,1 +1,1 @@
-Properties for timed maintenance policies
+Trigger levels for an asset that has an PPM based maintenance strategy.

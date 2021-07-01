@@ -2,7 +2,8 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSign" UniqueId="4be0513f-edaf-4911-92c7-421ea6cd62a3" BaseDefinition="IfcElementComponent" EntityFlags="32">
 	<Attributes>
 		<DocAttribute Name="PredefinedType" UniqueId="74f12d58-b609-4a37-987a-3cae7eace471" DefinedType="IfcSignTypeEnum" AttributeFlags="1">
-			<Documentation></Documentation>
+			<Documentation>Identifies the predefined type of a signs. This type may associate additional specific property sets.
+NOTE  The PredefinedType shall only be used, if no IfcSignType is assigned, providing its own IfcSignType .PredefinedType.</Documentation>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

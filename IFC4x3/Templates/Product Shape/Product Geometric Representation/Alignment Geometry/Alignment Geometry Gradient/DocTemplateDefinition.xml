@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Alignment_Geometry_Gradient_39lYC44uLCdvW3MC_LnJxz" Name="Alignment Geometry Gradient" UniqueId="c9be2304-1385-4c9f-9803-58cf95c53efd" Type="IfcAlignment">
+	<Rules>
+		<DocModelRuleAttribute Name="Representation">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProductDefinitionShape">
+					<Rules>
+						<DocModelRuleAttribute Name="Name" />
+						<DocModelRuleAttribute Name="Description" />
+						<DocModelRuleAttribute Name="Representations">
+							<Rules>
+								<DocModelRuleEntity Name="IfcShapeRepresentation">
+									<Rules>
+										<DocModelRuleAttribute Name="ContextOfItems">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGeometricRepresentationContext" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Items">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGradientCurve">
+													<Rules>
+														<DocModelRuleAttribute Name="BaseCurve">
+															<Rules>
+																<DocModelRuleEntity Name="IfcCompositeCurve">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Segments">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcCurveSegment">
+																					<References>
+																						<DocTemplateDefinition xsi:nil="true" href="Helmert_Transition_Segment_2GmQ8gyA1CgdJxW6bT3OO" />
+																						<DocTemplateDefinition xsi:nil="true" href="Bloss_Transition_Segment_3xfEEn9pLCL8sUYFMqfDaC" />
+																						<DocTemplateDefinition xsi:nil="true" href="Clothoid_Transition_Segment_2z7rh4vvLDvxMgXL7_KGXj" />
+																						<DocTemplateDefinition xsi:nil="true" href="Sine_Transition_Segment_2bmCqzBzH0wx4ONLuNbUSH" />
+																						<DocTemplateDefinition xsi:nil="true" href="Cosine_Transition_Segment_3si9Ib7Y5E0AqPu1b5AM0M" />
+																						<DocTemplateDefinition xsi:nil="true" href="Arc_Segment_0AFJtPzoP2zAjI9GzCYRL6" />
+																						<DocTemplateDefinition xsi:nil="true" href="Linear_Segment_2dPyjjaBH3buW4ESqzNjEG" />
+																						<DocTemplateDefinition xsi:nil="true" href="Cubic_Transition_Segment_0dqin2zM18UPoEDKUyhVUM" />
+																					</References>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Segments">
+															<Rules>
+																<DocModelRuleEntity Name="IfcCurveSegment">
+																	<References>
+																		<DocTemplateDefinition xsi:nil="true" href="Linear_Segment_2dPyjjaBH3buW4ESqzNjEG" />
+																		<DocTemplateDefinition xsi:nil="true" href="Arc_Segment_0AFJtPzoP2zAjI9GzCYRL6" />
+																		<DocTemplateDefinition xsi:nil="true" href="Parabolic_Transition_Segment_3D7kHU_Mv6IgCaHurqkubB" />
+																		<DocTemplateDefinition xsi:nil="true" href="Clothoid_Transition_Segment_2z7rh4vvLDvxMgXL7_KGXj" />
+																	</References>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

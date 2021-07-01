@@ -1,1 +1,1 @@
-Number of steps (chambers) in a lock series
+Number of steps (chambers) in a lock line

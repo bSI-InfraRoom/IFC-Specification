@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Mapped_Geometry_3iTV8STL4dxyWvZebtBcw" Name="Mapped Geometry" UniqueId="3i$TV8STL4dxyWvZebtBcw" Type="IfcProduct">
+	<Rules>
+		<DocModelRuleAttribute Name="Representation">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProductDefinitionShape">
+					<Rules>
+						<DocModelRuleAttribute Name="Representations">
+							<Rules>
+								<DocModelRuleEntity Name="IfcShapeRepresentation">
+									<Rules>
+										<DocModelRuleAttribute Name="ContextOfItems">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGeometricRepresentationContext" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Items">
+											<Rules>
+												<DocModelRuleEntity Name="IfcMappedItem">
+													<Rules>
+														<DocModelRuleAttribute Name="MappingSource">
+															<Rules>
+																<DocModelRuleEntity Name="IfcRepresentationMap">
+																	<Rules>
+																		<DocModelRuleAttribute Name="MappingOrigin">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcAxis2Placement3D">
+																					<Rules>
+																						<DocModelRuleAttribute Name="Location">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcCartesianPoint" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute Name="Axis">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcDirection" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute Name="RefDirection">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcDirection" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="MappedRepresentation">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcShapeRepresentation" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="MappingTarget">
+															<Rules>
+																<DocModelRuleEntity Name="IfcCartesianTransformationOperator3D">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Axis1">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcDirection" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="Axis2">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcDirection" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="LocalOrigin">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcCartesianPoint" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="Axis3">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcDirection" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="Scale" />
+																	</Rules>
+																</DocModelRuleEntity>
+																<DocModelRuleEntity Name="IfcCartesianTransformationOperator3DnonUniform">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Scale2" />
+																		<DocModelRuleAttribute Name="Scale3" />
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name" />
+						<DocModelRuleAttribute Name="Description" />
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

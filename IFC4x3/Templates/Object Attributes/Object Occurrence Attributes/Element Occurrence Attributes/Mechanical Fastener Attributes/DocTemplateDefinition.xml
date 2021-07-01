@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Mechanical_Fastener_Attributes_1egcaOOpbALg7a0Zi9Beqm" Name="Mechanical Fastener Attributes" UniqueId="68aa6918-6339-4a56-a1e4-023b092e8d30" Type="IfcMechanicalFastener">
+	<Rules>
+		<DocModelRuleAttribute Name="Tag">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIdentifier" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="NominalDiameter">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="NominalLength">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="IsTypedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByType">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcMechanicalFastenerType">
+									<Rules>
+										<DocModelRuleAttribute Name="NominalDiameter">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="NominalLength">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="NominalDiameter">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="NominalLength">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

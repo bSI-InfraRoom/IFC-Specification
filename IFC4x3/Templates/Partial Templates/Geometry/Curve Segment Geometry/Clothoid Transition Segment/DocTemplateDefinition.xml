@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Clothoid_Transition_Segment_2z7rh4vvLDvxMgXL7_KGXj" Name="Clothoid Transition Segment" UniqueId="bd1f5ac4-e795-4de7-b5aa-8551fe51086d" Type="IfcCurveSegment">
+	<Rules>
+		<DocModelRuleAttribute Name="ParentCurve">
+			<Rules>
+				<DocModelRuleEntity Name="IfcClothoid">
+					<Rules>
+						<DocModelRuleAttribute Name="ClothoidConstant">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" UniqueId="2b0c43d9-b2ac-4b5f-92bd-8a32a0576caa" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="SegmentStart">
+			<Rules>
+				<DocModelRuleEntity Name="IfcParameterValue" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="SegmentLength">
+			<Rules>
+				<DocModelRuleEntity Name="IfcParameterValue" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
