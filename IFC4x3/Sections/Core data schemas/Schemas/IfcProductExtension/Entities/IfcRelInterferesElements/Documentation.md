@@ -12,14 +12,13 @@ The _RelatingElement_ and _RelatedElement_ define the two elements in the relati
 The _IfcConnectionGeometry_ property is used to define the interference shape, it can be part of the shape of one of the elements of the relationship (in the case of clash, overlapping and crossing interference types) or define the interface between the two shapes (in the case of along, over and under interference types).
 
 The _InterferenceType_ property optionally specifies the type of interference between the two elements, two set of default types are provided:
-**Oriented interferences types** imply usage of _ImpliedOrder_ set to TRUE and specific choice of _RelatingElement_ and _RelatedElement_ to be meaningful:
-* Crosses: the _RelatingElement_ is crossing the _RelatedElement_ (e.g. Railway crossing a road)
-* PassesThrough: the _RelatingElement_ is passing through the _RelatedElement_ (e.g. a Road passing inside a tunnel)
-* PassesOver: the _RelatingElement_ is passing over the _RelatedElement_ (e.g a bridge passing over a water canal)
-* PassesUnder: the _RelatingElement_ is passing under the _RelatedElement_ (e.g a Pipe passing under a road)
-
-**Non oriented interferences types** do not imply specific values of _ImpliedOrder_ (but can still be set to precise shape interference calculation)
-* Clash: The _RelatingElement_ and _RelatedElement_ have a spatial or shape-based clash
-* Along: The _RelatingElement_ and _RelatedElement_ have a common frontier/surface
+* **Oriented interferences types** imply usage of _ImpliedOrder_ set to TRUE and specific choice of _RelatingElement_ and _RelatedElement_ to be meaningful:
+  * Crosses: the _RelatingElement_ is crossing the _RelatedElement_ (e.g. Railway crossing a road)
+  * PassesThrough: the _RelatingElement_ is passing through the _RelatedElement_ (e.g. a Road passing inside a tunnel)
+  * PassesOver: the _RelatingElement_ is passing over the _RelatedElement_ (e.g a bridge passing over a water canal)
+  * PassesUnder: the _RelatingElement_ is passing under the _RelatedElement_ (e.g a Pipe passing under a road)
+* **Non oriented interferences types** do not imply specific values of _ImpliedOrder_ (but can still be set to precise shape interference calculation)
+  * Clash: The _RelatingElement_ and _RelatedElement_ have a spatial or shape-based clash
+  * Along: The _RelatingElement_ and _RelatedElement_ have a common frontier/surface
  
 > HISTORY&nbsp; New entity in IFC4.
