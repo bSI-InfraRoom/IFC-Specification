@@ -1,30 +1,31 @@
 # Progress Summary
-Progress summary for IFC-Specification development upto: 6/21/2021, 11:21:08 AM
+Progress summary for IFC-Specification development upto: 7/1/2021, 7:01:07 AM
 
-Total Number of Issues: 49
+Total Number of Issues: 66
 
-Total Number of Pull Requests: 33
+Total Number of Pull Requests: 44
 
 ## Summary Table
 |Indicator|Opened|Closed|Total|
  --- | --- | --- | --- |
-Issues|29|20|49|
-Pull Requests|7|26|33|
+Issues|41|25|66|
+Pull Requests|7|37|44|
 ## Issues/Pull Requests effecting EXPRESS Schema
 Current issues effecting the content of the EXPRESS schema for IFC4x3.
 
 |Indicator|Opened|Closed|Total|
  --- | --- | --- | --- |
-Issues|1|0|1|
-Pull Requests|3|1|4|
+Issues|3|1|4|
+Pull Requests|2|5|7|
 ### Open Issues
-- [#80](https://github.com/bSI-InfraRoom/IFC-Specification/issues/80) - IFC schema generation bug
+- [#28](https://github.com/bSI-InfraRoom/IFC-Specification/issues/28) - IfcSurfaceFeature needs a new rel?
+- [#92](https://github.com/bSI-InfraRoom/IFC-Specification/issues/92) - IfcSectionedSurface, IfcSectionedSolidHorizontal and IfcOpenCrossProfileDef Suggested Improvements
+- [#102](https://github.com/bSI-InfraRoom/IFC-Specification/issues/102) - CUBICSPIRAL Constant IfcAlignmentHorizontalSegmentTypeEnum
 
 
 ### Open Pull Requests
-- [#40](https://github.com/bSI-InfraRoom/IFC-Specification/pull/40) - Update IfcRelInterferesElement DocEntity & Documentation
 - [#64](https://github.com/bSI-InfraRoom/IFC-Specification/pull/64) - IfcRelAdheresToElement authoring
-- [#76](https://github.com/bSI-InfraRoom/IFC-Specification/pull/76) - Updates in alignment model
+- [#93](https://github.com/bSI-InfraRoom/IFC-Specification/pull/93) - Proposed changes Sectioned Shapes
 
 
 ## Issues/Pull Requests effecting Documentation
@@ -32,8 +33,8 @@ Current issues effecting the content of the Documentation for IFC4x3.
 
 |Indicator|Opened|Closed|Total|
  --- | --- | --- | --- |
-Issues|11|2|13|
-Pull Requests|5|8|13|
+Issues|18|4|22|
+Pull Requests|6|13|19|
 ### Open Issues
 - [#8](https://github.com/bSI-InfraRoom/IFC-Specification/issues/8) - Difference and use of IfcExternalSpatialElement & IfcSpace
 - [#29](https://github.com/bSI-InfraRoom/IFC-Specification/issues/29) - HasAdditionFeature?
@@ -45,14 +46,22 @@ Pull Requests|5|8|13|
 - [#51](https://github.com/bSI-InfraRoom/IFC-Specification/issues/51) - IfcAlignment.Axis documentation is not consistent with EXPRESS file or unit tests
 - [#58](https://github.com/bSI-InfraRoom/IFC-Specification/issues/58) - Address the '{ .extDef}' tokens
 - [#62](https://github.com/bSI-InfraRoom/IFC-Specification/issues/62) - IfcCovering Relationships & Documentation
-- [#69](https://github.com/bSI-InfraRoom/IFC-Specification/issues/69) - Markdown in IfcFixedReferenceSweptAreaSolid
+- [#74](https://github.com/bSI-InfraRoom/IFC-Specification/issues/74) - IfcCardinalPointReference addtional index value for Invert
+- [#90](https://github.com/bSI-InfraRoom/IFC-Specification/issues/90) - Typos in 4.7.2.1.8 Parabolic Transition Segment
+- [#91](https://github.com/bSI-InfraRoom/IFC-Specification/issues/91) - Missing Images IfcSectionedSurface
+- [#95](https://github.com/bSI-InfraRoom/IFC-Specification/issues/95) - confusing formula in IfcRationalBSplineCurveWithKnots
+- [#96](https://github.com/bSI-InfraRoom/IFC-Specification/issues/96) - [IFC-Tunnel] Taxonomy
+- [#106](https://github.com/bSI-InfraRoom/IFC-Specification/issues/106) - Infra Schema Documentation
+- [#108](https://github.com/bSI-InfraRoom/IFC-Specification/issues/108) - WP3-PropertyHarmonization Road Properties
+- [#109](https://github.com/bSI-InfraRoom/IFC-Specification/issues/109) - WP3-PropertyHarmonization - PortsAndWaterways properties
 
 
 ### Open Pull Requests
-- [#23](https://github.com/bSI-InfraRoom/IFC-Specification/pull/23) - Documentation Improvements from UML
 - [#40](https://github.com/bSI-InfraRoom/IFC-Specification/pull/40) - Update IfcRelInterferesElement DocEntity & Documentation
 - [#63](https://github.com/bSI-InfraRoom/IFC-Specification/pull/63) - correction of Feature Element documentation Fixes #29
-- [#68](https://github.com/bSI-InfraRoom/IFC-Specification/pull/68) - mistake with markdown styling
 - [#81](https://github.com/bSI-InfraRoom/IFC-Specification/pull/81) - Documentation restoration and adjustment
+- [#84](https://github.com/bSI-InfraRoom/IFC-Specification/pull/84) - Restore Examples revised to IFC4.3RC3
+- [#93](https://github.com/bSI-InfraRoom/IFC-Specification/pull/93) - Proposed changes Sectioned Shapes
+- [#94](https://github.com/bSI-InfraRoom/IFC-Specification/pull/94) - IfcActuator properties from Rail
 
 
