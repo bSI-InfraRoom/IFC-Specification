@@ -1,30 +1,32 @@
 # Progress Summary
-Progress summary for IFC-Specification development upto: 7/1/2021, 7:07:25 AM
+Progress summary for IFC-Specification development upto: 7/1/2021, 11:51:08 AM
 
-Total Number of Issues: 66
+Total Number of Issues: 68
 
 Total Number of Pull Requests: 44
 
 ## Summary Table
 |Indicator|Opened|Closed|Total|
  --- | --- | --- | --- |
-Issues|41|25|66|
+Issues|42|26|68|
 Pull Requests|7|37|44|
 ## Issues/Pull Requests effecting EXPRESS Schema
 Current issues effecting the content of the EXPRESS schema for IFC4x3.
 
 |Indicator|Opened|Closed|Total|
  --- | --- | --- | --- |
-Issues|4|1|5|
-Pull Requests|2|5|7|
+Issues|5|2|7|
+Pull Requests|3|5|8|
 ### Open Issues
 - [#28](https://github.com/bSI-InfraRoom/IFC-Specification/issues/28) - IfcSurfaceFeature needs a new rel?
 - [#73](https://github.com/bSI-InfraRoom/IFC-Specification/issues/73) - New profile def: IfcEllipseHollowProfileDef 
 - [#92](https://github.com/bSI-InfraRoom/IFC-Specification/issues/92) - IfcSectionedSurface, IfcSectionedSolidHorizontal and IfcOpenCrossProfileDef Suggested Improvements
 - [#102](https://github.com/bSI-InfraRoom/IFC-Specification/issues/102) - CUBICSPIRAL Constant IfcAlignmentHorizontalSegmentTypeEnum
+- [#111](https://github.com/bSI-InfraRoom/IFC-Specification/issues/111) - Intereference of spatial structure elements
 
 
 ### Open Pull Requests
+- [#40](https://github.com/bSI-InfraRoom/IFC-Specification/pull/40) - Update IfcRelInterferesElement DocEntity & Documentation
 - [#64](https://github.com/bSI-InfraRoom/IFC-Specification/pull/64) - IfcRelAdheresToElement authoring
 - [#93](https://github.com/bSI-InfraRoom/IFC-Specification/pull/93) - Proposed changes Sectioned Shapes
 
@@ -34,14 +36,13 @@ Current issues effecting the content of the Documentation for IFC4x3.
 
 |Indicator|Opened|Closed|Total|
  --- | --- | --- | --- |
-Issues|19|4|23|
+Issues|19|5|24|
 Pull Requests|6|13|19|
 ### Open Issues
 - [#8](https://github.com/bSI-InfraRoom/IFC-Specification/issues/8) - Difference and use of IfcExternalSpatialElement & IfcSpace
 - [#29](https://github.com/bSI-InfraRoom/IFC-Specification/issues/29) - HasAdditionFeature?
 - [#31](https://github.com/bSI-InfraRoom/IFC-Specification/issues/31) - Branch concept_template review
 - [#32](https://github.com/bSI-InfraRoom/IFC-Specification/issues/32) - ThirdOrderPolynomial - ConstantTerm
-- [#39](https://github.com/bSI-InfraRoom/IFC-Specification/issues/39) - IfcRelInterferesElements new usage in IFC Infra project
 - [#44](https://github.com/bSI-InfraRoom/IFC-Specification/issues/44) - Inconsistent usage of attribute types 
 - [#49](https://github.com/bSI-InfraRoom/IFC-Specification/issues/49) - Shouldn't be IfcAxis2PlacementLinear.Axis taken from the curve tangent instead of IfcAxis2PlacementLinear.RefDirection?
 - [#51](https://github.com/bSI-InfraRoom/IFC-Specification/issues/51) - IfcAlignment.Axis documentation is not consistent with EXPRESS file or unit tests
@@ -56,6 +57,7 @@ Pull Requests|6|13|19|
 - [#106](https://github.com/bSI-InfraRoom/IFC-Specification/issues/106) - Infra Schema Documentation
 - [#108](https://github.com/bSI-InfraRoom/IFC-Specification/issues/108) - WP3-PropertyHarmonization Road Properties
 - [#109](https://github.com/bSI-InfraRoom/IFC-Specification/issues/109) - WP3-PropertyHarmonization - PortsAndWaterways properties
+- [#111](https://github.com/bSI-InfraRoom/IFC-Specification/issues/111) - Intereference of spatial structure elements
 
 
 ### Open Pull Requests
