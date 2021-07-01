@@ -1,5 +1,5 @@
 # Progress Summary
-Progress summary for IFC-Specification development upto: 7/1/2021, 7:01:07 AM
+Progress summary for IFC-Specification development upto: 7/1/2021, 7:07:25 AM
 
 Total Number of Issues: 66
 
@@ -15,10 +15,11 @@ Current issues effecting the content of the EXPRESS schema for IFC4x3.
 
 |Indicator|Opened|Closed|Total|
  --- | --- | --- | --- |
-Issues|3|1|4|
+Issues|4|1|5|
 Pull Requests|2|5|7|
 ### Open Issues
 - [#28](https://github.com/bSI-InfraRoom/IFC-Specification/issues/28) - IfcSurfaceFeature needs a new rel?
+- [#73](https://github.com/bSI-InfraRoom/IFC-Specification/issues/73) - New profile def: IfcEllipseHollowProfileDef 
 - [#92](https://github.com/bSI-InfraRoom/IFC-Specification/issues/92) - IfcSectionedSurface, IfcSectionedSolidHorizontal and IfcOpenCrossProfileDef Suggested Improvements
 - [#102](https://github.com/bSI-InfraRoom/IFC-Specification/issues/102) - CUBICSPIRAL Constant IfcAlignmentHorizontalSegmentTypeEnum
 
@@ -33,7 +34,7 @@ Current issues effecting the content of the Documentation for IFC4x3.
 
 |Indicator|Opened|Closed|Total|
  --- | --- | --- | --- |
-Issues|18|4|22|
+Issues|19|4|23|
 Pull Requests|6|13|19|
 ### Open Issues
 - [#8](https://github.com/bSI-InfraRoom/IFC-Specification/issues/8) - Difference and use of IfcExternalSpatialElement & IfcSpace
@@ -46,6 +47,7 @@ Pull Requests|6|13|19|
 - [#51](https://github.com/bSI-InfraRoom/IFC-Specification/issues/51) - IfcAlignment.Axis documentation is not consistent with EXPRESS file or unit tests
 - [#58](https://github.com/bSI-InfraRoom/IFC-Specification/issues/58) - Address the '{ .extDef}' tokens
 - [#62](https://github.com/bSI-InfraRoom/IFC-Specification/issues/62) - IfcCovering Relationships & Documentation
+- [#73](https://github.com/bSI-InfraRoom/IFC-Specification/issues/73) - New profile def: IfcEllipseHollowProfileDef 
 - [#74](https://github.com/bSI-InfraRoom/IFC-Specification/issues/74) - IfcCardinalPointReference addtional index value for Invert
 - [#90](https://github.com/bSI-InfraRoom/IFC-Specification/issues/90) - Typos in 4.7.2.1.8 Parabolic Transition Segment
 - [#91](https://github.com/bSI-InfraRoom/IFC-Specification/issues/91) - Missing Images IfcSectionedSurface
