@@ -18,17 +18,22 @@ Current issues effecting the content of the EXPRESS schema for IFC4x3.
 Issues|5|2|7|
 Pull Requests|3|5|8|
 ### Open Issues
-- [#28](https://github.com/bSI-InfraRoom/IFC-Specification/issues/28) - IfcSurfaceFeature needs a new rel?
+- [#28](https://github.com/bSI-InfraRoom/IFC-Specification/issues/28) - IfcSurfaceFeature needs a new rel?  
+*In Progress* - See PR[#64](https://github.com/bSI-InfraRoom/IFC-Specification/pull/64) - IfcRelAdheresToElement authoring
 - [#73](https://github.com/bSI-InfraRoom/IFC-Specification/issues/73) - New profile def: IfcEllipseHollowProfileDef 
-- [#92](https://github.com/bSI-InfraRoom/IFC-Specification/issues/92) - IfcSectionedSurface, IfcSectionedSolidHorizontal and IfcOpenCrossProfileDef Suggested Improvements
+- [#92](https://github.com/bSI-InfraRoom/IFC-Specification/issues/92) - IfcSectionedSurface, IfcSectionedSolidHorizontal and IfcOpenCrossProfileDef Suggested Improvements  
+*In Progress* - See PR[#93](https://github.com/bSI-InfraRoom/IFC-Specification/pull/93) - Proposed changes Sectioned Shapes
 - [#102](https://github.com/bSI-InfraRoom/IFC-Specification/issues/102) - CUBICSPIRAL Constant IfcAlignmentHorizontalSegmentTypeEnum
-- [#111](https://github.com/bSI-InfraRoom/IFC-Specification/issues/111) - Intereference of spatial structure elements
-
+- [#111](https://github.com/bSI-InfraRoom/IFC-Specification/issues/111) - Intereference of spatial structure elements  
+*In Progress* - See PR[#40](https://github.com/bSI-InfraRoom/IFC-Specification/pull/40) - Update IfcRelInterferesElement DocEntity & Documentation
 
 ### Open Pull Requests
 - [#40](https://github.com/bSI-InfraRoom/IFC-Specification/pull/40) - Update IfcRelInterferesElement DocEntity & Documentation
 - [#64](https://github.com/bSI-InfraRoom/IFC-Specification/pull/64) - IfcRelAdheresToElement authoring
 - [#93](https://github.com/bSI-InfraRoom/IFC-Specification/pull/93) - Proposed changes Sectioned Shapes
+
+### Comments
+As of the time of this summary only 2 major outstanding issues effect the state of the EXPRESS schema, namely the new relationship `IfcRelAdheresToElement` PR[#64](https://github.com/bSI-InfraRoom/IFC-Specification/pull/64) which is awaiting the last approval, and spatial structure updates which is partly resolved by PR[#40](https://github.com/bSI-InfraRoom/IFC-Specification/pull/40) but is still considered under warning for changes.
 
 
 ## Issues/Pull Requests effecting Documentation
