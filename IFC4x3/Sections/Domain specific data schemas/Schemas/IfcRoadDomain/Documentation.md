@@ -1,4 +1,4 @@
-The _IfcRoad_ schema forms part of the Domain Layer of the IFC Model. It extends the ideas concerning infrastructure outlined in the _IfcSharedInfrastructureElements_ schema. It defines concepts specific to road infrastructure.
+The _IfcRoadDomain_ schema forms part of the Domain Layer of the IFC Model. It extends the ideas concerning infrastructure outlined in the _IfcSharedInfrastructureElements_ schema. It defines concepts specific to road infrastructure.
 
 The in scope road types and related spaces have been identified as the most common and widespread ones across the world: 
 
