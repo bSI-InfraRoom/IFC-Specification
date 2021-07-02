@@ -11,9 +11,9 @@ The in scope road types and related spaces have been identified as the most comm
 
 In-scope junction types:
 - Interchange:
-  - overpass;
-  - underpass;
-  - ramp.
+  - overpass
+  - underpass
+  - ramp
 - Intersection:
   - Intersecting roads (3, 4, …, 7 way);
   - roundabout or traffic circle;
