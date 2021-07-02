@@ -16,7 +16,7 @@ NOTE  The PredefinedType shall only be used, if no _IfcLiquidTerminalType_  is a
 		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="12ca36ff-8017-4a30-8fb7-9dc49ced0c76">
 			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcLiquidTerminalType_.</Documentation>
 			<Expression>(SIZEOF(IsTypedBy) = 0) OR
-(&apos;IFCPORTSANDWATERWAYS.IFCLIQUIDTERMINALTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+(&apos;IFCPORTSANDWATERWAYSDOMAIN.IFCLIQUIDTERMINALTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
