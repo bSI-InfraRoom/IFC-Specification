@@ -28,7 +28,7 @@ In-scope road components, elements and equipment:
 - Road paving components
 - Utilities
   - Lighting, telecom and power
-  - Storm-, surface- water and drainage systems
+  - Storm-water, surface-water and drainage systems
   - Other underground facilities located in the road body.
 - paved surfaces of:
   - parking lots;
