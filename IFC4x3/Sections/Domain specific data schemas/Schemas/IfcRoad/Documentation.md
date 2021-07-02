@@ -15,10 +15,10 @@ In-scope junction types:
   - underpass
   - ramp
 - Intersection:
-  - Intersecting roads (3, 4, …, 7 way);
-  - roundabout or traffic circle;
-  - pedestrian crossing;
-  - bicycle crossing.
+  - Intersecting roads (3, 4, …, 7 way)
+  - roundabout or traffic circle
+  - pedestrian crossing
+  - bicycle crossing
 
 In-scope road components, elements and equipment:
 
