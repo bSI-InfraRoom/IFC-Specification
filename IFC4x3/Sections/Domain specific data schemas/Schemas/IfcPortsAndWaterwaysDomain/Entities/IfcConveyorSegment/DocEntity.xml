@@ -16,7 +16,7 @@ NOTE  The PredefinedType shall only be used, if no _IfcConveyorSegmentType_  is 
 		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="9973144e-519c-4dda-a03f-2293acdda8fd">
 			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcConveyorSegmentType_.</Documentation>
 			<Expression>(SIZEOF(IsTypedBy) = 0) OR
-(&apos;IFCPORTSANDWATERWAYS.IFCCONVEYORSEGMENTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+(&apos;IFCPORTSANDWATERWAYSDOMAIN.IFCCONVEYORSEGMENTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
