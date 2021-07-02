@@ -31,12 +31,12 @@ In-scope road components, elements and equipment:
   - Storm-water, surface-water and drainage systems
   - Other underground facilities located in the road body.
 - paved surfaces of:
-  - parking lots;
-  - service areas;
-  - toll plazas;
-  - parking buildings;
-  - ferry ports;
-  - airports.
+  - parking lots
+  - service areas
+  - toll plazas
+  - parking buildings
+  - ferry ports
+  - airports
 
 The following topics are out of scope:
 
