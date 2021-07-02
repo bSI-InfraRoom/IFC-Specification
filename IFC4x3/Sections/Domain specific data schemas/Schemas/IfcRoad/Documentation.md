@@ -2,12 +2,12 @@ The _IfcRoad_ schema forms part of the Domain Layer of the IFC Model. It extends
 
 The in scope road types and related spaces have been identified as the most common and widespread ones across the world: 
 
-- Controlled access highway;
-- Dual carriageway;
-- Single carriageway;
-- Street;
-- Bicycle path;
-- Footpath.
+- Controlled access highway
+- Dual carriageway
+- Single carriageway
+- Street
+- Bicycle path
+- Footpath
 
 In-scope junction types:
 - Interchange:
