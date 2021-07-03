@@ -23,6 +23,7 @@ Indexes 1...9 refer to points at the bounding box of a profile. Indexes 10...19 
 17. left in line with the shear centre
 18. right in line with the shear centre
 19. top in line with the shear centre
+20. Lowest point inside of pipe or channel profile (centre of flat bottom)
 
 Other index values are possible but outside the scope of this specification.
 
