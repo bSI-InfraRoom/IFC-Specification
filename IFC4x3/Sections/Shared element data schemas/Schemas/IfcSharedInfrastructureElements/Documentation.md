@@ -2,7 +2,7 @@ The _IfcSharedInfrastructureElements_ schema defines the shared or common elemen
 
 the scope of this includes concepts to cover the definition of:
 
-* Geology & terrain
+* Geotechnical & terrain
     * Boreholes
     * Geo models
     * Geo slices
