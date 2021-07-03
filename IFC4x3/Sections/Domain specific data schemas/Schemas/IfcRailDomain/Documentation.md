@@ -5,7 +5,7 @@ The _IfcRailDomain_ schema defines specific object concepts used in the rail dom
 Specific rail elements that are not already covered by other schemas are defined here:
 
 * different types of rails for ensuring guidance of moving for vehicles or other kinds of machineries.
-* specific elements used in the track sub-domain, e.g. sleeper, frog, derailer, etc..
+* specific elements used in the track sub-domain, e.g. sleeper, frog, derailer, etc.
 * spatial structrue types for breaking down railway projects.
 
 > HISTORY&nbsp; New schema in IFC4.3
