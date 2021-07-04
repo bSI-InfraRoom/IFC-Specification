@@ -58,7 +58,7 @@ In IFC a single alignment must have:
 
 A single alignment may have: 
 
-\* an accompanying vertical alignment, defined along the horizontal alignment in the distance along / z coordinate space  
+* an accompanying vertical alignment, defined along the horizontal alignment in the distance along / z coordinate space  
 \* a relative alignment, defined as a span within another alignment and/or at constant or variable offsets  
 \* a 3D alignment, either computed from the horizontal and vertical alignment, or extracted from geospatial data.  
   
