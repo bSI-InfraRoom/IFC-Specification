@@ -29,7 +29,7 @@ For each horizontal alignment segment with known curvature formula a generic met
 
 >NOTE:&nbsp;While it is possible to apply the generic calculation also for trivial cases like LINE or CIRCULARARC it is much more efficient to use available formulas.
 
-**Word or warning**
+**Word of warning**
 
 "Good enough" traditional designs have to be carefully checked before being included into a high precision 3D model. Intermediate corrections might be necessary. Fortunately the clothoid works very well with comparable documentation quality both in the classic geometric perspective and in the more recent kinematic perspective. Fortunately the vast majority of horizontal transition bends are designed and implemented as clothoids.
 
