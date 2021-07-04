@@ -22,7 +22,7 @@ In a later phase an increasing importance of the kinematic perspective can be ob
 
 **Generic calculation of intrinsic x, y-coordinates for a given curvature**
 
-For each horizontal alignment segment with known curvature formula a generic method to calculate segment intrinsic coordinates exists.
+For each horizontal alignment segment with a known curvature formula a generic method to calculate segment intrinsic coordinates exists.
 
 
 !["Double integration"](../../figures/ifcalignmenthorizontalsegmenttypeenum-curvature2coord.png "Figure 1 &mdash; Double integration of curvature yielding intrinsic coordinates")
