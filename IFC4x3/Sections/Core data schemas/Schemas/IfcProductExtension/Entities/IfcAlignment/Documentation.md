@@ -37,7 +37,7 @@ The sequence of steps might change from case to case and might be repeated one o
 
 Contemporary alignment design almost always implements a 2.5 dimension approach. 
 
-The resulting and documented geometry might be very precise or just good enough to meet safety thresholds. This depends on factors like priorities of the management, date of the design - existing alignments might have been more then 50 years ago - or software tools used. Working with legacy data in a high precision BIM model requires a good understanding of these factors.
+The resulting and documented geometry might be very precise or just good enough to meet safety thresholds. This depends on factors like priorities of the management, date of the design - existing alignments might have been designed more then 50 years ago - or software tools used. Working with legacy data in a high precision BIM model requires a good understanding of these factors.
 
 **Distinction between business modeling and IFC core geometry**
 
