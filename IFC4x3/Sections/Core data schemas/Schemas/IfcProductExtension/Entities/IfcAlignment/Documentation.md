@@ -26,7 +26,7 @@ In the geometric perspective the focus is on the proper placement of horizontal 
 
 1. Contemporary engineering usually establishes first a horizontal layout in a properly projected plane.
 
-2. In a second step the vertical profile (i.e. sequence of segments with constant gradients) is added.
+2. In a second step the vertical profile (i.e. sequence of segments with constant gradients  together with smoothing segments showing a variation in gradient) is added.
 
 3. In the rail domain in most cases a cant layout is added to the horizontal layout to compensate a part of the unwanted lateral acceleration.
 
