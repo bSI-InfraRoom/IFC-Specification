@@ -15,7 +15,7 @@
 		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="245a4eef-f7ac-49d2-b057-179cc7466439">
 			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcTrackElementType_.</Documentation>
 			<Expression>(SIZEOF(IsTypedBy) = 0) OR
-(&apos;IFCRAIL.IFCTRACKELEMENTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+(&apos;IFCRAILDOMAIN.IFCTRACKELEMENTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

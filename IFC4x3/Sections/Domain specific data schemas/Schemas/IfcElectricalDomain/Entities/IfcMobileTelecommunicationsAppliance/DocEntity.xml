@@ -15,7 +15,7 @@
 		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="9d9c3a8a-d7be-4f1b-857f-cb9709c60206">
 			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcMobileTelecommunicationsApplianceType_.</Documentation>
 			<Expression>(SIZEOF(IsTypedBy) = 0) OR
-(&apos;IFCRAIL.IFCMOBILETELECOMMUNICATIONSAPPLIANCETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+(&apos;IFCELECTRICALDOMAIN.IFCMOBILETELECOMMUNICATIONSAPPLIANCETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
