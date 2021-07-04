@@ -68,11 +68,11 @@ Alignments may be assigned to groups using _IfcRelAssignsToGroup_, where _IfcGro
   
 Supported representations of <span class="self-ref">IfcAlignment</span>.Axis are:  
   
-\* _IfcGradientCurve_ as a 3D horizontal and vertical alignment (represented by their alignment segments)  
-\* _IfcCompositeCurve_ as a 2D horizontal alignment (represented by its horizontal alignment segments) without a vertical alignment  
-\* _IfcOffsetCurveByDistances_ as a 2D or 3D curve defined relative to an _IfcAlignmentCurve_ or another _IfcOffsetCurveByDistances_  
-\* _IfcSegmentedReferenceCurve_ as a 3D curve defined relative to an _IfcGradientCurve_ to incorporate the application of cant 
-\* _IfcPolyline_ as a 3D alignment by a 3D polyline representation (such as coming from a survey)  
-\* _IfcPolyline_ as a 2D horizontal alignment by a 2D polyline representation (such as in very early planning phases or as a map representation)  
+* _IfcGradientCurve_ as a 3D horizontal and vertical alignment (represented by their alignment segments)  
+* _IfcCompositeCurve_ as a 2D horizontal alignment (represented by its horizontal alignment segments) without a vertical alignment  
+* _IfcOffsetCurveByDistances_ as a 2D or 3D curve defined relative to an _IfcAlignmentCurve_ or another _IfcOffsetCurveByDistances_  
+* _IfcSegmentedReferenceCurve_ as a 3D curve defined relative to an _IfcGradientCurve_ to incorporate the application of cant 
+* _IfcPolyline_ as a 3D alignment by a 3D polyline representation (such as coming from a survey)  
+* _IfcPolyline_ as a 2D horizontal alignment by a 2D polyline representation (such as in very early planning phases or as a map representation)  
   
 > NOTE&nbsp; Although _Axis_ is an _IfcCurve_ base type, only derived types _IfcGradientCurve_, _IfcSegmentedReferenceCurve_, _IfcOffsetCurveByDistances_, and _IfcPolyline_ are meant to be supported types. Derivative specifications (Model View Definitions) may expand this set to include additional curve types.
