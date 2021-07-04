@@ -35,7 +35,7 @@ In the geometric perspective the focus is on the proper placement of horizontal 
 The sequence of steps might change from case to case and might be repeated one or more times to achieve the economic objectives and fulfill regulatory safety requirements. 
 
 
-Contemporary alignment design itself implements almost always a 2.5 dimension approach. 
+Contemporary alignment design almost always implements a 2.5 dimension approach. 
 
 The resulting and documented geometry might be very precise or just good enough to meet safety thresholds. This depends on factors like priorities of the management, date of the design - existing alignments might have been more then 50 years ago - or software tools used. Working with legacy data in a high precision BIM model requires a good understanding of these factors.
 
