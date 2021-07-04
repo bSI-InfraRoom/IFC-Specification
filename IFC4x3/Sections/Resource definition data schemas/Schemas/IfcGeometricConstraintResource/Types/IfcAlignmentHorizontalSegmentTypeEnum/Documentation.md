@@ -56,4 +56,4 @@ Check the relevant regulations for the network in question. Alignment designs as
 
 **Intrinsic coordinate, intrinisc coordinate system of an alignment segment:**
 
-The origin of an intrinsic coordinate system is the start of the segment. The direction of the positive x-axis is the startdirection of the segments.
+The origin of an intrinsic coordinate system is the start of the segment. The direction of the positive x-axis is the start direction of the segments.
