@@ -15,7 +15,7 @@
 		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="925f845e-3ab4-4762-98ff-80db3d62a2b9">
 			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcElectricFlowTreatmentDeviceType_.</Documentation>
 			<Expression>(SIZEOF(IsTypedBy) = 0) OR
-(&apos;IFCRAIL.IFCELECTRICFLOWTREATMENTDEVICETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+(&apos;IFCELECTRICALDOMAIN.IFCELECTRICFLOWTREATMENTDEVICETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
