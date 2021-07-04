@@ -35,7 +35,7 @@ For each horizontal alignment segment with known curvature formula a generic met
 
 **Recommendation**
 
-Check the relevant regulations for the network in question. Alignment designs as such are very stable over the livetime of the road or track. Especially for old designs quality and precision of available documentation has to be checked very carefully. A clear understanding of limitations should be established before implementing automated data flows between high precision BIM environments and legacy documentation systems. This applies both to legacy, central databases and to legacy, individual documents. 
+Check the relevant regulations for the network in question. Alignment designs as such are very stable over the lifetime of the road or track. Especially for old designs quality and precision of available documentation has to be checked very carefully. A clear understanding of limitations should be established before implementing automated data flows between high precision BIM environments and legacy documentation systems. This applies both to legacy, central databases and to legacy, individual documents. 
 
 **Used Symbols and their meaning**
 
