@@ -32,7 +32,7 @@ In the geometric perspective the focus is on the proper placement of horizontal 
 
 4. In a final step the proposed layout is checked against a defined set of rules, formulas and thresholds to guarantee the conformance against the regulation.
 
-The sequence of the steps might change from case to case and might be repeated one or more times to achieve the economic objectives and fullfill regulatory safety requirements. 
+The sequence of steps might change from case to case and might be repeated one or more times to achieve the economic objectives and fulfill regulatory safety requirements. 
 
 
 Contemporary alignment design itself implements almost always a 2.5 dimension approach. 
