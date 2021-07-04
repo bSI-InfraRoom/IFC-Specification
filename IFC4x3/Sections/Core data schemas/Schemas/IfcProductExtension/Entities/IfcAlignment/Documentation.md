@@ -54,7 +54,7 @@ According to IFC modeling principles alignment entities are organised in two lar
   
 In IFC a single alignment must have:  
   
-\* a horizontal alignment defined in the x/y plane of the engineering coordinate system  
+* a horizontal alignment defined in the x/y plane of the engineering coordinate system  
 
 A single alignment may have: 
 
