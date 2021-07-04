@@ -31,7 +31,7 @@ For each horizontal alignment segment with known curvature formula a generic met
 
 **Word or warning**
 
-"Good enough" traditional designs have to be carefully checked before being included into a high precision 3D model. Intermediate corrections might be necessary. Fortunately the clothoid works very well with comparable documentation quality both in the classic geometric perspective and in the more recent kinematic perspective. Fortunately the huge majority of horizontal transition bends are designed and implemented as clothoids.
+"Good enough" traditional designs have to be carefully checked before being included into a high precision 3D model. Intermediate corrections might be necessary. Fortunately the clothoid works very well with comparable documentation quality both in the classic geometric perspective and in the more recent kinematic perspective. Fortunately the vast majority of horizontal transition bends are designed and implemented as clothoids.
 
 **Recommendation**
 
