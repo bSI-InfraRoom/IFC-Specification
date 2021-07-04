@@ -44,7 +44,7 @@ The resulting and documented geometry might be very precise or just good enough 
 According to IFC modeling principles alignment entities are organised in two large parts. The two parts work together, but they can also be used independently from each other
 
 1. Business aspects of alignment
-2. Representation with IFC geometry
+2. Representation with the IFC geometry resources
 
 **Business aspects of alignment:** Here the focus is a on a schema structure as close to business terminology as possible. Here it is possible to have a very detailed segment structure with many domain specific properties attached. Examples for domain specific properties are design speed or cant deficiency.
 
