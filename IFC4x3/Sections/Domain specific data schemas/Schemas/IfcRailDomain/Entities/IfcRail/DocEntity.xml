@@ -15,7 +15,7 @@
 		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="5f7d955f-b2d8-46db-91af-07093ffee281">
 			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcRailType_.</Documentation>
 			<Expression>(SIZEOF(IsTypedBy) = 0) OR
-(&apos;IFCRAIL.IFCRAILTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+(&apos;IFCRAILDOMAIN.IFCRAILTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

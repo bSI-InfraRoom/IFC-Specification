@@ -15,7 +15,7 @@
 		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="56db5051-a4e4-4274-af26-092c1caa7e9d">
 			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcDistributionBoardType_.</Documentation>
 			<Expression>(SIZEOF(IsTypedBy) = 0) OR
-(&apos;IFCRAIL.IFCDISTRIBUTIONBOARDTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+(&apos;IFCELECTRICALDOMAIN.IFCDISTRIBUTIONBOARDTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
