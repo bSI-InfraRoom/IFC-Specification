@@ -1,10 +1,63 @@
+For the purposes of IFC the English term "alignment" defines three essentially separate but closely interconnected concepts.
+
+1. defintion of a reference system for linear positioning
+2. safeguarding and optimization of the movment of vehicles - kinematic perspective
+3. geometric construction of roads, railway tracks or other linear infrastucture
+
+**Reference system for linear positioning**
+
 An alignment is used to define a reference system to position elements mainly for linear construction works, such as roads, rails, bridges, and others. The relative positioning along the alignment is defined by the linear referencing methodology.  
   
 > NOTE&nbsp; See ISO 19148 Geographic information &ndash; Linear referencing for general definitions about linear referencing.  
+
+
+**Kinematic perspective**
+
+In the kinematic perspective focus is on the safe and optimized movement of a vehicle under the constraints induced by changes in the direction of the horizontal and the vertical layout.
+
+
+**Geometric perspective**
+
+In the geometric perspective the focus is on the proper placement of horizontal and vertical segments to connect certain points along a proposed path. A huge body of knowledge has been developed over a long period of time, in many aspects predating the availability of modern computers and their software.
+
+
+
+**State of the art in contemporary engineering**
+
+1. Contemporary engineering usually establishes first a horizontal layout in a properly projected plane.
+
+2. In a second step the vertical profile (i.e. sequence of segments with constant gradients) is added.
+
+3. In the rail domain in most cases a cant layout is added to the horizontal layout to compensate a part of the unwanted lateral acceleration.
+
+4. In a final step the proposed layout is checked against a defined set rules, formulas and threshold to guarantee the conformance against the regulation.
+
+The sequence of the steps might change from case to case and might be repeated one or more times to achieve the economic objectives and fullfill regulatory safety requirements. 
+
+
+Contemporary alignment design itself implements almost always a 2.5 dimension approach. 
+
+The resulting and documented geometry might be very precise or just good enough to meet safety thresholds. This depends on factors like priorities of the management, date of the design - existing alignments might have been more then 50 years ago - or software tools used. Working with legacy data in a high precision BIM model requires a good understanding of these factors.
+
+**Distinction between business modeling and IFC core geometry**
+
+According to IFC modeling principles alignment entities are organised in two large parts. The two parts work together, but they can also be used independently from each other
+
+1. Business aspects of alignment
+2. Representation with IFC geometry
+
+**Business aspects of alignment:** Here the focus is a on a schema structure as close to business terminology as possible. Here it is possible to have a very detailed segment structure with many domain specific properties attached. Examples for domain specific properties are design speed or cant deficiency.
+
+**Representation with IFC geometry:** Here the focus is on using as much of the established IFC geometry entities as possible. A mapping between Business aspects and IFC geometry is proposed.
+
+**IFC modelling**
   
-A single alignment may have:  
+In IFC a single alignment must have:  
   
 \* a horizontal alignment defined in the x/y plane of the engineering coordinate system  
+
+A single alignment may have: 
+
 \* an accompanying vertical alignment, defined along the horizontal alignment in the distance along / z coordinate space  
 \* a relative alignment, defined as a span within another alignment and/or at constant or variable offsets  
 \* a 3D alignment, either computed from the horizontal and vertical alignment, or extracted from geospatial data.  
