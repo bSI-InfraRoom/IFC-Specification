@@ -46,7 +46,7 @@ According to IFC modeling principles alignment entities are organised in two lar
 1. Business aspects of alignment
 2. Representation with the IFC geometry resources
 
-**Business aspects of alignment:** Here the focus is a on a schema structure as close to business terminology as possible. Here it is possible to have a very detailed segment structure with many domain specific properties attached. Examples for domain specific properties are design speed or cant deficiency.
+**Business aspects of alignment:** Here the focus is a on a schema structure as close to business terminology as possible. It is possible to have a very detailed segment structure with many domain specific properties attached. Examples for domain specific properties are design speed or cant deficiency.
 
 **Representation with IFC geometry:** Here the focus is on using as much of the established IFC geometry entities as possible. A mapping between Business aspects and IFC geometry is proposed.
 
