@@ -30,7 +30,7 @@ In the geometric perspective the focus is on the proper placement of horizontal 
 
 3. In the rail domain in most cases a cant layout is added to the horizontal layout to compensate a part of the unwanted lateral acceleration.
 
-4. In a final step the proposed layout is checked against a defined set rules, formulas and threshold to guarantee the conformance against the regulation.
+4. In a final step the proposed layout is checked against a defined set of rules, formulas and thresholds to guarantee the conformance against the regulation.
 
 The sequence of the steps might change from case to case and might be repeated one or more times to achieve the economic objectives and fullfill regulatory safety requirements. 
 
