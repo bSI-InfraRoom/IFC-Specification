@@ -59,7 +59,7 @@ In IFC a single alignment must have:
 A single alignment may have: 
 
 * an accompanying vertical alignment, defined along the horizontal alignment in the distance along / z coordinate space  
-\* a relative alignment, defined as a span within another alignment and/or at constant or variable offsets  
+* a relative alignment, defined as a span within another alignment and/or at constant or variable offsets  
 \* a 3D alignment, either computed from the horizontal and vertical alignment, or extracted from geospatial data.  
   
 Alignments may be aggregated into referents (_IfcReferent_) or derivative alignments. Derivative alignments may be used to indicate dependent alignments, such as an alignment for a bridge that is relative to a parent alignment for a road, where the child _IfcAlignment_ may have _Axis_ set to _IfcOffsetCurveByDistances_ that starts and ends at a span within the extent of the original _IfcAlignment_ defined at the _Axis_ of the parent _IfcAlignment_.  
