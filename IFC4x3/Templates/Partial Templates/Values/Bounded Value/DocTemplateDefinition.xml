@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" Name="Bounded Value" UniqueId="0zPwBITXr4sQ2Uj$kn_bOo" Status="Official" Owner="System" Type="IfcPropertyBoundedValue">
+	<Rules>
+		<DocModelRuleAttribute Name="Name" Identification="PropertyName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIdentifier" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Description">
+			<Rules>
+				<DocModelRuleEntity Name="IfcText" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="UpperBoundValue" Identification="UpperValue">
+			<Rules>
+				<DocModelRuleEntity Name="IfcValue" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="LowerBoundValue" Identification="LowerValue">
+			<Rules>
+				<DocModelRuleEntity Name="IfcValue" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="SetPointValue" Identification="SetValue">
+			<Rules>
+				<DocModelRuleEntity Name="IfcValue" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

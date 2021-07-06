@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Advanced_Brep_Geometry_0xQGJDM59DAREUPBCcfqsm" Name="Advanced Brep Geometry" UniqueId="3b6904cd-5852-4d29-b39e-64b326a74db0" Type="IfcAdvancedBrep">
+	<Rules>
+		<DocModelRuleAttribute Name="Outer">
+			<Rules>
+				<DocModelRuleEntity Name="IfcClosedShell">
+					<Rules>
+						<DocModelRuleAttribute Name="CfsFaces">
+							<Rules>
+								<DocModelRuleEntity Name="IfcAdvancedFace">
+									<Rules>
+										<DocModelRuleAttribute Name="Bounds">
+											<Rules>
+												<DocModelRuleEntity Name="IfcFaceOuterBound">
+													<Rules>
+														<DocModelRuleAttribute Name="Orientation">
+															<Rules>
+																<DocModelRuleEntity Name="IfcBoolean" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Bound">
+															<Rules>
+																<DocModelRuleEntity Name="IfcEdgeLoop">
+																	<Rules>
+																		<DocModelRuleAttribute Name="EdgeList">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcOrientedEdge">
+																					<Rules>
+																						<DocModelRuleAttribute Name="EdgeElement">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcEdgeCurve">
+																									<Rules>
+																										<DocModelRuleAttribute Name="EdgeStart">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcVertexPoint" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute Name="EdgeEnd">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcVertexPoint" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute Name="EdgeGeometry">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcRationalBSplineCurveWithKnots">
+																													<Rules>
+																														<DocModelRuleAttribute Name="Degree">
+																															<Rules>
+																																<DocModelRuleEntity Name="IfcInteger" />
+																															</Rules>
+																														</DocModelRuleAttribute>
+																														<DocModelRuleAttribute Name="ControlPointsList">
+																															<Rules>
+																																<DocModelRuleEntity Name="IfcCartesianPoint" />
+																															</Rules>
+																														</DocModelRuleAttribute>
+																														<DocModelRuleAttribute Name="CurveForm">
+																															<Rules>
+																																<DocModelRuleEntity Name="IfcBSplineCurveForm" />
+																															</Rules>
+																														</DocModelRuleAttribute>
+																														<DocModelRuleAttribute Name="ClosedCurve">
+																															<Rules>
+																																<DocModelRuleEntity Name="IfcLogical" />
+																															</Rules>
+																														</DocModelRuleAttribute>
+																														<DocModelRuleAttribute Name="SelfIntersect">
+																															<Rules>
+																																<DocModelRuleEntity Name="IfcLogical" />
+																															</Rules>
+																														</DocModelRuleAttribute>
+																														<DocModelRuleAttribute Name="KnotMultiplicities">
+																															<Rules>
+																																<DocModelRuleEntity Name="IfcInteger" />
+																															</Rules>
+																														</DocModelRuleAttribute>
+																														<DocModelRuleAttribute Name="Knots">
+																															<Rules>
+																																<DocModelRuleEntity Name="IfcParameterValue" />
+																															</Rules>
+																														</DocModelRuleAttribute>
+																														<DocModelRuleAttribute Name="KnotSpec">
+																															<Rules>
+																																<DocModelRuleEntity Name="IfcKnotType" />
+																															</Rules>
+																														</DocModelRuleAttribute>
+																														<DocModelRuleAttribute Name="WeightsData">
+																															<Rules>
+																																<DocModelRuleEntity Name="IfcReal" />
+																															</Rules>
+																														</DocModelRuleAttribute>
+																													</Rules>
+																												</DocModelRuleEntity>
+																												<DocModelRuleEntity Name="IfcPolyline">
+																													<Rules>
+																														<DocModelRuleAttribute Name="Points">
+																															<Rules>
+																																<DocModelRuleEntity Name="IfcCartesianPoint" />
+																															</Rules>
+																														</DocModelRuleAttribute>
+																													</Rules>
+																												</DocModelRuleEntity>
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute Name="SameSense">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcBoolean" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																									</Rules>
+																								</DocModelRuleEntity>
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="FaceSurface">
+											<Rules>
+												<DocModelRuleEntity Name="IfcRationalBSplineSurfaceWithKnots">
+													<Rules>
+														<DocModelRuleAttribute Name="UDegree">
+															<Rules>
+																<DocModelRuleEntity Name="IfcInteger" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="VDegree">
+															<Rules>
+																<DocModelRuleEntity Name="IfcInteger" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="ControlPointsList">
+															<Rules>
+																<DocModelRuleEntity Name="IfcCartesianPoint" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="UClosed">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLogical" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="VClosed">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLogical" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="UMultiplicities">
+															<Rules>
+																<DocModelRuleEntity Name="IfcInteger" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="VMultiplicities">
+															<Rules>
+																<DocModelRuleEntity Name="IfcInteger" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="UKnots">
+															<Rules>
+																<DocModelRuleEntity Name="IfcParameterValue" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="VKnots">
+															<Rules>
+																<DocModelRuleEntity Name="IfcParameterValue" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="KnotSpec">
+															<Rules>
+																<DocModelRuleEntity Name="IfcKnotType" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="WeightsData">
+															<Rules>
+																<DocModelRuleEntity Name="IfcReal" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcCylindricalSurface">
+													<Rules>
+														<DocModelRuleAttribute Name="Position">
+															<Rules>
+																<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Radius">
+															<Rules>
+																<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcSphericalSurface" />
+												<DocModelRuleEntity Name="IfcToroidalSurface">
+													<Rules>
+														<DocModelRuleAttribute Name="Position">
+															<Rules>
+																<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="MajorRadius">
+															<Rules>
+																<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="MinorRadius">
+															<Rules>
+																<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcPlane">
+													<Rules>
+														<DocModelRuleAttribute Name="Position">
+															<Rules>
+																<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

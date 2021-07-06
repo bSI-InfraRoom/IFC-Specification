@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Alignment Cant Attributes" UniqueId="891b5b0f-21b7-4f1a-87d2-6071e8f25ad7" Type="IfcAlignmentCant">
+	<Rules>
+		<DocModelRuleAttribute Name="Segments">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAlignmentCantSegment">
+					<Rules>
+						<DocModelRuleAttribute Name="StartTag" />
+						<DocModelRuleAttribute Name="EndTag" />
+						<DocModelRuleAttribute Name="StartDistAlong">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="HorizontalLength">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="StartCantLeft">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="EndCantLeft">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="StartCantRight">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="EndCantRight">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="SmoothingLength">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="PredefinedType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcAlignmentCantSegmentTypeEnum" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

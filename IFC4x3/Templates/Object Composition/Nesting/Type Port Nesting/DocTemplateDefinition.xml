@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Type Port Nesting" UniqueId="17jx0Wu110oBdZWZJnjVLZ" Type="IfcDistributionElementType">
+	<Rules>
+		<DocModelRuleAttribute Name="IsNestedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelNests">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedObjects">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDistributionPort">
+									<Rules>
+										<DocModelRuleAttribute Name="Name">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="FlowDirection">
+											<Rules>
+												<DocModelRuleEntity Name="IfcFlowDirectionEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="SystemType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcDistributionSystemEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="ObjectPlacement">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLocalPlacement">
+													<Rules>
+														<DocModelRuleAttribute Name="RelativePlacement">
+															<Rules>
+																<DocModelRuleEntity Name="IfcAxis2Placement3D">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Location">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcCartesianPoint" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="Axis">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcDirection" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="RefDirection">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcDirection" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="PredefinedType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcDistributionPortTypeEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

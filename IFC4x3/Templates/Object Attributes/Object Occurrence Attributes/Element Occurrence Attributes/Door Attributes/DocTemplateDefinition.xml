@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Door_Attributes_0UNQGfptnF8uioKwsOuZYj" Name="Door Attributes" UniqueId="1e5da429-cf7c-4f23-8b32-53ad98e238ad" Type="IfcDoor">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+  &lt;TemplateRules operator=&quot;or&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;OperationType[Value]=&apos;SINGLE_SWING_LEFT&apos;&quot;/&gt;
+      &lt;TemplateRules operator=&quot;and&quot;&gt;
+       	&lt;TemplateRule Parameters=&quot;OperationType[Exits]=FALSE&quot;/&gt;
+        	&lt;TemplateRule Parameters=&quot;TypeOperationType[Value]=&apos;SINGLE_SWING_LEFT&apos; &quot;/&gt;
+      &lt;/TemplateRules&gt;
+  &lt;/TemplateRules&gt;
+  &lt;TemplateRule Parameters=&quot;OverallHeight[Value]=2.13&quot;/&gt;
+  &lt;TemplateRule Parameters=&quot;OverallWidth[Value]=1.01&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="Tag">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIdentifier" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="OverallHeight" Identification="OverallHeight">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="OverallWidth" Identification="OverallWidth">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="OperationType" Identification="OperationType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcDoorTypeOperationEnum" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="UserDefinedOperationType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="IsTypedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByType">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDoorType">
+									<Rules>
+										<DocModelRuleAttribute Name="OperationType" Identification="TypeOperationType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcDoorTypeOperationEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="UserDefinedOperationType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="HasPropertySets">
+											<Rules>
+												<DocModelRuleEntity Name="IfcDoorLiningProperties">
+													<Rules>
+														<DocModelRuleAttribute Name="LiningDepth" />
+														<DocModelRuleAttribute Name="LiningThickness" />
+														<DocModelRuleAttribute Name="ThresholdDepth" />
+														<DocModelRuleAttribute Name="ThresholdThickness" />
+														<DocModelRuleAttribute Name="TransomThickness" />
+														<DocModelRuleAttribute Name="TransomOffset" />
+														<DocModelRuleAttribute Name="LiningOffset" />
+														<DocModelRuleAttribute Name="ThresholdOffset" />
+														<DocModelRuleAttribute Name="CasingThickness" />
+														<DocModelRuleAttribute Name="CasingDepth" />
+														<DocModelRuleAttribute Name="LiningToPanelOffsetX" />
+														<DocModelRuleAttribute Name="LiningToPanelOffsetY" />
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcDoorPanelProperties">
+													<Rules>
+														<DocModelRuleAttribute Name="PanelDepth">
+															<Rules>
+																<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="PanelOperation">
+															<Rules>
+																<DocModelRuleEntity Name="IfcDoorPanelOperationEnum" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="PanelWidth">
+															<Rules>
+																<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="PanelPosition">
+															<Rules>
+																<DocModelRuleEntity Name="IfcDoorPanelPositionEnum" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

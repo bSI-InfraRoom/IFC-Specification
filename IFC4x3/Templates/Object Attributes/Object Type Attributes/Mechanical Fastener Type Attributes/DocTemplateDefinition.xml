@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Mechanical Fastener Type Attributes" UniqueId="c94186fc-8bf7-4539-ae81-3d4404bdf1e3" Type="IfcMechanicalFastenerType">
+	<Rules>
+		<DocModelRuleAttribute Name="NominalDiameter">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="NominalLength">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

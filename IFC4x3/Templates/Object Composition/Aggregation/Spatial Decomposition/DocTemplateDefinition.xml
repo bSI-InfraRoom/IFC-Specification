@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Spatial_Decomposition_1cVuH3xCvAZQOan_h15FW" Name="Spatial Decomposition" UniqueId="1cVuH3xCvAZQO$an_h15FW" Type="IfcObjectDefinition">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;RelatedObjects[Size]=4 AND RelatedObjects[Type]=&apos;IfcBuildingStorey&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;SpatialElementName[Value]=&apos;UG&apos; OR SpatialElementName[Value]=&apos;EG&apos; OR SpatialElementName[Value]=&apos;OG1&apos; OR SpatialElementName[Value]=&apos;DG&apos;&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="IsDecomposedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAggregates">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedObjects" Identification="RelatedObjects">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSpatialElement">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="SpatialElementName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

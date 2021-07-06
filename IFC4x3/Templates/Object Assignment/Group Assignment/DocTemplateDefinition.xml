@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Group_Assignment_3rPvPL9D4sQnHatm9h2M3" Name="Group Assignment" UniqueId="3rPvP$L9D4sQnHatm9h2M3" Type="IfcGroup">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+    &lt;!-- Check existence of Group members --&gt;
+    &lt;TemplateRule Parameters=&quot;IsGrouped[Size]&gt;0 AND RelatedObjects[Size]&gt;0&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="IsGroupedBy" Identification="IsGrouped">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAssignsToGroup">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedObjects" Identification="RelatedObjects">
+							<Rules>
+								<DocModelRuleEntity Name="IfcProduct" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -9,6 +9,9 @@
 		<DocAttribute Name="PredefinedType" UniqueId="324c2136-9ea8-40b8-b332-c28ff31d3c3a" DefinedType="IfcSurfaceFeatureTypeEnum" AttributeFlags="1">
 			<Documentation>Indicates the kind of surface feature.</Documentation>
 		</DocAttribute>
+		<DocAttribute Name="AdheresToElement" UniqueId="290dfdce-d513-4a4a-844d-792db7e07217" DefinedType="IfcRelAdheresToElement" Inverse="RelatedSurfaceFeature">
+			<Documentation>Reference to the _IfcRelAdheresToElement_ relationship that uses this _IfcSurfaceFeature_ to ahere or treat the surface of the _IfcRelAdheresToElement_.RelatingElement.</Documentation>
+		</DocAttribute>
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="HasObjectType" UniqueId="9fc901e4-66a5-4035-a4d8-ad9a61dd8d19">

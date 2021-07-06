@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Element_Filling_06PqYJUYn9Euwrw5e5XmUp" Name="Element Filling" UniqueId="06PqYJUYn9Euwrw5e5XmUp" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="FillsVoids">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelFillsElement">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingOpeningElement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcOpeningElement">
+									<Rules>
+										<DocModelRuleAttribute Name="VoidsElements">
+											<Rules>
+												<DocModelRuleEntity Name="IfcRelVoidsElement">
+													<Rules>
+														<DocModelRuleAttribute Name="RelatingElement" Identification="Type">
+															<Rules>
+																<DocModelRuleEntity Name="IfcElement" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

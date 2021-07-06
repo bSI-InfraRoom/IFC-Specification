@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Type Body Tessellated Geometry" UniqueId="1gta$73PTDnBmgJWHRIkaf" Type="IfcElementType">
+	<Rules>
+		<DocModelRuleAttribute Name="RepresentationMaps">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRepresentationMap">
+					<Rules>
+						<DocModelRuleAttribute Name="MappedRepresentation">
+							<Rules>
+								<DocModelRuleEntity Name="IfcShapeRepresentation">
+									<Rules>
+										<DocModelRuleAttribute Name="ContextOfItems">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGeometricRepresentationContext" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationIdentifier">
+											<Rules>
+												<DocModelRuleEntity id="IfcLabel_1QLcozSgFZXMESLZ45evxp" Name="IfcLabel" UniqueId="5a566cbd-72a3-e385-639c-563105a39ef3">
+													<Rules>
+														<DocModelRuleConstraint Description="Value=&apos;Surface&apos;">
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_1QLcozSgFZXMESLZ45evxp" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Literal="&apos;Surface&apos;" />
+															</Expression>
+														</DocModelRuleConstraint>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationType">
+											<Rules>
+												<DocModelRuleEntity id="IfcLabel_3NZIkccZAAsPR_JAq8gZBv" Name="IfcLabel" UniqueId="d78d2ba6-9a32-8ad9-96fe-4cad08aa32f9">
+													<Rules>
+														<DocModelRuleConstraint Description="Value=&apos;Tessellation&apos;">
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_3NZIkccZAAsPR_JAq8gZBv" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Literal="&apos;Tessellation&apos;" />
+															</Expression>
+														</DocModelRuleConstraint>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Items" Identification="Geometry">
+											<Rules>
+												<DocModelRuleEntity Name="IfcTriangulatedFaceSet">
+													<Rules>
+														<DocModelRuleAttribute Name="Coordinates">
+															<Rules>
+																<DocModelRuleEntity Name="IfcCartesianPointList3D">
+																	<Rules>
+																		<DocModelRuleAttribute Name="CoordList">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcLengthMeasure" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Normals">
+															<Rules>
+																<DocModelRuleEntity Name="IfcParameterValue" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="HasColours">
+															<Rules>
+																<DocModelRuleEntity Name="IfcIndexedColourMap">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Colours">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcColourRgbList">
+																					<Rules>
+																						<DocModelRuleAttribute Name="ColourList">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="HasTextures">
+															<Rules>
+																<DocModelRuleEntity Name="IfcIndexedTriangleTextureMap">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Maps">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcImageTexture">
+																					<References>
+																						<DocTemplateDefinition xsi:nil="true" href="Image_Texture_0PLqwkKhv3vv4aUQb558RB" />
+																					</References>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="StyledByItem">
+															<Rules>
+																<DocModelRuleEntity Name="IfcStyledItem">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Styles">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcSurfaceStyle">
+																					<References>
+																						<DocTemplateDefinition xsi:nil="true" href="Surface_Color_Style_3gHpLYmULDnwrrpIILsus" />
+																					</References>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="MappingOrigin">
+							<Rules>
+								<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+								<DocModelRuleEntity Name="IfcAxis2Placement2D" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

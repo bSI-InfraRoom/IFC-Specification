@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" Name="Spatial Composition" UniqueId="8c0fd2f7-71bb-4e6e-8fdb-0c02b352f14a" Type="IfcSpatialElement">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;RelatingObject[Type]=&apos;IfcProject&apos; AND ProjectName[Value]=&apos;Wall test project&apos; &quot;/&gt;
+	&lt;!-- &lt;TemplateRule Parameters=&quot;RelatingObject[Type]=&apos;IfcSpatialElement&apos; AND SpatialElementName[Value]=&apos;Wall test building&apos; &quot;/&gt; --&gt; 
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="Decomposes">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAggregates">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingObject" Identification="RelatingObject">
+							<Rules>
+								<DocModelRuleEntity Name="IfcProject">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="ProjectName" />
+									</Rules>
+								</DocModelRuleEntity>
+								<DocModelRuleEntity Name="IfcSpatialElement">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="SpatialElementName" />
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

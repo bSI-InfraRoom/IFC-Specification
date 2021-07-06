@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Project_Units_1CogmCYFXC7P7z8XJGvHF4" Name="Project Units" UniqueId="1CogmCYFXC7P7z8XJGvHF4" Type="IfcContext">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;!-- Check existence of HasUnits reference and existence of different SI, Derived and Conversion-based units --&gt;
+	&lt;TemplateRule Parameters=&quot;HasUnits[Exists]=TRUE&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;SIUnitType[Value]=&apos;LENGTHUNIT&apos; AND SIUnitName[Value]=&apos;SQUARE_METRE&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;ConversionUnitType[Value]=&apos;PLANEANGLEUNIT&apos; AND ConversionUnitName[Value]=&apos;degree&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;DerivedUnitType[Value]=&apos;MASSDENSITYUNIT&apos;&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="UnitsInContext" Identification="HasUnits">
+			<Rules>
+				<DocModelRuleEntity Name="IfcUnitAssignment">
+					<Rules>
+						<DocModelRuleAttribute Name="Units">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDerivedUnit">
+									<Rules>
+										<DocModelRuleAttribute Name="UnitType" Identification="DerivedUnitType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcDerivedUnitEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Elements">
+											<Rules>
+												<DocModelRuleEntity Name="IfcDerivedUnitElement">
+													<Rules>
+														<DocModelRuleAttribute Name="Unit">
+															<Rules>
+																<DocModelRuleEntity Name="IfcNamedUnit" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="UserDefinedType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+								<DocModelRuleEntity Name="IfcMonetaryUnit">
+									<Rules>
+										<DocModelRuleAttribute Name="Currency">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+								<DocModelRuleEntity Name="IfcSIUnit">
+									<Rules>
+										<DocModelRuleAttribute Name="UnitType" Identification="SIUnitType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcUnitEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Prefix">
+											<Rules>
+												<DocModelRuleEntity Name="IfcSIPrefix" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Name" Identification="SIUnitName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcSIUnitName" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+								<DocModelRuleEntity Name="IfcConversionBasedUnit">
+									<Rules>
+										<DocModelRuleAttribute Name="Dimensions">
+											<Rules>
+												<DocModelRuleEntity Name="IfcDimensionalExponents" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="UnitType" Identification="ConversionUnitType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcUnitEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Name" Identification="ConversionUnitName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="ConversionFactor">
+											<Rules>
+												<DocModelRuleEntity Name="IfcMeasureWithUnit" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+								<DocModelRuleEntity Name="IfcConversionBasedUnitWithOffset">
+									<Rules>
+										<DocModelRuleAttribute Name="Dimensions">
+											<Rules>
+												<DocModelRuleEntity Name="IfcDimensionalExponents" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="UnitType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcUnitEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Name">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="ConversionFactor">
+											<Rules>
+												<DocModelRuleEntity Name="IfcMeasureWithUnit" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="ConversionOffset">
+											<Rules>
+												<DocModelRuleEntity Name="IfcReal" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Phase">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ObjectType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="LongName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

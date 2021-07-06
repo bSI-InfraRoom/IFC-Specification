@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Port_Nesting_2w9EtqE92s8JFNQ8EuKWA" Name="Port Nesting" UniqueId="2w$9EtqE92s8JFNQ8EuKWA" Type="IfcDistributionElement">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+    &lt;!-- Check assignement to port name and enum types →
+    &lt;TemplateRule Parameters=&quot;PortName[Value]=&apos;P1&apos;&quot;/&gt;
+    &lt;TemplateRule Parameters=&quot;Flow[Value]=&apos;SINK&apos; OR Flow[Value]=&apos;SOURCE&apos;&quot;/&gt;
+    &lt;TemplateRule Parameters=&quot;SystemType[Value]=&apos;ELECTRICAL&apos; OR SystemType[Value]=&apos;WATERSUPPLY&apos; OR SystemType[Value]=&apos;WASTEWATER&apos;&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+		<DocModelRuleAttribute Name="IsNestedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelNests">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedObjects">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDistributionPort">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="PortName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="FlowDirection" Identification="Flow">
+											<Rules>
+												<DocModelRuleEntity Name="IfcFlowDirectionEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="SystemType" Identification="SystemType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcDistributionSystemEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="ObjectPlacement">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLocalPlacement">
+													<Rules>
+														<DocModelRuleAttribute Name="RelativePlacement">
+															<Rules>
+																<DocModelRuleEntity Name="IfcAxis2Placement3D">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Location">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcCartesianPoint" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="Axis">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcDirection" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="RefDirection">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcDirection" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="IsDeclaredBy" />
+										<DocModelRuleAttribute Name="PredefinedType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcDistributionPortTypeEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

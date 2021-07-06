@@ -1,0 +1,20 @@
+
+name: Issue-Management
+
+on: workflow_dispatch
+
+jobs:
+  generate-kpis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ABCon-Tech/KPI-action@v1
+      - uses: actions/upload-artifact@v2
+        with:
+          name: summary
+          path: ${{ github.workspace }}/Management/Summary.md
+      - name: Add & Commit
+        uses: EndBug/add-and-commit@v7.2.1
+        with:
+          branch: management
+          default_author: user_info

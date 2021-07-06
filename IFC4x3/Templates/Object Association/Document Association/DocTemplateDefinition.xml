@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Document_Association_1zhQwS02P4qwtdceGukyB" Name="Document Association" UniqueId="1zhQwS02P4qwtdceG$ukyB" Type="IfcObjectDefinition">
+	<Rules>
+		<DocModelRuleAttribute Name="HasAssociations">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAssociatesDocument">
+					<Rules>
+						<DocModelRuleAttribute Name="Name" Identification="Name">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RelatingDocument">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDocumentReference">
+									<Rules>
+										<DocModelRuleAttribute Name="Location">
+											<Rules>
+												<DocModelRuleEntity Name="IfcURIReference" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Identification">
+											<Rules>
+												<DocModelRuleEntity Name="IfcIdentifier" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Name">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Description">
+											<Rules>
+												<DocModelRuleEntity Name="IfcText" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

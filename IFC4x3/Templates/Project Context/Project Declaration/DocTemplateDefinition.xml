@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Project_Declaration_2h7Ypzdo5FIhQlp2ROJaMi" Name="Project Declaration" UniqueId="2h7Ypzdo5FIhQlp2ROJaMi" Type="IfcContext">
+	<Rules>
+		<DocModelRuleAttribute Name="Declares">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDeclares">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedDefinitions" Identification="Type" />
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Phase">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ObjectType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="LongName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

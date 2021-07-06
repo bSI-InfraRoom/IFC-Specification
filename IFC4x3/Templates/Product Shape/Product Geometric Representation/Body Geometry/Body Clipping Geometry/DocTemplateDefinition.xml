@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Body_Clipping_Geometry_0isyBrcmn3wfqgdNBG57u0" Name="Body Clipping Geometry" UniqueId="2cdbc2f5-9b0c-43ea-9d2a-9d72d0147e00" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="Representation">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProductDefinitionShape">
+					<Rules>
+						<DocModelRuleAttribute Name="Representations">
+							<Rules>
+								<DocModelRuleEntity Name="IfcShapeRepresentation">
+									<Rules>
+										<DocModelRuleAttribute Name="ContextOfItems">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGeometricRepresentationContext" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
+											<Rules>
+												<DocModelRuleEntity id="IfcLabel_2FqDqnaTWt9gr8LcxbBzr9" Name="IfcLabel" UniqueId="8fd0dd31-91d8-3726-ad48-566ee52fdd49">
+													<Rules>
+														<DocModelRuleConstraint Name="Value=Clipping" Description="Value=Clipping">
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_2FqDqnaTWt9gr8LcxbBzr9" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Literal="Clipping" />
+															</Expression>
+														</DocModelRuleConstraint>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Items" Identification="Items">
+											<Rules>
+												<DocModelRuleEntity Name="IfcBooleanClippingResult">
+													<Rules>
+														<DocModelRuleAttribute Name="Operator">
+															<Rules>
+																<DocModelRuleEntity Name="IfcBooleanOperator" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="FirstOperand">
+															<Rules>
+																<DocModelRuleEntity Name="IfcCsgPrimitive3D" />
+																<DocModelRuleEntity Name="IfcSolidModel" />
+																<DocModelRuleEntity Name="IfcBooleanClippingResult" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="SecondOperand">
+															<Rules>
+																<DocModelRuleEntity Name="IfcHalfSpaceSolid" />
+																<DocModelRuleEntity Name="IfcPolygonalBoundedHalfSpace">
+																	<Rules>
+																		<DocModelRuleAttribute Name="BaseSurface">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcPlane" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="AgreementFlag">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcBoolean" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="Position">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="PolygonalBoundary">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcIndexedPolyCurve" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name" />
+						<DocModelRuleAttribute Name="Description" />
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

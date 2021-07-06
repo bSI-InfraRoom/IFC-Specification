@@ -1,0 +1,30 @@
+# This is a basic workflow to help you get started with Actions
+
+name: schema-generation
+
+# Controls when the action will run. 
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  generate-schema:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run schema generation
+        run: |
+          echo 'Workspace directory is ${{ github.workspace }}'
+          echo 'Home directory is $HOME'
+          & "${{ github.workspace }}\build\IfcDocLite.exe" "${{ github.workspace }}\IFC4x3" -FE
+          dir schema
+      - name: Upload schema
+        uses: actions/upload-artifact@v2
+        with:
+          name: IFC Schema
+          path: ${{ github.workspace }}\schema

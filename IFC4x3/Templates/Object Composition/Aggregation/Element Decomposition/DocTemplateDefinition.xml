@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Element_Decomposition_2A9y5QnEfCgOpEVxkXoRpW" Name="Element Decomposition" UniqueId="8a27c15a-c4ea-4ca9-8cce-7fbba1c9bce0" Type="IfcElement">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;IsDecomposedBy[Exists]=TRUE AND RelatedObjects[Size]=2 &quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;RelatedObjects[Type]=&apos;IfcSlab&apos; OR RelatedObjects[Type]=&apos;IfcRailing&apos; &quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="IsDecomposedBy" Identification="IsDecomposedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAggregates">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedObjects" Identification="RelatedObjects">
+							<Rules>
+								<DocModelRuleEntity Name="IfcElement">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="PartName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

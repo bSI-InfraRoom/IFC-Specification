@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Faceted_Brep_Geometry_2xLQILa992CA6_mDWrzHI" Name="Faceted Brep Geometry" UniqueId="bb55a495-9092-4230-afc6-fb0360d7d452" Type="IfcFacetedBrep">
+	<Rules>
+		<DocModelRuleAttribute Name="Outer">
+			<Rules>
+				<DocModelRuleEntity Name="IfcClosedShell">
+					<Rules>
+						<DocModelRuleAttribute Name="CfsFaces">
+							<Rules>
+								<DocModelRuleEntity Name="IfcFaceSurface">
+									<Rules>
+										<DocModelRuleAttribute Name="Bounds">
+											<Rules>
+												<DocModelRuleEntity Name="IfcFaceBound">
+													<Rules>
+														<DocModelRuleAttribute Name="Bound">
+															<Rules>
+																<DocModelRuleEntity Name="IfcPolyLoop">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Polygon">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcCartesianPoint" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Orientation">
+															<Rules>
+																<DocModelRuleEntity Name="IfcBoolean" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcFaceOuterBound">
+													<Rules>
+														<DocModelRuleAttribute Name="Bound">
+															<Rules>
+																<DocModelRuleEntity Name="IfcPolyLoop">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Polygon">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcCartesianPoint" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Orientation">
+															<Rules>
+																<DocModelRuleEntity Name="IfcBoolean" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

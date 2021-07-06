@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Element Covering" UniqueId="f7fd8140-4cff-4245-925b-057398e2b4f5" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="HasCoverings">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelCoversBldgElements">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedCoverings">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCovering" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

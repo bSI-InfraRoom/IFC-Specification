@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Project_Template_Definitions_3MxTphmG92Hux09EVKnTgR" Name="Project Template Definitions" UniqueId="d6eddceb-c102-4247-8ec0-24e7d4c5da9b" Type="IfcContext">
+	<Rules>
+		<DocModelRuleAttribute Name="Declares">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDeclares">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedDefinitions" Identification="Type">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPropertySetTemplate">
+									<Rules>
+										<DocModelRuleAttribute Name="TemplateType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPropertySetTemplateTypeEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="ApplicableEntity">
+											<Rules>
+												<DocModelRuleEntity Name="IfcIdentifier" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="HasPropertyTemplates">
+											<Rules>
+												<DocModelRuleEntity Name="IfcSimplePropertyTemplate">
+													<Rules>
+														<DocModelRuleAttribute Name="TemplateType">
+															<Rules>
+																<DocModelRuleEntity Name="IfcSimplePropertyTemplateTypeEnum" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="PrimaryMeasureType">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="SecondaryMeasureType">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Enumerators">
+															<Rules>
+																<DocModelRuleEntity Name="IfcPropertyEnumeration">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Name">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcLabel" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="EnumerationValues">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcValue" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="AccessState">
+															<Rules>
+																<DocModelRuleEntity Name="IfcStateEnum" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="PrimaryUnit">
+															<Rules>
+																<DocModelRuleEntity Name="IfcUnit" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="SecondaryUnit">
+															<Rules>
+																<DocModelRuleEntity Name="IfcUnit" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Expression">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Phase">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ObjectType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="LongName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

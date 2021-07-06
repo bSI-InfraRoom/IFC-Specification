@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Element_Interference_0UOOBy7qT4qvju5rLb0FE6" Name="Element Interference" UniqueId="1e6182fc-1f47-44d3-9b78-17556500f386" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="IsInterferedByElements">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelInterferesElements">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingElement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcElement" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="InterferenceGeometry">
+							<Rules>
+								<DocModelRuleEntity Name="IfcConnectionVolumeGeometry">
+									<Rules>
+										<DocModelRuleAttribute Name="VolumeOnRelatingElement">
+											<Rules>
+												<DocModelRuleEntity Name="IfcSolidModel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="InterferenceType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcIdentifier" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Product_Relative_Positioning_1jo2X5iK969AcbDz7acLTX" Name="Product Relative Positioning" UniqueId="6dc82845-b142-4624-a9a5-37d1e4995761" Type="IfcProduct">
+	<Rules>
+		<DocModelRuleAttribute Name="PositionedRelativeTo">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelPositions">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingPositioningElement" Identification="PositioningElement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPositioningElement" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

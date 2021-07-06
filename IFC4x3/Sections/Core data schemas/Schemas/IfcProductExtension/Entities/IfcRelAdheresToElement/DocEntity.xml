@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRelAdheresToElement" UniqueId="a896c393-5b7b-4fd7-b7b8-7866beec25ce" BaseDefinition="IfcRelDecomposes" EntityFlags="32">
+	<Localization>
+		<DocLocalization Locale="en" Name="Rel Adheres To Element">
+			<Documentation></Documentation>
+		</DocLocalization>
+	</Localization>
+	<Attributes>
+		<DocAttribute Name="RelatingElement" UniqueId="e5274ffd-853b-4c94-a802-37051c7af75c" DefinedType="IfcElement" XsdFormat="hidden">
+			<Documentation>Element to which the _IfcSurfaceFeature_ is adhered to.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="RelatedSurfaceFeatures" UniqueId="e92e5434-81b9-4a2a-83d7-0504609ceb49" DefinedType="IfcSurfaceFeature" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>The _IfcSurfaceFeature_(s) that adheres to the surface of the parent element.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

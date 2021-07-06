@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Grid_Attributes_2SUqSDbuf0_gTtH9j0M8W0" Name="Grid Attributes" UniqueId="9c7b470d-978a-40fa-a777-449b40588800" Type="IfcGrid">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;UAxes[Size]=5 &quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;VAxes[Size]=5 &quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;WAxes[Size]=5 &quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="PredefinedType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcGridTypeEnum" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="UAxes" Identification="UAxes">
+			<Rules>
+				<DocModelRuleEntity Name="IfcGridAxis">
+					<Rules>
+						<DocModelRuleAttribute Name="AxisTag">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="AxisCurve">
+							<Rules>
+								<DocModelRuleEntity Name="IfcIndexedPolyCurve" />
+								<DocModelRuleEntity Name="IfcCircle" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="SameSense">
+							<Rules>
+								<DocModelRuleEntity Name="IfcBoolean" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="VAxes" Identification="VAxes">
+			<Rules>
+				<DocModelRuleEntity Name="IfcGridAxis">
+					<Rules>
+						<DocModelRuleAttribute Name="AxisTag">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="AxisCurve">
+							<Rules>
+								<DocModelRuleEntity Name="IfcIndexedPolyCurve" />
+								<DocModelRuleEntity Name="IfcCircle" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="SameSense">
+							<Rules>
+								<DocModelRuleEntity Name="IfcBoolean" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="WAxes" Identification="WAxes">
+			<Rules>
+				<DocModelRuleEntity Name="IfcGridAxis" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

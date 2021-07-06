@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Window_Attributes_3u3TY5b1EAe5Nj0iIslY" Name="Window Attributes" UniqueId="f80dd8bf-fc59-4138-aa05-5ed02c4b6be2" Type="IfcWindow">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+  &lt;TemplateRules operator=&quot;or&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;PartitioningType[Value]=&apos;DOUBLE_PANEL_VERTICAL&apos;&quot;/&gt;
+      &lt;TemplateRules operator=&quot;and&quot;&gt;
+       	&lt;TemplateRule Parameters=&quot;PartitioningType[Exits]=FALSE&quot;/&gt;
+        	&lt;TemplateRule Parameters=&quot;TypePartitioningType[Value]=&apos;DOUBLE_PANEL_VERTICAL&apos; &quot;/&gt;
+      &lt;/TemplateRules&gt;
+  &lt;/TemplateRules&gt;
+  &lt;TemplateRule Parameters=&quot;OverallHeight[Value]=1.51&quot;/&gt;
+  &lt;TemplateRule Parameters=&quot;OverallWidth[Value]=0.76&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="Tag">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIdentifier" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="OverallHeight" Identification="OverallHeight">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="OverallWidth" Identification="OverallWidth">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="PartitioningType" Identification="PartitioningType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcWindowTypePartitioningEnum" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="UserDefinedPartitioningType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="IsTypedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByType">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcWindowType">
+									<Rules>
+										<DocModelRuleAttribute Name="PartitioningType" Identification="TypePartitioningType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcWindowTypePartitioningEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="UserDefinedPartitioningType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="HasPropertySets">
+											<Rules>
+												<DocModelRuleEntity Name="IfcWindowLiningProperties">
+													<Rules>
+														<DocModelRuleAttribute Name="LiningDepth" />
+														<DocModelRuleAttribute Name="LiningThickness" />
+														<DocModelRuleAttribute Name="TransomThickness" />
+														<DocModelRuleAttribute Name="MullionThickness" />
+														<DocModelRuleAttribute Name="FirstTransomOffset" />
+														<DocModelRuleAttribute Name="SecondTransomOffset" />
+														<DocModelRuleAttribute Name="FirstMullionOffset" />
+														<DocModelRuleAttribute Name="SecondMullionOffset" />
+														<DocModelRuleAttribute Name="LiningOffset" />
+														<DocModelRuleAttribute Name="LiningToPanelOffsetX" />
+														<DocModelRuleAttribute Name="LiningToPanelOffsetY" />
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcWindowPanelProperties">
+													<Rules>
+														<DocModelRuleAttribute Name="OperationType">
+															<Rules>
+																<DocModelRuleEntity Name="IfcWindowPanelOperationEnum" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="PanelPosition">
+															<Rules>
+																<DocModelRuleEntity Name="IfcWindowPanelPositionEnum" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="FrameDepth" />
+														<DocModelRuleAttribute Name="FrameThickness" />
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

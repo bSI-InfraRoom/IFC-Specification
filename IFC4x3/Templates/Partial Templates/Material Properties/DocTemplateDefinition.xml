@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Material Properties" UniqueId="f3269e50-59bd-4660-a1df-68e93c8ba30f" Type="IfcMaterialDefinition">
+	<Rules>
+		<DocModelRuleAttribute Name="HasProperties">
+			<Rules>
+				<DocModelRuleEntity Name="IfcMaterialProperties">
+					<Rules>
+						<DocModelRuleAttribute Name="Name">
+							<Rules>
+								<DocModelRuleEntity Name="IfcIdentifier" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Description">
+							<Rules>
+								<DocModelRuleEntity Name="IfcText" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Properties">
+							<Rules>
+								<DocModelRuleEntity Name="IfcProperty" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

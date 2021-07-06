@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Path_Connectivity_1G5mELXyP9BgRydr_42n5F" Name="Path Connectivity" UniqueId="1G5mELXyP9BgRydr_42n5F" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="ConnectedFrom">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelConnectsPathElements">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedElement" Identification="RelatedElement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcElement" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="ConnectionGeometry">
+							<Rules>
+								<DocModelRuleEntity Name="IfcConnectionCurveGeometry">
+									<Rules>
+										<DocModelRuleAttribute Name="CurveOnRelatingElement">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPolyline">
+													<Rules>
+														<DocModelRuleAttribute Name="Points">
+															<Rules>
+																<DocModelRuleEntity Name="IfcCartesianPoint" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="CurveOnRelatedElement">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPolyline">
+													<Rules>
+														<DocModelRuleAttribute Name="Points">
+															<Rules>
+																<DocModelRuleEntity Name="IfcCartesianPoint" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RelatingPriorities">
+							<Rules>
+								<DocModelRuleEntity Name="IfcInteger" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RelatedPriorities">
+							<Rules>
+								<DocModelRuleEntity Name="IfcInteger" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RelatedConnectionType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcConnectionTypeEnum" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RelatingConnectionType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcConnectionTypeEnum" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ConnectedTo" />
+	</Rules>
+</DocTemplateDefinition>
+

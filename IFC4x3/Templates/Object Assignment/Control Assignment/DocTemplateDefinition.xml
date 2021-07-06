@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Control_Assignment_21FdF_La56IAQ0Y8VFGrdn" Name="Control Assignment" UniqueId="21FdF_La56IAQ0Y8VFGrdn" Type="IfcControl">
+	<Rules>
+		<DocModelRuleAttribute Name="Controls">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAssignsToControl">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedObjects" Identification="Type">
+							<Rules>
+								<DocModelRuleEntity Name="IfcObject" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Material_Layer_Set_3VjREfKED6ueKO7mFdpzY6" Name="Material Layer Set" UniqueId="3VjREfKED6ueKO7mFdpzY6" Type="IfcObjectDefinition">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;MaterialName[Value]=&apos;Wandaufbau&apos; AND HasLayer[Size]=3&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;LayerName[Value]=&apos;Schicht 1&apos; AND LayerThickness[Value]=0.10 AND AND Category[Value]=&apos;Insulation&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;LayerName[Value]=&apos;Schicht 2&apos; AND LayerThickness[Value]=0.24 AND AND Category[Value]=&apos;LoadBearing&apos;&quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;LayerName[Value]=&apos;Schicht 3&apos; AND LayerThickness[Value]=0.03 AND AND Category[Value]=&apos;Covering&apos;&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="HasAssociations">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAssociatesMaterial">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingMaterial">
+							<Rules>
+								<DocModelRuleEntity Name="IfcMaterialLayerSet">
+									<Rules>
+										<DocModelRuleAttribute Name="MaterialLayers" Identification="HasLayer">
+											<Rules>
+												<DocModelRuleEntity Name="IfcMaterialLayer">
+													<Rules>
+														<DocModelRuleAttribute Name="Name" Identification="LayerName">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Description">
+															<Rules>
+																<DocModelRuleEntity Name="IfcText" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Material">
+															<Rules>
+																<DocModelRuleEntity Name="IfcMaterial">
+																	<References>
+																		<DocTemplateDefinition xsi:nil="true" href="Material_1PXhOQjvz4uAadztqSAJX" />
+																	</References>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="LayerThickness" Identification="LayerThickness">
+															<Rules>
+																<DocModelRuleEntity Name="IfcNonNegativeLengthMeasure" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="IsVentilated" Identification="AirGap">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLogical" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Category" Identification="Category">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Priority">
+															<Rules>
+																<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="LayerSetName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Description">
+											<Rules>
+												<DocModelRuleEntity Name="IfcText" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" Name="Property Sets for Objects" UniqueId="3tGbMc30vFCOIj99WTjYHX" Version="1" Type="IfcObject">
+	<Rules>
+		<DocModelRuleAttribute Name="PredefinedType" Identification="PredefinedType" />
+		<DocModelRuleAttribute Name="IsDefinedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByProperties">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingPropertyDefinition">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPropertySet">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="PsetName" />
+										<DocModelRuleAttribute Name="HasProperties" Identification="Properties">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPropertySingleValue">
+													<References>
+														<DocTemplateDefinition xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcPropertyBoundedValue">
+													<References>
+														<DocTemplateDefinition xsi:nil="true" href="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" />
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcPropertyEnumeratedValue">
+													<References>
+														<DocTemplateDefinition xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcPropertyListValue">
+													<References>
+														<DocTemplateDefinition xsi:nil="true" href="List_Value_2E4BQ8aNbEEesoQhogfKj" />
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcPropertyTableValue">
+													<References>
+														<DocTemplateDefinition xsi:nil="true" href="Table_Value_0roKUmQhnB4ux7QMxo11SX" />
+													</References>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Axis_2D_Geometry_1u94Jere57Mf0qgUVrF6rb" Name="Axis 2D Geometry" UniqueId="782444e8-d681-475a-9034-a9e7f53c6d65" Type="IfcProduct">
+	<Rules>
+		<DocModelRuleAttribute Name="Representation">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProductDefinitionShape">
+					<Rules>
+						<DocModelRuleAttribute Name="Representations">
+							<Rules>
+								<DocModelRuleEntity Name="IfcShapeRepresentation">
+									<Rules>
+										<DocModelRuleAttribute Name="ContextOfItems">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGeometricRepresentationContext" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+											<Rules>
+												<DocModelRuleEntity id="IfcLabel_0rIFKB7TGBZ_dT6mbuEc1B" Name="IfcLabel" UniqueId="3548f50b-1dd4-0b8f-e9dd-1b09783a604b">
+													<Rules>
+														<DocModelRuleConstraint Name="Value=Axis" Description="Value=Axis">
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_0rIFKB7TGBZ_dT6mbuEc1B" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Literal="Axis" />
+															</Expression>
+														</DocModelRuleConstraint>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
+											<Rules>
+												<DocModelRuleEntity id="IfcLabel_0GUwSjuCuLmuybEpZCgCu3" Name="IfcLabel" UniqueId="107ba72d-e0ce-15c3-8f25-3b38cca8ce03">
+													<Rules>
+														<DocModelRuleConstraint Name="Value=Curve2D" Description="Value=Curve2D">
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_0GUwSjuCuLmuybEpZCgCu3" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Literal="Curve2D" />
+															</Expression>
+														</DocModelRuleConstraint>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Items" Identification="Items">
+											<Rules>
+												<DocModelRuleEntity Name="IfcBoundedCurve" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name" />
+						<DocModelRuleAttribute Name="Description" />
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

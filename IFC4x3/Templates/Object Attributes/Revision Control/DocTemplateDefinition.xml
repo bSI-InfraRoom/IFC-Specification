@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Revision_Control_2qGSTpFzn2jgCZhIQDpONo" Name="Revision Control" UniqueId="2qGSTpFzn2jgCZhIQDpONo" Type="IfcRoot">
+	<Rules>
+		<DocModelRuleAttribute Name="OwnerHistory">
+			<Rules>
+				<DocModelRuleEntity Name="IfcOwnerHistory">
+					<Rules>
+						<DocModelRuleAttribute Name="OwningUser">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPersonAndOrganization">
+									<Rules>
+										<DocModelRuleAttribute Name="ThePerson">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPerson">
+													<Rules>
+														<DocModelRuleAttribute Name="Identification">
+															<Rules>
+																<DocModelRuleEntity Name="IfcIdentifier" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="FamilyName">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="GivenName">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="MiddleNames">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="PrefixTitles">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="SuffixTitles">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Roles">
+															<Rules>
+																<DocModelRuleEntity Name="IfcActorRole" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Addresses">
+															<Rules>
+																<DocModelRuleEntity Name="IfcTelecomAddress">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Purpose">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcAddressTypeEnum" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="TelephoneNumbers">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcLabel" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="FacsimileNumbers">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcLabel" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="ElectronicMailAddresses">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcLabel" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="WWWHomePageURL">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcURIReference" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="MessagingIDs">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcURIReference" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="Description">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcText" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="UserDefinedPurpose">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcLabel" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="TheOrganization">
+											<Rules>
+												<DocModelRuleEntity Name="IfcOrganization">
+													<Rules>
+														<DocModelRuleAttribute Name="Identification">
+															<Rules>
+																<DocModelRuleEntity Name="IfcIdentifier" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Name">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Description">
+															<Rules>
+																<DocModelRuleEntity Name="IfcText" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Roles">
+															<Rules>
+																<DocModelRuleEntity Name="IfcActorRole" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Addresses">
+															<Rules>
+																<DocModelRuleEntity Name="IfcAddress" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Roles">
+											<Rules>
+												<DocModelRuleEntity Name="IfcActorRole">
+													<Rules>
+														<DocModelRuleAttribute Name="Role">
+															<Rules>
+																<DocModelRuleEntity Name="IfcRoleEnum" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="UserDefinedRole">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Description">
+															<Rules>
+																<DocModelRuleEntity Name="IfcText" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="OwningApplication">
+							<Rules>
+								<DocModelRuleEntity Name="IfcApplication">
+									<Rules>
+										<DocModelRuleAttribute Name="ApplicationDeveloper" />
+										<DocModelRuleAttribute Name="Version" />
+										<DocModelRuleAttribute Name="ApplicationFullName" />
+										<DocModelRuleAttribute Name="ApplicationIdentifier" />
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="State">
+							<Rules>
+								<DocModelRuleEntity Name="IfcStateEnum" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="ChangeAction">
+							<Rules>
+								<DocModelRuleEntity Name="IfcChangeActionEnum" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="CreationDate">
+							<Rules>
+								<DocModelRuleEntity Name="IfcTimeStamp" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="LastModifiedDate">
+							<Rules>
+								<DocModelRuleEntity Name="IfcTimeStamp" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="LastModifyingUser">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPersonAndOrganization" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="LastModifyingApplication">
+							<Rules>
+								<DocModelRuleEntity Name="IfcApplication">
+									<Rules>
+										<DocModelRuleAttribute Name="ApplicationDeveloper" />
+										<DocModelRuleAttribute Name="Version" />
+										<DocModelRuleAttribute Name="ApplicationFullName" />
+										<DocModelRuleAttribute Name="ApplicationIdentifier" />
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

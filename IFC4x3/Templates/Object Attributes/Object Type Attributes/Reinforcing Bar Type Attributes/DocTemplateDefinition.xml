@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Reinforcing Bar Type Attributes" UniqueId="673f859a-2a77-4a9d-9887-78d585b89b3f" Type="IfcReinforcingBarType">
+	<Rules>
+		<DocModelRuleAttribute Name="NominalDiameter">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="CrossSectionArea">
+			<Rules>
+				<DocModelRuleEntity Name="IfcAreaMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="BarLength">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="BarSurface">
+			<Rules>
+				<DocModelRuleEntity Name="IfcReinforcingBarSurfaceEnum" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="BendingShapeCode">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="BendingParameters">
+			<Rules>
+				<DocModelRuleEntity Name="IfcBendingParameterSelect" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

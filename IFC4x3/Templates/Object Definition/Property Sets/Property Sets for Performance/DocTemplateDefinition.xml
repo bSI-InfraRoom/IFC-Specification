@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Property_Sets_for_Performance_33BCLRhyT3dhWXvaRXiTqQ" Name="Property Sets for Performance" UniqueId="33BCLRhyT3dhWXvaRXiTqQ" Type="IfcPerformanceHistory">
+	<Rules>
+		<DocModelRuleAttribute Name="IsDefinedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByProperties">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingPropertyDefinition">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPropertySet">
+									<Rules>
+										<DocModelRuleAttribute Name="HasProperties">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPropertyReferenceValue">
+													<Rules>
+														<DocModelRuleAttribute Name="PropertyReference">
+															<Rules>
+																<DocModelRuleEntity Name="IfcIrregularTimeSeries">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Values">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcIrregularTimeSeriesValue">
+																					<Rules>
+																						<DocModelRuleAttribute Name="TimeStamp">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcDateTime" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute Name="ListValues">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcValue" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

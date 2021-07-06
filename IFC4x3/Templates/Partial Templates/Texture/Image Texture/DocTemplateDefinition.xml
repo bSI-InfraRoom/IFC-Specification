@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Image_Texture_0PLqwkKhv3vv4aUQb558RB" Name="Image Texture" UniqueId="0PLqwkKhv3vv4aUQb558RB" Type="IfcImageTexture">
+	<Rules>
+		<DocModelRuleAttribute Name="Mode">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIdentifier" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="TextureTransform">
+			<Rules>
+				<DocModelRuleEntity Name="IfcCartesianTransformationOperator2D">
+					<Rules>
+						<DocModelRuleAttribute Name="Axis1">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Axis2">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="LocalOrigin">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPoint">
+									<Rules>
+										<DocModelRuleAttribute Name="Coordinates">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Scale" />
+					</Rules>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcCartesianTransformationOperator2DnonUniform">
+					<Rules>
+						<DocModelRuleAttribute Name="Axis1">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Axis2">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="LocalOrigin">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPoint">
+									<Rules>
+										<DocModelRuleAttribute Name="Coordinates">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Scale" />
+						<DocModelRuleAttribute Name="Scale2" />
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Parameter">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIdentifier" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="URLReference">
+			<Rules>
+				<DocModelRuleEntity Name="IfcURIReference" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

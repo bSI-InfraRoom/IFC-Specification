@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Triangulated_Geometry_1dUzJEuuj5WRGDoUgYGMbn" Name="Triangulated Geometry" UniqueId="677bd4ce-e38b-4581-b40d-c9eaa2416971" Type="IfcTriangulatedFaceSet">
+	<Rules>
+		<DocModelRuleAttribute Name="Coordinates">
+			<Rules>
+				<DocModelRuleEntity Name="IfcCartesianPointList3D">
+					<Rules>
+						<DocModelRuleAttribute Name="CoordList">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Normals">
+			<Rules>
+				<DocModelRuleEntity Name="IfcParameterValue" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Closed">
+			<Rules>
+				<DocModelRuleEntity Name="IfcBoolean" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="CoordIndex">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveInteger" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="PnIndex">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveInteger" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="HasColours">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIndexedColourMap">
+					<Rules>
+						<DocModelRuleAttribute Name="Colours">
+							<Rules>
+								<DocModelRuleEntity Name="IfcColourRgbList">
+									<Rules>
+										<DocModelRuleAttribute Name="ColourList">
+											<Rules>
+												<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="ColourIndex">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPositiveInteger" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Opacity">
+							<Rules>
+								<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

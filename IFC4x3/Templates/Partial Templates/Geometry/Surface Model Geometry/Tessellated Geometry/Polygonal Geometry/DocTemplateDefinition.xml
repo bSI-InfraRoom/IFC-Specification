@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Polygonal_Geometry_1omBCMQqX7ZP7wRajQU1i7" Name="Polygonal Geometry" UniqueId="72c0b316-6b48-478d-91fa-6e4b5a781b07" Type="IfcPolygonalFaceSet">
+	<Rules>
+		<DocModelRuleAttribute Name="Coordinates">
+			<Rules>
+				<DocModelRuleEntity Name="IfcCartesianPointList3D">
+					<Rules>
+						<DocModelRuleAttribute Name="CoordList">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLengthMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Closed">
+			<Rules>
+				<DocModelRuleEntity Name="IfcBoolean" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Faces">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIndexedPolygonalFace">
+					<Rules>
+						<DocModelRuleAttribute Name="CoordIndex">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPositiveInteger" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcIndexedPolygonalFaceWithVoids">
+					<Rules>
+						<DocModelRuleAttribute Name="CoordIndex">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPositiveInteger" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="InnerCoordIndices">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPositiveInteger" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="PnIndex">
+			<Rules>
+				<DocModelRuleEntity Name="IfcPositiveInteger" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="HasColours">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIndexedColourMap">
+					<Rules>
+						<DocModelRuleAttribute Name="Opacity">
+							<Rules>
+								<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Colours">
+							<Rules>
+								<DocModelRuleEntity Name="IfcColourRgbList">
+									<Rules>
+										<DocModelRuleAttribute Name="ColourList">
+											<Rules>
+												<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="ColourIndex">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPositiveInteger" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

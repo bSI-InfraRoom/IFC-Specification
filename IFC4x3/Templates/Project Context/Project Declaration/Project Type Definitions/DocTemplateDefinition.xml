@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Project_Type_Definitions_1ZJYVtVjjE8hZC9V7DnsNE" Name="Project Type Definitions" UniqueId="634e27f7-7edb-4e22-b8cc-25f1cdc765ce" Type="IfcContext">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;!-- Check existence of RelatedDefinitions reference and the type of referenced elements --&gt;
+	&lt;TemplateRule Parameters=&quot;RelatedTypes[Type]=&apos;IfcBeamType&apos; AND RelatedTypes[Size]=3&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="Declares">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDeclares">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedDefinitions" Identification="RelatedTypes">
+							<Rules>
+								<DocModelRuleEntity Name="IfcTypeObject" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Phase">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ObjectType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="LongName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Process_Assignment_3eGT0hpFrD7vGpsa24POHe" Name="Process Assignment" UniqueId="3eGT0hpFrD7vGpsa24POHe" Type="IfcProcess">
+	<Rules>
+		<DocModelRuleAttribute Name="OperatesOn">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAssignsToProcess">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedObjects" Identification="Type">
+							<Rules>
+								<DocModelRuleEntity Name="IfcResource" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcConveyorSegment" UniqueId="5861065a-e519-4b96-8adc-7d4cc6c7e95e" BaseDefinition="IfcFlowSegment" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="cf423959-385f-4bf2-bbe3-355dee7ff725" DefinedType="IfcConveyorSegmentTypeEnum" AttributeFlags="1">
+			<Documentation>Identifies the predefined type of a conveyor segment. This type may associate additional specific property sets.
+NOTE  The PredefinedType shall only be used, if no _IfcConveyorSegmentType_  is assigned, providing its own _IfcConveyorSegmentType_.PredefinedType.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="f03bd76f-5919-4da4-b8dd-2dbf7fe2fd3b">
+			<Documentation>Either the _PredefinedType_ attribute is unset(e.g. because an _IfcConveyorSegmentType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcConveyorSegmentTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcConveyorSegmentTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="9973144e-519c-4dda-a03f-2293acdda8fd">
+			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcConveyorSegmentType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCPORTSANDWATERWAYSDOMAIN.IFCCONVEYORSEGMENTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

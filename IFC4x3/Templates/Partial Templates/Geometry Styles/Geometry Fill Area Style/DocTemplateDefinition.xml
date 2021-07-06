@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Geometry_Fill_Area_Style_1hQdPNcv98Bs6d7jlRUfS" Name="Geometry Fill Area Style" UniqueId="6bfda9d9-5e6e-4920-bd86-9c7b6f6dea5c" Type="IfcFillAreaStyle">
+	<Rules>
+		<DocModelRuleAttribute Name="Name">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="FillStyles">
+			<Rules>
+				<DocModelRuleEntity Name="IfcColourRgb" />
+				<DocModelRuleEntity Name="IfcFillAreaStyleHatching">
+					<Rules>
+						<DocModelRuleAttribute Name="HatchLineAppearance">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCurveStyle" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="StartOfNextHatchLine">
+							<Rules>
+								<DocModelRuleEntity Name="IfcVector" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="PointOfReferenceHatchLine">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="PatternStart">
+							<Rules>
+								<DocModelRuleEntity Name="IfcCartesianPoint" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="HatchLineAngle">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPlaneAngleMeasure" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ModelorDraughting">
+			<Rules>
+				<DocModelRuleEntity Name="IfcBoolean" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

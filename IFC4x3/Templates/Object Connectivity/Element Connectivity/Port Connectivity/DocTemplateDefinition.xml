@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Port_Connectivity_0MeHlCh55bRkmnAq5FQia" Name="Port Connectivity" UniqueId="0M$eHlCh55bRkmnAq5FQia" Type="IfcDistributionPort">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+    &lt;!-- Check assignement to Port Connectivity (To, From) --&gt;
+    &lt;TemplateRule Parameters=&quot;ConnectedToPort[Size]=1 AND ConnectedFromPort[Size]=0&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="ConnectedTo" Identification="ConnectedToPort">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelConnectsPorts">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedPort">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDistributionPort" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="RealizingElement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcFlowSegment" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ConnectedFrom" Identification="ConnectedFromPort">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelConnectsPorts">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingPort">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDistributionPort" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

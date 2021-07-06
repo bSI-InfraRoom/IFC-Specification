@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Space_Boundaries_1st_Level_1gujKKuhrA9Bc4cn5oNyVR" Name="Space Boundaries 1st Level" UniqueId="1gujKKuhrA9Bc4cn5oNyVR" Type="IfcSpace">
+	<Rules>
+		<DocModelRuleAttribute Name="BoundedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelSpaceBoundary1stLevel">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedBuildingElement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcElement" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="ConnectionGeometry">
+							<Rules>
+								<DocModelRuleEntity Name="IfcConnectionSurfaceGeometry">
+									<Rules>
+										<DocModelRuleAttribute Name="SurfaceOnRelatingElement">
+											<Rules>
+												<DocModelRuleEntity Name="IfcSurfaceOfLinearExtrusion">
+													<Rules>
+														<DocModelRuleAttribute Name="SweptCurve">
+															<Rules>
+																<DocModelRuleEntity Name="IfcArbitraryOpenProfileDef">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Curve">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcIndexedPolyCurve">
+																					<Rules>
+																						<DocModelRuleAttribute Name="Points">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcCartesianPointList2D">
+																									<Rules>
+																										<DocModelRuleAttribute Name="CoordList">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcLengthMeasure" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																									</Rules>
+																								</DocModelRuleEntity>
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute Name="Segments">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcArcIndex" />
+																								<DocModelRuleEntity Name="IfcLineIndex" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute Name="SelfIntersect">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcBoolean">
+																									<Rules>
+																										<DocModelRuleAttribute Name="RelatedOpeningElement">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcVoidingFeature" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																									</Rules>
+																								</DocModelRuleEntity>
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcCurveBoundedPlane">
+													<Rules>
+														<DocModelRuleAttribute Name="BasisSurface">
+															<Rules>
+																<DocModelRuleEntity Name="IfcPlane">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Position">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcCurveBoundedSurface">
+													<Rules>
+														<DocModelRuleAttribute Name="BasisSurface">
+															<Rules>
+																<DocModelRuleEntity Name="IfcCylindricalSurface">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Position">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Boundaries">
+															<Rules>
+																<DocModelRuleEntity Name="IfcOuterBoundaryCurve">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Segments">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcCompositeCurveSegment" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="ImplicitOuter">
+															<Rules>
+																<DocModelRuleEntity Name="IfcBoolean" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcFaceBasedSurfaceModel">
+													<Rules>
+														<DocModelRuleAttribute Name="FbsmFaces">
+															<Rules>
+																<DocModelRuleEntity Name="IfcOpenShell">
+																	<Rules>
+																		<DocModelRuleAttribute Name="CfsFaces">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcFace">
+																					<Rules>
+																						<DocModelRuleAttribute Name="Bounds">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcFaceOuterBound" />
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="SurfaceOnRelatedElement" />
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="ParentBoundary">
+							<Rules>
+								<DocModelRuleEntity Name="IfcRelSpaceBoundary1stLevel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="PhysicalOrVirtualBoundary">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPhysicalOrVirtualEnum" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="InternalOrExternalBoundary">
+							<Rules>
+								<DocModelRuleEntity Name="IfcInternalOrExternalEnum" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

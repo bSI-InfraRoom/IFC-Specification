@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Structural_Connectivity_3qzrrFRJXClfxxtxM4GDB" Name="Structural Connectivity" UniqueId="f4f75d4f-6d38-4cbe-9efb-dfb58440dfcb" Type="IfcStructuralMember">
+	<Rules>
+		<DocModelRuleAttribute Name="ConnectedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelConnectsStructuralMember">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedStructuralConnection" Identification="StructuralConnection">
+							<Rules>
+								<DocModelRuleEntity Name="IfcStructuralConnection" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

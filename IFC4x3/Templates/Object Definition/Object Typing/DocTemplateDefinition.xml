@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Object_Typing_0rek4E8Dz0zAilsiyAPqJq" Name="Object Typing" UniqueId="0rek4E8Dz0zAilsiyAPqJq" Type="IfcObject">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+ &lt;TemplateRule Parameters=&quot;RelatingType[Type]=&apos;IfcMemberType&apos; AND TypeName[Value]=&apos;RO101.6x5.0&apos;&quot;&gt;&lt;/TemplateRule&gt;
+&lt;/TemplateRules&gt;  </Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="IsTypedBy" Identification="HasType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByType">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingType" Identification="RelatingType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcTypeObject">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="TypeName" />
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="PredefinedType" />
+	</Rules>
+</DocTemplateDefinition>
+

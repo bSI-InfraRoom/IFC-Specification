@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Project_Representation_Context_3D_0Ca_B2ooD6g8kQntB2WFmc" Name="Project Representation Context 3D" UniqueId="0c93e2c2-cb23-46a8-8b9a-c772c280fc26" Type="IfcContext">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;ContextIdentifier[Value]=&apos;Model&apos; AND ContextType[Value]=&apos;Body&apos; AND SubContextIdentifier[Value]=&apos;Model&apos;&quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="RepresentationContexts">
+			<Rules>
+				<DocModelRuleEntity Name="IfcGeometricRepresentationContext">
+					<Rules>
+						<DocModelRuleAttribute Name="ContextIdentifier" Identification="ContextIdentifier">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="ContextType" Identification="ContextType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="CoordinateSpaceDimension">
+							<Rules>
+								<DocModelRuleEntity id="IfcDimensionCount_09Z7OSvwJrtfM1L9dy8Lpz" Name="IfcDimensionCount" UniqueId="098c761c-e7a4-f5de-9581-5499fc215cfd">
+									<Rules>
+										<DocModelRuleConstraint>
+											<Expression xsi:type="DocOpStatement" Operation="compareequal">
+												<Reference xsi:type="DocOpReference">
+													<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcDimensionCount_09Z7OSvwJrtfM1L9dy8Lpz" />
+												</Reference>
+												<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="3" />
+											</Expression>
+										</DocModelRuleConstraint>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="WorldCoordinateSystem">
+							<Rules>
+								<DocModelRuleEntity Name="IfcAxis2Placement3D">
+									<Rules>
+										<DocModelRuleAttribute Name="Location">
+											<Rules>
+												<DocModelRuleEntity Name="IfcCartesianPoint" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Axis">
+											<Rules>
+												<DocModelRuleEntity Name="IfcDirection" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RefDirection">
+											<Rules>
+												<DocModelRuleEntity Name="IfcDirection" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="TrueNorth">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDirection" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="HasSubContexts">
+							<Rules>
+								<DocModelRuleEntity Name="IfcGeometricRepresentationSubContext">
+									<Rules>
+										<DocModelRuleAttribute Name="TargetScale">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPositiveRatioMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="TargetView">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGeometricProjectionEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="UserDefinedTargetView">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="ContextIdentifier" Identification="SubContextIdentifier">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="ContextType" Identification="SubContextType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+								<DocModelRuleEntity Name="IfcGeometricRepresentationSubContext" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Precision" />
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Phase">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ObjectType">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="LongName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

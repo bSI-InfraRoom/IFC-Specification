@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Body_AdvancedSwept_Tapered_Geometry_1nHIAqI8v9NRg1yGfUGR7S" Name="Body AdvancedSwept Tapered Geometry" UniqueId="714522b4-488e-495d-ba81-f10a5e41b1dc" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="Representation">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProductDefinitionShape">
+					<Rules>
+						<DocModelRuleAttribute Name="Representations">
+							<Rules>
+								<DocModelRuleEntity Name="IfcShapeRepresentation">
+									<Rules>
+										<DocModelRuleAttribute Name="ContextOfItems">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGeometricRepresentationContext" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
+											<Rules>
+												<DocModelRuleEntity id="IfcLabel_0SLDjuWF81xmWRcWOuFIEL" Name="IfcLabel" UniqueId="1c54db78-80f2-01ef-081b-9a06383d2395">
+													<Rules>
+														<DocModelRuleConstraint Name="Value=AdvancedSweptSolid" Description="Value=AdvancedSweptSolid">
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_0SLDjuWF81xmWRcWOuFIEL" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Literal="AdvancedSweptSolid" />
+															</Expression>
+														</DocModelRuleConstraint>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Items" Identification="Items">
+											<Rules>
+												<DocModelRuleEntity Name="IfcExtrudedAreaSolidTapered">
+													<References>
+														<DocTemplateDefinition xsi:nil="true" href="Extruded_Area_Tapered_PolyCurve_Profile_28Pxb2BunEjvG8xK72ZTvZ" />
+														<DocTemplateDefinition xsi:nil="true" href="Extruded_Area_Tapered_Parameterized_Profile_0lOlqnh6P1JuVLJ1151WzZ" />
+													</References>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcRevolvedAreaSolidTapered">
+													<References>
+														<DocTemplateDefinition xsi:nil="true" href="Revolved_Area_Tapered_PolyCurve_Profile_0ahGXTXELFz8FfjK6Obt9I" />
+														<DocTemplateDefinition xsi:nil="true" href="Revolved_Area_Tapered_Parameterized_Profile_0Cnl3FPuL1ewvlAFX6M_pj" />
+													</References>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name" />
+						<DocModelRuleAttribute Name="Description" />
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

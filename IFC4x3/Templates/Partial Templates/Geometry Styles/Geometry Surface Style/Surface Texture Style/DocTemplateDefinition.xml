@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Surface Texture Style" UniqueId="60da4c08-d612-47f9-91f5-86b47d94649a" Type="IfcSurfaceStyle">
+	<Rules>
+		<DocModelRuleAttribute Name="Styles">
+			<Rules>
+				<DocModelRuleEntity Name="IfcSurfaceStyleWithTextures">
+					<Rules>
+						<DocModelRuleAttribute Name="Textures">
+							<Rules>
+								<DocModelRuleEntity Name="IfcImageTexture">
+									<References>
+										<DocTemplateDefinition xsi:nil="true" href="Image_Texture_0PLqwkKhv3vv4aUQb558RB" />
+									</References>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Name">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Side">
+			<Rules>
+				<DocModelRuleEntity Name="IfcSurfaceSide" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

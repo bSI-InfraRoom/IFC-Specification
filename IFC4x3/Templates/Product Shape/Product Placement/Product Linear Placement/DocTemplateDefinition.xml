@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Product_Linear_Placement_2BSSvyDSzAhvG2y638nNlp" Name="Product Linear Placement" UniqueId="8b71ce7c-35cf-4aaf-9402-f060c8c57bf3" Type="IfcProduct">
+	<Rules>
+		<DocModelRuleAttribute Name="ObjectPlacement" Identification="HasPlacement">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLinearPlacement">
+					<Rules>
+						<DocModelRuleAttribute Name="RelativePlacement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcAxis2PlacementLinear" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="PlacementRelTo">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLocalPlacement">
+									<Rules>
+										<DocModelRuleAttribute Name="PlacesObject">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLinearPositioningElement" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

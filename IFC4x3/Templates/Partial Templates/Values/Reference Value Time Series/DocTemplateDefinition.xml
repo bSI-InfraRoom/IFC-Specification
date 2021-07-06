@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Reference Value Time Series" UniqueId="3Y2y4MY9j6pB6JCRFYDsgE" Type="IfcPropertyReferenceValue">
+	<Rules>
+		<DocModelRuleAttribute Name="Name" Identification="PropertyName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIdentifier" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Description">
+			<Rules>
+				<DocModelRuleEntity Name="IfcText" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="PropertyReference" Identification="Value">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIrregularTimeSeries">
+					<Rules>
+						<DocModelRuleAttribute Name="Values">
+							<Rules>
+								<DocModelRuleEntity Name="IfcIrregularTimeSeriesValue">
+									<Rules>
+										<DocModelRuleAttribute Name="ListValues" Identification="Reference">
+											<Rules>
+												<DocModelRuleEntity Name="IfcValue" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
