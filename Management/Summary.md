@@ -1,5 +1,5 @@
 # Progress Summary
-Progress summary for IFC-Specification development upto: 7/6/2021, 8:54:25 AM
+Progress summary for IFC-Specification development upto: 7/6/2021, 9:03:07 AM
 
 Total Number of Issues: 78
 
@@ -16,7 +16,7 @@ Current issues effecting the content of the EXPRESS schema for IFC4x3.
 |Indicator|Opened|Closed|Total|
  --- | --- | --- | --- |
 Issues|5|5|10|
-Pull Requests|2|12|14|
+Pull Requests|3|12|15|
 ### Open Issues
 - [#73](https://github.com/bSI-InfraRoom/IFC-Specification/issues/73) - New profile def: IfcEllipseHollowProfileDef 
 - [#92](https://github.com/bSI-InfraRoom/IFC-Specification/issues/92) - IfcSectionedSurface, IfcSectionedSolidHorizontal and IfcOpenCrossProfileDef Suggested Improvements
@@ -28,6 +28,7 @@ Pull Requests|2|12|14|
 ### Open Pull Requests
 - [#93](https://github.com/bSI-InfraRoom/IFC-Specification/pull/93) - Proposed changes Sectioned Shapes
 - [#137](https://github.com/bSI-InfraRoom/IFC-Specification/pull/137) - ConstantTerm changed to OPTIONAL for IfcCosine
+- [#139](https://github.com/bSI-InfraRoom/IFC-Specification/pull/139) -  Update Spatial Description needed by IFC Rail
 
 
 ## Issues/Pull Requests effecting Documentation
@@ -36,7 +37,7 @@ Current issues effecting the content of the Documentation for IFC4x3.
 |Indicator|Opened|Closed|Total|
  --- | --- | --- | --- |
 Issues|15|14|29|
-Pull Requests|7|23|30|
+Pull Requests|8|23|31|
 ### Open Issues
 - [#8](https://github.com/bSI-InfraRoom/IFC-Specification/issues/8) - Difference and use of IfcExternalSpatialElement & IfcSpace
 - [#44](https://github.com/bSI-InfraRoom/IFC-Specification/issues/44) - Inconsistent usage of attribute types 
@@ -63,5 +64,6 @@ Pull Requests|7|23|30|
 - [#127](https://github.com/bSI-InfraRoom/IFC-Specification/pull/127) - Bringing back Body-Fallback
 - [#130](https://github.com/bSI-InfraRoom/IFC-Specification/pull/130) - Semantic definitions for alignment (business terminology)
 - [#135](https://github.com/bSI-InfraRoom/IFC-Specification/pull/135) - Alignment vertical image replacement
+- [#139](https://github.com/bSI-InfraRoom/IFC-Specification/pull/139) -  Update Spatial Description needed by IFC Rail
 
 
