@@ -21,7 +21,7 @@
 			<Documentation>Optional identifier that describes the nature of the interference.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="ImpliedOrder" UniqueId="57512488-73cf-44cc-995d-d5e84df6ae44" DefinedType="IfcLogical">
-			<Documentation>Logical value indicating if the _RelatingElement_ has priority over the _RelatedElement_. TRUE value imply that relation is oriented from _RelatingElement_ to _RelatedElement_ (in regards of the _InterferenceType_) and that the _InterferenceGeometry_ should be subtracted from the _RelatingElement_. FASLE value imply that relation has no orientation and that _InterferenceGeometry_ may be subtracted from the _RelatingElement_ or the _RelatedElement_.UNKNOWN value imply that no information about the orientation is provided</Documentation>
+			<Documentation>Logical value indicating if the _RelatingElement_ has priority over the _RelatedElement_. TRUE value implies that the relation is oriented from _RelatingElement_ to _RelatedElement_ (with regards to _InterferenceType_) and that the _InterferenceGeometry_ should be subtracted from the _RelatingElement_. FALSE value implies that relation has no orientation and that _InterferenceGeometry_ may be subtracted from the _RelatingElement_ or the _RelatedElement_.UNKNOWN value imply that no information about the orientation is provided</Documentation>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
