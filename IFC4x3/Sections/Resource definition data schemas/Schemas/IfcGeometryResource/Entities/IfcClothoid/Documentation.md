@@ -1,3 +1,5 @@
+A clothoid is a planar curve in the form of a spiral. This curve has the property that the curvature varies linearly with the arc length. Interpretation of the data shall be as follows:
+and the clothoid is parametrised as:
 Parametrization:
 { ext Ref }
 > NOTE&nbsp:
