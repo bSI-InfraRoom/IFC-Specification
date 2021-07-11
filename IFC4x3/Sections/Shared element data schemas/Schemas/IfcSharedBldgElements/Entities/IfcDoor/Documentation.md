@@ -5,7 +5,7 @@ The door is a built element that is predominately used to provide controlled acc
 
 The _IfcDoor_ defines a particular occurrence of a door inserted in the spatial context of a project. A door can:  
 * be inserted as a filler in an opening using the _IfcRelFillsElement_ relationship, then the _IfcDoor_ has an inverse attribute _FillsVoids_ provided;
->>NOTE&nbsp; View definitions or implementer agreements may restrict the relationship to only include one door into one opening.
+>NOTE&nbsp; View definitions or implementer agreements may restrict the relationship to only include one door into one opening.
 
 * be part of an element assembly, in general an _IfcCurtainWall_, using the _IfcRelAggregates_ relationship, then the _IfcDoor_ has an inverse attribute _Decomposes_ is provided;
 * be a "free standing" door, then the _IfcDoor_ has no inverse attributes _FillsVoids_ or _Decomposes_ provided.
