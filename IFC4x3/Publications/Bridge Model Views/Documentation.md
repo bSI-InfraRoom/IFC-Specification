@@ -24,7 +24,7 @@
       <td style="vertical-align: top;">
         <p style="text-align:left;">
           <span style="font-family:Arial, Verdana, Tahoma, sans-serif; font-size:small; ">
-            &#169; buildingSMART 1996-2020 - This document is owned and copyrighted by buildingSMART International Limited<br>
+            &#169; buildingSMART 1996-2021 - This document is owned and copyrighted by buildingSMART International Limited<br>
             By using the IFC4x3 specification you agree to the following <a href="copyright.htm" target="info"><b>copyright notice</b></a></span>
         </p>
       </td>

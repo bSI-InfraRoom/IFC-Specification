@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v3.1": {
       "IfcDocLite/1.0.0": {
         "dependencies": {
+          "BuildingSmart.IFC": "1.0.0",
           "BuildingSmart.Serialization": "1.0.0",
+          "BuildingSmart.Serialization.Step": "1.0.0",
           "BuildingSmart.Serialization.Xml": "1.0.0",
           "IfcDoc.Formats": "1.0.0",
           "IfcDoc.Schemas": "1.0.0"
@@ -17,9 +19,22 @@
           "IfcDocLite.dll": {}
         }
       },
+      "BuildingSmart.IFC/1.0.0": {
+        "runtime": {
+          "BuildingSmart.IFC.dll": {}
+        }
+      },
       "BuildingSmart.Serialization/1.0.0": {
         "runtime": {
           "BuildingSmart.Serialization.dll": {}
+        }
+      },
+      "BuildingSmart.Serialization.Step/1.0.0": {
+        "dependencies": {
+          "BuildingSmart.Serialization": "1.0.0"
+        },
+        "runtime": {
+          "BuildingSmart.Serialization.Step.dll": {}
         }
       },
       "BuildingSmart.Serialization.Xml/1.0.0": {
@@ -72,7 +87,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "BuildingSmart.IFC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "BuildingSmart.Serialization/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuildingSmart.Serialization.Step/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
