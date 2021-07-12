@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSeventhOrderPolynomialSpiral" UniqueId="9266b943-dbbd-42c5-9273-538713f83898" BaseDefinition="IfcSpiral" EntityFlags="32">
 	<Attributes>
-		<DocAttribute Name="SepticTerm" UniqueId="953eb42e-523e-4785-be00-3ae5cb7406b9" DefinedType="IfcLengthMeasure" />
-		<DocAttribute Name="SexticTerm" UniqueId="c478c338-831c-449e-a56d-bf7040e959f5" DefinedType="IfcLengthMeasure" AttributeFlags="1" />
-		<DocAttribute Name="QuinticTerm" UniqueId="4ebe63eb-a357-4df1-8468-db7e0ac58c34" DefinedType="IfcLengthMeasure" AttributeFlags="1" />
-		<DocAttribute Name="QuarticTerm" UniqueId="1989aec9-09dd-409d-a0c1-e7f5a569326a" DefinedType="IfcLengthMeasure" AttributeFlags="1" />
-		<DocAttribute Name="CubicTerm" UniqueId="0e603ffd-90b2-4ef4-bdeb-90afae8a9098" DefinedType="IfcLengthMeasure" AttributeFlags="1" />
-		<DocAttribute Name="QuadraticTerm" UniqueId="e421777e-6c0e-4a3d-a161-55d5428f9b1f" DefinedType="IfcLengthMeasure" AttributeFlags="1" />
-		<DocAttribute Name="LinearTerm" UniqueId="f8f9fae8-92bb-4d5c-944d-3dc4bbca2eb2" DefinedType="IfcLengthMeasure" AttributeFlags="1" />
-		<DocAttribute Name="ConstantTerm" UniqueId="554bce32-d234-4260-9f3a-1b10a806e577" DefinedType="IfcReal" AttributeFlags="1" />
+		<DocAttribute Name="SepticTerm" UniqueId="953eb42e-523e-4785-be00-3ae5cb7406b9" DefinedType="IfcLengthMeasure">
+			<Documentation>The constant that defines the septic term in the equation which defines the relation between curvature and arc length for the curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="SexticTerm" UniqueId="c478c338-831c-449e-a56d-bf7040e959f5" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>The constant that defines the sextic term in the equation which defines the relation between curvature and arc length for the curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="QuinticTerm" UniqueId="4ebe63eb-a357-4df1-8468-db7e0ac58c34" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>The constant that defines the quintic term in the equation which defines the relation between curvature and arc length for the curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="QuarticTerm" UniqueId="1989aec9-09dd-409d-a0c1-e7f5a569326a" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>The constant that defines the quartic term in the equation which defines the relation between curvature and arc length for the curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CubicTerm" UniqueId="0e603ffd-90b2-4ef4-bdeb-90afae8a9098" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>The constant that defines the cubic term in the equation which defines the relation between curvature and arc length for the curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="QuadraticTerm" UniqueId="e421777e-6c0e-4a3d-a161-55d5428f9b1f" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>The constant that defines the quadratic term in the equation which defines the relation between curvature and arc length for the curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LinearTerm" UniqueId="f8f9fae8-92bb-4d5c-944d-3dc4bbca2eb2" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>The constant that defines the linear term in the equation which defines the relation between curvature and arc length for the curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ConstantTerm" UniqueId="554bce32-d234-4260-9f3a-1b10a806e577" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>The constant that defines the constant term in the equation which defines the relation between curvature and arc length for the curve.</Documentation>
+		</DocAttribute>
 	</Attributes>
 </DocEntity>
-
