@@ -8,7 +8,7 @@ The spatial structure of a railway is sub-divided into several elements for late
 
 !["Railway vertical and lateral spatial decomposition "](../../../../../../figures/IfcRailwayPartTypeEnum-global.png "Figure 1 &mdash; Railway decomposition")
 
-Railway track structure have longitudinal decomposition based on track specificities:
+TRACKSTRUCTURE could have longitudinal decomposition based on track specificities:
 
 * PLAINTRACKSUPESTRUCTURE for the plain line tracks (IfcElementAssemblyTypeEnum.TRACKPANEL).
 * DILATATIONSUPERSTRUCTURE for the area of Dilatation panels (IfcElementAssemblyTypeEnum.DILATATIONPANEL).
