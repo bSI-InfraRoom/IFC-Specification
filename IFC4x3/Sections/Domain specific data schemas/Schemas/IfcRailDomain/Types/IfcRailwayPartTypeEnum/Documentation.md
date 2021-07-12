@@ -12,7 +12,7 @@ TRACKSTRUCTURE could have longitudinal decomposition based on track specificitie
 
 * PLAINTRACKSUPESTRUCTURE for the plain line tracks (IfcElementAssemblyTypeEnum.TRACKPANEL).
 * DILATATIONSUPERSTRUCTURE for the area of Dilatation panels (IfcElementAssemblyTypeEnum.DILATATIONPANEL).
-* TURNOUTSUPERSTRUCTURE for the area of Turnouts (IfcElementAssemblyTypeEnum.TURNOUTPANEL).
+* TURNOUTSUPERSTRUCTURE for the area of turnouts (IfcElementAssemblyTypeEnum.TURNOUTPANEL).
 * TRACKSTRUCTUREPART for generic longitudinal decomposition if needed.
 
 !["Railway vertical and lateral spatial decomposition "](../../../../../../figures/IfcRailwayPartTypeEnum-track.png "Figure 2 &mdash; Track longitudinal decomposition")
