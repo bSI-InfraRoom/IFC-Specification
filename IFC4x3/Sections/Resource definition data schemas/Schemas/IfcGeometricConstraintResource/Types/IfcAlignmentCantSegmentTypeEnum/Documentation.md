@@ -1,6 +1,6 @@
 The IfcAlignmentCantSegmentTypeEnum indicates the type of a segment of a cant alignment segment (IfcAlignmentCantSegment). 
 
-Cant is defined as amount by which one running rail is raised above the other running rail, in a track cross section.
+Cant is defined as the amount by which one running rail is raised above the other running rail, in a track cross section.
 &gt;NOTE Definition according to EN 13803/2017
 
 For 3D modeling both the cant value and the cant angle (bank angle, lateral angle, cross slope angle) are relevant.

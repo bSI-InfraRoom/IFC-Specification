@@ -20,7 +20,7 @@ Application of high-performance horizontal transition bends is always combined w
 
 In real world designs, such as slow speed sections in railway stations, exceptions to the above principles can be found. It might even happen that the inner rail is elevated relative to the outer rail.
 
-Detailed geometric modelling of the superelevation has a low priority in the existing processes in most rail companies. This will very probably change with the introduction of 3D modelling in rail design. The following list shows some use cases.
+Detailed geometric modelling of the superelevation has a low priority in the existing processes in most rail companies. This will very probably change with the introduction of 3D modelling in rail design. The following list shows some use cases:
 
 * Correct 3D placement of certain assets (e.g. sleepers)
 * Relevant input for calculation of structural gauge space
