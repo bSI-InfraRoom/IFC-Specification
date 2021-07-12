@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcSecondOrderPolynomialSpiral" UniqueId="2eceb2f0-f7bc-4a27-b4c2-63ad5b50b154" BaseDefinition="IfcSpiral" EntityFlags="32">
 	<Attributes>
-		<DocAttribute Name="QuadraticTerm" UniqueId="2bd2bf6e-856d-4036-b3c0-96b1f9c974d9" DefinedType="IfcLengthMeasure" />
-		<DocAttribute Name="LinearTerm" UniqueId="7b1fec4a-0bf0-475b-9461-360536ad6bba" DefinedType="IfcLengthMeasure" AttributeFlags="1" />
-		<DocAttribute Name="ConstantTerm" UniqueId="eede45ec-f47a-4533-98a3-63298acf8027" DefinedType="IfcReal" AttributeFlags="1" />
+		<DocAttribute Name="QuadraticTerm" UniqueId="2bd2bf6e-856d-4036-b3c0-96b1f9c974d9" DefinedType="IfcLengthMeasure">
+			<Documentation>The constant that defines the quadratic term in the equation which defines the relation between curvature and arc length for the curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LinearTerm" UniqueId="7b1fec4a-0bf0-475b-9461-360536ad6bba" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>The constant that defines the linear term in the equation which defines the relation between curvature and arc length for the curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ConstantTerm" UniqueId="eede45ec-f47a-4533-98a3-63298acf8027" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>The constant that defines the constant term in the equation which defines the relation between curvature and arc length for the curve.</Documentation>
+		</DocAttribute>
 	</Attributes>
 </DocEntity>
-
