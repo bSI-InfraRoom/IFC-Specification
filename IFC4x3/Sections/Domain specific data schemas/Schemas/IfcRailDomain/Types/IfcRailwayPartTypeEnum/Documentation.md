@@ -11,7 +11,7 @@ The spatial structure of a railway is sub-divided into several elements for late
 TRACKSTRUCTURE could have longitudinal decomposition based on track specificities:
 
 * PLAINTRACKSUPESTRUCTURE for the plain line tracks (IfcElementAssemblyTypeEnum.TRACKPANEL).
-* DILATATIONSUPERSTRUCTURE for the area of Dilatation panels (IfcElementAssemblyTypeEnum.DILATATIONPANEL).
+* DILATATIONSUPERSTRUCTURE for the area of dilatation panels (IfcElementAssemblyTypeEnum.DILATATIONPANEL).
 * TURNOUTSUPERSTRUCTURE for the area of turnouts (IfcElementAssemblyTypeEnum.TURNOUTPANEL).
 * TRACKSTRUCTUREPART for generic longitudinal decomposition if needed.
 
