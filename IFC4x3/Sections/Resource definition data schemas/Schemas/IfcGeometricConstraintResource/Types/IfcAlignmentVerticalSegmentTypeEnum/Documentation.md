@@ -4,9 +4,9 @@ The IfcAlignmentVerticalSegmentTypeEnum indicates the type of a segment of a ver
 | Vertical curvature | Segmenttype        | Enumeration Values |
 |:----|:------------------|:----------|
 | No vertical curvature | constant gradient        | CONSTANTGRADIENT |
-| Derivative of gradient with respect to chainage is constant | Vertical curve, parabola  | PARABOLICARC |
-| Derivative of vertical angle with respect to sloping length along the track is constant | Vertical curve, circular | CIRCULARARC  |
-| variation of vertical curvature is constant | Vertical curve, clothoid | CLOTHOID  |
+| Derivative of gradient with respect to horizontal projection of alignment is constant | Vertical curve, parabola  | PARABOLICARC |
+| Derivative of vertical angle with respect to 3D arc length along the alignment is constant | Vertical curve, circular | CIRCULARARC  |
+| Variation of vertical curvature is constant | Vertical curve, clothoid | CLOTHOID  |
 
 
 &gt;NOTE A vertical curve in track that starts or ends in canted switches and crossings can be of a higher order polynomial than a parabola.
@@ -42,4 +42,19 @@ The IfcAlignmentVerticalSegmentTypeEnum indicates the type of a segment of a ver
 
 &gt;NOTE gradient has a slightly different definition in civil engineering. "Gradient (Civ.Eng.) is the degree of slope, e.g. of a highway or a railway. US grade".
 
-&gt;Note most railway track designs use the **small angle assumption**. That means &theta;=tan(&theta;)=gradient.
+&gt;NOTE most railway track designs use the **small angle assumption**. That means &theta;=tan(&theta;)=gradient.
+
+**References to EN 13803/2017**
+
+EN 13803/2017 covers "Track alignment design parameters". As such it is not fully compatible with definitions for IFC Alignment. Therefore rail specific terms like track have been replaced with more general terms also applicable to road design.
+
+Referenced content of EN 13803/2017 "Table 2 - Elements for vertical alignment" has been modified as follows:
+
+**Vertical curve, parabola:** Derivative of gradient with respect to chainage is constant<br/>
+**Generalized:** Derivative of gradient with respect to horizontal projection of alignment is constant
+
+**Vertical curve, circular:** Derivative of vertical angle with respect to sloping length along the track is constant<br/>
+**Generalized:** Derivative of vertical angle with respect to 3D arc length along the alignment is constant
+
+EN13803 clause 3.5:
+**Chainage**: longitudinal distance along the horizontal projection of the track centre line.
