@@ -2,7 +2,7 @@ The IfcRailwayPartTypeEnum defines the range of different types of railway part 
 
 The spatial structure of a railway is sub-divided into several elements for lateral, vertical and longitudinal decomposition:
 
-* TRACKSTRUCTURE is for the Track (vertical decomposition)
+* TRACKSTRUCTURE is for the track part of the railway (vertical decomposition)
 * SUPERSTRUCTURE is for the upper part of the railway (vertical decomposition)
 * LINESIDESTRUCTURE is for the lateral part of the railway (lateral decomposition)
 
