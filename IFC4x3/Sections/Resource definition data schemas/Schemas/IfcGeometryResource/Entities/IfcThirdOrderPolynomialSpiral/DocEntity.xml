@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcThirdOrderPolynomialSpiral" UniqueId="fb8706d9-cdf9-45c9-b533-ccd35b17d59c" BaseDefinition="IfcSpiral" EntityFlags="32">
 	<Attributes>
-		<DocAttribute Name="CubicTerm" UniqueId="a6a9e3ee-3806-4ee3-8f8a-2f7ca5474131" DefinedType="IfcLengthMeasure" />
-		<DocAttribute Name="QuadraticTerm" UniqueId="3ca73660-f211-460e-82c4-deb0962f1ad7" DefinedType="IfcLengthMeasure" AttributeFlags="1" />
-		<DocAttribute Name="LinearTerm" UniqueId="4c87d0bb-ca6c-419c-be0a-d6abc25f8176" DefinedType="IfcLengthMeasure" AttributeFlags="1" />
-		<DocAttribute Name="ConstantTerm" UniqueId="72ef1e7a-7045-4313-9e88-6a769a7f53f4" DefinedType="IfcReal" AttributeFlags="1" />
+		<DocAttribute Name="CubicTerm" UniqueId="a6a9e3ee-3806-4ee3-8f8a-2f7ca5474131" DefinedType="IfcLengthMeasure">
+			<Documentation>The constant that defines the cubic term in the equation which defines the relation between curvature and arc length for the curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="QuadraticTerm" UniqueId="3ca73660-f211-460e-82c4-deb0962f1ad7" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>The constant that defines the quadratic term in the equation which defines the relation between curvature and arc length for the curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="LinearTerm" UniqueId="4c87d0bb-ca6c-419c-be0a-d6abc25f8176" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>The constant that defines the linear term in the equation which defines the relation between curvature and arc length for the curve.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="ConstantTerm" UniqueId="72ef1e7a-7045-4313-9e88-6a769a7f53f4" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>The constant that defines the constant term in the equation which defines the relation between curvature and arc length for the curve.</Documentation>
+		</DocAttribute>
 	</Attributes>
 </DocEntity>
-
