@@ -4,7 +4,7 @@ The spatial structure of a railway is sub-divided into several elements for late
 
 * TRACKSTRUCTURE is for the Track (vertical decomposition)
 * SUPERSTRUCTURE is for the upper part of the railway (vertical decomposition)
-* LINESIDESTRUCTURE is for the lateral part of the railway  (lateral decomposition)
+* LINESIDESTRUCTURE is for the lateral part of the railway (lateral decomposition)
 
 !["Railway vertical and lateral spatial decomposition "](../../../../../../figures/IfcRailwayPartTypeEnum-global.png "Figure 1 &mdash; Railway decomposition")
 
