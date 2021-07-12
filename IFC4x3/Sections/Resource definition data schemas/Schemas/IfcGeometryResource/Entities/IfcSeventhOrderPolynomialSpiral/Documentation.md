@@ -25,4 +25,4 @@ The _IfcSeventhOrderPolynomialSpiral_ is a specialization of _IfcSpiral_. The cu
 >>
 >> ![formula](../../../../../../figures/ifcseventhorderpolynomialspiral_theta.PNG)
 >>
-> and the parametric range is: -&infin; &lt; _u_ &lt; &infin;
+> and the parametric range is: -&infin; &lt; _u_ &lt; &infin;.
