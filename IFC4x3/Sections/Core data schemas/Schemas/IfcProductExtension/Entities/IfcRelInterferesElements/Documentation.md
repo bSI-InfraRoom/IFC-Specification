@@ -9,7 +9,7 @@ If the interference geometry and Zone are omitted then the interference is provi
 Both _InterferenceGeometry_ and _InterferenceSpace_ should not be set together.
   
 The _RelatingElement_ and _RelatedElement_ define the two elements in the relationship, that may have different roles.
-The relation orientation may be required by certain _InterferenceType_ values or _InterferenceGeometry_ calculation, this is done  by setting the attribute _ImpliedOrder_ accordingly:
+The relation orientation may be required by certain _InterferenceType_ values or _InterferenceGeometry_ calculation, this is done by setting the attribute _ImpliedOrder_ accordingly:
 * _ImpliedOrder_=TRUE The _RelatingElement_ constitutes the primary element of the interference relationship that is oriented from _RelatingElement_ (source) to _RelatedElement_ (target). If the interference is to be resolved by subtracting the overlapping part, it should be subtracted from the _RelatingElement_. The net result would be the _RelatingElement_ subtracted by the _InterferenceGeometry_. This would be the case in interference relationships where the _RelatedElement_ creates a void in the _RelatingElement_ dynamically.  
 * _ImpliedOrder_=FALSE The _RelatingElement_ and _RelatedElement_ have no priority among each other. If the interference is to be resolved then no information about whether the _InterferenceGeometry_ should be subtracted from the _RelatingElement_ or the _RelatedElement_ can be traced. This would be the case for clash detection results.  
 * _ImpliedOrder_=UNKNOWN No information about the priorities is provided.
