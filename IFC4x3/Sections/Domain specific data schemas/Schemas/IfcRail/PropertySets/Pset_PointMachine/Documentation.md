@@ -1,0 +1,1 @@
+Properties of a point machine used in railway. The property set can be used by different predefined types of IfcActuator, indicated that such an actuator is a point machine that can switch and lock the track turnout.
