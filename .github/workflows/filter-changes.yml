@@ -45,7 +45,7 @@ jobs:
             echo 'Schema did not change.';
             echo ::set-output name=SCHEMACHANGED::false;
           fi
-          if [[ $HOME/files.json ]] && [[ $(($(egrep -ci "DocProperty.xml|DocQuantity.xmlDoc|PropertySet.xml|DocQuantitySet.xml|DocPropertyConstant.xml|DocPropertyEnumeration.xml" $HOME/files.json))) -gt 0 ]]; then
+          if [[ $HOME/files.json ]] && [[ $(($(egrep -ci "DocProperty.xml|DocQuantity.xml|DocPropertySet.xml|DocQuantitySet.xml|DocPropertyConstant.xml|DocPropertyEnumeration.xml" $HOME/files.json))) -gt 0 ]]; then
             echo 'Properties or quantities changed';
             echo ::set-output name=PROPSQUANTSCHANGED::true;
           else
