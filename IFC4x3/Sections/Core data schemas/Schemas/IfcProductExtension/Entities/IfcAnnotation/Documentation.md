@@ -21,4 +21,3 @@ The _IfcAnnotation_ can provide specific 0D, 1D, and 2D geometric items as repre
   
 
 > HISTORY&nbsp; New entity in IFC2x2.
-
