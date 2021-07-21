@@ -1,0 +1,1 @@
+Properties of Return current System used in railway. The property set can be used by the predefined type RETURN_CIRCUIT of IfcDistributionSystem. The property set is mainly used to characterise railway return current circuit.

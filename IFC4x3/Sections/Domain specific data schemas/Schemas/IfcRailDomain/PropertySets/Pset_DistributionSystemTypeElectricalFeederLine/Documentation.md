@@ -1,0 +1,1 @@
+Properties of feeder line System used in railway. The property set can be used by the predefined type ELECTRICAL of IfcDistributionSystem. The property set is mainly used to characterise the railway overhead conductors besides overhead contact line.
