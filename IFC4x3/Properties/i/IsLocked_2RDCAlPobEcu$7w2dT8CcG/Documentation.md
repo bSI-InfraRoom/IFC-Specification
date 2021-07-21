@@ -1,0 +1,1 @@
+Is the shaft locked?
