@@ -1,0 +1,1 @@
+Gutter length from factory
