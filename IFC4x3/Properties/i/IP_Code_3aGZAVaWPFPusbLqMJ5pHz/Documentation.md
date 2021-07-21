@@ -1,0 +1,1 @@
+IP is the international code used to identify the protection level. The IP level consists of two numbers. The first number is dust-proof; the second number is water-proof. The larger the number, the better the protection level.
