@@ -1,0 +1,1 @@
+Properties in this property set are applicable for track system, which refers to a set of functional tracks with the explicit terminals. It refers to continuous sequences of track parts and alignments.
