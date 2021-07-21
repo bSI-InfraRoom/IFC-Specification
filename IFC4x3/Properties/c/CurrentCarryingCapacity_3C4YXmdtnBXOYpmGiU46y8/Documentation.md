@@ -1,0 +1,1 @@
+Maximum value of electric current which can be carried continuously by a conductor, a device or an apparatus, under specified conditions without its steady-state temperature exceeding a specified value [IEV 826.11.13]

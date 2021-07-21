@@ -1,0 +1,1 @@
+Properties in this property set are applicable to cable segment, indicated that the cable segment is a symetric pair cable, which is is a copper cable with a variable number of copper twisted symmetric pair conductors used to transmit data by means of electrical signals.
