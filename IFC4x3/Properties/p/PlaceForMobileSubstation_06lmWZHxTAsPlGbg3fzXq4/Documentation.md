@@ -1,0 +1,1 @@
+During construction or maintenance, the substation might be without power supply / power off, thus the mobile substation might be used as the power source for construction or maintenance, which needs space to be installed.
