@@ -1,0 +1,1 @@
+The type of fastening defines the fastening objects used (ribbed plates, screws, clamps, ...) in order to generate traction between the foot of the rail and the sleeper. It depends on but is not uniquely identified by the type of sleeper.
