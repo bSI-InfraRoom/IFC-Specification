@@ -1,6 +1,6 @@
 # IFC Specification
 ![Release-Badge](https://img.shields.io/github/v/release/bSI-InfraRoom/IFC-Specification)
-![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/bSI-InfraRoom/IFC-Specification/IFC4x3_RC4)
+![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/bSI-InfraRoom/IFC-Specification/IFC4.3.0.0-RC4)
 ![GitHub contributors](https://img.shields.io/github/contributors/bSI-InfraRoom/IFC-Specification)
 ![GitHub forks](https://img.shields.io/github/forks/bSI-InfraRoom/IFC-Specification)
 
