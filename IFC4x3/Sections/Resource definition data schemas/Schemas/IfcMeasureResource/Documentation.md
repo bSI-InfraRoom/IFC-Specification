@@ -7,7 +7,7 @@ The _IfcMeasureResource_ schema specifies units and defined measure types that m
 In different types of units there are five basic cases:
 
 * Basic SI-units, which cover a number of fundamental units of mainly physical quantities defined by [ISO-1000](../../bibliography.htm#iso-1000){ .int-ref} such as meter or millimeter as unit for length measure or square meter as a unit for area measure. The unit may have a scaling prefix (for example: milli, kilo).
-* Derived SI-units, which are defined as a derivation of the basic SI-units, for example, Newton (kg m / s2) as a unit of force. Both basic and derived SI-units are in the IFCs represented by IfcSIUnit.
+* Derived SI-units, which are defined as a derivation of the basic SI-units, for example, Newton (kg m / s2) as a unit of force. Both basic and derived SI-units are in the IFCs represented by IfcSIUnit
 * Conversion based units, which can be derived from SI-units by a scaling factor; e.g. inch which can be defined using SI-unit for length measure, i.e. an inch is 25.4 millimeters.
 * Derived units, which can be defined as a derivation or combination of a number of basic units. In a derived unit each of the basic unit "component" has a dimensional exponent in defining the derived unit; e.g. kg / m2, where kilogram (kg) has dimensional exponent 1 and meter (m) has exponent -2.
 * Context dependent units, which cannot be defined as conversion based unit using SI-units.
@@ -43,7 +43,7 @@ Table 1 indicates measures, units, and corresponding data types.
 
 > <small>
 <table class="gridtable">
-<tr><td><b>Measure</b></td><td><b>Type</b></td><td><b>Unit</b></td><td><b>Symbol</b></td><td><b>Derivation</b></td><td><b>IfcSiUnitEnum</b></td><td><b>IfcUnitEnum</b></td><td><b>IfcDerivedUnitEnum</b></td><td><b>Defined value types</b></td></tr>
+<tr><td><b>Measure</b></td><td><b>Type</b></td><td><b>Unit</b></td><td><b>Symbol</b></td><td><b>Derivation</b></td><td><b>IfcSIUnitName</b></td><td><b>IfcUnitEnum</b></td><td><b>IfcDerivedUnitEnum</b></td><td><b>Defined value types</b></td></tr>
  <tr><td>Absorbed dose, specific energy<br>impact, kerma, absorbed dose index</td><td>SI / Derived</td><td>gray</td><td>Gy</td><td>J / kg</td><td>GRAY</td><td>ABSORBEDDOSEUNIT</td><td></td><td>IfcAbsorbedDoseMeasure</td></tr>
  <tr><td>Acceleration</td><td>Derived</td><td></td><td></td><td>m / s2</td><td></td><td></td><td>ACCELERATIONUNIT</td><td>IfcAccelerationMeasure</td></tr>
  <tr><td>Acidity (pH)</td><td>Derived</td><td>pH</td><td>pH</td><td>mol / l</td><td></td><td></td><td>PHUNIT</td><td>IfcPHMeasure</td></tr>
