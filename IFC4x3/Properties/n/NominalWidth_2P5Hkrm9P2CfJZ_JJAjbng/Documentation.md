@@ -1,1 +1,1 @@
-Width of the  box
+Width of the box
