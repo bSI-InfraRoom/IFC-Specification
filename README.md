@@ -33,3 +33,8 @@ For a detailed report, go [here](https://github.com/bSI-InfraRoom/IFC-Specificat
 - Click on Current branch and switch to Pull requests
 - Fetch origin (if not yet initiated automatically)
 
+## Github Actions
+
+- [Schema](https://github.com/bSI-InfraRoom/IFC-Specification/actions/workflows/schema-generation.yml)
+- [Properties and Quantities](https://github.com/bSI-InfraRoom/IFC-Specification/actions/workflows/prop-quant-listings.yml)
+- [Documentation](https://github.com/bSI-InfraRoom/IFC-Specification/actions/workflows/documentation.yml)
