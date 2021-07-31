@@ -1,1 +1,1 @@
-the main equipment in the cabinet
+The main equipment in the cabinet.
