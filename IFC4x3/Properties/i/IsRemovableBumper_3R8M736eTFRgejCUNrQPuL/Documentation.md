@@ -1,1 +1,1 @@
-is bumper removable? (Y = Yes, N = no)
+Indication if bumper is removable (TRUE) or not (FALSE).
