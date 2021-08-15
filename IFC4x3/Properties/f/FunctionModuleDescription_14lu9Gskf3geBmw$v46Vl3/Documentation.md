@@ -1,1 +1,1 @@
-To describe the module built in the equipment.
+Description of the equipment built-in module.
