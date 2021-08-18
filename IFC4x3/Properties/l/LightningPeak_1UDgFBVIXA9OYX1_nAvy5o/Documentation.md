@@ -1,1 +1,1 @@
-The peak of lightning impulse that the insulator could withstand.
+The peak lightning voltage that the insulator could withstand.

@@ -1,1 +1,1 @@
-Indicate whether the element is self lubrificated or not.
+Indicates whether the element is self lubricated or not.

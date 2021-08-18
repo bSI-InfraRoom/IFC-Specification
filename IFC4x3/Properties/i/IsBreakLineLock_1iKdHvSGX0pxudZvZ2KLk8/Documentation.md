@@ -1,1 +1,1 @@
-Indicate whether the equipment has the function of broke line lock or not.
+Indicates whether the equipment has the function of brake line lock or not.

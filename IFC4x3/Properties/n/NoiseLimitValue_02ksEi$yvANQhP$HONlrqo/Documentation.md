@@ -1,1 +1,1 @@
-Is there a mandatory limit on noise emissions at this location?
+Mandatory noise emissions limit at this location.

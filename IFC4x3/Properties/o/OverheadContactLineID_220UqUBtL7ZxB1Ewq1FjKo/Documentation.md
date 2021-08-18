@@ -1,1 +1,1 @@
-To indicate the OCL where the equipment is applied.
+Indicates the OCL where the equipment is applied.

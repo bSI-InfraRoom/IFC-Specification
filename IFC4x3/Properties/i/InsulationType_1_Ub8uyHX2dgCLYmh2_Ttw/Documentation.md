@@ -1,1 +1,1 @@
-The method used to insulate
+The method used to insulate.

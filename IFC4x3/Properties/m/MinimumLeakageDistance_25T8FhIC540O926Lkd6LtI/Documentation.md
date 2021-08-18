@@ -1,1 +1,1 @@
-The min electric current in an unwanted conductive path under normal operating conditions.
+The minimum electric current in an unwanted conductive path under normal operating conditions.

@@ -1,1 +1,1 @@
-The working range of the tensioning equipment under normal work.
+The working range of the tensioning equipment under normal operation.
