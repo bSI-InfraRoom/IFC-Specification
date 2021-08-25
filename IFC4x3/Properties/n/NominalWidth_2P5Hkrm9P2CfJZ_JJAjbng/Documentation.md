@@ -1,1 +1,1 @@
-Width of the  box
+The nominal width of the object.

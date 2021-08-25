@@ -1,1 +1,1 @@
-Length of the product described by the manufacturer.
+The nominal length of the object.
