@@ -1,1 +1,1 @@
-Indicate the margin of error of the anemometrograph.
+Indicates the margin of error of the measurement.

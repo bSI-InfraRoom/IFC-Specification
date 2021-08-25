@@ -1,1 +1,1 @@
-Maximum tolerable vibration level of axle counting device.
+Maximum tolerable vibration level of the device.

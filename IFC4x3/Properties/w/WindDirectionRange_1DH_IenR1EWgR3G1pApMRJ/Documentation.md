@@ -1,1 +1,1 @@
-Indicate the range of wind direction the anemometrograph can monitor.
+Indicate the range of wind direction the sensor can monitor.

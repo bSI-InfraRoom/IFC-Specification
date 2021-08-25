@@ -1,1 +1,1 @@
-Indicate the starting wind speed of the anemometrograph.
+Indicates the starting wind speed of the wind sensor.

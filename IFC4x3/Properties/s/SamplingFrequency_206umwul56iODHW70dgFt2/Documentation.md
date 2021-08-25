@@ -1,1 +1,1 @@
-Indicate the sampling frequency of the anemometrograph.
+Indicates the sampling frequency of the device.

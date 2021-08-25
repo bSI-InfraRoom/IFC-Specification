@@ -1,1 +1,1 @@
-Mean time between failure of axle counter.
+Indicates the predicted elapsed time between inherent failures of the device or system, during normal operation.
