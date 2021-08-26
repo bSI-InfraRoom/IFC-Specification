@@ -1,4 +1,4 @@
-(n : IfcSiUnitName )     : IfcDimensionalExponents;
+(n : IfcSIUnitName )     : IfcDimensionalExponents;
   CASE n OF
     METRE          : RETURN (IfcDimensionalExponents
                              (1, 0, 0, 0, 0, 0, 0));
