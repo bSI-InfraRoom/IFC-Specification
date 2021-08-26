@@ -1,1 +1,1 @@
-Indicate the width of the narrow channel.
+Indicates the width of the narrow channel.

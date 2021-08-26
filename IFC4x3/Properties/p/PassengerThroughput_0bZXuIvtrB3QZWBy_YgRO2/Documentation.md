@@ -1,1 +1,1 @@
-Indicate the throughput of the passengers of the turnstile.
+Indicate the throughput of passengers for the turnstile.

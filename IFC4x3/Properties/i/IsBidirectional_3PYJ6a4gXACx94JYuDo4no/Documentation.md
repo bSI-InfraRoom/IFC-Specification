@@ -1,1 +1,1 @@
-Indicate whether the turnstile is bidirectional.
+Indicates whether the turnstile is bidirectional.
