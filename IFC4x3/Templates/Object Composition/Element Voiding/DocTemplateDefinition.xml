@@ -9,39 +9,9 @@
 		</DocLocalization>
 	</Localization>
 	<Rules>
-		<DocModelRuleAttribute Name="HasOpenings" Identification="HasOpenings">
+		<DocModelRuleAttribute Name="HasOpenings">
 			<Rules>
-				<DocModelRuleEntity Name="IfcRelVoidsElement">
-					<Rules>
-						<DocModelRuleAttribute Name="RelatedOpeningElement">
-							<Rules>
-								<DocModelRuleEntity Name="IfcOpeningElement">
-									<Rules>
-										<DocModelRuleAttribute Name="PredefinedType">
-											<Rules>
-												<DocModelRuleEntity Name="IfcOpeningElementTypeEnum" />
-											</Rules>
-										</DocModelRuleAttribute>
-										<DocModelRuleAttribute Name="HasFillings" Identification="HasFillings">
-											<Rules>
-												<DocModelRuleEntity Name="IfcRelFillsElement">
-													<Rules>
-														<DocModelRuleAttribute Name="RelatedBuildingElement" Identification="RelatedFillings">
-															<Rules>
-																<DocModelRuleEntity Name="IfcDoor" Identification="ElementName" />
-																<DocModelRuleEntity Name="IfcWindow" Identification="ElementName" />
-															</Rules>
-														</DocModelRuleAttribute>
-													</Rules>
-												</DocModelRuleEntity>
-											</Rules>
-										</DocModelRuleAttribute>
-									</Rules>
-								</DocModelRuleEntity>
-							</Rules>
-						</DocModelRuleAttribute>
-					</Rules>
-				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcRelVoidsElement" />
 			</Rules>
 		</DocModelRuleAttribute>
 	</Rules>
