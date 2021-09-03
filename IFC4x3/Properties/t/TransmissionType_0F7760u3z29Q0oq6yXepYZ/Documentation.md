@@ -1,1 +1,1 @@
-Indicate the data transmission type of the master unit.
+Indicates the data transmission type of the master unit.

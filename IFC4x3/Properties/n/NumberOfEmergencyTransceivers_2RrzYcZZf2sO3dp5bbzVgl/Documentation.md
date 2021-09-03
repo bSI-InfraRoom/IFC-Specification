@@ -1,1 +1,1 @@
-Indicate the number of emergency transceivers in the BTS.
+Indicates the number of emergency transceivers in the BTS.

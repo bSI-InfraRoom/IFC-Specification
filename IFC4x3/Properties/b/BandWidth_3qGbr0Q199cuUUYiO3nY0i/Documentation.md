@@ -1,1 +1,1 @@
-Indicate the bandwidth of the access point in Hz.
+Indicates the bandwidth for telecommunication of the device.

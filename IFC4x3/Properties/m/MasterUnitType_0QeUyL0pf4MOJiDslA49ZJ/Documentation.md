@@ -1,1 +1,1 @@
-Indicate the type of master unit.
+Indicates the type of master unit.

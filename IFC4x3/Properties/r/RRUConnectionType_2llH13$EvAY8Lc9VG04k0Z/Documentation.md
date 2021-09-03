@@ -1,1 +1,1 @@
-Indicate the connection type between the RRU and the BBU
+Indicates the connection type between the remote radio unit and baseband unit.

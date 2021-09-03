@@ -1,1 +1,1 @@
-Indicate the number of antennas integrated in the access point.
+Indicates the number of antennas integrated in the device.

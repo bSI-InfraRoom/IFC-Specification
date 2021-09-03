@@ -1,1 +1,1 @@
-Indicate the number of transceivers per antenna.
+Indicates the number of transceivers per antenna.

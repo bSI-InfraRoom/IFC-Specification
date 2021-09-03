@@ -1,1 +1,1 @@
-Indicate the transmitted bandwidth of the master unit.
+Indicates the transmitted bandwidth of the master unit.

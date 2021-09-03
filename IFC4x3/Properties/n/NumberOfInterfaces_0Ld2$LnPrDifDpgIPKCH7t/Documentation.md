@@ -1,1 +1,1 @@
-Indicate the number of different interfaces of the access point.
+Indicates the number of different interfaces of the access point.
