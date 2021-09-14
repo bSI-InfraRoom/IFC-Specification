@@ -1,1 +1,1 @@
-How many retarders / [retarder(s)]
+Number of retarders / [retarder(s)].

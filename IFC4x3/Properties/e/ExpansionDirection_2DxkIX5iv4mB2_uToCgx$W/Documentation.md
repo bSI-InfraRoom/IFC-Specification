@@ -1,1 +1,1 @@
-The Expansion Direction, e.g. single direction, bidirection
+The expansion direction, e.g. single direction, bi-direction

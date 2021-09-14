@@ -1,1 +1,1 @@
-Indicate the number of cantilever in the OCS supporting system.
+Indicates the number of cantilevers in the OCS supporting system.

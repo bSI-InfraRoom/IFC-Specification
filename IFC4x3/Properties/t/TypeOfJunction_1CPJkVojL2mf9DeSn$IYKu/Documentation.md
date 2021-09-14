@@ -1,1 +1,1 @@
-Is the tunout part of the continous welded rail ?
+The turnout part of the continuous welded rail.

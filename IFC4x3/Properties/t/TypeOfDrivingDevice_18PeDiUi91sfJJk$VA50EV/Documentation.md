@@ -1,1 +1,1 @@
-Type of the driving device used for the turnout
+Type of the driving device used for the turnout.

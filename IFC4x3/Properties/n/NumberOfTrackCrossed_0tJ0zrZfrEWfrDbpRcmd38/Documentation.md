@@ -1,1 +1,1 @@
-Indicate the number of track which OCS supporting system used to cross.
+Indicates the number of tracks which OCS supporting system crosses.

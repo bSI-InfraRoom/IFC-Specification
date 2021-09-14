@@ -1,1 +1,1 @@
-Type of turnout
+Type of turnout.

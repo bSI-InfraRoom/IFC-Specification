@@ -1,1 +1,1 @@
-Turnout that are positionned in a curved part of the alignment.
+Turnouts that are positioned in the curved part of the alignment.

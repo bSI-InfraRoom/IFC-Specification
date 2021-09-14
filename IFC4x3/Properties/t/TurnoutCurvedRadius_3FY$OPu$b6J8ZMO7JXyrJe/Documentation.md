@@ -1,1 +1,1 @@
-If turnout is curved, the radius of curvature of the main branch.
+If turnout is curved, the main branch radius of curvature.
