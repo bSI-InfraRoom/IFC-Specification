@@ -1,0 +1,899 @@
+/* ---------------------------------------------------------------- */
+/* CSS definition for buildingSMART IFC documentation               */
+/* ---------------------------------------------------------------- */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	counter-reset: index1 index2 index3 index4 index5;
+}
+
+body.image {
+	background-color: #ececec;
+	color: black;
+	margin: 0px;
+}
+
+body.white {
+	background-color: #ffffff;
+	color: black;
+}
+
+div {
+	margin: 0px;
+}
+
+div.credits {
+	position: absolute;
+	bottom: 9px;
+	left: 6px;
+}
+
+div.content {
+	margin: 0px;
+	width: 99%;
+}
+
+div.cover {
+	background-color: #ffffff;
+	color: black;
+	position: absolute;
+	top: 18px;
+	width: 99%;
+	text-align: center;
+}
+
+div.copyright {
+	background-color: #ffffff;
+	color: black;
+	position: relative;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	width: 99%;
+}
+
+div.menu {
+	margin-top: 14px;
+	margin-left: 0px;
+}
+
+div.not-numbered {
+	background-color: #ffffff;
+}
+
+div.xsd, div.express {
+	margin: 10px;
+	padding: 5px;
+	border: 1px solid gray;
+	border-radius: 8px;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Styles of header definitions                                     */
+
+h1, h2, h3, h4, h5 {
+	font-family: Verdana, Tahoma, sans-serif;
+	text-align: left;
+	color: #000099;
+}
+
+h1 {
+	font-size: x-large;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+h1.num {
+	counter-increment: index1;
+	counter-reset: index2 item;
+}
+
+h1.num:before {
+	content: counter(index1) "  ";
+	white-space: pre;
+}
+
+h1.alpha {
+	text-align: center;
+	counter-increment: index1;
+	counter-reset: index2  item;
+}
+
+h1.alpha:before {
+	content: counter(index1, upper-alpha) "  ";
+	white-space: pre;
+}
+
+h1.annex {
+	text-align: center;
+}
+
+h2 {
+	font-size: large;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+h2.num {
+	counter-increment: index2;
+	counter-reset: index3 item;
+}
+
+h2.num:before {
+	content: counter(index1) "." counter(index2) "   ";
+	white-space: pre;
+}
+
+h3 {
+	font-size: medium;
+	margin-top: 27px;
+	margin-bottom: 9px;
+}
+
+h3.num {
+	counter-increment: index3;
+	counter-reset: index4 item;
+}
+
+h3.num:before {
+	content: counter(index1) "." counter(index2) "." counter(index3) "   ";
+	white-space: pre;
+}
+
+h4 {
+	font-size: medium;
+	margin-top: 24px;
+	margin-bottom: 8px;
+}
+
+h4.num {
+	counter-increment: index4;
+	counter-reset: index5 item;
+}
+
+h4.num:before {
+	content: counter(index1) "." counter(index2) "." counter(index3) "." counter(index4) "   ";
+	white-space: pre;
+}
+
+h5 {
+	font-size: medium;
+	margin-top: 24px;
+	margin-bottom: 8px;
+}
+
+h5.num {
+	counter-increment: index5;
+}
+
+h5.num:before {
+	content: counter(index1) "." counter(index2) "." counter(index3) "." counter(index4) "." counter(index5) "   ";
+	white-space: pre;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* styles for paragraphs                                            */
+
+p {
+	font-size: small;
+	line-height: 125%;
+	margin-top: 6px;
+	margin-bottom: 0px;
+	padding-top: 2px;
+	padding-bottom: 0px;
+}
+
+p.big {
+	font-size: larger;
+}
+
+p.center {
+	font-size: small;
+	text-align: center;
+}
+
+p.narrow {
+	font-size: small;
+	margin-top: 3px;
+	margin-bottom: 0px;
+}
+
+p.outstanding {
+	font-weight: bolder;
+	font-size: larger;
+}
+
+p.right {
+	text-align: right;
+}
+
+p.small {
+	font-size: x-small;
+	margin-top: 6px;
+	margin-bottom: 0px;
+}
+
+p.std {
+	margin-top: 6px;
+	margin-bottom: 0px;
+}
+
+p.spec-head {
+	margin-top: 18px;
+	margin-bottom: 6px;
+	color: #000099;
+	text-decoration: underline;
+}
+
+p.td {
+	font-size: small;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-left: 4px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+}
+
+p.top {
+	padding-top: 6px;
+}
+
+p.top-center {
+	padding-top: 6px;
+	text-align: center;
+}
+
+p.use-head {
+	margin-top: 18px;
+	margin-bottom: 6px;
+	font-weight: bold;
+	color: #000099;
+}
+
+p.figure {
+	font-size: x-small;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 2px;
+}
+
+p.table {
+	font-size: x-small;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 2px;
+}
+
+blockquote {
+	font-size: x-small;
+	line-height: 120%;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	margin-left: 0px;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+td blockquote {
+	font-size: smaller;
+	line-height: 120%;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+blockquote.std {
+	font-size: x-small;
+}
+
+blockquote.note {
+	margin-top: 6px;
+	margin-bottom: 12px;
+}
+
+blockquote.example {
+	margin-top: 6px;
+	margin-bottom: 12px;
+}
+
+blockquote.history {
+	margin-top: 14px;
+	color: #0000ff;
+}
+
+blockquote.extDef {
+	color: #404040;
+}
+
+blockquote.deprecated {
+	color: #ff0000;
+}
+
+blockquote.change-ifc2x {
+	color: #ff0000;
+}
+
+blockquote.change-ifc2x2 {
+	color: #ff0000;
+}
+
+blockquote.change-ifc2x3 {
+	color: #ff0000;
+}
+
+blockquote.change-ifc2x4 {
+	color: #ff0000;
+}
+
+tt.std, tt.spf {
+	font-family: monospace;
+	font-size: x-small;
+	white-space: pre-wrap;
+}
+
+summary {
+	font-size: medium;
+	font-weight: bolder;
+	line-height: 125%;
+	margin-top: 12px;
+	margin-bottom: 0px;
+	padding-top: 2px;
+	padding-bottom: 0px;
+}
+
+/* ---------------------------------------------------------------- */
+/* styles for code fragments     									*/
+
+code.express {
+	font-family: consolas, monospace;
+	font-size: small;
+}
+
+code.xsd {
+	font-family: consolas, monospace;
+	font-size: small;
+}
+
+/* ---------------------------------------------------------------- */
+/* styles for texts     											*/
+
+span.note {
+	font-size: smaller;
+	padding-top: 4px;
+}
+
+span.express {
+	font-family: consolas, monospace;
+	font-size: small;
+}
+
+span.xsd {
+	font-family: consolas, monospace;
+	font-size: small;
+}
+
+span.keyword {
+	font-family: consolas, monospace;
+	font-size: small;
+	font-weight: bold;
+}
+
+span.comment {
+	font-family: helvetica, sans-serif;
+	font-size: small;
+	color: green;
+}
+
+span.attr-name {
+	font-weight: bold;
+}
+
+span.menu {
+	font-size: x-small;
+}
+
+span.self-ref {
+	color: #606060;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* styles for hyperlinks                                            */
+
+a:link {
+	color: #336699;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #3399ff;
+	text-decoration: none;
+}
+
+a.int-ref {
+	font-weight: normal;
+}
+
+a.ext-ref {
+	font-weight: normal;
+}
+
+a.ext-ref:before {
+	content: url(img/external.png);
+	border: 0px;
+	margin-right: 2px;
+}
+
+a.listing-link {
+	font-size: inherit;
+}
+
+a.listing-link:link {
+	color: #336699;
+	text-decoration: none;
+}
+
+a.listing-link:visited {
+	color: #3399ff;
+	text-decoration: none;
+}
+
+a.listing-link-abstract {
+	font-size: inherit;
+	font-style: italic;
+}
+
+a.listing-link-abstract:link {
+	color: #336699;
+	text-decoration: none;
+}
+
+a.listing-link-abstract:visited {
+	color: #3399ff;
+	text-decoration: none;
+}
+
+/* ---------------------------------------------------------------- */
+/* styles for lists                                                 */
+
+ol {
+}
+
+ol.std {
+	margin-top: 6px;
+	margin-bottom: 6px;
+	margin-left: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 12px;
+}
+
+ol.td {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 6px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 16px;
+}
+
+ol.none {
+	list-style-type: none;
+}
+
+ol.num {
+	list-style-type: decimal;
+}
+
+ol.alpha {
+	list-style-type: upper-alpha;
+}
+
+ol.roman {
+	list-style-type: lower-roman;
+}
+
+ol.note {
+	list-style-type: none;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+ul {
+	margin-left: 0px;
+	padding-left: 20px;
+	margin-top: 6px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 6px;
+	list-style-type: square;
+}
+
+ul.std {
+	list-style-type: square;
+}
+
+ul.ref {
+	list-style-type: square;
+}
+
+ul.inner {
+	list-style-type: circle;
+	margin-top: 0px;
+}
+
+li {
+	font-size: small;
+	margin-top: 4px;
+	padding-top: 1px;
+	margin-bottom: 2px;
+	padding-bottom: 0px;
+}
+
+li li {
+	margin-top: 2px;
+	padding-top: 0px;
+}
+
+ol.td li {
+	margin-top: 2px;
+	padding-top: 0px;
+}
+
+li.std {
+}
+
+li.index {
+}
+
+li.bold {
+	font-weight: bold;
+}
+
+li.small {
+	font-size: x-small;
+}
+
+li.note {
+	font-size: x-small;
+	margin-bottom: 2px;
+	padding-bottom: 0px;
+	margin-top: 2px;
+	padding-top: 0px;
+}
+
+/* do not use CSS2.1 definitions here
+li.note:before {
+	content: "NOTE " counter(item) " ";
+	counter-increment: item;
+}
+*/
+
+
+/* ---------------------------------------------------------------- */
+/* definition lists (references, bilbiography                       */
+
+
+dl {
+}
+
+dt {
+	font-size: small;
+}
+
+dt.normativereference {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+dt.term {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 12px;
+	padding-top: 0px;
+}
+
+dd {
+	font-size: small;
+}
+
+dd.term {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+	
+}
+
+/* ---------------------------------------------------------------- */
+/* table styles                                                     */
+
+table {
+}
+
+table.std {
+	border-collapse: collapse;
+	table-layout: fixed;
+	border: 0;
+}
+
+table.centric {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.content {
+	table-layout: fixed;
+	width: 100%;
+}
+
+table.abbrev {
+	border: 0;
+}
+
+table.menu {
+	table-layout: auto;
+	margin-left: 3px;
+	border: 0;
+	width: 100%;
+}
+
+table.inherit {
+	table-layout: fixed;
+	width: 800px;
+	margin-left: 0px;
+	padding: 5px;
+	border: thin solid blue;
+}
+
+col {
+}
+
+col.inherit {
+	width: 30px;
+}
+
+col.last {
+	width: 529px;
+}
+
+col.type-listing {
+	width: 390px;
+}
+
+col.type-middle {
+	width: 19px;
+}
+
+tr {
+}
+
+tr.std {
+	vertical-align: top;
+}
+
+tr.inherit {
+	font-size: x-small;
+	vertical-align: top;
+}
+
+tr.inherit-shadow {
+	font-size: x-small;
+	vertical-align: top;
+	background-color: #eeeeff;
+}
+
+td {
+	font-size: x-small;
+	text-align: left;
+	vertical-align: top;
+}
+
+td.std {
+	padding-left: 0px;
+	padding-right: 2px;
+	padding-top: 0px;
+	padding-bottom: 4px;
+}
+
+td.border {
+	border-width: 1px;
+	border-color: #808080;
+	border-style: solid;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+td.content {
+	border-width: 2px;
+	border-style: solid;
+	border-color: #CACACA;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+td.menu {
+	font-size: smaller;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+td.example {
+	font-size: x-small;
+}
+
+td.head {
+	font-weight: bold;
+}
+
+td.bold {
+	font-weight: bold;
+}
+
+td.italic {
+	font-weight: lighter;
+	font-style: italic;
+}
+
+td.center {
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 0px;
+	padding-bottom: 4px;
+	text-align: center;
+}
+
+td.right {
+	padding-left: 2px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 4px;
+	text-align: right;
+}
+
+td.inherit {
+	font-size: x-small;
+	padding-left: 2px;
+	padding-right: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin: 0px;
+}
+
+th {
+	font-size: x-small;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+table.even {
+	width: 600px;
+	table-layout: fixed;
+}
+
+table.gridtable {
+	margin-top: 6px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+
+table.gridtable th {
+	border-width: 1px;
+	font-size: x-small;
+	text-align: left;
+	padding: 4px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+
+table.gridtable td {
+	border-width: 1px;
+	font-size: x-small;
+	padding: 4px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+
+table.exchange {
+	margin-top: 6px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+
+table.exchange th {
+	border-width: 1px;
+	font-size: x-small;
+	text-align: left;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+
+table.exchange td {
+	border-width: 1px;
+	font-size: x-small;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+
+table.attributes {
+	width: 99%;
+	margin-left: 10px;
+	margin-top: 5px;	
+	margin-bottom: 10px;	
+	color: #333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+
+table.attributes th {
+	border-width: 1px;
+	font-size: x-small;
+	text-align: left;
+	padding: 4px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+
+table.attributes td {
+	border-width: 1px;
+	font-size: x-small;
+	padding: 4px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+
+table.propositions {
+	width: 99%;
+	margin-left: 10px;
+	margin-top: 5px;	
+	margin-bottom: 10px;	
+	color: #333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+
+table.propositions th {
+	border-width: 1px;
+	font-size: x-small;
+	text-align: left;
+	padding: 4px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+
+table.propositions td {
+	border-width: 1px;
+	font-size: x-small;
+	padding: 4px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
