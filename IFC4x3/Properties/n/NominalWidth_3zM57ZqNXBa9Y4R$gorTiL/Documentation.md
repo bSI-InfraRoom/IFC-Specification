@@ -1,1 +1,0 @@
-Width of the marker.
