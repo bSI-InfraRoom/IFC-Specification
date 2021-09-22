@@ -1,1 +1,0 @@
-Best range of temperature.
