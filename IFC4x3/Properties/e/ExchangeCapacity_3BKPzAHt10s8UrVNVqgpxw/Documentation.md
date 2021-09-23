@@ -1,1 +1,1 @@
-Indicates how many simultaneous calls the BTS can handle.
+Indicates how many simultaneous calls the base transceiver station can handle.

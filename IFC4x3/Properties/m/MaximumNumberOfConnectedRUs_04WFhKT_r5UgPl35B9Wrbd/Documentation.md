@@ -1,1 +1,1 @@
-Indicates the maximum number of Remote Units (RUs) which can be connected to the Master Unit.
+Indicates the maximum number of remote units (RUs) which can be connected to the master unit.

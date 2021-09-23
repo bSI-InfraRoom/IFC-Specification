@@ -1,1 +1,1 @@
-Indicates the type/standard of signal transmitted by the master unit.
+Indicates the type or standard of signal transmitted by the master unit.
