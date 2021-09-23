@@ -1,1 +1,1 @@
-Number of lamps a signal is composed of.
+Number of lamps the signal is composed of.

@@ -1,1 +1,1 @@
-Reading distance without having any mitigation works.
+Reading distance of the signal without having any mitigation works.

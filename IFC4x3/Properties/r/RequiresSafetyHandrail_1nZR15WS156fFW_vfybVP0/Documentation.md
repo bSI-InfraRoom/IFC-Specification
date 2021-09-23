@@ -1,1 +1,1 @@
-A safety handrail is required (TRUE) or not (FALSE).
+Indicates whether a safety handrail is required.

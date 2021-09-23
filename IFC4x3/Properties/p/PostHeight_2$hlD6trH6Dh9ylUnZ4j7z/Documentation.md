@@ -1,1 +1,1 @@
-Height of the Marker(Sign).
+The designed height of the post.
