@@ -1,1 +1,1 @@
-Indicate the resolution of the detected linear velocity.
+Indicates the resolution of the detected linear velocity.

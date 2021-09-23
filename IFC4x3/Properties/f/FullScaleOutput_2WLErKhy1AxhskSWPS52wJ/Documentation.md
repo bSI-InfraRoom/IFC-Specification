@@ -1,1 +1,1 @@
-Indicate the full scale output of the Earthquake Accelerometer.
+Indicates the full scale output of the earthquake sensor or accelerometer.

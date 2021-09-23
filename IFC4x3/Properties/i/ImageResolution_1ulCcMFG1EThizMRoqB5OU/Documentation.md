@@ -1,1 +1,1 @@
-Indicate the image resolution of snow depth meter.
+Indicates the image resolution of snow depth meter.

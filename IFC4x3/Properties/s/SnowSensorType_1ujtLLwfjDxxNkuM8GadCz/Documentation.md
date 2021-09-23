@@ -1,1 +1,1 @@
-Indicate the type of snow depth meter.
+Indicates the type of snow depth meter.

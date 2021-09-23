@@ -1,1 +1,1 @@
-Indicate the type of Earthquake Accelerometer.
+Indicates the type of earthquake sensor or accelerometer.

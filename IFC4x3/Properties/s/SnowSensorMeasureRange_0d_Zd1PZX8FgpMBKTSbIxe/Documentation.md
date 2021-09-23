@@ -1,1 +1,1 @@
-Indicate the measuring range of snow depth meter.
+Indicates the measuring range of snow depth meter.

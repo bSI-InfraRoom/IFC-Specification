@@ -1,1 +1,1 @@
-Indicate the type/manner of data collection.
+Indicates the type or manner of data collection.

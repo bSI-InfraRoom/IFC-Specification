@@ -1,1 +1,1 @@
-Indicate the measuring range of rain gauge.
+Indicates the measuring range of rain gauge.

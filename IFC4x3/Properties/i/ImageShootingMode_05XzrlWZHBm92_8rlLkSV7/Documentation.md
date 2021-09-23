@@ -1,1 +1,1 @@
-Indicate the type/manner of image shooting of snow depth meter.
+Indicates the type or manner of image shooting of snow depth meter.

@@ -1,1 +1,1 @@
-Indicate the type of rain gauge.
+Indicates the type of rain sensor or gauge.

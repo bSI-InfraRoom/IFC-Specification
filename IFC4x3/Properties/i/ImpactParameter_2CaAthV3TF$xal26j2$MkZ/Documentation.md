@@ -1,1 +1,1 @@
-Impact parameter of axle counter.
+Impact parameter of the equipment.

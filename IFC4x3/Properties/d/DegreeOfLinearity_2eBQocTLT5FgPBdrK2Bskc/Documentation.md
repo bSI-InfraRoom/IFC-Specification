@@ -1,1 +1,1 @@
-Indicate the degree of linearity of the Earthquake Accelerometer.
+Indicates the degree of linearity of the earthquake sensor or accelerometer.

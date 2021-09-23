@@ -1,1 +1,1 @@
-Indicate the measuring range of the Earthquake Accelerometer.
+Indicates the measuring range of the earthquake sensor or accelerometer.
