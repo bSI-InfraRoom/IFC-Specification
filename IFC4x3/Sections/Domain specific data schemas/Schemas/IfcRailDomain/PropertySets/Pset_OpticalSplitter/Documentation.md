@@ -1,1 +1,1 @@
-Properties of Optical Splitter used in railway telecom. The property set can be used by the predefined type DATA of IfcJunctionBox
+Properties of optical splitter used in the telecommunication domain. This property set can be used by the predefined type DATA of IfcJunctionBox.
