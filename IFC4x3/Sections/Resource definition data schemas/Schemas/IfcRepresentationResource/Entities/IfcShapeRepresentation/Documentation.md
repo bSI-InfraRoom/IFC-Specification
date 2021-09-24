@@ -87,6 +87,10 @@ Several representation types for shape representation are included as predefined
 <td align="left" valign="top">3 dimensional points prepresented by a point list</td>
 </tr>
 <tr>
+<td colspan="2" align="left" valign="top" width="20"><b>Segment</b></td>
+<td align="left" valign="top">2 or 3 dimensional segment(s)</td>
+</tr>
+<tr>
 <td colspan="2" align="left" valign="top" width="20"><b>Curve</b></td>
 <td align="left" valign="top">2 or 3 dimensional curve(s)</td>
 </tr>
