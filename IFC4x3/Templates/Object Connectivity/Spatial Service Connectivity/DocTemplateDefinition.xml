@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Spatial_Service_Connectivity_3ZHXQIzCLD_gZr1pIWQOzh" Name="Spatial Service Connectivity" UniqueId="e3461692-f4c5-4dfa-a8f5-0734a0698f6b" Type="IfcSpatialElement">
 	<Rules>
-		<DocModelRuleAttribute Name="ServicedBySystems" Identification="ServicedBySystems">
+		<DocModelRuleAttribute Name="ReferencedInStructures" Identification="ReferencedInStructures">
 			<Rules>
-				<DocModelRuleEntity Name="IfcRelServicesBuildings">
+				<DocModelRuleEntity Name="IfcRelReferencedInSpatialStructure">
 					<Rules>
-						<DocModelRuleAttribute Name="RelatingSystem" Identification="RelatedSystem">
+						<DocModelRuleAttribute Name="RelatedElements" Identification="RelatedSystems">
 							<Rules>
 								<DocModelRuleEntity Name="IfcSystem">
 									<Rules>
-										<DocModelRuleAttribute Name="Name" Identification="SystemName">
+										<DocModelRuleAttribute Name="Name" Identification="SystemName"> 
 											<Rules>
 												<DocModelRuleEntity Name="IfcLabel" />
 											</Rules>
