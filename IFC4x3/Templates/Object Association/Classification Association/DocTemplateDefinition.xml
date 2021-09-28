@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Classification_Association_1A8aO9PNXCTQFYl_eRbxo" Name="Classification Association" UniqueId="1A8aO9PNXCTQ$FYl_eRbxo" Type="IfcObjectDefinition">
+	<Localization>
+		<DocLocalization Locale="tt">
+			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
+	&lt;TemplateRule Parameters=&quot;Identification[Value]=&apos;351.4&apos; &quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;Name[Value]=&apos;Balken&apos; &quot;/&gt;
+	&lt;TemplateRule Parameters=&quot;ClassificationName[Value]=&apos;DIN 276&apos; &quot;/&gt;
+&lt;/TemplateRules&gt;</Documentation>
+		</DocLocalization>
+	</Localization>
+	<Rules>
+		<DocModelRuleAttribute Name="HasAssociations">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAssociatesClassification">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingClassification">
+							<Rules>
+								<DocModelRuleEntity Name="IfcClassificationReference">
+									<Rules>
+										<DocModelRuleAttribute Name="Identification" Identification="Identification">
+											<Rules>
+												<DocModelRuleEntity Name="IfcIdentifier" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Name" Identification="Name">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Description">
+											<Rules>
+												<DocModelRuleEntity Name="IfcText" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="ReferencedSource">
+											<Rules>
+												<DocModelRuleEntity Name="IfcClassification">
+													<Rules>
+														<DocModelRuleAttribute Name="Source" Identification="ClassificationSource">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Name" Identification="ClassificationName">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="ReferenceTokens" Identification="ClassificationTokens">
+															<Rules>
+																<DocModelRuleEntity Name="IfcIdentifier" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Edition">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Description">
+															<Rules>
+																<DocModelRuleEntity Name="IfcText" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="Location">
+															<Rules>
+																<DocModelRuleEntity Name="IfcURIReference" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="EditionDate">
+															<Rules>
+																<DocModelRuleEntity Name="IfcDate" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Sort">
+											<Rules>
+												<DocModelRuleEntity Name="IfcIdentifier" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Location">
+											<Rules>
+												<DocModelRuleEntity Name="IfcURIReference" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

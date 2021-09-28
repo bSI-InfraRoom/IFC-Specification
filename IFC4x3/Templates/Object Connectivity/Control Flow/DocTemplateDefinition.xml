@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Control_Flow_3Hs22BKULAZvAwuwBgAykS" Name="Control Flow" UniqueId="3Hs22BKULAZvAwuwBgAykS" Type="IfcDistributionControlElement">
+	<Rules>
+		<DocModelRuleAttribute Name="AssignedToFlowElement">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelFlowControlElements">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingFlowElement" Identification="Type">
+							<Rules>
+								<DocModelRuleEntity Name="IfcDistributionFlowElement" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

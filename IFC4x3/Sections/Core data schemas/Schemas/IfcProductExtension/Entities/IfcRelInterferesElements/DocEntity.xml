@@ -14,11 +14,14 @@
 		<DocAttribute Name="InterferenceGeometry" UniqueId="434aa7d7-1bd7-4773-a678-7ab1055f88f0" DefinedType="IfcConnectionGeometry" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation></Documentation>
 		</DocAttribute>
+		<DocAttribute Name="InterferenceSpace" UniqueId="4f546c0f-73ea-401b-aa48-bfaa954b18ba" DefinedType="IfcSpatialZone" AttributeFlags="1" AggregationLower="0" XsdFormat="element">
+			<Documentation>Optional attribute that expresses the interfering space for _IfcSpatialElement_ occurrences.</Documentation>
+		</DocAttribute>
 		<DocAttribute Name="InterferenceType" UniqueId="a92075e8-181d-4233-bd6a-e3efed6da830" DefinedType="IfcIdentifier" AttributeFlags="1">
-			<Documentation>Optional identifier that describes the nature of the interference. Examples include  &apos;&apos;Clash&apos;&apos;, &apos;&apos;ProvisionForVoid&apos;&apos; (physical elements), and �Crosses�, �PassesThrough� �PassesOver� �PassesUnder� (spatial elements).</Documentation>
+			<Documentation>Optional identifier that describes the nature of the interference.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="ImpliedOrder" UniqueId="57512488-73cf-44cc-995d-d5e84df6ae44" DefinedType="IfcLogical">
-			<Documentation>Logical value indicating whether the interference geometry should be subtracted from the _RelatingElement_ (if TRUE), or whether it should be either subtracted from the _RelatingElement_ or the _RelatedElement_ (if FALSE), or whether no indication can be provided (if UNKNOWN).</Documentation>
+			<Documentation>Logical value indicating if the _RelatingElement_ is considered a source and the _RelatedElement_ a target (giving a formal orientation to the relation). It shall be provided in regards to _InterferenceGeometry_ usage and _InterferenceType_ declaration.</Documentation>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

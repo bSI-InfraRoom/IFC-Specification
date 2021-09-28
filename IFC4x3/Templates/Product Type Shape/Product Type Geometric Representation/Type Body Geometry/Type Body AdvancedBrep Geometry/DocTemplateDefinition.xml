@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Type_Body_AdvancedBrep_Geometry_0SdQ8dAVPFjwqlicymUhFZ" Name="Type Body AdvancedBrep Geometry" UniqueId="1c9da227-29f6-4fb7-ad2f-b26f307ab3e3" Type="IfcTypeProduct">
+	<Rules>
+		<DocModelRuleAttribute Name="RepresentationMaps">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRepresentationMap">
+					<Rules>
+						<DocModelRuleAttribute Name="MappedRepresentation">
+							<Rules>
+								<DocModelRuleEntity Name="IfcShapeRepresentation">
+									<Rules>
+										<DocModelRuleAttribute Name="ContextOfItems">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGeometricRepresentationContext" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationIdentifier">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel">
+													<Rules>
+														<DocModelRuleAttribute Name="Value=Body" Description="Value=Body" />
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationType" Identification="RepresentationType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Items" Identification="Geometry">
+											<Rules>
+												<DocModelRuleEntity Name="IfcAdvancedBrep">
+													<Rules>
+														<DocModelRuleAttribute Name="Outer">
+															<Rules>
+																<DocModelRuleEntity Name="IfcClosedShell">
+																	<Rules>
+																		<DocModelRuleAttribute Name="CfsFaces">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcAdvancedFace">
+																					<Rules>
+																						<DocModelRuleAttribute Name="Bounds">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcFaceOuterBound">
+																									<Rules>
+																										<DocModelRuleAttribute Name="Bound">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcEdgeLoop">
+																													<Rules>
+																														<DocModelRuleAttribute Name="EdgeList">
+																															<Rules>
+																																<DocModelRuleEntity Name="IfcOrientedEdge">
+																																	<Rules>
+																																		<DocModelRuleAttribute Name="EdgeElement">
+																																			<Rules>
+																																				<DocModelRuleEntity Name="IfcEdgeCurve">
+																																					<Rules>
+																																						<DocModelRuleAttribute Name="EdgeGeometry">
+																																							<Rules>
+																																								<DocModelRuleEntity Name="IfcBSplineCurveWithKnots">
+																																									<Rules>
+																																										<DocModelRuleAttribute Name="Degree">
+																																											<Rules>
+																																												<DocModelRuleEntity Name="IfcInteger" />
+																																											</Rules>
+																																										</DocModelRuleAttribute>
+																																										<DocModelRuleAttribute Name="ControlPointsList">
+																																											<Rules>
+																																												<DocModelRuleEntity Name="IfcCartesianPoint" />
+																																											</Rules>
+																																										</DocModelRuleAttribute>
+																																										<DocModelRuleAttribute Name="CurveForm">
+																																											<Rules>
+																																												<DocModelRuleEntity Name="IfcBSplineCurveForm" />
+																																											</Rules>
+																																										</DocModelRuleAttribute>
+																																										<DocModelRuleAttribute Name="ClosedCurve">
+																																											<Rules>
+																																												<DocModelRuleEntity Name="IfcLogical" />
+																																											</Rules>
+																																										</DocModelRuleAttribute>
+																																										<DocModelRuleAttribute Name="SelfIntersect">
+																																											<Rules>
+																																												<DocModelRuleEntity Name="IfcLogical" />
+																																											</Rules>
+																																										</DocModelRuleAttribute>
+																																										<DocModelRuleAttribute Name="KnotMultiplicities">
+																																											<Rules>
+																																												<DocModelRuleEntity Name="IfcInteger" />
+																																											</Rules>
+																																										</DocModelRuleAttribute>
+																																										<DocModelRuleAttribute Name="Knots">
+																																											<Rules>
+																																												<DocModelRuleEntity Name="IfcParameterValue" />
+																																											</Rules>
+																																										</DocModelRuleAttribute>
+																																										<DocModelRuleAttribute Name="KnotSpec">
+																																											<Rules>
+																																												<DocModelRuleEntity Name="IfcKnotType" />
+																																											</Rules>
+																																										</DocModelRuleAttribute>
+																																									</Rules>
+																																								</DocModelRuleEntity>
+																																							</Rules>
+																																						</DocModelRuleAttribute>
+																																						<DocModelRuleAttribute Name="EdgeStart">
+																																							<Rules>
+																																								<DocModelRuleEntity Name="IfcVertexPoint">
+																																									<Rules>
+																																										<DocModelRuleAttribute Name="VertexGeometry">
+																																											<Rules>
+																																												<DocModelRuleEntity Name="IfcCartesianPoint" />
+																																											</Rules>
+																																										</DocModelRuleAttribute>
+																																									</Rules>
+																																								</DocModelRuleEntity>
+																																							</Rules>
+																																						</DocModelRuleAttribute>
+																																						<DocModelRuleAttribute Name="EdgeEnd">
+																																							<Rules>
+																																								<DocModelRuleEntity Name="IfcVertexPoint">
+																																									<Rules>
+																																										<DocModelRuleAttribute Name="VertexGeometry">
+																																											<Rules>
+																																												<DocModelRuleEntity Name="IfcCartesianPoint" />
+																																											</Rules>
+																																										</DocModelRuleAttribute>
+																																									</Rules>
+																																								</DocModelRuleEntity>
+																																							</Rules>
+																																						</DocModelRuleAttribute>
+																																						<DocModelRuleAttribute Name="SameSense">
+																																							<Rules>
+																																								<DocModelRuleEntity Name="IfcBoolean" />
+																																							</Rules>
+																																						</DocModelRuleAttribute>
+																																					</Rules>
+																																				</DocModelRuleEntity>
+																																			</Rules>
+																																		</DocModelRuleAttribute>
+																																		<DocModelRuleAttribute Name="Orientation">
+																																			<Rules>
+																																				<DocModelRuleEntity Name="IfcBoolean" />
+																																			</Rules>
+																																		</DocModelRuleAttribute>
+																																	</Rules>
+																																</DocModelRuleEntity>
+																															</Rules>
+																														</DocModelRuleAttribute>
+																													</Rules>
+																												</DocModelRuleEntity>
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute Name="Orientation">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcBoolean" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																									</Rules>
+																								</DocModelRuleEntity>
+																							</Rules>
+																						</DocModelRuleAttribute>
+																						<DocModelRuleAttribute Name="FaceSurface">
+																							<Rules>
+																								<DocModelRuleEntity Name="IfcBSplineSurfaceWithKnots">
+																									<Rules>
+																										<DocModelRuleAttribute Name="ControlPointsList">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcCartesianPoint" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute Name="UDegree">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcInteger" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute Name="VDegree">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcInteger" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute Name="SurfaceForm">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcBSplineSurfaceForm" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute Name="UClosed">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcLogical" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute Name="VClosed">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcLogical" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute Name="SelfIntersect">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcLogical" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute Name="UMultiplicities">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcInteger" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute Name="VMultiplicities">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcInteger" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute Name="UKnots">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcParameterValue" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute Name="VKnots">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcParameterValue" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																										<DocModelRuleAttribute Name="KnotSpec">
+																											<Rules>
+																												<DocModelRuleEntity Name="IfcKnotType" />
+																											</Rules>
+																										</DocModelRuleAttribute>
+																									</Rules>
+																								</DocModelRuleEntity>
+																							</Rules>
+																						</DocModelRuleAttribute>
+																					</Rules>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="MappingOrigin">
+							<Rules>
+								<DocModelRuleEntity Name="IfcAxis2Placement3D" />
+								<DocModelRuleEntity Name="IfcAxis2Placement2D" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

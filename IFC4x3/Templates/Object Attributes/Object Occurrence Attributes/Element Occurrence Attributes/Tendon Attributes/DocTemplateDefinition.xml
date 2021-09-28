@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Tendon_Attributes_3x5qh1NID9FhOiWhNMBMWq" Name="Tendon Attributes" UniqueId="fb174ac1-5d23-493e-b62c-82b5d62d6834" Status="Draft" Type="IfcTendon">
+	<Rules>
+		<DocModelRuleAttribute Name="Tag">
+			<Rules>
+				<DocModelRuleEntity Name="IfcIdentifier" />
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="IsTypedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelDefinesByType">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcTendonType">
+									<Rules>
+										<DocModelRuleAttribute Name="NominalDiameter">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="CrossSectionArea">
+											<Rules>
+												<DocModelRuleEntity Name="IfcAreaMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="SheathDiameter">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPositiveLengthMeasure" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="NominalDiameter" />
+		<DocModelRuleAttribute Name="CrossSectionArea" />
+		<DocModelRuleAttribute Name="TensionForce" />
+		<DocModelRuleAttribute Name="PreStress" />
+		<DocModelRuleAttribute Name="FrictionCoefficient" />
+		<DocModelRuleAttribute Name="AnchorageSlip" />
+		<DocModelRuleAttribute Name="MinCurvatureRadius" />
+	</Rules>
+</DocTemplateDefinition>
+
