@@ -5,7 +5,7 @@
 			<Rules>
 				<DocModelRuleEntity Name="IfcLinearPlacement">
 					<Rules>
-						<DocModelRuleAttribute Name="RelativePlacement">
+						<DocModelRuleAttribute Name="RelativePlacement" Identification="RelativePlacement">
 							<Rules>
 								<DocModelRuleEntity Name="IfcAxis2PlacementLinear" />
 							</Rules>
@@ -14,9 +14,17 @@
 							<Rules>
 								<DocModelRuleEntity Name="IfcLocalPlacement">
 									<Rules>
-										<DocModelRuleAttribute Name="PlacesObject">
+										<DocModelRuleAttribute Name="PlacesObject" Identification="RelativeToElement">
 											<Rules>
-												<DocModelRuleEntity Name="IfcLinearPositioningElement" />
+												<DocModelRuleEntity Name="IfcLinearPositioningElement">
+													<Rules>
+														<DocModelRuleAttribute Name="Name" Identification="LinearPositioningElementName">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
 											</Rules>
 										</DocModelRuleAttribute>
 									</Rules>
