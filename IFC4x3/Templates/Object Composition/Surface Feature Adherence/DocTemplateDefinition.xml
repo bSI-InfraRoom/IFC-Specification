@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Surface Feature Adherence" UniqueId="db1e5cb3-9a56-42c0-9633-90e92a89eff6" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="HasSurfaceFeatures" Identification="HasSurfaceFeatures">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAdheresToElement">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedSurfaceFeatures" Identification="RelatedSurfaceFeatures">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSurfaceFeature">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="SurfaceFeatureName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
