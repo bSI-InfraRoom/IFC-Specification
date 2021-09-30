@@ -18,7 +18,11 @@
 								</DocModelRuleEntity>
 							</Rules>
 						</DocModelRuleAttribute>
-						<DocModelRuleAttribute Name="Name" Identification="StartPosition" />
+						<DocModelRuleAttribute Name="Name" Identification="StartPosition">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
 					</Rules>
 				</DocModelRuleEntity>
 			</Rules>
@@ -40,7 +44,11 @@
 								</DocModelRuleEntity>
 							</Rules>
 						</DocModelRuleAttribute>
-						<DocModelRuleAttribute Name="Name" Identification="EndPosition" />
+						<DocModelRuleAttribute Name="Name" Identification="EndPosition">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
 					</Rules>
 				</DocModelRuleEntity>
 			</Rules>
