@@ -1,1 +1,1 @@
-Is the surface needed to gall (TRUE) or not (FALSE)
+Indicates whether the surface is galling or not.

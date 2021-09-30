@@ -1,1 +1,1 @@
-Is there a rail drainage (TRUE) or not (FALSE). (grooved rail)
+Indicates whether the infrastructure element has drainage embeded or not.

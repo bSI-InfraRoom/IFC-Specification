@@ -1,1 +1,1 @@
-The galling area of the object surface in [mm2]
+The galling area of the object surface.

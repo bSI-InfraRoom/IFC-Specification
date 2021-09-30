@@ -1,1 +1,1 @@
-Permissible road traffic load / [t]
+Permissible traffic load for the road design.

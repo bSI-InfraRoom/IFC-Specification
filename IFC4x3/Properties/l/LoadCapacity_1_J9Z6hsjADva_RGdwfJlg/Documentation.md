@@ -1,1 +1,1 @@
-Indication of the highest permissible load capacity in [t]
+Indicates the highest permissible load capacity.
