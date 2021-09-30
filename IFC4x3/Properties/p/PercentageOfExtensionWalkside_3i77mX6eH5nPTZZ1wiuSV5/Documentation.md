@@ -1,1 +1,1 @@
-Length of the section of the site where the path is present / [%]
+Length of the extension where the path is present. It is described by the percentage of the extension.

@@ -1,1 +1,1 @@
-Is the banquet element accessible by vehicle (TRUE) or not (FALSE). (type of accessibility where applicable)
+Indicates whether the banquet element is accessible by vehicle or not.
