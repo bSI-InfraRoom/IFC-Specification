@@ -1,1 +1,1 @@
-The minimum distance which ensures air insulation.
+The minimum thickness of the air gap layer that ensures insulation.
