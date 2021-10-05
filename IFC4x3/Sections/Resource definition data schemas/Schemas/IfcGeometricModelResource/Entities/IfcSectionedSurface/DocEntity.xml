@@ -5,20 +5,32 @@
 			<Documentation>The curve used to define the sweeping operation</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="CrossSectionPositions" UniqueId="6f036e83-ef2e-4f46-9b50-f3d049cf88af" DefinedType="IfcAxis2PlacementLinear" AggregationType="1" AggregationLower="2" AggregationUpper="?">
-			<Documentation>Position coordinate systems in sequentially increasing order paired with _CrossSections_, indicating the position of the corresponding section along the _Directrix_.</Documentation>
+			<Documentation>List of positions in sequentially increasing order paired with _CrossSections_, indicating the position of the corresponding section along the _Directrix_.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="CrossSections" UniqueId="0cd0d9cd-de33-4a3e-9dfd-63466c76799a" DefinedType="IfcProfileDef" AggregationType="1" AggregationLower="2" AggregationUpper="?">
 			<Documentation>List of cross sections in sequential order along the Directrix</Documentation>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
+		<DocWhereRule Name="DirectrixIs3D" >
+			<Documentation>The curve entity which is the underlying directrix shall have the dimensionality of 3.</Documentation>
+			<Expression>Directrix.Dim = 3</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="AreaProfileTypes">
+			<Documentation>The profile type shall be CURVE within the list of the profiles defining the cross sections.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* CrossSections | CrossSections[1].ProfileType &lt;&gt; IfcProfileTypeEnum.CURVE)) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="SectionsSameType" >
+			<Documentation>The entity type for each section must be the same.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* CrossSections | TYPEOF(CrossSections[1]) :&lt;&gt;: TYPEOF(temp))) = 0</Expression>
+		</DocWhereRule>
 		<DocWhereRule Name="CorrespondingSectionPositions" UniqueId="190f1477-5810-467a-8a3d-e99e047438a0">
-			<Documentation>The set of cross sections and the set of cross section positions shall be of the same size.</Documentation>
+			<Documentation>The set of cross sections and the set of cross section placements shall be of the same size.</Documentation>
 			<Expression>SIZEOF(CrossSections) = SIZEOF(CrossSectionPositions)</Expression>
 		</DocWhereRule>
-		<DocWhereRule Name="NoLongitudinalOffsets" UniqueId="08090a41-c409-44d6-ab1e-83696c126b7a">
-			<Documentation>Distance expressions must not use longitudinal offsets.</Documentation>
-			<Expression>SIZEOF(QUERY(temp &lt;* CrossSectionPositions | EXISTS(temp.Location.OffsetLongitudinal))) = 0</Expression>
+		<DocWhereRule Name="NoOffsets" UniqueId="08090a41-c409-44d6-ab1e-83696c126b7a">
+			<Documentation>Distance expressions must not use longitudinal, laterial or vertical offsets.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* CrossSectionPositions | EXISTS(temp.Location.OffsetLateral) OR EXISTS(temp.Location.OffsetVertical) OR EXISTS(temp.Location.OffsetLongitudinal))) = 0</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

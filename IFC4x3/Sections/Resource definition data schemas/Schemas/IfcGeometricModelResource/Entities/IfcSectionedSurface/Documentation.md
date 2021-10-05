@@ -12,12 +12,6 @@ Figure 2 illustrates an _IfcSectionedSurface_ featuring branching longitudinal b
 
 !["sectioned surfacequot;](../../../../../../figures/IfcSectionedSurface_2.png "Figure 2 &mdash; Sectioned surface with branching longitudinal breaklines")
 
-**Formal propositions:**
-* The curve entity which is the underlying directrix shall have the dimensionality of 3.
-* The profile type shall be CURVE within the list of the profiles defining the cross sections.
-* The entity type for each section must be the same.
-* The list of cross sections and the list of cross section positions shall be of the same size.
-
 **Informal Propositions:** No two consecutive sections shall intersect.
 * If the directrix is not tangent continuous, the resulting surface is created by a miter at half angle between the two segments.
 * Very sharp edges may result in nearly impossible miter; implementer agreements may define acceptable limits for tangent discontinuity or require the directrix to be tangent continuous.
