@@ -1,1 +1,1 @@
-The actual current and operable range as input of the equipment.
+The actual current and operable range output from the equipment.

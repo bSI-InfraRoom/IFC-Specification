@@ -1,1 +1,1 @@
-Code of the chargeability type of a battery.
+Identifies the predefined types of battery charging.

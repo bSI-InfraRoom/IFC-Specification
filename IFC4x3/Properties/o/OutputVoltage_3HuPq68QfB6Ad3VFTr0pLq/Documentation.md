@@ -1,1 +1,1 @@
-The actual voltage and operable range as output of the equipment.
+The actual voltage and operable range output from the equipment.
