@@ -1,1 +1,1 @@
-What's the purpose of the hollow sleeper? Eg. cable trenching, protection of turnout mechanism
+Purpose of the hollow sleeper eg. cable trenching, protection of turnout mechanism
