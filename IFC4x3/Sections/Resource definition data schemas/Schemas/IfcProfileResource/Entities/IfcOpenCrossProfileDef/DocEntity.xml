@@ -13,8 +13,8 @@
 		<DocAttribute Name="Tags" UniqueId="e0750c4d-1efe-493d-9699-706d8d0bc7d6" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationLower="2" AggregationUpper="?">
 			<Documentation></Documentation>
 		</DocAttribute>
-		<DocAttribute Name="StartPoint" UniqueId="4f5b213a-261b-4c67-b80c-cb8b72473faa" DefinedType="IfcCartesianPoint">
-			<Documentation>The start point of the profile defined by a Cartesian point in profile's coordinate system. The provided slopes and widths emerge from this point.</Documentation>
+		<DocAttribute Name="OffsetPoint" UniqueId="4f5b213a-261b-4c67-b80c-cb8b72473faa" DefinedType="IfcCartesianPoint" AttributeFlags="1">
+			<Documentation>Optional cartesian point to nominate start of profile curve. The provided slopes and widths emerge from this point.</Documentation>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
