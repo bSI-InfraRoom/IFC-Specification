@@ -1,1 +1,1 @@
-Indication if bumper is removable (TRUE) or not (FALSE).
+Indicates if the bumper is removable or not.

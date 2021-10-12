@@ -1,1 +1,1 @@
-Does the bumper absorbed Energy.
+Indicates whether the bumper absorbs energy or not.

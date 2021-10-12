@@ -1,1 +1,1 @@
-Maximum possible impact load retention / [t]
+Maximum possible impact load retention.
