@@ -1,1 +1,1 @@
-Date on which the banquet element was (or will be) removed.
+Date on which the element was (or will be) removed.
