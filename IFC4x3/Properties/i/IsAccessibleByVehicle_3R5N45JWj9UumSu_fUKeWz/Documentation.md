@@ -1,1 +1,1 @@
-Indicates whether the element is accessible by vehicle.
+Indicates whether the element is accessible by a vehicle or not.
