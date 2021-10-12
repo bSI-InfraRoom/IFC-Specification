@@ -1,1 +1,1 @@
-Principal track, secondary track, siding track
+The expected primary usage of the track
