@@ -1,1 +1,1 @@
-Indicates whether the infrastructure element has drainage embeded or not.
+Indicates whether the infrastructure element has drainage embedded or not.
