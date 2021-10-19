@@ -18,7 +18,7 @@
 		</DocWhereRule>
 		<DocWhereRule Name="AreaProfileTypes" UniqueId="4d51cd1c-3965-45be-b620-dde7b39616d8">
 			<Documentation>The profile type shall be CURVE within the list of the profiles defining the cross sections.</Documentation>
-			<Expression>SIZEOF(QUERY(temp &lt;* CrossSections | CrossSections[1].ProfileType &lt;&gt; IfcProfileTypeEnum.CURVE)) = 0</Expression>
+			<Expression>SIZEOF(QUERY(temp &lt;* CrossSections | temp.ProfileType = IfcProfileTypeEnum.CURVE)) = 0</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="SectionsSameType" UniqueId="a5025617-db3b-423b-8ac4-92912b2dba3d">
 			<Documentation>The entity type for each section must be the same.</Documentation>
