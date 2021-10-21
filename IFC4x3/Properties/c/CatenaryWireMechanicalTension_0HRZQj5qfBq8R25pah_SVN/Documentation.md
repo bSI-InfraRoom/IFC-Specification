@@ -1,1 +1,1 @@
-The tensile force that catenary wire takes.
+Nominal tensile force that catenary wire can support.

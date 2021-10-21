@@ -1,1 +1,1 @@
-The max load that the dropper could undertake before break.
+The max load that a component could undertake before break.

@@ -1,1 +1,1 @@
-The load that the dropper takes.
+The nominal load that a component can support.
