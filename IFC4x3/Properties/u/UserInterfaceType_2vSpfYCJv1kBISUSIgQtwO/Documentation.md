@@ -1,1 +1,1 @@
-Indicate the user interface of the desktop console.
+Indicates the user interface of the computer.

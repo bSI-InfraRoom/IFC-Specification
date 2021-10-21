@@ -1,1 +1,1 @@
-Indicate the type of the modem.
+Indicates the type of the modem.

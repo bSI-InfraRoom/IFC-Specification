@@ -1,1 +1,1 @@
-Indicate the type of transport equipment assembly.
+Indicates the type of transport equipment assembly.

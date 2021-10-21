@@ -1,1 +1,1 @@
-Indicate the number of packets of the IP network equipment.
+Indicates the number of packets of the IP network equipment.

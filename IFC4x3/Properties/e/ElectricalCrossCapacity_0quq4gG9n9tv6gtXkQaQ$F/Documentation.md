@@ -1,1 +1,1 @@
-Indicate the electrical cross capacity of the transport equipment.
+Indicates the electrical cross capacity of the transport equipment.

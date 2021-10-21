@@ -1,1 +1,1 @@
-Indicate the type of antenna.
+Indicates the type of antenna.

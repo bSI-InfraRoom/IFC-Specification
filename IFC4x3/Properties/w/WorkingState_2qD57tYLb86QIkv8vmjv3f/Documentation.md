@@ -1,1 +1,1 @@
-Indicate the working state of Anemometrograph.
+Indicates the working state of the device.

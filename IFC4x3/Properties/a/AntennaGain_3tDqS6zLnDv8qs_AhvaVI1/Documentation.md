@@ -1,1 +1,1 @@
-Indicate the gain of antenna.
+Indicates the gain of antenna.

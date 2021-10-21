@@ -1,1 +1,1 @@
-Supported bytes of the data Information, e.g.127 bytes
+Indicates supported bytes of the data Information, e.g.127 bytes.

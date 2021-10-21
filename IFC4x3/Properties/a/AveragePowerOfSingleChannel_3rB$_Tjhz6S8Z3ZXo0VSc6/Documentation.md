@@ -1,1 +1,1 @@
-Indicate the average power of a single channel of the OTN system.
+Indicates the average power of a single channel of the optical transport network (OTN) system.

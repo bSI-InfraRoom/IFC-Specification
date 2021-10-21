@@ -1,1 +1,1 @@
-Indicate the protocols supported by the IP network equipment.
+Indicates the protocol supported by the IP network equipment.

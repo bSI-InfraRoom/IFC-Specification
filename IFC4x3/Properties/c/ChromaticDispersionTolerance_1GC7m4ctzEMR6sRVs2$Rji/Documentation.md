@@ -1,1 +1,1 @@
-Indicate the tolerance of chromatic dispersion of the Optical Transport Networking system.
+Indicates the tolerance of chromatic dispersion of the optical transport networking (OTN) system.

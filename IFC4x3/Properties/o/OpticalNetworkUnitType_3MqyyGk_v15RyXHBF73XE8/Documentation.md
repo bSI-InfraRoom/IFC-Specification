@@ -1,1 +1,1 @@
-Indicate the type of the ONU equipment.
+Indicates the type of the optical network unit equipment.

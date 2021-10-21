@@ -1,1 +1,1 @@
-Indicate the number of waves of the OTN system.
+Indicates the number of waves of the optical transport network system.

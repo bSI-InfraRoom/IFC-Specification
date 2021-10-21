@@ -1,1 +1,1 @@
-Indicate the number of occupied slots of the device.
+Indicates the number of occupied slots of the device.

@@ -1,1 +1,1 @@
-Indicate whether the transport equipment can be upgraded.
+Indicates whether the transport equipment can be upgraded or not.

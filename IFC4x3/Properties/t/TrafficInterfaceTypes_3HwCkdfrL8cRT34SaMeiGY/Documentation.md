@@ -1,1 +1,1 @@
-Indicate the type of traffic interfaces of the device.
+Indicates the types of traffic interfaces of the device.

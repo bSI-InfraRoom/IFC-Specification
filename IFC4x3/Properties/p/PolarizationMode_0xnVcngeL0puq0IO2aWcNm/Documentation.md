@@ -1,1 +1,1 @@
-Indicate the polarization mode of antenna.
+Indicates the polarization mode of antenna.

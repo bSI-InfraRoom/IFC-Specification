@@ -1,1 +1,1 @@
-Indicate the number of cooling fan in the equipment.
+Indicates the number of cooling fans in the equipment.

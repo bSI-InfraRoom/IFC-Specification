@@ -1,1 +1,1 @@
-Indicate the radiation pattern of antenna.
+Indicates the radiation pattern of antenna.
