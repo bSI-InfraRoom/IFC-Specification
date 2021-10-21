@@ -1,1 +1,1 @@
-Outer diameter of the cable(mm)
+Outer diameter of the cable

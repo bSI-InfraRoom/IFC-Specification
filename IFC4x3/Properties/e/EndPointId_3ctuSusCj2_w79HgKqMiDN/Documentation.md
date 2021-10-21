@@ -1,1 +1,1 @@
-Indicate the starting point of the cable
+Indicate the ending point of the cable
