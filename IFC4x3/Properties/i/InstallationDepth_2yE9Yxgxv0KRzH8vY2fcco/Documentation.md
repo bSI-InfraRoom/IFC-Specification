@@ -1,1 +1,0 @@
-Ideal installation depth underground.
