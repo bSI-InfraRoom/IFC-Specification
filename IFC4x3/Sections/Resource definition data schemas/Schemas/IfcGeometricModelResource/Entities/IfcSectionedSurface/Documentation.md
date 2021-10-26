@@ -6,7 +6,7 @@ Figure 1 illustrates an _IfcSectionedSurface_ defined using _IfcOpenCrossProfile
 
 !["sectioned surfacequot;](../../../../../../figures/IfcSectionedSurface_1.png "Figure 1 &mdash; Sectioned surface using _IfcOpenCrossProfileDef_")
 
-In case of branching longitudinal breaklines, the _SectionedSurface_ may use _OpenCrossProfileDef_ instances with varying number of cross section points. In that case, the point in two consecutive cross sections that are connected are identified by the same tag value.
+In case of branching longitudinal breaklines, the _IfcSectionedSurface_ shall use _IfcOpenCrossProfileDef_ instances with varying number of cross section points. In that case, the point in two consecutive cross sections that are connected are identified by the same tag value.
 
 Figure 2 illustrates an _IfcSectionedSurface_ featuring branching longitudinal breaklines
 
