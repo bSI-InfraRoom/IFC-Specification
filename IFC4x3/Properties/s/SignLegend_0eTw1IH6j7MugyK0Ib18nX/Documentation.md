@@ -1,1 +1,1 @@
-Text information written on the sign.
+Text information written on the signal or sign.
