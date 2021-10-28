@@ -152,6 +152,11 @@ dimensional)</td>
 <td align="left" valign="top">tessellated surface representation(s) only</td>
 </tr>
 <tr>
+<td align="left" valign="top" width="20"></td>
+<td align="left" valign="top" width="180"><b>SectionedSurface</b></td>
+<td align="left" valign="top">swept curve surfaces created by sweeping open profiles along a directrix</td>
+</tr>
+<tr>
 <td colspan="2" align="left" valign="top" width="20"><b>SolidModel</b></td>
 <td align="left" valign="top">including swept solid, Boolean results and Brep bodies; more specific types are:</td>
 </tr>
