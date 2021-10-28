@@ -1,1 +1,1 @@
-Length of the braking distance as design parameter of the bumper occurrence.
+Length of the braking distance as a design parameter of the bumper occurrence.
