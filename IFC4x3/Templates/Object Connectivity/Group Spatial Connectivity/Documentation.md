@@ -6,4 +6,4 @@ The relationship (_IfcRelReferencedInSpatialStructure_) in question can provide 
 
 The use of _IfcRelReferencedInSpatialStructure_ in this template provides the relationship across spatial and functional hierarchies allowing the spatial coverage of functional groups.
 
-It is permissable for an IfcGroup not to be related to any spatial structure element. In the event that an IfcGroup (and its relevant subtypes) does not have a parent group through composition it must be related to the IfcProject using _Project declaration template_ via the IfcRelDeclares relationship.
+It is permissable for an _IfcGroup_ not to be related to any spatial structure element. When the _IfcGroup_ is **not** connected to the spatial structure it must be declared to the _IfcProject_ using the _Project declaration template_ via the IfcRelDeclares relationship, or have a parent _IfcGroup_ (or its relevant subtypes) through the use of composition, with said parent _IfcGroup_ either connected to the spatial structure using _Group Spatial Connectivity_ or declared to the _IfcProject_ using the _Project declaration template_
