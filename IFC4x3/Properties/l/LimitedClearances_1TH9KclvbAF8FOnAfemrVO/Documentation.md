@@ -1,1 +1,1 @@
-Special conditions for placing signal post telephone: tunnels, bridges, viaducts.
+Special conditions for placing the signal post telephone: tunnels, bridges, viaducts.
