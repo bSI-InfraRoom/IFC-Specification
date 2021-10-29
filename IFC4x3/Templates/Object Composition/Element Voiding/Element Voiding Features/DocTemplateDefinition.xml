@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Element Voiding Features" UniqueId="5b37561e-5789-4f06-89b8-59a00a04376e" Type="IfcElement">
 	<Rules>
-		<DocModelRuleAttribute Name="HasOpenings">
+		<DocModelRuleAttribute Name="HasOpenings" Identification="HasOpenings">
 			<Rules>
 				<DocModelRuleEntity Name="IfcRelVoidsElement">
 					<Rules>
-						<DocModelRuleAttribute Name="RelatedOpeningElement">
+						<DocModelRuleAttribute Name="RelatedOpeningElement" Identification="RelatedVoidingFeature">
 							<Rules>
 								<DocModelRuleEntity Name="IfcVoidingFeature">
 									<Rules>
-										<DocModelRuleAttribute Name="PredefinedType">
+										<DocModelRuleAttribute Name="PredefinedType" Identification="VoidingFeatureType">
 											<Rules>
 												<DocModelRuleEntity Name="IfcVoidingFeatureTypeEnum" />
-											</Rules>
-										</DocModelRuleAttribute>
-										<DocModelRuleAttribute Name="HasOpenings" Identification="Length">
-											<Rules>
-												<DocModelRuleEntity Name="IfcRelVoidsElement" />
 											</Rules>
 										</DocModelRuleAttribute>
 									</Rules>
