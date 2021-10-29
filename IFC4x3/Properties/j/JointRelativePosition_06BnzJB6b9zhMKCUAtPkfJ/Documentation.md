@@ -1,1 +1,1 @@
-Indicates the relative position of the joint, which lies in the left or right rail or in the middle, or in combination. The left rail is to the left of alignment as facing in the direction of stationing, and the right rail is to the right.
+Indicates the relative position of the joint, which lies in the left or right rail or in the middle, or in combination. The left rail is to the left as facing in the direction of stationing, and the right rail is to the right.
