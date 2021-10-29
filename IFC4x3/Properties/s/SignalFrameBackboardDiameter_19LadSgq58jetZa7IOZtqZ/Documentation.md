@@ -1,1 +1,1 @@
-The diameter of the backboard of the signal frame.
+The nominal diameter of the backboard of the signal frame.

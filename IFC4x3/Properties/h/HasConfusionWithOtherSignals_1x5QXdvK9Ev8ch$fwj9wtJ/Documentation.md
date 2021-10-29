@@ -1,1 +1,1 @@
-Indicates if there is a possible confusion with other signals.
+Indicates if there is a possible confusion with other signals or not.

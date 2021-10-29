@@ -1,1 +1,1 @@
-The type of the signal frame backboard.
+The type of the backboard of the signal frame.
