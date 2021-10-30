@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Product Span Positioning" UniqueId="1cdcaa9f-85d5-42cf-9aaf-0fd663b14ee8" Type="IfcProduct">
 	<Rules>
-		<DocModelRuleAttribute Name="PositionedRelativeTo">
+		<DocModelRuleAttribute Name="PositionedRelativeTo" Identification="StartPositionedRelativeTo">
 			<Rules>
 				<DocModelRuleEntity Name="IfcRelPositions">
 					<Rules>
@@ -18,7 +18,7 @@
 								</DocModelRuleEntity>
 							</Rules>
 						</DocModelRuleAttribute>
-						<DocModelRuleAttribute Name="Name" Identification="StartPosition">
+						<DocModelRuleAttribute Name="Name" Identification="StartPositionName">
 							<Rules>
 								<DocModelRuleEntity Name="IfcLabel" />
 							</Rules>
@@ -27,7 +27,7 @@
 				</DocModelRuleEntity>
 			</Rules>
 		</DocModelRuleAttribute>
-		<DocModelRuleAttribute Name="PositionedRelativeTo">
+		<DocModelRuleAttribute Name="PositionedRelativeTo" Identification="EndPositionedRelativeTo">
 			<Rules>
 				<DocModelRuleEntity Name="IfcRelPositions">
 					<Rules>
@@ -44,7 +44,7 @@
 								</DocModelRuleEntity>
 							</Rules>
 						</DocModelRuleAttribute>
-						<DocModelRuleAttribute Name="Name" Identification="EndPosition">
+						<DocModelRuleAttribute Name="Name" Identification="EndPositionName">
 							<Rules>
 								<DocModelRuleEntity Name="IfcLabel" />
 							</Rules>
