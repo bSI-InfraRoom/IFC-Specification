@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Gradient_Curve_3F3KS9t5j8Jguab6LJrgJX" Name="Gradient Curve" UniqueId="cf0d4709-dc5b-484e-ae24-946553d6a4e1" Type="IfcGradientCurve">
 	<Rules>
-		<DocModelRuleAttribute Name="BaseCurve">
+		<DocModelRuleAttribute Name="BaseCurve" Identification="BaseCurve">
 			<Rules>
 				<DocModelRuleEntity Name="IfcCompositeCurve">
 					<Rules>
-						<DocModelRuleAttribute Name="Segments">
+						<DocModelRuleAttribute Name="Segments" Identification="CompositeSegments">
 							<Rules>
 								<DocModelRuleEntity Name="IfcCurveSegment">
 									<References>
@@ -26,7 +26,7 @@
 				</DocModelRuleEntity>
 			</Rules>
 		</DocModelRuleAttribute>
-		<DocModelRuleAttribute Name="Segments">
+		<DocModelRuleAttribute Name="Segments" Identification="BaseSegments">
 			<Rules>
 				<DocModelRuleEntity Name="IfcCurveSegment">
 					<References>
