@@ -16,7 +16,18 @@
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
 											<Rules>
-												<DocModelRuleEntity Name="IfcLabel" />
+												<DocModelRuleEntity id="IfcLabel_0000000000000000000000" Name="IfcLabel">
+													<Rules>
+														<DocModelRuleConstraint>
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_0000000000000000000000" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="Body" />
+															</Expression>
+														</DocModelRuleConstraint>
+													</Rules>
+												</DocModelRuleEntity>
 											</Rules>
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
@@ -47,11 +58,6 @@
 														<DocModelRuleAttribute Name="CrossSections" Identification="CrossSections">
 															<Rules>
 																<DocModelRuleEntity Name="IfcProfileDef" />
-															</Rules>
-														</DocModelRuleAttribute>
-														<DocModelRuleAttribute Name="CrossSectionPositions" Identification="CrossSectionPositions">
-															<Rules>
-																<DocModelRuleEntity Name="IfcAxis2PlacementLinear" />
 															</Rules>
 														</DocModelRuleAttribute>
 													</Rules>
