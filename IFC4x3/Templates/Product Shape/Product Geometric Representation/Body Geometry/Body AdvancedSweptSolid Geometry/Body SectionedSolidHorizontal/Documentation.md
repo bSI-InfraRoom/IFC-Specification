@@ -4,4 +4,4 @@ The following attribute values for the _IfcShapeRepresentation_ holding this geo
 
 * _IfcShapeRepresentation_._RepresentationIdentifier_ = 'Body'
 * _IfcShapeRepresentation_._RepresentationType_ = 'AdvancedSweptSolid'
-* _IfcShapeRepresentation_._Items_ = _IfcSectionedSolidHorizontal
+* _IfcShapeRepresentation_._Items_ = _IfcSectionedSolidHorizontal_
