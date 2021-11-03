@@ -18,7 +18,18 @@
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
 											<Rules>
-												<DocModelRuleEntity Name="IfcLabel" />
+												<DocModelRuleEntity id="IfcLabel_3QeLQa0X18jvXRXg1RCv0w" Name="IfcLabel" UniqueId="daa156a4-0210-48b7-985b-86a05b33903a">
+													<Rules>
+														<DocModelRuleConstraint>
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_3QeLQa0X18jvXRXg1RCv0w" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="Reference" />
+															</Expression>
+														</DocModelRuleConstraint>
+													</Rules>
+												</DocModelRuleEntity>
 											</Rules>
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute Name="RepresentationType" Identification="Type">

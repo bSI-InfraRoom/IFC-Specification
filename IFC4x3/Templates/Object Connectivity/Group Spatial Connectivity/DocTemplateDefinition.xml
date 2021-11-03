@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Spatial_Service_Connectivity_3ZHXQIzCLD_gZr1pIWQOzh" Name="Spatial Service Connectivity" UniqueId="e3461692-f4c5-4dfa-a8f5-0734a0698f6b" Type="IfcSpatialElement">
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Group Spatial Connectivity" UniqueId="807de12a-ece3-406f-8177-a8f85bae31c2" Type="IfcSpatialElement">
 	<Rules>
 		<DocModelRuleAttribute Name="ReferencedInStructures" Identification="ReferencedInStructures">
 			<Rules>
 				<DocModelRuleEntity Name="IfcRelReferencedInSpatialStructure">
 					<Rules>
-						<DocModelRuleAttribute Name="RelatedElements" Identification="RelatedSystems">
+						<DocModelRuleAttribute Name="RelatedElements" Identification="RelatedGroups">
 							<Rules>
-								<DocModelRuleEntity Name="IfcSystem">
+								<DocModelRuleEntity Name="IfcGroup">
 									<Rules>
-										<DocModelRuleAttribute Name="Name" Identification="SystemName">
+										<DocModelRuleAttribute Name="Name" Identification="GroupName">
 											<Rules>
 												<DocModelRuleEntity Name="IfcLabel" />
 											</Rules>
 										</DocModelRuleAttribute>
 									</Rules>
 								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name" Description="*" Identification="ReferenceContext">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
 							</Rules>
 						</DocModelRuleAttribute>
 					</Rules>

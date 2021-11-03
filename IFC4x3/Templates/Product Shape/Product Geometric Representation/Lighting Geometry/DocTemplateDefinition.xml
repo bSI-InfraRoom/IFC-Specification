@@ -16,18 +16,32 @@
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
 											<Rules>
-												<DocModelRuleEntity Name="IfcLabel">
+												<DocModelRuleEntity id="IfcLabel_3ndcjUQvL2rBlvf4VRzBhA" Name="IfcLabel" UniqueId="f19e6b5e-6b95-42d4-bbf9-a447dbf4baca">
 													<Rules>
-														<DocModelRuleAttribute Name="Value=Lighting" Description="Value=Lighting" />
+														<DocModelRuleConstraint>
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_3ndcjUQvL2rBlvf4VRzBhA" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="Lighting" />
+															</Expression>
+														</DocModelRuleConstraint>
 													</Rules>
 												</DocModelRuleEntity>
 											</Rules>
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
 											<Rules>
-												<DocModelRuleEntity Name="IfcLabel">
+												<DocModelRuleEntity id="IfcLabel_101Gh41Wf869ZVr9dRrfp6" Name="IfcLabel" UniqueId="40050ac4-060a-4818-98df-d499dbd69cc6">
 													<Rules>
-														<DocModelRuleAttribute Name="Value=LightSource" Description="Value=LightSource" />
+														<DocModelRuleConstraint>
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_101Gh41Wf869ZVr9dRrfp6" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="LightSource" />
+															</Expression>
+														</DocModelRuleConstraint>
 													</Rules>
 												</DocModelRuleEntity>
 											</Rules>
