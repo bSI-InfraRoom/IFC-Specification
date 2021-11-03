@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Earthworks Cuttings" UniqueId="dbb05c46-12f4-4bdc-89f5-d7c9d5c075ce" Type="IfcElement">
 	<Rules>
-		<DocModelRuleAttribute Name="HasOpenings"  Identification="HasOpenings">
+		<DocModelRuleAttribute Name="HasOpenings" Identification="HasOpenings">
 			<Rules>
 				<DocModelRuleEntity Name="IfcRelVoidsElement">
 					<Rules>
-						<DocModelRuleAttribute Name="RelatedOpeningElement"  Identification="RelatedEarthworksCut">
+						<DocModelRuleAttribute Name="RelatedOpeningElement" Identification="RelatedEarthworksCut">
 							<Rules>
 								<DocModelRuleEntity Name="IfcEarthworksCut">
 									<Rules>
