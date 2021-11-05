@@ -1,1 +1,1 @@
-The inductance of the inductor
+Measure of the Inductance.
