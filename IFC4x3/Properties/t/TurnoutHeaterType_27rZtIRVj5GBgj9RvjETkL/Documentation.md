@@ -1,1 +1,1 @@
-Define the kind of turnout heater installed.
+Defines the kind of turnout heater installed.
