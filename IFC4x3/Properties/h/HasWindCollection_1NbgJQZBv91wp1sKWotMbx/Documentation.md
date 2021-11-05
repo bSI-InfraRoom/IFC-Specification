@@ -1,1 +1,1 @@
-Indicate whether the on-site control unit collects wind.
+Indicates whether the on-site control unit collects information on wind.

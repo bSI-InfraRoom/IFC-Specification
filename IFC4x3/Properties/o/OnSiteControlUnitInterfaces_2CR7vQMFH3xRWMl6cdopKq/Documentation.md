@@ -1,1 +1,1 @@
-Indicate the type of interface of on-site control unit.
+Indicates the type of interface of on-site control unit.

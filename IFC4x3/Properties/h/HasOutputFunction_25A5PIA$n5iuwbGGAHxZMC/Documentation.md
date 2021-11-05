@@ -1,1 +1,1 @@
-Indicate whether the on-site control unit includes output function.
+Indicates whether the on-site control unit includes an output function.
