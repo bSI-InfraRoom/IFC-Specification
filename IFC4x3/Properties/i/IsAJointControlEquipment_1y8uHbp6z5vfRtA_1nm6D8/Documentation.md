@@ -1,1 +1,1 @@
- YES/NO – security equipment that check mechanical functionality (RFI)
+Indicates whether a security equipment checks mechanical functionality (RFI functionality) or not.

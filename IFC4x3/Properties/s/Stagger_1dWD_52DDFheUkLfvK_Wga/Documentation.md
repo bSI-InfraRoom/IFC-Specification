@@ -1,2 +1,3 @@
-Lateral displacement of the contact wire to opposite sides of the track centre at successive supports.
-Note 1 to entry:Stagger avoids localized wear of pantogragh cotact strips.
+Lateral displacement of the contact wire to the opposite sides of the track center.  
+Correspond to the contact wire zig-zag distance from the track axis
+Note: Stagger avoids localized wear of pantogragh cotact strips.
