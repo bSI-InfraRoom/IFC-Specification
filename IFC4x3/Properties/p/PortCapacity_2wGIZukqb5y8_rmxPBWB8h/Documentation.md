@@ -1,1 +1,1 @@
-Indicate the cross port capacity of the distribution frame.
+Indicates the cross port capacity of the distribution frame.

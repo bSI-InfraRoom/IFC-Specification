@@ -1,1 +1,1 @@
-Indicate the type of dispatching board.
+Indicates the type of dispatching board.

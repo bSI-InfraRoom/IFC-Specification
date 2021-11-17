@@ -1,1 +1,1 @@
-Properties in this property set are applicable for the dispatching board type of distribution frame.
+Properties for _IfcDistributionBoard_ with PredefinedType _DISPATCHINGBOARD_.

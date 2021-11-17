@@ -1,1 +1,1 @@
-Properties for the distribution frames
+Properties for _IfcDistributionBoard_ with PredefinedType _DISTRIBUTIONFRAME_.
