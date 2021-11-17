@@ -1,1 +1,1 @@
-Type of conductors used in Earthing Circuit
+Type of conductors used in earthing circuit.
