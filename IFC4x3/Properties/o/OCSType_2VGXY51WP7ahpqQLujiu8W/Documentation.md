@@ -1,1 +1,1 @@
-Indicate the type of Overhead Contact Line System
+Indicates the type of overhead contactline system (OCS).

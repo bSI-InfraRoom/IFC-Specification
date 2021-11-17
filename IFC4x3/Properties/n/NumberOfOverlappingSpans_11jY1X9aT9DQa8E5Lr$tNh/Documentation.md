@@ -1,1 +1,1 @@
-Number of overlapping spans in overhead contact line system.
+Number of overlapping spans in the overhead contactline system.

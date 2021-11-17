@@ -1,1 +1,1 @@
-Properties of Power control System used in railway. The property set can be used by the predefined type ELECTRICAL of IfcDistributionSystem. The property set is mainly used to characterise the system that control the railway energy network
+Properties of power control system. The property set can be used by the predefined type ELECTRICAL of IfcDistributionSystem. The property set can be used to characterise the system that controls the railway energy network.
