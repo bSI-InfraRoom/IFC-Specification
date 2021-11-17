@@ -1,1 +1,1 @@
-Allowable maximum and minimum working pressure (relative to ambient pressure).
+Allowable maximum and minimum working pressure.
