@@ -1,1 +1,1 @@
-Frequency of the ac electric power system that the ripple control supplied reaches its optimum operating condition.
+Frequency at which an ac electric power system reaches its optimum operating condition.
