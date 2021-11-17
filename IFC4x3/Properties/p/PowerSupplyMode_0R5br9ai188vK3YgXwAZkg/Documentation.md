@@ -1,1 +1,1 @@
-Power supply mode of  the equipment.
+Power supply mode of the equipment or system.

@@ -1,1 +1,1 @@
-The optimum voltage for the electrical appliance.
+The optimum voltage for the electrical appliance or system.

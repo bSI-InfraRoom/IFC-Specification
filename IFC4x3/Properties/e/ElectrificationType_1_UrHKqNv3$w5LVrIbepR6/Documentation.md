@@ -1,1 +1,1 @@
-Indicate the type of railway-electrification.
+Indicates the type of railway electrification.
