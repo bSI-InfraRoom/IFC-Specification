@@ -1,1 +1,1 @@
-Properties of OverHead Contact Line System used in railway. The property set can be used by the predefined type OVERHEAD_CONTACT_LINE_SYSTEM of IfcDistributionSystem.
+Properties of a overhead contact line system. The property set is associated with the predefined type OVERHEAD_CONTACT_LINE_SYSTEM of _IfcDistributionSystem_.
