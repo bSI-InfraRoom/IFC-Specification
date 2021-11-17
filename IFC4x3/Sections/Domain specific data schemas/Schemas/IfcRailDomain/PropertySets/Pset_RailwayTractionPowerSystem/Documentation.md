@@ -1,1 +1,0 @@
-Properties of traction power system used in railway. The property set can be used by the predefined type ELECTRICAL of IfcDistributionSystem. The property set is mainly used to characterise the railway electrical distribution network used to provide energy for rolling stock.
