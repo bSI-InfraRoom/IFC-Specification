@@ -1,47 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Element_Voiding_2v05vvjSLC2vs616mXhK8D" Name="Element Voiding" UniqueId="2v05vvjSLC2vs616mXhK8D" Type="IfcElement">
-	<Localization>
-		<DocLocalization Locale="tt">
-			<Documentation>&lt;TemplateRules operator=&quot;and&quot;&gt;
-    &lt;!-- Check assignement to openings and fillings of the opening --&gt;
-    &lt;TemplateRule Parameters=&quot;HasOpenings[Size]=1 AND HasFillings[Size]=1 AND RelatedFillings[Size]=1 AND ElementName[Type]=&apos;IfcDoor&apos;&quot;/&gt;
- &lt;/TemplateRules&gt;</Documentation>
-		</DocLocalization>
-	</Localization>
 	<Rules>
 		<DocModelRuleAttribute Name="HasOpenings" Identification="HasOpenings">
 			<Rules>
-				<DocModelRuleEntity Name="IfcRelVoidsElement">
-					<Rules>
-						<DocModelRuleAttribute Name="RelatedOpeningElement">
-							<Rules>
-								<DocModelRuleEntity Name="IfcOpeningElement">
-									<Rules>
-										<DocModelRuleAttribute Name="PredefinedType">
-											<Rules>
-												<DocModelRuleEntity Name="IfcOpeningElementTypeEnum" />
-											</Rules>
-										</DocModelRuleAttribute>
-										<DocModelRuleAttribute Name="HasFillings" Identification="HasFillings">
-											<Rules>
-												<DocModelRuleEntity Name="IfcRelFillsElement">
-													<Rules>
-														<DocModelRuleAttribute Name="RelatedBuildingElement" Identification="RelatedFillings">
-															<Rules>
-																<DocModelRuleEntity Name="IfcDoor" Identification="ElementName" />
-																<DocModelRuleEntity Name="IfcWindow" Identification="ElementName" />
-															</Rules>
-														</DocModelRuleAttribute>
-													</Rules>
-												</DocModelRuleEntity>
-											</Rules>
-										</DocModelRuleAttribute>
-									</Rules>
-								</DocModelRuleEntity>
-							</Rules>
-						</DocModelRuleAttribute>
-					</Rules>
-				</DocModelRuleEntity>
+				<DocModelRuleEntity Name="IfcRelVoidsElement" />
 			</Rules>
 		</DocModelRuleAttribute>
 	</Rules>

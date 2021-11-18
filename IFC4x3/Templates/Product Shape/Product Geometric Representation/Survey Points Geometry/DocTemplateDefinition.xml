@@ -16,18 +16,32 @@
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
 											<Rules>
-												<DocModelRuleEntity Name="IfcLabel">
+												<DocModelRuleEntity id="IfcLabel_1M7n93d4vFfBImqOHYmmE6" Name="IfcLabel" UniqueId="561f1243-9c4e-4fa4-b4b0-d18462c30386">
 													<Rules>
-														<DocModelRuleAttribute Name="Value=SurveyPoints" Description="Value=SurveyPoints" />
+														<DocModelRuleConstraint>
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_1M7n93d4vFfBImqOHYmmE6" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="SurveyPoints" />
+															</Expression>
+														</DocModelRuleConstraint>
 													</Rules>
 												</DocModelRuleEntity>
 											</Rules>
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
 											<Rules>
-												<DocModelRuleEntity Name="IfcLabel">
+												<DocModelRuleEntity id="IfcLabel_1uuAQmF7v29RC11M7R2Dk" Name="IfcLabel" UniqueId="78e0a6b0-3c7e-4225-b301-0561db0bf36e">
 													<Rules>
-														<DocModelRuleAttribute Name="Value=GeometricCurveSet" Description="Value=GeometricCurveSet" />
+														<DocModelRuleConstraint>
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_1uuAQmF7v29RC11M7R2Dk" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="GeometricCurveSet" />
+															</Expression>
+														</DocModelRuleConstraint>
 													</Rules>
 												</DocModelRuleEntity>
 											</Rules>
