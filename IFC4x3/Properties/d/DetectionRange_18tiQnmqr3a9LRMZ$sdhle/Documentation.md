@@ -1,1 +1,1 @@
-The range of distance that can be detected by the equipment.
+The range at which the equipment can detect changes.

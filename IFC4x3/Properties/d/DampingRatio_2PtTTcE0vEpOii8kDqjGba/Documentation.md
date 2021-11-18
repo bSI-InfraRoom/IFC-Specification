@@ -1,1 +1,1 @@
-Indicate the damping ratio of the anemometrograph.
+Indicates the damping ratio of the device.

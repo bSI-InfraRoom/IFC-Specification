@@ -1,1 +1,1 @@
-Indicates the dynamic range of the earthquake sensor or accelerometer.
+Indicates the dynamic range of the sensor.

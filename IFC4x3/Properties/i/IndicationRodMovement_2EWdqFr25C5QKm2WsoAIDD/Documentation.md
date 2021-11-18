@@ -1,1 +1,1 @@
-The movement of the bar which indicates the indication rod position.
+Indicates the indication rod movement detected by the sensor.

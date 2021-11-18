@@ -1,1 +1,1 @@
-Properties that are applicable for IfcSensor with predefined type SNOWSENSOR.
+Properties that are applicable for IfcSensor with predefined type SNOWDEPTHSENSOR.
