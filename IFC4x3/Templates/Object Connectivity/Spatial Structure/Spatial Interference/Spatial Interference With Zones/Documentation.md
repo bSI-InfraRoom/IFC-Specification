@@ -1,7 +1,6 @@
+The _Spatial Interference with Zone_ concept is an extension of the _Spatial Interference_ concept which defines the relationship of spatial elements, such as facilities (_IfcFacility_ & specialised subtypes) or facility parts (_IfcFacilityPart_ with domain specific predefined types) that interfere or interface with other spatial elements across discipline spatial hierarchy branches, and extends the dataset with a related interference _IfcSpatialZone_ via the _IfcRelInterferesElements.InterferenceSpace_ attribute. The realizing _IfcSpatialZone_ should always have the _PredefinedType_ value set to INTERFERENCE.
 
-The _Spatial Interference with Zone_ concept is an extension of the _Spatial Inteference_ concept which defines the relationship of spatial elements, such as facilities (_IfcFacility_ & specialised subtypes) or faclity parts (_IfcFacilityPart_ with domain specific predefined types) that interfere or interface with other spatial elements across discipline spatial hierarchy branches, and extends the dataset with an related inteference _IfcSpatialZone_ via the _IfcRelInterferesElements.InterferenceSpace_ attribute. The realizing _IfcSpatialZone_ should always have the _PredefinedType_ value set to INTERFERENCE.
-
-The addition of a realizing _ifcSpatialZone_ extends the functionality of this relationship with the following:
+The addition of a realizing _IfcSpatialZone_ extends the functionality of this relationship with the following:
 - The ability to attach property sets to the co-engineering (or interference) zone.
 - Allows explicit definition of the shared footprint or body geometry representing the zone where the _IfcSpatialElement_s interfere, without impacting the footprint or body geometry of the interfering _IfcSpatialElement_s
 - Products are still positioned within the domain spatial structure and can use relative positioning.
