@@ -1,1 +1,1 @@
-Indicate the payment method of ticket vending machine.
+Indicates the vending machine payment method.

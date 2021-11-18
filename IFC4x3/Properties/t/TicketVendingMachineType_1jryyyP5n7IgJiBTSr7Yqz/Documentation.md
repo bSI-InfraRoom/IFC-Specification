@@ -1,1 +1,1 @@
-Indicate the type of ticket vending machine.
+Indicates the type of ticket vending machine.

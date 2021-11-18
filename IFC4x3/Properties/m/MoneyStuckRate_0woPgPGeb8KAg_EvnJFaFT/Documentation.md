@@ -1,1 +1,1 @@
-Indicate the money stuck rate of ticket.
+Indicates the ratio of money being stuck or jammed in appliance.
