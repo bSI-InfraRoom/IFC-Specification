@@ -1,1 +1,1 @@
-Properties of Ticket Vending Machine used in railway. The property set can be used by the predefined type VENDINGMACHINE of IfcElectricAppliance
+Properties of ticket vending machine. The property set can be used by _IfcElectricAppliance_ with PredefinedType _VENDINGMACHINE_.
