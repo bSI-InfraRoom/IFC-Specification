@@ -12,11 +12,68 @@
           "BuildingSmart.Serialization": "1.0.0",
           "BuildingSmart.Serialization.Step": "1.0.0",
           "BuildingSmart.Serialization.Xml": "1.0.0",
+          "IfcDoc.Documentation": "1.0.0",
           "IfcDoc.Formats": "1.0.0",
-          "IfcDoc.Schemas": "1.0.0"
+          "IfcDoc.Schemas": "1.0.0",
+          "IfcDoc.Utils": "1.0.0",
+          "System.Drawing.Common": "5.0.2",
+          "System.IO.Packaging": "5.0.0"
         },
         "runtime": {
           "IfcDocLite.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/5.0.0": {},
+      "Microsoft.Win32.SystemEvents/5.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "System.Drawing.Common/5.0.2": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "5.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "5.0.0.2",
+            "fileVersion": "5.0.421.11614"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.2",
+            "fileVersion": "5.0.421.11614"
+          },
+          "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.2",
+            "fileVersion": "5.0.421.11614"
+          }
+        }
+      },
+      "System.IO.Packaging/5.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.IO.Packaging.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
         }
       },
       "BuildingSmart.IFC/1.0.0": {
@@ -45,6 +102,11 @@
           "BuildingSmart.Serialization.Xml.dll": {}
         }
       },
+      "IfcDoc.Documentation/1.0.0": {
+        "runtime": {
+          "IfcDoc.Documentation.dll": {}
+        }
+      },
       "IfcDoc.Formats/1.0.0": {
         "runtime": {
           "IfcDoc.Formats.dll": {}
@@ -55,11 +117,16 @@
           "IfcDoc.Schemas.dll": {}
         }
       },
-      "HtmlAgilityPack/1.11.34.0": {
+      "IfcDoc.Utils/1.0.0": {
+        "runtime": {
+          "IfcDoc.Utils.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.11.36.0": {
         "runtime": {
           "HtmlAgilityPack.dll": {
-            "assemblyVersion": "1.11.34.0",
-            "fileVersion": "1.11.34.0"
+            "assemblyVersion": "1.11.36.0",
+            "fileVersion": "1.11.36.0"
           }
         }
       },
@@ -78,6 +145,22 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "BuildingSmart.Serialization.Turtle/1.0.0.0": {
+        "runtime": {
+          "BuildingSmart.Serialization.Turtle.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BuildingSmart.Serialization.Json/1.0.0.0": {
+        "runtime": {
+          "BuildingSmart.Serialization.Json.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -86,6 +169,34 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "path": "microsoft.netcore.platforms/5.0.0",
+      "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Bh6blKG8VAKvXiLe2L+sEsn62nc1Ij34MrNxepD2OCrS5cpCwQa9MeLyhVQPQ/R4Wlzwuy6wMK8hLb11QPDRsQ==",
+      "path": "microsoft.win32.systemevents/5.0.0",
+      "hashPath": "microsoft.win32.systemevents.5.0.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/5.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rvr/M1WPf24ljpvvrVd74+NdjRUJu1bBkspkZcnzSZnmAUQWSvanlQ0k/hVHk+cHufZbZfu7vOh/vYc0q5Uu/A==",
+      "path": "system.drawing.common/5.0.2",
+      "hashPath": "system.drawing.common.5.0.2.nupkg.sha512"
+    },
+    "System.IO.Packaging/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ebfUwKsgZF4HTwaRUj67SrJdsM4O62Fxsd6u1bSk3MNgvU8yjyfEK0xQmUFUqOYJi1IcL4HENoccl4SKVPndYw==",
+      "path": "system.io.packaging/5.0.0",
+      "hashPath": "system.io.packaging.5.0.0.nupkg.sha512"
     },
     "BuildingSmart.IFC/1.0.0": {
       "type": "project",
@@ -107,6 +218,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "IfcDoc.Documentation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "IfcDoc.Formats/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -117,7 +233,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "HtmlAgilityPack/1.11.34.0": {
+    "IfcDoc.Utils/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HtmlAgilityPack/1.11.36.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -128,6 +249,16 @@
       "sha512": ""
     },
     "BuildingSmart.Utilities.Conversion/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuildingSmart.Serialization.Turtle/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuildingSmart.Serialization.Json/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
