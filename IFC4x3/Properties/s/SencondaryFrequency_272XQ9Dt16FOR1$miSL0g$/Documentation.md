@@ -1,1 +1,1 @@
-The nominal frequency at scondary side
+The nominal frequency at secondary side
