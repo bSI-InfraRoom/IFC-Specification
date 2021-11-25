@@ -1,1 +1,1 @@
-Indicate the type of the physical wired communication port.
+Indicate the communication standard supported by the physical wired communication port.
