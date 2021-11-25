@@ -1,1 +1,1 @@
-To identify the method to strand.
+Indicates the type of stranding.
