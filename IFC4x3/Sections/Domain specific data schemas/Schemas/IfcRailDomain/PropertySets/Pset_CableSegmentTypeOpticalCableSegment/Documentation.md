@@ -1,1 +1,1 @@
-Properties of optical cable segments.
+Properties of optical cables segments.

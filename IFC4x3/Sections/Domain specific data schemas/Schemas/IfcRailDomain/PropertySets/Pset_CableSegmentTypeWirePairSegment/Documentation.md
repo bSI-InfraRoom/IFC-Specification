@@ -1,1 +1,1 @@
-Properties defined for wire pairs.
+Properties of wire pair segments.
