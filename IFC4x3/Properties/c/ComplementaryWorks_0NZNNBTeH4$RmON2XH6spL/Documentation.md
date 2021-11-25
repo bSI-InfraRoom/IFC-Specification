@@ -1,1 +1,1 @@
-Describes the presence of “Transversal pipes for the removal of water”, “Wells lifting water” or “Dispersing wells”
+Indicates the complementary function of the drain channel.
