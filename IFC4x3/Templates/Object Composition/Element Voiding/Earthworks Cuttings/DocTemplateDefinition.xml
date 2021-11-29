@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Earthworks_Cuttings_3Ri5n64lHBt8drrydLm7NE" Name="Earthworks Cuttings" UniqueId="dbb05c46-12f4-4bdc-89f5-d7c9d5c075ce" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="HasOpenings" Identification="HasOpenings">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelVoidsElement">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedOpeningElement" Identification="RelatedEarthworksCut">
+							<Rules>
+								<DocModelRuleEntity Name="IfcEarthworksCut">
+									<Rules>
+										<DocModelRuleAttribute Name="FillsVoids" Identification="FillsVoids">
+											<Rules>
+												<DocModelRuleEntity Name="IfcRelFillsElement">
+													<Rules>
+														<DocModelRuleAttribute Name="RelatedBuildingElement" Identification="RelatedBuiltElement">
+															<Rules>
+																<DocModelRuleEntity Name="IfcCourse" />
+																<DocModelRuleEntity Name="IfcDeepFoundation" />
+																<DocModelRuleEntity Name="IfcEarthworksFill" />
+																<DocModelRuleEntity Name="IfcFooting" />
+																<DocModelRuleEntity Name="IfcPavement" />
+																<DocModelRuleEntity Name="IfcSlab" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="PredefinedType" Identification="EarthworksCutType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcEarthworksCutTypeEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
