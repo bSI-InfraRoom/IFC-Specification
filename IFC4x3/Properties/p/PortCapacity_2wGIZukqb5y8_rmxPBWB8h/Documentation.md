@@ -1,1 +1,1 @@
-Indicates the cross port capacity of the distribution frame.
+Indicates the number of ports in the device that can be used to interconnect cables.
