@@ -1,1 +1,1 @@
-Indicates the number of ports in the device that can be used to interconnect cables.
+Indicates the number of ports in the passive device that can be used to interconnect cables.
