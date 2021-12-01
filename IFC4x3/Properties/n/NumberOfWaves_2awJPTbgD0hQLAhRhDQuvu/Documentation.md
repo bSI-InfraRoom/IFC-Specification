@@ -1,1 +1,1 @@
-Indicates the number of waves of the optical transport network system.
+Indicates the number of waves of the transport equipment.

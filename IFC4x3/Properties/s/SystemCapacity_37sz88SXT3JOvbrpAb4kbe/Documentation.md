@@ -1,1 +1,1 @@
-Indicates the system capacity of the Optical Transport Networking system. The value is defined by bits/s.
+Indicates the system capacity of the transport equipment. The value is defined by bits/s.

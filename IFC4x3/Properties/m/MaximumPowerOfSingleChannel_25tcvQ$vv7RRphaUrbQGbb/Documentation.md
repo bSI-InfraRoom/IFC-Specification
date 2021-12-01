@@ -1,1 +1,1 @@
-Indicates the maximum power of a single channel of the optical transport network (OTN) system.
+Indicates the maximum power of a single channel of the transport equipment.
