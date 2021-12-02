@@ -1,1 +1,1 @@
-Indicates whether a security equipment checks mechanical functionality (RFI functionality) or not.
+Indicates whether a security equipment is checking the mechanical functionality of the rail joint or not.
