@@ -1,1 +1,1 @@
-Is the railway secured in line with a signal box (TRUE) or not (FALSE).
+Indicates whether the level crossing is secured by signalling system or not.

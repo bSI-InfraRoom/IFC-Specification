@@ -1,1 +1,1 @@
-Define if the joint is in an exposed position to sunshine.
+Indicates if the object is in exposed position to sunshine.

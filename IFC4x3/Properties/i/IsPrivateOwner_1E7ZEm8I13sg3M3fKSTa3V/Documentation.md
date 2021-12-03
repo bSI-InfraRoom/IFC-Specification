@@ -1,1 +1,1 @@
-Indicate if the owner of the road is private (TRUE) or not (FALSE).
+Indicates if the owner of the crossed road is private or not.
