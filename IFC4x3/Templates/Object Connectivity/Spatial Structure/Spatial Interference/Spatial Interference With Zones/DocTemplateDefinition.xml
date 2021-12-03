@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Spatial_Interference_With_Zones_2aj3GY1AD5mAfBSbuv7iPx" Name="Spatial Interference With Zones" UniqueId="a4b43422-04a3-45c0-aa4b-725e391ec67b" Type="IfcSpatialElement">
+	<Rules>
+		<DocModelRuleAttribute Name="InterferesElements" Identification="InterferesSpatialElements">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelInterferesElements">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedElement" Identification="RelatedSpatialElement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSpatialElement">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="RelatedSpatialElementName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="InterferenceType" Identification="InterferenceType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcIdentifier" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="InterferenceSpace" Identification="InteferenceZone">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSpatialZone">
+									<Rules>
+										<DocModelRuleAttribute Name="PredefinedType" Identification="SpatialZoneType">
+											<Rules>
+												<DocModelRuleEntity id="IfcSpatialZoneTypeEnum_2Qez3p7x14N8XYL7mv52HS" Name="IfcSpatialZoneTypeEnum" Description="*" UniqueId="9aa3d0f3-1fb0-445c-8862-547c3914245c">
+													<Rules>
+														<DocModelRuleConstraint>
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcSpatialZoneTypeEnum_2Qez3p7x14N8XYL7mv52HS" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="INTERFERENCE" />
+															</Expression>
+														</DocModelRuleConstraint>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Name" Identification="SpatialElementName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

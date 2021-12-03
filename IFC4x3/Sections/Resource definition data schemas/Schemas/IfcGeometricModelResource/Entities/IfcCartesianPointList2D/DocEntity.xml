@@ -9,7 +9,7 @@
 			<AggregationAttribute xsi:type="DocAttribute" UniqueId="ef694048-e536-429f-bf2f-f64d6da85a72" AggregationType="1" AggregationLower="2" AggregationUpper="2" />
 		</DocAttribute>
 		<DocAttribute Name="TagList" UniqueId="b45deeba-1207-404e-a9d0-30a87167d86f" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationLower="1">
-			<Documentation>List of tags corresponding to each point that may be used to identify a basis curve according to the Tag attribute at _IfcOffsetCurveByDistances_ or _IfcAlignmentCurve_.</Documentation>
+			<Documentation>List of tags corresponding to each point that may be used to identify a basis curve according to the Tag attribute at _IfcOffsetCurveByDistances_.  Also used to identify  _IfcSectionedSolidHorizontal_ or _IfcSectionedSurface_ shape string lines (&quot;guide curves&quot;) when used within an _IfcProfileDef_ curve of type _IfcIndexedPolyCurve_.</Documentation>
 		</DocAttribute>
 	</Attributes>
 </DocEntity>
