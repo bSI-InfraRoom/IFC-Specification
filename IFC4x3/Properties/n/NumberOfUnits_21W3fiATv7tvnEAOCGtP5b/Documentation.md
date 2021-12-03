@@ -1,1 +1,1 @@
-Indicate the number of vertical units.
+Indicates the number of vertical units.
