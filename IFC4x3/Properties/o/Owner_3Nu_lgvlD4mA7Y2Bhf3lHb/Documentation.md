@@ -1,1 +1,0 @@
-Owner of the device.

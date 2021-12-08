@@ -1,1 +1,1 @@
-Indicate the type of power supply port of the electric device.
+Indicates the number of power supply ports of the electric device.

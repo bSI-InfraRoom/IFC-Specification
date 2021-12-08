@@ -1,1 +1,1 @@
-Indicate the earthing style of the electric device.
+Indicates the earthing style of the electric device.

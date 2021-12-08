@@ -1,1 +1,1 @@
-Information about compliance with regard to Explosive Atmosphere related standards
+Information about compliance with regard to explosive atmosphere related standards

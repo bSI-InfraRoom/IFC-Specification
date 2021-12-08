@@ -1,1 +1,1 @@
-Indicate the heat dissipation of the electric device measured in power.
+Indicates the heat dissipation of the electric device measured in power.

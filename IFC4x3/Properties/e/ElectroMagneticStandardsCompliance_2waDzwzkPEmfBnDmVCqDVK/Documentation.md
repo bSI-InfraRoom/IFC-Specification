@@ -1,1 +1,1 @@
-Information about compliance with regard to EMC related standards.
+Information about compliance with regard to electro magnetic related standards.
