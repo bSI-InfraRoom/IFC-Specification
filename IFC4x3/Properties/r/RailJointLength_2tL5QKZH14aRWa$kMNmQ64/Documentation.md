@@ -1,1 +1,0 @@
-Length of fish plate.
