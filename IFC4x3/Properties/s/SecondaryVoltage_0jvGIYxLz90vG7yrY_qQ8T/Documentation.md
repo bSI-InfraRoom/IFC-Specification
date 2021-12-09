@@ -1,1 +1,1 @@
-The nominal voltage at primary side
+The nominal voltage at secondary side of the component
