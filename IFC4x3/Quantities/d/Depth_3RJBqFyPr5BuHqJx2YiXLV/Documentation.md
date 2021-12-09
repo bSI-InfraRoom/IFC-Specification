@@ -1,1 +1,1 @@
-Indicates the depth of the manhole.
+Indicates the depth of the element.
