@@ -1,1 +1,1 @@
-Properties of catenary tie used in railway. The property set can be used by the predefined type TIEBAR of IfcMember
+Properties of tie bar. A tie bar is a linear bar element used to secure or stabilise a structure by resisting lateral and longitudinal loading through tension and or compression. usually formed by a solid bar.
