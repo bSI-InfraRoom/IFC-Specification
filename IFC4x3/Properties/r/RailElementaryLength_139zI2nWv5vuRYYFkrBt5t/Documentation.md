@@ -1,1 +1,1 @@
-The length of rail is proposed to supply from Milling plant
+The standardised length of rail supplied from the manufacturer.

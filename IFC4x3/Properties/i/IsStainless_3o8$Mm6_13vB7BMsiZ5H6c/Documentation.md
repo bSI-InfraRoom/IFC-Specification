@@ -1,1 +1,1 @@
-Indication of whether it is a stainless  rail (TRUE) or not (FALSE)
+Indicates whether the rail is stainless or not.

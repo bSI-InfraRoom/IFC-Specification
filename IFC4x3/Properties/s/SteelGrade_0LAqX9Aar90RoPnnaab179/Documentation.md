@@ -1,1 +1,1 @@
-Steel grade (material) of the rail
+Indicates steel grade of the rail.

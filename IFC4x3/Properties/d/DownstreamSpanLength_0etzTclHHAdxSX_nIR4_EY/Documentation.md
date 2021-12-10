@@ -1,1 +1,1 @@
-The length of the span locates at the downstream side of the railway line.
+The length of the span located at the downstream side of the railway line.

@@ -1,1 +1,1 @@
-Number of power supplies that feeds the substation.
+Number of power supplies that feed the substation.

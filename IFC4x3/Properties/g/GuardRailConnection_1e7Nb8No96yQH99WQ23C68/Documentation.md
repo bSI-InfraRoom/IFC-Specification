@@ -1,1 +1,1 @@
-How is the guard rail connected along its length (fish plate, weld, none)
+Indicates how the guard rail is connected along its length.

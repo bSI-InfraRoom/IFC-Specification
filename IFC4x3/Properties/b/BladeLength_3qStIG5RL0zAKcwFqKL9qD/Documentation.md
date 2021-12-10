@@ -1,1 +1,1 @@
-Length of blade from point of turnout blade / [m]
+Length of blade from point of turnout blade.
