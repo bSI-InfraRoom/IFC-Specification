@@ -1,1 +1,1 @@
-Indicates whether the OCS foundation is reinforced (TRUE) or not (FALSE).
+Indicates whether the foundation is reinforced (TRUE) or not (FALSE).
