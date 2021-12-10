@@ -1,1 +1,1 @@
-Indicate if the rail is welded in factory or not
+Indicates if the rail is welded in factory (TRUE) or not (FALSE).

@@ -1,1 +1,1 @@
-Is it a connection between two different heights? Yes/no
+Indicates whether the connection is done between rail with different height (TRUE) or with same height (FALSE).
