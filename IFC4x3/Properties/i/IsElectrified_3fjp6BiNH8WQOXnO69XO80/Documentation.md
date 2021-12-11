@@ -1,1 +1,1 @@
-Indicate whether the track system is electrified or not.
+Indicates whether the track system is electrified or not.

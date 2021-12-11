@@ -1,1 +1,1 @@
-The characteristic of the line.
+Indicates the characteristic of the line.

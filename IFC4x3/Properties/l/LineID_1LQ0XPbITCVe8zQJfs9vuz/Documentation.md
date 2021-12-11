@@ -1,1 +1,1 @@
-Unique identification of the line.
+The unique identifier of the line.
