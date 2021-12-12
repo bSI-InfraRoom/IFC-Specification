@@ -1,1 +1,1 @@
-Sequence of sleepers within the track panel.
+Sequence of the sleeper within the track panel.

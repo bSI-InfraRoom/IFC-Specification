@@ -1,1 +1,1 @@
-Wheel diameter requirements for different type of derailers.
+Indicates the wheel diameter requirement for the derailer.

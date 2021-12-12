@@ -1,1 +1,0 @@
-Adjustment layer Type

@@ -1,1 +1,1 @@
-Sleeper contaminated, special disposal required (TRUE) or not (FALSE).
+Indicates whether the sleeper is contaminated and requires special disposal or not.
