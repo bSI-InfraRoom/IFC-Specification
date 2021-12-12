@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGuidedSweepSolid" UniqueId="060f854e-79d8-41e1-ad07-96cc9eddd9ae" BaseDefinition="IfcGuidedSweep" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="CrossSections" UniqueId="3beb805f-ad65-4da1-90aa-e4fac960e8f5" DefinedType="IfcProfileDef" AggregationType="1" AggregationLower="2" AggregationUpper="0" />
+		<DocAttribute Name="CrossSectionPositions" UniqueId="e9b4fb8d-6063-48fb-a8b9-91e651053438" DefinedType="IfcAxis2PlacementLinear" AggregationType="1" AggregationLower="2" AggregationUpper="0" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrespondingSectionPositions" UniqueId="4d6dc9ce-bc71-490f-ab63-4e598ce0df31">
+			<Documentation>The set of cross sections and the set of cross section positions shall be of the same size.</Documentation>
+			<Expression>SIZEOF(CrossSections) = SIZEOF(CrossSectionPositions)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="NoLongitudinalOffsets" UniqueId="9b663768-d011-4e0f-bd14-b8afaf53dd7a">
+			<Documentation>Distance expressions must not use longitudinal offsets.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* CrossSectionPositions | EXISTS(temp.Location.OffsetLongitudinal))) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+
