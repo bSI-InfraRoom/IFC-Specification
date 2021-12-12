@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGuidedSweep" UniqueId="d2257c3c-6051-42b3-9b20-116fee6c2560" BaseDefinition="IfcSolidModel">
+	<Attributes>
+		<DocAttribute Name="Directrix" UniqueId="3124ee08-36b0-4d3f-9e7a-8f6c2148b606" DefinedType="IfcCurve" />
+		<DocAttribute Name="GuidingCurves" UniqueId="7404f558-1906-4b89-ae79-7b5cbb0d20d7" DefinedType="IfcCurve" AggregationType="1" AggregationLower="2" AggregationUpper="0" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="DirectrixIs3D" UniqueId="24b53ed2-48f5-4da0-b3ae-57cc9c2e6139">
+			<Documentation>The curve entity which is the underlying directrix shall have the dimensionality of 3.</Documentation>
+			<Expression>Directrix.Dim = 3</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="GuidingCurvesAre3D" UniqueId="2062290c-3c57-4e39-a60f-fa8f2e06fa58">
+			<Documentation>The curve entity which is the underlying directrix shall have the dimensionality of 3.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* GuidingCurves | temp.Dim &lt; 3)) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+
