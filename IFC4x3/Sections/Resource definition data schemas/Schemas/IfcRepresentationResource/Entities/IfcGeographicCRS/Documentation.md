@@ -1,0 +1,1 @@
+_IfcGeographicCRS_ is a coordinate reference system that is based on a geoid or ellipsoid. Geographic CRS typically requires two angles and a height (can be derived) to specify a location on a body such as ellipsoid, geoid etc
