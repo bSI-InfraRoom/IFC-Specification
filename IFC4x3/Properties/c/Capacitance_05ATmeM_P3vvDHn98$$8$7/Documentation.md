@@ -1,1 +1,1 @@
-Maximum value of the capacitance between the electrodes of a spark gap at specified frequency and temperature.
+Maximum value of the capacitance between the electrodes at specified frequency and temperature.

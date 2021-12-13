@@ -1,1 +1,1 @@
-The type of ground connection.
+The type of grounding connection.

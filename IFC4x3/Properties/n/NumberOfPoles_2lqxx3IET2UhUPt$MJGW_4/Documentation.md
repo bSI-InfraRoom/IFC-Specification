@@ -1,1 +1,1 @@
-Number of poles that the equipment would affect
+Number of poles that the equipment would affect.

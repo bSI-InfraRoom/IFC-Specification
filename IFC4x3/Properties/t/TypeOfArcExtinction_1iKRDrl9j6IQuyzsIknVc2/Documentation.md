@@ -1,1 +1,1 @@
-Type of arc extinction used in EmergencySwitchOff
+Type of arc extinction used in EmergencySwitchOff.

@@ -1,1 +1,1 @@
-Type of Spark gap
+Type of Spark gap.
