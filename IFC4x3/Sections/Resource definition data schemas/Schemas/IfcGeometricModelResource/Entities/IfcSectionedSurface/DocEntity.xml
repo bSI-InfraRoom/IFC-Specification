@@ -4,15 +4,34 @@
 		<DocAttribute Name="Directrix" UniqueId="db8a44ee-100e-4d8f-a7d9-ea294311f7db" DefinedType="IfcCurve">
 			<Documentation>The curve used to define the sweeping operation</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="CrossSectionPositions" UniqueId="6f036e83-ef2e-4f46-9b50-f3d049cf88af" DefinedType="IfcPointByDistanceExpression" AggregationType="1" AggregationLower="2" AggregationUpper="?">
-			<Documentation>List of distance expressions in sequentially increasing order paired with CrossSections, indicating the position of the corresponding section along the Directrix.</Documentation>
+		<DocAttribute Name="CrossSectionPositions" UniqueId="6f036e83-ef2e-4f46-9b50-f3d049cf88af" DefinedType="IfcAxis2PlacementLinear" AggregationType="1" AggregationLower="2" AggregationUpper="?">
+			<Documentation>List of positions in sequentially increasing order paired with _CrossSections_, indicating the position of the corresponding section along the _Directrix_.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="CrossSections" UniqueId="0cd0d9cd-de33-4a3e-9dfd-63466c76799a" DefinedType="IfcProfileDef" AggregationType="1" AggregationLower="2" AggregationUpper="?">
 			<Documentation>List of cross sections in sequential order along the Directrix</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="FixedAxisVertical" UniqueId="708a1114-5a9b-47cf-93c4-f64cb3f4de4c" DefinedType="IfcBoolean">
-			<Documentation>Indicates whether Sections are oriented with the Y axis of each profile facing upwards in +Z direction (True), or vertically perpendicular to the Directrix varying according to slope (False)</Documentation>
-		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="DirectrixIs3D" UniqueId="d7dffebd-f5c8-4a92-93c6-e3ac0c8488f0">
+			<Documentation>The curve entity which is the underlying directrix shall have the dimensionality of 3.</Documentation>
+			<Expression>Directrix.Dim = 3</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="AreaProfileTypes" UniqueId="4d51cd1c-3965-45be-b620-dde7b39616d8">
+			<Documentation>The profile type shall be CURVE within the list of the profiles defining the cross sections.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* CrossSections | temp.ProfileType = IfcProfileTypeEnum.CURVE)) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="SectionsSameType" UniqueId="a5025617-db3b-423b-8ac4-92912b2dba3d">
+			<Documentation>The entity type for each section must be the same.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* CrossSections | TYPEOF(CrossSections[1]) :&lt;&gt;: TYPEOF(temp))) = 0</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrespondingSectionPositions" UniqueId="190f1477-5810-467a-8a3d-e99e047438a0">
+			<Documentation>The set of cross sections and the set of cross section placements shall be of the same size.</Documentation>
+			<Expression>SIZEOF(CrossSections) = SIZEOF(CrossSectionPositions)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="NoOffsets" UniqueId="08090a41-c409-44d6-ab1e-83696c126b7a">
+			<Documentation>Distance expressions must not use longitudinal, laterial or vertical offsets.</Documentation>
+			<Expression>SIZEOF(QUERY(temp &lt;* CrossSectionPositions | EXISTS(temp.Location.OffsetLateral) OR EXISTS(temp.Location.OffsetVertical) OR EXISTS(temp.Location.OffsetLongitudinal))) = 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTopologyResource" UniqueId="ca0b7b80-d912-4ef5-b242-bed125f45ac4">
 	<SchemaRefs>
-		<DocSchemaRef Name="IfcGeometryResource" UniqueId="7d2c558e-fa36-472a-9f83-71347e9a39cb">
-			<Definitions>
-				<DocDefinitionRef Name="IfcPcurve" UniqueId="035392f5-7086-46d5-b7f9-da370bf1dea7" />
-			</Definitions>
-		</DocSchemaRef>
 		<DocSchemaRef Name="IFCGEOMETRYRESOURCE" UniqueId="94917ebe-7cc9-4744-9861-c4d2330d0fed">
 			<Definitions>
 				<DocDefinitionRef Name="IfcCartesianPoint" UniqueId="ca756930-fdbb-42e1-aecb-afcb06e249c7" />
@@ -23,9 +18,10 @@
 				<DocDefinitionRef Name="IfcSurface" UniqueId="4bb56d3a-25e0-4862-b2c1-d3e33e812168" />
 				<DocDefinitionRef Name="IfcPlane" UniqueId="1ad9bdbe-56c0-421a-a04d-9230e449efb3" />
 				<DocDefinitionRef Name="IfcCurveBoundedPlane" UniqueId="90823394-0fed-44e4-aeed-f39a5d6d3aa2" />
+				<DocDefinitionRef Name="IfcPcurve" UniqueId="035392f5-7086-46d5-b7f9-da370bf1dea7" />
 			</Definitions>
 		</DocSchemaRef>
-		<DocSchemaRef Name="IfcMeasureResource" UniqueId="ef8d3994-57ab-454f-b101-3becb5ae5733">
+		<DocSchemaRef Name="IFCMEASURERESOURCE" UniqueId="ef8d3994-57ab-454f-b101-3becb5ae5733">
 			<Definitions>
 				<DocDefinitionRef Name="IfcInteger" UniqueId="28f12ffe-f1b7-4f50-890d-5697ad15ed15" />
 				<DocDefinitionRef Name="IfcBoolean" UniqueId="d1aaa60c-8445-4e73-9059-a1efc065b60e" />
