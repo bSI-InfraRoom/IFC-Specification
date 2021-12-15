@@ -1,0 +1,1 @@
+Curve geometry based on a 2D horizontal projection as an _IfcCompositeCurve_ referencing _IfcCurveSegment_ occurrences. The vertical profile is represented by another independent list of _IfcCurveSegment_ occurrences.
