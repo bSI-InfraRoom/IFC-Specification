@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Group_Spatial_Connectivity_20VU4gxED0Ru5tgFXRhZ72" Name="Group Spatial Connectivity" UniqueId="807de12a-ece3-406f-8177-a8f85bae31c2" Type="IfcSpatialElement">
+	<Rules>
+		<DocModelRuleAttribute Name="ReferencedInStructures" Identification="ReferencedInStructures">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelReferencedInSpatialStructure">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedElements" Identification="RelatedGroups">
+							<Rules>
+								<DocModelRuleEntity Name="IfcGroup">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="GroupName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name" Description="*" Identification="ReferenceContext">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

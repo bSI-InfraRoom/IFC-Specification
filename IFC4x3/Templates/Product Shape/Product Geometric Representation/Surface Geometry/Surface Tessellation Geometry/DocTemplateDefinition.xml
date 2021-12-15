@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Surface Tessellation Geometry" UniqueId="0gcN00aHT7P84eQ4tB7HA6" Type="IfcElement">
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Surface_Tessellation_Geometry_0gcN00aHT7P84eQ4tB7HA6" Name="Surface Tessellation Geometry" UniqueId="0gcN00aHT7P84eQ4tB7HA6" Type="IfcElement">
 	<Rules>
 		<DocModelRuleAttribute Name="Representation">
 			<Rules>
@@ -16,11 +16,7 @@
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
 											<Rules>
-												<DocModelRuleEntity Name="IfcLabel">
-													<Rules>
-														<DocModelRuleAttribute Name="Value=Surface" Description="Value=Surface" />
-													</Rules>
-												</DocModelRuleEntity>
+												<DocModelRuleEntity xsi:nil="true" href="IfcLabel_212pjtt2TCSe6IuxauYKd" />
 											</Rules>
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
@@ -32,7 +28,7 @@
 																<Reference xsi:type="DocOpReference">
 																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_0OoHEdBB6A7isr1gBliekX" />
 																</Reference>
-																<Value xsi:type="DocOpLiteral" Literal="&apos;Tessellation&apos;" />
+																<Value xsi:type="DocOpLiteral" Literal="Tessellation" />
 															</Expression>
 														</DocModelRuleConstraint>
 													</Rules>

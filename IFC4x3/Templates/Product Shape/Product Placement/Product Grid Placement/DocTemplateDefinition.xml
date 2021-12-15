@@ -67,8 +67,26 @@
 								<DocModelRuleEntity Name="IfcDirection" />
 							</Rules>
 						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="PlacementRelTo">
+							<Rules>
+								<DocModelRuleEntity Name="IfcObjectPlacement">
+									<Rules>
+										<DocModelRuleAttribute Name="PlacesObject">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGrid" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
 					</Rules>
 				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="PlacesObject">
+			<Rules>
+				<DocModelRuleEntity Name="IfcGrid" />
 			</Rules>
 		</DocModelRuleAttribute>
 	</Rules>
