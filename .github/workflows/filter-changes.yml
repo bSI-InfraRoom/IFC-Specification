@@ -20,8 +20,8 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     outputs:
-      schema_change: ${{ steps.schema_changes.outputs.SCHEMACHANGED }}
-      prop_quants_change: ${{ steps.schema_changes.outputs.PROPSQUANTSCHANGED }}
+      schema_change: ${{ steps.specification_modifications.outputs.SCHEMACHANGED }}
+      prop_quants_change: ${{ steps.specification_modifications.outputs.PROPSQUANTSCHANGED }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -38,14 +38,14 @@ jobs:
       - name: Specification modifications
         id: specification_modifications #grep -o .xml files.json | wc -w (for counting multiple instances per line)
         run: |
-          if [[ $HOME/files.json ]] && [[ $(($(grep -ciF ".xml" $HOME/files.json)-$(egrep -ci "DocProperty.xml|DocQuantity.xmlDoc|PropertySet.xml|DocQuantitySet.xml|DocTemplateDefinition.xml|DocTemplateItem.xml|DocTemplateUsage.xml|DocPropertyConstant.xml|DocPropertyEnumeration.xml" $HOME/files.json))) -gt 0 ]]; then
+          if [[ $HOME/files.json ]] && [[ $(($(grep -o ".xml" $HOME/files.json | wc -l)-$(grep -oiE "DocProperty.xml|DocQuantity.xmlDoc|PropertySet.xml|DocQuantitySet.xml|DocTemplateDefinition.xml|DocTemplateItem.xml|DocTemplateUsage.xml|DocPropertyConstant.xml|DocPropertyEnumeration.xml" $HOME/files.json | wc -l))) -gt 0 ]]; then
             echo 'Schema changed.';
             echo ::set-output name=SCHEMACHANGED::true;
           else
             echo 'Schema did not change.';
             echo ::set-output name=SCHEMACHANGED::false;
           fi
-          if [[ $HOME/files.json ]] && [[ $(($(egrep -ci "DocProperty.xml|DocQuantity.xmlDoc|PropertySet.xml|DocQuantitySet.xml|DocPropertyConstant.xml|DocPropertyEnumeration.xml" $HOME/files.json))) -gt 0 ]]; then
+          if [[ $HOME/files.json ]] && [[ $(($(grep -oiE "DocProperty.xml|DocQuantity.xml|DocPropertySet.xml|DocQuantitySet.xml|DocPropertyConstant.xml|DocPropertyEnumeration.xml" $HOME/files.json | wc -l))) -gt 0 ]]; then
             echo 'Properties or quantities changed';
             echo ::set-output name=PROPSQUANTSCHANGED::true;
           else
