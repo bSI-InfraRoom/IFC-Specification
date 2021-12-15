@@ -1,1 +1,1 @@
-Count of point machine inside turnout panel
+Count of point machines inside turnout panel.
