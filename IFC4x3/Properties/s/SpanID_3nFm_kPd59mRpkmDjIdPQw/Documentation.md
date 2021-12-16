@@ -1,1 +1,1 @@
-Identifies the span using the equipment
+Identifies the span using the equipment.

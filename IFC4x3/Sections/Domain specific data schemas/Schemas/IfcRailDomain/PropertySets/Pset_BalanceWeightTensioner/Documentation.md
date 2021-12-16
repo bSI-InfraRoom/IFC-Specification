@@ -1,1 +1,1 @@
-Properties of WeightTensioner used in railway. The property set can be used by the predefined type TENSIONINGEQUIPMENT of IfcDiscreteAccessory
+Properties of WeightTensioner used in railway. The property set can be used by the predefined type TENSIONINGEQUIPMENT of IfcDiscreteAccessory.
