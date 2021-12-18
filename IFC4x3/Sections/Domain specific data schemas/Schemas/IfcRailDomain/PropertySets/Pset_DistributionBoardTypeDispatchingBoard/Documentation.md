@@ -1,1 +1,1 @@
-Properties for _IfcDistributionBoard_ with PredefinedType _DISPATCHINGBOARD_.
+Properties for _IfcDistributionBoard_ with PredefinedType DISPATCHINGBOARD.
