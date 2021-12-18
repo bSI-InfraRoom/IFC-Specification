@@ -43,7 +43,7 @@ Table 1 indicates measures, units, and corresponding data types.
 
 > <small>
 <table class="gridtable">
-<tr><td><b>Measure</b></td><td><b>Type</b></td><td><b>Unit</b></td><td><b>Symbol</b></td><td><b>Derivation</b></td><td><b>IfcSiUnitEnum</b></td><td><b>IfcUnitEnum</b></td><td><b>IfcDerivedUnitEnum</b></td><td><b>Defined value types</b></td></tr>
+<tr><td><b>Measure</b></td><td><b>Type</b></td><td><b>Unit</b></td><td><b>Symbol</b></td><td><b>Derivation</b></td><td><b>IfcSIUnitName</b></td><td><b>IfcUnitEnum</b></td><td><b>IfcDerivedUnitEnum</b></td><td><b>Defined value types</b></td></tr>
  <tr><td>Absorbed dose, specific energy<br>impact, kerma, absorbed dose index</td><td>SI / Derived</td><td>gray</td><td>Gy</td><td>J / kg</td><td>GRAY</td><td>ABSORBEDDOSEUNIT</td><td></td><td>IfcAbsorbedDoseMeasure</td></tr>
  <tr><td>Acceleration</td><td>Derived</td><td></td><td></td><td>m / s2</td><td></td><td></td><td>ACCELERATIONUNIT</td><td>IfcAccelerationMeasure</td></tr>
  <tr><td>Acidity (pH)</td><td>Derived</td><td>pH</td><td>pH</td><td>mol / l</td><td></td><td></td><td>PHUNIT</td><td>IfcPHMeasure</td></tr>

@@ -5,10 +5,7 @@
 	</Localization>
 	<Attributes>
 		<DocAttribute Name="CrossSectionPositions" UniqueId="3fcd980f-6728-4b2a-aab9-9fd4b2b292e9" DefinedType="IfcAxis2PlacementLinear" AggregationType="1" AggregationLower="2" AggregationUpper="?">
-			<Documentation>List of distance expressions in sequentially increasing order paired with _CrossSections_, indicating the position of the corresponding section along the _Directrix_.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="FixedAxisVertical" UniqueId="d23af836-5a9f-459e-9951-80823ea30043" DefinedType="IfcBoolean">
-			<Documentation>Indicates whether _Sections_ are oriented with the Y axis of each profile facing upwards in +Z direction (True), or vertically perpendicular to the _Directrix_ varying according to slope (False).</Documentation>
+			<Documentation>Position coordinate systems in sequentially increasing order paired with _CrossSections_, indicating the position of the corresponding section along the _Directrix_.</Documentation>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>

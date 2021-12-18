@@ -1,3 +1,3 @@
-Adding a geospatial coordinate reference, using an recognized coordinate reference system, to the geometric representation context. It allows to position the project coordinate system on earth (normally using eastings, northings, elevation about datum, and orientation).
+Adding a geospatial coordinate reference to the geometric representation context using a recognized coordinate reference system (CRS). This allows to position the project coordinate system on Earth (normally using eastings, northings, elevation above horizontal and vertical datums, and orientation).
 
 > HISTORY&nbsp; New concept template enabled by schema enhancements in IFC4.
