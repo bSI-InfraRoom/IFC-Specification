@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Product_Span_Positioning_0StAgVXTL2pvgl3zPZiKxe" Name="Product Span Positioning" UniqueId="1cdcaa9f-85d5-42cf-9aaf-0fd663b14ee8" Type="IfcProduct">
+	<Rules>
+		<DocModelRuleAttribute Name="PositionedRelativeTo" Identification="StartPositionedRelativeTo">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelPositions">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingPositioningElement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcReferent">
+									<Rules>
+										<DocModelRuleAttribute Name="PredefinedType" Identification="StartPositionType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcReferentTypeEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name" Identification="StartPositionName">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="PositionedRelativeTo" Identification="EndPositionedRelativeTo">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelPositions">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingPositioningElement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcReferent">
+									<Rules>
+										<DocModelRuleAttribute Name="PredefinedType" Identification="EndPositionType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcReferentTypeEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name" Identification="EndPositionName">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLabel" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+

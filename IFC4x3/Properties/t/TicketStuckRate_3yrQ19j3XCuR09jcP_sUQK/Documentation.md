@@ -1,1 +1,2 @@
-Indicates the ratio of tickets being stuck or jammed in appliance.
+Indicates the ratio of tickets being stuck or jammed in appliance or turnstile.
+
