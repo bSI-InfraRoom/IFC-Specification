@@ -1,1 +1,1 @@
-Indicate if the track is using ballast.
+Indicates if the track is using ballast.

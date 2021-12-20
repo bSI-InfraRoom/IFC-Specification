@@ -1,1 +1,1 @@
-Indicates whether the level crossing is secured by signalling system or not.
+Indicates whether the level crossing is secured by a signalling system or not.
