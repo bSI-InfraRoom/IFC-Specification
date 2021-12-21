@@ -1,1 +1,1 @@
-The nominal height of the backboard of the signal frame.
+The nominal height of the signal frame backboard.
