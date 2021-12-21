@@ -1,1 +1,1 @@
-Properties of batteries used in railway. The property set can be used by the predefined type BATTERY of IfcElectricFlowStorageDevice.
+Properties of batteries. The property set can be used by the predefined type BATTERY of IfcElectricFlowStorageDevice.
