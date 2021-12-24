@@ -1,1 +1,1 @@
-Indicate if the rail joint is insulated or not.
+Indicates if the rail joint is insulated.

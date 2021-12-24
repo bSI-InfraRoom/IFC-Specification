@@ -1,1 +1,1 @@
-Produced on the field or pre-manufactured
+Produced on the field or pre-manufactured.

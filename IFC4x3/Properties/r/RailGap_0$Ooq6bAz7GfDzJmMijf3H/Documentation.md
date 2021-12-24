@@ -1,1 +1,1 @@
-The gap between the rails profile.
+The gap between the rail profiles.

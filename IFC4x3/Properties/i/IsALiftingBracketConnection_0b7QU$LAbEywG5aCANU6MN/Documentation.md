@@ -1,1 +1,1 @@
-Indicate if it's a connection between two different heights (TRUE) or not (FALSE)
+Indicates if it's a connection between two different heights (TRUE) or not (FALSE).
