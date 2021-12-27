@@ -1,1 +1,1 @@
-The radius of the stock rail bent defined as design parameter.
+The radius of the stock rail bend defined as design parameter.
