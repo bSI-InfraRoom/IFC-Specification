@@ -1,1 +1,1 @@
-Reference to the signal post telephone.
+The identifier of the signal post telephone attached to the signal.
