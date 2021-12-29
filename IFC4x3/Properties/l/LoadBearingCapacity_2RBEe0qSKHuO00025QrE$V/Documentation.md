@@ -1,1 +1,1 @@
-Maximum load bearing capacity is the maximum load that can be applied to the ground (e.g. : applied to the floor for a storey).
+Maximum load bearing capacity of a supporting structure ( e.g. as applied to the floor structure of a storey, or the supporting capacity of a frame assembly).
