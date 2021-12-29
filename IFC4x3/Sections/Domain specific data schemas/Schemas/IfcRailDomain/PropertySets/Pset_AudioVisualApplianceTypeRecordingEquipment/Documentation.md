@@ -1,1 +1,1 @@
-Properties of a recording equipment.
+Properties of recording equipment.
