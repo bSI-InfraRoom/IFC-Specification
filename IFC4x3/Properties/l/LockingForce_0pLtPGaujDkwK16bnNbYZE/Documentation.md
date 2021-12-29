@@ -1,1 +1,1 @@
-Locking force of motor of the point machine.
+Locking force of the point machine motor.
