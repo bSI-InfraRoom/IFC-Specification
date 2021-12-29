@@ -1,1 +1,1 @@
-The resistance soil or ground resists electric current from the cable fitting.
+The soil or ground resistance to electrical current from the cable fitting
