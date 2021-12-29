@@ -1,1 +1,1 @@
-normalising working temperature / [°C]
+normalising working temperature
