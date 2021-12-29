@@ -1,1 +1,1 @@
-Indicates whether a security equipment is checking the mechanical functionality of the rail joint.
+Indicates whether security equipment is checking the mechanical functionality of the rail joint.
