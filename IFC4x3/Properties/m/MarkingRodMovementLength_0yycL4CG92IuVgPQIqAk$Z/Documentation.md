@@ -1,1 +1,1 @@
-The movement of the bar which indicates the turnout position.
+The length of the movement bar which indicates the turnout position.
