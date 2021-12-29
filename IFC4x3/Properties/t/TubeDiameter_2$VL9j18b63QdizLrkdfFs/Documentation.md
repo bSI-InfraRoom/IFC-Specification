@@ -1,1 +1,1 @@
-Indicate the diameter of the fiber tubes that are used in the fan out.
+Indicates the diameter of the fiber tubes that are used in the fan out.

@@ -1,1 +1,1 @@
-The resistance through earthing terminal exit to the ground.
+The resistance soil or ground resists electric current from the cable fitting.
