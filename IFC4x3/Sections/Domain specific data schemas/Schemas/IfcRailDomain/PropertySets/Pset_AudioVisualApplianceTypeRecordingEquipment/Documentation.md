@@ -1,1 +1,1 @@
-Properties of recording equipment.
+Properties common to _IfcAudioVisualAppliance_ with predefined type set to RECORDINGEQUIPMENT.
