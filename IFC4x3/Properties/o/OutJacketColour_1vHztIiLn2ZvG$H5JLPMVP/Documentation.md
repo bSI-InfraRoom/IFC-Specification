@@ -1,1 +1,1 @@
-Indicate the color of the outer jacket of the cable
+Indicates the color of the outer jacket of the cable.

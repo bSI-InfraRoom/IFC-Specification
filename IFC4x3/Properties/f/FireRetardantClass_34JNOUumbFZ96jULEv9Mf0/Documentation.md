@@ -1,1 +1,1 @@
-Indicate fire retardant class of the cable.
+Indicates fire retardant class of the cable.

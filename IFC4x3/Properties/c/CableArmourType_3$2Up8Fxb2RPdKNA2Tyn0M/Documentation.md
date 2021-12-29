@@ -1,1 +1,1 @@
-The armour type of the cable for mechanical protection
+The armour type of the cable for mechanical protection.

@@ -1,1 +1,1 @@
-Indicate the type of A-end connector
+Indicates the type of A-end connector.

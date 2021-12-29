@@ -1,1 +1,1 @@
-Indicate the type of B-end connector
+Indicates the type of B-end connector.

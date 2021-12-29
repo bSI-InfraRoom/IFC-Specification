@@ -1,1 +1,1 @@
-Indicate the type of the single fiber
+Indicates the type of the single fiber.

@@ -1,1 +1,1 @@
-Properties in this property set are applicable to the transition type of cable fitting, indicated that such transtion is an optical adapter.
+Properties in this property set are applicable to the transition type of cable fitting. Indicated that such transition is an optical adapter.

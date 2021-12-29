@@ -1,1 +1,1 @@
-Whether or not the cable is fire resistant
+Informs whether the cable is fire resistant.
