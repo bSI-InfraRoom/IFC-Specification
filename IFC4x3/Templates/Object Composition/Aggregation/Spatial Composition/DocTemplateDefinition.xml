@@ -17,12 +17,20 @@
 							<Rules>
 								<DocModelRuleEntity Name="IfcProject">
 									<Rules>
-										<DocModelRuleAttribute Name="Name" Identification="ProjectName" />
+										<DocModelRuleAttribute Name="Name" Identification="ProjectName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
 									</Rules>
 								</DocModelRuleEntity>
 								<DocModelRuleEntity Name="IfcSpatialElement">
 									<Rules>
-										<DocModelRuleAttribute Name="Name" Identification="SpatialElementName" />
+										<DocModelRuleAttribute Name="Name" Identification="SpatialElementName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
 									</Rules>
 								</DocModelRuleEntity>
 							</Rules>
