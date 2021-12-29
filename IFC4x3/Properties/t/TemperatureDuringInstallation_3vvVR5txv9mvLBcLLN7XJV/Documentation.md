@@ -1,1 +1,1 @@
-normalising working temperature
+Normalised working temperature.
