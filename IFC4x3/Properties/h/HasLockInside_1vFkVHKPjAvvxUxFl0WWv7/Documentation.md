@@ -1,1 +1,1 @@
-Indicates whether the locking is inside of the point machine (TRUE) or outside of it (FALSE).
+Indicates whether the locking is inside  (TRUE) or outside (FALSE) of the point machine.

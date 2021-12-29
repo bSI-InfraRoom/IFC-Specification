@@ -1,1 +1,1 @@
-The current of the control pulse of the electric actuator.
+The current of the electric actuator control pulse.

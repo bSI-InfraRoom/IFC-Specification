@@ -1,1 +1,1 @@
-Minimum operating speed of point machine.
+Minimum operating speed of the point machine.
