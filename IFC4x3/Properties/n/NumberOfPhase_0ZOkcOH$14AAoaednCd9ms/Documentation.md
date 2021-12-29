@@ -1,1 +1,1 @@
-Number of phase that the equipment operates on.
+Number of phases that the equipment operates on.
