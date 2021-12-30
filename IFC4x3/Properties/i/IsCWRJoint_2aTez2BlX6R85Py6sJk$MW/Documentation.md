@@ -1,1 +1,1 @@
-Indicates if the rail joint is associated to continuous welded rail.
+Indicates if the rail joint is associated to a continuous welded rail.

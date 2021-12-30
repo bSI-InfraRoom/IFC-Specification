@@ -1,1 +1,1 @@
-Track Fastening Elasticity Type.
+Track fastening elasticity type.
