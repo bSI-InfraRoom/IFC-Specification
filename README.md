@@ -1,6 +1,6 @@
 # IFC Specification
 ![Release-Badge](https://img.shields.io/github/v/release/bSI-InfraRoom/IFC-Specification)
-![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/bSI-InfraRoom/IFC-Specification/IFC4x3_RC4)
+![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/bSI-InfraRoom/IFC-Specification/IFC4.3.0.0-RC4)
 ![GitHub contributors](https://img.shields.io/github/contributors/bSI-InfraRoom/IFC-Specification)
 ![GitHub forks](https://img.shields.io/github/forks/bSI-InfraRoom/IFC-Specification)
 
@@ -33,3 +33,8 @@ For a detailed report, go [here](https://github.com/bSI-InfraRoom/IFC-Specificat
 - Click on Current branch and switch to Pull requests
 - Fetch origin (if not yet initiated automatically)
 
+## Github Actions
+
+- [Schema](https://github.com/bSI-InfraRoom/IFC-Specification/actions/workflows/schema-generation.yml)
+- [Properties and Quantities](https://github.com/bSI-InfraRoom/IFC-Specification/actions/workflows/prop-quant-listings.yml)
+- [Documentation](https://github.com/bSI-InfraRoom/IFC-Specification/actions/workflows/documentation.yml)
