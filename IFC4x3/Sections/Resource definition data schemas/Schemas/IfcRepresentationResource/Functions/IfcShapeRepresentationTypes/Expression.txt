@@ -32,6 +32,11 @@
                  AND (temp\IfcCurve.Dim = 3)));
       END;
 
+    'Segment' :
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRYRESOURCE.IFCSEGMENT' IN TYPEOF(temp))));
+      END;
+
     'Surface' :
       BEGIN 
         Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRYRESOURCE.IFCSURFACE' IN TYPEOF(temp))));
@@ -47,6 +52,11 @@
       BEGIN 
         Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRYRESOURCE.IFCSURFACE' IN TYPEOF(temp)) 
                  AND (temp\IfcSurface.Dim = 3)));
+      END;
+
+    'SectionedSurface' :
+      BEGIN 
+        Count := SIZEOF(QUERY(temp <* Items | 'IFCGEOMETRYRESOURCE.IFCSECTIONEDSURFACE' IN TYPEOF(temp)));
       END;
 
     'FillArea' :
