@@ -1,1 +1,1 @@
-Indicates whether the on-site control unit collects rain.
+Indicates whether the on-site control unit collects information on rain.
