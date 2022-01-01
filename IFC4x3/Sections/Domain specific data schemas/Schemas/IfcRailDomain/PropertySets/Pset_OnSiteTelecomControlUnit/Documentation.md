@@ -1,1 +1,1 @@
-Pset of OnSite Telecom Control Unit from railway.
+Properties for on-site telecom control unit used for railway.
