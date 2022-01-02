@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Surface_Sectioned_Geometry_36BVliISP1uuDkr9GN3iB8" Name="Surface Sectioned Geometry" UniqueId="c62dfbec-49c6-41e3-836e-d494170ec2c8" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="Representation">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProductDefinitionShape">
+					<Rules>
+						<DocModelRuleAttribute Name="Representations">
+							<Rules>
+								<DocModelRuleEntity Name="IfcShapeRepresentation">
+									<Rules>
+										<DocModelRuleAttribute Name="ContextOfItems">
+											<Rules>
+												<DocModelRuleEntity Name="IfcGeometricRepresentationContext" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute CardinalityMin="1" CardinalityMax="1" Name="RepresentationIdentifier" Identification="Identifier">
+											<Rules>
+												<DocModelRuleEntity xsi:nil="true" href="IfcLabel_212pjtt2TCSe6IuxauYKd" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="RepresentationType" Identification="Type">
+											<Rules>
+												<DocModelRuleEntity id="IfcLabel_0YxQh5bEXFSPpOJShHcviK" Name="IfcLabel" UniqueId="22edaac5-94e8-4f71-9cd8-4dcad19b9b14">
+													<Rules>
+														<DocModelRuleConstraint>
+															<Expression xsi:type="DocOpStatement" Operation="compareequal">
+																<Reference xsi:type="DocOpReference">
+																	<EntityRule xsi:type="DocModelRuleEntity" xsi:nil="true" href="IfcLabel_0YxQh5bEXFSPpOJShHcviK" />
+																</Reference>
+																<Value xsi:type="DocOpLiteral" Operation="loadstring" Literal="SectionedSurface" />
+															</Expression>
+														</DocModelRuleConstraint>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="Items" Identification="Items">
+											<Rules>
+												<DocModelRuleEntity Name="IfcSectionedSurface">
+													<Rules>
+														<DocModelRuleAttribute Name="Directrix" Identification="Directrix">
+															<Rules>
+																<DocModelRuleEntity Name="IfcBoundedCurve" />
+															</Rules>
+														</DocModelRuleAttribute>
+														<DocModelRuleAttribute Name="CrossSections" Identification="CrossSections">
+															<Rules>
+																<DocModelRuleEntity Name="IfcProfileDef" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Name" />
+						<DocModelRuleAttribute Name="Description" />
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
