@@ -1,1 +1,0 @@
-Direction of forces
