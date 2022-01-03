@@ -1,1 +1,1 @@
-Properties common to the definition of all occurrences and types of _IfcSignal_ applied in railways.
+Properties common to the definition of occurrences and types of _IfcSignal_ applied in railways.
