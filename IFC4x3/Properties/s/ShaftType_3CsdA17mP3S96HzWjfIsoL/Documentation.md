@@ -1,1 +1,1 @@
-Additional information on how the shaft purpose
+Additional information on the purpose of the shaft.

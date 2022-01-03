@@ -1,1 +1,1 @@
-Indicates the number of cable entries of the manhole.
+Indicates the number of cable entries in the manhole.
