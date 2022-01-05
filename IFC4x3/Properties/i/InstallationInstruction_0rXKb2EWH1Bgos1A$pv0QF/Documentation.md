@@ -1,1 +1,0 @@
-Detailed description on installation requirements that need to be specifically noted in accordance with specifications or standards. Installation requirements vary when the device is in different lots, such as subgrade, bridge, tunnel.

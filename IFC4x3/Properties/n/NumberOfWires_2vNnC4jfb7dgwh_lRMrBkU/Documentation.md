@@ -1,1 +1,1 @@
-The number of core wires included in a cable, e.g. 6,12…
+The number of wires used in the element.
