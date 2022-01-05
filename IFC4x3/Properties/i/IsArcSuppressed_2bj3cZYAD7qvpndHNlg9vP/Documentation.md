@@ -1,1 +1,1 @@
-Indicates whether the section insulator has the ability to suppress the arc.
+Indicates whether the element has the ability to suppress an arc.

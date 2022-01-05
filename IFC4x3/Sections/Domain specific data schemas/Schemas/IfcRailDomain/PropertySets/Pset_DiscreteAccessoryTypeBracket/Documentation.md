@@ -1,1 +1,1 @@
-Properties of bracket used in railway. The property set can be used by the predefined type BRACKET of IfcDiscreteAccessory.
+Properties of a bracket. The property set can be used by the predefined type BRACKET of IfcDiscreteAccessory.

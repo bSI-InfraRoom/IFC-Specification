@@ -1,1 +1,1 @@
-Indicates whether the support bracket is insulated or not.
+Indicates whether the element is insulated or not.

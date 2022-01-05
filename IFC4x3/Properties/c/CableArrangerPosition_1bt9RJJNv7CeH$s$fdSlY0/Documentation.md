@@ -1,1 +1,1 @@
-Indicate the directional position of the cable fitting: vertical, horizontal, front or rear.
+Indicates the directional position of the cable fitting: vertical, horizontal, front or rear.
