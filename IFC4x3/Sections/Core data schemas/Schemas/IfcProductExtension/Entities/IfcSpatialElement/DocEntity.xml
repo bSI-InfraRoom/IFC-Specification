@@ -37,6 +37,20 @@
 { .change-ifc2x4}
 &gt; Ø\X</Documentation>
 		</DocAttribute>
+		<DocAttribute Name="IsInterferedByElements" UniqueId="442585f2-8ad7-4dce-ac8c-eedc93240b4c" DefinedType="IfcRelInterferesElements" AggregationType="3" Inverse="RelatedElement">
+			<Documentation>Reference to the interference relationship to indicate the spatial element that is interfered. The relationship, if provided, indicates that this spatial element has an interference with one or many other spatial elements.
+&gt; NOTE&amp;nbsp; There is no indication of precedence between _IsInterferedByElements_ and _InterferesElements_ orientated interference is defined by _IfcRelInterferesElements.ImpliedOrder_ or _IfcRelInterferesElements.InterferenceType_.
+
+{ .change-ifc2x4}
+&gt; IFC4x3 CHANGE New inverse relationship.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="InterferesElements" UniqueId="d0a42a83-3d1e-4f71-b10f-d1b1e14fc808" DefinedType="IfcRelInterferesElements" AggregationType="3" Inverse="RelatingElement">
+			<Documentation>Reference to the interference relationship to indicate the spatial element that interferes. The relationship, if provided, indicates that this spatial element has an interference with one or many other spatial elements.
+&gt; NOTE&amp;nbsp; There is no indication of precedence between _IsInterferedByElements_ and _InterferesElements_. Orientated interference is defined by _IfcRelInterferesElements.ImpliedOrder_ or _IfcRelInterferesElements.InterferenceType_.
+
+{ .change-ifc2x4}
+&gt; IFC4x3 CHANGE New inverse relationship.</Documentation>
+		</DocAttribute>
 	</Attributes>
 </DocEntity>
 

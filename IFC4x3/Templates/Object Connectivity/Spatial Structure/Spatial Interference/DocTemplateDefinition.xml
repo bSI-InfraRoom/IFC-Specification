@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Spatial_Interference_2JdnvR7j14fDe9fDd9oUO" Name="Spatial Interference" UniqueId="939f1e5b-1ed0-44fe-9368-269367272798" Type="IfcSpatialElement">
+	<Rules>
+		<DocModelRuleAttribute Name="InterferesElements" Identification="InterferesSpatialElements">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelInterferesElements">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedElement" Identification="RelatedSpatialElement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcSpatialElement">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="RelatedSpatialElementName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="InterferenceType" Identification="InterferenceType">
+							<Rules>
+								<DocModelRuleEntity Name="IfcIdentifier" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="Name" Identification="SpatialElementName">
+			<Rules>
+				<DocModelRuleEntity Name="IfcLabel" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
