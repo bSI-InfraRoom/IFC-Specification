@@ -1,1 +1,1 @@
-Properties in the property set are applicable for the antenna type of communications appliance.
+Properties in the property set are applicable to the antenna type of communications appliance.

@@ -1,1 +1,1 @@
-Indicates the interface type of data transmission unit.
+Indicates the interface type of the data transmission unit.

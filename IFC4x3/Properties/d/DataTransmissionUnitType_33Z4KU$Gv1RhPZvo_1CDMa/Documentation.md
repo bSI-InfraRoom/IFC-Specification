@@ -1,1 +1,1 @@
-Indicate the type of data transmission unit (outdoor).
+Indicates the type of the data transmission unit (outdoor).

@@ -1,1 +1,1 @@
-Properties in the property set are applicable for the gateway type of communications appliance.
+Properties in the property set are applicable to the gateway type of communications appliance.

@@ -1,1 +1,1 @@
-Properties in the property set are applicable for the intelligent peripheral type of communications appliance.
+Properties in the property set are applicable to the intelligent peripheral type of communications appliance.
