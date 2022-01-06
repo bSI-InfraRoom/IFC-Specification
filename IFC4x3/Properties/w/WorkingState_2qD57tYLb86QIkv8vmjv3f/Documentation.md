@@ -1,1 +1,1 @@
-Indicates the working state of the device.
+Indicates the working state of device or system.
