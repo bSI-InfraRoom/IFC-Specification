@@ -17,5 +17,17 @@
 			<Documentation>Height above the coordinate plane.</Documentation>
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CoordianteType" UniqueId="e9bb63a8-0676-42b5-93db-fa2803a66ae2">
+			<Documentation>Restricts the value type of _FirstCoordinate_ and _SecondCoordinate_ to _IfcLengthMeasure_ and _IfcPositivePlaneAngleMeasure_.</Documentation>
+			<Expression>(&apos;IFCMEASURERESOURCE.IFCLENGTHMEASURE&apos; IN TYPEOF(FirstCoordinate)
+OR
+&apos;IFCMEASURERESOURCE.IFCPOSITIVEPLANEANGLEMEASURE&apos; IN TYPEOF(FirstCoordinate))
+AND
+(&apos;IFCMEASURERESOURCE.IFCLENGTHMEASURE&apos; IN TYPEOF(SecondCoordinate)
+OR
+&apos;IFCMEASURERESOURCE.IFCPOSITIVEPLANEANGLEMEASURE&apos; IN TYPEOF(SecondCoordinate))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 
