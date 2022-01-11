@@ -1,1 +1,1 @@
-To indicate whether the dropper is adjustable or not.
+To indicate whether the element is adjustable or not.
