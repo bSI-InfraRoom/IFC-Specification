@@ -11,7 +11,7 @@ The subpart of the railway is generally either a _IfcFacilityPartCommonTypeEnum_
 
 TRACKSTRUCTURE could have longitudinal decomposition based on track specificities:
 
-* PLAINTRACKSUPESTRUCTURE for the plain line tracks (_IfcElementAssemblyTypeEnum_ TRACKPANEL).
+* PLAINTRACKSUPERSTRUCTURE for the plain line tracks (_IfcElementAssemblyTypeEnum_ TRACKPANEL).
 * DILATATIONSUPERSTRUCTURE for the area of dilatation panels (_IfcElementAssemblyTypeEnum_ DILATATIONPANEL).
 * TURNOUTSUPERSTRUCTURE for the area of turnouts (_IfcElementAssemblyTypeEnum_ TURNOUTPANEL).
 * TRACKSTRUCTUREPART for generic longitudinal decomposition if needed.
