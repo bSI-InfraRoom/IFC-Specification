@@ -87,15 +87,21 @@ Several representation types for shape representation are included as predefined
 <td align="left" valign="top">3 dimensional points prepresented by a point list</td>
 </tr>
 <tr>
+<td colspan="2" align="left" valign="top" width="20"><b>Segment</b></td>
+<td align="left" valign="top">2 or 3 dimensional segment(s)</td>
+</tr>
+<tr>
 <td colspan="2" align="left" valign="top" width="20"><b>Curve</b></td>
 <td align="left" valign="top">2 or 3 dimensional curve(s)</td>
 </tr>
 <tr>
-<td colspan="2" align="left" valign="top" width="20"><b>Curve2D</b></td>
+<td align="left" valign="top" width="20"></td>
+<td align="left" valign="top" width="180"><b>Curve2D</b></td>
 <td align="left" valign="top">2 dimensional curve(s)</td>
 </tr>
 <tr>
-<td colspan="2" align="left" valign="top" width="20"><b>Curve3D</b></td>
+<td align="left" valign="top" width="20"></td>
+<td align="left" valign="top" width="180"><b>Curve3D</b></td>
 <td align="left" valign="top">3 dimensional curve(s)</td>
 </tr>
 <tr>
@@ -103,12 +109,19 @@ Several representation types for shape representation are included as predefined
 <td align="left" valign="top">2 or 3 dimensional surface(s)</td>
 </tr>
 <tr>
-<td colspan="2" align="left" valign="top" width="20"><b>Surface2D</b></td>
+<td align="left" valign="top" width="20"></td>
+<td align="left" valign="top" width="180"><b>Surface2D</b></td>
 <td align="left" valign="top">2 dimensional surface(s) (a region on ground view)</td>
 </tr>
 <tr>
-<td colspan="2" align="left" valign="top" width="20"><b>Surface3D</b></td>
+<td align="left" valign="top" width="20"></td>
+<td align="left" valign="top" width="180"><b>Surface3D</b></td>
 <td align="left" valign="top">3 dimensional surface(s)</td>
+</tr>
+<tr>
+<td align="left" valign="top" width="20"></td>
+<td align="left" valign="top" width="180"><b>SectionedSurface</b></td>
+<td align="left" valign="top">swept surface(s) created by sweeping open profiles along a directrix</td>
 </tr>
 <tr>
 <td colspan="2" align="left" valign="top" width="20"><b>FillArea</b></td>

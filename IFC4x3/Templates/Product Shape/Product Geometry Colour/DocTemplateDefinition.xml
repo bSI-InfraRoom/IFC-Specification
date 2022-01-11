@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Product_Geometry_Colour_0_U8ct8b5EWPz3PCWbdRjo" Name="Product Geometry Colour" UniqueId="3e7889b7-2251-4e81-9f43-64c8259dbb72" Type="IfcProduct">
+	<Rules>
+		<DocModelRuleAttribute Name="Representation">
+			<Rules>
+				<DocModelRuleEntity Name="IfcProductDefinitionShape" UniqueId="78ee349d-1cca-4a1d-b271-898394b3686f">
+					<Rules>
+						<DocModelRuleAttribute Name="Representations">
+							<Rules>
+								<DocModelRuleEntity Name="IfcShapeRepresentation" UniqueId="608f63d9-8141-43cf-8333-d4987e7fafdc">
+									<Rules>
+										<DocModelRuleAttribute Name="Items">
+											<Rules>
+												<DocModelRuleEntity Name="IfcSolidModel" UniqueId="d43f0213-56cc-4bbf-9d1e-0ef7eb4f567e">
+													<Rules>
+														<DocModelRuleAttribute Name="StyledByItem">
+															<Rules>
+																<DocModelRuleEntity Name="IfcStyledItem" UniqueId="03bf6d4c-024e-468e-a81c-091142a3a4ea">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Styles">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcSurfaceStyle" UniqueId="82ce583f-6bef-4297-97fb-04da1f0a33e2">
+																					<References>
+																						<DocTemplateDefinition xsi:nil="true" href="Surface_Color_Style_3gHpLYmULDnwrrpIILsus" />
+																					</References>
+																				</DocModelRuleEntity>
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+												<DocModelRuleEntity Name="IfcTessellatedFaceSet" UniqueId="54114be1-8849-4d4d-8bd3-f916c227be6d">
+													<Rules>
+														<DocModelRuleAttribute Name="HasColours">
+															<Rules>
+																<DocModelRuleEntity Name="IfcIndexedColourMap" UniqueId="22ca00c4-40d8-4e17-945e-55759bbcf9a0">
+																	<Rules>
+																		<DocModelRuleAttribute Name="Opacity">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcNormalisedRatioMeasure" UniqueId="30081630-848c-4422-8a7b-a1984b065f8f" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="Colours">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcColourRgbList" UniqueId="703aac20-0313-4d9a-aba9-c62371d344e7" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																		<DocModelRuleAttribute Name="ColourIndex">
+																			<Rules>
+																				<DocModelRuleEntity Name="IfcPositiveInteger" UniqueId="68608027-79d0-4e12-9708-adbe58f0c82a" />
+																			</Rules>
+																		</DocModelRuleAttribute>
+																	</Rules>
+																</DocModelRuleEntity>
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
