@@ -1,1 +1,1 @@
-Occurences properties of fiber segments.
+Properties of fiber segment occurrences.

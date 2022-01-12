@@ -1,1 +1,1 @@
-Property of optical pigtail.
+Property set for optical pigtail.
