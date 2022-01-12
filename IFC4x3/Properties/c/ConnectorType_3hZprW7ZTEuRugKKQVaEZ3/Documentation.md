@@ -1,1 +1,1 @@
-Indicate the type of connector.
+Indicates the type of connector.

@@ -1,1 +1,0 @@
-Property of Overhead ContactLines

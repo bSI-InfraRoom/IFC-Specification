@@ -1,1 +1,1 @@
-Indicate the propagation speed coefficient of feeder.
+Indicates the propagation speed coefficient of feeder.

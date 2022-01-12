@@ -1,1 +1,1 @@
-Properties of conductors used in energy railway domain.
+Properties of conductors used as feeder line.

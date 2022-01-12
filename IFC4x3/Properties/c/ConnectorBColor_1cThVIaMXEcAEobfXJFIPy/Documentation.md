@@ -1,1 +1,1 @@
-Indicates the color B- end of connector
+Indicates the color B- end of connector.

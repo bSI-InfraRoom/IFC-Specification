@@ -1,1 +1,1 @@
-Indicate the Maximum transmission attenuation of feeder
+Indicates the Maximum transmission attenuation of feeder.

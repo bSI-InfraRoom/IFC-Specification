@@ -1,1 +1,1 @@
-Tensile strength, α=0°.
+Measurement of the ability to withstand breakage apart under applied force.

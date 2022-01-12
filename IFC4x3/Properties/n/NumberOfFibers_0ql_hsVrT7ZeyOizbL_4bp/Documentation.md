@@ -1,1 +1,1 @@
-Indicate the number of fibers inside the single tube
+Indicates the number of fibers in the single tube or cable.

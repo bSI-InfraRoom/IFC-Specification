@@ -1,1 +1,1 @@
-Indicate the color A- end of connector
+Indicates the color A- end of connector.

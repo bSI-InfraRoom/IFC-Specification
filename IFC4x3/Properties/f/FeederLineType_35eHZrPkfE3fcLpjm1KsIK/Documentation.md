@@ -1,1 +1,1 @@
-Type of Feeder Line.
+Type of feeder line.

@@ -1,1 +1,1 @@
-Indicate the color of the single fiber
+Indicates the color of the single fiber.
