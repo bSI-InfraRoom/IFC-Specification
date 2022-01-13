@@ -1,1 +1,1 @@
-Maximum level of salt mist that the equipment complies with
+Maximum level of salt mist that the equipment can operate effectively in.

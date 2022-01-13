@@ -1,1 +1,1 @@
-Maximum storage temperature that system complies with (C°)
+Maximum storage temperature that the system complies with.

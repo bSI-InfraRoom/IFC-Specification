@@ -1,1 +1,1 @@
-Maximum level of atmospheric pressure that the equipment complies with
+Maximum level of atmospheric pressure that the equipment can operate effectively in.

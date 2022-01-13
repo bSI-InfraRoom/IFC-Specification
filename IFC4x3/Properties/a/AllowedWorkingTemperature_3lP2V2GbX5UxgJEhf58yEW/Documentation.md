@@ -1,1 +1,1 @@
-Maximum working temperature that system complies with (C°)
+Maximum working temperature that the system complies with.

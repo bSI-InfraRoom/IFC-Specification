@@ -1,1 +1,1 @@
-Minimum working temperature that system complies with (C°)
+Minimum working temperature that the system complies with.
