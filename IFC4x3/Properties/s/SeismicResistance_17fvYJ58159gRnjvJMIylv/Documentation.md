@@ -1,1 +1,1 @@
-Maximum level of earthquake that the equipment complies with.
+Maximum level of earthquake that the equipment complies with. The value indicates earthquake intensity measured in Richter scale.
