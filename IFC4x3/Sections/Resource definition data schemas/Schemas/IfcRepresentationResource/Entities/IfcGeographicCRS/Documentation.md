@@ -1,1 +1,1 @@
-_IfcGeographicCRS_ is a coordinate reference system that is based on a ellipsoid. Geographic CRS typically requires two angles and a height to determine a unique position.
+A _IfcGeographicCRS_ is a CRS that uses a three-dimensional ellipsoid surface to determine locations on the Earth. Any location on Earth can be referenced by a point with longitude and latitude coordinates.
