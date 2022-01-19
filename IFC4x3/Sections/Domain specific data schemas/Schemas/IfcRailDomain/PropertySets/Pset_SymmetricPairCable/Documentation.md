@@ -1,1 +1,1 @@
-Properties in this property set are applicable to cable segment, indicated that the cable segment is a symmetric pair cable, which is is a copper cable with a variable number of copper twisted symmetric pair conductors used to transmit data by means of electrical signals.
+Properties applicable to a symmetric pair cable, which is is a copper cable with a variable number of copper twisted symmetric pair conductors used to transmit data by means of electrical signals. this property set is applicable to type or occurence of _IfcCableSegment_ with predefined type CABLESEGMENT
