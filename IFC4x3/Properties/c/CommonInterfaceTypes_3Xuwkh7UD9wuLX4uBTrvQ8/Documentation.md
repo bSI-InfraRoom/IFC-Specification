@@ -1,1 +1,1 @@
-Indicates the types of the device common interfaces.
+Indicates the type of the device common interfaces.

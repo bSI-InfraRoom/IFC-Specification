@@ -1,1 +1,1 @@
-Properties in the property set are applicable to the intelligent peripheral type of communications appliance.
+Properties common to a intelligent peripheral. This property set is applied to a type or occurrence of _IfcCommunicationsAppliance_ with predefined type of INTELLIGENT_PERIPHERAL.

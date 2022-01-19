@@ -1,1 +1,1 @@
-Properties in the property set are defined for the modem type of communications appliance.
+Properties common to a modem. This property set is applied to a type or occurrence of _IfcCommunicationsAppliance_ with predefined type of MODEM.

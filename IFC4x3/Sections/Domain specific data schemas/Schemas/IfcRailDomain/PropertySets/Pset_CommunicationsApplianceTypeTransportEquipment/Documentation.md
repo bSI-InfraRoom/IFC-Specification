@@ -1,1 +1,1 @@
-Properties in this property set are applicable for the transport equipment of communications appliance.
+Properties common to a transport equipment. This property set is applied to a type or occurrence of _IfcCommunicationsAppliance_ with predefined type of TRANSPORTEQUIPMENT.

@@ -1,1 +1,1 @@
-Properties in this property set are applicable for the transponder type of communications appliance, indicated that the transponder is a railway balise.
+Properties  applicable to a railway balise. This property set is applied to a type or occurrence of _IfcCommunicationsAppliance_ with predefined type of TRANSPONDER.

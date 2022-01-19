@@ -1,1 +1,1 @@
-Properties in this property set are applicable to the optical line terminal type of communications appliance.
+Properties common to a optical line terminal. This property set is applied to a type or occurrence of _IfcCommunicationsAppliance_ with predefined type of OPTICALLINETERMINAL.
