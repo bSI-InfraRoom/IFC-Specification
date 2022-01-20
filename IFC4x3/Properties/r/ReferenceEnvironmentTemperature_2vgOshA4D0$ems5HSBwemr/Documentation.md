@@ -1,0 +1,1 @@
+Ideal temperature range.

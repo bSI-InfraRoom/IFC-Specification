@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Element_Openings_3YqUPwjOH7R8UE4ohv_EAu" Name="Element Openings" UniqueId="e2d1e67a-b584-476c-878e-132af9f8e2b8" Type="IfcElement">
+	<Rules>
+		<DocModelRuleAttribute Name="HasOpenings" Identification="HasOpenings">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelVoidsElement">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedOpeningElement" Identification="RelatedOpeningElement">
+							<Rules>
+								<DocModelRuleEntity Name="IfcOpeningElement">
+									<Rules>
+										<DocModelRuleAttribute Name="PredefinedType" Identification="OpeningElementType">
+											<Rules>
+												<DocModelRuleEntity Name="IfcOpeningElementTypeEnum" />
+											</Rules>
+										</DocModelRuleAttribute>
+										<DocModelRuleAttribute Name="FillsVoids" Identification="FillsVoids">
+											<Rules>
+												<DocModelRuleEntity Name="IfcRelFillsElement">
+													<Rules>
+														<DocModelRuleAttribute Name="RelatedBuildingElement" Identification="RelatedBuiltElement">
+															<Rules>
+																<DocModelRuleEntity Name="IfcDoor" />
+																<DocModelRuleEntity Name="IfcWindow" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
