@@ -1,1 +1,1 @@
-Indicates the stiffness of a rail pad
+Indicates the stiffness of a rail pad.
