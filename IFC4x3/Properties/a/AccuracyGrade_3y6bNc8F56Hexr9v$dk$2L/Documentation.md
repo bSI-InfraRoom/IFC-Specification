@@ -1,1 +1,1 @@
-The grade of accuracy
+The grade of accuracy.

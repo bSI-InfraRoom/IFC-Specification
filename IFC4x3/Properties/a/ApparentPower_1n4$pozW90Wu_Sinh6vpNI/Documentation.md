@@ -1,1 +1,1 @@
-The apparent power of the equipment
+The apparent power of the equipment.
