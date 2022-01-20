@@ -1,1 +1,1 @@
-Allowed storage temperature that the element complies with.
+Allowed storage temperature range that the element complies with.
