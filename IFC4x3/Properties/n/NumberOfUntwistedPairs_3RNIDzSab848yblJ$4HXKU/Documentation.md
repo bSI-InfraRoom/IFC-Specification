@@ -1,1 +1,1 @@
-Total number of untwisted wire pairs in the copper pair cable
+Total number of untwisted wire pairs in the copper pair cable.

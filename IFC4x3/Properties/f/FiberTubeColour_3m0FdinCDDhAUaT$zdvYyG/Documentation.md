@@ -1,1 +1,1 @@
-Indicates the color of the single fiber tube.
+Indicates the colour of a single fiber tube.

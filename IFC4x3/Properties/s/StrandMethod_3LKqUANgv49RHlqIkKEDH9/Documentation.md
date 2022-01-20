@@ -1,1 +1,1 @@
-Specifies the method to strand.
+Specifies the method of stranding.
