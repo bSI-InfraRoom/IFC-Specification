@@ -13,6 +13,9 @@
 		<DocAttribute Name="Tags" UniqueId="e0750c4d-1efe-493d-9699-706d8d0bc7d6" DefinedType="IfcLabel" AttributeFlags="1" AggregationType="1" AggregationLower="2" AggregationUpper="?">
 			<Documentation></Documentation>
 		</DocAttribute>
+		<DocAttribute Name="OffsetPoint" UniqueId="4f5b213a-261b-4c67-b80c-cb8b72473faa" DefinedType="IfcCartesianPoint" AttributeFlags="1">
+			<Documentation>Optional Cartesian point to nominate the profile curve start. The provided slopes and widths emerge from this point. If no value is given, the profile initiates at the alignment intersection with the profile plane.</Documentation>
+		</DocAttribute>
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="CorrectProfileType" UniqueId="10dd9554-1c37-4ebe-8fef-7ef0951568dd">
