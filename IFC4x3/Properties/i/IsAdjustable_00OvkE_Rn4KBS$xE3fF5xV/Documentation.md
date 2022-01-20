@@ -1,1 +1,1 @@
-To indicate whether the element is adjustable or not.
+Indicates whether the element is adjustable or not.
