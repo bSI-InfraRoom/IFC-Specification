@@ -1,1 +1,1 @@
-Nominal tolerance value of the spark gap DC breakdown voltage.
+Nominal value of the spark gap breakdown voltage tolerance.

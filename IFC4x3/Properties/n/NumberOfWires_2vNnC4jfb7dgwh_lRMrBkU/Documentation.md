@@ -1,1 +1,1 @@
-The number of wires included in a cable.
+The number of wires used in the element.

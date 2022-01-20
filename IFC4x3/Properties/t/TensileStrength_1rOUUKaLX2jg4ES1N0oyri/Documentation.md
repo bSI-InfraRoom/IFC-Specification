@@ -1,1 +1,1 @@
-Measurement of the ability to withstand breakage apart under applied force.
+Indicates the ability to withstand breakage apart under applied force.
