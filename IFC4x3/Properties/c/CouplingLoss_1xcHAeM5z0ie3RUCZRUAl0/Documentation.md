@@ -1,1 +1,1 @@
-Indicates the coupling loss of the leaky coaxial cable.
+Indicates the coupling loss of the leaky coaxial cable (radiating cable).
