@@ -1,0 +1,1 @@
+Properties defining slot occupation for a communications appliance. This property set is applicable an occurrence of _IfcCommunicationsAppliance_ with predefined type set to IPNETWORKEQUIPMENT, OPTICALLINETERMINAL or TRANSPORTEQUIPMENT.
