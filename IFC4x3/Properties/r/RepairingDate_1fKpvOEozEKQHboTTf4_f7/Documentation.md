@@ -1,1 +1,1 @@
-Date on which the last repair is done on the asset.
+Date on which the last repair was done on the asset.

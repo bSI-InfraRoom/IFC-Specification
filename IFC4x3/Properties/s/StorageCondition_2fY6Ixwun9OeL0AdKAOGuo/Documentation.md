@@ -1,1 +1,1 @@
-Indicates the storage condition of equipment
+Indicates the storage condition of equipment.

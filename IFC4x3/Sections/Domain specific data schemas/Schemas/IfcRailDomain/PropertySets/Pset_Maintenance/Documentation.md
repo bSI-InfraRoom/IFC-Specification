@@ -1,1 +1,1 @@
-Properties defining maintenance information for the element, asset or system.
+Properties defining maintenance information for a element, asset or system.

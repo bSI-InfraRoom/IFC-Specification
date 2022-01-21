@@ -1,1 +1,1 @@
-Properties defining purchase information for the element.
+Properties defining purchase information for a element.
