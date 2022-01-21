@@ -1,1 +1,1 @@
-Indicates the usage of the data transmission unit. It can be used to transmit data for different type of sensors.
+Indicates the usage of the data transmission unit. It can be used to transmit data for different types of sensors.
