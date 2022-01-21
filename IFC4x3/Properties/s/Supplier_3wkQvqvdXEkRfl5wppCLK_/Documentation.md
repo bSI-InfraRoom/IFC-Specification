@@ -1,1 +1,0 @@
-Supplier of the object.
