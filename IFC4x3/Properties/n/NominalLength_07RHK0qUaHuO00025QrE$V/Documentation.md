@@ -1,1 +1,1 @@
-Nominal length of the object
+Nominal length of the object.
