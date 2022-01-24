@@ -1,1 +1,1 @@
-Weight of the product described by the manufacturer.
+Nominal weight of the object.

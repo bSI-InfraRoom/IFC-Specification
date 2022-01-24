@@ -1,1 +1,1 @@
-The range at which the equipment can detect changes.
+The detection range of the equipment.
