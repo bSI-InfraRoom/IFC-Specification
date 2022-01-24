@@ -1,0 +1,1 @@
+The resistance under AC.
