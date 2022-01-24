@@ -1,1 +1,1 @@
-Nominal Height of the object
+Nominal height of the object.
