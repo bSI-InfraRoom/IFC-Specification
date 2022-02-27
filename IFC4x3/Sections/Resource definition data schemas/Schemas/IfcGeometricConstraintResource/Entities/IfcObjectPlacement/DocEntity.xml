@@ -26,6 +26,12 @@ an object coordinate system for instances of _IfcProduct_.
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The cardinality has changed to 0..n to allow reuse of instances of _IfcObjectPlacement_ as placement object in one to many products. It takes also into account that it can act as a placement for _IfcStructuralAnalysisModel_.</Documentation>
 		</DocAttribute>
+		<DocAttribute Name="ReferencedByPlacements" UniqueId="d7240aa2-8860-4a99-a112-e68b82fe60e8" DefinedType="IfcObjectPlacement" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="PlacementRelTo">
+			<Documentation>Placements that are given relative to this placement of an object.</Documentation>
+			<Definition>
+				<DocEntity xsi:nil="true" href="IfcObjectPlacement" />
+			</Definition>
+		</DocAttribute>
 	</Attributes>
 </DocEntity>
 
