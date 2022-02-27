@@ -11,6 +11,9 @@
 		<DocSubtype UniqueId="8200edef-bcea-4517-9b59-fbb49bcf03c7" DefinedType="IfcLinearPlacement" />
 	</Subtypes>
 	<Attributes>
+		<DocAttribute Name="PlacementRelTo" UniqueId="7bb09cb1-18c7-4ad5-a88d-f8ecccc28539" DefinedType="IfcObjectPlacement" AttributeFlags="1">
+			<Documentation>Reference to object placement that provides the relative placement with its placement in a grid, local coordinate system or linear referenced placement. If it is omitted, then in the case of linear placement it is established by the origin of horizontal alignment of the referenced IfcAlignment Axis. In the case of local placement it is established by the geometric representation context.</Documentation>
+		</DocAttribute>
 		<DocAttribute Name="PlacesObject" UniqueId="badd4380-1510-40db-86e6-386eac940e22" DefinedType="IfcProduct" AttributeFlags="32" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="ObjectPlacement">
 			<Documentation>The _IfcObjectPlacement_ shall be used to provide a placement and 
 an object coordinate system for instances of _IfcProduct_. 
@@ -22,9 +25,6 @@ an object coordinate system for instances of _IfcProduct_.
 
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The cardinality has changed to 0..n to allow reuse of instances of _IfcObjectPlacement_ as placement object in one to many products. It takes also into account that it can act as a placement for _IfcStructuralAnalysisModel_.</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="PlacementRelTo" UniqueId="7bb09cb1-18c7-4ad5-a88d-f8ecccc28539" DefinedType="IfcObjectPlacement" AttributeFlags="1">
-			<Documentation>Reference to object placement that provides the relative placement with its placement in a grid, local coordinate system or linear referenced placement. If it is omitted, then in the case of linear placement it is established by the origin of horizontal alignment of the referenced IfcAlignment Axis. In the case of local placement it is established by the geometric representation context.</Documentation>
 		</DocAttribute>
 	</Attributes>
 </DocEntity>
