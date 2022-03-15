@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcKerb" UniqueId="5f9cc447-6ed4-41b3-9201-7db99ef32744" BaseDefinition="IfcBuiltElement" EntityFlags="32">
 	<Attributes>
-		<DocAttribute Name="Mountable" UniqueId="58b5766a-263f-4dab-abdc-8c10cd3f43de" DefinedType="IfcBoolean">
-			<Documentation>Specifies whether the kerb can be readily climbed by a vehicle or not.</Documentation>
+		<DocAttribute Name="PredefinedType" UniqueId="17ec7cf6-475d-43b2-ba7e-f765ae319696" DefinedType="IfcKerbTypeEnum" AttributeFlags="1">
+			<Documentation>Identifies the predefined type of a kerb element. This type may associate additional specific property sets.
+>NOTE  The PredefinedType shall only be used, if no IfcKerbType is assigned, providing its own IfcKerbType.PredefinedType.</Documentation>
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="1718650a-cf53-4936-a174-a80356ecc357">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcKerbType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcKerbTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcKerbTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="e1621848-8c2d-44aa-a3aa-5b7fba799a6a">
+			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcKerbType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCROADDOMAIN.IFCKERBTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 
