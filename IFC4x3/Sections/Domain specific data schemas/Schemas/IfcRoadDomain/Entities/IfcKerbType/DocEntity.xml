@@ -7,7 +7,7 @@
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="CorrectPredefinedType" UniqueId="93d97cf8-ba87-4e11-b07f-f5122973b687">
-			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Documentation>The inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
 			<Expression>(PredefinedType &lt;&gt; IfcKerbTypeEnum.USERDEFINED) OR
 ((PredefinedType = IfcKerbTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
 		</DocWhereRule>
