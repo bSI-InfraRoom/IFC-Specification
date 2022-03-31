@@ -41,6 +41,12 @@ ELLIPSOID[&amp;lt;name&amp;gt;,&amp;lt;major axis&amp;gt;,&amp;lt;inverse flatte
 &gt; * DHHN92: the German &apos;Haupth&amp;ouml;hennetz&apos;
 &gt; * EVRS2007; the European Vertical Reference System</Documentation>
 		</DocAttribute>
+		<DocAttribute Name="WKT" UniqueId="9b9f3bbc-d2fc-4157-a1c7-9a86730b2575" DefinedType="IfcText" AttributeFlags="1">
+			<Documentation>Well known text (string) according to ISO 19162.</Documentation>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcText_2FVIlfGkP5cvsIzBXplv5u" />
+			</Definition>
+		</DocAttribute>
 		<DocAttribute Name="HasCoordinateOperation" UniqueId="83795333-6df7-46ac-b61e-5101640f8615" DefinedType="IfcCoordinateOperation" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="SourceCRS" XsdFormat="attribute">
 			<Documentation>Indicates conversion between coordinate systems. In particular it refers to an _IfcCoordinateOperation_ between this coordinate reference system, and another Geographic coordinate reference system.</Documentation>
 		</DocAttribute>
