@@ -42,5 +42,11 @@ _XAxisAbscissa_ it provides the direction of the local x axis within the horizon
 			<Documentation>Scale Z by which the length measures in local engineering CS have to be multiplied to get map coordinates</Documentation>
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="NoGeographicCRS" UniqueId="ac9fb308-c18a-436f-8ec4-d0591f1dca67">
+			<Documentation>_IfcCoordinateOperation_.TargetCRS is not of type _IfcGeographicCRS_.</Documentation>
+			<Expression>NOT(&apos;IFC4x3.IFCGEOGRAPHICCRS&apos; IN TYPEOF(SELF\IfcCoordinateOperation.TargetCRS))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

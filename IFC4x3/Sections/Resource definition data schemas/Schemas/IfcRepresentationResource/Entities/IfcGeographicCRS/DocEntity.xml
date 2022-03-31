@@ -2,7 +2,19 @@
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeographicCRS" UniqueId="2d6be663-8d5e-42cc-b5b4-13bb37f41262" BaseDefinition="IfcCoordinateReferenceSystem" EntityFlags="32">
 	<Attributes>
 		<DocAttribute Name="GeodeticDatum" UniqueId="b4d581f7-612a-4e98-963a-95ad06714397" DefinedType="IfcIdentifier" AttributeFlags="1" />
+		<DocAttribute Name="PrimeMeridian" UniqueId="b2c9cf50-b4bb-4979-92d8-c44a05f22954" DefinedType="IfcIdentifier" AttributeFlags="1">
+			<Documentation>The identification of the meridian defining zero longitude in the used geographic CRS.</Documentation>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcIdentifier_1dG8O0DIbDBxufYev6dUDH" />
+			</Definition>
+		</DocAttribute>
 		<DocAttribute Name="Unit" UniqueId="82bf71dc-4f74-483b-84c7-70c84a5ce22d" DefinedType="IfcNamedUnit" AttributeFlags="1" />
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="UnitIsPlaneAngle" UniqueId="45472275-87bf-4f5e-a1ad-80be7f068991">
+			<Documentation>The type of Unit shall be _IfcPlaneAngleMeasure_.</Documentation>
+			<Expression>&apos;IFC4x3.IFCPLANEANGLEMEASURE&apos; IN TYPEOF(SELF.Unit)</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

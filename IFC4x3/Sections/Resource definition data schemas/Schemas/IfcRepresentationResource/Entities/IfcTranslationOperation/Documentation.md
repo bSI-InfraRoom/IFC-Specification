@@ -1,1 +1,0 @@
-A translation operation specifies an offset in the coordinate reference system. It does not specify any conversion or distortion only a translation. The coodinate axes of the _IfcGeometricRepresentationContext_ can rotate and set a new basis coordinate system.
