@@ -1,1 +1,0 @@
-Payback period of investment

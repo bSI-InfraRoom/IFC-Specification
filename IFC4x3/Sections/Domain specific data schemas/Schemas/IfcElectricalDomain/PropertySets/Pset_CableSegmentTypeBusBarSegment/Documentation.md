@@ -1,1 +1,0 @@
-Properties specific to busbar cable segments.

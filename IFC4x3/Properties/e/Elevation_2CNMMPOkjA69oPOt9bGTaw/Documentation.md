@@ -1,1 +1,0 @@
-Elevation of the entity

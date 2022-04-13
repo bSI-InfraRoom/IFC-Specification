@@ -1,1 +1,0 @@
-Air particle filter type attributes.

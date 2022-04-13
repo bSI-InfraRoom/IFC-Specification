@@ -1,1 +1,0 @@
-Bent (upright) spacing

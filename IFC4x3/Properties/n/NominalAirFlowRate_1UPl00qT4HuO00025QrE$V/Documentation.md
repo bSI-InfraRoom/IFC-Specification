@@ -1,1 +1,0 @@
-Nominal air flow rate.

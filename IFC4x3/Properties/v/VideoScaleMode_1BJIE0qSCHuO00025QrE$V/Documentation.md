@@ -1,1 +1,0 @@
-Indicates video scaling modes.

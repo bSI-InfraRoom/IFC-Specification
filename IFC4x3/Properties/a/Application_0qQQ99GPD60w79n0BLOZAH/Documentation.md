@@ -1,1 +1,0 @@
-Indicates application of actuator.

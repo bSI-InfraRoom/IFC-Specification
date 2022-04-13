@@ -1,1 +1,0 @@
-Weight of filter.

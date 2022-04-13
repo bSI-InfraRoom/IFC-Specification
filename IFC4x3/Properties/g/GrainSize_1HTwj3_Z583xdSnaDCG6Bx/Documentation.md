@@ -1,1 +1,0 @@
-Grain size diameter.

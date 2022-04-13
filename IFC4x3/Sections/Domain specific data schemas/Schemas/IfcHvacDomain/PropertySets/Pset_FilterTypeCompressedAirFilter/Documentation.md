@@ -1,1 +1,0 @@
-Compressed air filter type attributes.

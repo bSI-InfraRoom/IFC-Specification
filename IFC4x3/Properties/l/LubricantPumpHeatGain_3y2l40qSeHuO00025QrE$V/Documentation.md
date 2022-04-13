@@ -1,1 +1,0 @@
-Lubricant pump heat gain.

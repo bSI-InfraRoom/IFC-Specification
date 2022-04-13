@@ -1,1 +1,0 @@
-Temperature of the fluid.

@@ -1,1 +1,0 @@
-Valve type common attributes.

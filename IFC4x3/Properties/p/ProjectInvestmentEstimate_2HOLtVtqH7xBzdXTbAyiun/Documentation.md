@@ -1,1 +1,0 @@
-Estimate of investment cost

@@ -1,1 +1,0 @@
-Terminal box reheat type.

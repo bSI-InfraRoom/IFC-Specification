@@ -1,1 +1,0 @@
-A device that senses identification tags.

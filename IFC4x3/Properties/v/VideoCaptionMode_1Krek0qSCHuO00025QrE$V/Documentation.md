@@ -1,1 +1,0 @@
-Indicates closed captioning modes.

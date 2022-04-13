@@ -1,1 +1,0 @@
-Indicates the tuner type.

@@ -1,1 +1,0 @@
-Level of sound emission

@@ -1,1 +1,0 @@
-Indicates video resolution modes.

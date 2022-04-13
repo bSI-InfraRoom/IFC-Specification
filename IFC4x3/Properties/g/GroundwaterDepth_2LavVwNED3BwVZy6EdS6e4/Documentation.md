@@ -1,1 +1,0 @@
-Depth groundwater encountered (boreholeML).

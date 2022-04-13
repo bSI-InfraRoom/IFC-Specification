@@ -1,1 +1,0 @@
-Normalised working temperature.

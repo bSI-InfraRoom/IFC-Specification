@@ -1,1 +1,0 @@
-Damper type common attributes.

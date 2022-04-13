@@ -1,1 +1,0 @@
-Lining thickness (boreholeML).

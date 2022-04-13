@@ -1,1 +1,0 @@
-Shape according to CurveShapeEnum

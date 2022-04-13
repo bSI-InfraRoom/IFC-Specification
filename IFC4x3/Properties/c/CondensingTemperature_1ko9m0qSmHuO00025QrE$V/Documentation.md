@@ -1,1 +1,0 @@
-Refrigerant condensing temperature.

@@ -1,1 +1,0 @@
-Chiller type common attributes.

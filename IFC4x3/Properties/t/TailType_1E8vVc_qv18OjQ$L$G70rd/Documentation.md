@@ -1,1 +1,0 @@
-Mooring tail type

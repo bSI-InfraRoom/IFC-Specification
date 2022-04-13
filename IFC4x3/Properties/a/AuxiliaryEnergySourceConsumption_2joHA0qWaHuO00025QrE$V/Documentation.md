@@ -1,1 +1,0 @@
-Auxiliary energy source consumption.

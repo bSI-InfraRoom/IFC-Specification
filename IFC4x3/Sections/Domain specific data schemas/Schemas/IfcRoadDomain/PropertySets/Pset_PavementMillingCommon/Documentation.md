@@ -1,1 +1,0 @@
-Properties for pavement milling.

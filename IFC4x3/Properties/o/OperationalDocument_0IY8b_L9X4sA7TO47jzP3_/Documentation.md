@@ -1,1 +1,0 @@
-Manufacturer's operational document

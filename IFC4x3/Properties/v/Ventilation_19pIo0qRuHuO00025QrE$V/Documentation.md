@@ -1,1 +1,0 @@
-Required outside air ventilation.

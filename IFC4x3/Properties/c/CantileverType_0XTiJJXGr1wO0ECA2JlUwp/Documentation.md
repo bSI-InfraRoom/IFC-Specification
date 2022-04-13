@@ -1,1 +1,0 @@
-Type of cantilever assembly.

@@ -1,1 +1,0 @@
-Nominal damper diameter.

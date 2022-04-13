@@ -1,1 +1,0 @@
-Water sump temperature.

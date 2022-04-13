@@ -1,1 +1,0 @@
-Indicates the sampling frequency of the device.

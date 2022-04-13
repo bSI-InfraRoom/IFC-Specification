@@ -1,1 +1,0 @@
-Pressure loss coefficient.

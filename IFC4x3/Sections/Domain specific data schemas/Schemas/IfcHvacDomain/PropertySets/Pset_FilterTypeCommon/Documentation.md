@@ -1,1 +1,0 @@
-Filter type common attributes.

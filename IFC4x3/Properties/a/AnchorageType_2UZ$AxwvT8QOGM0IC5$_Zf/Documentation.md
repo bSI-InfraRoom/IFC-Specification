@@ -1,1 +1,0 @@
-Mooring device anchorage type

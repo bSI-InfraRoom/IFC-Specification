@@ -1,1 +1,0 @@
-Evaporator type common attributes.

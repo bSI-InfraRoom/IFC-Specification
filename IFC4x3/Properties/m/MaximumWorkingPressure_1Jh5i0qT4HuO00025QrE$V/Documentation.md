@@ -1,1 +1,0 @@
-Maximum working pressure.

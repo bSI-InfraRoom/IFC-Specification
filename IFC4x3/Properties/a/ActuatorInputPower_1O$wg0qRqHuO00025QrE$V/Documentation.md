@@ -1,1 +1,0 @@
-Maximum input power requirement.

@@ -1,1 +1,0 @@
-Orientation of internal blades.

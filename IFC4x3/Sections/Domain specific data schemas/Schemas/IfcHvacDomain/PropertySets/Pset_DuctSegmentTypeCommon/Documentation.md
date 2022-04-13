@@ -1,1 +1,0 @@
-Duct segment type common attributes.

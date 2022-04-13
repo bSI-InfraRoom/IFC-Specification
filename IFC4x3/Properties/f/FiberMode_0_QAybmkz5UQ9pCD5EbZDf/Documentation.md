@@ -1,1 +1,0 @@
-Indicates the fiber mode.

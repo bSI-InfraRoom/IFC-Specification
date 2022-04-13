@@ -1,1 +1,0 @@
-Turnout conversion completion time.

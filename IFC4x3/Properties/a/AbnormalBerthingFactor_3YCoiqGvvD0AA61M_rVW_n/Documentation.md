@@ -1,1 +1,0 @@
-Risk assessed safety factor

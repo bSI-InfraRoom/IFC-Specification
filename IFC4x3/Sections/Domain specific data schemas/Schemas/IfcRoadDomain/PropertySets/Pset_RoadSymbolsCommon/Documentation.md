@@ -1,1 +1,0 @@
-Properties for road symbols.

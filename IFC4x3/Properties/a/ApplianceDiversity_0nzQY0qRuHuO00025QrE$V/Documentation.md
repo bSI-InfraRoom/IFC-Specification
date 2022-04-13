@@ -1,1 +1,0 @@
-Diversity of appliance load.

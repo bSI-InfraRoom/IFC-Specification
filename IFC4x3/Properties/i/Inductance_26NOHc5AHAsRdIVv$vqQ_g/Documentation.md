@@ -1,1 +1,0 @@
-Measure of the Inductance.

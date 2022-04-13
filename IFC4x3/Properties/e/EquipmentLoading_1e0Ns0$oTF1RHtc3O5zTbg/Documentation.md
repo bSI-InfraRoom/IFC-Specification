@@ -1,1 +1,0 @@
-Loading from equipment

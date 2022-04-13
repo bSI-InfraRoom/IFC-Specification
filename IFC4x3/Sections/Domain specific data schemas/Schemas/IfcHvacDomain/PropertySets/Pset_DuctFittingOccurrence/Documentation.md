@@ -1,1 +1,0 @@
-Duct fitting occurrence attributes.

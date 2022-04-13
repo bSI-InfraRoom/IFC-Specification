@@ -1,1 +1,0 @@
-Properties specific to corner fixing plates.

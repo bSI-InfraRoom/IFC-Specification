@@ -1,1 +1,0 @@
-Uniformly Distributed Load

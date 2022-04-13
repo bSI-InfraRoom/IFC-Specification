@@ -1,1 +1,0 @@
-Chiller evaporating temperature.

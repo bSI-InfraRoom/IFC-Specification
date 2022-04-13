@@ -1,1 +1,0 @@
-Hydronic coil type attributes.
