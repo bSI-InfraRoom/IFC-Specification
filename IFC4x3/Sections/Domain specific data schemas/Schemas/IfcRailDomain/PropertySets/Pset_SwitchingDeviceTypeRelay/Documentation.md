@@ -1,0 +1,1 @@
+Properties in this property set are applicable for IfcSwitchingDevice with PredefinedType RELAY.

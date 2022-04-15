@@ -1,0 +1,1 @@
+Total efficiency of object.

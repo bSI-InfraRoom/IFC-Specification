@@ -1,0 +1,1 @@
+Properties that are applicable to IfcUnitaryControlElement with the predefined type set to BASESTATIONCONTROLLER.

@@ -1,0 +1,1 @@
+Properties of ticket vending machine. The property set can be used by IfcElectricAppliance with PredefinedType VENDINGMACHINE.

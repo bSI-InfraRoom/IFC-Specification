@@ -1,0 +1,1 @@
+Properties common to the definition of all occurrences of IfcMooringDevice and types of IfcMooringDeviceType.

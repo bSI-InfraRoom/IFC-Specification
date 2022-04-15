@@ -1,0 +1,1 @@
+Quantity set for Course base.

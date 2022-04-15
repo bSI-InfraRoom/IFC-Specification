@@ -1,0 +1,1 @@
+Properties common to a intelligent peripheral. This property set is applied to a type or occurrence of IfcCommunicationsAppliance with predefined type of INTELLIGENT_PERIPHERAL.

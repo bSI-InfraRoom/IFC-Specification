@@ -1,0 +1,1 @@
+Properties common to the definition of occurrences of IfcMarineFacility with the predefined type set to SHIPLOCK, where the facility represents a complex of multiple shiplocks.

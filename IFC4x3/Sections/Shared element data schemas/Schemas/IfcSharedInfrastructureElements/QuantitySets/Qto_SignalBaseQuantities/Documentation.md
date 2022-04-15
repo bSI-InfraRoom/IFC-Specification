@@ -1,0 +1,1 @@
+Base quantities for Signals.

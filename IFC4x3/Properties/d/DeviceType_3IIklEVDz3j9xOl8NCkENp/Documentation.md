@@ -1,0 +1,1 @@
+Mooring device type

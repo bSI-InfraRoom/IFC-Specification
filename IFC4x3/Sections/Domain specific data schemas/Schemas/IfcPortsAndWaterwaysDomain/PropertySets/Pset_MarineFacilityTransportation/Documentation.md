@@ -1,0 +1,1 @@
+Properties common to the definition of all occurrences of IfcMarineFacility which are catagorised as transportation facilities such as Ports, marinas etc.

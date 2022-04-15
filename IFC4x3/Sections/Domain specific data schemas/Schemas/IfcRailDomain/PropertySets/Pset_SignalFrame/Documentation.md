@@ -1,0 +1,1 @@
+Properties that define signal frame parameters for occurrences and types of IfcSignal applied in railways.

@@ -1,0 +1,1 @@
+Colour of this object.

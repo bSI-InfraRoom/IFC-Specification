@@ -1,0 +1,1 @@
+Properties describing the characteristics of any geotechnical model. A Status of "New" should not be associated to a IfcGeotechnicalAssembly or IfcGeotechnicalStratum, as other entities are used for earthworks and courses.

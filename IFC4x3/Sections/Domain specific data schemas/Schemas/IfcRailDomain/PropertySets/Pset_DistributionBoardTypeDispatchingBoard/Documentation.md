@@ -1,0 +1,1 @@
+Properties for IfcDistributionBoard with PredefinedType DISPATCHINGBOARD.

@@ -1,0 +1,1 @@
+Properties common to all occurrences and types of IfcImpactProtectionDevice with PredefinedType set to BUMPER.

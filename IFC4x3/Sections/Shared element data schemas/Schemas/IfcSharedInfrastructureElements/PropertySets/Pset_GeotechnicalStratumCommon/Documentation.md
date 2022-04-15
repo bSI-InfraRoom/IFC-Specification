@@ -1,0 +1,1 @@
+Properties describing the characteristics of any solid, water or void stratum. A status of "New" should not be associated to a IfcGeotechnicalAssembly  or IfcSolidStratum, as other entities are used for earthworks and courses.
