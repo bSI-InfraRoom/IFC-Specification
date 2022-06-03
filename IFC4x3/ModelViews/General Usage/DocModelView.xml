@@ -189,82 +189,6 @@ The **IfcActionRequest** may have assignments of its own using the [IfcRelAssign
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="8767157b-e1b7-469b-baeb-1ada744fc073" Type="IfcActuator" />
 		</DocConceptRoot>
-		<DocConceptRoot UniqueId="1Pxzk8yZ9F3Pr62EWQpZun">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcAirTerminalBox" />
-			<Concepts>
-				<DocTemplateUsage Name="Object Typing" UniqueId="0TBp0NoOD53espxF88riQX">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Typing_0rek4E8Dz0zAilsiyAPqJq" />
-					<Items>
-						<DocTemplateItem UniqueId="3bff3bf2-2413-495e-8473-904961be492d" RuleParameters="RelatingType=IfcAirTerminalBoxType;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage UniqueId="2hKjUj6srBquVqp5aaqI4X">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="15d5d2fe-667b-4db9-8b4f-247f7ac97193" RuleParameters="PsetName=Pset_AirTerminalBoxTypeCommon;">
-							<Concepts>
-								<DocTemplateUsage Name="Properties" UniqueId="e28a0424-99eb-4206-ad7f-30314aaef369">
-									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
-									<Items>
-										<DocTemplateItem UniqueId="ee664fdc-4cd3-43db-90cf-7b2ab190840f" RuleParameters="PropertyName=Reference;Value=IfcIdentifier;" />
-										<DocTemplateItem UniqueId="268bd7be-5f52-4c91-b5e3-e6a974f1e572" RuleParameters="PropertyName=NominalAirFlowRate;Value=IfcVolumetricFlowRateMeasure;" />
-										<DocTemplateItem UniqueId="69f692f4-b9d0-4478-a210-c1b23a668ef3" RuleParameters="PropertyName=HasSoundAttenuator;Value=IfcBoolean;" />
-										<DocTemplateItem UniqueId="721dac5b-931c-4a19-a541-7dc44be04142" RuleParameters="PropertyName=HasReturnAir;Value=IfcBoolean;" />
-										<DocTemplateItem UniqueId="26c93cd0-8e43-4396-979d-4db665b3c973" RuleParameters="PropertyName=HasFan;Value=IfcBoolean;" />
-										<DocTemplateItem UniqueId="f5f3c3e5-e967-415d-a829-9e77c676fa29" RuleParameters="PropertyName=NominalInletAirPressure;Value=IfcPressureMeasure;" />
-										<DocTemplateItem UniqueId="1329dc58-c6bb-4c36-b194-c4abc9de711d" RuleParameters="PropertyName=NominalDamperDiameter;Value=IfcPositiveLengthMeasure;" />
-										<DocTemplateItem UniqueId="ff7d253f-0ab7-4fd6-99f3-27e2e5cd2c37" RuleParameters="PropertyName=HousingThickness;Value=IfcLengthMeasure;" />
-									</Items>
-								</DocTemplateUsage>
-								<DocTemplateUsage Name="Properties" UniqueId="7def8c42-4bc5-4066-922b-aa525d161642">
-									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
-									<Items>
-										<DocTemplateItem UniqueId="74cd685e-efa9-408d-a36c-bb9738152abd" RuleParameters="PropertyName=Status;Value=IfcLabel;" />
-										<DocTemplateItem UniqueId="0f9c9f7f-8681-4220-a2a2-dfe46a85ad8f" RuleParameters="PropertyName=ArrangementType;Value=IfcLabel;" />
-										<DocTemplateItem UniqueId="d14ca116-15d0-4263-9810-a92cfe63b648" RuleParameters="PropertyName=ReheatType;Value=IfcLabel;" />
-									</Items>
-								</DocTemplateUsage>
-								<DocTemplateUsage Name="Properties" UniqueId="fb36be03-0691-41fd-b400-99471bf19972">
-									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" />
-									<Items>
-										<DocTemplateItem UniqueId="df4f0d0b-adad-4c4b-ae05-ddf48caad11c" RuleParameters="PropertyName=AirflowRateRange;SetValue=IfcVolumetricFlowRateMeasure;" />
-										<DocTemplateItem UniqueId="072540f0-d54c-4dad-a43e-0927e7844df1" RuleParameters="PropertyName=AirPressureRange;SetValue=IfcPressureMeasure;" />
-										<DocTemplateItem UniqueId="6a0f0eef-7ee8-4153-b72d-2111fad7cd64" RuleParameters="PropertyName=OperationTemperatureRange;SetValue=IfcThermodynamicTemperatureMeasure;" />
-										<DocTemplateItem UniqueId="7bec6bb4-995b-4a02-ad4e-33ebdfbc6955" RuleParameters="PropertyName=ReturnAirFractionRange;SetValue=IfcPositiveRatioMeasure;" />
-									</Items>
-								</DocTemplateUsage>
-							</Concepts>
-						</DocTemplateItem>
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage UniqueId="2q8xRrdBH7Xeid0qRrzsa5">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
-					<Items>
-						<DocTemplateItem UniqueId="78d488e5-a321-4d60-bc95-ec86f9089d70" RuleInstanceID="IfcElementQuantity" RuleParameters="QsetName=Qto_AirTerminalBoxTypeBaseQuantities;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Material" UniqueId="0NRMsKLmz52Bty688VpRVe">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Constituent_Set_3PRtzzvq9Dk9jT6ADgRVY4" />
-					<Items>
-						<DocTemplateItem UniqueId="a38ab416-59b1-4736-9a91-51feb598e095" RuleParameters="Name=Casing;">
-							<Documentation>Material from which the casing is constructed.</Documentation>
-						</DocTemplateItem>
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Port" UniqueId="1I6dosBojB5xl0xpMM09lZ">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Port_Nesting_2w9EtqE92s8JFNQ8EuKWA" />
-					<Items>
-						<DocTemplateItem UniqueId="929bacad-80ba-465a-9086-b91418ba5d0c" RuleParameters="PortName=Inlet;SystemType=AIRCONDITIONING;Flow=SINK;">
-							<Documentation>Incoming air.</Documentation>
-						</DocTemplateItem>
-						<DocTemplateItem UniqueId="381c4d37-02b3-4960-ba6e-acaf7aa3d72a" RuleParameters="PortName=Outlet;SystemType=AIRCONDITIONING;Flow=SOURCE;">
-							<Documentation>Outgoing regulated air.</Documentation>
-						</DocTemplateItem>
-					</Items>
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e2e04114-23d9-473e-b293-f826c2e9426f" Type="IfcAirTerminalBox" />
-		</DocConceptRoot>
 		<DocConceptRoot UniqueId="3o93NQJ3zEpBDHEmGrApxV">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcAirTerminal" />
 			<Concepts>
@@ -370,6 +294,82 @@ The **IfcActionRequest** may have assignments of its own using the [IfcRelAssign
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="6c2cdceb-d003-4934-8389-d4ccf68ed1e3" Type="IfcAirTerminal" />
+		</DocConceptRoot>
+		<DocConceptRoot UniqueId="1Pxzk8yZ9F3Pr62EWQpZun">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcAirTerminalBox" />
+			<Concepts>
+				<DocTemplateUsage Name="Object Typing" UniqueId="0TBp0NoOD53espxF88riQX">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Typing_0rek4E8Dz0zAilsiyAPqJq" />
+					<Items>
+						<DocTemplateItem UniqueId="3bff3bf2-2413-495e-8473-904961be492d" RuleParameters="RelatingType=IfcAirTerminalBoxType;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="2hKjUj6srBquVqp5aaqI4X">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="15d5d2fe-667b-4db9-8b4f-247f7ac97193" RuleParameters="PsetName=Pset_AirTerminalBoxTypeCommon;">
+							<Concepts>
+								<DocTemplateUsage Name="Properties" UniqueId="e28a0424-99eb-4206-ad7f-30314aaef369">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+									<Items>
+										<DocTemplateItem UniqueId="ee664fdc-4cd3-43db-90cf-7b2ab190840f" RuleParameters="PropertyName=Reference;Value=IfcIdentifier;" />
+										<DocTemplateItem UniqueId="268bd7be-5f52-4c91-b5e3-e6a974f1e572" RuleParameters="PropertyName=NominalAirFlowRate;Value=IfcVolumetricFlowRateMeasure;" />
+										<DocTemplateItem UniqueId="69f692f4-b9d0-4478-a210-c1b23a668ef3" RuleParameters="PropertyName=HasSoundAttenuator;Value=IfcBoolean;" />
+										<DocTemplateItem UniqueId="721dac5b-931c-4a19-a541-7dc44be04142" RuleParameters="PropertyName=HasReturnAir;Value=IfcBoolean;" />
+										<DocTemplateItem UniqueId="26c93cd0-8e43-4396-979d-4db665b3c973" RuleParameters="PropertyName=HasFan;Value=IfcBoolean;" />
+										<DocTemplateItem UniqueId="f5f3c3e5-e967-415d-a829-9e77c676fa29" RuleParameters="PropertyName=NominalInletAirPressure;Value=IfcPressureMeasure;" />
+										<DocTemplateItem UniqueId="1329dc58-c6bb-4c36-b194-c4abc9de711d" RuleParameters="PropertyName=NominalDamperDiameter;Value=IfcPositiveLengthMeasure;" />
+										<DocTemplateItem UniqueId="ff7d253f-0ab7-4fd6-99f3-27e2e5cd2c37" RuleParameters="PropertyName=HousingThickness;Value=IfcLengthMeasure;" />
+									</Items>
+								</DocTemplateUsage>
+								<DocTemplateUsage Name="Properties" UniqueId="7def8c42-4bc5-4066-922b-aa525d161642">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Enumerated_Value_31IA2Pmr53g99cNptWj5gL" />
+									<Items>
+										<DocTemplateItem UniqueId="74cd685e-efa9-408d-a36c-bb9738152abd" RuleParameters="PropertyName=Status;Value=IfcLabel;" />
+										<DocTemplateItem UniqueId="0f9c9f7f-8681-4220-a2a2-dfe46a85ad8f" RuleParameters="PropertyName=ArrangementType;Value=IfcLabel;" />
+										<DocTemplateItem UniqueId="d14ca116-15d0-4263-9810-a92cfe63b648" RuleParameters="PropertyName=ReheatType;Value=IfcLabel;" />
+									</Items>
+								</DocTemplateUsage>
+								<DocTemplateUsage Name="Properties" UniqueId="fb36be03-0691-41fd-b400-99471bf19972">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Bounded_Value_0zPwBITXr4sQ2Ujkn_bOo" />
+									<Items>
+										<DocTemplateItem UniqueId="df4f0d0b-adad-4c4b-ae05-ddf48caad11c" RuleParameters="PropertyName=AirflowRateRange;SetValue=IfcVolumetricFlowRateMeasure;" />
+										<DocTemplateItem UniqueId="072540f0-d54c-4dad-a43e-0927e7844df1" RuleParameters="PropertyName=AirPressureRange;SetValue=IfcPressureMeasure;" />
+										<DocTemplateItem UniqueId="6a0f0eef-7ee8-4153-b72d-2111fad7cd64" RuleParameters="PropertyName=OperationTemperatureRange;SetValue=IfcThermodynamicTemperatureMeasure;" />
+										<DocTemplateItem UniqueId="7bec6bb4-995b-4a02-ad4e-33ebdfbc6955" RuleParameters="PropertyName=ReturnAirFractionRange;SetValue=IfcPositiveRatioMeasure;" />
+									</Items>
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="2q8xRrdBH7Xeid0qRrzsa5">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
+					<Items>
+						<DocTemplateItem UniqueId="78d488e5-a321-4d60-bc95-ec86f9089d70" RuleInstanceID="IfcElementQuantity" RuleParameters="QsetName=Qto_AirTerminalBoxTypeBaseQuantities;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Material" UniqueId="0NRMsKLmz52Bty688VpRVe">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Constituent_Set_3PRtzzvq9Dk9jT6ADgRVY4" />
+					<Items>
+						<DocTemplateItem UniqueId="a38ab416-59b1-4736-9a91-51feb598e095" RuleParameters="Name=Casing;">
+							<Documentation>Material from which the casing is constructed.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Port" UniqueId="1I6dosBojB5xl0xpMM09lZ">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Port_Nesting_2w9EtqE92s8JFNQ8EuKWA" />
+					<Items>
+						<DocTemplateItem UniqueId="929bacad-80ba-465a-9086-b91418ba5d0c" RuleParameters="PortName=Inlet;SystemType=AIRCONDITIONING;Flow=SINK;">
+							<Documentation>Incoming air.</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="381c4d37-02b3-4960-ba6e-acaf7aa3d72a" RuleParameters="PortName=Outlet;SystemType=AIRCONDITIONING;Flow=SOURCE;">
+							<Documentation>Outgoing regulated air.</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e2e04114-23d9-473e-b293-f826c2e9426f" Type="IfcAirTerminalBox" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="15H$pjiyn1kAvbXzBNZzqu">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcAirToAirHeatRecovery" />
@@ -9084,16 +9084,6 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="10dc7aff-b009-4e0a-819c-f29c9ea7a86d" Type="IfcMotorConnection" />
 		</DocConceptRoot>
-		<DocConceptRoot UniqueId="f26454ea-55a9-4d8f-a2a0-ab8a5561112d">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcObjectDefinition" />
-			<Concepts>
-				<DocTemplateUsage Name="Classification Association" UniqueId="dcfad64e-cedb-4766-b609-cfe82ae3ae44">
-					<Documentation>Any object occurrence or object type can have a reference to a specific classification reference, i.e. to a particular facet within a classification system.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Classification_Association_1A8aO9PNXCTQFYl_eRbxo" />
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="95f14c0b-d81c-49cb-be71-edd4e4eb395c" Type="IfcObjectDefinition" />
-		</DocConceptRoot>
 		<DocConceptRoot UniqueId="e60ba889-b830-457c-8551-1f5bb04e7377">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcObject" />
 			<Concepts>
@@ -9118,6 +9108,16 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="c7ad266e-1918-4f78-b6a7-7c889a92e44f" Type="IfcObject" />
+		</DocConceptRoot>
+		<DocConceptRoot UniqueId="f26454ea-55a9-4d8f-a2a0-ab8a5561112d">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcObjectDefinition" />
+			<Concepts>
+				<DocTemplateUsage Name="Classification Association" UniqueId="dcfad64e-cedb-4766-b609-cfe82ae3ae44">
+					<Documentation>Any object occurrence or object type can have a reference to a specific classification reference, i.e. to a particular facet within a classification system.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Classification_Association_1A8aO9PNXCTQFYl_eRbxo" />
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="95f14c0b-d81c-49cb-be71-edd4e4eb395c" Type="IfcObjectDefinition" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="06zJhGZ3b2Z9WyU$Kglfdd">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcOccupant" />
@@ -14197,37 +14197,6 @@ A top-level task is declared within the _IfcProject_ using the _IfcRelDeclares_ 
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="afcd0ee6-4a97-414e-b59c-a945f6775860" Type="IfcTaskType" />
 		</DocConceptRoot>
-		<DocConceptRoot UniqueId="1HHBUDWXDA$9J6RdO8r3dF">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcTendonAnchor" />
-			<Concepts>
-				<DocTemplateUsage Name="Object Typing" UniqueId="0tWD1X6NjFdRZQaFfuhxxr">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Typing_0rek4E8Dz0zAilsiyAPqJq" />
-					<Items>
-						<DocTemplateItem UniqueId="d1ce5fe9-4d55-4122-a53b-a31a6120ffd6" RuleParameters="RelatingType=IfcTendonAnchorType;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Property Sets" UniqueId="1oO5voX7bEbBdU5tANHjvM">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Quantity Sets" UniqueId="0pIpRL3GX0fgz7Hd6ZLPTr">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
-					<Items>
-						<DocTemplateItem UniqueId="67fb1e5f-a2be-4ec9-b036-e0f5dd9ec248" RuleParameters="QsetName=Qto_ReinforcingElementBaseQuantities;TemplateType=QTO_TYPEDRIVENOVERRIDE;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Placement" UniqueId="ce8cfd65-7c6e-46f3-9dd7-2bb242183c9c">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Body Geometry" UniqueId="60ed48e7-ae53-4af1-bae1-77bd85b76a8b">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Geometry_34HhqMBUDBbxDFH4Qi2wt2" />
-					<Items>
-						<DocTemplateItem UniqueId="a08cdbad-b7fd-49d0-b3c7-9f0a9eb04737" RuleParameters="RepresentationType=SweptSolid;Geometry=IfcSweptDiskSolid;" />
-						<DocTemplateItem UniqueId="97f4bdab-a0c8-4c7e-9a91-87405bae11fe" RuleParameters="RepresentationType=MappedRepresentation;Geometry=IfcMappedItem;" />
-					</Items>
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="40a4c90d-4d9b-406a-89cd-4db23740d7fd" Type="IfcTendonAnchor" />
-		</DocConceptRoot>
 		<DocConceptRoot UniqueId="2v_xF90910JP7FnwYYspMt">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcTendon" />
 			<Concepts>
@@ -14265,6 +14234,37 @@ A top-level task is declared within the _IfcProject_ using the _IfcRelDeclares_ 
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="7eecb932-2b46-48ca-a42f-48c3aa508847" Type="IfcTendon" />
+		</DocConceptRoot>
+		<DocConceptRoot UniqueId="1HHBUDWXDA$9J6RdO8r3dF">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcTendonAnchor" />
+			<Concepts>
+				<DocTemplateUsage Name="Object Typing" UniqueId="0tWD1X6NjFdRZQaFfuhxxr">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Typing_0rek4E8Dz0zAilsiyAPqJq" />
+					<Items>
+						<DocTemplateItem UniqueId="d1ce5fe9-4d55-4122-a53b-a31a6120ffd6" RuleParameters="RelatingType=IfcTendonAnchorType;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Property Sets" UniqueId="1oO5voX7bEbBdU5tANHjvM">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Quantity Sets" UniqueId="0pIpRL3GX0fgz7Hd6ZLPTr">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
+					<Items>
+						<DocTemplateItem UniqueId="67fb1e5f-a2be-4ec9-b036-e0f5dd9ec248" RuleParameters="QsetName=Qto_ReinforcingElementBaseQuantities;TemplateType=QTO_TYPEDRIVENOVERRIDE;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Placement" UniqueId="ce8cfd65-7c6e-46f3-9dd7-2bb242183c9c">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Local_Placement_3Bw5jVUH9AGukt7cEGB9j" />
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Body Geometry" UniqueId="60ed48e7-ae53-4af1-bae1-77bd85b76a8b">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Geometry_34HhqMBUDBbxDFH4Qi2wt2" />
+					<Items>
+						<DocTemplateItem UniqueId="a08cdbad-b7fd-49d0-b3c7-9f0a9eb04737" RuleParameters="RepresentationType=SweptSolid;Geometry=IfcSweptDiskSolid;" />
+						<DocTemplateItem UniqueId="97f4bdab-a0c8-4c7e-9a91-87405bae11fe" RuleParameters="RepresentationType=MappedRepresentation;Geometry=IfcMappedItem;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="40a4c90d-4d9b-406a-89cd-4db23740d7fd" Type="IfcTendonAnchor" />
 		</DocConceptRoot>
 		<DocConceptRoot Name="IfcTendonType" UniqueId="fec63430-767c-4817-b3e3-132214bfb8ac">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcTendonType" />
