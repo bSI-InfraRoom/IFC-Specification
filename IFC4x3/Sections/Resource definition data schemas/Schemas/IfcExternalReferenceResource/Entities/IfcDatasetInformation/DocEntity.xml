@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcDatasetInformation" UniqueId="217bced2-fd28-47a8-b396-cdd5a35d2788" BaseDefinition="IfcDocumentInformation" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="SchemaReference" UniqueId="53e19df0-e203-4029-bdcd-56df644876da" DefinedType="IfcURIReference" AttributeFlags="1">
+			<Documentation>An optional attribute for referencing a schema that defines the possible content and structure of the dataset (e.g. xsd).</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="DatasetInfoForObjects" UniqueId="b516123d-f0a9-4d8d-b03f-d43496183c16" DefinedType="IfcRelAssociatesDataset" AggregationType="3" Inverse="RelatingDataset" />
+		<DocAttribute Name="HasDatasetReferences" UniqueId="1f81c734-937e-4527-a11f-96acc2d06105" DefinedType="IfcDatasetReference" AggregationType="3" Inverse="ReferencedDataset">
+			<Documentation>The dataset references to which the document applies</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+
