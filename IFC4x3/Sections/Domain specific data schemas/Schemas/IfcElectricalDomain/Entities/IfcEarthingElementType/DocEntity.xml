@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcEarthingElementType" UniqueId="17dc2a6c-8e78-43ad-88d3-ac423768d8cf" BaseDefinition="IfcFlowTerminalType" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="b915dbe1-d893-418a-a3fb-3575a00a4e39" DefinedType="IfcEarthingElementTypeEnum">
+			<Documentation>Identifies the predefined types of earting element from which the type required may be set.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="50650d61-371b-4e09-9af1-f9d9d2880c25">
+			<Expression>(PredefinedType &lt;&gt; IfcEarthingElementTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcEarthingElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+
