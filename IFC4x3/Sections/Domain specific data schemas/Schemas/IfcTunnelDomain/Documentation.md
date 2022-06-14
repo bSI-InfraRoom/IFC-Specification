@@ -5,6 +5,6 @@ The scope for _IfcTunnelDomain_ is based on the industry’s definition of tunne
 
 Specific tunnel elements that are not already covered by other schemas are defined here:
 
-* spatial structrue types for breaking down tunnel projects.
+* spatial structure types for breaking down tunnel projects.
 
 > HISTORY&nbsp; New schema in IFC4.4
