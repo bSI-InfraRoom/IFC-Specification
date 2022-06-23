@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTunnel" UniqueId="56b83b24-edac-4879-b81d-3144d075358e" BaseDefinition="IfcFacility" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="2da2e39c-0999-4bfc-b5a3-e7006c64b7b8" DefinedType="IfcTunnelTypeEnum" AttributeFlags="1" />
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasObjectType" UniqueId="fa1881cd-face-4ae6-9d4b-f5dea3164c91">
+			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>NOT EXISTS(PredefinedType) OR (PredefinedType &lt;&gt; IfcTunnelTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+
