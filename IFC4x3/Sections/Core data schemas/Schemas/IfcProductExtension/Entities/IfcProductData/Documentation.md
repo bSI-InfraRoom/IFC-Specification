@@ -1,1 +1,0 @@
-A kind of product with the purpose of providing additional information, such as observations,  to other products. Product data may carry its own representation and shall be related to the main product using _IfcRelAssignsToProduct_.
