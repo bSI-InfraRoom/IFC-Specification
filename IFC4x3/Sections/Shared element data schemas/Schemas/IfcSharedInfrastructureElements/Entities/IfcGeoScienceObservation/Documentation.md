@@ -1,0 +1,1 @@
+Detailed collected information, including measured parameters, descriptions etc related to geoscientific observations. that can be assigned to physical or spatial elements using _IfcRelAssignsToProduct_.
