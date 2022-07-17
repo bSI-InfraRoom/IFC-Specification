@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcMarinePart" UniqueId="fbd088e5-d90c-428b-a5be-7785fd66a756" DiagramNumber="1" BaseDefinition="IfcFacilityPart" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="0" Y="0" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="a2ed32ca-8522-4758-ae1e-bc597d2c8dfa" DefinedType="IfcMarinePartTypeEnum">
+			<Documentation>A list of types to further identify the object. Some property sets may be specifically applicable to one of these types.
+
+&amp;gt; NOTE If the object has an associated IfcTypeObject with a PredefinedType, then this attribute shall not be used.</Documentation>
+			<Definition>
+				<DocEnumeration xsi:nil="true" href="IfcMarinePartTypeEnum" />
+			</Definition>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasObjectType" UniqueId="c7b2555a-f836-43b6-a6ec-d3554375bca1">
+			<Documentation>The attribute _ObjectType_ shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt;IfcMarinePartTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+
