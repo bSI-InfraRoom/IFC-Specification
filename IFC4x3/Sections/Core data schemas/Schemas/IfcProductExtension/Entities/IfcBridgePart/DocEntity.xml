@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBridgePart" UniqueId="e59d576c-cc2d-4575-a21e-34c8fd68734d" DiagramNumber="1" BaseDefinition="IfcFacilityPart" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="0" Y="0" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="8c058394-0357-4e29-89f8-c2da7371836b" DefinedType="IfcBridgePartTypeEnum" AttributeFlags="1">
+			<Documentation>A list of types to further identify the object. Some property sets may be specifically applicable to one of these types.
+
+&amp;gt; NOTE If the object has an associated _IfcTypeObject_ with a _PredefinedType_, then this attribute shall not be used.</Documentation>
+			<Definition>
+				<DocEnumeration xsi:nil="true" href="IfcBridgePartTypeEnum" />
+			</Definition>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="2db6e438-54cf-4516-9fb0-6ebe4a9878f2">
+			<Documentation>Either _PredefinedType_ is unset or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED or _PredefinedType_.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+
+(PredefinedType &lt;&gt; IfcBridgePartTypeEnum.USERDEFINED) OR
+
+((PredefinedType = IfcBridgePartTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+
