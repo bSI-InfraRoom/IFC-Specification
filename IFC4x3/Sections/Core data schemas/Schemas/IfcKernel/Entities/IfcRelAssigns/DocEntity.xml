@@ -17,11 +17,6 @@
 		<DocAttribute Name="RelatedObjects" UniqueId="15095ee6-ca54-435a-ada1-6296bedeafc5" DefinedType="IfcObjectDefinition" AggregationType="3" AggregationLower="1" AggregationUpper="0">
 			<Documentation>Related objects, which are assigned to a single object. The type of the single (or relating) object is defined in the subtypes of IfcRelAssigns.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="RelatedObjectsType" UniqueId="7dd9a03b-e83d-4bde-a7cc-99502633620b" DefinedType="IfcObjectTypeEnum" AttributeFlags="1">
-			<Documentation>Particular type of the assignment relationship. It can constrain the applicable object types, used within the role of _RelatedObjects_.
-{ .change-ifc2x4}
-&gt; IFC4 CHANGE&amp;nbsp; The attribute is deprecated and shall no longer be used. A NIL value should always be assigned.</Documentation>
-		</DocAttribute>
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="WR1" UniqueId="ad07592a-1591-41c1-80b8-7b66449702fa">
