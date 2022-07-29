@@ -5,8 +5,11 @@
 		<DocLocalization Locale="en" Name="Swept Disk Solid Polygonal" />
 	</Localization>
 	<Attributes>
-		<DocAttribute Name="FilletRadius" UniqueId="1fa1bae9-ec32-470f-a6ca-750f269a3470" DefinedType="IfcPositiveLengthMeasure" AttributeFlags="1">
+		<DocAttribute Name="FilletRadius" UniqueId="1fa1bae9-ec32-470f-a6ca-750f269a3470" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>The fillet that is equally applied to all transitions between the segments of the _IfcPolyline_, providing the geometric representation for _the Directrix_. If omited, no fillet is applied to the segments.</Documentation>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcNonNegativeLengthMeasure_0INRELfHT6d8CO87XOkxl" />
+			</Definition>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
