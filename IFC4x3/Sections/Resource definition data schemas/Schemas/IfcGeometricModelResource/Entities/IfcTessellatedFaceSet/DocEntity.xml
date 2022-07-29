@@ -14,6 +14,12 @@
 		<DocAttribute Name="Coordinates" UniqueId="28b00035-2a37-4bda-aa0e-7845352fa060" DefinedType="IfcCartesianPointList3D" XsdFormat="attribute">
 			<Documentation>An ordered list of Cartesian points used by the coordinate index defined at the subtypes of _IfcTessellatedFaceSet_.</Documentation>
 		</DocAttribute>
+		<DocAttribute Name="Closed" UniqueId="0ed95f80-d2a4-4366-9e14-879da9de6926" DefinedType="IfcBoolean">
+			<Documentation>Indication whether the _IfcPolygonalFaceSet_ is a closed shell or not. If omited no such information can be provided.</Documentation>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcBoolean_1OHYLVo8z05BwIgKrwFJmv" />
+			</Definition>
+		</DocAttribute>
 		<DocAttribute Name="Dim" UniqueId="43876eff-5b1f-4247-b220-0e835e3f5f0e" DefinedType="IfcDimensionCount">
 			<Documentation>The space dimensionality of this geometric representation item, it is always 3.</Documentation>
 			<Derived>3</Derived>
