@@ -11,6 +11,11 @@
 { .change-ifc2x4}
 &gt; IFC4 CHANGE&amp;nbsp; The cardinality has been changed from 1..1 to 0..? in order to allow the exchange of a group concept without having already group members assigned. It now also allows the use of many instances of _IfcRelAssignsToGroup_ to assign the group members. The change has been done with upward compatibility for file based exchange.</Documentation>
 		</DocAttribute>
+		<DocAttribute Name="ReferencedInStructures" UniqueId="bc8e10c5-6cff-416e-95a5-67c03a09f46f" DefinedType="IfcRelReferencedInSpatialStructure" AggregationType="3" AggregationLower="0" AggregationUpper="0" Inverse="RelatedElements">
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcRelReferencedInSpatialStructure_2fPWdudzj32uMCGNPJgGu4" />
+			</Definition>
+		</DocAttribute>
 	</Attributes>
 </DocEntity>
 
