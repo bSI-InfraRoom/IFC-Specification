@@ -16,9 +16,6 @@ values.
 * The second dimension has exactly three values, [1] the x-direction, [2] the y-direction and [3] the z-directions</Documentation>
 			<AggregationAttribute xsi:type="DocAttribute" UniqueId="35164181-c3c4-4f4b-893b-b86bd208a612" AggregationType="1" AggregationLower="3" AggregationUpper="3" />
 		</DocAttribute>
-		<DocAttribute Name="Closed" UniqueId="738880b2-be27-415d-acee-5b666ad13681" DefinedType="IfcBoolean" AttributeFlags="1">
-			<Documentation>Indication whether the _IfcTriangulatedFaceSet_ is a closed shell or not. If omited no such information can be provided.</Documentation>
-		</DocAttribute>
 		<DocAttribute Name="CoordIndex" UniqueId="9a0699f0-dcdd-4fa1-8373-7b1a46293902" DefinedType="IfcPositiveInteger" AggregationType="1" AggregationLower="1" AggregationUpper="0" XsdFormat="content" XsdTagless="true">
 			<Documentation>Two-dimensional list for the indexed-based triangles, where 
 * The first dimension represents the triangles (from 1 to N)
