@@ -4,9 +4,6 @@
 		<DocLocalization Locale="en" Name="Polygonal Face Set" />
 	</Localization>
 	<Attributes>
-		<DocAttribute Name="Closed" UniqueId="6f54d305-9e4f-48f6-802b-83d293cd932e" DefinedType="IfcBoolean" AttributeFlags="1">
-			<Documentation>Indication whether the _IfcPolygonalFaceSet_ is a closed shell or not. If omited no such information can be provided.</Documentation>
-		</DocAttribute>
 		<DocAttribute Name="Faces" UniqueId="ce73f034-79d3-4e8d-a2df-68e051c2606b" DefinedType="IfcIndexedPolygonalFace" AggregationType="1" AggregationLower="1" AggregationUpper="?">
 			<Documentation>The list of polygonal faces, with or without inner loops, that bound the faceted face set.</Documentation>
 		</DocAttribute>
