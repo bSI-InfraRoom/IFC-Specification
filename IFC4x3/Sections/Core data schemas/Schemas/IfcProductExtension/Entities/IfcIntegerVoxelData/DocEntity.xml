@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIntegerVoxelValues" UniqueId="f3d953cb-24b7-483d-85e1-d44c43d4d22b" BaseDefinition="IfcVoxelData" EntityFlags="32">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIntegerVoxelData" UniqueId="f3d953cb-24b7-483d-85e1-d44c43d4d22b" BaseDefinition="IfcVoxelData" EntityFlags="32">
 	<Attributes>
 		<DocAttribute Name="Values" UniqueId="342aa966-eaa4-4d0c-87e5-91988a4f1c0a" DefinedType="IfcInteger" AggregationType="2" AggregationLower="1">
-			<Documentation>The values assigned to the voxels. First x, then y and lastly z.
-</Documentation>
+			<Documentation>The values assigned to the voxels. First x, then y and lastly z.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Unit" UniqueId="d23d69e2-c35a-41d5-bf3b-9533670b9eb7" DefinedType="IfcUnit" AttributeFlags="1">
 			<Documentation>An optional unit for the integer values.</Documentation>
