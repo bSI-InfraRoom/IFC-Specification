@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcTunnelPart" UniqueId="f1d4d728-94ea-40af-903b-bd43c1b8370b" BaseDefinition="IfcFacilityPart" EntityFlags="32">
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="ed6a1e26-13c2-4fd3-b481-16a455723629" DefinedType="IfcTunnelPartTypeEnum" AttributeFlags="1" />
+		<DocAttribute Name="PredefinedType" UniqueId="ed6a1e26-13c2-4fd3-b481-16a455723629" DefinedType="IfcTunnelPartTypeEnum" />
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="HasObjectType" UniqueId="84046567-f610-424b-ad8b-60caeba7ec4e">
 			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
-			<Expression>NOT EXISTS(PredefinedType) OR (PredefinedType &lt;&gt; IfcTunnelPartTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+			<Expression>(PredefinedType &lt;&gt; IfcTunnelPartTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
