@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcUndergroundExcavation" UniqueId="8037dfb5-11cd-42b1-b3ad-c794016a5985" EntityFlags="32">
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="cd76d61f-ae8e-4368-9fff-631976477036" DefinedType="IfcUndergroundExcavationTypeEnum" AttributeFlags="1">
+		<DocAttribute Name="PredefinedType" UniqueId="cd76d61f-ae8e-4368-9fff-631976477036" DefinedType="IfcUndergroundExcavationTypeEnum">
 			<Documentation>Identifies the predefined type of underground excavation elements. This type may associate additional specific property sets.</Documentation>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="CorrectPredefinedType" UniqueId="6ca70e73-e455-44ca-94a5-c03a802cf0bd">
-			<Documentation>Either the _PredefinedType_ attribute is unset, or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
-			<Expression>NOT(EXISTS(PredefinedType)) OR
-(PredefinedType &lt;&gt; IfcUndergroundExcavationTypeEnum.USERDEFINED) OR
-((PredefinedType = IfcUndergroundExcavationTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		<DocWhereRule Name="HasObjectType" UniqueId="6ca70e73-e455-44ca-94a5-c03a802cf0bd">
+			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcUndergroundExcavationTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
