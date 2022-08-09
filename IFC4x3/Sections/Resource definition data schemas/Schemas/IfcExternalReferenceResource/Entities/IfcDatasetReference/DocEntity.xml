@@ -14,7 +14,7 @@
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="WR1" UniqueId="71089927-4b48-4fca-93b9-8a06d4e1ff88">
-			<Documentation>A name should only be given, if no dataset information (including the dataset name) is attached</Documentation>
+			<Documentation>A name should only be given, if no dataset information (including the dataset name) is attached.</Documentation>
 			<Expression>EXISTS(Name) XOR EXISTS(ReferencedDataset)</Expression>
 		</DocWhereRule>
 	</WhereRules>
