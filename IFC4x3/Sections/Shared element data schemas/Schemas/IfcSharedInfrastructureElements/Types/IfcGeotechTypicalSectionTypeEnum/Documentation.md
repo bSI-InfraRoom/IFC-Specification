@@ -1,1 +1,1 @@
-This container defines the different predefined types of geotech typical sections that can specify an _IfcGeotechTypicalSection_.
+This enumeration defines the different predefined types of typical geotechnical sections that can specify an _IfcGeotechTypicalSection_.
