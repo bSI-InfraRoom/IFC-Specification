@@ -1,4 +1,4 @@
-The objectified relationship (_IfcRelAssociatesDataset_) handles the assignment of a dataset information (items of the select _IfcDatasetSelect_) to objects occurrences (subtypes of _IfcObject_) or object types (subtypes of _IfcTypeObject_).
+The objectified relationship (_IfcRelAssociatesDataset_) handles the assignment of a dataset (items of the select _IfcDatasetSelect_) to objects occurrences (subtypes of _IfcObject_) or object types (subtypes of _IfcTypeObject_).
 
 The relationship is used to assign a dataset reference or a more detailed dataset information to objects. A single dataset reference can be applied to multiple objects.
 
