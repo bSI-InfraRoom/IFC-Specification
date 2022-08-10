@@ -1,1 +1,1 @@
-Type of Vehicle.
+Type of vehicle.
