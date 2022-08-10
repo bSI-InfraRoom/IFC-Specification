@@ -1,4 +1,4 @@
-A transport element is a generalization of all transport related objects that move people, animals or goods within a Facility. The _IfcTransportElement_ defines the occurrence of a transport element, that (if given), is expressed by the _IfcTransportElementType_.
+A transport element is a generalization of all fixed transport related objects that move people, animals or goods within a Facility. The _IfcTransportElement_ defines the occurrence of a transport element, that (if given), is expressed by the _IfcTransportElementType_.
 
 > EXAMPLE Transportation elements include elevator (lift), escalator, moving walkway, etc.  
 
