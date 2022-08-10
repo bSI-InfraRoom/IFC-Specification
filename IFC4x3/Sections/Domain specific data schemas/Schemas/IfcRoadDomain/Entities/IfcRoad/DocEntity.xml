@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRoad" UniqueId="2cf12fc5-92db-4151-aa2f-d3d8644ac83a" BaseDefinition="IfcFacility" EntityFlags="32">
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="f9a373c7-467e-4c5d-acec-d59d5ab24633" DefinedType="IfcRoadTypeEnum" AttributeFlags="1" />
+		<DocAttribute Name="PredefinedType" UniqueId="f9a373c7-467e-4c5d-acec-d59d5ab24633" DefinedType="IfcRoadTypeEnum">
+			<Documentation>Type further identify the object. Some property sets may be specifically applicable to one of these types.</Documentation>
+		</DocAttribute>
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="HasObjectType" UniqueId="06b29c86-dc75-4ab0-9a3a-916d4b556fb5">
 			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
-			<Expression>NOT EXISTS(PredefinedType) OR (PredefinedType &lt;&gt; IfcRoadTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+			<Expression>(PredefinedType &lt;&gt; IfcRoadTypeEnum.USERDEFINED) OR 
+
+EXISTS(SELF\IfcObject.ObjectType)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
