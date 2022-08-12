@@ -7,4 +7,4 @@ The element type _IfcFillElementType_ defines commonly shared information for oc
 
 It is used to define a fill element specification that is common to all occurrences of that fill element type. Fill element types may be exchanged without being already assigned to occurrences.
 
-Occurrences of the _IfcFillElementType_ within building models are represented by instances of _IfcFillElement.
+Occurrences of the _IfcFillElementType_ within building models are represented by instances of _IfcFillElement_.
