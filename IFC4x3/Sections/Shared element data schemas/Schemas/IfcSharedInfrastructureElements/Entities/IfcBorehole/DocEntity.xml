@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBorehole" UniqueId="3c670ec4-0027-4bd5-a2d2-bff02387ab99" BaseDefinition="IfcGeoScienceElement" EntityFlags="32">
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="0bf60023-d937-4efa-b4de-82a645a3355f" DefinedType="IfcBoreholeTypeEnum" AttributeFlags="1" />
+		<DocAttribute Name="PredefinedType" UniqueId="0bf60023-d937-4efa-b4de-82a645a3355f" DefinedType="IfcBoreholeTypeEnum" AttributeFlags="1">
+			<Documentation>Specifies the type for which the value is selected from a predefined type enumeration. This type may associate additional specific property sets.</Documentation>
+		</DocAttribute>
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="CorrectPredefinedType" UniqueId="7fc43f81-5064-48a6-8eb2-317cb98893fa">
