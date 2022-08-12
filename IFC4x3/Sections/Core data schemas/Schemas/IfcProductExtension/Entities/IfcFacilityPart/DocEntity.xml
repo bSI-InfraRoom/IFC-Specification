@@ -1,41 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFacilityPart" Name="IfcFacilityPart" UniqueId="db58ee3e-9958-4c7d-93b5-4a745072aa19" BaseDefinition="IfcSpatialStructureElement" EntityFlags="32">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcFacilityPart" Name="IfcFacilityPart" UniqueId="db58ee3e-9958-4c7d-93b5-4a745072aa19" BaseDefinition="IfcSpatialStructureElement">
 	<Localization>
 		<DocLocalization Locale="en" />
 	</Localization>
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="c5c2687b-09e6-4d42-900d-483a8df7be80" DefinedType="IfcFacilityPartTypeSelect">
-			<Documentation></Documentation>
-		</DocAttribute>
 		<DocAttribute Name="UsageType" UniqueId="323bf26d-4ae6-486e-8361-197095fa0ac6" DefinedType="IfcFacilityUsageEnum">
 			<Documentation></Documentation>
 		</DocAttribute>
 	</Attributes>
-	<WhereRules>
-		<DocWhereRule Name="CorrectPredefinedType" UniqueId="f5b6615f-7220-4ba6-9d80-dcb7ed611985">
-			<Documentation>Either _PredefinedType_ is unset or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED or _PredefinedType_.</Documentation>
-			<Expression>((PredefinedType &lt;&gt; IfcBridgePartTypeEnum.USERDEFINED)
-OR
-(PredefinedType &lt;&gt; IfcRailwayPartTypeEnum.USERDEFINED)
-OR
-(PredefinedType &lt;&gt; IfcRoadPartTypeEnum.USERDEFINED)
-OR
-(PredefinedType &lt;&gt; IfcMarinePartTypeEnum.USERDEFINED)
-OR
-(PredefinedType &lt;&gt; IfcFacilityPartCommonTypeEnum.USERDEFINED))
-OR
-(((PredefinedType = IfcBridgePartTypeEnum.USERDEFINED)
-OR
-(PredefinedType = IfcRailwayPartTypeEnum.USERDEFINED)
-OR
-(PredefinedType = IfcRoadPartTypeEnum.USERDEFINED)
-OR
-(PredefinedType = IfcMarinePartTypeEnum.USERDEFINED)
-OR
-(PredefinedType = IfcFacilityPartCommonTypeEnum.USERDEFINED))
-AND
-EXISTS(SELF\IfcObject.ObjectType))</Expression>
-		</DocWhereRule>
-	</WhereRules>
 </DocEntity>
 
