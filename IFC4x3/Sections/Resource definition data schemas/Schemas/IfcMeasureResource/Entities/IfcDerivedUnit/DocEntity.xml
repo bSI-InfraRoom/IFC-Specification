@@ -13,15 +13,6 @@
 			<Documentation>Name of the derived unit chosen from an enumeration of derived unit types for use in IFC models.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="UserDefinedType" UniqueId="ad069c40-59ef-46b3-ba34-ad6fd730e7dc" DefinedType="IfcLabel" AttributeFlags="1" />
-		<DocAttribute Name="Name" UniqueId="298f40ab-b76b-4929-8bd6-0be3c46be491" DefinedType="IfcLabel">
-			<Documentation>Name of the unit in addition to the unit type, particularly when the derived unit elements refer to conversion or context based units.
-
-
-&gt; EXAMPLE The imperial unit name for a velocity measure is miles per hour, or MPH, with a _Name_ of &apos;MPH&apos;.</Documentation>
-			<Definition>
-				<DocDefined xsi:nil="true" href="IfcLabel" />
-			</Definition>
-		</DocAttribute>
 		<DocAttribute Name="Dimensions" UniqueId="4c2d2a13-ce40-4488-a908-26365ac47c40" DefinedType="IfcDimensionalExponents">
 			<Documentation>Dimensional exponents derived using the function IfcDerivedDimensionalExponents using (SELF) as the input value.</Documentation>
 			<Derived>IfcDeriveDimensionalExponents(Elements)</Derived>

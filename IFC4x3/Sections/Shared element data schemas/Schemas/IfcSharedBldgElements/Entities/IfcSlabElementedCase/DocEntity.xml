@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcSlabElementedCase" Name="IfcSlabElementedCase" UniqueId="8a62c8a6-68d7-46d4-8940-78578928c9f3" Status="Deprecated" BaseDefinition="IfcSlab" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Decke / Dachfläche / Bodenplatte elementiert" />
+		<DocLocalization Locale="en" Name="Slab Elemented Case" />
+		<DocLocalization Locale="fr" Name="Dalle composite" />
+	</Localization>
+	<WhereRules>
+		<DocWhereRule Name="HasDecomposition" UniqueId="bf084589-035f-4b00-9ede-6b38203d5162">
+			<Documentation>A valid instance of _IfcSlabElementedCase_ has to have parts in a decomposition hierarchy.</Documentation>
+			<Expression>HIINDEX(SELF\IfcObjectDefinition.IsDecomposedBy) &gt; 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

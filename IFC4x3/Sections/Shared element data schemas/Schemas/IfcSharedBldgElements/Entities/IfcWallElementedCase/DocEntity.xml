@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWallElementedCase" Name="IfcWallElementedCase" UniqueId="da57fe12-59b6-4059-8210-55b0a11f0d79" Status="Deprecated" BaseDefinition="IfcWall" EntityFlags="101">
+	<Localization>
+		<DocLocalization Locale="de" Name="Wand elementiert" />
+		<DocLocalization Locale="en" Name="Wall Elemented Case" />
+		<DocLocalization Locale="fr" Name="Mur composite" />
+	</Localization>
+	<WhereRules>
+		<DocWhereRule Name="HasDecomposition" UniqueId="22ea6846-8a4e-466a-8d9c-fd981045208d">
+			<Documentation>A valid instance of _IfcWallElementedCase_ has to have parts in a decomposition hierarchy.</Documentation>
+			<Expression>HIINDEX(SELF\IfcObjectDefinition.IsDecomposedBy) &gt; 0</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+
