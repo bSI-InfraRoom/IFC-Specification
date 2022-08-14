@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFillElement" UniqueId="ac535580-9989-4b4f-9e24-e1699ef0a2cf" BaseDefinition="IfcBuiltElement" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="6fbf8ece-aa38-428b-bfdc-bca7d3978be5" DefinedType="IfcFillElementTypeEnum" AttributeFlags="1">
+			<Documentation>Predefined generic type for a fill element that is specified in an enumeration. There may be a property set given specifically for the predefined types.
+
+&gt; NOTE  The _PredefinedType_ shall only be used, if no _IfcFillElementType_ is assigned, providing its own _IfcFillElementType.PredefinedType_.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="ede8b188-24c4-4563-93da-eb628145dd99">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcFillElementType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType &lt;&gt; IfcFillElementTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcFillElementTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="d7c694aa-e179-46a9-80e2-5ade33c7f1d6">
+			<Documentation>Either there is no fill element type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcFillElementType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+  (&apos;IFCSHAREDBLDGELEMENTS.IFCFILLELEMENTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+
