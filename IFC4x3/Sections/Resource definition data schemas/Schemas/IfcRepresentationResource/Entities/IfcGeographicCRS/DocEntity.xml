@@ -13,7 +13,7 @@
 	<WhereRules>
 		<DocWhereRule Name="UnitIsPlaneAngle" UniqueId="45472275-87bf-4f5e-a1ad-80be7f068991">
 			<Documentation>The type of Unit shall be _IfcPlaneAngleMeasure_.</Documentation>
-			<Expression>&apos;IFC4x3.IFCPLANEANGLEMEASURE&apos; IN TYPEOF(SELF.Unit)</Expression>
+			<Expression>SELF.Unit = IfcUnitEnum.PLANEANGLE</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
