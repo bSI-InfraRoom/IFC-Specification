@@ -9,7 +9,7 @@
 		<DocSubtype UniqueId="065cabab-0e6e-4c55-92fa-b7a1fcf53185" DefinedType="IfcProjectedCRS" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="c63d80a5-78a4-45e3-bf15-d9302cdb83f2" DefinedType="IfcLabel">
+		<DocAttribute Name="Name" UniqueId="c63d80a5-78a4-45e3-bf15-d9302cdb83f2" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Name by which the coordinate reference system is identified.
 &gt; NOTE 1&amp;nbsp; The name shall be taken from the list recognized by the European Petroleum Survey Group EPSG. It should then be qualified by the EPSG name space, for example as &apos;EPSG:5555&apos;.
 { .extDef}
@@ -51,5 +51,11 @@ ELLIPSOID[&amp;lt;name&amp;gt;,&amp;lt;major axis&amp;gt;,&amp;lt;inverse flatte
 			</Definition>
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CoordinateSystemSpecified" UniqueId="72c056ab-f8e2-4c95-80f4-3a41604c4d90">
+			<Documentation>Ensures that the coordinate reference system is properly specified by either a reference to EPSG in _Name: or well known text in _HasWellKnownTextRepresentation_.</Documentation>
+			<Expression>EXISTS(SELF.Name) || EXISTS(SELF.HasWellKnowTextRepresentation)</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 
