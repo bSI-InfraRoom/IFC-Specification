@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcWellKnownText" Name="IfcWellKnownText" UniqueId="2c5451db-1148-4295-9d0e-fd2a3abfe638" BaseDefinition="IfcGeometricRepresentationItem" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="WellKnownText" UniqueId="64c67b4d-f548-4d88-b1fb-b770f4f5bc58" DefinedType="IfcText">
+			<Documentation>Text string according to ISO/IEC 13249. If _CoordinateReferenceSystem_ is populated, the the representation is a coordinate reference system according to ISO 19162.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="CoordinateReferenceSystem" UniqueId="32a92b28-a350-4750-93a2-3b3207705c9f" DefinedType="IfcCoordinateReferenceSystem" AttributeFlags="1">
+			<Documentation>The _IfcCoordinateReferenceSystem_ that is represented by _WellKnownText_.</Documentation>
+			<Definition>
+				<DocEntity xsi:nil="true" href="IfcCoordinateReferenceSystem" />
+			</Definition>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+
