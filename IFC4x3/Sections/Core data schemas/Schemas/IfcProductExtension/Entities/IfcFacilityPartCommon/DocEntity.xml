@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFacilityPartCommon" UniqueId="7cdf39c9-eebf-4575-a208-dfab7b52147c" DiagramNumber="2" BaseDefinition="IfcFacilityPart" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="1909,3333740234375" Y="533,3333129882812" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="e01c890f-0104-4d79-9760-3a9519663b57" DefinedType="IfcFacilityPartCommonTypeEnum">
+			<Documentation>Type further identify the object. Some property sets may be specifically applicable to one of these types.</Documentation>
+			<Definition>
+				<DocEnumeration xsi:nil="true" href="IfcFacilityPartCommonTypeEnum" />
+			</Definition>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasObjectType" UniqueId="9081daab-b97e-4aaa-a5c7-d73055b91909">
+			<Documentation>The attribute _ObjectType_ shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &amp;lt;&amp;gt; IfcBridgePartTypeEnum.USERDEFINED) OR 
+
+EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+
