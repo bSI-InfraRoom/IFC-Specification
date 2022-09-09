@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBridgePart" UniqueId="e59d576c-cc2d-4575-a21e-34c8fd68734d" DiagramNumber="1" BaseDefinition="IfcFacilityPart" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="0" Y="0" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="8c058394-0357-4e29-89f8-c2da7371836b" DefinedType="IfcBridgePartTypeEnum">
+			<Documentation>Specifies the type for which the value is selected from a predefined type enumeration. This type may associate additional specific property sets.</Documentation>
+			<Definition>
+				<DocEnumeration xsi:nil="true" href="IfcBridgePartTypeEnum" />
+			</Definition>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasObjectType" UniqueId="2db6e438-54cf-4516-9fb0-6ebe4a9878f2">
+			<Documentation>The attribute _ObjectType_ shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &amp;lt;&amp;gt; IfcBridgePartTypeEnum.USERDEFINED) OR 
+
+EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+
