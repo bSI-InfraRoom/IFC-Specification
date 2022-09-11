@@ -45,7 +45,9 @@ ELLIPSOID[&amp;lt;name&amp;gt;,&amp;lt;major axis&amp;gt;,&amp;lt;inverse flatte
 			<Documentation>Indicates conversion between coordinate systems. In particular it refers to an _IfcCoordinateOperation_ between this coordinate reference system, and another Geographic coordinate reference system.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="HasWellKnowTextRepresentation" UniqueId="9b9f3bbc-d2fc-4157-a1c7-9a86730b2575" DefinedType="IfcWellKnownText" AttributeFlags="1" Inverse="CoordinateReferenceSystem">
-			<Documentation>Well known text (string) according to ISO 19162.</Documentation>
+			<Documentation>Well known text (string) according to ISO 19162.
+
+&gt;NOTE If an EPSG code is given in _Name_, the WKT (if present) shall be the representation of the EPSG. In case of not matching, the EPSG code in _Name_ takes precedence.</Documentation>
 			<Definition>
 				<DocEntity xsi:nil="true" href="IfcWellKnownText" />
 			</Definition>

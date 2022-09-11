@@ -1,1 +1,1 @@
-A _IfcGeographicCRS_ is a CRS that uses a three-dimensional ellipsoid surface to determine locations on the Earth. Any location on Earth can be referenced by a point with longitude and latitude coordinates and the height above the ellipsoid.
+A _IfcGeographicCRS_ is a CRS that uses a three-dimensional ellipsoid surface to determine locations on the Earth. Any location on Earth can be referenced by a point with longitude and latitude coordinates and the elevation above or below the ellipsoid.
