@@ -10,11 +10,8 @@
 		<DocAttribute Name="Segments" UniqueId="9bc9b862-82ed-4798-9a2a-b0db4138f62d" DefinedType="IfcSegmentIndexSelect" AttributeFlags="1" AggregationType="1" AggregationLower="1" AggregationUpper="?">
 			<Documentation>List of straight line and circular arc segments, each providing a list of indices into the Cartesian point list. Indices should preserve consecutive connectivity between the segments, the start index of the next segment shall be identical with the end index of the previous segment.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="SelfIntersect" UniqueId="8fe6fe4d-ed5b-4196-aa43-afe0c30eb2d0" DefinedType="IfcLogical">
+		<DocAttribute Name="SelfIntersect" UniqueId="8fe6fe4d-ed5b-4196-aa43-afe0c30eb2d0" DefinedType="IfcBoolean" AttributeFlags="1">
 			<Documentation>Indication of whether the curve intersects itself or not; this is for information only.</Documentation>
-			<Definition>
-				<DocDefinitionRef xsi:nil="true" href="IfcLogical_26uxty4A17QQcII_cDcSsF" />
-			</Definition>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
