@@ -5,6 +5,17 @@
 		<DocLocalization Locale="en" Name="Projected CRS" />
 	</Localization>
 	<Attributes>
+		<DocAttribute Name="VerticalDatum" UniqueId="a1cff1dd-cdf8-414b-b959-669464923a6a" DefinedType="IfcIdentifier" AttributeFlags="1">
+			<Documentation>Name by which the vertical datum is identified. The vertical datum is associated with the height axis of the coordinate reference system and indicates the reference plane and fundamental point defining the origin of a height system. It needs to be provided, if the _Name_ identifier does not unambiguously define the vertical datum as well and if the coordinate reference system is a 3D reference system.
+
+{ .examples}
+&gt; EXAMPLE&amp;nbsp; vertical datums include: { .note}
+&gt; * DHHN92: the German &apos;Haupth&amp;ouml;hennetz&apos;
+&gt; * EVRS2007; the European Vertical Reference System</Documentation>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcIdentifier_1dG8O0DIbDBxufYev6dUDH" />
+			</Definition>
+		</DocAttribute>
 		<DocAttribute Name="MapProjection" UniqueId="9e324f9a-8d48-45d4-8936-f526297f87af" DefinedType="IfcIdentifier" AttributeFlags="1">
 			<Documentation>Name by which the map projection is identified.
 

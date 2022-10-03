@@ -33,14 +33,6 @@ ELLIPSOID[&amp;lt;name&amp;gt;,&amp;lt;major axis&amp;gt;,&amp;lt;inverse flatte
 &gt; * EUREF89
 &gt; * WSG84</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="VerticalDatum" UniqueId="bb23b255-0bb4-42f6-b611-ac08f796ce77" DefinedType="IfcIdentifier" AttributeFlags="1">
-			<Documentation>Name by which the vertical datum is identified. The vertical datum is associated with the height axis of the coordinate reference system and indicates the reference plane and fundamental point defining the origin of a height system. It needs to be provided, if the _Name_ identifier does not unambiguously define the vertical datum as well and if the coordinate reference system is a 3D reference system.
-
-{ .examples}
-&gt; EXAMPLE&amp;nbsp; vertical datums include: { .note}
-&gt; * DHHN92: the German &apos;Haupth&amp;ouml;hennetz&apos;
-&gt; * EVRS2007; the European Vertical Reference System</Documentation>
-		</DocAttribute>
 		<DocAttribute Name="HasCoordinateOperation" UniqueId="83795333-6df7-46ac-b61e-5101640f8615" DefinedType="IfcCoordinateOperation" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="SourceCRS" XsdFormat="attribute">
 			<Documentation>Indicates conversion between coordinate systems. In particular it refers to an _IfcCoordinateOperation_ between this coordinate reference system, and another Geographic coordinate reference system.</Documentation>
 		</DocAttribute>
