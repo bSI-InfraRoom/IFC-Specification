@@ -7,12 +7,28 @@
 				<DocDefinitionRef xsi:nil="true" href="IfcIdentifier_1dG8O0DIbDBxufYev6dUDH" />
 			</Definition>
 		</DocAttribute>
-		<DocAttribute Name="Unit" UniqueId="82bf71dc-4f74-483b-84c7-70c84a5ce22d" DefinedType="IfcNamedUnit" AttributeFlags="1" />
+		<DocAttribute Name="AngleUnit" UniqueId="82bf71dc-4f74-483b-84c7-70c84a5ce22d" DefinedType="IfcNamedUnit" AttributeFlags="1">
+			<Documentation>Unit of latitude and longitude coordinate axes composing the geographic coordinate system.
+&gt; NOTE 1&amp;nbsp; Only plane angle measures are in scope and both longitude and latitude coordinate axes of the geogrpahic coordinate system shall have the same plane angle unit.
+&gt; NOTE 2&amp;nbsp; If AngleUnit is omitted, the unit for latitude and longitude coordiante axes is taken from the default project angle units, as stated in IfcProject.UnitInContext.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="HeightUnit" UniqueId="9bf22bae-be5e-48ed-ad89-d46443dbdb34" DefinedType="IfcNamedUnit" AttributeFlags="1">
+			<Documentation>Unit of the height coordinate axis of the geographic coordinate system.
+&gt; NOTE 1&amp;nbsp; Only length measures are in scope.
+&gt; NOTE 2&amp;nbsp; If HeightUnit is omitted, the unit for the height coordinate axis is taken from the default project length units, as stated in IfcProject.UnitInContext.</Documentation>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcNamedUnit_04fLnys1T5T8F4CbluExrs" />
+			</Definition>
+		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="UnitIsPlaneAngle" UniqueId="45472275-87bf-4f5e-a1ad-80be7f068991">
-			<Documentation>The type of Unit in the operation shall be _IfcPlaneAngleMeasure_.</Documentation>
-			<Expression>SELF.Unit = IfcUnitEnum.PLANEANGLE</Expression>
+		<DocWhereRule Name="AngleUnitIsPlaneAngle" UniqueId="45472275-87bf-4f5e-a1ad-80be7f068991">
+			<Documentation>The type of AngleUnit in the operation shall be _IfcUnitEnum_.PLANEANGLEUNIT.</Documentation>
+			<Expression>NOT EXISTS(SELF.AngleUnit) OR SELF.AngleUnit.UnitType = IfcUnitEnum.PLANEANGLEUNIT</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="HeightUnitIsLength" UniqueId="42d6cbec-4c06-4054-9729-7fb3bcf844c5">
+			<Documentation>The type of HeightUnit in the operation shall be _IfcUnitEnum_.LENGTHUNIT.</Documentation>
+			<Expression>NOT EXISTS(SELF.HeightUnit) OR SELF.HeightUnit.UnitType = IfcUnitEnum.LENGTHUNIT</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
