@@ -35,12 +35,12 @@ _XAxisAbscissa_ it provides the direction of the local x axis within the horizon
 		<DocAttribute Name="Scale" UniqueId="db27722d-93be-4e68-a96a-712ebbef1884" DefinedType="IfcReal" AttributeFlags="1">
 			<Documentation>Scale to be used, when the units of the CRS are not identical to the units of the engineering coordinate system. If omited, the value of 1.0 is assumed.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="ScaleY" UniqueId="2f876a26-b379-4b74-98aa-f3d1e6850d5c" DefinedType="IfcReal" AttributeFlags="1">
-			<Documentation>Scale Y by which the length measures in local engineering CS have to be multiplied to get map coordinates</Documentation>
-		</DocAttribute>
-		<DocAttribute Name="ScaleZ" UniqueId="3a4b8279-0d6a-4c8b-aab0-d5c84293a3ab" DefinedType="IfcReal" AttributeFlags="1">
-			<Documentation>Scale Z by which the length measures in local engineering CS have to be multiplied to get map coordinates</Documentation>
-		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="OnlyProjectedCRS" UniqueId="ac9fb308-c18a-436f-8ec4-d0591f1dca67">
+			<Documentation>_IfcCoordinateOperation_.TargetCRS is of type _IfcGeographicCRS_.</Documentation>
+			<Expression>&apos;IFC4x3.IFCPROJECTEDCRS&apos; IN TYPEOF(SELF\IfcCoordinateOperation.TargetCRS)</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

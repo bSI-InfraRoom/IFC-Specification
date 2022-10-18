@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRigidOperation" UniqueId="946a945b-8a4a-4e2c-9840-b56032727b5f" BaseDefinition="IfcCoordinateOperation" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="FirstCoordinate" UniqueId="f2534a2f-e119-4a52-b1cf-a55c170eea45" DefinedType="IfcMeasureValue">
+			<Documentation>The first coordinate of the translation. Can be a length measure in case of map coordinates or a plane angle measure in case of geographic reference systems.</Documentation>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcMeasureValue_0zhETP7Hz2E94mtLjvV20s" />
+			</Definition>
+		</DocAttribute>
+		<DocAttribute Name="SecondCoordinate" UniqueId="366b1fda-0ecf-4891-abb5-212d322b50fb" DefinedType="IfcMeasureValue">
+			<Documentation>The second coordinate of the translation. Can be a length measure in case of map coordinates or a plane angle measure in case of geographic reference systems.</Documentation>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcMeasureValue_0zhETP7Hz2E94mtLjvV20s" />
+			</Definition>
+		</DocAttribute>
+		<DocAttribute Name="Height" UniqueId="caad8793-db34-4377-b751-b1591d8f3fe3" DefinedType="IfcLengthMeasure" AttributeFlags="1">
+			<Documentation>Height above (positive) or below (negative) the coordinate surface.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CoordinateType" UniqueId="e9bb63a8-0676-42b5-93db-fa2803a66ae2">
+			<Documentation>Restricts the value type of _FirstCoordinate_ and _SecondCoordinate_ to _IfcLengthMeasure_ and _IfcPlaneAngleMeasure_.</Documentation>
+			<Expression>(&apos;IFCMEASURERESOURCE.IFCLENGTHMEASURE&apos; IN TYPEOF(FirstCoordinate)
+OR
+&apos;IFCMEASURERESOURCE.IFCPLANEANGLEMEASURE&apos; IN TYPEOF(FirstCoordinate))
+AND
+(&apos;IFCMEASURERESOURCE.IFCLENGTHMEASURE&apos; IN TYPEOF(SecondCoordinate)
+OR
+&apos;IFCMEASURERESOURCE.IFCPLANEANGLEMEASURE&apos; IN TYPEOF(SecondCoordinate))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

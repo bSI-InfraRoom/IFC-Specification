@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcCoordinateReferenceSystem" UniqueId="55d837bf-64b2-4c83-9324-044e57cbaa9f" EntityFlags="197">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcCoordinateReferenceSystem" Name="IfcCoordinateReferenceSystem" UniqueId="55d837bf-64b2-4c83-9324-044e57cbaa9f" EntityFlags="197">
 	<Localization>
 		<DocLocalization Locale="de" Name="Koordinatenbezugssystem" />
 		<DocLocalization Locale="en" Name="Coordinate Reference System" />
@@ -9,7 +9,7 @@
 		<DocSubtype UniqueId="065cabab-0e6e-4c55-92fa-b7a1fcf53185" DefinedType="IfcProjectedCRS" />
 	</Subtypes>
 	<Attributes>
-		<DocAttribute Name="Name" UniqueId="c63d80a5-78a4-45e3-bf15-d9302cdb83f2" DefinedType="IfcLabel">
+		<DocAttribute Name="Name" UniqueId="c63d80a5-78a4-45e3-bf15-d9302cdb83f2" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>Name by which the coordinate reference system is identified.
 &gt; NOTE 1&amp;nbsp; The name shall be taken from the list recognized by the European Petroleum Survey Group EPSG. It should then be qualified by the EPSG name space, for example as &apos;EPSG:5555&apos;.
 { .extDef}
@@ -33,17 +33,23 @@ ELLIPSOID[&amp;lt;name&amp;gt;,&amp;lt;major axis&amp;gt;,&amp;lt;inverse flatte
 &gt; * EUREF89
 &gt; * WSG84</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="VerticalDatum" UniqueId="bb23b255-0bb4-42f6-b611-ac08f796ce77" DefinedType="IfcIdentifier" AttributeFlags="1">
-			<Documentation>Name by which the vertical datum is identified. The vertical datum is associated with the height axis of the coordinate reference system and indicates the reference plane and fundamental point defining the origin of a height system. It needs to be provided, if the _Name_ identifier does not unambiguously define the vertical datum as well and if the coordinate reference system is a 3D reference system.
-
-{ .examples}
-&gt; EXAMPLE&amp;nbsp; vertical datums include: { .note}
-&gt; * DHHN92: the German &apos;Haupth&amp;ouml;hennetz&apos;
-&gt; * EVRS2007; the European Vertical Reference System</Documentation>
-		</DocAttribute>
 		<DocAttribute Name="HasCoordinateOperation" UniqueId="83795333-6df7-46ac-b61e-5101640f8615" DefinedType="IfcCoordinateOperation" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="SourceCRS" XsdFormat="attribute">
 			<Documentation>Indicates conversion between coordinate systems. In particular it refers to an _IfcCoordinateOperation_ between this coordinate reference system, and another Geographic coordinate reference system.</Documentation>
 		</DocAttribute>
+		<DocAttribute Name="HasWellKnowTextRepresentation" UniqueId="9b9f3bbc-d2fc-4157-a1c7-9a86730b2575" DefinedType="IfcWellKnownText" AttributeFlags="1" Inverse="CoordinateReferenceSystem">
+			<Documentation>Well known text (string) according to ISO 19162.
+
+&gt;NOTE If an EPSG code is given in _Name_, the WKT (if present) shall be the representation of the EPSG. In case of not matching, the EPSG code in _Name_ takes precedence.</Documentation>
+			<Definition>
+				<DocEntity xsi:nil="true" href="IfcWellKnownText" />
+			</Definition>
+		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CoordinateSystemSpecified" UniqueId="72c056ab-f8e2-4c95-80f4-3a41604c4d90">
+			<Documentation>Ensures that the coordinate reference system is properly specified by either a reference to an EPSG code in _Name_ or a well known text in _HasWellKnownTextRepresentation_.</Documentation>
+			<Expression>EXISTS(SELF.Name) || EXISTS(SELF.HasWellKnowTextRepresentation)</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 
