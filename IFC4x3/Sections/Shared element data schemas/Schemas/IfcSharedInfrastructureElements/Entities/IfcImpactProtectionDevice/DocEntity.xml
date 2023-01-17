@@ -11,7 +11,7 @@
 			<Documentation>Either the _PredefinedType_ attribute is unset(e.g. because an _IfcImpactProtectionDeviceType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
 			<Expression>NOT(EXISTS(PredefinedType)) OR
 (PredefinedType &lt;&gt; IfcImpactProtectionDeviceTypeEnum.USERDEFINED) OR
-((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));</Expression>
+((PredefinedType = IfcImpactProtectionDeviceTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="fe8cea17-7472-479c-8955-e01e5ca6508c">
 			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcImpactProtectionDeviceType_.</Documentation>
@@ -20,4 +20,3 @@
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
-
