@@ -1,0 +1,10 @@
+  (Segment : IfcSegment)
+  : IfcDimensionCount;
+
+   IF ('IFCGEOMETRYRESOURCE.IFCCURVESEGMENT' IN TYPEOF(Segment))
+     THEN RETURN(Segment\IfcCurveSegment.ParentCurve.Dim);
+   END_IF;
+   IF ('IFCGEOMETRYRESOURCE.IFCCOMPOSITECURVESEGMENT' IN TYPEOF(Segment))
+     THEN RETURN(Segment\IfcCompositeCurveSegment.ParentCurve.Dim);
+   END_IF;
+   RETURN (?);

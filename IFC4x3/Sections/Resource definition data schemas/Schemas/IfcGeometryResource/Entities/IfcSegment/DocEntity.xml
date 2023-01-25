@@ -7,6 +7,13 @@
 		<DocAttribute Name="UsingCurves" UniqueId="1cede6f4-cc66-4b43-8893-d6a8a6afe94a" DefinedType="IfcCompositeCurve" AttributeFlags="8" AggregationType="3" AggregationLower="1" AggregationUpper="0" Inverse="Segments">
 			<Documentation>The set of composite curves which use this composite curve segment as a segment. This set shall not be empty.</Documentation>
 		</DocAttribute>
+		<DocAttribute Name="Dim" UniqueId="32e9e81e-c7ed-4c3a-9748-6fd924ea09dc" DefinedType="IfcDimensionCount">
+			<Documentation>The space dimensionality of this class, defined by the dimensionality of the first ParentCurve.</Documentation>
+			<Derived>IfcSegmentDim(SELF)</Derived>
+			<Definition>
+				<DocDefined xsi:nil="true" href="IfcDimensionCount" />
+			</Definition>
+		</DocAttribute>
 	</Attributes>
 </DocEntity>
 
