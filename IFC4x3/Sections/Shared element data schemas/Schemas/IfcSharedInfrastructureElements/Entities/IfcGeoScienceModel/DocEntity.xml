@@ -8,7 +8,7 @@
 	<WhereRules>
 		<DocWhereRule Name="HasObjectType" UniqueId="e16f6c93-92be-45f5-93c3-8cd4aa5488a1">
 			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
-			<Expression>(PredefinedType &lt;&gt; IfcGeoScienceFeatureTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+			<Expression>(PredefinedType &lt;&gt; IfcGeoScienceModelTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
