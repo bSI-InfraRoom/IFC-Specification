@@ -48,8 +48,7 @@ ELLIPSOID[&amp;lt;name&amp;gt;,&amp;lt;major axis&amp;gt;,&amp;lt;inverse flatte
 	<WhereRules>
 		<DocWhereRule Name="CoordinateSystemSpecified" UniqueId="72c056ab-f8e2-4c95-80f4-3a41604c4d90">
 			<Documentation>Ensures that the coordinate reference system is properly specified by either a reference to an EPSG code in _Name_ or a well known text in _HasWellKnownTextRepresentation_.</Documentation>
-			<Expression>EXISTS(SELF.Name) || EXISTS(SELF.HasWellKnowTextRepresentation)</Expression>
+			<Expression>EXISTS(SELF.Name) OR EXISTS(SELF.HasWellKnowTextRepresentation)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
-
