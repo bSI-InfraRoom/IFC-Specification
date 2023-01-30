@@ -21,10 +21,22 @@
     (* For an IfcCompositeCurveOnSurface the BasisSurface is the intersection of the BasisSurface of all the segments. *)
 
     N := SIZEOF(C\IfcCompositeCurve.Segments);
-    Surfs := IfcGetBasisSurface(C\IfcCompositeCurve.Segments[1].ParentCurve);
+
+    IF ('IFCGEOMETRYRESOURCE.IFCCURVESEGMENT' IN TYPEOF(C\IfcCompositeCurve.Segments[1])) THEN
+      Surfs := IfcGetBasisSurface(C\IfcCompositeCurve.Segments[1]\IfcCurveSegment.ParentCurve);
+    END_IF;
+    IF ('IFCGEOMETRYRESOURCE.IFCCOMPOSITECURVESEGMENT' IN TYPEOF(C\IfcCompositeCurve.Segments[1])) THEN
+      Surfs := IfcGetBasisSurface(C\IfcCompositeCurve.Segments[1]\IfcCompositeCurveSegment.ParentCurve);
+    END_IF;
+
     IF N > 1 THEN
       REPEAT i := 2 TO N;
-        Surfs := Surfs * IfcGetBasisSurface(C\IfcCompositeCurve.Segments[1].ParentCurve);
+        IF ('IFCGEOMETRYRESOURCE.IFCCURVESEGMENT' IN TYPEOF(C\IfcCompositeCurve.Segments[i])) THEN
+          Surfs := Surfs * IfcGetBasisSurface(C\IfcCompositeCurve.Segments[i]\IfcCurveSegment.ParentCurve);
+        END_IF;
+        IF ('IFCGEOMETRYRESOURCE.IFCCOMPOSITECURVESEGMENT' IN TYPEOF(C\IfcCompositeCurve.Segments[i])) THEN
+          Surfs := Surfs * IfcGetBasisSurface(C\IfcCompositeCurve.Segments[i]\IfcCompositeCurveSegment.ParentCurve);
+        END_IF;
       END_REPEAT;
     END_IF;
   END_IF;
