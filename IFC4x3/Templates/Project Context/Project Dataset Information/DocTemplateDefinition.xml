@@ -9,7 +9,7 @@
 							<Rules>
 								<DocModelRuleEntity Name="IfcDatasetInformation">
 									<Rules>
-										<DocModelRuleAttribute Name="Identification">
+										<DocModelRuleAttribute Name="Identification" Identification="DatasetIdentification">
 											<Rules>
 												<DocModelRuleEntity Name="IfcIdentifier" />
 											</Rules>
@@ -24,7 +24,7 @@
 												<DocModelRuleEntity Name="IfcText" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute Name="Location">
+										<DocModelRuleAttribute Name="Location" Identification="DatasetLocation">
 											<Rules>
 												<DocModelRuleEntity Name="IfcURIReference" />
 											</Rules>
@@ -34,7 +34,7 @@
 												<DocModelRuleEntity Name="IfcIdentifier" />
 											</Rules>
 										</DocModelRuleAttribute>
-										<DocModelRuleAttribute Name="SchemaReference">
+										<DocModelRuleAttribute Name="SchemaReference" Identification="DatasetSchemaReference">
 											<Rules>
 												<DocModelRuleEntity Name="IfcURIReference" />
 											</Rules>
