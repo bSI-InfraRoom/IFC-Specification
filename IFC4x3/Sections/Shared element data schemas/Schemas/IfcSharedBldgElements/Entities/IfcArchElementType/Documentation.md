@@ -7,4 +7,4 @@ The element type _IfcArchElementType_ defines commonly shared information for oc
 
 It is used to define an arch element specification that is common to all occurrences of that arch element type. Arch element types may be exchanged without being already assigned to occurrences.
 
-Occurrences of the _IfcFillElementType_ within building models are represented by instances of _IfcFillElement_.
+Occurrences of the _IfcArchElementType_ within building models are represented by instances of _IfcArchElement_.
