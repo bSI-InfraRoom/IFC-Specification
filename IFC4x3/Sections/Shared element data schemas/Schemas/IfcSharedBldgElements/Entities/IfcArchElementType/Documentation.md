@@ -1,4 +1,4 @@
-The element type _IfcArchElementType_ defines commonly shared information for occurrences of arch elements. Arch elements are building elements which represents unitary curved structures.The set of shared information may include:
+The element type _IfcArchElementType_ defines commonly shared information for occurrences of arch elements. Arch elements are building elements which represents unitary curved structures. The set of shared information may include:
 
 * common properties within shared property sets
 * common material information
