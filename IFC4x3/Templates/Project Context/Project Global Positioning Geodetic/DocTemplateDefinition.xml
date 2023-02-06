@@ -7,7 +7,7 @@
 					<Rules>
 						<DocModelRuleAttribute Name="HasCoordinateOperation" Identification="HasGlobalPosition">
 							<Rules>
-								<DocModelRuleEntity Name="IfcRigidOperation" Identification="FirstCoordinate">
+								<DocModelRuleEntity Name="IfcRigidOperation">
 									<Rules>
 										<DocModelRuleAttribute Name="TargetCRS">
 											<Rules>
@@ -37,12 +37,12 @@
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute Name="FirstCoordinate" Identification="FirstCoordinate">
 											<Rules>
-												<DocModelRuleEntity Name="IfcMeasureValue" />
+												<DocModelRuleEntity Name="IfcPlaneAngleMeasure" />
 											</Rules>
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute Name="SecondCoordinate" Identification="SecondCoordinate">
 											<Rules>
-												<DocModelRuleEntity Name="IfcMeasureValue" />
+												<DocModelRuleEntity Name="IfcPlaneAngleMeasure" />
 											</Rules>
 										</DocModelRuleAttribute>
 										<DocModelRuleAttribute Name="Height" Identification="Height">
