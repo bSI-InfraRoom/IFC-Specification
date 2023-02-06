@@ -1,1 +1,1 @@
-A typically curved structural member spanning an opening and serving as a support
+A typically curved structural member spanning an opening and serving as a support.
