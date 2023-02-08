@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGroundReinforcementElementType" UniqueId="8ff54151-ad26-40f3-b965-a90b1f7611c7" BaseDefinition="IfcBuiltElementType" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="3464ce4b-e114-41b1-8cba-8dec33b0d0b4" DefinedType="IfcGroundReinforcementElementTypeEnum">
+			<Documentation>Identifies the predefined type of a ground reinforcement element.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="1e7bdb54-7530-494c-9cc0-22388bdb3e63">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcGroundReinforcementElementTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcGroundReinforcementElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+
