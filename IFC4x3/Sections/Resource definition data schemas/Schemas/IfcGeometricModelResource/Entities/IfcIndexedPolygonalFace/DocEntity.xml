@@ -14,6 +14,11 @@
 		<DocAttribute Name="ToFaceSet" UniqueId="539ffe91-454c-4cc6-a6ee-03a20eaf9166" DefinedType="IfcPolygonalFaceSet" AggregationType="3" AggregationLower="1" AggregationUpper="?" Inverse="Faces">
 			<Documentation>Reference to the _IfcPolygonalFaceSet_ for which this face is associated.</Documentation>
 		</DocAttribute>
+		<DocAttribute Name="HasTexCoords" UniqueId="87bce799-e568-4ce3-876e-552e0304f8d8" DefinedType="IfcTextureCoordinateIndices" AggregationType="3" AggregationLower="0" AggregationUpper="1" Inverse="TexCoordsOf">
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcTextureCoordinateIndices_3abLetGTD7qwjKFFDS5PDh" />
+			</Definition>
+		</DocAttribute>
 	</Attributes>
 </DocEntity>
 
