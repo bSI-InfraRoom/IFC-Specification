@@ -68,7 +68,7 @@ jobs:
           # github-token: ${{ secrets.GITHUB_TOKEN }}
         run: | # & "${{ github.workspace }}\build\IfcDocLite.exe" "${{ github.workspace }}\IFC4x3" -FE
           echo $wtoken | gh auth login --with-token
-          gh workflow run "schema-generation"
+          gh workflow run "schema-generation-tunnel"
   generate-properties-quantities-listings:
     runs-on: ubuntu-latest
     needs: [filter_schema_modifications]
