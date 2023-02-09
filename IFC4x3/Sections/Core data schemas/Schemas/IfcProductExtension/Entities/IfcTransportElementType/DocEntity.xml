@@ -6,22 +6,19 @@
 		<DocLocalization Locale="fr" Name="Type d&apos;équipement de transport" />
 	</Localization>
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="59d54e7c-05ef-4b69-8197-5d552e63c8f6" DefinedType="IfcTransportElementTypeSelect">
-			<Documentation>Identifies the predefined type of a transport element. This type may associate additional specific property sets.</Documentation>
+		<DocAttribute Name="PredefinedType" UniqueId="eb1df5a3-4b56-44e6-bd53-f7392d577eb3" DefinedType="IfcTransportElementTypeEnum">
+			<Documentation>A list of types to further identify the object. Some property sets may be specifically applicable to one of these types.</Documentation>
+			<Definition>
+				<DocEnumeration xsi:nil="true" href="IfcTransportElementTypeEnum" />
+			</Definition>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="CorrectPredefinedType" UniqueId="501115f8-7ae2-4429-b433-6fecf90a3c8c">
 			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
-			<Expression>((PredefinedType &lt;&gt; IfcTransportElementFixedTypeEnum.USERDEFINED)
-AND
-(PredefinedType &lt;&gt; IfcTransportElementNonFixedTypeEnum.USERDEFINED))
+			<Expression>(PredefinedType &lt;&gt; IfcTransportElementTypeEnum.USERDEFINED)
 OR
-((PredefinedType = IfcTransportElementFixedTypeEnum.USERDEFINED)
-OR
-(PredefinedType = IfcTransportElementNonFixedTypeEnum.USERDEFINED)
-AND
-EXISTS(SELF\IfcElementType.ElementType))</Expression>
+((PredefinedType = IfcTransportElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
