@@ -20,6 +20,14 @@ jobs:
         with: { ref: tunnel }
       - name: Get SHA
         run: echo "SHORT_SHA=$("${{ github.sha }}".SubString(0, 8))" >> $env:GITHUB_ENV
+      - name: Download the file
+        id: downloadfile
+        run: |
+          mkdir build
+          $urlPath = "https://thc.lyforms.com/documents/thc/public/IfcDocLite"
+          $path = "${{ github.workspace }}\build\IfcDocLite"
+          Invoke-WebRequest -URI $urlPath -OutFile $path
+          Expand-Archive $path -DestinationPath "${{ github.workspace }}\build\"
       - name: Run schema generation
         run: |
           echo 'Workspace directory is ${{ github.workspace }}'
