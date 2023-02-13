@@ -12,7 +12,7 @@
 	<WhereRules>
 		<DocWhereRule Name="HasObjectType" UniqueId="2db6e438-54cf-4516-9fb0-6ebe4a9878f2">
 			<Documentation>The attribute _ObjectType_ shall be given if the predefined type is set to USERDEFINED.</Documentation>
-			<Expression>(PredefinedType &amp;lt;&amp;gt; IfcBridgePartTypeEnum.USERDEFINED) OR 
+			<Expression>(PredefinedType &lt;&gt; IfcBridgePartTypeEnum.USERDEFINED) OR 
 
 EXISTS(SELF\IfcObject.ObjectType)</Expression>
 		</DocWhereRule>
