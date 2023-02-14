@@ -19,7 +19,7 @@
 OR
 (PredefinedType &lt;&gt; IfcTransportElementTypeEnum.USERDEFINED)
 OR
-((PredefinedType = IfcTransportElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+((PredefinedType = IfcTransportElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="faeb762c-6063-4275-be6e-062e4168b71d">
 			<Documentation>Either there is no transport element type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcTransportElementType_.</Documentation>
@@ -28,3 +28,4 @@ OR
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
+
