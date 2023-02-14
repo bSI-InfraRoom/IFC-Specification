@@ -14,7 +14,7 @@
 OR
 (PredefinedType &lt;&gt; IfcVehicleTypeEnum.USERDEFINED)
 OR
-((PredefinedType = IfcVehicleTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+((PredefinedType = IfcVehicleTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="7dc49664-5846-48a7-afb3-9f9562630839">
 			<Documentation>Either there is no vehicle type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcVehicleType_.</Documentation>
@@ -23,4 +23,3 @@ OR
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
-
