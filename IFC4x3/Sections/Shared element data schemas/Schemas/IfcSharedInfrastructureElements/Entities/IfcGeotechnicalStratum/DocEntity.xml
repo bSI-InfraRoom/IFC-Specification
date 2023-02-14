@@ -11,10 +11,11 @@
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="CorrectPredefinedType" UniqueId="99920485-44df-4488-afd0-9f0d0fe49b18">
+		<DocWhereRule Name="HasObjectType" UniqueId="99920485-44df-4488-afd0-9f0d0fe49b18">
 			<Documentation>Either the _PredefinedType_ attribute is unset or the attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
-			<Expression>NOT EXISTS(PredefinedType) OR (PredefinedType &lt;&gt; IfcVoidingFeatureTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+			<Expression>(PredefinedType &lt;&gt; IfcGeotechnicalStratumTypeEnum.USERDEFINED) OR 
+
+				EXISTS(SELF\IfcObject.ObjectType)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
-
