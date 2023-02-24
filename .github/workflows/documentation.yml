@@ -17,7 +17,7 @@ jobs:
         shell: pwsh
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Run documentation generation
         run: |
           echo 'Workspace directory is ${{ github.workspace }}'
@@ -25,7 +25,7 @@ jobs:
           dir documentation
           dir IFC4x3
       - name: Upload documentation
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: IFC Documentation
           path: ${{ github.workspace }}\documentation

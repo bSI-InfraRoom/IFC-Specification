@@ -26,7 +26,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       # Modified files
       - id: file_changes
@@ -61,7 +61,7 @@ jobs:
         # shell: pwsh
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Run schema generation
         env:
           wtoken: ${{ secrets.WORKFLOW }}
@@ -75,7 +75,7 @@ jobs:
     if: ${{ needs.filter_schema_modifications.outputs.prop_quants_change == 'true' }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Run schema generation
         env:
           wtoken: ${{ secrets.WORKFLOW }}

@@ -8,7 +8,46 @@
 	</Exchanges>
 	<ConceptRoots>
 		<DocConceptRoot UniqueId="e987403c-58fe-4b3c-b5f4-af0feefb2fe7">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBeamStandardCase" />
+			<ApplicableEntity xsi:type="DocEntity" id="IfcBeamStandardCase" Name="IfcBeamStandardCase" UniqueId="0c0c0768-e0cc-41a0-82cb-ddb450b56e95" Status="Deprecated" BaseDefinition="IfcBeam" EntityFlags="101">
+				<Documentation>The standard beam, _IfcBeamStandardCase_, defines a beam with certain constraints for the provision of material usage, parameters and with certain constraints for the geometric representation. The _IfcBeamStandardCase_ handles all cases of beams, that:
+
+* have a reference to the _IfcMaterialProfileSetUsage_ defining the material profile association of the beam with the cardinal point of its insertion relative to the local placement.
+* are consistent in using the correct cardinal point offset of the profile as compared to the &apos;Axis&apos; and &apos;Body&apos; shape representation
+* are based on a sweep of a planar profile, or set of profiles, as defined by the _IfcMaterialProfileSet_
+* have an &apos;Axis&apos; shape representation with constraints provided below in the geometry use definition
+* have a &apos;Body&apos; shape representation with constraints provided below in the geometry use definition 
+    * are extruded perpendicular to the profile definition plane
+    * have a start profile, or set of profiles, that is swept
+    * the sweeping operation can be linear extrusion, circular rotation, or a sweep along a directrix
+    * the start profile, or set of profiles can be swept unchanged, or might be changed uniformly by a taper definition 
+*  
+&gt;&gt; NOTE&amp;nbsp; View definitions and implementer agreements may further constrain the applicable geometry types, e.g. by excluding tapering from an _IfcBeamStandardCase_ implementation. 
+
+&gt; HISTORY&amp;nbsp; New entity in IFC4.
+
+**_Geometric Representations_**
+
+The geometric representation of _IfcBeamStandardCase_ is defined using the following multiple shape representations for its definition:
+
+* **Axis**: A three dimensional open curve (subtype of _IfcBoundedCurve_) defining the axis for the standard beam. The cardinal point is determined by the beam axis.
+* **Body**: A Swept Solid Representation or a CSG clipping representation defining the 3D shape of the standard beam.
+
+&gt; NOTE&amp;nbsp; It is invalid to exchange a &apos;SurfaceModel&apos;, &apos;Brep&apos;, or &apos;MappedRepresentation&apos; representation for the &apos;Body&apos; shape representation of an _IfcBeamStandardCase_.</Documentation>
+				<Localization>
+					<DocLocalization Locale="de" Name="Balken / Unterzug - Standard" />
+					<DocLocalization Locale="en" Name="Beam Standard Case" />
+					<DocLocalization Locale="fr" Name="Poutre standard" />
+				</Localization>
+				<WhereRules>
+					<DocWhereRule Name="HasMaterialProfileSetUsage" UniqueId="4c834c12-aeb9-4a15-856b-88ee40b7c7f2">
+						<Documentation>A valid instance of _IfcBeamStandardCase_ relies on the provision of an _IfcMaterialProfileSetUsage_.</Documentation>
+						<Expression>SIZEOF (QUERY(temp &lt;* USEDIN(SELF, &apos;IFCKERNEL.IFCRELASSOCIATES.RELATEDOBJECTS&apos;) |
+              (&apos;IFCPRODUCTEXTENSION.IFCRELASSOCIATESMATERIAL&apos; IN TYPEOF(temp)) AND
+              (&apos;IFCMATERIALRESOURCE.IFCMATERIALPROFILESETUSAGE&apos; IN TYPEOF(temp.RelatingMaterial))
+              )) = 1</Expression>
+					</DocWhereRule>
+				</WhereRules>
+			</ApplicableEntity>
 			<Concepts>
 				<DocTemplateUsage Name="Material Profile Set Usage" UniqueId="8085909e-d691-4b23-a98a-d41de4dcfdb7">
 					<Documentation>The _IfcBeamStandardCase_ defines in addition that the _IfcBeamType_ should have a unique _IfcMaterialProfileSet_, that is referenced by the _IfcMaterialProfileSetUsage_ that is assigned to all occurrences of this _IfcBeamType_.
@@ -274,7 +313,60 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="378421bc-9852-49eb-bf45-36baf4cce384" Type="IfcCableSegment" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="05876759-bb02-4b39-95e7-19aca917fef9">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcColumnStandardCase" />
+			<ApplicableEntity xsi:type="DocEntity" id="IfcColumnStandardCase" Name="IfcColumnStandardCase" UniqueId="123ee93b-56da-46de-96fb-5e62bdaecd3f" Status="Deprecated" BaseDefinition="IfcColumn" EntityFlags="101">
+				<Documentation>The standard column, _IfcColumnStandardCase_, defines a column with certain constraints for the provision of material usage, parameters and with certain constraints for the geometric representation. The _IfcColumnStandardCase_ handles all cases of columns, that:
+
+&lt;ul&gt;
+&lt;li&gt;have a reference to the &lt;em&gt;IfcMaterialProfileSetUsage&lt;/em&gt;
+defining the material profile association of the column with the
+cardinal point of its insertion relative to the local
+placement.&lt;/li&gt;
+&lt;li&gt;are based on a sweep of a planar profile, or set of profiles,
+as defined by the &lt;em&gt;IfcMaterialProfileSet&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;have an &apos;Axis&apos; shape representation with constraints provided
+below in the geometry use definition&lt;/li&gt;
+&lt;li&gt;have a &apos;Body&apos; shape representation with constraints provided
+below in the geometry use definition&lt;/li&gt;
+&lt;li&gt;have a start profile, or set of profiles, that is swept along
+the directrix and might be changed uniformly by a taper
+definition&lt;/li&gt;
+&lt;li&gt;are consistent in using the correct cardinal point offset of
+the profile as compared to the &apos;Axis&apos; and &apos;Body&apos; shape
+representation&lt;/li&gt;
+&lt;li&gt;are extruded perpendicular to the profile definition
+plane&lt;/li&gt;
+&lt;li style=&quot;list-style-type:none&quot;&gt;
+&lt;blockquote class=&quot;note&quot;&gt;&lt;small&gt;NOTE&amp;nbsp; View definitions and implementer
+agreements may further constrain the applicable geometry types,
+e.g. by excluding tapering from an &lt;em&gt;IfcBeamStandardCase&lt;/em&gt;
+implementation.&lt;/small&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&gt; HISTORY&amp;nbsp; New entity in IFC4.
+
+**_Geometric Representations_**
+
+The geometric representation of _IfcColumnStandardCase_ is defined using the following multiple shape representations for its definition:
+
+* **Axis**: A three-dimensional open curve (subtype of _IfcBoundedCurve_) defining the axis for the standard column. The cardinal point is determined by the column axis.
+* **Body**: A Swept Solid Representation or a CSG representation defining the 3D shape of the standard column.
+
+&gt; NOTE&amp;nbsp; It is invalid to exchange a &apos;SurfaceModel&apos;, &apos;Brep&apos;, or &apos;MappedRepresentation&apos; representation for the &apos;Body&apos; shape representation of an _IfcColumnStandardCase_.</Documentation>
+				<Localization>
+					<DocLocalization Locale="de" Name="Stütze / Pfeiler - Standard" />
+					<DocLocalization Locale="en" Name="Column Standard Case" />
+					<DocLocalization Locale="fr" Name="Poteau standard" />
+				</Localization>
+				<WhereRules>
+					<DocWhereRule Name="HasMaterialProfileSetUsage" UniqueId="9ddf6137-372a-4510-a319-d55e09e0a180">
+						<Documentation>A valid instance of _IfcColumnStandardCase_ relies on the provision of an _IfcMaterialProfileSetUsage_.</Documentation>
+						<Expression>SIZEOF (QUERY(temp &lt;* USEDIN(SELF, &apos;IFCKERNEL.IFCRELASSOCIATES.RELATEDOBJECTS&apos;) |
+              (&apos;IFCPRODUCTEXTENSION.IFCRELASSOCIATESMATERIAL&apos; IN TYPEOF(temp)) AND
+              (&apos;IFCMATERIALRESOURCE.IFCMATERIALPROFILESETUSAGE&apos; IN TYPEOF(temp.RelatingMaterial))
+              )) = 1</Expression>
+					</DocWhereRule>
+				</WhereRules>
+			</ApplicableEntity>
 			<Concepts>
 				<DocTemplateUsage Name="Material Profile Set Usage" UniqueId="dedce70c-2541-4425-a021-f8e6203e28e3">
 					<Documentation>The _IfcColumnStandardCase_ defines in addition that the _IfcColumnType_ should have a unique _IfcMaterialProfileSet_, that is referenced by the _IfcMaterialProfileSetUsage_ assigned to all occurrences of this _IfcColumnType_. Composite profile columns can be represented by refering to several _IfcMaterialProfile_&apos;s within the _IfcMaterialProfileSet_ that is referenced from the _IfcMaterialProfileSetUsage_.
@@ -515,7 +607,29 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="3750422f-520e-4054-9023-267a16c9f570" Type="IfcDistributionElementType" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="031f0758-728b-4c66-8a76-ffc8e2bd53fe">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcDoorStandardCase" />
+			<ApplicableEntity xsi:type="DocEntity" id="IfcDoorStandardCase" Name="IfcDoorStandardCase" UniqueId="584cc06b-54c0-47a3-90e3-316d15a2bb69" Status="Deprecated" BaseDefinition="IfcDoor" EntityFlags="101">
+				<Documentation>The standard door, _IfcDoorStandardCase_, defines a door with certain constraints for the provision of operation types, opening directions, frame and lining parameters, and with certain constraints for the geometric representation. The _IfcDoorStandardCase_ handles all cases of doors, that:
+
+* are inserted into an opening, represented by _IfcOpeningElement_, using the _IfcRelFillsElement_ relationship;
+* have a local placement relative to this opening, and with the y-axis of the placement pointing into the opening direction;
+* have a profile geometry, represented by _IfcShapeRepresentation.RepresentationIdentifier_=&quot;Profile&quot; as a closed curve to which the door parameters apply;
+* have a reference to an _IfcDoorType_ to define the opening direction and the operation type (swinging, sliding, folding, etc.) of the door. The attribute _OperationType_ shall be provided and not being UNDEFINED, and the attribute _ParameterTakesPrecedence_ shall be &quot;TRUE&quot;;
+* have an _IfcDoorLiningProperties_ and _IfcDoorPanelProperties_ instances included in the set of _HasPropertySets_ at _IfcDoorType_.
+
+&gt; HISTORY&amp;nbsp; New entity in IFC4.
+
+**_Geometric Representations_**
+
+The geometric representation of _IfcDoorStandardCase_ is defined using the following multiple shape representations for its definition:
+
+* **Profile**: a three-dimensional closed curve within a particular shape representation. The profile is used to apply the parameter of the parametric door representation. The profile around the edges of the opening is used to apply the door lining and door panel shape parameter.
+* **MappedRepresentation**: A SweptSolid, SurfaceModel, Brep or a CSG representation additionally defining the 3D shape of the standard door in addition to the parametric representation by applying the _IfcDoorLiningProperties_ and an the _IfcDoorPanelProperties_ to the &apos;Profile&apos; representation.</Documentation>
+				<Localization>
+					<DocLocalization Locale="de" Name="Tür - Standard" />
+					<DocLocalization Locale="en" Name="Door Standard Case" />
+					<DocLocalization Locale="fr" Name="porte standard" />
+				</Localization>
+			</ApplicableEntity>
 			<Concepts>
 				<DocTemplateUsage Name="Profile 3D Geometry" UniqueId="d0e968af-22c6-4d49-8d08-855b9709cd62">
 					<Documentation>The door profile is represented by a three-dimensional closed curve within a particular shape representation. The profile is used to apply the parameter of the parametric door representation. The following attribute values for the _IfcShapeRepresentation_ holding this geometric representation shall be used:
@@ -823,7 +937,35 @@ The material is attached by the _RelatingMaterial_ attribute on the [IfcRelAssoc
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="c6044b1c-b64a-4ac6-9813-d2682b526328" Type="IfcFooting" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="a4b88d73-2f2d-47ee-9c92-fe558da3b25b">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcMemberStandardCase" />
+			<ApplicableEntity xsi:type="DocEntity" id="IfcMemberStandardCase" Name="IfcMemberStandardCase" UniqueId="383643f9-fe77-4371-bc51-8e41fc87a6ba" Status="Deprecated" BaseDefinition="IfcMember" EntityFlags="101">
+				<Documentation>The standard member, _IfcMemberStandardCase_, defines a member with certain constraints for the provision of material usage, parameters and with certain constraints for the geometric representation. The _IfcMemberStandardCase_ handles all cases of members, that:
+
+* have a reference to the _IfcMaterialProfileSetUsage_ defining the material profile association of the member with the cardinal point of its insertion relative to the local placement.
+* are based on a sweep of a planar profile, or set of profiles, as defined by the _IfcMaterialProfileSet_
+* have an &apos;Axis&apos; shape representation with constraints provided below in the geometry use definition
+* have a &apos;Body&apos; shape representation with constraints provided below in the geometry use definition
+* have a start profile, or set of profiles, that is swept along the directrix and might be changed uniformly by a taper definition
+* are consistent in using the correct cardinal point offset of the profile as compared to the &apos;Axis&apos; and &apos;Body&apos; shape representation
+* are extruded perpendicular to the profile definition plane
+
+&gt; NOTE&amp;nbsp; View definitions and implementer agreements may further constrain the applicable geometry types, such as by excluding tapering from an _IfcMemberStandardCase_ implementation.
+
+&gt; HISTORY&amp;nbsp; New entity in IFC4.</Documentation>
+				<Localization>
+					<DocLocalization Locale="de" Name="Stab / Stabträger - Standard" />
+					<DocLocalization Locale="en" Name="Member Standard Case" />
+					<DocLocalization Locale="fr" Name="Membre standard" />
+				</Localization>
+				<WhereRules>
+					<DocWhereRule Name="HasMaterialProfileSetUsage" UniqueId="442935a1-cd00-47f9-abb9-a2096c66779c">
+						<Documentation>A valid instance of _IfcMemberStandardCase_ relies on the provision of an _IfcMaterialProfileSetUsage_.</Documentation>
+						<Expression>SIZEOF (QUERY(temp &lt;* USEDIN(SELF, &apos;IFCKERNEL.IFCRELASSOCIATES.RELATEDOBJECTS&apos;) |
+              (&apos;IFCPRODUCTEXTENSION.IFCRELASSOCIATESMATERIAL&apos; IN TYPEOF(temp)) AND
+              (&apos;IFCMATERIALRESOURCE.IFCMATERIALPROFILESETUSAGE&apos; IN TYPEOF(temp.RelatingMaterial))
+              )) = 1</Expression>
+					</DocWhereRule>
+				</WhereRules>
+			</ApplicableEntity>
 			<Concepts>
 				<DocTemplateUsage Name="Material Profile Set Usage" UniqueId="58daaf5a-9d06-4eca-8e07-ad19c2f64eb6">
 					<Documentation>Figure 1 illustrates assignment of _IfcMaterialProfileSetUsage_ and _IfcMaterialProfileSet_ to the _IfcMemberStandardCase_ as the member occurrence and to the _IfcMemberType_. The same _IfcMaterialProfileSet_ shall be shared by many occurrences of _IfcMaterialProfileSetUsage_. This relationship shall be consistent to the relationship between the _IfcMemberType_ and the _IfcMemberStandardCase_.
@@ -1022,7 +1164,24 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="a8d0bcaa-0c5b-4081-a25e-9acaf757e0b4" Type="IfcOpeningElement" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="61dfca14-31fa-46e1-8c46-6bde188f2168">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcOpeningStandardCase" />
+			<ApplicableEntity xsi:type="DocEntity" id="IfcOpeningStandardCase" Name="IfcOpeningStandardCase" UniqueId="7f946b5a-71a3-4ae4-bb52-9b2d33618717" Status="Deprecated" BaseDefinition="IfcOpeningElement" EntityFlags="229">
+				<Documentation>The standard opening, _IfcOpeningStandardCase_, defines an opening with certain constraints for the dimension parameters, position within the voided element, and with certain constraints for the geometric representation. The _IfcOpeningStandardCase_ handles all cases of openings, that:
+
+* are true openings where the opening depth is greather than or equal to the thickness of the element, and the _Predefinedtype_ is set correctly to .OPENING.
+* are true recesses where the opening depth is lower than the thickness of the element, and the _Predefinedtype_ is set correctly to .RECESS.
+* are extruded perpendicular to the wall plane in case of openings in a wall
+* are extruded perpendicular to the slab plane in case of openings in a slab
+* have a local placement relative to the local placement of the voided element
+* have a &apos;Body&apos; shape representation with &apos;SweptSolid&apos; representation type
+* have only a single extrusion body within the &apos;Body&apos; shape representation
+
+&gt; HISTORY&amp;nbsp; New entity in IFC4</Documentation>
+				<Localization>
+					<DocLocalization Locale="de" Name="Öffnung - Standard" />
+					<DocLocalization Locale="en" Name="Opening Standard Case" />
+					<DocLocalization Locale="fr" Name="Ouverture standard" />
+				</Localization>
+			</ApplicableEntity>
 			<Concepts>
 				<DocTemplateUsage Name="Body SweptSolid Geometry" UniqueId="e18806d9-0ccf-457e-88b0-bdb4181b5112">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SweptSolid_Geometry_3BV1ZwpuDDiRuRm1EwJjPo" />
@@ -1086,7 +1245,33 @@ The shared profile definition is defined by assigning an _IfcMaterialProfileSet_
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="90ff45f7-6e7e-42db-9b2e-709e32e85736" Type="IfcPipeSegment" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="b83d03ba-acab-4dbd-af98-ddac3db8a197">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcPlateStandardCase" />
+			<ApplicableEntity xsi:type="DocEntity" id="IfcPlateStandardCase" Name="IfcPlateStandardCase" UniqueId="27d48a56-fa27-4488-adc0-be0e6659db71" Status="Deprecated" BaseDefinition="IfcPlate" EntityFlags="101">
+				<Documentation>The standard plate, _IfcPlateStandardCase_, defines a plate with certain constraints for the provision of material usage, parameters and with certain constraints for the geometric representation. The _IfcPlateStandardCase_ handles all cases of plates, that:
+
+* have a reference to the _IfcMaterialLayerSetUsage_ defining the material layers of the plate with thicknesses
+* are based on an extrusion of a planar surface as defined by the plate profile
+* have a constant thickness along the extrusion direction
+* are consistent in using the correct material layer set offset to the base planar surface in regard to the shape representation
+* are extruded perpendicular to the plane surface
+
+The definitions of plate openings and niches are the same as given at the supertype _IfcPlate_. The same agreements to the special types of plates, as defined in the _PredefinedType_ attribute apply as well.
+
+&gt; HISTORY&amp;nbsp; New entity in IFC4.</Documentation>
+				<Localization>
+					<DocLocalization Locale="de" Name="Platte / Paneel - Standard" />
+					<DocLocalization Locale="en" Name="Plate Standard Case" />
+					<DocLocalization Locale="fr" Name="Plaque standard" />
+				</Localization>
+				<WhereRules>
+					<DocWhereRule Name="HasMaterialLayerSetUsage" UniqueId="8ccbf936-aef4-4b46-bca4-8834917d96dc">
+						<Documentation>A valid instance of _IfcPlateStandardCase_ relies on the provision of an _IfcMaterialLayerSetUsage_.</Documentation>
+						<Expression>SIZEOF (QUERY(temp &lt;* USEDIN(SELF, &apos;IFCKERNEL.IFCRELASSOCIATES.RELATEDOBJECTS&apos;) |
+              (&apos;IFCPRODUCTEXTENSION.IFCRELASSOCIATESMATERIAL&apos; IN TYPEOF(temp)) AND
+              (&apos;IFCMATERIALRESOURCE.IFCMATERIALLAYERSETUSAGE&apos; IN TYPEOF(temp.RelatingMaterial))
+              )) = 1</Expression>
+					</DocWhereRule>
+				</WhereRules>
+			</ApplicableEntity>
 			<Concepts>
 				<DocTemplateUsage Name="Material Layer Set Usage" UniqueId="762d4deb-9d83-443e-87fe-ab206fa5fe7c">
 					<Documentation>The material of the _IfcPlateStandardCase_ is defined by _IfcMaterialLayerSetUsage_ and attached by the _IfcRelAssociatesMaterial_._RelatingMaterial_. It is accessible by the inverse _HasAssociations_ relationship. Multi-layer plates can be represented by refering to several _IfcMaterialLayer_&apos;s within the _IfcMaterialLayerSet_ that is referenced from the _IfcMaterialLayerSetUsage_.&amp;nbsp;
@@ -1322,7 +1507,32 @@ The shared material layer set definition is defined by assigning an _IfcMaterial
 * The relationship _IfcRelConnectsWithRealizingElements_ indicates how parts are connected.
 
 ![&quot;voiding&quot;](../../figures/ifcslabelementedcase-floor.png &quot;Figure 1 &amp;mdash; Slab elemented case&quot;)</Documentation>
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSlabElementedCase" />
+			<ApplicableEntity xsi:type="DocEntity" id="IfcSlabElementedCase" Name="IfcSlabElementedCase" UniqueId="8a62c8a6-68d7-46d4-8940-78578928c9f3" Status="Deprecated" BaseDefinition="IfcSlab" EntityFlags="101">
+				<Documentation>The _IfcSlabElementedCase_ defines a slab with certain constraints for the provision of its components. The _IfcSlabElementedCase_ handles all cases of slabs, that are decomposed into parts:
+
+* having components being assigned to the _IfcSlabElementedCase_ using the _IfcRelAggregates_ relationship accessible by the inverse relationship _IsDecomposedBy_.
+* applying the constraint that the parts within the decomposition shall be of type _IfcElementAssembly_, _IfcBeam_, _IfcMember_, _IfcPlate_, _IfcBuildingElementPart_ or _IfcBuildingElementProxy_.
+
+&gt; HISTORY&amp;nbsp; New entity in IFC4.
+
+{ .use-head}
+Voiding Use Definition:
+
+As shown in Figure 1, openings within the composite slab are directly assigned to _IfcSlabElementedCase_ using _IfcRelVoidsElement_ pointing to _IfcOpeningElement_ and apply to all aggregated parts. If individual parts have cutting and other voiding features, then the decomposed parts have a separate voiding relationship _IfcRelVoidsElement_ pointing to _IfcVoidingFeature_.
+
+![&quot;voiding&quot;](../../../../../../figures/ifcslabelementedcase_fig01.png &quot;Figure 1 &amp;mdash; Slab elemented voiding&quot;)</Documentation>
+				<Localization>
+					<DocLocalization Locale="de" Name="Decke / Dachfläche / Bodenplatte elementiert" />
+					<DocLocalization Locale="en" Name="Slab Elemented Case" />
+					<DocLocalization Locale="fr" Name="Dalle composite" />
+				</Localization>
+				<WhereRules>
+					<DocWhereRule Name="HasDecomposition" UniqueId="bf084589-035f-4b00-9ede-6b38203d5162">
+						<Documentation>A valid instance of _IfcSlabElementedCase_ has to have parts in a decomposition hierarchy.</Documentation>
+						<Expression>HIINDEX(SELF\IfcObjectDefinition.IsDecomposedBy) &gt; 0</Expression>
+					</DocWhereRule>
+				</WhereRules>
+			</ApplicableEntity>
 			<Concepts>
 				<DocTemplateUsage Name="Element Decomposition" UniqueId="87517f53-053d-43d0-9dda-fd74451ab243">
 					<Documentation>An elemented slab is decomposed into parts for particular components such as headers, joists, deck/subfloor, insulation, fasteners, and sealants. There must be an object corresponding to each type of part, however there may be single object instance indicating multiple placements (via mapping geometry) for each part, or multiple instances corresponding to each placement. For minimizing file size, it is recommended to use a single object with multiple placement unless there are specific connectivity relationships indicated (e.g. a duct connected to specific joists).</Documentation>
@@ -1355,7 +1565,35 @@ The shared material layer set definition is defined by assigning an _IfcMaterial
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="113fb64a-dc5a-4d4a-972a-9eb7f88ec979" Type="IfcSlabElementedCase" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="21f79530-e7fc-403e-a1cc-be26dae0f679">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSlabStandardCase" />
+			<ApplicableEntity xsi:type="DocEntity" id="IfcSlabStandardCase" Name="IfcSlabStandardCase" UniqueId="2124969c-e024-4f1b-91a8-5c557e54cb48" Status="Deprecated" BaseDefinition="IfcSlab" EntityFlags="101">
+				<Documentation>The standard slab, _IfcSlabStandardCase_, defines a slab with certain constraints for the provision of material usage, parameters and with certain constraints for the geometric representation. The _IfcSlabStandardCase_ handles all cases of slabs, that:
+
+* have a reference to the _IfcMaterialLayerSetUsage_ defining the material layers of the slab with thicknesses
+* are based on an extrusion of a planar surface as defined by the slab profile
+* have a constant thickness along the extrusion direction
+* are consistent in using the correct material layer set offset to the base planar surface in regard to the shape representation
+* are extruded either perpendicular or slanted to the plane surface
+
+The definitions of slab openings and niches are the same as given at the supertype _IfcSlab_. The same agreements to the special types of slabs, as defined in the _PredefinedType_ attribute apply as well.
+
+&gt; NOTE&amp;nbsp; If the _IfcSlabStandardCase_ is of type Landing and is used within an _IfcStair_ or _IfcRamp_, the special agreements to handle stair and ramp geometry will also affect the geometric representation of the _IfcSlabStandardCase_.
+
+&gt; HISTORY&amp;nbsp; New entity in IFC4.</Documentation>
+				<Localization>
+					<DocLocalization Locale="de" Name="Decke / Dachfläche / Bodenplatte - Standard" />
+					<DocLocalization Locale="en" Name="Slab Standard Case" />
+					<DocLocalization Locale="fr" Name="Dalle standard" />
+				</Localization>
+				<WhereRules>
+					<DocWhereRule Name="HasMaterialLayerSetusage" UniqueId="556bfbd0-f63d-4395-9c61-16ded2826faf">
+						<Documentation>A valid instance of _IfcSlabStandardCase_ relies on the provision of an _IfcMaterialLayerSetUsage_.</Documentation>
+						<Expression>SIZEOF (QUERY(temp &lt;* USEDIN(SELF, &apos;IFCKERNEL.IFCRELASSOCIATES.RELATEDOBJECTS&apos;) |
+              (&apos;IFCPRODUCTEXTENSION.IFCRELASSOCIATESMATERIAL&apos; IN TYPEOF(temp)) AND
+              (&apos;IFCMATERIALRESOURCE.IFCMATERIALLAYERSETUSAGE&apos; IN TYPEOF(temp.RelatingMaterial))
+              )) = 1</Expression>
+					</DocWhereRule>
+				</WhereRules>
+			</ApplicableEntity>
 			<Concepts>
 				<DocTemplateUsage Name="Material Layer Set Usage" UniqueId="710de5cf-0908-44cc-a7bf-2808f7c38aed">
 					<Documentation>Multi-layer slabs can be represented by refering to several _IfcMaterialLayer_&apos;s within the _IfcMaterialLayerSet_ that is referenced from the _IfcMaterialLayerSetUsage_.&amp;nbsp;
@@ -1584,7 +1822,35 @@ The shared material layer set definition is defined by assigning an _IfcMaterial
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="395681f5-4a6a-40c9-95f3-0683a2f0af57" Type="IfcWall" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="9a40b1f8-c468-4e17-80fd-c3f28f3c66ed">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcWallElementedCase" />
+			<ApplicableEntity xsi:type="DocEntity" id="IfcWallElementedCase" Name="IfcWallElementedCase" UniqueId="da57fe12-59b6-4059-8210-55b0a11f0d79" Status="Deprecated" BaseDefinition="IfcWall" EntityFlags="101">
+				<Documentation>The _IfcWallElementedCase_ defines a wall with certain constraints for the provision of its components. The _IfcWallElementedCase_ handles all cases of walls, that are decomposed into parts:
+
+* having components being assigned to the _IfcWallElementedCase_ using the _IfcRelAggregates_ relationship accessible by the inverse relationship _IsDecomposedBy_.
+
+Parts within the decomposition are usually be of type:
+
+* _IfcBuildingElementPart_ for wall layer, insolation layers and similar
+* _IfcMember_ for studs, posts and similar elements,
+* _IfcElementAssembly_ for other aggregates, or
+* _IfcBuildingElementProxy_.
+
+&gt; EXAMPLE&amp;nbsp;Elemented walls may extend the concepts of standard walls with the following features, as shown in Figure 1, including the _IfcRelConnectsWithRealizingElements_ relationship to define fasteners and accessories.
+
+![&quot;voiding&quot;](../../../../../../figures/ifcwallelementedcase-partitioning.png &quot;Figure 1 &amp;mdash; Wall elemented case&quot;)
+
+&gt; HISTORY&amp;nbsp; New entity in IFC4.</Documentation>
+				<Localization>
+					<DocLocalization Locale="de" Name="Wand elementiert" />
+					<DocLocalization Locale="en" Name="Wall Elemented Case" />
+					<DocLocalization Locale="fr" Name="Mur composite" />
+				</Localization>
+				<WhereRules>
+					<DocWhereRule Name="HasDecomposition" UniqueId="22ea6846-8a4e-466a-8d9c-fd981045208d">
+						<Documentation>A valid instance of _IfcWallElementedCase_ has to have parts in a decomposition hierarchy.</Documentation>
+						<Expression>HIINDEX(SELF\IfcObjectDefinition.IsDecomposedBy) &gt; 0</Expression>
+					</DocWhereRule>
+				</WhereRules>
+			</ApplicableEntity>
 			<Concepts>
 				<DocTemplateUsage Name="Element Decomposition" UniqueId="2193a8c8-63e5-4625-8e44-2ec9ac40635a">
 					<Documentation>An elemented wall is decomposed into parts for particular components such as framing and panels on each side. There must be an object corresponding to each type of part, however there may be single object instance indicating multiple placements (via mapping geometry) for each part, or multiple instances corresponding to each placement. For minimizing file size, it is recommended to use a single object with multiple placement unless there are specific connectivity relationships indicated (e.g. a junction box connected to a specific stud).</Documentation>
@@ -1901,7 +2167,27 @@ The following is an example of a framed wall composition, where layers are order
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="c7f1aaf7-3917-4af7-bb49-ab5fc233f8ec" Type="IfcWallType" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="4ec3a63a-be26-479e-a7bc-f5feb1beca61">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcWindowStandardCase" />
+			<ApplicableEntity xsi:type="DocEntity" id="IfcWindowStandardCase" Name="IfcWindowStandardCase" UniqueId="ae72e367-1a75-4a4d-adb9-a251b6fdd6c1" Status="Deprecated" BaseDefinition="IfcWindow" EntityFlags="101">
+				<Documentation>The standard window, _IfcWindowStandardCase_, defines a window with certain constraints for the provision of operation types, opening directions, frame and lining parameters, construction types and with certain constraints for the geometric representation. The _IfcWindowStandardCase_ handles all cases of windows, that:
+
+* are inserted into an opening, represented by _IfcOpeningElement_, using the _IfcRelFillsElement_ relationship
+* have a local placement relative to this opening, and with the y-axis of the placement pointing into the opening direction
+* have a profile geometry, represented by _IfcShapeRepresentation.RepresentationIdentifier_=&quot;Profile&quot; as a closed curve to which the window parameter apply. The profile represents a rectangle within the xz plane of the local placement
+* have a reference to an _IfcWindowType_ to define the opening direction and the operation type (swinging, sliding, folding, etc.) of the window. The attribute _OperationType_ shall be provided and not being UNDEFINED, and the attribute _ParameterTakesPrecedence_ shall be &quot;TRUE&quot;.
+* have a single _IfcWindowLiningProperties_ and a set of _IfcWindowPanelProperties_ instances included in the set of _HasPropertySets_ at _IfcWindowType_
+
+&gt; HISTORY&amp;nbsp; New entity in IFC4.
+
+The geometric representation of _IfcWindowStandardCase_ is defined using the following multiple shape representations for its definition:
+
+* **Profile**: a three-dimensional closed curve within a particular shape representation. The profile is used to apply the parameter of the parametric window representation. The profile around the edges of the opening is used to apply the window lining and window panel shape parameter.
+* **Body**: A SweptSolid, SurfaceModel, or Brep Representation or a CSG additionally defining the 3D shape of the standard window in addition to the parametric representation by applying the _IfcWindowLiningProperties_ and an the _IfcWindowPanelProperties_ to the Profile representation.</Documentation>
+				<Localization>
+					<DocLocalization Locale="de" Name="Fenster - Standard" />
+					<DocLocalization Locale="en" Name="Window Standard Case" />
+					<DocLocalization Locale="fr" Name="Fenêtre standard" />
+				</Localization>
+			</ApplicableEntity>
 			<Concepts>
 				<DocTemplateUsage Name="Profile Geometry" UniqueId="6359e739-90d9-4845-b5bd-f8eb3f884dd2">
 					<Documentation>The following additional constraints apply to the &apos;Profile&apos; representation type:

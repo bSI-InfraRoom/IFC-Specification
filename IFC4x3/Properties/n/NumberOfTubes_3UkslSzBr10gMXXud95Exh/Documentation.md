@@ -1,1 +1,1 @@
-Number of tubes containing fibers.
+Number of fiber tubes.
