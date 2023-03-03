@@ -5,9 +5,6 @@
 		<DocLocalization Locale="en" Name="Product" />
 		<DocLocalization Locale="fr" Name="Produit" />
 	</Localization>
-	<Subtypes>
-		<DocSubtype UniqueId="db048e60-831b-4fab-90e8-a45d39fa6975" DefinedType="IfcProxy" />
-	</Subtypes>
 	<Attributes>
 		<DocAttribute Name="ObjectPlacement" UniqueId="d2d0a44a-3717-40dd-8034-5278124028b2" DefinedType="IfcObjectPlacement" AttributeFlags="1" XsdFormat="attribute">
 			<Documentation>Placement of the product in space, the placement can either be absolute (relative to the world coordinate system), relative (relative to the object placement of another product), or constraint (e.g. relative to grid axes). It is determined by the various subtypes of IfcObjectPlacement, which includes the axis placement information to determine the  transformation for the object coordinate system.</Documentation>
