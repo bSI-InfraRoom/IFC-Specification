@@ -16,10 +16,6 @@
 		<DocAttribute Name="ParentCurve" UniqueId="88a9a6ec-70af-43d3-a2cc-d43758ecd898" DefinedType="IfcCurve" XsdFormat="attribute">
 			<Documentation>The bounded curve which defines the geometry of the segment.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="Dim" UniqueId="10f49af9-52f4-4cda-8581-c02909ff5e0e" DefinedType="IfcDimensionCount">
-			<Documentation>The space dimensionality of this class, defined by the dimensionality of the first ParentCurve.</Documentation>
-			<Derived>ParentCurve.Dim</Derived>
-		</DocAttribute>
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="ParentIsBoundedCurve" UniqueId="69586269-f783-4068-bc06-2dad7255aa02">
@@ -28,4 +24,3 @@
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
-

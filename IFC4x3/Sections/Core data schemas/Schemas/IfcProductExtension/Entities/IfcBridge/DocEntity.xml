@@ -4,14 +4,16 @@
 		<DocLocalization Locale="en" Name="Bridge" />
 	</Localization>
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="2b485ee2-729a-461f-a98b-de60023d9cdc" DefinedType="IfcBridgeTypeEnum" AttributeFlags="1" />
+		<DocAttribute Name="PredefinedType" UniqueId="2b485ee2-729a-461f-a98b-de60023d9cdc" DefinedType="IfcBridgeTypeEnum">
+			<Documentation>Specifies the type for which the value is selected from a predefined type enumeration. This type may associate additional specific property sets.</Documentation>
+		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="CorrectPredefinedType" UniqueId="ed2585fc-da43-4470-9784-44b835c1e52f">
-			<Documentation>Either _PredefinedType_ is unset or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED or _PredefinedType_.</Documentation>
-			<Expression>NOT(EXISTS(PredefinedType)) OR
-(PredefinedType &lt;&gt; IfcBridgeTypeEnum.USERDEFINED) OR
-((PredefinedType = IfcBridgeTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		<DocWhereRule Name="HasObjectType" UniqueId="ed2585fc-da43-4470-9784-44b835c1e52f">
+			<Documentation>The attribute _ObjectType_ shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcBridgeTypeEnum.USERDEFINED) OR 
+
+EXISTS(SELF\IfcObject.ObjectType)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

@@ -26,14 +26,8 @@
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="HasObjectType" UniqueId="a24457b5-3bb3-4650-8328-b144afbdebad">
-			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Documentation>The attribute _ObjectType_ shall be given if the predefined type is set to USERDEFINED.</Documentation>
 			<Expression>(PredefinedType &lt;&gt; IfcAnalysisModelTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
-		</DocWhereRule>
-		<DocWhereRule Name="CorrectPredefinedType" UniqueId="4f2b005b-aa5d-46df-aab5-1dcb85b13d4a">
-			<Documentation>Either the _PredefinedType_ attribute is unset, or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
-			<Expression>NOT(EXISTS(PredefinedType)) OR
-(PredefinedType &lt;&gt; IfcAnalysisModelTypeEnum.USERDEFINED) OR
-((PredefinedType = IfcAnalysisModelTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

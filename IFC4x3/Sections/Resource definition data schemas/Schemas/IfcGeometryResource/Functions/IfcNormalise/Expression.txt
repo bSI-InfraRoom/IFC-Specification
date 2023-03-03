@@ -43,7 +43,7 @@ END_LOCAL;
       REPEAT i := 1 TO Ndim;
         V.DirectionRatios[i] := V.DirectionRatios[i]/Mag;
       END_REPEAT;
-      IF 'IFCGEOMETRYRESOURCE.IFCVECTOR' IN TYPEOF(arg) THEN
+      IF 'IFCGEOMETRYRESOURCE.IFCVECTOR' IN TYPEOF(Arg) THEN
         Vec.Orientation := V;
         Result := Vec;
       ELSE
