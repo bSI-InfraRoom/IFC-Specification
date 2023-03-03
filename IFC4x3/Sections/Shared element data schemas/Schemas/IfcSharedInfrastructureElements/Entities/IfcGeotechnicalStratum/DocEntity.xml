@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeotechnicalStratum" UniqueId="faefb134-3800-4995-b222-b921d7e287bf" BaseDefinition="IfcGeotechnicalElement">
-	<Subtypes>
-		<DocSubtype UniqueId="964a446c-3ce6-44e6-b70b-cc43a1ff39bd" DefinedType="IfcSolidStratum" />
-		<DocSubtype UniqueId="ec4f4f65-4341-4538-8fd3-c067f3bd6986" DefinedType="IfcVoidStratum" />
-		<DocSubtype UniqueId="fb21c163-8d7a-45cf-b517-421f586727b0" DefinedType="IfcWaterStratum" />
-	</Subtypes>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeotechnicalStratum" UniqueId="faefb134-3800-4995-b222-b921d7e287bf" BaseDefinition="IfcGeotechnicalElement" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="49282b29-5083-4b1e-8140-4159b6f74092" DefinedType="IfcGeotechnicalStratumTypeEnum">
+			<Documentation>A list of types to further identify the object. Some property sets may be specifically applicable to one of these types.
+
+&gt; NOTE If the object has an associated _IfcTypeObject_ with a _PredefinedType_, then this attribute shall not be used.</Documentation>
+			<Definition>
+				<DocEnumeration xsi:nil="true" href="IfcGeotechnicalStratumTypeEnum" />
+			</Definition>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasObjectType" UniqueId="99920485-44df-4488-afd0-9f0d0fe49b18">
+			<Documentation>Either the _PredefinedType_ attribute is unset or the attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcGeotechnicalStratumTypeEnum.USERDEFINED) OR 
+
+				EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 

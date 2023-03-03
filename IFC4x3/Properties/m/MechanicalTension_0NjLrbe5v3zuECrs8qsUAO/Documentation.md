@@ -1,1 +1,1 @@
-Nominal value of the flow segment mechanical force.
+Nominal value of mechanical force applied to a flow segment.

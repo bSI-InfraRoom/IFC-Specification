@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcIndexedPolygonalTextureMap" Name="IfcIndexedPolygonalTextureMap" UniqueId="be28d810-73f2-4bb4-b925-e8f5d7b2459e" DiagramNumber="1" BaseDefinition="IfcIndexedTextureMap" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="0" Y="597,3333129882812" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="TexCoordIndices" UniqueId="7562ca80-135c-41d9-afaf-252fd60865e6" DefinedType="IfcTextureCoordinateIndices" AggregationType="3" AggregationLower="1" AggregationUpper="0">
+			<Documentation>Set of texture coordinate indices for polygonal faces with and without inner loops.</Documentation>
+			<DiagramLine>
+				<DocPoint X="400" Y="50" />
+				<DocPoint X="0" Y="50" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="400" Y="50" Width="400" Height="50" />
+			<Definition>
+				<DocEntity xsi:nil="true" href="IfcTextureCoordinateIndices" />
+			</Definition>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

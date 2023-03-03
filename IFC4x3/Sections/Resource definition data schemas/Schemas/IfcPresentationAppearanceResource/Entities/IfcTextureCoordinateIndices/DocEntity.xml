@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcTextureCoordinateIndices" Name="IfcTextureCoordinateIndices" UniqueId="5324fa0a-14d0-4183-b6ae-b18fedbfd4c9" DiagramNumber="1" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="0" Y="0" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="TexCoordIndex" UniqueId="6dd1c5a8-39b8-4d40-8481-b8b08e210eb8" DefinedType="IfcPositiveInteger" AggregationType="1" AggregationLower="3" AggregationUpper="0">
+			<Documentation>List of index pointers into the _IfcTextureVertexList_ referenced by the inherited attribute _TexCoords_.</Documentation>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcPositiveInteger_2ikebEnPFx9_KWvDzfxII" />
+			</Definition>
+		</DocAttribute>
+		<DocAttribute Name="TexCoordsOf" UniqueId="2f3e2c4c-7245-428c-9305-1d43085997a7" DefinedType="IfcIndexedPolygonalFace">
+			<Documentation>The _IndexedPolygonalFace_ for which the texture coordinates are provided.</Documentation>
+			<DiagramLine>
+				<DocPoint X="400" Y="304" />
+				<DocPoint X="0" Y="304" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="400" Y="304" Width="400" Height="50" />
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcIndexedPolygonalFace_1kjK4ajtPCSwnrvR496fr4" />
+			</Definition>
+		</DocAttribute>
+		<DocAttribute Name="ToTexMap" UniqueId="4f765067-286d-4d54-b69d-6c595264acaa" DefinedType="IfcIndexedPolygonalTextureMap" Inverse="TexCoordIndices">
+			<DiagramLine>
+				<DocPoint X="400" Y="647,3333129882812" />
+				<DocPoint X="0" Y="647,3333129882812" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="400" Y="647,3333129882812" Width="400" Height="50" />
+			<Definition>
+				<DocEntity xsi:nil="true" href="IfcIndexedPolygonalTextureMap" />
+			</Definition>
+		</DocAttribute>
+	</Attributes>
+	<Tree>
+		<DocLine>
+			<DiagramLine>
+				<DocPoint X="0" Y="0" />
+				<DocPoint X="0" Y="0" />
+				<DocPoint X="0" Y="0" />
+			</DiagramLine>
+		</DocLine>
+	</Tree>
+</DocEntity>
+
