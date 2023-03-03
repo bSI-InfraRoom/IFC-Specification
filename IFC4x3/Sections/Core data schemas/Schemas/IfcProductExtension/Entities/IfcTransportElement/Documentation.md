@@ -17,4 +17,4 @@ Depending on local classification systems transport elements and transportation 
 > IFC2x CHANGE&nbsp; The attribute _PredefinedType_ (previously OperationType) is made optional.
 
 { .change-ifc2x4}
-> IFC4 CHANGE&nbsp; The last attributes CapacityByWeight and CapacityByNumber are removed, use Pset_TransportElementCommon instead.
+> IFC4 CHANGE&nbsp; The last attributes CapacityByWeight and CapacityByNumber are removed, use Pset_TransportationDeviceCommon instead.
