@@ -19,13 +19,13 @@
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="CoordinateType" UniqueId="e9bb63a8-0676-42b5-93db-fa2803a66ae2">
-			<Documentation>Restricts the value type of _FirstCoordinate_ and _SecondCoordinate_ to _IfcLengthMeasure_ and _IfcPlaneAngleMeasure_.</Documentation>
+			<Documentation>Restricts the attributes _FirstCoordinate_ and _SecondCoordinate_ to the same measure type of either _IfcLengthMeasure_ or _IfcPlaneAngleMeasure_.</Documentation>
 			<Expression>((&apos;IFCMEASURERESOURCE.IFCLENGTHMEASURE&apos; IN TYPEOF(FirstCoordinate))
-OR
-(&apos;IFCMEASURERESOURCE.IFCPLANEANGLEMEASURE&apos; IN TYPEOF(FirstCoordinate)))
 AND
-((&apos;IFCMEASURERESOURCE.IFCLENGTHMEASURE&apos; IN TYPEOF(SecondCoordinate))
+(&apos;IFCMEASURERESOURCE.IFCLENGTHMEASURE&apos; IN TYPEOF(SecondCoordinate)))
 OR
+((&apos;IFCMEASURERESOURCE.IFCPLANEANGLEMEASURE&apos; IN TYPEOF(FirstCoordinate))
+AND
 (&apos;IFCMEASURERESOURCE.IFCPLANEANGLEMEASURE&apos; IN TYPEOF(SecondCoordinate)))</Expression>
 		</DocWhereRule>
 	</WhereRules>
