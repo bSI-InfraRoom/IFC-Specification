@@ -7,6 +7,12 @@
 		<DocAttribute Name="Unit" UniqueId="d23d69e2-c35a-41d5-bf3b-9533670b9eb7" DefinedType="IfcUnit" AttributeFlags="1">
 			<Documentation>An optional unit for the integer values.</Documentation>
 		</DocAttribute>
+		<DocAttribute Name="GridSize" UniqueId="6f8d6a89-e211-4ca1-a678-e4221b561f42" DefinedType="IfcInteger">
+			<Derived> SIZEOF(SELF\IfcProduct.Representation.Representations[1].Items[1]\IfcVoxelGrid.Voxels)</Derived>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcInteger_3wu0Hj__nD9vk_ZJIPfGUc" />
+			</Definition>
+		</DocAttribute>
 	</Attributes>
 </DocEntity>
 
