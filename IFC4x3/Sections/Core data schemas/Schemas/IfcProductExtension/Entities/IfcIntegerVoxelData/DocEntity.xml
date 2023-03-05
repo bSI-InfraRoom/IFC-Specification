@@ -19,6 +19,10 @@
 			<Documentation>_IfcIntegerVoxelData_. _Representation_ shall exist.</Documentation>
 			<Expression>EXISTS(SELF\IfcProduct.Representation)</Expression>
 		</DocWhereRule>
+		<DocWhereRule Name="VoxelGridRepresentation" UniqueId="bb6f7739-0fb3-4899-a086-823cc53156f2">
+			<Documentation>The geometric representation item in _IfcProductDefinitionShape_._Representations_ shall be _IfcVoxelGrid_.</Documentation>
+			<Expression>&apos;IFCVOXELGRID&apos; IN TYPEOF(SELF\IfcProduct.Representation.Representations[1].Items[1])</Expression>
+		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
 
