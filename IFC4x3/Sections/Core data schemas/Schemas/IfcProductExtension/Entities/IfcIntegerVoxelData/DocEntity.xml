@@ -14,5 +14,11 @@
 			</Definition>
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasRepresentation" UniqueId="16865dc1-1980-43fd-8290-4bac0e77c2ca">
+			<Documentation>_IfcIntegerVoxelData_. _Representation_ shall exist.</Documentation>
+			<Expression>EXISTS(SELF\IfcProduct.Representation)</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 
