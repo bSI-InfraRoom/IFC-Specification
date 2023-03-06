@@ -16,7 +16,7 @@
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="HasRepresentation" UniqueId="16865dc1-1980-43fd-8290-4bac0e77c2ca">
-			<Documentation>_IfcIntegerVoxelData_. _Representation_ shall exist.</Documentation>
+			<Documentation>_IfcIntegerVoxelData_._Representation_ shall exist.</Documentation>
 			<Expression>EXISTS(SELF\IfcProduct.Representation)</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="VoxelGridRepresentation" UniqueId="bb6f7739-0fb3-4899-a086-823cc53156f2">
