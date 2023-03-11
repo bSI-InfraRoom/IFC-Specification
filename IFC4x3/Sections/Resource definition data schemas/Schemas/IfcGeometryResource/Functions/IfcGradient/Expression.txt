@@ -1,8 +1,6 @@
 (GradientCurve : IfcGradientCurve, Position : IfcCurveMeasureSelect) : IfcLengthMeasure;
   
   LOCAL
-    DistanceAlong : IfcLengthMeasure := 0;
-    Elevation : IfcLengthMeasure := 0;
     SegmentPlacement : IfcAxis2Placement2D := Segment.Placement\IfcAxis2Placement2D;
   END_LOCAL;
   
