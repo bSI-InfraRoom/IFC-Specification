@@ -1,2 +1,40 @@
-(GradientCurve : IfcGradientCurve) : IfcLengthMeasure;
-  RETURN(1);
+(GradientCurve : IfcGradientCurve, Position : IfcCurveMeasureSelect) : IfcLengthMeasure;
+  
+  LOCAL
+    DistanceAlong : IfcLengthMeasure := 0;
+    Elevation : IfcLengthMeasure := 0;
+    SegmentPlacement : IfcAxis2Placement2D := Segment.Placement\IfcAxis2Placement2D;
+  END_LOCAL;
+  
+  REPEAT i := 1 TO SIZEOF(GradientCurve.Segments);//GradientCurve.BaseCurve\IfcCompositeCurve.Segments;
+    Segment : IfcCurveSegment := GradientCurve.Segments[i];//BaseCurve\IfcCompositeCurve.Segments[i];  NextSegment : IfcCurveSegment :=     GradientCurve.Segments[i + 1];//BaseCurve\IfcCompositeCurve.Segments[i + 1];
+    Location : IfcCartesianPoint := NextSegment\IfcCurveSegment.Placement\IfcAxis2Placement2D.Location\IfcCartesianPoint;
+	
+    IF (Location[1] > Position)
+      CASE TRUE OF
+	  
+        'IFCCIRCLE' IN TYPEOF(Segment.BaseCurve) :
+          BEGIN
+            RETURN SegmentPlacement.Location\IfcCartesianPoint[2] + Segment.BaseCurve.Radius * (COS(ACOS(SegmentPlacement.RefDirection[1]) / 2 - Segment.SegmentLength) - (Position - SegmentPlacement.Location\IfcCartesianPoint[1]));
+          END;
+		  
+        'IFCCLOTHOID' IN TYPEOF(Segment.BaseCurve) :
+          BEGIN			
+            RETURN SegmentPlacement.Location\IfcCartesianPoint[2] + 1/3 * Segment.SegmentLength ** 3 + 1/(3 * IfcFactorial(7)) * Segment.SegmentLength ** 7 + 1/(5 * IfcFactorial(11)) * Segment.SegmentLength ** 11;
+          END;		
+	  
+          'IFCLINE' IN TYPEOF(Segment.BaseCurve) :
+            BEGIN
+              RETURN SegmentPlacement.Location\IfcCartesianPoint[2] + Segment.BaseCurve\IfcLine.Pnt[2] + Segment.BaseCurve\IfcLine.Dir.Orientation[2] * Segment.BaseCurve\IfcLine.Dir.Magnitude * Segment.SegmentLength;
+            END;
+	  
+          'IFCPOLYLINE' IN TYPEOF(Segment.BaseCurve) :
+            BEGIN
+              RETURN SegmentPlacement.Location\IfcCartesianPoint[2] + (Segment.BaseCurve.Points[2].Coordinates[2] - Segment.BaseCurve.Points[1].Coordinates[2]) * Segment.SegmentLength;
+            END;
+	  
+          OTHERWISE : RETURN(?);
+      END_CASE;
+    END_IF;
+  END_REPEAT;
+  RETURN(?);
