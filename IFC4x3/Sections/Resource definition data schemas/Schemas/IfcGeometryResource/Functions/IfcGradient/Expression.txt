@@ -2,6 +2,7 @@
     
   REPEAT i := 1 TO SIZEOF(GradientCurve.Segments);//GradientCurve.BaseCurve\IfcCompositeCurve.Segments;
     Segment : IfcCurveSegment := GradientCurve.Segments[i];
+    NextSegment : IfcCurveSegment := GradientCurve.Segments[i + 1];
     Location : IfcCartesianPoint := NextSegment\IfcCurveSegment.Placement\IfcAxis2Placement2D.Location\IfcCartesianPoint;
     SegmentPlacement : IfcAxis2Placement2D := Segment.Placement\IfcAxis2Placement2D;
 	
