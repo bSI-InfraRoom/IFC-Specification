@@ -5,7 +5,7 @@
   END_LOCAL;
   
   REPEAT i := 1 TO SIZEOF(GradientCurve.Segments);//GradientCurve.BaseCurve\IfcCompositeCurve.Segments;
-    Segment : IfcCurveSegment := GradientCurve.Segments[i];//BaseCurve\IfcCompositeCurve.Segments[i];  NextSegment : IfcCurveSegment :=     GradientCurve.Segments[i + 1];//BaseCurve\IfcCompositeCurve.Segments[i + 1];
+    Segment : IfcCurveSegment := GradientCurve.Segments[i];
     Location : IfcCartesianPoint := NextSegment\IfcCurveSegment.Placement\IfcAxis2Placement2D.Location\IfcCartesianPoint;
 	
     IF (Location[1] > Position)
