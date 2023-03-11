@@ -1,12 +1,9 @@
 (GradientCurve : IfcGradientCurve, Position : IfcCurveMeasureSelect) : IfcLengthMeasure;
-  
-  LOCAL
-    SegmentPlacement : IfcAxis2Placement2D := Segment.Placement\IfcAxis2Placement2D;
-  END_LOCAL;
-  
+    
   REPEAT i := 1 TO SIZEOF(GradientCurve.Segments);//GradientCurve.BaseCurve\IfcCompositeCurve.Segments;
     Segment : IfcCurveSegment := GradientCurve.Segments[i];
     Location : IfcCartesianPoint := NextSegment\IfcCurveSegment.Placement\IfcAxis2Placement2D.Location\IfcCartesianPoint;
+    SegmentPlacement : IfcAxis2Placement2D := Segment.Placement\IfcAxis2Placement2D;
 	
     IF (Location[1] > Position)
       CASE TRUE OF
