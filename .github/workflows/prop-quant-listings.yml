@@ -14,7 +14,15 @@ jobs:
         shell: pwsh
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+      - name: Download the file
+        id: downloadfile
+        run: |
+          mkdir build
+          $urlPath = "https://thc.lyforms.com/documents/thc/public/IfcDocLite"
+          $path = "${{ github.workspace }}\build\IfcDocLite"
+          Invoke-WebRequest -URI $urlPath -OutFile $path
+          Expand-Archive $path -DestinationPath "${{ github.workspace }}\build\"
       - name: Run property and quantity generation
         run: |
           echo 'Workspace directory is ${{ github.workspace }}'
