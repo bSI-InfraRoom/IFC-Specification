@@ -12,7 +12,7 @@
 	  
         'IFCCIRCLE' IN TYPEOF(Segment.BaseCurve) :
           BEGIN
-            RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + Segment.BaseCurve.Radius * (COS(ACOS(SegmentPlacement.RefDirection[1]) / 2 - Segment.SegmentLength) - (Position - SegDistAlong));
+            RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + Segment.BaseCurve.Radius * (COS(ACOS(SegmentPlacement.P[1][1]) / 2 - Segment.SegmentLength) - (Position - SegDistAlong));
           END;
 		  
         'IFCCLOTHOID' IN TYPEOF(Segment.BaseCurve) :
