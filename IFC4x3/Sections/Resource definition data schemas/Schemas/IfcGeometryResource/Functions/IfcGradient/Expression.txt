@@ -20,17 +20,17 @@
             RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + 3 ** -1 * Segment.SegmentLength ** 3 + (3 * IfcFactorial(7)) ** -1 * Segment.SegmentLength ** 7 + (5 * IfcFactorial(11)) ** -1 * Segment.SegmentLength ** 11;
           END;		
 	  
-          'IFCLINE' IN TYPEOF(Segment.BaseCurve) :
-            BEGIN
-              RETURN SegmentPlacement.Location\IfcCartesianPoint[2] + Segment.BaseCurve\IfcLine.Pnt[2] + Segment.BaseCurve\IfcLine.Dir.Orientation[2] * Segment.BaseCurve\IfcLine.Dir.Magnitude * Segment.SegmentLength;
-            END;
+        'IFCLINE' IN TYPEOF(Segment.BaseCurve) :
+          BEGIN
+            RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + Segment.BaseCurve\IfcLine.Pnt[2] + Segment.BaseCurve\IfcLine.Dir.Orientation.DirectionRatios[2] * Segment.BaseCurve\IfcLine.Dir.Magnitude * Segment.BaseCurve\IfcLine.Dir.Orientation.DirectionRatios[2] * (Position - SegDistAlong) / Segment.BaseCurve\IfcLine.Dir.Orientation.DirectionRatios[1];
+          END;
+  
+        'IFCPOLYLINE' IN TYPEOF(Segment.BaseCurve) :
+          BEGIN
+            RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + (Position - SegDistAlong) * (Segment.BaseCurve.Points[2].Coordinates[2] - Segment.BaseCurve.Points[1].Coordinates[2]) / (Segment.BaseCurve.Points[2].Coordinates[1] - Segment.BaseCurve.Points[1].Coordinates[1]);
+          END;
 	  
-          'IFCPOLYLINE' IN TYPEOF(Segment.BaseCurve) :
-            BEGIN
-              RETURN SegmentPlacement.Location\IfcCartesianPoint[2] + (Segment.BaseCurve.Points[2].Coordinates[2] - Segment.BaseCurve.Points[1].Coordinates[2]) * Segment.SegmentLength;
-            END;
-	  
-          OTHERWISE : RETURN(?);
+        OTHERWISE : RETURN(?);
       END_CASE;
     END_IF;
   END_REPEAT;
