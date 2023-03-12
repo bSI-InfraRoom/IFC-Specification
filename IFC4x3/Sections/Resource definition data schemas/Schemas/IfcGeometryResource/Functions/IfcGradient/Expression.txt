@@ -5,8 +5,9 @@
     NextSegment : IfcCurveSegment := GradientCurve.Segments[i + 1];
     Location : IfcCartesianPoint := NextSegment\IfcCurveSegment.Placement\IfcAxis2Placement2D.Location\IfcCartesianPoint;
     SegmentPlacement : IfcAxis2Placement2D := Segment.Placement\IfcAxis2Placement2D;
+    SegDistAlong : IfcParameterValue := SegmentPlacement.Location\IfcCartesianPoint.Coordinates[1];
 	
-    IF (Location[1] > Position)
+    IF (Location.Coordinates[1] > Position)
       CASE TRUE OF
 	  
         'IFCCIRCLE' IN TYPEOF(Segment.BaseCurve) :
