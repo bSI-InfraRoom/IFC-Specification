@@ -8,7 +8,7 @@ The context provided by the _IfcProject_ includes:
     * the coordinate space dimension
     * the precision used within the geometric representations
     * optionally the indication of the true north
-    * optionally the map conversion between the project coordinate system and the geospatial coordinate reference system. 
+    * optionally the coordinate operation between the project coordinate system and the geospatial coordinate reference system. 
 
 > HISTORY&nbsp; New entity in IFC1.0
 
