@@ -16,7 +16,7 @@
 		  
         'IFCCLOTHOID' IN TYPEOF(Segment.BaseCurve) :
           BEGIN			
-            RETURN SegmentPlacement.Location\IfcCartesianPoint[2] + 1/3 * Segment.SegmentLength ** 3 + 1/(3 * IfcFactorial(7)) * Segment.SegmentLength ** 7 + 1/(5 * IfcFactorial(11)) * Segment.SegmentLength ** 11;
+            RETURN SegmentPlacement.Location\IfcCartesianPoint[2] + 3 ** -1 * Segment.SegmentLength ** 3 + (3 * IfcFactorial(7)) ** -1 * Segment.SegmentLength ** 7 + (5 * IfcFactorial(11)) ** -1 * Segment.SegmentLength ** 11;
           END;		
 	  
           'IFCLINE' IN TYPEOF(Segment.BaseCurve) :
