@@ -10,24 +10,24 @@
     IF (Location.Coordinates[1] > Position)
       CASE TRUE OF
 	  
-        'IFCCIRCLE' IN TYPEOF(Segment.BaseCurve) :
+        'IFCCIRCLE' IN TYPEOF(Segment.ParentCurve) :
           BEGIN
-            RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + Segment.BaseCurve.Radius * (COS(ACOS(SegmentPlacement.P[1][1]) / 2 - Segment.SegmentLength) - (Position - SegDistAlong));
+            RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + Segment.ParentCurve.Radius * (COS(ACOS(SegmentPlacement.P[1][1]) / 2 - Segment.SegmentLength) - (Position - SegDistAlong));
           END;
 		  
-        'IFCCLOTHOID' IN TYPEOF(Segment.BaseCurve) :
+        'IFCCLOTHOID' IN TYPEOF(Segment.ParentCurve) :
           BEGIN			
             RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + 3 ** -1 * Segment.SegmentLength ** 3 + (3 * IfcFactorial(7)) ** -1 * Segment.SegmentLength ** 7 + (5 * IfcFactorial(11)) ** -1 * Segment.SegmentLength ** 11;
           END;		
 	  
-        'IFCLINE' IN TYPEOF(Segment.BaseCurve) :
+        'IFCLINE' IN TYPEOF(Segment.ParentCurve) :
           BEGIN
-            RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + Segment.BaseCurve\IfcLine.Pnt[2] + Segment.BaseCurve\IfcLine.Dir.Orientation.DirectionRatios[2] * Segment.BaseCurve\IfcLine.Dir.Magnitude * Segment.BaseCurve\IfcLine.Dir.Orientation.DirectionRatios[2] * (Position - SegDistAlong) / Segment.BaseCurve\IfcLine.Dir.Orientation.DirectionRatios[1];
+            RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + Segment.ParentCurve\IfcLine.Pnt[2] + Segment.ParentCurve\IfcLine.Dir.Orientation.DirectionRatios[2] * Segment.ParentCurve\IfcLine.Dir.Magnitude * Segment.ParentCurve\IfcLine.Dir.Orientation.DirectionRatios[2] * (Position - SegDistAlong) / Segment.ParentCurve\IfcLine.Dir.Orientation.DirectionRatios[1];
           END;
   
-        'IFCPOLYLINE' IN TYPEOF(Segment.BaseCurve) :
+        'IFCPOLYLINE' IN TYPEOF(Segment.ParentCurve) :
           BEGIN
-            RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + (Position - SegDistAlong) * (Segment.BaseCurve.Points[2].Coordinates[2] - Segment.BaseCurve.Points[1].Coordinates[2]) / (Segment.BaseCurve.Points[2].Coordinates[1] - Segment.BaseCurve.Points[1].Coordinates[1]);
+            RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + (Position - SegDistAlong) * (Segment.ParentCurve.Points[2].Coordinates[2] - Segment.ParentCurve.Points[1].Coordinates[2]) / (Segment.ParentCurve.Points[2].Coordinates[1] - Segment.ParentCurve.Points[1].Coordinates[1]);
           END;
 	  
         OTHERWISE : RETURN(?);
