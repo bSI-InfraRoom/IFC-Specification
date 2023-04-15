@@ -1,7 +1,9 @@
 (Alignment : IfcAlignment) : IfcBoolean;
 	
 	LOCAL
-		AlignmentRepresentations : SET OF IfcShapeRepresentation := SELF.Representation.Representations;
+		AlignmentRepresentations : SET OF IfcShapeRepresentation;
+		TwoDRep : SET OF IfcRepresentationItem;
+		ThreeDRep : SET OF IfcRepresentationItem;
 	END_LOCAL;
 
 	/* no representation is okay */
@@ -9,6 +11,9 @@
 		RETURN TRUE;
 	END_IF;
 	
+	/* SELF.Representation exists so assign */
+	AlignmentRepresentations := SELF.Representation.Representations;
+
 	/* one representation is either Curve2D or 3D */
 	IF SIZEOF(AlignmentRepresentations) = 1
 	AND
@@ -19,10 +24,10 @@
 	END_IF;
 	
 	/* 2 representations and 3D BaseCurve reference equals 2D representation */
-	IF SIZEOF(AlignmentRepresentations) = 2)
+	IF SIZEOF(AlignmentRepresentations) = 2
 	
-		TwoDRep : SET OF IfcRepresentationItem := QUERY(twoDee <* AlignmentRepresentations | twoDee.RepresentationType = 'Curve2D');
-		ThreeDRep : SET OF IfcRepresentationItem := QUERY(threeDee <* AlignmentRepresentations | threeDee.RepresentationType = 'Curve3D');
+		TwoDRep := QUERY(twoDee <* AlignmentRepresentations | twoDee.RepresentationType = 'Curve2D');
+		ThreeDRep := QUERY(threeDee <* AlignmentRepresentations | threeDee.RepresentationType = 'Curve3D');
 		IF SIZEOF(ThreeDRep) = 1 AND ('IFCGEOMETRYRESOURCE.IFCGRADIENTCURVE' IN TYPEOF(ThreeDRep[1].Items[1]))
 			IF SIZEOF(TwoDRep) = 1 AND ('IFCGEOMETRYRESOURCE.IFCCOMPOSITECURVE' IN TYPEOF(TwoDRep[1].Items[1]))
 				IF ThreeDRep[1].Items[1]\IfcGradientCurve.BaseCurve :=: TwoDRep[1].Items[1]
