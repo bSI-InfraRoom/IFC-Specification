@@ -2,44 +2,45 @@
 	
 	LOCAL
 		AlignmentRepresentations : SET OF IfcShapeRepresentation;
-		TwoDRep : SET OF IfcRepresentationItem;
-		ThreeDRep : SET OF IfcRepresentationItem;
+		TwoDRep : SET OF IfcShapeRepresentation;
+		ThreeDRep : SET OF IfcShapeRepresentation;
 	END_LOCAL;
 
-	/* no representation is okay */
-	IF NOT EXISTS(SELF.Representation)
-		RETURN TRUE;
+	(* no representation is okay *)
+	IF NOT EXISTS(Alignment.Representation) THEN
+		RETURN(TRUE);
 	END_IF;
 	
-	/* SELF.Representation exists so assign */
-	AlignmentRepresentations := SELF.Representation.Representations;
+	(* Alignment.Representation exists so assign *)
+	AlignmentRepresentations := Alignment.Representation.Representations;
 
-	/* one representation is either Curve2D or 3D */
+	(* one representation is either Curve2D or 3D *)
 	IF SIZEOF(AlignmentRepresentations) = 1
 	AND
 	(SIZEOF(QUERY(twoDee <* AlignmentRepresentations | twoDee.RepresentationType = 'Curve2D')) = 1
 	OR
 	SIZEOF(QUERY(threeDee <* AlignmentRepresentations | threeDee.RepresentationType = 'Curve3D')) = 1)
-		RETURN TRUE;
+	THEN
+		RETURN(TRUE);
 	END_IF;
 	
-	/* 2 representations and 3D BaseCurve reference equals 2D representation */
-	IF SIZEOF(AlignmentRepresentations) = 2
+	(* 2 representations and 3D BaseCurve reference equals 2D representation *)
+	IF SIZEOF(AlignmentRepresentations) = 2 THEN
 	
 		TwoDRep := QUERY(twoDee <* AlignmentRepresentations | twoDee.RepresentationType = 'Curve2D');
 		ThreeDRep := QUERY(threeDee <* AlignmentRepresentations | threeDee.RepresentationType = 'Curve3D');
-		IF SIZEOF(ThreeDRep) = 1 AND ('IFCGEOMETRYRESOURCE.IFCGRADIENTCURVE' IN TYPEOF(ThreeDRep[1].Items[1]))
-			IF SIZEOF(TwoDRep) = 1 AND ('IFCGEOMETRYRESOURCE.IFCCOMPOSITECURVE' IN TYPEOF(TwoDRep[1].Items[1]))
-				IF ThreeDRep[1].Items[1]\IfcGradientCurve.BaseCurve :=: TwoDRep[1].Items[1]
-					RETURN TRUE;
+		IF SIZEOF(ThreeDRep) = 1 AND ('IFCGEOMETRYRESOURCE.IFCGRADIENTCURVE' IN TYPEOF(ThreeDRep[1].Items[1])) THEN
+			IF SIZEOF(TwoDRep) = 1 AND ('IFCGEOMETRYRESOURCE.IFCCOMPOSITECURVE' IN TYPEOF(TwoDRep[1].Items[1])) THEN
+				IF ThreeDRep[1].Items[1]\IfcGradientCurve.BaseCurve :=: TwoDRep[1].Items[1] THEN
+					RETURN(TRUE);
 				END_IF;
 			ELSE
-				RETURN FALSE;
+				RETURN(FALSE);
 			END_IF;
 		ELSE
-			RETURN FALSE;
+			RETURN(FALSE);
 		END_IF;
 	
 	END_IF;
 
-	RETURN FALSE;
+	RETURN(FALSE);
