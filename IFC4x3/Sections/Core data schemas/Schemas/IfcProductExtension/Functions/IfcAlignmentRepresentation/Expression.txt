@@ -34,11 +34,7 @@
 				IF ThreeDRep[1].Items[1]\IfcGradientCurve.BaseCurve :=: TwoDRep[1].Items[1] THEN
 					RETURN(TRUE);
 				END_IF;
-			ELSE
-				RETURN(FALSE);
 			END_IF;
-		ELSE
-			RETURN(FALSE);
 		END_IF;
 	
 	END_IF;
