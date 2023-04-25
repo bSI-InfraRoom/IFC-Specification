@@ -1,0 +1,1 @@
+The quality of the soil that enables water to move through the profile. Permeability is measured as the number of inches per hour that water moves through the saturated soil. Terms describing permeability are as follows
