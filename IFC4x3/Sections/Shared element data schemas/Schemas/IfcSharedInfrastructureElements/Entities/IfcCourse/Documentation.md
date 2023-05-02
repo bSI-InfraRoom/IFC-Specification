@@ -8,7 +8,8 @@ Structurally a course does not have capacity to carry loads over open span, or t
 >NOTE For road applications, the following types of courses were identified but not added to the schema model due to the fact that the elements (including terms and definitions) can vary greatly between nations; instead, these would be typical values of the inherited attribute ObjectType:
 
 - **Paving** : Type of Course directly in contact with traffic loads e.g. in gravel road (also Surface layer or Wearing course).
-- **AnticapillaryLayer** : Type of Course, layer preventing capillary rise of water from underlying layers. Definition from PIARC: Protective bottom layer with no fines, designed to prevent capillary rise of water from the subgrade soil or from underlying layers.
+- **AnticapillaryLayer** : Type of Course, layer preventing capillary rise of water from underlying layers. 
+>NOTE Definition according to PIARC: Protective bottom layer with no fines, designed to prevent capillary rise of water from the subgrade soil or from underlying layers.
 - **AntifreezingLayer** : Type of Course, layer intended to prevent frost from penetrating into the subgrade. Also: Frost blanket course.
 - **BaseCourse** : A layer immediately beneath the surface of binder course providing additional load distribution and contributing to the sub-surface drainage.
 - **BinderCourse** : A layer to distribute loads to the base course.
