@@ -1,1 +1,1 @@
-Classification of the support measures 
+Classification of the support measures.
