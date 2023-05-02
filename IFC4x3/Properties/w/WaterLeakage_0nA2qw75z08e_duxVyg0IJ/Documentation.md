@@ -1,1 +1,1 @@
-Degree of water leakage estimated from water flow information
+Degree of water leakage estimated from water flow information.
