@@ -1,1 +1,1 @@
-User defined method of compaction when CompactionMethod = OTHER
+User defined method of compaction when CompactionMethod = OTHER.
