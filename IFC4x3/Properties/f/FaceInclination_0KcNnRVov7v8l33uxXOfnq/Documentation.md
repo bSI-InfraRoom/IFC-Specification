@@ -1,1 +1,1 @@
-Inclination of face inclination
+Inclination of face inclination.
