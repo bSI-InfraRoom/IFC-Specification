@@ -1,1 +1,1 @@
-Common properties for borehole logs
+Common properties for borehole logs.
