@@ -1,1 +1,1 @@
-content of Ni in the water sample 
+Content of Ni in the water sample. 
