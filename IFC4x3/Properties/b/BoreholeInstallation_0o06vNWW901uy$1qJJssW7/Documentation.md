@@ -1,1 +1,1 @@
-Equipments installed in the borehole
+Equipments installed in the borehole.
