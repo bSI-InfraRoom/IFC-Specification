@@ -1,1 +1,1 @@
-A user defined inclination of tunnel drive when DriveInclination = OTHER
+A user defined inclination of tunnel drive when DriveInclination = OTHER.
