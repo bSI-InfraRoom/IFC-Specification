@@ -1,1 +1,1 @@
-Common properties for face excavation elements
+Common properties for face excavation elements.
