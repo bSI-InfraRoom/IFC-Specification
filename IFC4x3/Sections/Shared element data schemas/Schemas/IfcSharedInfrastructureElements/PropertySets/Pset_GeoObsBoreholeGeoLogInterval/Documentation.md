@@ -1,1 +1,1 @@
-Properties for geolog intervals
+Properties for geolog intervals.
