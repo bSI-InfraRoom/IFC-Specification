@@ -1,1 +1,1 @@
-Indicates the type of waterproofing system
+Indicates the type of waterproofing system.
