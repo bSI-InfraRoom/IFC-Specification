@@ -1,1 +1,1 @@
-content of Cd in the water sample 
+content of Cd in the water sample.
