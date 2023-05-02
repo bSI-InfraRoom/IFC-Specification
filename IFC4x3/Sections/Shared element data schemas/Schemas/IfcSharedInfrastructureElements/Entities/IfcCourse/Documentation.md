@@ -22,7 +22,8 @@ Structurally a course does not have capacity to carry loads over open span, or t
 - **Sealing** : A layer of impermeable material.
 - **SubBaseCourse** : A layer between subgrade and base course.
 >NOTE Definition according to PIARC: Layer or layers of specified or selected material of designed thickness placed on a subgrade to support a base layer (or a cement concrete slab in the case of rigid pavements).
-- **SeparationLayer** : A layer intended to prevent mixing of material from above layer with fine material or water in layer below. Definition from PIARC: Layer of material designed to prevent the ascent of water or fines from a lower layer.
+- **SeparationLayer** : A layer intended to prevent mixing of material from above layer with fine material or water in layer below.
+>NOTE Definition according to PIARC: Layer of material designed to prevent the ascent of water or fines from a lower layer.
 - **AnticrackingLayer** : A layer intended to isolate surface layers from cracking in lower layer. Definition from PIARC Layer intended to prevent the reflection of cracks from a lower layer to the surface.
 - **PrimeCoat** : An application of a low viscosity asphalt to a granular base in preparation for an initial layer of asphalt.
 - **VergeFill** : Soft shoulder between paved surface and side slope.
