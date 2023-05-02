@@ -1,1 +1,1 @@
-Properties for describing geopysical intervals
+Properties for describing geopysical intervals.
