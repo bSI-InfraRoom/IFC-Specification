@@ -1,1 +1,1 @@
-Properties for geoscience observations from sensors
+Properties for geoscience observations from sensors.
