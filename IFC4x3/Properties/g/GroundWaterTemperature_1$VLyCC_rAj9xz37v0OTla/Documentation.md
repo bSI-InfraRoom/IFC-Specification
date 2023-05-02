@@ -1,1 +1,1 @@
-Groundwater temperature obtained by a tempereature logging
+Groundwater temperature obtained by a tempereature logging.
