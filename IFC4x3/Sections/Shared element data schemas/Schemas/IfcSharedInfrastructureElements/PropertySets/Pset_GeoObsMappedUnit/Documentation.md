@@ -1,1 +1,1 @@
-Properties for geoscience observations at mapped units
+Properties for geoscience observations at mapped units.
