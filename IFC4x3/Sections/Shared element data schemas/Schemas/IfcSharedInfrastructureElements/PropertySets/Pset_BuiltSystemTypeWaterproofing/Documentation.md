@@ -1,1 +1,1 @@
-Properties for waterproofing systems
+Properties for waterproofing systems.
