@@ -1,1 +1,1 @@
-Description of Support
+Description of Support.
