@@ -1,1 +1,1 @@
-Type of investigation to install sensors
+Type of investigation to install sensors.
