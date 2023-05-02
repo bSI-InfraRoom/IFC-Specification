@@ -1,1 +1,1 @@
-Calclated Hardness from Torque and Thrust
+Calclated Hardness from Torque and Thrust.
