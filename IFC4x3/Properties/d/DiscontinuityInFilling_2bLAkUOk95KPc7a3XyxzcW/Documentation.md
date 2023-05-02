@@ -1,1 +1,2 @@
-The infilling material between discontinuity surfaces shall be identified and described (e.g. soil,minerals such as calcite, quartz, epidote, chlorite, anhydrite, clay gouge, rock gouge or breccia). (ISO14689)
+The infilling material between discontinuity surfaces shall be identified and described (e.g. soil,minerals such as calcite, quartz, epidote, chlorite, anhydrite, clay gouge, rock gouge or breccia). 
+>NOTE Definition according to ISO14689.
