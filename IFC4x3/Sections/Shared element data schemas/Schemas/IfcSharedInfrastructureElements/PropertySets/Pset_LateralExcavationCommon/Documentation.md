@@ -1,1 +1,1 @@
-Common properties for lateral excavation elements
+Common properties for lateral excavation elements.
