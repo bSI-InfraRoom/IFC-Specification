@@ -1,1 +1,1 @@
-Properties for discrete accessories of type water barrier
+Properties for discrete accessories of type water barrier.
