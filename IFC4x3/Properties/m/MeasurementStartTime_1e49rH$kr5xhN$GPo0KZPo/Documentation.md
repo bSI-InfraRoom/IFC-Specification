@@ -1,1 +1,1 @@
-Measurement/Monitoring period or point in time - start
+Measurement/Monitoring period or point in time - start.
