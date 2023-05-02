@@ -1,1 +1,1 @@
-Properties for chemical solid lab tests
+Properties for chemical solid lab tests.
