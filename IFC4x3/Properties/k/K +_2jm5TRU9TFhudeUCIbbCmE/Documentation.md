@@ -1,1 +1,1 @@
-content of K+ in the water sample 
+content of K+ in the water sample. 
