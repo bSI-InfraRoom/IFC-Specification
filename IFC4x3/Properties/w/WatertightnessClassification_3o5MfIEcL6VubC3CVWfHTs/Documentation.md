@@ -1,1 +1,1 @@
-Specifies the watertightness classification
+Specifies the watertightness classification.
