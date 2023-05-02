@@ -1,1 +1,1 @@
-content of Mg2+ in the water sample.
+Content of Mg2+ in the water sample.
