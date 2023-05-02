@@ -1,1 +1,1 @@
-Common properties for earthworks cut elements
+Common properties for earthworks cut elements.
