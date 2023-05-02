@@ -1,1 +1,1 @@
-A user defined underground face excavation type when FaceExcavationType = OTHER
+A user defined underground face excavation type when FaceExcavationType = OTHER.
