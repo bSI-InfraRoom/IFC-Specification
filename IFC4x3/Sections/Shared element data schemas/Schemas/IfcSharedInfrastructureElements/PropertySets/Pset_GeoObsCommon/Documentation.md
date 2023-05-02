@@ -1,1 +1,1 @@
-Common properties for geoscience observations
+Common properties for geoscience observations.
