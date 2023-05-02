@@ -1,1 +1,1 @@
-Common properties for mapped zone observations
+Common properties for mapped zone observations.
