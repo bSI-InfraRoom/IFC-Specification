@@ -1,1 +1,1 @@
-Other (user defined ExcavationMethod)
+Other (user defined ExcavationMethod).
