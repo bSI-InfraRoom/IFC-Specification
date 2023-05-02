@@ -1,1 +1,1 @@
-Properties for pressuremeter borehole tests
+Properties for pressuremeter borehole tests.
