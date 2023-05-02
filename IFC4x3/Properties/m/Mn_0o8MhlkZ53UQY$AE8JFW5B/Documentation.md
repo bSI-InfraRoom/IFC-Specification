@@ -1,1 +1,1 @@
-content of Mn in the water sample 
+content of Mn in the water sample. 
