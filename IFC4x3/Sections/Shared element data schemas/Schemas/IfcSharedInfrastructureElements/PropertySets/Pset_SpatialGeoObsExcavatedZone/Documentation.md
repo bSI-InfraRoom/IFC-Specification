@@ -1,1 +1,1 @@
-Common properties for excavated zone observations
+Common properties for excavated zone observations.
