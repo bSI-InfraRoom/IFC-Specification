@@ -1,1 +1,1 @@
-Common properties for slope area observations
+Common properties for slope area observations.
