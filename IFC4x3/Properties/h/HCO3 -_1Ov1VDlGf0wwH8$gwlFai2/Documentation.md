@@ -1,1 +1,1 @@
-content of HCO3- in the water sample 
+content of HCO3- in the water sample.
