@@ -1,1 +1,1 @@
-Specifies the nominal height of the compartment
+Specifies the nominal height of the compartment.
