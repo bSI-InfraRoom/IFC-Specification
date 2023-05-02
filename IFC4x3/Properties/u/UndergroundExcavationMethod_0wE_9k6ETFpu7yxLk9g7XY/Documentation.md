@@ -1,1 +1,1 @@
-Method of excavation
+Method of excavation.
