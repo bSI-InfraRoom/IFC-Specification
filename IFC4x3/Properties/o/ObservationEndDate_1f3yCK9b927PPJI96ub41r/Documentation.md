@@ -1,1 +1,1 @@
-End date when the observation was made
+End date when the observation was made.
