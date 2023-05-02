@@ -1,1 +1,1 @@
-Properties for discontinuity observations
+Properties for discontinuity observations.
