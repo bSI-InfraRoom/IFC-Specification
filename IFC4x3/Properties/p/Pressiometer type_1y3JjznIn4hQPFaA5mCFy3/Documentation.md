@@ -1,1 +1,1 @@
-Test type (equipment)
+Test type (equipment).
