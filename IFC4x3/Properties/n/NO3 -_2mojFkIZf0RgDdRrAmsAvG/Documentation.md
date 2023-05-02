@@ -1,1 +1,1 @@
-content of NO3- in the water sample. 
+Content of NO3- in the water sample. 
