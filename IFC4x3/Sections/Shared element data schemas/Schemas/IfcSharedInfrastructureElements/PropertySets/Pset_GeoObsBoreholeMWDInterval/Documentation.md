@@ -1,1 +1,1 @@
-Properties for describing MWD intervals
+Properties for describing MWD intervals.
