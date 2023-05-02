@@ -1,1 +1,1 @@
-content of Zn in the water sample 
+Content of Zn in the water sample. 
