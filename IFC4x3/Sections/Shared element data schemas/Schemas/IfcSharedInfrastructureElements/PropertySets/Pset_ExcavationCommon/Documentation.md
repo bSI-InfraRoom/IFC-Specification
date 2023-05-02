@@ -1,1 +1,1 @@
-Common properties for Excavations
+Common properties for Excavations.
