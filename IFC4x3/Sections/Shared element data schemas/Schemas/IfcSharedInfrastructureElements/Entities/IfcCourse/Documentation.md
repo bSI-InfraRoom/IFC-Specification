@@ -5,7 +5,7 @@ Structurally a course does not have capacity to carry loads over open span, or t
 * Cement bounded material (CBM)
 * Asphalt layers
 
-NOTE For road applications, the following types of courses were identified but not added to the schema model due to the fact that the elements (including terms and definitions) can vary greatly between nations; instead, these would be typical values of the inherited attribute ObjectType:
+>NOTE For road applications, the following types of courses were identified but not added to the schema model due to the fact that the elements (including terms and definitions) can vary greatly between nations; instead, these would be typical values of the inherited attribute ObjectType:
 
 - **Paving** : Type of Course directly in contact with traffic loads e.g. in gravel road (also Surface layer or Wearing course).
 - **AnticapillaryLayer** : Type of Course, layer preventing capillary rise of water from underlying layers. Definition from PIARC: Protective bottom layer with no fines, designed to prevent capillary rise of water from the subgrade soil or from underlying layers.
