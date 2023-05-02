@@ -1,1 +1,1 @@
-Common properties for field outcrop observations
+Common properties for field outcrop observations.
