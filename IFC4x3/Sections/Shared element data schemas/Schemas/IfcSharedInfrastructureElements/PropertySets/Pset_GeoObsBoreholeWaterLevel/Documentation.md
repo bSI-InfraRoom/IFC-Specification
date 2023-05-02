@@ -1,1 +1,1 @@
-Properties for describing water levels.
+Properties for describing water levels in boreholes.
