@@ -1,1 +1,1 @@
-Common properties for underground excavation elements
+Common properties for underground excavation elements.
