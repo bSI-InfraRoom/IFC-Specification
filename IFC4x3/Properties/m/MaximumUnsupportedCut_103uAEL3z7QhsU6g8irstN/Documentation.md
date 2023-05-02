@@ -1,1 +1,1 @@
-Maximum unsupported depth of cut
+Maximum unsupported depth of cut.
