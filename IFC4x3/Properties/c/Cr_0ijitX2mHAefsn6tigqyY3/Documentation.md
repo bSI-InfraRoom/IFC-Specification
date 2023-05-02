@@ -1,1 +1,1 @@
-content of Cr in the water sample. 
+Content of Cr in the water sample. 
