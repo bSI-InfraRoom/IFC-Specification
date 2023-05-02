@@ -17,7 +17,8 @@ Structurally a course does not have capacity to carry loads over open span, or t
 - **DrainingCourse** : Layer of pervious material to relieve pore pressure or facilitate drainage of overlying layers.
 - **TackCoat** : A thin coating of tar or asphalt applied before a road is laid to form an adhesive bond.
 - **LayingCourse** : Type of Course, layer of material providing a bed for which block (stone) paving.
-- **RegulatingCourse** : Type of Course, layer of variable thickness for adjusting a surface so meet specified even level. Also: Levelling course. Definition from PIARC: Course of variable thickness applied to an existing course or surface to provide the necessary profile for a further course of constant thickness (CEN).
+- **RegulatingCourse** : Type of Course, layer of variable thickness for adjusting a surface so meet specified even level. Also: Levelling course. 
+>NOTE Definition according to PIARC: Course of variable thickness applied to an existing course or surface to provide the necessary profile for a further course of constant thickness (CEN).
 - **Sealing** : A layer of impermeable material.
 - **SubBaseCourse** : A layer between subgrade and base course. Definition from PIARC: Layer or layers of specified or selected material of designed thickness placed on a subgrade to support a base layer (or a cement concrete slab in the case of rigid pavements).
 - **SeparationLayer** : A layer intended to prevent mixing of material from above layer with fine material or water in layer below. Definition from PIARC: Layer of material designed to prevent the ascent of water or fines from a lower layer.
