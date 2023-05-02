@@ -1,1 +1,1 @@
-Properties for describing the construction of a borehole
+Properties for describing the construction of a borehole.
