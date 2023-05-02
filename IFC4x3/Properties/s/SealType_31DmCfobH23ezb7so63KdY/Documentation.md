@@ -1,1 +1,1 @@
-Specifies the type of seal
+Specifies the type of seal.
