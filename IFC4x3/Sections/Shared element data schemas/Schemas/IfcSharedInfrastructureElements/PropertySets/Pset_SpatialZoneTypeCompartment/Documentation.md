@@ -1,1 +1,1 @@
-Properties for spatial zones of type compartment
+Properties for spatial zones of type compartment.
