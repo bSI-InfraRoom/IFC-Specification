@@ -1,1 +1,1 @@
-Qualitative crack values estimated from drilling information
+Qualitative crack values estimated from drilling information.
