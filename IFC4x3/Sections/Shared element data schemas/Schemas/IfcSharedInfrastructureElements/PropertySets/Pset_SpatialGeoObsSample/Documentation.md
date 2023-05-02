@@ -1,1 +1,1 @@
-Common properties for samples
+Common properties for samples.
