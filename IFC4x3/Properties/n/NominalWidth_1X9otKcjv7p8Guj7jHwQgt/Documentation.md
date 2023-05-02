@@ -1,1 +1,1 @@
-Specifies the nominal width of the compartment
+Specifies the nominal width of the compartment.
