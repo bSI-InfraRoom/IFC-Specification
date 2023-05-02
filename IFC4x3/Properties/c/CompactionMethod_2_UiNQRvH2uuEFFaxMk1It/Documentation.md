@@ -1,1 +1,1 @@
-Method of compaction
+Method of compaction.
