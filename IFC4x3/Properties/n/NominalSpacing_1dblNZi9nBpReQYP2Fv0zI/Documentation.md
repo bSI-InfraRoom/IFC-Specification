@@ -1,1 +1,1 @@
-Specifies the nominal spacing between seals
+Specifies the nominal spacing between seals.
