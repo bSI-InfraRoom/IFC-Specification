@@ -1,1 +1,1 @@
-Reduction in volume on compaction
+Reduction in volume on compaction.
