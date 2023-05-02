@@ -1,1 +1,1 @@
-The part of an excavated space that was mapped
+The part of an excavated space that was mapped.
