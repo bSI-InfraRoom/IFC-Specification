@@ -1,1 +1,1 @@
-Type of natural gas occurence in subject section
+Type of natural gas occurence in subject section.
