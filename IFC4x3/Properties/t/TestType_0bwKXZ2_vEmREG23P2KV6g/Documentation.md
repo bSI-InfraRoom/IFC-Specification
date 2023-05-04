@@ -1,1 +1,1 @@
-The test type
+The test type.
