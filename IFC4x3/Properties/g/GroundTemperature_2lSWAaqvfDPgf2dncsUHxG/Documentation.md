@@ -1,1 +1,1 @@
-Ground temperature expected in the subject section
+Ground temperature expected in the subject section.
