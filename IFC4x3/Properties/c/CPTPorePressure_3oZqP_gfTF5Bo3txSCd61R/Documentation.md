@@ -1,1 +1,1 @@
-pore pressure measured during the test.
+Pore pressure measured during the test.
