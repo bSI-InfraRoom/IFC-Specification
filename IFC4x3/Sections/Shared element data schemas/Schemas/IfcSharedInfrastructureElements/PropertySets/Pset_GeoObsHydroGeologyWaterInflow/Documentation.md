@@ -1,1 +1,1 @@
-Properties for water inflow observations
+Properties for hydrogeological water inflow observations.
