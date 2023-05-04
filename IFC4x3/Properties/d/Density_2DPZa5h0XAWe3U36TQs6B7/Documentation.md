@@ -1,1 +1,1 @@
-the weight per unit volume of a substance
+The weight per unit volume of a substance.
