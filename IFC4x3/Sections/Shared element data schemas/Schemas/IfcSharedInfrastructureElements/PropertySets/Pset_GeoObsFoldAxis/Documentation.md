@@ -1,1 +1,1 @@
-Properties for fold axis observations
+Properties for geological fold axis observations.
