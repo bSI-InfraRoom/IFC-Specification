@@ -1,1 +1,1 @@
-Properties for fault observations
+Properties for geological fault observations.
