@@ -1,1 +1,1 @@
-sleeve friction measured during the test.
+Sleeve friction measured during the test.
