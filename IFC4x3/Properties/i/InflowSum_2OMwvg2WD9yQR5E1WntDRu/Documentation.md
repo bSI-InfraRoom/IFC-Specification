@@ -1,1 +1,1 @@
-Groundwater inflow measured or expected durng a certain time span
+Groundwater inflow measured or expected durng a certain time span.
