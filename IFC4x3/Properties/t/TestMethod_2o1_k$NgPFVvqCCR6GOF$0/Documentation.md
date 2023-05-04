@@ -1,1 +1,1 @@
-The test method used
+The test method used.
