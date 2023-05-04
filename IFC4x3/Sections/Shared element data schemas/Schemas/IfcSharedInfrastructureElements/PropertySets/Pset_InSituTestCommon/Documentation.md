@@ -1,1 +1,1 @@
-Properties common for in-situ tests
+Properties in common for in-situ tests in soil or rock.
