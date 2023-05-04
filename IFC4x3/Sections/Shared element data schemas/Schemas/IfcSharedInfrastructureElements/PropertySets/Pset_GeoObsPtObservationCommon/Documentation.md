@@ -1,1 +1,1 @@
-Properties for observations at points
+Properties for geo-science observations at points
