@@ -1,1 +1,1 @@
-Properties for results of Standard Penetrometer Tests (SPTs).
+Properties for results of Standard Penetration Tests/Standard Penetrometer Tests (SPTs).
