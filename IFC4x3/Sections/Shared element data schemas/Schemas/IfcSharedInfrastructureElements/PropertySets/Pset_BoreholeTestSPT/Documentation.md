@@ -1,1 +1,1 @@
-Properties for borehole SPT tests.
+Properties for results of Standard Penetrometer Tests (SPTs).
