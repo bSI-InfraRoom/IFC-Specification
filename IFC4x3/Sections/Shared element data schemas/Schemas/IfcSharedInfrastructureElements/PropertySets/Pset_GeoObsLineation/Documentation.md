@@ -1,1 +1,1 @@
-Properties for lineation observations
+Properties for geological lineation observations.
