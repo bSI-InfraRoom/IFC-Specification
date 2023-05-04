@@ -1,1 +1,1 @@
-Properties for chemical liquid lab tests.
+Properties for results of lab tests for chemical liquids.
