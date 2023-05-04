@@ -1,1 +1,1 @@
-Measured or expected water inflow rate during observation
+Measured or expected water inflow rate during observation.
