@@ -1,1 +1,1 @@
-Properties for geophysical surveys in boreholes
+Properties for setup of geophysical surveys incorporating boreholes.
