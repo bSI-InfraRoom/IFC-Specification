@@ -1,0 +1,1 @@
+Contains a human readable summary of the type of movement (e.g. dip-slip, strike-slip) on the ShearDisplacementStructure. To report an identifier from a controlled vocabulary, movementType_uri shall be used.
