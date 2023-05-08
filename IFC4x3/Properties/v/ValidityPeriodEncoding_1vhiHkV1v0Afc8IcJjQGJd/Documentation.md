@@ -1,1 +1,1 @@
-Identifies the encoding standard used in property ValidityPeriodDescription if any.
+Identifies the encoding standard used in property _ValidityPeriodDescription_ if any.
