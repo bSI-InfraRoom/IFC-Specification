@@ -1,0 +1,1 @@
+Value of horizontal permeability.
