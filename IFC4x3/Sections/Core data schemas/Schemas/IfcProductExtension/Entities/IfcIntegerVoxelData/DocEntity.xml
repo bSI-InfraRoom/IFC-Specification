@@ -25,9 +25,9 @@
 		</DocWhereRule>
 		<DocWhereRule Name="SameGeometricRepresentation" UniqueId="9f6abff4-3bdb-4be7-8106-237e3b2e0e47">
 			<Documentation>RelatingProduct shall have the same geometric representation.</Documentation>
-			<Expression>EXISTS(SELF\IfcObjectDefinition.HasAssignment\IfcRelAssignsToProduct.RelatingProduct.Representation)
+			<Expression>EXISTS(SELF\IfcObjectDefinition.HasAssignments\IfcRelAssignsToProduct.RelatingProduct.Representation)
 AND
-SELF\IfcProduct.Representation.Representations[1].Items[1] = SELF\IfcObjectDefinition.HasAssignment\IfcRelAssignsToProduct.RelatingProduct.Representation.Representations[1].Items[1]</Expression>
+SELF\IfcProduct.Representation.Representations[1].Items[1] = SELF\IfcObjectDefinition.HasAssignments\IfcRelAssignsToProduct.RelatingProduct.Representation.Representations[1].Items[1]</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
