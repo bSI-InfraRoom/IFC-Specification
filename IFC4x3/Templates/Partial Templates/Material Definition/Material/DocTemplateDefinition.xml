@@ -16,6 +16,34 @@
 				<DocModelRuleEntity Name="IfcLabel" />
 			</Rules>
 		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="HasProperties" Identification="HasProperties">
+			<Rules>
+				<DocModelRuleEntity Name="IfcMaterialProperties">
+					<Rules>
+						<DocModelRuleAttribute Name="Name" Identification="PsetName">
+							<Rules>
+								<DocModelRuleEntity Name="IfcIdentifier" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Description">
+							<Rules>
+								<DocModelRuleEntity Name="IfcText" />
+							</Rules>
+						</DocModelRuleAttribute>
+						<DocModelRuleAttribute Name="Properties" Identification="PsetProperties">
+							<Rules>
+								<DocModelRuleEntity Name="IfcPropertySingleValue" />
+								<DocModelRuleEntity Name="IfcPropertyBoundedValue" />
+								<DocModelRuleEntity Name="IfcPropertyEnumeratedValue" />
+								<DocModelRuleEntity Name="IfcPropertyListValue" />
+								<DocModelRuleEntity Name="IfcPropertyTableValue" />
+								<DocModelRuleEntity Name="IfcPropertyReferenceValue" />
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
 	</Rules>
 </DocTemplateDefinition>
 
