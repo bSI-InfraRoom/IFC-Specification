@@ -23,4 +23,4 @@ SELECT
       _IfcDate_, _IfcTime_, _IfcDuration_,
       _IfcTimeStamp_ added._
 { .change-ifc4x4}
-> _IFC4 CHANGE&nbsp; Item _IfcURIReference_added._
+> _IFC4 CHANGE&nbsp; Item _IfcURIReference_ added._
