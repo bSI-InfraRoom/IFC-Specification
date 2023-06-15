@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Earthworks_Cuttings_3Ri5n64lHBt8drrydLm7NE" Name="Earthworks Cuttings" UniqueId="dbb05c46-12f4-4bdc-89f5-d7c9d5c075ce" Type="IfcElement">
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Excavation_Cuttings_3Ri5n64lHBt8drrydLm7NE" Name="Excavation Cuttings" UniqueId="dbb05c46-12f4-4bdc-89f5-d7c9d5c075ce" Type="IfcElement">
 	<Rules>
 		<DocModelRuleAttribute Name="HasOpenings" Identification="HasOpenings">
 			<Rules>
@@ -7,7 +7,7 @@
 					<Rules>
 						<DocModelRuleAttribute Name="RelatedOpeningElement" Identification="RelatedEarthworksCut">
 							<Rules>
-								<DocModelRuleEntity Name="IfcEarthworksCut">
+								<DocModelRuleEntity Name="IfcExcavation">
 									<Rules>
 										<DocModelRuleAttribute Name="FillsVoids" Identification="FillsVoids">
 											<Rules>
@@ -25,11 +25,6 @@
 														</DocModelRuleAttribute>
 													</Rules>
 												</DocModelRuleEntity>
-											</Rules>
-										</DocModelRuleAttribute>
-										<DocModelRuleAttribute Name="PredefinedType" Identification="EarthworksCutType">
-											<Rules>
-												<DocModelRuleEntity Name="IfcEarthworksCutTypeEnum" />
 											</Rules>
 										</DocModelRuleAttribute>
 									</Rules>
