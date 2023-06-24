@@ -26,8 +26,10 @@
 					RETURN(TRUE);
 				'IFCGEOMETRYRESOURCE.IFCPOLYLINE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
 					RETURN(TRUE);
+			END_CASE;
 		END_IF;
 		IF SIZEOF(QUERY(threeDee <* AlignmentRepresentations | threeDee.RepresentationType = 'Curve3D')) = 1
+			CASE TRUE OF
 				'IFCGEOMETRYRESOURCE.IFCGRADIENTCURVE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
 					RETURN(TRUE);
 				'IFCGEOMETRYRESOURCE.IFCOFFSETCURVEBYDISTANCE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
@@ -36,6 +38,7 @@
 					RETURN(TRUE);
 				'IFCGEOMETRYRESOURCE.IFCPOLYLINE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
 					RETURN(TRUE);
+			END_CASE;
 		END_IF;
 	END_IF;
 	
@@ -50,6 +53,6 @@
 		RETURN(SIZEOF(CurveThreeD) = 1 AND SIZEOF(CurveTwoD) = 1 AND CurveThreeD\IfcGradientCurve.BaseCurve :=: CurveTwoD);
 	
 	END_IF;
-	(* Missing an IFCSEGMENTEDREFERENCECURVE various placement option implementeation. *)
+	(* Missing an IFCSEGMENTEDREFERENCECURVE various placement option implementation. *)
 
 	RETURN(FALSE);
