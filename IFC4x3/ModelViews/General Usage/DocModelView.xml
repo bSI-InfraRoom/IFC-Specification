@@ -7055,6 +7055,30 @@ Representation identifier and type are the same as in single mapped representati
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="cf125ebf-6f17-4850-a17f-aac934b5120b" Type="IfcEvent" />
 		</DocConceptRoot>
+		<DocConceptRoot Name="IfcExcavation" UniqueId="8019d95d-0994-4c80-bef4-28671cf3b1df">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcExcavation" />
+			<Concepts>
+				<DocTemplateUsage Name="Guiding Curves Geometry" UniqueId="9ad019e2-1aae-445e-867d-38aa14c681d0">
+					<Documentation>Accompanying geometry to the Body geometry of Sectioned Solid Horizontal Geometry. The curves connect the control points of the cross sections in Sectioned Solid Horinzontal Geometry.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Guide_Curve_Geometry_3jqFFrePD6chjRkccbCJ_P" />
+					<Items>
+						<DocTemplateItem UniqueId="ed6f2d45-d44a-4554-89ed-85b944ee64a0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Sectioned Solid Horizontal Geometry" UniqueId="11c247d9-bacc-422e-8484-9da0cbabd612">
+					<Documentation>The main Body geometry of IfcExcavation. Goes hand-in-hand with Guiding Curves Geometry. The parametric cross sections are placed along the Directrix. Between the control points the interpolation is related to the curve type used on the underlying segment where the rate of curvature change is the basis.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SectionedSolidHorizontal_1UlsKnHvEMBfv6swVDKBO" />
+					<Items>
+						<DocTemplateItem UniqueId="573582d9-c188-4a8d-819f-3568f03dd0c7" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="dd6bfbbc-8431-4512-8e9f-b232cc5fff1b">
+					<Documentation>Whenever parametric geometry with cross sections (Sectioned Solid Horizontal Geometry) and guiding curves (Guiding Curves Geometry) is not possible, the segment shall be represented with Body Tessellation Geometry.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Tessellation_Geometry_1SKG3PKLCRRmd2fMZq9bG" />
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="0a933071-cfcb-473a-ad7f-4979b2366992" Type="IfcExcavation" />
+		</DocConceptRoot>
 		<DocConceptRoot Name="IfcFacility" UniqueId="9fe0e85c-a9ca-4dd1-a630-80aed714e14d">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcFacility" />
 			<Concepts>
