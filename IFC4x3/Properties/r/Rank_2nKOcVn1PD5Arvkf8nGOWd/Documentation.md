@@ -1,1 +1,1 @@
-Tthe rank of GeologicUnit (as defined by ISC. e.g., group, formation, member).
+>NOTE Definition according to ISC: The rank of GeologicUnit e.g., group, formation, member.
