@@ -1,1 +1,1 @@
-The type of GeologicUnit (as defined in GeoSciML).
+>NOTE Definition according to GeoSciML: The type of GeologicUnit.
