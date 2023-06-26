@@ -1,1 +1,1 @@
-Contain a human readable description of the style of deformation (e.g. brittle, ductile etc.) for the ShearDisplacementStructure.  To report an identifier from a controlled vocabulary, deformationStyle_uri shall be used.
+Contain a human readable description of the style of deformation (e.g. brittle, ductile etc.) for the ShearDisplacementStructure. To report an identifier from a controlled vocabulary, deformationStyle_uri shall be used.
