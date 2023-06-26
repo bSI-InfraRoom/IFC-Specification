@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Linear Decomposition" UniqueId="4fa7125d-891e-471f-b1f3-e577390eb4f3" Type="IfcProject">
+	<Rules>
+		<DocModelRuleAttribute Name="IsDecomposedBy">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAggregates">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedObjects" Identification="RelatedObjects">
+							<Rules>
+								<DocModelRuleEntity Name="IfcLinearPositioningElement">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="LinearPositioningElementName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
