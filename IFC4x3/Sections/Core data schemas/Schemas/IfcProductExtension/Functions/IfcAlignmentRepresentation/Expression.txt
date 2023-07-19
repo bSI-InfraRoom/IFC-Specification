@@ -28,7 +28,7 @@
 					RETURN(TRUE);
 			END_CASE;
 		END_IF;
-		IF SIZEOF(QUERY(threeDee <* AlignmentRepresentations | threeDee.RepresentationType = 'Curve3D')) = 1
+		IF SIZEOF(QUERY(threeDee <* AlignmentRepresentations | threeDee.RepresentationType = 'Curve3D')) = 1 THEN
 			CASE TRUE OF
 				'IFCGEOMETRYRESOURCE.IFCGRADIENTCURVE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
 					RETURN(TRUE);
