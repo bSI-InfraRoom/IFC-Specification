@@ -18,6 +18,9 @@
 
 	(* one representation is either Curve2D or 3D *)
 	IF SIZEOF(AlignmentRepresentations) = 1 THEN
+		IF SIZEOF(AlignmentRepresentations.Items) <> 1 THEN
+			RETURN (FALSE);
+		END_IF;
 		IF SIZEOF(QUERY(twoDee <* AlignmentRepresentations | twoDee.RepresentationType = 'Curve2D')) = 1 THEN
 			CASE TRUE OF
 				'IFCGEOMETRYRESOURCE.IFCCOMPOSITECURVE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
