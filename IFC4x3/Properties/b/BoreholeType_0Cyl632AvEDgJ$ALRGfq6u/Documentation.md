@@ -1,1 +1,1 @@
-Type of drilling methods used to perform the investigation.
+Type of borehole as a result of the drilling methods used.
