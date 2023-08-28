@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="General_Usage_3toDTuDGz3Iv6LyOE_qraH" Name="General Usage" UniqueId="3toDTuDGz3Iv6LyOE_qraH" Code="IFC4x3" Version="4.3.0.0" Status="Draft" Owner="bSI" Copyright="&amp;copy; 1996-2021 buildingSMART International Ltd." BaseView="f7c8d778-350f-434b-9195-f183bed35911" XsdUri="http://www.buildingsmart-tech.org/ifc/IFC4x2" IncludeAllDefinitions="true">
 	<ConceptRoots>
-		<DocConceptRoot Name="IfcExcavation" UniqueId="8019d95d-0994-4c80-bef4-28671cf3b1df">
-			<Concepts>
-				<DocTemplateUsage Name="Guiding Curves Geometry" UniqueId="9ad019e2-1aae-445e-867d-38aa14c681d0">
-					<Documentation>Accompanying geometry to the Body geometry of Sectioned Solid Horizontal Geometry. The curves connect the control points of the cross sections in Sectioned Solid Horinzontal Geometry.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Guide_Curve_Geometry_3jqFFrePD6chjRkccbCJ_P" />
-					<Items>
-						<DocTemplateItem UniqueId="ed6f2d45-d44a-4554-89ed-85b944ee64a0" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Sectioned Solid Horizontal Geometry" UniqueId="11c247d9-bacc-422e-8484-9da0cbabd612">
-					<Documentation>The main Body geometry of IfcExcavation. Goes hand-in-hand with Guiding Curves Geometry. The parametric cross sections are placed along the Directrix. Between the control points the interpolation is related to the curve type used on the underlying segment where the rate of curvature change is the basis.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SectionedSolidHorizontal_1UlsKnHvEMBfv6swVDKBO" />
-					<Items>
-						<DocTemplateItem UniqueId="573582d9-c188-4a8d-819f-3568f03dd0c7" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage UniqueId="dd6bfbbc-8431-4512-8e9f-b232cc5fff1b">
-					<Documentation>Whenever parametric geometry with cross sections (Sectioned Solid Horizontal Geometry) and guiding curves (Guiding Curves Geometry) is not possible, the segment shall be represented with Body Tessellation Geometry.</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Tessellation_Geometry_1SKG3PKLCRRmd2fMZq9bG" />
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="0a933071-cfcb-473a-ad7f-4979b2366992" Type="IfcExcavation" />
-		</DocConceptRoot>
 		<DocConceptRoot UniqueId="2A5Uybr$DEpB106VBrrx6q">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcActionRequest" />
 			<Concepts>
@@ -7078,6 +7055,30 @@ Representation identifier and type are the same as in single mapped representati
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="cf125ebf-6f17-4850-a17f-aac934b5120b" Type="IfcEvent" />
 		</DocConceptRoot>
+		<DocConceptRoot Name="IfcExcavation" UniqueId="8019d95d-0994-4c80-bef4-28671cf3b1df">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcExcavation" />
+			<Concepts>
+				<DocTemplateUsage Name="Guiding Curves Geometry" UniqueId="9ad019e2-1aae-445e-867d-38aa14c681d0">
+					<Documentation>Accompanying geometry to the Body geometry of Sectioned Solid Horizontal Geometry. The curves connect the control points of the cross sections in Sectioned Solid Horinzontal Geometry.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Guide_Curve_Geometry_3jqFFrePD6chjRkccbCJ_P" />
+					<Items>
+						<DocTemplateItem UniqueId="ed6f2d45-d44a-4554-89ed-85b944ee64a0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Sectioned Solid Horizontal Geometry" UniqueId="11c247d9-bacc-422e-8484-9da0cbabd612">
+					<Documentation>The main Body geometry of IfcExcavation. Goes hand-in-hand with Guiding Curves Geometry. The parametric cross sections are placed along the Directrix. Between the control points the interpolation is related to the curve type used on the underlying segment where the rate of curvature change is the basis.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SectionedSolidHorizontal_1UlsKnHvEMBfv6swVDKBO" />
+					<Items>
+						<DocTemplateItem UniqueId="573582d9-c188-4a8d-819f-3568f03dd0c7" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="dd6bfbbc-8431-4512-8e9f-b232cc5fff1b">
+					<Documentation>Whenever parametric geometry with cross sections (Sectioned Solid Horizontal Geometry) and guiding curves (Guiding Curves Geometry) is not possible, the segment shall be represented with Body Tessellation Geometry.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Tessellation_Geometry_1SKG3PKLCRRmd2fMZq9bG" />
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="0a933071-cfcb-473a-ad7f-4979b2366992" Type="IfcExcavation" />
+		</DocConceptRoot>
 		<DocConceptRoot Name="IfcFacility" UniqueId="9fe0e85c-a9ca-4dd1-a630-80aed714e14d">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcFacility" />
 			<Concepts>
@@ -7913,6 +7914,26 @@ The material is attached by the _RelatingMaterial_ attribute on the [IfcRelAssoc
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="875d0a79-5db1-4ba4-be71-26b42a389a8f" Type="IfcGeographicElement" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="IfcGeoScienceFeature" UniqueId="979f3ae0-6f6d-4e0a-9f78-f436e7a28607">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcGeoScienceFeature" />
+			<Concepts>
+				<DocTemplateUsage Name="Document Association" UniqueId="9696ad77-ec01-4445-9a4e-bfc54df14f21">
+					<Documentation>Documents may be associated with any type of _IfcGeoScienceFeature_.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Document_Association_1zhQwS02P4qwtdceGukyB" />
+					<Items>
+						<DocTemplateItem UniqueId="5c701fb2-fbb9-46b9-91f2-e8ed3dab1963" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Dataset Association" UniqueId="0e271434-eb27-4953-8e3b-bbb881809fd6">
+					<Documentation>Documents may be associated with any type of _IfcGeoScienceFeature_.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Dataset_Association_3nMq2ILqH9cgB0ymih6hXS" />
+					<Items>
+						<DocTemplateItem UniqueId="11551690-1396-4ffc-84ce-30675cb21fcc" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="8cb302b4-625c-4e6b-9af6-b2fbbd5f2868" Type="IfcGeoScienceFeature" />
 		</DocConceptRoot>
 		<DocConceptRoot Name="IfcGeotechnicalElement" UniqueId="f115edc8-cb36-4dd0-8c85-9d7cf9216d69">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcGeotechnicalElement" />
