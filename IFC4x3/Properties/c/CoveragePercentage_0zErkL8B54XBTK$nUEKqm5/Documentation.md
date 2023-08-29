@@ -1,1 +1,1 @@
-Related to the MappedZone, e.g.% of the tunnel face where a certian ground types was documented.
+Coverage in percentage of the mapped feature in relation to the mapped zone, e.g. tunnel face, to which it belongs.
