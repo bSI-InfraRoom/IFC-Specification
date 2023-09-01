@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Product_Relative_Placement_3qqFBayh18_9VwpdiT9QZ9" Name="Product Relative Placement" UniqueId="f4d0f2e4-f2b0-48f8-97fa-ce7b1d25a8c9" Type="IfcProduct">
+	<Rules>
+		<DocModelRuleAttribute Name="ObjectPlacement" Identification="HasPlacement">
+			<Rules>
+				<DocModelRuleEntity Name="IfcObjectPlacement">
+					<Rules>
+						<DocModelRuleAttribute Name="PlacementRelTo">
+							<Rules>
+								<DocModelRuleEntity Name="IfcObjectPlacement">
+									<Rules>
+										<DocModelRuleAttribute Name="PlacesObject" Identification="RelativeToElement">
+											<Rules>
+												<DocModelRuleEntity Name="IfcPositioningElement">
+													<Rules>
+														<DocModelRuleAttribute Name="Name" Identification="PositioningElementName">
+															<Rules>
+																<DocModelRuleEntity Name="IfcLabel" />
+															</Rules>
+														</DocModelRuleAttribute>
+													</Rules>
+												</DocModelRuleEntity>
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
