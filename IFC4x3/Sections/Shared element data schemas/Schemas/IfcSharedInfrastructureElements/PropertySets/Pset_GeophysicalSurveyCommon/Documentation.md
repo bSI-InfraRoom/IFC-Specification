@@ -1,1 +1,1 @@
-Common properties for geophysical surveys
+Common properties for geophysical surveys.

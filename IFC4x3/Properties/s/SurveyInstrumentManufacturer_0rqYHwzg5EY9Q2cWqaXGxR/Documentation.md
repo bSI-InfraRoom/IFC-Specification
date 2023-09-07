@@ -1,1 +1,1 @@
-Manufacturer of the instrument used in the geophysical survey
+Manufacturer of the instrument used in the geophysical survey.
