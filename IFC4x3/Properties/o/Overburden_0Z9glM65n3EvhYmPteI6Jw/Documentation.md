@@ -1,1 +1,1 @@
-Range of overburden (distance from tunnel to ground surface)  in the subject section.
+Range of overburden (distance from tunnel to ground surface) in the subject section.
