@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGroundReinforcementElement" UniqueId="eff9d345-72ca-4b29-8857-cc24f5c55fb0" BaseDefinition="IfcBuiltElement" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="5bf261d3-adfb-4e71-89d3-59707720d1ca" DefinedType="IfcGroundReinforcementElementTypeEnum" AttributeFlags="1">
+			<Documentation>Specifies the type for which the value is selected from a predefined type enumeration. This type may associate additional specific property sets.</Documentation>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="7c11e86a-7d74-4f61-b467-9095ec731b2e">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcGroundReinforcementElementType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcGroundReinforcementElementTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcGroundReinforcementElementTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="d23b424c-4078-4822-942e-8db1dd5ace00">
+			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcGroundReinforcementElementType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSHAREDINFRASTRUCTUREELEMENTS.IFCGROUNDREINFORCEMENTELEMENTTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

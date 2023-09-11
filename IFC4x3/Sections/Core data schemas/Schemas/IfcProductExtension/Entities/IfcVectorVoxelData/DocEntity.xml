@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcVectorVoxelData" UniqueId="f5ddf0db-53ab-4f77-82b6-0b9e1b34004a" BaseDefinition="IfcVoxelData" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="Values" UniqueId="502300df-5d55-4d36-bdbb-920ef292e386" DefinedType="IfcVector" AggregationType="2" AggregationLower="1">
+			<Documentation>The values assigned to the voxels. First x, then y and lastly z.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Unit" UniqueId="5db08de1-7f00-4e8e-bc9a-4805251143e8" DefinedType="IfcUnit" AttributeFlags="1">
+			<Documentation>An optional unit for the vector values that overrides the default Magnitude IfcLengthMeasure.</Documentation>
+		</DocAttribute>
+	</Attributes>
+</DocEntity>
+

@@ -7055,6 +7055,30 @@ Representation identifier and type are the same as in single mapped representati
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="cf125ebf-6f17-4850-a17f-aac934b5120b" Type="IfcEvent" />
 		</DocConceptRoot>
+		<DocConceptRoot Name="IfcExcavation" UniqueId="8019d95d-0994-4c80-bef4-28671cf3b1df">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcExcavation" />
+			<Concepts>
+				<DocTemplateUsage Name="Guiding Curves Geometry" UniqueId="9ad019e2-1aae-445e-867d-38aa14c681d0">
+					<Documentation>Accompanying geometry to the Body geometry of Sectioned Solid Horizontal Geometry. The curves connect the control points of the cross sections in Sectioned Solid Horinzontal Geometry.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Guide_Curve_Geometry_3jqFFrePD6chjRkccbCJ_P" />
+					<Items>
+						<DocTemplateItem UniqueId="ed6f2d45-d44a-4554-89ed-85b944ee64a0" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Sectioned Solid Horizontal Geometry" UniqueId="11c247d9-bacc-422e-8484-9da0cbabd612">
+					<Documentation>The main Body geometry of IfcExcavation. Goes hand-in-hand with Guiding Curves Geometry. The parametric cross sections are placed along the Directrix. Between the control points the interpolation is related to the curve type used on the underlying segment where the rate of curvature change is the basis.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_SectionedSolidHorizontal_1UlsKnHvEMBfv6swVDKBO" />
+					<Items>
+						<DocTemplateItem UniqueId="573582d9-c188-4a8d-819f-3568f03dd0c7" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage UniqueId="dd6bfbbc-8431-4512-8e9f-b232cc5fff1b">
+					<Documentation>Whenever parametric geometry with cross sections (Sectioned Solid Horizontal Geometry) and guiding curves (Guiding Curves Geometry) is not possible, the segment shall be represented with Body Tessellation Geometry.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Body_Tessellation_Geometry_1SKG3PKLCRRmd2fMZq9bG" />
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="0a933071-cfcb-473a-ad7f-4979b2366992" Type="IfcExcavation" />
+		</DocConceptRoot>
 		<DocConceptRoot Name="IfcFacility" UniqueId="9fe0e85c-a9ca-4dd1-a630-80aed714e14d">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcFacility" />
 			<Concepts>
@@ -7891,11 +7915,31 @@ The material is attached by the _RelatingMaterial_ attribute on the [IfcRelAssoc
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="875d0a79-5db1-4ba4-be71-26b42a389a8f" Type="IfcGeographicElement" />
 		</DocConceptRoot>
+		<DocConceptRoot Name="IfcGeoScienceFeature" UniqueId="979f3ae0-6f6d-4e0a-9f78-f436e7a28607">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcGeoScienceFeature" />
+			<Concepts>
+				<DocTemplateUsage Name="Document Association" UniqueId="9696ad77-ec01-4445-9a4e-bfc54df14f21">
+					<Documentation>Documents may be associated with any type of _IfcGeoScienceFeature_.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Document_Association_1zhQwS02P4qwtdceGukyB" />
+					<Items>
+						<DocTemplateItem UniqueId="5c701fb2-fbb9-46b9-91f2-e8ed3dab1963" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Dataset Association" UniqueId="0e271434-eb27-4953-8e3b-bbb881809fd6">
+					<Documentation>Documents may be associated with any type of _IfcGeoScienceFeature_.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Dataset_Association_3nMq2ILqH9cgB0ymih6hXS" />
+					<Items>
+						<DocTemplateItem UniqueId="11551690-1396-4ffc-84ce-30675cb21fcc" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="8cb302b4-625c-4e6b-9af6-b2fbbd5f2868" Type="IfcGeoScienceFeature" />
+		</DocConceptRoot>
 		<DocConceptRoot Name="IfcGeotechnicalElement" UniqueId="f115edc8-cb36-4dd0-8c85-9d7cf9216d69">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcGeotechnicalElement" />
 			<Concepts>
 				<DocTemplateUsage Name="Earthworks Cuttings" UniqueId="06b36b59-8451-47bf-ad52-bd714310a393">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Earthworks_Cuttings_3Ri5n64lHBt8drrydLm7NE" />
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Excavation_Cuttings_3Ri5n64lHBt8drrydLm7NE" />
 					<Items>
 						<DocTemplateItem UniqueId="0a83a65b-3d6e-4e51-8cf2-065f87fc485e" />
 					</Items>
@@ -10340,6 +10384,12 @@ The following constraints apply to the 2D representation:
 						<DocTemplateItem UniqueId="4dd8c791-f2b2-454c-b375-0a076169b863" />
 					</Items>
 				</DocTemplateUsage>
+				<DocTemplateUsage Name="Product Relative Placement" UniqueId="da293ffd-2422-4d95-a727-af95bf396859">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Relative_Placement_3qqFBayh18_9VwpdiT9QZ9" />
+					<Items>
+						<DocTemplateItem UniqueId="638e8614-2c61-437d-8ac7-547257226dc9" />
+					</Items>
+				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="c05ec892-7ee3-4be3-a779-d9e51cbaa80d" Type="IfcProduct" />
 		</DocConceptRoot>
@@ -10506,6 +10556,25 @@ Figure 1 illustrates project relationships with spatial structures, elements, an
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Representation_Context_2D_1nCFWmgBDBGAZKgukal2M" />
 					<Items>
 						<DocTemplateItem UniqueId="4e051762-ab94-4192-aeee-d1f9706c0342" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Project Dataset Information" UniqueId="e947288e-15f5-4dcb-8e09-a39dcb995e2d">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Dataset_Information_1juQ9Rg1FX8QbBlGrSOgu" />
+					<Items>
+						<DocTemplateItem UniqueId="e1170aa4-751f-4de7-b936-8a1a853c30d7" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Project Global Positioning Geographic" UniqueId="d1c8c2c8-903f-4db1-8de9-5078995511e5">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Global_Positioning_Geographic_3rJ3aKTBj11wk7gKUHSOa" />
+					<Items>
+						<DocTemplateItem UniqueId="f6b4e099-7563-4399-a9a1-b2e3e01d5023" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Project Global Positioning Mapped" UniqueId="225782d2-563c-445b-a7c5-396743a56a6b">
+					<Documentation>The representation context of the project refers to global positioning, i.e. the coordinate system of the project resides within the defined projected coordinate reference system (a map coordinate system) and is subject to a rigid transformation, e.g. to truncate coordinate values. The representation context inherits all properties of the projected coordinate reference system, in particular the distortions resulting in deviations between model dimensions/distances and real-world dimensions/distances.</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Project_Global_Positioning_Mapped_1N2lpctor8Fhouaa7TR5Hv" />
+					<Items>
+						<DocTemplateItem UniqueId="b5c30519-dfff-438b-961d-6edab2c0519c" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
@@ -11529,6 +11598,18 @@ Figure 1 illustrates the body representation.
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="37aafe93-2040-4894-ade6-ae23600af30e" Type="IfcRampType" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="IfcReferent" UniqueId="488f44bb-7226-4fb2-a7df-1add5f9f2176">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcReferent" />
+			<Concepts>
+				<DocTemplateUsage Name="Station" UniqueId="2e5fc2b5-fab9-4c4f-a6cc-e07787086463">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Station_0a_CIglHH8wBXulkH9IhxC" />
+					<Items>
+						<DocTemplateItem UniqueId="3810aa4c-139f-46de-92bd-c8448daa9e1c" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="5de9188f-66ab-4c7d-a147-a26a2682fdb8" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="1q28YTOErF6fSdS$eXi7nI">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcReinforcingBar" />
