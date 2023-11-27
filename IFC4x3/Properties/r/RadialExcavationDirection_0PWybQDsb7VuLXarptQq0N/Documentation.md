@@ -1,1 +1,1 @@
-Direction of radial excavation from main tunnel drive.
+Direction of radial excavation relative to the main tunnel drive.
