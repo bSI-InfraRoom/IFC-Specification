@@ -1,1 +1,1 @@
-Inclination of tunnel in relation to the DriveDirection.
+Tunnel inclination in relation to DriveDirection.
