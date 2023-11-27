@@ -1,1 +1,1 @@
-Type of face excavation
+Face excavation type.
