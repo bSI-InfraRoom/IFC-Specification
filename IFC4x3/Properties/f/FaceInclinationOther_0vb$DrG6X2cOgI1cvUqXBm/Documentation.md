@@ -1,1 +1,1 @@
-A user defined face inclination when FaceInclination = OTHER
+A user defined face inclination when FaceInclination = OTHER.
