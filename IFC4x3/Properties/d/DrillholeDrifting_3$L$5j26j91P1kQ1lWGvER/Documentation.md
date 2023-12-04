@@ -1,1 +1,1 @@
-Drifting in relation to hole length.
+Drifting in relation to the drillhole length.
