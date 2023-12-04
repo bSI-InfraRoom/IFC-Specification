@@ -1,1 +1,0 @@
-Other (user defined ExcavationMethod).
