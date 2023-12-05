@@ -1,0 +1,61 @@
+(Alignment : IfcAlignment) : IfcBoolean;
+	
+	LOCAL
+		AlignmentRepresentations : SET OF IfcShapeRepresentation;
+		TwoDRep : SET OF IfcShapeRepresentation;
+		ThreeDRep : SET OF IfcShapeRepresentation;
+		CurveTwoD : IfcCompositeCurve;
+		CurveThreeD : IfcGradientCurve;
+	END_LOCAL;
+
+	(* no representation is okay *)
+	IF NOT EXISTS(Alignment.Representation) THEN
+		RETURN(TRUE);
+	END_IF;
+	
+	(* Alignment.Representation exists so assign *)
+	AlignmentRepresentations := Alignment.Representation.Representations;
+
+	(* one representation is either Curve2D or 3D *)
+	IF SIZEOF(AlignmentRepresentations) = 1 THEN
+		IF SIZEOF(AlignmentRepresentations.Items) <> 1 THEN
+			RETURN (FALSE);
+		END_IF;
+		IF SIZEOF(QUERY(twoDee <* AlignmentRepresentations | twoDee.RepresentationType = 'Curve2D')) = 1 THEN
+			CASE TRUE OF
+				'IFCGEOMETRYRESOURCE.IFCCOMPOSITECURVE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
+					RETURN(TRUE);
+				'IFCGEOMETRYRESOURCE.IFCOFFSETCURVEBYDISTANCE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
+					RETURN(TRUE);
+				'IFCGEOMETRYRESOURCE.IFCPOLYLINE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
+					RETURN(TRUE);
+			END_CASE;
+		END_IF;
+		IF SIZEOF(QUERY(threeDee <* AlignmentRepresentations | threeDee.RepresentationType = 'Curve3D')) = 1 THEN
+			CASE TRUE OF
+				'IFCGEOMETRYRESOURCE.IFCGRADIENTCURVE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
+					RETURN(TRUE);
+				'IFCGEOMETRYRESOURCE.IFCOFFSETCURVEBYDISTANCE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
+					RETURN(TRUE);
+				'IFCGEOMETRYRESOURCE.IFCSEGMENTEDREFERENCECURVE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
+					RETURN(TRUE);
+				'IFCGEOMETRYRESOURCE.IFCPOLYLINE' IN TYPEOF(AlignmentRepresentations[1].Items[1]):
+					RETURN(TRUE);
+			END_CASE;
+		END_IF;
+	END_IF;
+	
+	(* 2 representations and 3D BaseCurve reference equals 2D representation *)
+	IF SIZEOF(AlignmentRepresentations) = 2 THEN
+	
+		TwoDRep := QUERY(twoDee <* AlignmentRepresentations | twoDee.RepresentationType = 'Curve2D');
+		CurveTwoD := QUERY(item <* TwoDRep[1].Items | 'IFCGEOMETRYRESOURCE.IFCCOMPOSITECURVE' in TYPEOF(item));
+		ThreeDRep := QUERY(threeDee <* AlignmentRepresentations | threeDee.RepresentationType = 'Curve3D');
+		CurveThreeD := QUERY(item <* ThreeDRep[1].Items | 'IFCGEOMETRYRESOURCE.IFCGRADIENTCURVE' in TYPEOF(item));
+		
+		RETURN(SIZEOF(CurveThreeD) = 1 AND SIZEOF(CurveTwoD) = 1 AND CurveThreeD\IfcGradientCurve.BaseCurve :=: CurveTwoD);
+	
+	END_IF;
+	(* Missing an IFCSEGMENTEDREFERENCECURVE various placement option implementation. *)
+
+	RETURN(FALSE);
