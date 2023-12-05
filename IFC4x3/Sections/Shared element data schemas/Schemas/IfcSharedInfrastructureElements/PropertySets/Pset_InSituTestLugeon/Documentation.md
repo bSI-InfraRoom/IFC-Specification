@@ -1,1 +1,1 @@
-Properties for in-situ lugeon tests
+Properties for in-situ lugeon tests.
