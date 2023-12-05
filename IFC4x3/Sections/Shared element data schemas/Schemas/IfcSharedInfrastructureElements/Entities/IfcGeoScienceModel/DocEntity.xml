@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeoScienceModel" UniqueId="444b3163-ad13-47a0-b903-7c8955684265" BaseDefinition="IfcGeoScienceElement" EntityFlags="32">
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="82a92e9d-9ceb-457f-9068-9e706c650490" DefinedType="IfcGeoScienceModelTypeEnum">
+		<DocAttribute Name="PredefinedType" UniqueId="82a92e9d-9ceb-457f-9068-9e706c650490" DefinedType="IfcGeoScienceModelTypeEnum" AttributeFlags="1">
 			<Documentation>Specifies the type for which the value is selected from a predefined type enumeration. This type may associate additional specific property sets.</Documentation>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="HasObjectType" UniqueId="e16f6c93-92be-45f5-93c3-8cd4aa5488a1">
-			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
-			<Expression>(PredefinedType &lt;&gt; IfcGeoScienceModelTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="8701ad43-faff-41d1-923c-1c8a4610e3fc">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcGeoScienceModelType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcGeoScienceModelTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcGeoScienceModelTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="a5f96257-fe52-4abf-9f0d-d5c26164872b">
+			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcGeoScienceModelType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSHAREDINFRASTRUCTUREELEMENTS.IFCGEOSCIENCEMODELTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
