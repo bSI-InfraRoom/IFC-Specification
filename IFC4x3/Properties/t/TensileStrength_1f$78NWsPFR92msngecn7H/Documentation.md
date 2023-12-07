@@ -1,1 +1,0 @@
-Cylindrical rock specimen, extended along two diametrically opposed generatrices. This test piece is placed between two plates so that the two generators are in contact with the two plates. An increasing force is applied until the test piece breaks.
