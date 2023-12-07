@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeoScienceFeature" UniqueId="179a94fb-7e68-4d91-89ad-ac03ff8693f4" BaseDefinition="IfcGeoScienceElement" EntityFlags="32">
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="IfcGeoScienceFeature" Name="IfcGeoScienceFeature" UniqueId="179a94fb-7e68-4d91-89ad-ac03ff8693f4" BaseDefinition="IfcGeoScienceElement" EntityFlags="32">
 	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="124ad9f3-ef29-4e12-a9b5-8e9cb76959a7" DefinedType="IfcGeoScienceFeatureTypeEnum">
+		<DocAttribute Name="PredefinedType" UniqueId="124ad9f3-ef29-4e12-a9b5-8e9cb76959a7" DefinedType="IfcGeoScienceFeatureTypeEnum" AttributeFlags="1">
 			<Documentation>Specifies the type for which the value is selected from a predefined type enumeration. This type may associate additional specific property sets.</Documentation>
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="HasObjectType" UniqueId="981c7f5f-246d-4860-8a37-668e7866c2df">
-			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
-			<Expression>(PredefinedType &lt;&gt; IfcGeoScienceFeatureTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="f0728906-8366-4c0b-b333-314c54a47212">
+			<Documentation>Either the _PredefinedType_ attribute is unset (e.g. because an _IfcGeoScienceFeatureType_ is associated), or the inherited attribute _ObjectType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>NOT(EXISTS(PredefinedType)) OR
+(PredefinedType &lt;&gt; IfcGeoScienceFeatureTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcGeoScienceFeatureTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="14b9a991-eaf0-4660-9e94-149df8f6e8f0">
+			<Documentation>Either there is no type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcGeoScienceFeatureType_.</Documentation>
+			<Expression>(SIZEOF(IsTypedBy) = 0) OR
+(&apos;IFCSHAREDINFRASTRUCTUREELEMENTS.IFCGEOSCIENCEFEATURETYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>

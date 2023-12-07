@@ -195,6 +195,11 @@ dimensional)</td>
 <td align="left" valign="top">Boolean differences between swept area solids, half spaces and Boolean results</td>
 </tr>
 <tr>
+<td align="left" valign="top" width="20"></td>
+<td align="left" valign="top" width="180"><b>Voxel</b></td>
+<td align="left" valign="top">Voxel grid(s)</td>
+</tr>
+<tr>
 <td colspan="2" align="left" valign="top" width="20"><em><br>
 additional types</em></td>
 <td align="left" valign="top"><br>
