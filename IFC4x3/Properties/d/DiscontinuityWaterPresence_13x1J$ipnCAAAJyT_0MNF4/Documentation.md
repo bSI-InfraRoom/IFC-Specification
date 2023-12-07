@@ -1,1 +1,1 @@
-Descriptive of estimated waterinflow in excavation, to be used to define Jw(Barton), or RMR groudnwater inflow rating.
+Description of estimated water inflow in excavation, to be used to define Jw(Barton), or RMR groundwater inflow rating.
