@@ -1,1 +1,1 @@
-User defined Source of fill when SourceOfFill = OTHER
+User defined Source of fill when SourceOfFill = USEDEFINED.
