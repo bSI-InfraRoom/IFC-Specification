@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcGeoScienceFeatureType" UniqueId="eb8ff659-22e2-4fa9-82dc-593bf3a4eea8" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="649d8a4a-5cad-4cbd-bee4-6cadb961e786" DefinedType="IfcGeoScienceFeatureTypeEnum">
+			<Documentation>Specifies the type for which the value is selected from a predefined type enumeration. This type may associate additional specific property sets.</Documentation>
+			<Definition>
+				<DocEnumeration xsi:nil="true" href="IfcGeoScienceFeatureTypeEnum" />
+			</Definition>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="da3ccf8a-c2c8-47e3-9702-7cc2b6b54948">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcGeoScienceFeatureTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcGeoScienceFeatureTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+
