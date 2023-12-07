@@ -1,1 +1,1 @@
-Ration between preconsolidation pressure and overburden pressure.
+Ratio between pre-consolidation pressure and overburden pressure.
