@@ -1,0 +1,1 @@
+Provision of a linear structure of the project by aggregating linear positioning elements. The linear structure is a hierarchical tree of linear positioning elements ultimately assigned to the project. Composition refers to the relationship to a higher level element (e.g. linear positioning element is part of a project).
