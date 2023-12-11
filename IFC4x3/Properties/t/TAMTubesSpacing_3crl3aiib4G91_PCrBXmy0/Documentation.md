@@ -1,1 +1,1 @@
-Spacing between the tubes (Tubes á manchette).
+Spacing between the tubes Tubes á manchette (TAM).
