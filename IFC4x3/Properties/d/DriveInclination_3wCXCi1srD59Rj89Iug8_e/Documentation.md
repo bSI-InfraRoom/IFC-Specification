@@ -1,1 +1,1 @@
-Tunnel drive inclination.
+Specifies the tunnel drive inclination.
