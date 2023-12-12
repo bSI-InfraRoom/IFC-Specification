@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcBoreholeType" UniqueId="86199d01-ec76-4d5a-8a31-89d82ddb73b5" BaseDefinition="IfcGeoScienceElementType" EntityFlags="32">
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="34c75e59-0dbb-47a9-a268-20b82dfca9a3" DefinedType="IfcBoreholeTypeEnum">
+			<Documentation>Specifies the type for which the value is selected from a predefined type enumeration. This type may associate additional specific property sets.</Documentation>
+			<Definition>
+				<DocEnumeration xsi:nil="true" href="IfcBoreholeTypeEnum" />
+			</Definition>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="23e3035a-5a44-4b1d-9d1c-f8b938952ace">
+			<Documentation>The inherited attribute _ElementType_ shall be provided, if the _PredefinedType_ is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcBoreholeTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcBoreholeTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcElementType.ElementType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

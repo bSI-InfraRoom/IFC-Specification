@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Station_0a_CIglHH8wBXulkH9IhxC" Name="Station" UniqueId="24f8c4aa-bd14-48e8-b878-bee4494abecc" Type="IfcReferent">
+	<Rules>
+		<DocModelRuleAttribute Name="Positions">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelPositions">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatedProducts" Identification="RelatedProducts">
+							<Rules>
+								<DocModelRuleEntity Name="IfcProduct">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="ProductName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+		<DocModelRuleAttribute Name="ObjectPlacement" Identification="HasObjectPlacement">
+			<Rules>
+				<DocModelRuleEntity Name="IfcObjectPlacement" />
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
