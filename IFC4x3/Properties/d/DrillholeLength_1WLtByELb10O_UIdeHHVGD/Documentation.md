@@ -1,1 +1,1 @@
-Length of the injection hole.
+Length of the drillhole.

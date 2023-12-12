@@ -1,1 +1,1 @@
-Diameter of the injection hole.
+Diameter of the drillhole.
