@@ -1,1 +1,1 @@
-A user defined underground excavation method when UndergroundExcavationMethod = OTHER.
+A user defined underground excavation method when UndergroundExcavationMethod = USERDEFINED.
