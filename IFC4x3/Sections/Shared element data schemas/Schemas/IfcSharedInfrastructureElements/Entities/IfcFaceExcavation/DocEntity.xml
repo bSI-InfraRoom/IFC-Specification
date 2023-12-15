@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcFaceExcavation" UniqueId="1efd49fa-50d1-493a-a0b9-a0f50ea38666" DiagramNumber="1" BaseDefinition="IfcUndergroundExcavation" EntityFlags="32">
+	<DiagramRectangle xsi:type="DocRectangle" X="0" Y="0" Width="400" Height="100" />
+	<Attributes>
+		<DocAttribute Name="PredefinedType" UniqueId="da2bccf3-973d-4192-8b64-789c7f354b11" DefinedType="IfcFaceExcavationTypeEnum">
+			<DiagramLine>
+				<DocPoint X="400" Y="50" />
+				<DocPoint X="0" Y="50" />
+			</DiagramLine>
+			<DiagramLabel xsi:type="DocRectangle" X="400" Y="50" Width="400" Height="50" />
+			<Definition>
+				<DocEnumeration xsi:nil="true" href="IfcFaceExcavationTypeEnum" />
+			</Definition>
+		</DocAttribute>
+	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="HasObjectType" UniqueId="5eda1be8-62ba-4d59-9a85-977ecb20b0e7">
+			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
+			<Expression>(PredefinedType &lt;&gt; IfcFaceExcavationTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+		</DocWhereRule>
+	</WhereRules>
+</DocEntity>
+

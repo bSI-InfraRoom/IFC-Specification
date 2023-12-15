@@ -1,15 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcUndergroundExcavation" UniqueId="8037dfb5-11cd-42b1-b3ad-c794016a5985" BaseDefinition="IfcExcavation" EntityFlags="32">
-	<Attributes>
-		<DocAttribute Name="PredefinedType" UniqueId="cd76d61f-ae8e-4368-9fff-631976477036" DefinedType="IfcUndergroundExcavationTypeEnum">
-			<Documentation>Identifies the predefined type of underground excavation elements. This type may associate additional specific property sets.</Documentation>
-		</DocAttribute>
-	</Attributes>
-	<WhereRules>
-		<DocWhereRule Name="HasObjectType" UniqueId="6ca70e73-e455-44ca-94a5-c03a802cf0bd">
-			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
-			<Expression>(PredefinedType &lt;&gt; IfcUndergroundExcavationTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
-		</DocWhereRule>
-	</WhereRules>
-</DocEntity>
+<DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcUndergroundExcavation" UniqueId="8037dfb5-11cd-42b1-b3ad-c794016a5985" BaseDefinition="IfcExcavation" />
 
