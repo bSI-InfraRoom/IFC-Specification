@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocTemplateDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Linear Composition" UniqueId="562f6342-e8e3-4551-ac5d-0d2724639975" Type="IfcLinearPositioningElement">
+	<Rules>
+		<DocModelRuleAttribute Name="Decomposes">
+			<Rules>
+				<DocModelRuleEntity Name="IfcRelAggregates">
+					<Rules>
+						<DocModelRuleAttribute Name="RelatingObject" Identification="RelatingObject">
+							<Rules>
+								<DocModelRuleEntity Name="IfcProject">
+									<Rules>
+										<DocModelRuleAttribute Name="Name" Identification="ProjectName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+								<DocModelRuleEntity Name="IfcLinearPositioningElement">
+									<Rules>
+										<DocModelRuleAttribute Name="LinearPositioningElementName">
+											<Rules>
+												<DocModelRuleEntity Name="IfcLabel" />
+											</Rules>
+										</DocModelRuleAttribute>
+									</Rules>
+								</DocModelRuleEntity>
+							</Rules>
+						</DocModelRuleAttribute>
+					</Rules>
+				</DocModelRuleEntity>
+			</Rules>
+		</DocModelRuleAttribute>
+	</Rules>
+</DocTemplateDefinition>
+
