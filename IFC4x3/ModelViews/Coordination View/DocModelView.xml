@@ -370,7 +370,41 @@
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="e732f0bf-94da-44ca-9677-bb70d7199400" Type="IfcDoorPanelProperties" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="c2ebe388-76a2-40d0-87dc-531722e24406">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcDoorStyle" />
+			<ApplicableEntity xsi:type="DocEntity" Name="IfcDoorStyle" UniqueId="3e42e773-d2e7-4b27-8517-e04c42c4b1de" Status="Deprecated" BaseDefinition="IfcTypeProduct" EntityFlags="229">
+				<Documentation>Definition: The door style, _IfcDoorStyle_, defines a particular style of doors, which may be included into the spatial context of the building model through instances of _IfcDoor_. A door style defines the overall parameter of the door style and refers to the particular parameter of the lining and one (or several) panels through the _IfcDoorLiningProperties_ and the _IfcDoorPanelProperties_.
+
+The door entity, _IfcDoor_, defines a particular occurrence of a door inserted in the spatial context of a project. The actual parameter of the door and/or its shape is defined at the _IfcDoorStyle_, to which the _IfcDoor_ is related by the inverse relationship _IsDefinedBy_ pointing to _IfcRelDefinedByType_. The _IfcDoorStyle_ also defines the particular attributes for the lining_, IfcDoorLiningProperties_, and panels, _IfcDoorPanelProperties_.
+
+The _IfcDoorStyle_ defines the baseline geometry, or the representation map, for all occurrences of the door style, given by the _IfcDoor_, pointing to this style. The representation of the door style may be given by the agreed set of minimal parameters, defined for the door lining and the door panel(s), or it may be given by a geometric representation used by the _IfcRepresentationMap_. The attribute _ParameterTakesPrecedence_ decides, whether the set of parameters can be used to exactly represent the shape of the door style (TRUE), or whether the attached _IfcRepresentationMap_ holds the exact representation (FALSE).
+
+The _IfcDoorStyleOperationTypeEnum_ defines the general layout of the door style. Depending on the enumerator, the appropriate instances of _IfcDoorLiningProperties_ and _IfcDoorPanelProperties_ are attached in the list of _HasPropertySets_. The _IfcDoorStyleOperationTypeEnum_ mainly determines the hinge side (left hung, or right hung), the operation (swinging, sliding, folding, etc.) and the number of panels.
+
+See geometry use definitions at _IfcDoorStyleOperationTypeEnum_ for the correct usage of opening symbols for different operation types.
+
+&gt; HISTORY&amp;nbsp; New entity in IFC2x.
+
+{ .deprecated}
+&gt; DEPRECATION&amp;nbsp; The entity is deprecated and shall not be used. The new entity _IfcDoorType_ shall be used instead.</Documentation>
+				<Localization>
+					<DocLocalization Locale="de" Name="Tür - Typ (veraltet)" />
+					<DocLocalization Locale="en" Name="Door Style" />
+					<DocLocalization Locale="fr" Name="Style de porte" />
+				</Localization>
+				<Attributes>
+					<DocAttribute Name="OperationType" UniqueId="53c1ee77-bf85-4e79-b986-160b301e66cd" DefinedType="IfcDoorStyleOperationEnum">
+						<Documentation>Type defining the general layout and operation of the door style.</Documentation>
+					</DocAttribute>
+					<DocAttribute Name="ConstructionType" UniqueId="0e3d909f-3016-4ab1-8e19-3c866572fecf" DefinedType="IfcDoorStyleConstructionEnum">
+						<Documentation>Type defining the basic construction and material type of the door.</Documentation>
+					</DocAttribute>
+					<DocAttribute Name="ParameterTakesPrecedence" UniqueId="0e6f7b46-22a9-4d01-bf4c-1b07bfbdb032" DefinedType="IfcBoolean">
+						<Documentation>The Boolean value reflects, whether the parameter given in the attached lining and panel properties exactly define the geometry (TRUE), or whether the attached style shape take precedence (FALSE). In the last case the parameter have only informative value.</Documentation>
+					</DocAttribute>
+					<DocAttribute Name="Sizeable" UniqueId="5decf5b4-3ba0-40f3-a31a-3d1b826b143b" DefinedType="IfcBoolean">
+						<Documentation>The Boolean indicates, whether the attached _IfcMappedRepresentation_ (if given) can be sized (using scale factor of transformation), or not (FALSE). If not, the _IfcMappedRepresentation_ should be _IfcShapeRepresentation_ of the _IfcDoor_ (using _IfcMappedItem_ as the _Item_) with the scale factor = 1.</Documentation>
+					</DocAttribute>
+				</Attributes>
+			</ApplicableEntity>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="93318bcc-db98-4ad4-8439-034c211d2b8d" Type="IfcDoorStyle" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="f30d059c-c901-445a-99aa-f54aa4cb0227">
@@ -1308,7 +1342,39 @@
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="50529c36-781f-4999-b112-a181d70ca3ab" Type="IfcWindowPanelProperties" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="d91d28d5-f9fe-44a1-a46f-5a12fa58c4d7">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcWindowStyle" />
+			<ApplicableEntity xsi:type="DocEntity" Name="IfcWindowStyle" UniqueId="db2eb89c-05a5-4166-8f16-149189ed3bfa" Status="Deprecated" BaseDefinition="IfcTypeProduct" EntityFlags="229">
+				<Documentation>The window style defines a particular style of windows, which may be included into the spatial context of the building model through instances of _IfcWindow_. A window style defines the overall parameter of the window style and refers to the particular parameter of the lining and one (or several) panels through _IfcWindowLiningProperties_ and _IfcWindowPanelProperties_.
+
+The window entity (_IfcWindow_) defines a particular occurrence of a window inserted in the spatial context of a project. The actual parameter of the window and/or its shape is defined at the _IfcWindowStyle_, to which the _IfcWindow_ related by the inverse relationship _IsDefinedBy_ pointing to _IfcRelDefinesByType_. The _IfcWindowStyle_ also defines the particular attributes for the lining (_IfcWindowLiningProperties_) and panels (_IfcWindowPanelProperties_).
+
+The _IfcWindowStyle_ defines the baseline geometry, or the representation map, for all occurrences of the window style, given by the IfcWindow, pointing to this style. The representation of the window style may be given by the agreed set of minimal parameters, defined for the window lining and the window panel(s), or it may be given by a geometric representation used by the _IfcRepresentationMap_. The attribute _ParameterTakesPrecedence_ decides, whether the set of parameters can be used to exactly represent the shape of the window style (TRUE), or whether the attached _IfcRepresentationMap_ holds the exact representation (FALSE).
+
+The _IfcWindowStyleOperationTypeEnum_ defines the general layout of the window style. Depending on the enumerator, the appropriate instances of _IfcWindowLiningProperties_ and _IfcWindowPanelProperties_ are attached in the list of _HasPropertySets_. See geometry use definitions there.
+
+&gt; HISTORY&amp;nbsp; New entity in IFC2x.
+
+{ .deprecated}
+&gt; IFC4 CHANGE&amp;nbsp; The entity has been deprecated and shall not be used. The new entity _IfcWindowType_ shall be used instead.</Documentation>
+				<Localization>
+					<DocLocalization Locale="de" Name="Fenster - Typ (veraltet)" />
+					<DocLocalization Locale="en" Name="Window Style" />
+					<DocLocalization Locale="fr" Name="Style de fenêtre" />
+				</Localization>
+				<Attributes>
+					<DocAttribute Name="ConstructionType" UniqueId="86bdb583-d724-4564-b54a-856d36c09ea1" DefinedType="IfcWindowStyleConstructionEnum">
+						<Documentation>Type defining the basic construction and material type of the window.</Documentation>
+					</DocAttribute>
+					<DocAttribute Name="OperationType" UniqueId="c8dfa2e1-92d3-45c7-888c-3f33602acb59" DefinedType="IfcWindowStyleOperationEnum">
+						<Documentation>Type defining the general layout and operation of the window style.</Documentation>
+					</DocAttribute>
+					<DocAttribute Name="ParameterTakesPrecedence" UniqueId="bc8f77be-3d4e-481b-b869-19bd68f29427" DefinedType="IfcBoolean">
+						<Documentation>The Boolean value reflects, whether the parameter given in the attached lining and panel properties exactly define the geometry (TRUE), or whether the attached style shape take precedence (FALSE). In the last case the parameter have only informative value.</Documentation>
+					</DocAttribute>
+					<DocAttribute Name="Sizeable" UniqueId="b8e166df-8b37-41bc-b78c-9ba0be8ce237" DefinedType="IfcBoolean">
+						<Documentation>The Boolean indicates, whether the attached ShapeStyle can be sized (using scale factor of transformation), or not (FALSE). If not, the ShapeStyle should be inserted by the IfcWindow (using IfcMappedItem) with the scale factor = 1.</Documentation>
+					</DocAttribute>
+				</Attributes>
+			</ApplicableEntity>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="85f9cb0a-b465-4fe7-9a26-fe816d0e1924" Type="IfcWindowStyle" />
 		</DocConceptRoot>
 		<DocConceptRoot UniqueId="d7819ed7-3c52-4ed9-90a6-514c46fa6e50">
