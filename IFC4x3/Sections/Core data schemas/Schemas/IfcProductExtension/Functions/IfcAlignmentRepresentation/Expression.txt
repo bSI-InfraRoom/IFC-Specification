@@ -53,7 +53,7 @@
 		ThreeDRep := QUERY(threeDee <* AlignmentRepresentations | threeDee.RepresentationType = 'Curve3D');
 		CurveThreeD := QUERY(item <* ThreeDRep[1].Items | 'IFCGEOMETRYRESOURCE.IFCGRADIENTCURVE' in TYPEOF(item));
 		
-		RETURN(SIZEOF(CurveThreeD) = 1 AND SIZEOF(CurveTwoD) = 1 AND CurveThreeD\IfcGradientCurve.BaseCurve :=: CurveTwoD);
+		RETURN((SIZEOF(CurveThreeD) = 1) AND (SIZEOF(CurveTwoD) = 1) AND (CurveThreeD\IfcGradientCurve.BaseCurve :=: CurveTwoD));
 	
 	END_IF;
 	(* Missing an IFCSEGMENTEDREFERENCECURVE various placement option implementation. *)

@@ -11,8 +11,7 @@
 	<WhereRules>
 		<DocWhereRule Name="AlignmentRepresentation" UniqueId="487a34c4-a3b3-407c-8fbb-88e476a16737">
 			<Documentation>Only _IfcShapeRepresentation_.RepresentationIdentifier=&apos;Axis&apos; and _IfcShapeRepresentation_.RepresentationType=&apos;Curve2D&apos; or &apos;Curve3D&apos; are allowed. If both &apos;Curve2D&apos; and &apos;Curve3D&apos; are defined, then the horizontal alignment 2D curve shall be the basis of the 3D curve.</Documentation>
-			<Expression>IfcAlignmenRepresentation(SELF)</Expression>
+			<Expression>IfcAlignmentRepresentation(SELF)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
-
