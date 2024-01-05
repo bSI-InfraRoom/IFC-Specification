@@ -20,10 +20,11 @@
 			<Expression>PolygonalBoundary.Dim = 2</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="BoundaryType" UniqueId="0b51507a-a864-431c-af88-0c4e2ece648a">
-			<Documentation>Only bounded curves of type _IfcCompositeCurve_, or _IfcPolyline_ are valid boundaries.</Documentation>
+			<Documentation>Only bounded curves of type _IfcCompositeCurve_, _IfcPolyline_, and _IfcIndexedPolyCurve_  are valid boundary curves.</Documentation>
 			<Expression>SIZEOF(TYPEOF(PolygonalBoundary) * [
   &apos;IFCGEOMETRYRESOURCE.IFCPOLYLINE&apos;, 
-  &apos;IFCGEOMETRYRESOURCE.IFCCOMPOSITECURVE&apos;]
+  &apos;IFCGEOMETRYRESOURCE.IFCCOMPOSITECURVE&apos;,
+    &apos;IFCGEOMETRYRESOURCE.IFCINDEXEDPOLYCURVE&apos;]
 ) = 1</Expression>
 		</DocWhereRule>
 	</WhereRules>
