@@ -38,7 +38,7 @@ jobs:
       - name: Specification modifications
         id: specification_modifications #grep -o .xml files.json | wc -w (for counting multiple instances per line)
         run: |
-          if [[ $HOME/files.json ]] && [[ $(($(grep -o ".xml" $HOME/files.json | wc -l)-$(grep -oiE "DocProperty.xml|DocQuantity.xmlDoc|PropertySet.xml|DocQuantitySet.xml|DocTemplateDefinition.xml|DocTemplateItem.xml|DocTemplateUsage.xml|DocPropertyConstant.xml|DocPropertyEnumeration.xml" $HOME/files.json | wc -l))) -gt 0 ]]; then
+          if [[ $HOME/files.json ]] && [[ $(($(grep -o ".xml" $HOME/files.json | wc -l)-$(grep -oiE "DocProperty.xml|DocQuantity.xmlDoc|PropertySet.xml|DocQuantitySet.xml|DocTemplateDefinition.xml|DocTemplateItem.xml|DocTemplateUsage.xml|DocPropertyConstant.xml|DocPropertyEnumeration.xml|Documentation.md" $HOME/files.json | wc -l))) -gt 0 ]]; then
             echo 'Schema changed.';
             echo ::set-output name=SCHEMACHANGED::true;
           else
