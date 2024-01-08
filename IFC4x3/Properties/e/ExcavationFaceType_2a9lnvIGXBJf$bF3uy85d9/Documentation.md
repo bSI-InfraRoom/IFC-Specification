@@ -1,1 +1,1 @@
-The part of an excavated space or face that was mapped.
+The excavation surface that was mapped.
