@@ -1,1 +1,1 @@
-Content of SO4 2- in the water sample. 
+Content of SO4 2- in the water sample.
