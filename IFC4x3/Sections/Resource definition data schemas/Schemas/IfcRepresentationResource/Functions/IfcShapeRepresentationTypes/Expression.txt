@@ -188,6 +188,11 @@
         Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRICMODELRESOURCE.IFCMANIFOLDSOLIDBREP' IN TYPEOF(temp))));      
       END;
 
+    'Voxel' :
+      BEGIN
+        Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRICMODELRESOURCE.IFCVOXELGRID' IN TYPEOF(temp))));      
+      END;
+
     'BoundingBox' :
       BEGIN
         Count := SIZEOF(QUERY(temp <* Items | ('IFCGEOMETRICMODELRESOURCE.IFCBOUNDINGBOX' IN TYPEOF(temp))));
