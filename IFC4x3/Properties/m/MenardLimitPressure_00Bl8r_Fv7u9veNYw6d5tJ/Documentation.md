@@ -1,1 +1,1 @@
-Limit pressure, resulting from interpretation of Menard's pressuremeter test.
+The limit pressure, resulting from interpretation of Menard's pressuremeter test.
