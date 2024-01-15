@@ -1,1 +1,1 @@
-First loading modulus, resulting from interpretation of Menard's pressuremeter test.
+The first loading modulus, resulting from the interpretation of Menard's pressuremeter test.
