@@ -1,0 +1,1 @@
+Distance between parallel vaults.
