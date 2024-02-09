@@ -1,1 +1,1 @@
-Specifies the type of injection used.
+Specifies when injection is performed.
