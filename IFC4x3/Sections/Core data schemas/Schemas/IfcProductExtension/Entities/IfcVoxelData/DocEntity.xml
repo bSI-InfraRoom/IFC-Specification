@@ -5,5 +5,30 @@
 			<Documentation>An optional value type used for the values defined in one of the subtypes. Only the names (as labels) of the types available in the _IfcValue_ select type are allowed.</Documentation>
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="IsAssignedToProduct" UniqueId="1a35cca4-513b-4358-be9c-abe93df51a6b">
+			<Documentation>_IfcVoxelData_ shall have exactly one assignment to a product of type _IfcRelAssignsToProduct_.</Documentation>
+			<Expression>EXISTS(SELF\IfcObjectDefinition.HasAssignments)
+AND
+SIZEOF(SELF\IfcObjectDefinition.HasAssignments) = 1
+AND
+&apos;IFCRELASSIGNSTOPRODUCT&apos; IN TYPEOF(SELF\IfcObjectDefinition.HasAssignments[1])</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="HasRepresentation" UniqueId="3caf1533-687f-4af7-9621-967ad14407a6">
+			<Documentation>_IfcIntegerVoxelData_._Representation_ shall exist.</Documentation>
+			<Expression>EXISTS(SELF\IfcProduct.Representation)</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="SameRepresentation" UniqueId="02d00e6c-4372-463f-aef6-49b483f51e21">
+			<Documentation>RelatingProduct shall have the same product representation.</Documentation>
+			<Expression>SELF\IfcProduct.Representation = SELF\IfcObjectDefinition.HasAssignments\IfcRelAssignsToProduct.RelatingProduct.Representation</Expression>
+		</DocWhereRule>
+		<DocWhereRule Name="VoxelGridRepresentation" UniqueId="75daf693-a914-48d9-9f98-0675cad82c89">
+			<Documentation>There shall be exactly one _IfcShapeRepresentation_ in _IfcProductDefinitionShape_._Representations_ that has exactly one geometric item _IfcVoxelGrid_.</Documentation>
+			<Expression>SIZEOF(QUERY(ShapeRep &lt;* SELF\IfcProduct.Representation.Representations | 
+SIZEOF(ShapeRep.Items) = 1
+AND
+&apos;IFCVOXELGRID&apos; IN TYPEOF(ShapeRep.Items[1])) = 1</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 
