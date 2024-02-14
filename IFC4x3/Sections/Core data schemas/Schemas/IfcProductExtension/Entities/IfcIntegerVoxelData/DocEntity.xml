@@ -14,21 +14,5 @@
 			</Definition>
 		</DocAttribute>
 	</Attributes>
-	<WhereRules>
-		<DocWhereRule Name="HasRepresentation" UniqueId="16865dc1-1980-43fd-8290-4bac0e77c2ca">
-			<Documentation>_IfcIntegerVoxelData_._Representation_ shall exist.</Documentation>
-			<Expression>EXISTS(SELF\IfcProduct.Representation)</Expression>
-		</DocWhereRule>
-		<DocWhereRule Name="VoxelGridRepresentation" UniqueId="bb6f7739-0fb3-4899-a086-823cc53156f2">
-			<Documentation>The geometric representation item in _IfcProductDefinitionShape_._Representations_ shall be _IfcVoxelGrid_.</Documentation>
-			<Expression>&apos;IFCVOXELGRID&apos; IN TYPEOF(SELF\IfcProduct.Representation.Representations[1].Items[1])</Expression>
-		</DocWhereRule>
-		<DocWhereRule Name="SameGeometricRepresentation" UniqueId="9f6abff4-3bdb-4be7-8106-237e3b2e0e47">
-			<Documentation>RelatingProduct shall have the same geometric representation.</Documentation>
-			<Expression>EXISTS(SELF\IfcObjectDefinition.HasAssignments\IfcRelAssignsToProduct.RelatingProduct.Representation)
-AND
-SELF\IfcProduct.Representation.Representations[1].Items[1] = SELF\IfcObjectDefinition.HasAssignments\IfcRelAssignsToProduct.RelatingProduct.Representation.Representations[1].Items[1]</Expression>
-		</DocWhereRule>
-	</WhereRules>
 </DocEntity>
 
