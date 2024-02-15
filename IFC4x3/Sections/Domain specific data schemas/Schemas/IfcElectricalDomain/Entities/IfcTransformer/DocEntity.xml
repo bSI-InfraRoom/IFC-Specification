@@ -18,7 +18,7 @@
 		<DocWhereRule Name="CorrectTypeAssigned" UniqueId="75b0f680-06c7-44ef-9309-04bc68af656b">
 			<Documentation>Either there is no transformer type object associated, i.e. the _IsTypedBy_ inverse relationship is not provided, or the associated type object has to be of type _IfcTransformerType_.</Documentation>
 			<Expression>(SIZEOF(IsTypedBy) = 0) OR 
-  (&apos;IFCELECTRICALDOMAIN.IFCTRANFORMERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
+  (&apos;IFCELECTRICALDOMAIN.IFCTRANSFORMERTYPE&apos; IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
