@@ -10,18 +10,18 @@
 			<Documentation>_IfcVoxelData_ shall have exactly one assignment relationship of type _IfcRelAssignsToProduct_ to a product.</Documentation>
 			<Expression>EXISTS(SELF\IfcObjectDefinition.HasAssignments)
 AND
-SIZEOF(SELF\IfcObjectDefinition.HasAssignments) = 1
+(SIZEOF(SELF\IfcObjectDefinition.HasAssignments) = 1)
 AND
-&apos;IFCKERNEL.IFCRELASSIGNSTOPRODUCT&apos; IN TYPEOF(SELF\IfcObjectDefinition.HasAssignments[1])</Expression>
+(&apos;IFCKERNEL.IFCRELASSIGNSTOPRODUCT&apos; IN TYPEOF(SELF\IfcObjectDefinition.HasAssignments[1]))</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="VoxelGridRepresentation" UniqueId="75daf693-a914-48d9-9f98-0675cad82c89">
 			<Documentation>_IfcVoxelData_ shall have a product definition shape and there shall be exactly one _IfcShapeRepresentation_ in _IfcProductDefinitionShape_._Representations_ that has exactly one geometric item _IfcVoxelGrid_.</Documentation>
 			<Expression>EXISTS(SELF\IfcProduct.Representation)
 AND
-SIZEOF(QUERY(ShapeRep &lt;* SELF\IfcProduct.Representation.Representations | 
-    SIZEOF(ShapeRep.Items) = 1
+(SIZEOF(QUERY(ShapeRep &lt;* SELF\IfcProduct.Representation.Representations | 
+    (SIZEOF(ShapeRep.Items) = 1)
     AND
-    &apos;IFCGEOMETRICMODELRESOURCE.IFCVOXELGRID&apos; IN TYPEOF(ShapeRep.Items[1]))) = 1</Expression>
+    (&apos;IFCGEOMETRICMODELRESOURCE.IFCVOXELGRID&apos; IN TYPEOF(ShapeRep.Items[1])))) = 1)</Expression>
 		</DocWhereRule>
 		<DocWhereRule Name="SameRepresentation" UniqueId="02d00e6c-4372-463f-aef6-49b483f51e21">
 			<Documentation>The assigned _IfcProduct_ shall have the same shape representation.</Documentation>
