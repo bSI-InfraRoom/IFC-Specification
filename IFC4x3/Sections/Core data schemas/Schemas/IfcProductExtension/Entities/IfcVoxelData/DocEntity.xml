@@ -25,9 +25,8 @@ SIZEOF(QUERY(ShapeRep &lt;* SELF\IfcProduct.Representation.Representations |
 		</DocWhereRule>
 		<DocWhereRule Name="SameRepresentation" UniqueId="02d00e6c-4372-463f-aef6-49b483f51e21">
 			<Documentation>The assigned _IfcProduct_ shall have the same shape representation.</Documentation>
-			<Expression>SIZEOF(QUERY(ShapeRep &lt;* SELF\IfcObjectDefinition.HasAssignments[1]\IfcRelAssignsToProduct.RelatingProduct\IfcProduct.Representation.Representations) |
-ShapeRep = SELF\IfcProduct.Representation.Representations[1]) = 1</Expression>
+			<Expression>SIZEOF(QUERY(ShapeRep &lt;* SELF\IfcObjectDefinition.HasAssignments[1]\IfcRelAssignsToProduct.RelatingProduct\IfcProduct.Representation.Representations |
+ShapeRep = SELF\IfcProduct.Representation.Representations[1])) = 1</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
-
