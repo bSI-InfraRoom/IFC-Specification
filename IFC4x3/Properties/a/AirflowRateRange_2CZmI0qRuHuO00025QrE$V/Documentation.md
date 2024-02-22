@@ -1,1 +1,1 @@
-Range of airflow that can be delivered.
+Possible range of airflow that can be delivered.

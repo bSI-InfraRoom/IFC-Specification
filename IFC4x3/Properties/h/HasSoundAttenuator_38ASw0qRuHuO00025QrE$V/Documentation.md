@@ -1,1 +1,1 @@
-Terminal box has a sound attenuator.
+If TRUE, the object has sound attenuation.
