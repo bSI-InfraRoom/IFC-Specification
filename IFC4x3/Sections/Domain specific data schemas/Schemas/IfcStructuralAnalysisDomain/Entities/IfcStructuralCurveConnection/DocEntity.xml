@@ -7,7 +7,7 @@
 		<DocLocalization Locale="en" Name="Structural Curve Connection" />
 	</Localization>
 	<Attributes>
-		<DocAttribute Name="Axis" UniqueId="7ab9edfa-dde7-4c6c-8c6a-ce1cd8fc527c" DefinedType="IfcDirection" XsdFormat="attribute">
+		<DocAttribute Name="AxisDirection" UniqueId="7ab9edfa-dde7-4c6c-8c6a-ce1cd8fc527c" DefinedType="IfcDirection" XsdFormat="attribute">
 			<Documentation>Direction which is used in the definition of the local z axis.  _Axis_ is specified relative to the so-called global coordinate system, i.e. the _SELF\IfcProduct.ObjectPlacement_.
 
 &gt; NOTE&amp;nbsp; It is desirable and usually possible that many instances of _IfcStructuralCurveConnection_ and _IfcStructuralCurveMember_ share a common instance of _IfcDirection_ as their _Axis_ attribute.</Documentation>
