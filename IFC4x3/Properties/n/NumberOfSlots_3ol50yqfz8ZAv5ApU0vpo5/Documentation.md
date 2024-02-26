@@ -1,1 +1,1 @@
-Indicates the number of device slots.
+Indicates the number of slots.

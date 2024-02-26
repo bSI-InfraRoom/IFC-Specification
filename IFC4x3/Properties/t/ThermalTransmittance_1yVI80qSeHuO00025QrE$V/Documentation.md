@@ -1,3 +1,1 @@
-Thermal transmittance coefficient (U-Value) of the element. Here the total thermal transmittance coefficient through the column within the direction of the thermal flow (including all materials).
-
-Nore: new property in IFC4
+Thermal transmittance coefficient (U-Value) of an element, within the direction of the thermal flow (including all materials).
