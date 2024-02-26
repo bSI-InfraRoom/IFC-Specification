@@ -1,1 +1,1 @@
-Total planned net area for the building  Used for programming the building.
+Total planned net area of the object. Used for programming the object.
