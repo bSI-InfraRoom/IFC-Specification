@@ -1,1 +1,1 @@
-The type of construction action to the building, the project deals with, e.g. new construction, renovation, refurbishment, etc.
+The type of construction action to the object, e.g. new construction, renovation, refurbishment, etc.
