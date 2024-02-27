@@ -1,1 +1,3 @@
-The width of the formed space in the duct.
+The clear width.
+
+It indicates the formed space in the duct.

@@ -1,1 +1,1 @@
-Temperature range.
+Allowable maximum and minimum temperature.
