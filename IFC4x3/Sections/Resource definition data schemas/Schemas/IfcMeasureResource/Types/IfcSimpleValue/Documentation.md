@@ -13,7 +13,8 @@ SELECT
 *  _IfcDate_: Defined type of simple type STRING to represent a date. 
 *  _IfcTime_: Defined type of simple type STRING to represent a time. 
 *  _IfcDuration_: Defined type of simple type STRING to represent a duration. 
-*  _IfcTimeStamp_: Defined type of simple type INTEGER to represent a point in time by seconds elapsed since 1970. 
+*  _IfcTimeStamp_: Defined type of simple type INTEGER to represent a point in time by seconds elapsed since 1970.
+*  _IfcURIReference_: Defined type of simple type STRING to represent a unique sequence of characters that identifies a logical or physical resource used by web technologies.
 
 > _HISTORY&nbsp; New type in IFC2x._
 
