@@ -1,1 +1,1 @@
-The weight of the silencer.
+Total weight of object
