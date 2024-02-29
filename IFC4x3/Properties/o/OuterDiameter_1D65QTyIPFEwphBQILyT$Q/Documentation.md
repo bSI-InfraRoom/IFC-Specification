@@ -1,1 +1,1 @@
-The actual outer diameter of the pipe or tube.
+The actual outer diameter of the object.

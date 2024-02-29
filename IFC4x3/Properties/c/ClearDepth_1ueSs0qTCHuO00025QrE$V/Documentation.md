@@ -1,1 +1,3 @@
-The depth of the formed space in the duct.
+The clear depth.
+
+It indicates the formed space in the duct.

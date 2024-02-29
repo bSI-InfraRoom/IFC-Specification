@@ -1,1 +1,1 @@
-Indicates the type of pantograph as a desgin parameter for the overhead contactline system.
+Indicates the type of pantograph as a design parameter for the overhead contactline system.

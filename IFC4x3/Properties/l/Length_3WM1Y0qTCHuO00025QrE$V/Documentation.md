@@ -1,1 +1,1 @@
-The length of the pit.
+The length of the object.
