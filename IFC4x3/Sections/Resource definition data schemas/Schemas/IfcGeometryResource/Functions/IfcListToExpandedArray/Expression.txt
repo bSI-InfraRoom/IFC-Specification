@@ -1,0 +1,24 @@
+(Lis : LIST [0:?] OF GENERIC : T;
+      Low, U : INTEGER;
+      Condition : ARRAY OF BOOLEAN) : ARRAY OF GENERIC : T;
+  LOCAL
+    LisIndex : INTEGER := Low;
+    Res : ARRAY [Low:U] OF GENERIC : T;
+  END_LOCAL;
+      
+  IF (SIZEOF(QUERY(item <* Condition | item)) <> SIZEOF(Lis)) THEN
+    RETURN(?);
+  END_IF;
+
+  N := SIZEOF(Lis);
+  IF (N <> (U-Low + 1)) THEN
+    RETURN(?);
+  END_IF;
+	  
+  REPEAT i := 1 TO SIZEOF(Condition);
+    IF (Condition[i]) THEN
+      Res[Low + i - 1] := Lis[LisIndex];
+      LisIndex := LisIndex + 1;
+    END_IF;
+  END_REPEAT;
+  RETURN(Res);
