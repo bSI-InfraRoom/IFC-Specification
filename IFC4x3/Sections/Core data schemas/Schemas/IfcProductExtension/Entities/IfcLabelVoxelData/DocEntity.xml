@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcLabelVoxelData" UniqueId="a470c8ce-b1bc-408a-bbbb-cf13350cbc52" BaseDefinition="IfcVoxelData" EntityFlags="32">
 	<Attributes>
-		<DocAttribute Name="Values" UniqueId="4cd3c5e4-9f44-4f28-bcf0-ff6ae4e9c4d3" DefinedType="IfcLabel" AggregationType="2" AggregationLower="1">
-			<Documentation>The values assigned to the voxels. First x, then y and lastly z.</Documentation>
+		<DocAttribute Name="ValuesData" UniqueId="4cd3c5e4-9f44-4f28-bcf0-ff6ae4e9c4d3" DefinedType="IfcLabel" AggregationType="1" AggregationLower="1">
+			<Documentation>The values assigned to the voxels as raw label typed data.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Values" UniqueId="dfc8ebbf-cb1a-4668-8b2d-051c16f810b9" DefinedType="IfcLabel" AggregationType="2" AggregationLower="1" AggregationUpper="SELF\IfcVoxelData.GridSize">
+			<Documentation>Array of label values on voxels accessible by the same index as that of the corresponding voxel.</Documentation>
+			<Derived>IfcListToExpandedArray(ValueData,1,SELF\IfcVoxelData.GridSize,SELF\IfcProduct.Representation.Representations[1].Items[1]\IfcVoxelGrid.Voxels);</Derived>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcLabel_3VdyFuG7T3DA9nalS6reFw" />
+			</Definition>
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

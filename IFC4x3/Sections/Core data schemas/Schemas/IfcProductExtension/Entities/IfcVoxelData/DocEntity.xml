@@ -4,6 +4,12 @@
 		<DocAttribute Name="ValueType" UniqueId="b1e92d88-1d1b-46b3-8a46-42e2bfbb2767" DefinedType="IfcLabel" AttributeFlags="1">
 			<Documentation>An optional value type used for the values defined in one of the subtypes. Only the names (as labels) of the types available in the _IfcValue_ select type are allowed.</Documentation>
 		</DocAttribute>
+		<DocAttribute Name="GridSize" UniqueId="6f8d6a89-e211-4ca1-a678-e4221b561f42" DefinedType="IfcInteger">
+			<Derived> SIZEOF(SELF\IfcProduct.Representation.Representations[1].Items[1]\IfcVoxelGrid.Voxels)</Derived>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcInteger_3wu0Hj__nD9vk_ZJIPfGUc" />
+			</Definition>
+		</DocAttribute>
 	</Attributes>
 	<WhereRules>
 		<DocWhereRule Name="IsAssignedToProduct" UniqueId="1a35cca4-513b-4358-be9c-abe93df51a6b">
@@ -30,3 +36,4 @@ ShapeRep = SELF\IfcProduct.Representation.Representations[1])) = 1</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
+

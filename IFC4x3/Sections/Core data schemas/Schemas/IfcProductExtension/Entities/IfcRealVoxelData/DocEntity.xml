@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcRealVoxelData" UniqueId="bc833408-cb82-4557-bb85-151f9be8b892" BaseDefinition="IfcVoxelData" EntityFlags="32">
 	<Attributes>
-		<DocAttribute Name="Values" UniqueId="4c15cf4d-54aa-46c5-af16-6f42c3940384" DefinedType="IfcReal" AggregationType="2" AggregationLower="1">
-			<Documentation>The values assigned to the voxels. First x, then y and lastly z.</Documentation>
+		<DocAttribute Name="ValuesData" UniqueId="4c15cf4d-54aa-46c5-af16-6f42c3940384" DefinedType="IfcReal" AggregationType="1" AggregationLower="1">
+			<Documentation>The values assigned to the voxels as raw real typed data.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Unit" UniqueId="3fafc736-2c3c-48b8-b1a7-b9483d46d2f1" DefinedType="IfcUnit" AttributeFlags="1">
 			<Documentation>An optional unit for the real values.</Documentation>
+		</DocAttribute>
+		<DocAttribute Name="Values" UniqueId="1cddb9c2-f8fb-4b48-85e6-0a77aeb6754e" DefinedType="IfcReal" AggregationType="2" AggregationLower="1" AggregationUpper="SELF\IfcVoxelData.GridSize">
+			<Documentation>Array of real values on voxels accessible by the same index as that of the corresponding voxel.</Documentation>
+			<Derived>IfcListToExpandedArray(ValueData,1,SELF\IfcVoxelData.GridSize,SELF\IfcProduct.Representation.Representations[1].Items[1]\IfcVoxelGrid.Voxels);</Derived>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcReal_2f9SWbqk18tPNw3O_WZgJ2" />
+			</Definition>
 		</DocAttribute>
 	</Attributes>
 </DocEntity>

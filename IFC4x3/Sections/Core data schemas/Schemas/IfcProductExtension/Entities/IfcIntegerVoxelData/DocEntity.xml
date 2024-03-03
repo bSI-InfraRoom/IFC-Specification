@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="IfcIntegerVoxelData" UniqueId="f3d953cb-24b7-483d-85e1-d44c43d4d22b" BaseDefinition="IfcVoxelData" EntityFlags="32">
 	<Attributes>
-		<DocAttribute Name="Values" UniqueId="342aa966-eaa4-4d0c-87e5-91988a4f1c0a" DefinedType="IfcInteger" AggregationType="2" AggregationLower="1" AggregationUpper="GridSize">
-			<Documentation>The values assigned to the voxels. First x, then y and lastly z.</Documentation>
+		<DocAttribute Name="ValuesData" UniqueId="342aa966-eaa4-4d0c-87e5-91988a4f1c0a" DefinedType="IfcInteger" AggregationType="1" AggregationLower="1" AggregationUpper="?">
+			<Documentation>The values assigned to the voxels as raw integer typed data.</Documentation>
 		</DocAttribute>
 		<DocAttribute Name="Unit" UniqueId="d23d69e2-c35a-41d5-bf3b-9533670b9eb7" DefinedType="IfcUnit" AttributeFlags="1">
 			<Documentation>An optional unit for the integer values.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="GridSize" UniqueId="6f8d6a89-e211-4ca1-a678-e4221b561f42" DefinedType="IfcInteger">
-			<Derived> SIZEOF(SELF\IfcProduct.Representation.Representations[1].Items[1]\IfcVoxelGrid.Voxels)</Derived>
+		<DocAttribute Name="Values" UniqueId="920a9b45-a6a2-402e-82f1-1524d8e7700b" DefinedType="IfcInteger" AggregationType="2" AggregationLower="1" AggregationUpper="SELF\IfcVoxelData.GridSize">
+			<Documentation>Array of integer values on voxels accessible by the same index as that of the corresponding voxel.</Documentation>
+			<Derived>IfcListToExpandedArray(ValueData,1,SELF\IfcVoxelData.GridSize,SELF\IfcProduct.Representation.Representations[1].Items[1]\IfcVoxelGrid.Voxels);</Derived>
 			<Definition>
 				<DocDefinitionRef xsi:nil="true" href="IfcInteger_3wu0Hj__nD9vk_ZJIPfGUc" />
 			</Definition>
