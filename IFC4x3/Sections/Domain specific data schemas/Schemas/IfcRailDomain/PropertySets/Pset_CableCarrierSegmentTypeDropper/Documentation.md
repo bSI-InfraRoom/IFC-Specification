@@ -1,1 +1,1 @@
-Properties that are applicable to a type or an occurence of dropper.
+Properties that are applicable to a type or an occurrence of dropper.

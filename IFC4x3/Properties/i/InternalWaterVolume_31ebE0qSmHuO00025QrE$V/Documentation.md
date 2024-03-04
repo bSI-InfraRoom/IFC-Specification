@@ -1,1 +1,1 @@
-Internal volume of condenser (water side).
+Internal volume of object (water side).

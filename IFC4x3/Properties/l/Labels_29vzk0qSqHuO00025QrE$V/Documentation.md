@@ -1,1 +1,3 @@
-Table mapping values to labels, where each entry corresponds to an integer within the ValueRange.
+Table mapping values to labels
+
+Each entry corresponds to an integer within the ValueRange.

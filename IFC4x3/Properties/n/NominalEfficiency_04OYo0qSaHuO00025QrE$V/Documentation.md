@@ -1,1 +1,1 @@
-Nominal chiller efficiency under nominal conditions.
+Nominal object efficiency under nominal conditions.
