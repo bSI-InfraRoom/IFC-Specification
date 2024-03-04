@@ -1,1 +1,1 @@
-The source of energy.
+Enumeration defining the energy source or fuel cumbusted.

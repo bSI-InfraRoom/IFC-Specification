@@ -1,1 +1,1 @@
-Identifier of the corresponding installation plan.
+Reference to external information source about installation or construction plan of the element.

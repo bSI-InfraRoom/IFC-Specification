@@ -1,1 +1,1 @@
-Air pressure drop as function of air flow rate.
+Air pressure drop as a function of air flow rate.
