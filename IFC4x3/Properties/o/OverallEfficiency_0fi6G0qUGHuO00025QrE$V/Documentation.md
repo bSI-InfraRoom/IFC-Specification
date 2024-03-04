@@ -1,1 +1,1 @@
-Total efficiency of motor and fan.
+Total efficiency of object.
