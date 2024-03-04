@@ -1,1 +1,1 @@
-Possible range of fluid flowrate that can be delivered.
+Allowable range of volume of fluid being pumped against the resistance specified.
