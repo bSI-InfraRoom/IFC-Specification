@@ -1,1 +1,1 @@
-Weight of filter.
+Total weight of object

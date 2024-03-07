@@ -1,2 +1,2 @@
 Fan performance history attributes.
-Sound attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.
+> IFC2X2 CHANGE&nbsp; Sound attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.
