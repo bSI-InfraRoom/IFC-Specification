@@ -1,1 +1,3 @@
-Defines the size of inlet and outlet pipe connections to the meter.
+The connection size of the object.
+
+Inlet and outlet pipe connections to the meter.
