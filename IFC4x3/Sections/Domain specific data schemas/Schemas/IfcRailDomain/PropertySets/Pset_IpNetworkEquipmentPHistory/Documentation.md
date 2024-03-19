@@ -1,1 +1,1 @@
-Properties defining performance information for IP network equipments.
+Properties defining performance information for IP network equipment.
