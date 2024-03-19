@@ -1,1 +1,1 @@
-Size of the outlet connection.
+Size of the outlet connection from the object.
