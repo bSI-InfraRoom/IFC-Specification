@@ -1,1 +1,1 @@
-Indication of whether the junction box type is allowed for exposure to outdoor elements (set TRUE where external exposure is allowed).
+Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.
