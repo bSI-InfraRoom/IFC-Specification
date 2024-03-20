@@ -1,1 +1,1 @@
-The serial number assigned to an occurrence of a product.
+The manufacturer's serial number assigned to an occurrence of a product.

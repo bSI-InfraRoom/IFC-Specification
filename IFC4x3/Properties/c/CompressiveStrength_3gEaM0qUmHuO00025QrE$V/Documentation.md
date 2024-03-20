@@ -1,1 +1,1 @@
-The compressive strength of the concrete.
+The compressive strength of the object or material.
