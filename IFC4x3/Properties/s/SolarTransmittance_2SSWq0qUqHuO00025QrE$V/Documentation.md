@@ -1,1 +1,1 @@
-Transmittance at normal incidence (solar). Defines the fraction of solar radiation that passes through per unit area, perpendicular to the surface.
+The ratio of incident solar radiation that directly passes through a system (also named τe). Note the following equation Asol + Rsol + Tsol = 1
