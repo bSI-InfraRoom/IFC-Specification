@@ -1,2 +1,1 @@
-Thermal transmittance coefficient (U-Value) of a material.
-It applies to the total door construction.
+Thermal transmittance coefficient (U-Value) of an element, within the direction of the thermal flow (including all materials).

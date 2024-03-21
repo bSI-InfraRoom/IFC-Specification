@@ -1,1 +1,1 @@
-This property defines if the Drain Chanel is monitored (TRUE) or not (FALSE).
+This property defines if the Drain Channel is monitored (TRUE) or not (FALSE).

@@ -1,1 +1,1 @@
-Names of downstream connected equipment and spaces (comma-separated), if not otherwise represented
+Names of downstream connected equipment and spaces, if not otherwise represented

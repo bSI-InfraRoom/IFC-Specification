@@ -1,1 +1,1 @@
-Special instructions for packing.
+Special instructions.
