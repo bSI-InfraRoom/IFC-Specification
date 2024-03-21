@@ -1,1 +1,3 @@
-Outside dry bulb temperature for heating design.
+Dry bulb temperature for heating design.
+
+At outside.

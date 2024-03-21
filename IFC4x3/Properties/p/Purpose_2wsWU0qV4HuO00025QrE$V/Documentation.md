@@ -1,1 +1,3 @@
-Indication of the purpose for that opening, e.g. 'ventilation', 'access', etc.
+Indication of the purpose of this object
+
+E.g. 'ventilation' or 'access'
