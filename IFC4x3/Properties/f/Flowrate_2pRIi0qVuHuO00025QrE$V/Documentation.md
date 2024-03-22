@@ -1,1 +1,1 @@
-The actual operational fluid flowrate.
+The flowrate of the fluid.
