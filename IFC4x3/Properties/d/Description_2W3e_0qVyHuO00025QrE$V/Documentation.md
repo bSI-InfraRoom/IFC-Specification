@@ -1,1 +1,1 @@
-Description of the reinforcement.
+The Description of the object.
