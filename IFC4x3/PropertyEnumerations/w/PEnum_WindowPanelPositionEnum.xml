@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocPropertyEnumeration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="PEnum_WindowPanelPositionEnum" Name="PEnum_WindowPanelPositionEnum" UniqueId="e10a40c6-afca-436e-b931-6524ac410721">
+	<Documentation>This enumeration defines the basic configuration of the window type in terms of the location of window panels. The window configurations are given for windows with one, two or three panels (including fixed panels) as shown in Figure 1. It corresponds to the _OperationType_ of the _IfcWindowType_ definition, which references the _IfcWindowPanelProperties_.
+
+Windows which are subdivided into more than three panels have to be defined by the geometry only. The type of such windows is given by an IfcWindowType.PartitioningType = USERDEFINED or NOTDEFINED (see _IfcWindowTypePartitioningEnum _for details).
+
+This enumeration defines the basic configuration of the window type in terms of the location of window panels. The window configurations are given for windows with one, two or three panels (including fixed panels) as shown in Figure 1. It corresponds to the _OperationType_ of the _IfcWindowType_ definition, which references the _IfcWindowPanelProperties_.
+
+Windows which are subdivided into more than three panels have to be defined by the geometry only. The type of such windows is given by an _IfcWindowType.PartitioningType_ = USERDEFINED or NOTDEFINED (see _IfcWindowTypePartitioningEnum_ for details).
+
+| Enumerator from _IfcWindowTypePartitioningEnum_ | Use of enumerators from _IfcWindowPanelPositionEnum_ | Figure |
+| --- | --- | --- |
+| DoublePanelVertical | first IfcWindowPanelProperties with PanelPosition = LEFT&amp;lt;br&amp;gt;second IfcWindowPanelProperties with PanelPosition = RIGHT | ![](../../figures/ifcwindowpanelpositionenum-fig01.gif) |
+| DoublePanelHorizontal | first IfcWindowPanelProperties with PanelPosition = TOP&amp;lt;br&amp;gt;second IfcWindowPanelProperties with PanelPosition = BOTTOM | ![](../../figures/ifcwindowpanelpositionenum-fig02.gif) |
+| TriplePanelVertical | first IfcWindowPanelProperties with PanelPosition = LEFT&amp;lt;be&amp;gt;second IfcWindowPanelProperties with PanelPosition = MIDDLE&amp;lt;br&amp;gt;third IfcWindowPanelProperties with PanelPosition = RIGHT | ![](../../figures/ifcwindowpanelpositionenum-fig03.gif) |
+| TriplePanelHorizontal | first IfcWindowPanelProperties with PanelPosition = TOP&amp;lt;br&amp;gt;second IfcWindowPanelProperties with PanelPosition = MIDDLE&amp;lt;br&amp;gt;third IfcWindowPanelProperties with PanelPosition = BOTTOM | ![](../../figures/ifcwindowpanelpositionenum-fig04.gif) |
+| TriplePanelBottom | first IfcWindowPanelProperties with PanelPosition = LEFT&amp;lt;br&amp;gt;second IfcWindowPanelProperties with PanelPosition = RIGHT&amp;lt;br&amp;gt;third IfcWindowPanelProperties with PanelPosition = BOTTOM | ![](../../figures/ifcwindowpanelpositionenum-fig05.gif) |
+| TriplePanelTop | first IfcWindowPanelProperties with PanelPosition = TOP&amp;lt;br&amp;gt;second IfcWindowPanelProperties with PanelPosition = LEFT&amp;lt;br&amp;gt;third IfcWindowPanelProperties with PanelPosition = RIGHT | ![](../../figures/ifcwindowpanelpositionenum-fig06.gif) |
+| TriplePanelLeft | first IfcWindowPanelProperties with PanelPosition = LEFT&amp;lt;br&amp;gt;second IfcWindowPanelProperties with PanelPosition = TOP&amp;lt;br&amp;gt;third IfcWindowPanelProperties with PanelPosition = BOTTOM | ![](../../figures/ifcwindowpanelpositionenum-fig07.gif) |
+| TriplePanelRight | first IfcWindowPanelProperties with PanelPosition = TOP&amp;lt;br&amp;gt;second IfcWindowPanelProperties with PanelPosition = BOTTOM&amp;lt;br&amp;gt;third IfcWindowPanelProperties with PanelPosition = RIGHT | ![](../../figures/ifcwindowpanelpositionenum-fig08.gif) |
+
+&gt; HISTORY  New enumeration in IFC2.0.
+
+Note:
+
+1. The figures/ are shown as elevations in the XZ plane of the local placement of the window, looking into the direction of the positive Y axis.
+2. These figures/ are only shown as illustrations.</Documentation>
+	<Constants>
+		<DocPropertyConstant xsi:nil="true" href="BOTTOM_3CbgUy4jnAD8WNwXLdJEzN" />
+		<DocPropertyConstant xsi:nil="true" href="LEFT_0eY2aUT6H9uxkOELkXj2I" />
+		<DocPropertyConstant xsi:nil="true" href="MIDDLE_14YzIbrRr56OEApnm9vXi6" />
+		<DocPropertyConstant xsi:nil="true" href="RIGHT_1tVFMGPInEdR2NYGi8h9SU" />
+		<DocPropertyConstant xsi:nil="true" href="TOP_2Usjigooj16fz9FaNU0agY" />
+		<DocPropertyConstant xsi:nil="true" href="OTHER_0SAtxxJj15wQA15w2MsIV" />
+		<DocPropertyConstant xsi:nil="true" href="NOTKNOWN_0_n254Fb10hBW_0_XIj7Qe" />
+		<DocPropertyConstant xsi:nil="true" href="UNSET_01y959UgrAlvv6_W__S9Ap" />
+	</Constants>
+</DocPropertyEnumeration>
+

@@ -1,1 +1,1 @@
-The actual inner diameter of the pipe or tube.
+The actual inner diameter of the object.

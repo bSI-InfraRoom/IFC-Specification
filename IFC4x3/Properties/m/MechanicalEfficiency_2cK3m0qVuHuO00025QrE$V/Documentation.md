@@ -1,1 +1,1 @@
-The pumps operational mechanical efficiency.
+The objects operational mechanical efficiency.

@@ -1,1 +1,3 @@
-The connection size of the to and from the pump.
+The connection size of the object.
+
+The connection to and from the pump.
