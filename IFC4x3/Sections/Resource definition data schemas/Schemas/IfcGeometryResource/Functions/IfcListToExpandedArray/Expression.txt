@@ -10,8 +10,7 @@
     RETURN(?);
   END_IF;
 
-  N := SIZEOF(Lis);
-  IF (N <> (U-Low + 1)) THEN
+  IF (SIZEOF(Lis) <> (U-Low + 1)) THEN
     RETURN(?);
   END_IF;
 	  
