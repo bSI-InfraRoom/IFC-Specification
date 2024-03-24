@@ -36,7 +36,7 @@ along X, then Y and finally Z.</Documentation>
 	<WhereRules>
 		<DocWhereRule Name="CorrectGridSize" UniqueId="d21d238c-a7bf-4473-9503-e1f72b3552c2">
 			<Documentation>The size of the grid (_Voxels_ array) shall be equal to the product of the number of voxels in X, Y and Z directions.</Documentation>
-			<Expression>SIZEOF(SELF\Voxels) = NumberOfVoxelsX * NVL(NumberOfVoxelsY, 1) * NVL(NumberOfVoxelsZ, 1)</Expression>
+			<Expression>SIZEOF(SELF\Voxels) = NumberOfVoxelsX * NVL(NumberOfVoxelsY, NumberOfVoxelsX) * NVL(NumberOfVoxelsZ, NumberOfVoxelsX)</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
