@@ -10,19 +10,34 @@
 		<DocAttribute Name="VoxelSizeZ" UniqueId="946806c3-1ace-4539-b0a5-5c2d882b98c8" DefinedType="IfcNonNegativeLengthMeasure" AttributeFlags="1">
 			<Documentation>Size of voxels in the Z axis. If not given, the value from _VoxelSizeX_ shall be taken.</Documentation>
 		</DocAttribute>
-		<DocAttribute Name="NumberOfVoxelsX" UniqueId="1062135e-7018-4ec4-9ef7-3ca487268280" DefinedType="IfcInteger">
+		<DocAttribute Name="NumberOfVoxelsX" UniqueId="1062135e-7018-4ec4-9ef7-3ca487268280" DefinedType="IfcPositiveInteger">
 			<Documentation>Number of voxels along the X axis.</Documentation>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcPositiveInteger_1hN4je90v3Zw1QuJ1Tf3Ni" />
+			</Definition>
 		</DocAttribute>
-		<DocAttribute Name="NumberOfVoxelsY" UniqueId="70c30c22-0e2a-446d-8a02-31355e75c4e7" DefinedType="IfcInteger" AttributeFlags="1">
+		<DocAttribute Name="NumberOfVoxelsY" UniqueId="70c30c22-0e2a-446d-8a02-31355e75c4e7" DefinedType="IfcPositiveInteger" AttributeFlags="1">
 			<Documentation>Number of voxels along the Y axis. If not given, the value from _NumberOfVoxelsX_ shall be taken.</Documentation>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcPositiveInteger_1hN4je90v3Zw1QuJ1Tf3Ni" />
+			</Definition>
 		</DocAttribute>
-		<DocAttribute Name="NumberOfVoxelsZ" UniqueId="bbb9efce-f6f6-4834-a122-fbef29b024bd" DefinedType="IfcInteger" AttributeFlags="1">
+		<DocAttribute Name="NumberOfVoxelsZ" UniqueId="bbb9efce-f6f6-4834-a122-fbef29b024bd" DefinedType="IfcPositiveInteger" AttributeFlags="1">
 			<Documentation>NumberOf voxels along the Z axis. If not given, the value from _NumberOfVoxelsX_ shall be taken.</Documentation>
+			<Definition>
+				<DocDefinitionRef xsi:nil="true" href="IfcPositiveInteger_1hN4je90v3Zw1QuJ1Tf3Ni" />
+			</Definition>
 		</DocAttribute>
 		<DocAttribute Name="Voxels" UniqueId="14ee4900-2fe3-4e22-9af9-7e201ba42225" DefinedType="IfcBoolean" AggregationType="2" AggregationLower="1" AggregationUpper="NumberOfVoxelsX*NumberOfVoxelsY*NumberOfVoxelsZ">
 			<Documentation>Indication of voxels on the grid. The array is one-dimensional where values are distributed in the following order:
 along X, then Y and finally Z.</Documentation>
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectGridSize" UniqueId="d21d238c-a7bf-4473-9503-e1f72b3552c2">
+			<Documentation>The size of the grid (_Voxels_ array) shall be equal to the product of the number of voxels in X, Y and Z directions.</Documentation>
+			<Expression>SIZEOF(SELF\Voxels) = NumberOfVoxelsX * NumberOfVoxelsY * NumberOfVoxelsZ</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 
