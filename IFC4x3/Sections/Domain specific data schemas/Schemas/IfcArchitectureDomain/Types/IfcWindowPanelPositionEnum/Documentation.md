@@ -5,7 +5,7 @@ Windows which are subdivided into more than three panels have to be defined by t
 <table><tr><td>
  <table class="gridtable"> 
 	<tr valign="top"> 
-	  <th width="30%" valign="top" align="left"><i>Enumerator from IfcWindowStyleOperationEnum</i></th> 
+	  <th width="30%" valign="top" align="left"><i>Enumerator from IfcWindowTypePartitioningEnum</i></th> 
 	  <th width="30%" valign="top" align="left"><i>Use of enumerators from IfcWindowPanelPositionEnum</i></th> 
 	  <th width="23%" valign="top" align="left"><i>Figure</i></th> 
 	</tr> 
