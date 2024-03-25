@@ -1,0 +1,1 @@
+Substance interspersd between the wall surfaces of a discontinuity (JGS) generally, the material occupying the space between joint surfaces, faults, and other rock discontinuitires. The filling material may be clay, gouge, various natural cementaing agents, or alteration products of the adjacent rock.(ASTM, ISRM).
