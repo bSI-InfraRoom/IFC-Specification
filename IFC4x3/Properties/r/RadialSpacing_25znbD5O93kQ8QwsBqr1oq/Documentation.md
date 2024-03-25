@@ -1,0 +1,1 @@
+Radial spacing between boreholes.
