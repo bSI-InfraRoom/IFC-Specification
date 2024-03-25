@@ -1,0 +1,1 @@
+Liquid limit is the water content at which a pat of soil, cut by a groove of standard dimension, will flow together for a distance of 13 mm under the impact of 25 drops by a standard liquid limit device.Also, can definition as the water content corresponding to any arbitrary limit between the liquid and plastic consistency states of a soil.
