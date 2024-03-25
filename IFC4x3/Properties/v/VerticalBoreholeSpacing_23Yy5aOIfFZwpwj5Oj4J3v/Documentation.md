@@ -1,0 +1,1 @@
+Vertical spacing between boreholes.

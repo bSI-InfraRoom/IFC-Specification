@@ -1,0 +1,1 @@
+Transverse spacing between boreholes.
