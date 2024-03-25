@@ -1,0 +1,1 @@
+Average treatment thickness.
