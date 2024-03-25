@@ -1,0 +1,15 @@
+(IfcInteger Factor) : IfcInteger;
+
+  LOCAL
+    Fac : IfcInteger := 1;
+  END_LOCAL;
+  
+  IF Factor = 0 THEN
+    RETURN 1;
+  END_IF;
+  
+  REPEAT i := 1 TO Factor
+    Fac = Fac * i;
+  END_REPEAT;
+  
+  RETURN Fac;
