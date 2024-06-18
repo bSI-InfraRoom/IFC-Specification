@@ -1,2 +1,37 @@
-(GradientCurve : IfcGradientCurve) : IfcLengthMeasure;
-  RETURN(1);
+(GradientCurve : IfcGradientCurve, Position : IfcCurveMeasureSelect) : IfcLengthMeasure;
+    
+  REPEAT i := 1 TO (SIZEOF(GradientCurve.Segments) - 1);
+    Segment : IfcCurveSegment := GradientCurve.Segments[i];
+    NextSegment : IfcCurveSegment := GradientCurve.Segments[i + 1];
+    Location : IfcCartesianPoint := NextSegment\IfcCurveSegment.Placement\IfcAxis2Placement2D.Location\IfcCartesianPoint;
+    SegmentPlacement : IfcAxis2Placement2D := Segment.Placement\IfcAxis2Placement2D;
+    SegDistAlong : IfcParameterValue := SegmentPlacement.Location\IfcCartesianPoint.Coordinates[1];
+	
+    IF (Location.Coordinates[1] > Position)
+      CASE TRUE OF
+	  
+        'IFCCIRCLE' IN TYPEOF(Segment.ParentCurve) :
+          BEGIN
+            RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + Segment.ParentCurve.Radius * (COS(ACOS(SegmentPlacement.P[1][1]) / 2 - Segment.SegmentLength) - (Position - SegDistAlong));
+          END;
+		  
+        'IFCCLOTHOID' IN TYPEOF(Segment.ParentCurve) :
+          BEGIN			
+            RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + 3 ** -1 * Segment.SegmentLength ** 3 + (3 * IfcFactorial(7)) ** -1 * Segment.SegmentLength ** 7 + (5 * IfcFactorial(11)) ** -1 * Segment.SegmentLength ** 11;
+          END;		
+	  
+        'IFCLINE' IN TYPEOF(Segment.ParentCurve) :
+          BEGIN
+            RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + Segment.ParentCurve\IfcLine.Pnt[2] + Segment.ParentCurve\IfcLine.Dir.Orientation.DirectionRatios[2] * Segment.ParentCurve\IfcLine.Dir.Magnitude * Segment.ParentCurve\IfcLine.Dir.Orientation.DirectionRatios[2] * (Position - SegDistAlong) / Segment.ParentCurve\IfcLine.Dir.Orientation.DirectionRatios[1];
+          END;
+  
+        'IFCPOLYLINE' IN TYPEOF(Segment.ParentCurve) :
+          BEGIN
+            RETURN SegmentPlacement.Location\IfcCartesianPoint.Coordinates[2] + (Position - SegDistAlong) * (Segment.ParentCurve.Points[2].Coordinates[2] - Segment.ParentCurve.Points[1].Coordinates[2]) / (Segment.ParentCurve.Points[2].Coordinates[1] - Segment.ParentCurve.Points[1].Coordinates[1]);
+          END;
+	  
+        OTHERWISE : RETURN(?);
+      END_CASE;
+    END_IF;
+  END_REPEAT;
+  RETURN(?);
