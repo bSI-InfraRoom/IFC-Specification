@@ -14,5 +14,10 @@
 &gt; NOTE&amp;nbsp; In many scenarios the _Name_ attribute refers to the short name or number of a building system, and the _LongName_ refers to a descriptive name.</Documentation>
 		</DocAttribute>
 	</Attributes>
+	<WhereRules>
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="f4e7129b-3789-467b-8297-901be8863fba">
+			<Expression>NOT(EXISTS(PredefinedType)) OR (PredefinedType &lt;&gt; IfcBuildingSystemTypeEnum.USERDEFINED) OR ((PredefinedType = IfcBuildingSystemTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
+		</DocWhereRule>
+	</WhereRules>
 </DocEntity>
 
