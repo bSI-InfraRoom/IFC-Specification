@@ -6,9 +6,10 @@
 		</DocAttribute>
 	</Attributes>
 	<WhereRules>
-		<DocWhereRule Name="HasObjectType" UniqueId="4f5c3e77-598a-4643-a8c6-6b1d7476771a">
+		<DocWhereRule Name="CorrectPredefinedType" UniqueId="4f5c3e77-598a-4643-a8c6-6b1d7476771a">
 			<Documentation>The attribute ObjectType shall be given if the predefined type is set to USERDEFINED.</Documentation>
-			<Expression>(PredefinedType &lt;&gt; IfcRadialExcavationTypeEnum.USERDEFINED) OR EXISTS(SELF\IfcObject.ObjectType)</Expression>
+			<Expression>(PredefinedType &lt;&gt; IfcRadialExcavationTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcRadialExcavationTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType))</Expression>
 		</DocWhereRule>
 	</WhereRules>
 </DocEntity>
